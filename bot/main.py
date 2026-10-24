@@ -33,11 +33,11 @@ WINDOWS_UTC = [(7, 10), (11, 14), (15, 18), (19, 22)]
 MAX_LATE = timedelta(hours=3)  # skip a slot rather than post in a burst after an outage
 
 THEMES = [
-    "work and office life", "being tired and sleep", "being broke and money",
-    "dating and relationships", "food and snacks", "phone and social media addiction",
-    "gym and health goals", "adulting and responsibilities", "procrastination",
-    "friends and group chats", "technology and AI", "pets", "weekends and Mondays",
-    "school and studying", "travel and being late",
+    "being tired and sleep", "being broke and money", "friends and group chats",
+    "school and studying", "work and bad bosses", "gym and diets", "food and cravings",
+    "being late and plans falling through", "phone battery and screen time",
+    "procrastination", "weekends and Mondays", "texting and replies",
+    "family at home", "gaming", "sports and watching games with friends",
 ]
 
 # Multi-panel templates look wrong with simple top/bottom captions. Tune via EXCLUDE_REGEX.
@@ -384,9 +384,21 @@ def generate(state):
         "Format: a single caption that sits ABOVE a reaction photo. Use formats like "
         "'When you ...', 'How me and bro gon be ... after ...', 'Me when ...', 'POV: ...'. "
         "Casual texting voice (words like bro, nah, fr, lowkey are fine; lowercase is fine). "
-        "Under 25 words. Hyper-specific and relatable: friends, school, work, gym, food, "
+        "Under 22 words. Hyper-specific and relatable: friends, school, work, gym, food, "
         "money, sleep, phones, being late, group chats. The kind of meme people send to a "
         "friend with 'this is literally us'.\n\n"
+        "Examples of the voice and rhythm to match (write something NEW, never copy these):\n"
+        "- when you tell yourself you're going to bed early and it's already 3am\n"
+        "- how me and bro gon be posted up at the pizza place after we hear the first slice is free\n"
+        "- me explaining to my mom that the 'quick nap' was 6 hours\n"
+        "- when the group chat has 200 messages and the plan is still 'we'll see'\n"
+        "- when you check your bank account after saying 'it's only $5' twelve times\n"
+        "- POV: you said you'd start the assignment 'in 10 minutes' at 2pm and it's now midnight\n"
+        "- when the teacher says 'pick your own groups' and everyone looks at you\n"
+        "- me pretending to listen to the whole gym story from the guy who just started going\n"
+        "Rules for quality: ONE clear situation, a specific detail, an obvious punchline or "
+        "relatable pain, and the reaction photo's mood must match the feeling. Never write "
+        "about AI, technology trends, or abstract ideas - only real everyday situations.\n\n"
         "Pick the reaction photo from this list (id | name) whose face or mood best fits the "
         "punchline:\n"
         f"{listing}\n\n"

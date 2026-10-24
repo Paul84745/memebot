@@ -11,6 +11,7 @@ import re
 import statistics
 import subprocess
 import sys
+import tempfile
 import time
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
@@ -19,6 +20,8 @@ from pathlib import Path
 
 import requests
 from PIL import Image, ImageDraw, ImageFont
+
+import reel
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_FILE = ROOT / "state.json"
@@ -234,6 +237,15 @@ def pick_format(history):
     return random.choices(keys, [w.get(k, statistics.mean(w.values())) for k in keys])[0]
 
 
+def pick_music(history):
+    keys = list(reel.TRACKS)
+    w = _weighted_by(history, "music")
+    if not w:
+        return random.choice(keys)
+    avg = statistics.mean(w.values())
+    return random.choices(keys, [w.get(k, avg) for k in keys])[0]
+
+
 def top_examples(history, n=5):
     done = [h for h in finalized(history) if h.get("text")]
     done.sort(key=lambda h: h["score"], reverse=True)
@@ -308,6 +320,13 @@ def write_insights(state):
             by[h.get("format") or classify_format(h.get("text", ""))].append(h["score"])
         lines += ["## Best formats"] + [f"- {k}: avg {statistics.mean(v):.1f} ({len(v)} posts)"
                   for k, v in sorted(by.items(), key=lambda kv: statistics.mean(kv[1]), reverse=True)] + [""]
+        by = defaultdict(list)
+        for h in done:
+            if h.get("music"):
+                by[h["music"]].append(h["score"])
+        if by:
+            lines += ["## Best music"] + [f"- {k}: avg {statistics.mean(v):.1f} ({len(v)} posts)"
+                      for k, v in sorted(by.items(), key=lambda kv: statistics.mean(kv[1]), reverse=True)] + [""]
         lines += ["## Top posts"] + [f"- ({h['score']}) {h.get('text')}" for h in
                   sorted(done, key=lambda h: h["score"], reverse=True)[:5]]
     else:
@@ -672,9 +691,9 @@ def graph(method, path, **params):
     return r.json()
 
 
-def host_image(path):
+def host_file(path):
     if not os.environ.get("GITHUB_ACTIONS"):
-        raise RuntimeError("Publishing only works inside GitHub Actions (needs a public image URL)")
+        raise RuntimeError("Publishing only works inside GitHub Actions (needs a public URL)")
     commit_push(f"bot: add {path.name}")
     repo = os.environ["GITHUB_REPOSITORY"]
     branch = os.environ.get("GITHUB_REF_NAME", "main")
@@ -683,24 +702,30 @@ def host_image(path):
         if requests.get(url, timeout=15, stream=True).status_code == 200:
             return url
         time.sleep(3)
-    raise RuntimeError("Hosted image never became reachable (is the repo public?)")
+    raise RuntimeError("Hosted file never became reachable (is the repo public?)")
 
 
-def publish(image_url, caption):
+def publish(media_url, caption, video=False):
     ig = env("IG_USER_ID")
-    cid = graph("POST", f"{ig}/media", image_url=image_url, caption=caption)["id"]
-    for _ in range(30):
+    if video:
+        params = dict(media_type="REELS", video_url=media_url, caption=caption, share_to_feed="true")
+    else:
+        params = dict(image_url=media_url, caption=caption)
+    cid = graph("POST", f"{ig}/media", **params)["id"]
+    for _ in range(60 if video else 30):
         status = graph("GET", cid, fields="status_code").get("status_code")
         if status == "FINISHED":
             break
         if status in ("ERROR", "EXPIRED"):
             raise RuntimeError(f"Instagram container status: {status}")
-        time.sleep(3)
+        time.sleep(5 if video else 3)
+    else:
+        raise RuntimeError("Instagram container never finished processing")
     return graph("POST", f"{ig}/media_publish", creation_id=cid)["id"]
 
 
 def cleanup_images():
-    for f in IMG_DIR.glob("*.jpg"):
+    for f in [*IMG_DIR.glob("*.jpg"), *IMG_DIR.glob("*.mp4")]:
         try:
             if time.time() - int(f.name.split("_")[0]) > 3 * 86400:
                 f.unlink()
@@ -714,18 +739,28 @@ def run_post(state, slot, dry):
     meme, template = generate(state)
     print(json.dumps(meme, indent=1), "| template:", template["name"])
     img = render(meme, template)
+    music = pick_music(state["history"])
     if dry:
         OUT_DIR.mkdir(exist_ok=True)
         img.save(OUT_DIR / "preview.jpg", quality=92)
         (OUT_DIR / "preview.json").write_text(json.dumps(meme, indent=1))
-        print("Dry run: preview saved to out/preview.jpg")
+        reel.make_reel(img, music, OUT_DIR / "preview.mp4", tempfile.mkdtemp())
+        print(f"Dry run: preview saved to out/ (music: {music})")
         return
     IMG_DIR.mkdir(exist_ok=True)
-    path = IMG_DIR / f"{int(time.time())}_{template['id']}.jpg"
-    img.save(path, quality=92)
-    url = host_image(path)
+    stamp = f"{int(time.time())}_{template['id']}"
     caption = meme["caption"] + "\n\n" + " ".join(meme["hashtags"])
-    media_id = publish(url, caption)
+    media_id = None
+    try:
+        mp4 = reel.make_reel(img, music, IMG_DIR / f"{stamp}.mp4", tempfile.mkdtemp())
+        media_id = publish(host_file(mp4), caption, video=True)
+        kind = "reel"
+    except Exception as e:  # never lose a post slot because of the video step
+        print(f"Reel failed ({e}); posting as a normal image instead")
+        path = IMG_DIR / f"{stamp}.jpg"
+        img.save(path, quality=92)
+        media_id = publish(host_file(path), caption)
+        kind, music = "image", None
     slot["status"] = "done"
     state["history"].append({
         "media_id": media_id,
@@ -735,6 +770,8 @@ def run_post(state, slot, dry):
         "theme": meme["theme"],
         "text": meme["text"],
         "format": classify_format(meme["text"]),
+        "kind": kind,
+        "music": music,
     })
     print(f"Posted {media_id}")
 

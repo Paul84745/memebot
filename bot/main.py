@@ -234,9 +234,9 @@ def gemini(prompt, temperature=1.0):
         ],
     }
     for attempt in range(4):
-        r = requests.post(url, params={"key": env("GEMINI_API_KEY")}, json=body, timeout=90)
+        r = requests.post(url, params={"key": env("GEMINI_API_KEY")}, json=body, timeout=45)
         if r.status_code in (429, 500, 503):
-            time.sleep(10 * (attempt + 1))
+            time.sleep(5 * (attempt + 1))
             continue
         r.raise_for_status()
         cands = r.json().get("candidates") or []
@@ -250,11 +250,12 @@ def moderate(meme, template_name):
     prompt = (
         "You are a strict Instagram community-guidelines reviewer for a mainstream, "
         "brand-safe meme page. Review this meme. Mark it UNSAFE if it contains or implies: "
-        "politics, religion, hate or stereotypes about any group, sexual content, drugs, "
-        "violence, self-harm, profanity, real people, tragedy, medical claims, or anything "
-        "that could get an account restricted. When in doubt, UNSAFE.\n\n"
-        f"Template: {template_name}\nTop text: {meme['top']}\nBottom text: {meme['bottom']}\n"
-        f"Caption: {meme['caption']}\nHashtags: {' '.join(meme['hashtags'])}\n\n"
+        "politics, religion, hate or stereotypes about any group, sexual content or innuendo, "
+        "body-shaming or insults about looks, drugs, violence, self-harm, profanity, real "
+        "people's names, tragedy, medical claims, or anything that could get an account "
+        "restricted. When in doubt, UNSAFE.\n\n"
+        f"Reaction image: {template_name}\nCaption on image: {meme['text']}\n"
+        f"Post caption: {meme['caption']}\nHashtags: {' '.join(meme['hashtags'])}\n\n"
         'Reply JSON only: {"safe": true or false, "reason": "short reason"}'
     )
     try:
@@ -271,54 +272,59 @@ def fetch_templates():
     memes = r.json()["data"]["memes"]
     return [
         m for m in memes
-        if m["box_count"] == 2
-        and 0.8 <= m["width"] / m["height"] <= 1.91
+        if m["box_count"] <= 2
+        and 0.6 <= m["width"] / m["height"] <= 1.91
         and not EXCLUDE_TEMPLATES.search(m["name"])
     ]
 
 
 def generate(state):
+    started = time.time()
     templates = fetch_templates()
     by_id = {t["id"]: t for t in templates}
     history = state["history"]
     theme = pick_theme(history)
     cands = pick_candidates(templates, history)
     cand_ids = {c["id"] for c in cands}
-    recent = [f"{h['top']} / {h['bottom']}" for h in history[-15:]]
+    recent = [h.get("text") or f"{h.get('top', '')} / {h.get('bottom', '')}" for h in history[-15:]]
     listing = "\n".join(f"{c['id']} | {c['name']}" for c in cands)
 
     prompt = (
-        "You run a huge, hilarious Instagram meme page. Write ONE original meme.\n\n"
+        "You run a viral Instagram meme page for people in their teens and twenties. "
+        "Write ONE original meme.\n\n"
         f"Theme: {theme}\n\n"
-        "Pick the best-fitting template from this list (id | name). Each is a single "
-        "image with text on the top and the bottom:\n"
+        "Format: a single caption that sits ABOVE a reaction photo. Use formats like "
+        "'When you ...', 'How me and bro gon be ... after ...', 'Me when ...', 'POV: ...'. "
+        "Casual texting voice (words like bro, nah, fr, lowkey are fine; lowercase is fine). "
+        "Under 25 words. Hyper-specific and relatable: friends, school, work, gym, food, "
+        "money, sleep, phones, being late, group chats. The kind of meme people send to a "
+        "friend with 'this is literally us'.\n\n"
+        "Pick the reaction photo from this list (id | name) whose face or mood best fits the "
+        "punchline:\n"
         f"{listing}\n\n"
-        "Humor rules:\n"
-        "- Hyper-relatable, specific, understood in two seconds. The kind of meme people "
-        "send to a friend with 'this is literally you'.\n"
-        "- Setup on top, punchline on bottom, each under 12 words. Respect the template's "
-        "famous meaning.\n"
-        "- Do not reuse or paraphrase these recent jokes: " + json.dumps(recent) + "\n\n"
+        "Do not reuse or paraphrase these recent jokes: " + json.dumps(recent) + "\n\n"
         "Hard safety rules (an account ban is the worst outcome):\n"
-        "- No politics, religion, race, ethnicity, nationality, gender, sexuality, "
-        "disability or tragedy jokes. No insults aimed at groups.\n"
-        "- No sex, nudity, drugs, violence, self-harm, profanity, real people's names or "
-        "brand attacks.\n"
-        "- Mild, friendly, self-deprecating humor only.\n\n"
-        "Caption: one short line that adds to the joke, sometimes ending with a soft share "
-        "hook like 'Send this to the friend who does this'. Never beg for likes or follows. "
+        "- No sexual jokes or innuendo, no body-shaming, no insults about anyone's looks.\n"
+        "- No politics, religion, race, ethnicity, nationality, gender, sexuality, disability "
+        "or tragedy jokes. No insults aimed at groups.\n"
+        "- No nudity, drugs, violence, self-harm, profanity, real people's names or brand attacks.\n"
+        "- Friendly, self-deprecating, wholesome-edgy humor only.\n\n"
+        "Post caption: one short line that adds to the joke, sometimes ending with a soft share "
+        "hook like 'send this to your bro'. Never beg for likes or follows. "
         "Give 3 to 5 relevant hashtags.\n\n"
-        'Return JSON only: {"template_id": "...", "top": "...", "bottom": "...", '
+        'Return JSON only: {"template_id": "...", "text": "...", '
         '"caption": "...", "hashtags": ["#..."]}'
     )
 
     for attempt in range(4):
+        if time.time() - started > 360:
+            break
         try:
             data = json.loads(gemini(prompt))
             if isinstance(data, list):
                 data = data[0]
             tid = str(data["template_id"])
-            top, bottom = data["top"].strip(), data["bottom"].strip()
+            text = data["text"].strip()
             caption = data["caption"].strip()
             tags = []
             for h in data["hashtags"][:5]:
@@ -328,29 +334,40 @@ def generate(state):
         except Exception as e:
             print(f"bad generation ({e}), retrying")
             continue
-        if tid not in cand_ids or not top or not bottom or len(top) > 90 or len(bottom) > 90 \
-                or len(caption) > 200 or len(tags) < 3:
+        if tid not in cand_ids or not text or len(text) > 170 or len(caption) > 200 \
+                or len(tags) < 3:
             print("generation failed validation, retrying")
             continue
-        if f"{top} / {bottom}" in recent:
+        if text in recent:
             continue
-        everything = " ".join([top, bottom, caption, *tags])
-        if BLOCKED.search(everything):
+        if BLOCKED.search(" ".join([text, caption, *tags])):
             print("local blocklist hit, retrying")
             continue
-        meme = {"template_id": tid, "top": top, "bottom": bottom,
-                "caption": caption, "hashtags": tags, "theme": theme}
+        meme = {"template_id": tid, "text": text, "caption": caption,
+                "hashtags": tags, "theme": theme}
         if not moderate(meme, by_id[tid]["name"]):
             print("moderator rejected, retrying")
             continue
         return meme, by_id[tid]
-    raise RuntimeError("Could not produce a safe meme after several attempts")
+    raise RuntimeError("Could not produce a safe meme in time")
 
 
 # ------------------------------------------------------------------------ rendering
 
-def load_font(size):
-    for p in FONT_PATHS:
+BOLD_FONTS = [
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+]
+REG_FONTS = [
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
+]
+
+
+def load_font(size, bold=False):
+    for p in (BOLD_FONTS if bold else REG_FONTS):
         if os.path.exists(p):
             return ImageFont.truetype(p, size)
     return ImageFont.load_default(size)
@@ -370,34 +387,40 @@ def wrap(text, font, max_w):
     return lines
 
 
-def fit_text(text, max_w, max_h, start):
-    size = start
-    while True:
-        font = load_font(size)
-        lines = wrap(text, font, max_w)
-        lh = size * 1.12
-        fits = len(lines) * lh <= max_h and all(font.getlength(l) <= max_w for l in lines)
-        if fits or size <= 18:
-            return font, size, lines, lh
-        size -= 2
-
-
 def render(meme, template):
+    """Caption bar on top, reaction photo underneath (the style of the page)."""
     raw = requests.get(template["url"], timeout=30).content
-    img = Image.open(BytesIO(raw)).convert("RGB")
-    w, h = img.size
-    img = img.resize((1080, round(h * 1080 / w)), Image.LANCZOS)
-    W, H = img.size
-    draw = ImageDraw.Draw(img)
-    max_w, max_h, margin = int(W * 0.92), int(H * 0.30), int(H * 0.025)
-    for text, where in ((meme["top"], "top"), (meme["bottom"], "bottom")):
-        font, size, lines, lh = fit_text(text.upper(), max_w, max_h, int(W * 0.095))
-        y = margin if where == "top" else H - margin - lh * len(lines)
-        for line in lines:
-            draw.text((W / 2, y), line, font=font, fill="white",
-                      stroke_width=max(2, size // 12), stroke_fill="black", anchor="ma")
-            y += lh
-    return img
+    photo = Image.open(BytesIO(raw)).convert("RGB")
+    W = 1080
+    photo = photo.resize((W, round(photo.height * W / photo.width)), Image.LANCZOS)
+
+    dark = random.random() < 0.35
+    bg, fg = ((0, 0, 0), (255, 255, 255)) if dark else ((255, 255, 255), (0, 0, 0))
+    pad = 40
+    size = 58
+    while True:
+        font = load_font(size, bold=dark)
+        lines = wrap(meme["text"], font, W - 2 * pad)
+        if len(lines) <= 4 or size <= 34:
+            break
+        size -= 4
+    lh = round(size * 1.28)
+    bar_h = len(lines) * lh + 2 * pad - round(size * 0.2)
+
+    max_total = 1350  # Instagram's tallest allowed ratio (4:5)
+    if bar_h + photo.height > max_total:
+        keep = max_total - bar_h
+        top = (photo.height - keep) // 2
+        photo = photo.crop((0, top, W, top + keep))
+
+    canvas = Image.new("RGB", (W, bar_h + photo.height), bg)
+    draw = ImageDraw.Draw(canvas)
+    y = pad
+    for line in lines:
+        draw.text((pad, y), line, font=font, fill=fg)
+        y += lh
+    canvas.paste(photo, (0, bar_h))
+    return canvas
 
 
 # ------------------------------------------------------------------------ Instagram
@@ -472,8 +495,7 @@ def run_post(state, slot, dry):
         "template_id": template["id"],
         "template_name": template["name"],
         "theme": meme["theme"],
-        "top": meme["top"],
-        "bottom": meme["bottom"],
+        "text": meme["text"],
     })
     print(f"Posted {media_id}")
 

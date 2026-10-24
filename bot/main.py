@@ -230,7 +230,7 @@ def gemini(prompt, temperature=1.0):
         )
     ]
     use_thinking_off = True
-    for attempt in range(5):
+    for attempt in range(7):
         cfg = {"temperature": temperature, "responseMimeType": "application/json"}
         if use_thinking_off:
             cfg["thinkingConfig"] = {"thinkingBudget": 0}
@@ -246,7 +246,7 @@ def gemini(prompt, temperature=1.0):
             use_thinking_off = False  # this model does not accept that setting
             continue
         if r.status_code in (429, 500, 503):
-            time.sleep(10 * (attempt + 1))
+            time.sleep(20 * (attempt + 1))
             continue
         r.raise_for_status()
         cands = r.json().get("candidates") or []
@@ -258,19 +258,24 @@ def gemini(prompt, temperature=1.0):
 
 def moderate(meme, template_name):
     prompt = (
-        "You are a strict Instagram community-guidelines reviewer for a mainstream, "
-        "brand-safe meme page. Review this meme. Mark it UNSAFE if it contains or implies: "
-        "politics, religion, hate or stereotypes about any group, sexual content or innuendo, "
-        "body-shaming or insults about looks, drugs, violence, self-harm, profanity, real "
-        "people's names, tragedy, medical claims, or anything that could get an account "
-        "restricted. When in doubt, UNSAFE.\n\n"
+        "You review memes for an Instagram meme page aimed at young adults. Decide if this "
+        "meme could realistically get the account restricted. Mark it UNSAFE only if it "
+        "clearly contains: sexual content or innuendo, hate or stereotypes about a group, "
+        "politics or religion, violence or self-harm, drugs, slurs or strong profanity, "
+        "body-shaming, or a real named person. Everyday relatable humor, mild slang "
+        "(bro, nah, fr), self-deprecating jokes and friendly teasing are SAFE.\n\n"
         f"Reaction image: {template_name}\nCaption on image: {meme['text']}\n"
         f"Post caption: {meme['caption']}\nHashtags: {' '.join(meme['hashtags'])}\n\n"
         'Reply JSON only: {"safe": true or false, "reason": "short reason"}'
     )
     try:
         verdict = json.loads(gemini(prompt, temperature=0.0))
-        return bool(verdict.get("safe")) is True
+        if isinstance(verdict, list):
+            verdict = verdict[0]
+        safe = bool(verdict.get("safe")) is True
+        if not safe:
+            print(f"moderator rejected: {meme['text']!r} -> {verdict.get('reason')}")
+        return safe
     except Exception as e:
         print(f"moderation failed, treating as unsafe: {e}")
         return False

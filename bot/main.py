@@ -26,7 +26,7 @@ IMG_DIR = ROOT / "images"
 OUT_DIR = ROOT / "out"
 
 GRAPH = "https://graph.instagram.com/v26.0"
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 POSTS_PER_DAY = int(os.environ.get("POSTS_PER_DAY", "4"))
 # Posting windows in UTC (covers European morning through US afternoon/evening).
 WINDOWS_UTC = [(7, 10), (11, 14), (15, 18), (19, 22)]

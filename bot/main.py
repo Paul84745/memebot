@@ -12,6 +12,7 @@ import statistics
 import subprocess
 import sys
 import tempfile
+import xml.etree.ElementTree as ET
 import time
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
@@ -327,6 +328,11 @@ def write_insights(state):
         if by:
             lines += ["## Best music"] + [f"- {k}: avg {statistics.mean(v):.1f} ({len(v)} posts)"
                       for k, v in sorted(by.items(), key=lambda kv: statistics.mean(kv[1]), reverse=True)] + [""]
+        nw = [h["score"] for h in done if h.get("news")]
+        pl = [h["score"] for h in done if not h.get("news")]
+        if nw and pl:
+            lines += ["## News memes vs normal", f"- news: avg {statistics.mean(nw):.1f} ({len(nw)} posts)",
+                      f"- normal: avg {statistics.mean(pl):.1f} ({len(pl)} posts)", ""]
         lines += ["## Top posts"] + [f"- ({h['score']}) {h.get('text')}" for h in
                   sorted(done, key=lambda h: h["score"], reverse=True)[:5]]
     else:
@@ -517,6 +523,62 @@ def fetch_templates():
     ]
 
 
+
+# ------------------------------------------------------------------------------ news
+
+NEWS_FEEDS = [
+    "https://news.google.com/rss/search?q=weird+OR+bizarre+OR+viral+OR+unexpected+when:1d&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=funny+OR+hilarious+OR+%22goes+viral%22+when:1d&hl=en-GB&gl=GB&ceid=GB:en",
+    "https://feeds.bbci.co.uk/news/technology/rss.xml",
+    "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+    "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
+    "https://www.reddit.com/r/nottheonion/.rss",
+]
+# News is only used when it is light-hearted; anything heavy is dropped before the AI sees it.
+NEWS_AVOID = re.compile(
+    r"war|kill|dead|death|die[sd]?\b|murder|attack|shoot|bomb|missile|troops|army|terror|"
+    r"crash|victim|abuse|assault|arrest|court|trial|prison|jail|police|hostage|"
+    r"president|minister|election|vote|government|senate|congress|parliament|tariff|"
+    r"trump|biden|putin|israel|gaza|ukraine|russia|china|iran|hamas|"
+    r"cancer|virus|outbreak|hospital|disease|suicide|rape|sex|nude|porn|drug|"
+    r"flood|earthquake|hurricane|wildfire|tragedy|funeral|collapse",
+    re.I,
+)
+
+
+def fetch_news(state, limit=12):
+    used = set(state.get("news_used", []))
+    items, seen = [], set()
+    for url in NEWS_FEEDS:
+        try:
+            r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0 (meme-bot)"})
+            root = ET.fromstring(r.content)
+        except Exception as e:
+            print(f"news feed failed ({url[:50]}): {e}")
+            continue
+        for it in root.iter("item"):
+            title = re.sub(r"\s+-\s+[^-]{2,40}$", "", (it.findtext("title") or "").strip())
+            if not (20 <= len(title) <= 160) or title in seen or title in used:
+                continue
+            if NEWS_AVOID.search(title) or BLOCKED.search(title):
+                continue
+            seen.add(title)
+            items.append(title)
+    random.shuffle(items)
+    print(f"::notice::{len(items)} usable light news headlines found")
+    return items[:limit]
+
+
+def news_probability(history):
+    done = [h for h in finalized(history)]
+    news = [h["score"] for h in done if h.get("news")]
+    plain = [h["score"] for h in done if not h.get("news")]
+    if len(news) >= 4 and len(plain) >= 4:
+        ratio = statistics.mean(news) / max(statistics.mean(plain), 1)
+        return min(0.7, max(0.1, 0.3 * ratio))
+    return 0.3
+
+
 def generate(state):
     started = time.time()
     templates = fetch_templates()
@@ -530,9 +592,22 @@ def generate(state):
     recent = [h.get("text") or f"{h.get('top', '')} / {h.get('bottom', '')}" for h in history[-15:]]
     listing = "\n".join(f"{c['id']} | {c['name']}" for c in cands)
 
+    headlines = fetch_news(state) if random.random() < news_probability(history) else []
+    news_block = ""
+    if headlines:
+        news_block = (
+            "NEWS MODE: below are today's light news headlines. If ONE of them is genuinely funny "
+            "or very relatable, base the meme on the situation in it (keep it recognisable as the "
+            "story, but never name real people, politicians, countries in conflict or brands being "
+            "attacked; skip anything sad, political, violent or about a tragedy). Set \"news_index\" "
+            "to that headline's number. If none is clearly good, ignore the news, write a normal "
+            "meme on the theme and set \"news_index\" to null.\n"
+            + "\n".join(f"{i}. {h}" for i, h in enumerate(headlines)) + "\n\n")
+
     prompt = (
         "You run a viral Instagram meme page for people in their teens and twenties. "
         "Write ONE original meme.\n\n"
+        + news_block +
         f"Theme: {theme}\n"
         f"Preferred caption style this time: {FORMATS[fmt]}\n\n"
         + ("These are this page's best-performing memes so far; aim for the same kind of "
@@ -574,7 +649,7 @@ def generate(state):
         "bouncy=playful/funny, hype=excited/chaos, sad=disappointment/loss, wholesome=sweet/friends, "
         "awkward=cringe/embarrassed, dramatic=tension/betrayal/dread).\n\n"
         'Return JSON only: {"template_id": "...", "text": "...", '
-        '"caption": "...", "hashtags": ["#..."], "mood": "..."}'
+        '"caption": "...", "hashtags": ["#..."], "mood": "...", "news_index": null}'
     )
 
     for attempt in range(4):
@@ -607,6 +682,9 @@ def generate(state):
         mood = str(data.get("mood", "")).lower().strip()
         meme = {"template_id": tid, "text": text, "caption": caption,
                 "hashtags": tags, "theme": theme, "mood": mood if mood in reel.TRACKS else None}
+        ni = data.get("news_index")
+        if isinstance(ni, int) and 0 <= ni < len(headlines):
+            meme["news"] = headlines[ni]
         if not moderate(meme, by_id[tid]["name"]):
             print("moderator rejected, retrying")
             continue
@@ -767,6 +845,9 @@ def run_post(state, slot, dry):
         media_id = publish(host_file(path), caption)
         kind, music = "image", None
     slot["status"] = "done"
+    if meme.get("news"):
+        state.setdefault("news_used", []).append(meme["news"])
+        state["news_used"] = state["news_used"][-200:]
     state["history"].append({
         "media_id": media_id,
         "posted_at": now_utc().isoformat(),
@@ -777,6 +858,7 @@ def run_post(state, slot, dry):
         "format": classify_format(meme["text"]),
         "kind": kind,
         "music": music,
+        "news": bool(meme.get("news")),
     })
     print(f"Posted {media_id}")
 

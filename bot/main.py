@@ -120,10 +120,17 @@ def plan_day(state, now):
     if state["schedule"].get("date") == today:
         return
     midnight = datetime(now.year, now.month, now.day, tzinfo=timezone.utc)
-    slots = []
+    hs = hour_stats(state)
+    used, slots = set(), []
     for i in range(POSTS_PER_DAY):
         a, b = WINDOWS_UTC[i % len(WINDOWS_UTC)]
         minute = random.randint(a * 60, b * 60 - 1)
+        if hs and random.random() < 0.7:
+            free = [blk for blk in hs if blk not in used]
+            if free:
+                blk = random.choices(free, [max(0.2, hs[x]) for x in free])[0]
+                minute = random.randint(blk * 120, blk * 120 + 119)
+                used.add(blk)
         slots.append({
             "t": (midnight + timedelta(minutes=minute)).isoformat(),
             "status": "pending",
@@ -181,6 +188,131 @@ def pick_candidates(templates, history):
     pool = [t for t in templates if t["id"] not in recent and t not in best]
     random.shuffle(pool)
     return best + pool[: 12 - len(best)]
+
+
+# ----------------------------------------------------------- learning from results
+
+FORMATS = {
+    "when_you": "starts with 'when you ...'",
+    "me_when": "starts with 'me when ...' or 'me ...'",
+    "how_me_bro": "starts with 'how me and bro gon be ...'",
+    "pov": "starts with 'POV: ...'",
+    "other": "any other casual caption style",
+}
+
+
+def classify_format(text):
+    t = text.lower().strip()
+    if t.startswith("when"):
+        return "when_you"
+    if t.startswith("how me") or t.startswith("how we"):
+        return "how_me_bro"
+    if t.startswith("pov"):
+        return "pov"
+    if t.startswith("me ") or t.startswith("me,"):
+        return "me_when"
+    return "other"
+
+
+def _weighted_by(history, key):
+    done = [h for h in finalized(history) if h.get(key)]
+    if len(done) < 8 or random.random() < 0.3:
+        return None
+    by = defaultdict(list)
+    for h in done:
+        by[h[key]].append(h["score"])
+    overall = statistics.mean(h["score"] for h in done)
+    return {k: (statistics.mean(v) if len(v) >= 2 else overall) + 1 for k, v in by.items()}
+
+
+def pick_format(history):
+    w = _weighted_by([dict(h, format=h.get("format") or classify_format(h.get("text", "")))
+                      for h in history if h.get("text")], "format")
+    keys = list(FORMATS)
+    if not w:
+        return random.choice(keys[:4])
+    return random.choices(keys, [w.get(k, statistics.mean(w.values())) for k in keys])[0]
+
+
+def top_examples(history, n=5):
+    done = [h for h in finalized(history) if h.get("text")]
+    done.sort(key=lambda h: h["score"], reverse=True)
+    return [h["text"] for h in done[:n]] if len(done) >= 6 else []
+
+
+def parse_ts(ts):
+    return datetime.fromisoformat(ts.replace("+0000", "+00:00"))
+
+
+def import_history(state):
+    """One-time: read the page's existing posts so posting-time learning starts informed."""
+    if state.get("imported_done"):
+        return
+    items, after = [], None
+    try:
+        for _ in range(4):
+            params = {"fields": "id,timestamp,like_count,comments_count", "limit": 50}
+            if after:
+                params["after"] = after
+            data = graph("GET", f"{env('IG_USER_ID')}/media", **params)
+            for m in data.get("data", []):
+                items.append({"t": m["timestamp"],
+                              "score": m.get("like_count", 0) + 3 * m.get("comments_count", 0)})
+            after = data.get("paging", {}).get("cursors", {}).get("after")
+            if not after or not data.get("paging", {}).get("next"):
+                break
+    except Exception as e:
+        print(f"could not import existing posts: {e}")
+        return
+    state["imported"] = items
+    state["imported_done"] = True
+    print(f"Imported {len(items)} existing posts for time learning")
+
+
+def hour_stats(state):
+    """Average relative performance per 2-hour UTC block, from imported + bot posts."""
+    groups = []
+    imp = state.get("imported", [])
+    bot = [{"t": h["posted_at"], "score": h["score"]} for h in finalized(state["history"])]
+    for g in (imp, bot):
+        if len(g) >= 5:
+            avg = statistics.mean(x["score"] for x in g) or 1
+            groups.append([(parse_ts(x["t"]).hour // 2, x["score"] / avg) for x in g])
+    samples = [x for g in groups for x in g]
+    if len(samples) < 15:
+        return None
+    by = defaultdict(list)
+    for blk, rel in samples:
+        by[blk].append(rel)
+    overall = statistics.mean(r for _, r in samples)
+    return {b: (statistics.mean(by[b]) if len(by.get(b, [])) >= 2 else overall) for b in range(3, 12)}
+
+
+def write_insights(state):
+    done = finalized(state["history"])
+    lines = ["# What the bot has learned", "",
+             f"Posts measured so far: {len(done)} (plus {len(state.get('imported', []))} older page posts)", ""]
+    hs = hour_stats(state)
+    if hs:
+        best = sorted(hs, key=hs.get, reverse=True)[:3]
+        lines += ["## Best posting times (UTC)"] + [f"- {b*2}:00-{b*2+2}:00 (score x{hs[b]:.2f})" for b in best] + [""]
+    if len(done) >= 4:
+        for title, key in (("Best themes", "theme"), ("Best photos", "template_name")):
+            by = defaultdict(list)
+            for h in done:
+                by[h.get(key) or "?"].append(h["score"])
+            top = sorted(by.items(), key=lambda kv: statistics.mean(kv[1]), reverse=True)[:5]
+            lines += [f"## {title}"] + [f"- {k}: avg {statistics.mean(v):.1f} ({len(v)} posts)" for k, v in top] + [""]
+        by = defaultdict(list)
+        for h in done:
+            by[h.get("format") or classify_format(h.get("text", ""))].append(h["score"])
+        lines += ["## Best formats"] + [f"- {k}: avg {statistics.mean(v):.1f} ({len(v)} posts)"
+                  for k, v in sorted(by.items(), key=lambda kv: statistics.mean(kv[1]), reverse=True)] + [""]
+        lines += ["## Top posts"] + [f"- ({h['score']}) {h.get('text')}" for h in
+                  sorted(done, key=lambda h: h["score"], reverse=True)[:5]]
+    else:
+        lines.append("Not enough measured posts yet (needs a few days).")
+    (ROOT / "INSIGHTS.md").write_text("\n".join(lines) + "\n")
 
 
 def fetch_metrics(media_id):
@@ -372,6 +504,8 @@ def generate(state):
     by_id = {t["id"]: t for t in templates}
     history = state["history"]
     theme = pick_theme(history)
+    fmt = pick_format(history)
+    tops = top_examples(history)
     cands = pick_candidates(templates, history)
     cand_ids = {c["id"] for c in cands}
     recent = [h.get("text") or f"{h.get('top', '')} / {h.get('bottom', '')}" for h in history[-15:]]
@@ -380,7 +514,11 @@ def generate(state):
     prompt = (
         "You run a viral Instagram meme page for people in their teens and twenties. "
         "Write ONE original meme.\n\n"
-        f"Theme: {theme}\n\n"
+        f"Theme: {theme}\n"
+        f"Preferred caption style this time: {FORMATS[fmt]}\n\n"
+        + ("These are this page's best-performing memes so far; aim for the same kind of "
+           "humor and structure but with a completely new situation: "
+           + json.dumps(tops) + "\n\n" if tops else "") +
         "Format: a single caption that sits ABOVE a reaction photo. Use formats like "
         "'When you ...', 'How me and bro gon be ... after ...', 'Me when ...', 'POV: ...'. "
         "Casual texting voice (words like bro, nah, fr, lowkey are fine; lowercase is fine). "
@@ -596,6 +734,7 @@ def run_post(state, slot, dry):
         "template_name": template["name"],
         "theme": meme["theme"],
         "text": meme["text"],
+        "format": classify_format(meme["text"]),
     })
     print(f"Posted {media_id}")
 
@@ -606,10 +745,13 @@ def main():
     now = now_utc()
     state = load_state()
     try:
+        if not dry:
+            import_history(state)
         plan_day(state, now)
         if not dry:
             refresh_metrics(state, now)
             cleanup_images()
+            write_insights(state)
         if dry:
             run_post(state, {}, dry=True)
             return

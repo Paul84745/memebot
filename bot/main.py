@@ -256,6 +256,39 @@ def gemini(prompt, temperature=1.0):
     raise RuntimeError("Gemini unavailable")
 
 
+def claude(prompt, temperature=1.0):
+    model = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")
+    body = {"model": model, "max_tokens": 1000, "temperature": min(temperature, 1.0),
+            "messages": [{"role": "user", "content": prompt}]}
+    headers = {"x-api-key": env("ANTHROPIC_API_KEY"), "anthropic-version": "2023-06-01",
+               "content-type": "application/json"}
+    for attempt in range(5):
+        try:
+            r = requests.post("https://api.anthropic.com/v1/messages", headers=headers,
+                              json=body, timeout=60)
+        except requests.exceptions.RequestException as e:
+            print(f"Claude network error: {e}")
+            time.sleep(5)
+            continue
+        if r.status_code in (429, 500, 502, 503, 529):
+            time.sleep(5 * (attempt + 1))
+            continue
+        if not r.ok:
+            raise RuntimeError(f"Claude API {r.status_code}: {r.text[:300]}")
+        text = "".join(b.get("text", "") for b in r.json().get("content", []))
+        m = re.search(r"\{.*\}", text, re.S)
+        if not m:
+            raise RuntimeError("Claude returned no JSON")
+        return m.group(0)
+    raise RuntimeError("Claude unavailable")
+
+
+def llm(prompt, temperature=1.0):
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        return claude(prompt, temperature)
+    return gemini(prompt, temperature)
+
+
 def moderate(meme, template_name):
     prompt = (
         "You review memes for an Instagram meme page aimed at young adults. Decide if this "
@@ -269,7 +302,7 @@ def moderate(meme, template_name):
         'Reply JSON only: {"safe": true or false, "reason": "short reason"}'
     )
     try:
-        verdict = json.loads(gemini(prompt, temperature=0.0))
+        verdict = json.loads(llm(prompt, temperature=0.0))
         if isinstance(verdict, list):
             verdict = verdict[0]
         safe = bool(verdict.get("safe")) is True
@@ -335,7 +368,7 @@ def generate(state):
         if time.time() - started > 900:
             break
         try:
-            data = json.loads(gemini(prompt))
+            data = json.loads(llm(prompt))
             if isinstance(data, list):
                 data = data[0]
             tid = str(data["template_id"])

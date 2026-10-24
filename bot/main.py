@@ -782,6 +782,18 @@ def main():
     now = now_utc()
     state = load_state()
     try:
+        _run(state, now, dry, force)
+    except Exception as e:
+        print(f"::error::{type(e).__name__}: {str(e)[:400]}")
+        raise
+    finally:
+        if not dry:
+            save_state(state)
+            commit_push("bot: state update")
+
+
+def _run(state, now, dry, force):
+    if True:
         if not dry:
             import_history(state)
         plan_day(state, now)
@@ -805,10 +817,6 @@ def main():
             print("Slot skipped after 3 failed attempts.")
             return
         run_post(state, slot, dry=False)
-    finally:
-        if not dry:
-            save_state(state)
-            commit_push("bot: state update")
 
 
 if __name__ == "__main__":

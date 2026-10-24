@@ -511,6 +511,31 @@ def moderate(meme, template_name):
         return False
 
 
+def funny_score(meme, template_name):
+    """Strict comedy judge. Returns 1-10 (0 on failure)."""
+    prompt = (
+        "You are a harsh comedy editor for a meme page with millions of followers aged 16-30. "
+        "Rate how funny and shareable this meme is. Be strict: 5 = meh, 7 = would send to a "
+        "friend, 9 = would go viral. Penalise: generic or vague situations, no clear punchline, "
+        "explaining the joke, forced slang, a reaction photo that doesn't match the feeling, "
+        "anything that sounds written by a corporation. Reward: a specific detail, an "
+        "unexpected but true turn, perfect photo/caption match.\n\n"
+        f"Reaction image: {template_name}\nCaption on image: {meme['text']}\n\n"
+        'Reply JSON only: {"score": 1-10, "why": "short"}'
+    )
+    try:
+        v = json.loads(llm(prompt, temperature=0.0))
+        if isinstance(v, list):
+            v = v[0]
+        return int(float(v.get("score", 0)))
+    except Exception as e:
+        print(f"funny rating failed: {e}")
+        return 0
+
+
+MIN_FUNNY = int(os.environ.get("MIN_FUNNY", "7"))
+
+
 def fetch_templates():
     r = requests.get("https://api.imgflip.com/get_memes", timeout=30)
     r.raise_for_status()
@@ -652,7 +677,8 @@ def generate(state):
         '"caption": "...", "hashtags": ["#..."], "mood": "...", "news_index": null}'
     )
 
-    for attempt in range(4):
+    best = None  # (score, meme, template) fallback if nothing reaches the bar
+    for attempt in range(7):
         if time.time() - started > 900:
             break
         try:
@@ -688,8 +714,17 @@ def generate(state):
         if not moderate(meme, by_id[tid]["name"]):
             print("moderator rejected, retrying")
             continue
-        return meme, by_id[tid]
-    raise RuntimeError("Could not produce a safe meme in time")
+        fs = funny_score(meme, by_id[tid]["name"])
+        print(f"funny score {fs}: {text!r}")
+        if fs >= MIN_FUNNY:
+            meme["funny"] = fs
+            return meme, by_id[tid]
+        if best is None or fs > best[0]:
+            best = (fs, meme, by_id[tid])
+    if best and best[0] >= 5:
+        best[1]["funny"] = best[0]
+        return best[1], best[2]
+    raise RuntimeError("Could not produce a safe, funny meme in time")
 
 
 # ------------------------------------------------------------------------ rendering
@@ -859,6 +894,7 @@ def run_post(state, slot, dry):
         "kind": kind,
         "music": music,
         "news": bool(meme.get("news")),
+        "funny": meme.get("funny"),
     })
     print(f"Posted {media_id}")
 

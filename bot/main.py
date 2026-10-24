@@ -569,8 +569,12 @@ def generate(state):
         "Post caption: one short line that adds to the joke, sometimes ending with a soft share "
         "hook like 'send this to your bro'. Never beg for likes or follows. "
         "Give 3 to 5 relevant hashtags.\n\n"
+        "Also pick the background music mood that makes the viewer feel the joke's emotion most "
+        "strongly. Options: " + ", ".join(reel.TRACKS) + " (chill=lazy/tired, upbeat=happy win, "
+        "bouncy=playful/funny, hype=excited/chaos, sad=disappointment/loss, wholesome=sweet/friends, "
+        "awkward=cringe/embarrassed, dramatic=tension/betrayal/dread).\n\n"
         'Return JSON only: {"template_id": "...", "text": "...", '
-        '"caption": "...", "hashtags": ["#..."]}'
+        '"caption": "...", "hashtags": ["#..."], "mood": "..."}'
     )
 
     for attempt in range(4):
@@ -600,8 +604,9 @@ def generate(state):
         if BLOCKED.search(" ".join([text, caption, *tags])):
             print("local blocklist hit, retrying")
             continue
+        mood = str(data.get("mood", "")).lower().strip()
         meme = {"template_id": tid, "text": text, "caption": caption,
-                "hashtags": tags, "theme": theme}
+                "hashtags": tags, "theme": theme, "mood": mood if mood in reel.TRACKS else None}
         if not moderate(meme, by_id[tid]["name"]):
             print("moderator rejected, retrying")
             continue
@@ -739,7 +744,7 @@ def run_post(state, slot, dry):
     meme, template = generate(state)
     print(json.dumps(meme, indent=1), "| template:", template["name"])
     img = render(meme, template)
-    music = pick_music(state["history"])
+    music = meme.get("mood") or pick_music(state["history"])
     if dry:
         OUT_DIR.mkdir(exist_ok=True)
         img.save(OUT_DIR / "preview.jpg", quality=92)

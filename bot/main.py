@@ -283,27 +283,42 @@ def claude(prompt, temperature=1.0):
     raise RuntimeError("Claude unavailable")
 
 
+GROQ_MODELS = ["llama-3.3-70b-versatile", "openai/gpt-oss-120b",
+               "openai/gpt-oss-20b", "llama-3.1-8b-instant"]
+_groq_ok = {"model": None}
+
+
 def groq(prompt, temperature=1.0):
-    model = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
-    body = {"model": model, "temperature": min(temperature, 1.0),
-            "response_format": {"type": "json_object"},
-            "messages": [{"role": "user", "content": prompt}]}
+    models = [os.environ["GROQ_MODEL"]] if os.environ.get("GROQ_MODEL") else GROQ_MODELS
+    if _groq_ok["model"]:
+        models = [_groq_ok["model"]] + [m for m in models if m != _groq_ok["model"]]
     headers = {"Authorization": f"Bearer {env('GROQ_API_KEY')}"}
-    for attempt in range(6):
-        try:
-            r = requests.post("https://api.groq.com/openai/v1/chat/completions",
-                              headers=headers, json=body, timeout=60)
-        except requests.exceptions.RequestException as e:
-            print(f"Groq network error: {e}")
-            time.sleep(5)
-            continue
-        if r.status_code in (429, 500, 502, 503):
-            time.sleep(10 * (attempt + 1))
-            continue
-        if not r.ok:
-            raise RuntimeError(f"Groq API {r.status_code}: {r.text[:300]}")
-        return r.json()["choices"][0]["message"]["content"]
-    raise RuntimeError("Groq unavailable")
+    last = None
+    for model in models:
+        body = {"model": model, "temperature": min(temperature, 1.0),
+                "response_format": {"type": "json_object"},
+                "messages": [{"role": "user", "content": prompt}]}
+        for attempt in range(4):
+            try:
+                r = requests.post("https://api.groq.com/openai/v1/chat/completions",
+                                  headers=headers, json=body, timeout=60)
+            except requests.exceptions.RequestException as e:
+                last = f"network error: {e}"
+                time.sleep(5)
+                continue
+            if r.status_code in (429, 500, 502, 503):
+                last = f"{model}: {r.status_code}"
+                time.sleep(10 * (attempt + 1))
+                continue
+            if r.status_code in (400, 403, 404):
+                last = f"{model}: {r.status_code} {r.text[:200]}"
+                print(f"Groq model {model} not usable ({r.status_code}), trying next")
+                break
+            if not r.ok:
+                raise RuntimeError(f"Groq API {r.status_code}: {r.text[:300]}")
+            _groq_ok["model"] = model
+            return r.json()["choices"][0]["message"]["content"]
+    raise RuntimeError(f"Groq unavailable ({last})")
 
 
 def llm(prompt, temperature=1.0):

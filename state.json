@@ -1,1 +1,37 @@
-{"schedule": {"date": null, "slots": []}, "history": []}
+{
+ "schedule": {
+  "date": "2026-10-24",
+  "slots": [
+   {
+    "t": "2026-10-24T08:21:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-24T11:26:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-24T17:01:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-24T19:12:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   }
+  ]
+ },
+ "history": [
+  {
+   "media_id": "18127966604280845",
+   "posted_at": "2026-10-24T19:44:47.126839+00:00",
+   "template_id": "259237855",
+   "template_name": "Laughing Leo",
+   "theme": "sports and watching games with friends",
+   "text": "when we pause halftime for pizza and miss the buzzer be like \ud83d\ude02"
+  }
+ ]
+}

@@ -27,9 +27,9 @@ OUT_DIR = ROOT / "out"
 
 GRAPH = "https://graph.instagram.com/v26.0"
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
-POSTS_PER_DAY = int(os.environ.get("POSTS_PER_DAY", "4"))
+POSTS_PER_DAY = int(os.environ.get("POSTS_PER_DAY", "5"))
 # Posting windows in UTC (covers European morning through US afternoon/evening).
-WINDOWS_UTC = [(7, 10), (11, 14), (15, 18), (19, 22)]
+WINDOWS_UTC = [(6, 9), (9, 12), (12, 15), (15, 18), (18, 22)]
 MAX_LATE = timedelta(hours=3)  # skip a slot rather than post in a burst after an outage
 
 THEMES = [

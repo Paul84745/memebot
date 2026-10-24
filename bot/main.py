@@ -283,9 +283,34 @@ def claude(prompt, temperature=1.0):
     raise RuntimeError("Claude unavailable")
 
 
+def groq(prompt, temperature=1.0):
+    model = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+    body = {"model": model, "temperature": min(temperature, 1.0),
+            "response_format": {"type": "json_object"},
+            "messages": [{"role": "user", "content": prompt}]}
+    headers = {"Authorization": f"Bearer {env('GROQ_API_KEY')}"}
+    for attempt in range(6):
+        try:
+            r = requests.post("https://api.groq.com/openai/v1/chat/completions",
+                              headers=headers, json=body, timeout=60)
+        except requests.exceptions.RequestException as e:
+            print(f"Groq network error: {e}")
+            time.sleep(5)
+            continue
+        if r.status_code in (429, 500, 502, 503):
+            time.sleep(10 * (attempt + 1))
+            continue
+        if not r.ok:
+            raise RuntimeError(f"Groq API {r.status_code}: {r.text[:300]}")
+        return r.json()["choices"][0]["message"]["content"]
+    raise RuntimeError("Groq unavailable")
+
+
 def llm(prompt, temperature=1.0):
     if os.environ.get("ANTHROPIC_API_KEY"):
         return claude(prompt, temperature)
+    if os.environ.get("GROQ_API_KEY"):
+        return groq(prompt, temperature)
     return gemini(prompt, temperature)
 
 

@@ -220,23 +220,33 @@ def refresh_metrics(state, now):
 
 def gemini(prompt, temperature=1.0):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
-    body = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": temperature, "responseMimeType": "application/json"},
-        "safetySettings": [
-            {"category": c, "threshold": "BLOCK_LOW_AND_ABOVE"}
-            for c in (
-                "HARM_CATEGORY_HARASSMENT",
-                "HARM_CATEGORY_HATE_SPEECH",
-                "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-                "HARM_CATEGORY_DANGEROUS_CONTENT",
-            )
-        ],
-    }
-    for attempt in range(4):
-        r = requests.post(url, params={"key": env("GEMINI_API_KEY")}, json=body, timeout=45)
+    safety = [
+        {"category": c, "threshold": "BLOCK_LOW_AND_ABOVE"}
+        for c in (
+            "HARM_CATEGORY_HARASSMENT",
+            "HARM_CATEGORY_HATE_SPEECH",
+            "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "HARM_CATEGORY_DANGEROUS_CONTENT",
+        )
+    ]
+    use_thinking_off = True
+    for attempt in range(5):
+        cfg = {"temperature": temperature, "responseMimeType": "application/json"}
+        if use_thinking_off:
+            cfg["thinkingConfig"] = {"thinkingBudget": 0}
+        body = {"contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": cfg, "safetySettings": safety}
+        try:
+            r = requests.post(url, params={"key": env("GEMINI_API_KEY")}, json=body, timeout=240)
+        except requests.exceptions.RequestException as e:
+            print(f"Gemini network error: {e}")
+            time.sleep(10)
+            continue
+        if r.status_code == 400 and use_thinking_off:
+            use_thinking_off = False  # this model does not accept that setting
+            continue
         if r.status_code in (429, 500, 503):
-            time.sleep(5 * (attempt + 1))
+            time.sleep(10 * (attempt + 1))
             continue
         r.raise_for_status()
         cands = r.json().get("candidates") or []
@@ -317,7 +327,7 @@ def generate(state):
     )
 
     for attempt in range(4):
-        if time.time() - started > 360:
+        if time.time() - started > 900:
             break
         try:
             data = json.loads(gemini(prompt))

@@ -1202,6 +1202,10 @@ def _run(state, now, dry, force):
             import_history(state)
         plan_day(state, now)
         global PEER_HINT
+        try:
+            peers.refresh(state, graph, env("IG_USER_ID"), now)
+        except Exception as e:
+            print(f"::warning::peer learning failed: {e}")
         PEER_HINT = peers.hint(state)
         if not dry:
             ensure_dump(state, now)

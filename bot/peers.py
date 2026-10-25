@@ -6,43 +6,47 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-SUBS = ["memes", "dankmemes", "me_irl", "wholesomememes", "funny", "memeeconomy"]
+# Lemmy is an open, Reddit-like network with a public JSON API (no login, scraping-free).
+COMMUNITIES = [("lemmy.world", "memes"), ("lemmy.world", "me_irl"), ("lemmy.world", "wholesomememes"),
+               ("lemmy.ml", "memes"), ("lemmy.world", "dankmemes"), ("lemmy.world", "programmerhumor"),
+               ("lemmy.world", "funny")]
 REFRESH_DAYS = 2
 
 
 def refresh(state, graph, ig_user_id, now):
-    """Instagram's API (Instagram Login) cannot read other accounts, so the largest open source
-    of 'what memes work right now' is used instead: this week's top posts on Reddit meme
-    communities, scored relative to each community's own average."""
+    """Instagram's API cannot read other accounts, so 'what memes work right now' comes from
+    this week's top posts in big public meme communities, scored relative to each community."""
     import requests
     st = state.setdefault("peers", {})
     last = st.get("fetched_at")
     if last and now - datetime.fromisoformat(last) < timedelta(days=REFRESH_DAYS):
         return
     posts, ok, err = [], [], ""
-    for sub in SUBS:
+    for host, name in COMMUNITIES:
         try:
-            r = requests.get(f"https://www.reddit.com/r/{sub}/top.json",
-                             params={"t": "week", "limit": 60, "raw_json": 1},
-                             headers={"User-Agent": "Mozilla/5.0 (compatible; meme-bot/1.0)"}, timeout=20)
+            r = requests.get(f"https://{host}/api/v3/post/list",
+                             params={"community_name": f"{name}@{host}" if host != "lemmy.world" or True else name,
+                                     "sort": "TopWeek", "limit": 50, "type_": "All"},
+                             headers={"User-Agent": "meme-bot/1.0"}, timeout=25)
             r.raise_for_status()
-            kids = [k["data"] for k in r.json()["data"]["children"]]
+            kids = r.json()["posts"]
         except Exception as e:
-            err = f"{sub}: {str(e)[:120]}"
+            err = f"{name}@{host}: {str(e)[:120]}"
             continue
         rows = []
         for k in kids:
-            if k.get("over_18") or not (k.get("title") or "").strip():
+            post, c = k["post"], k["counts"]
+            title = (post.get("name") or "").strip()
+            if post.get("nsfw") or not title or k.get("community", {}).get("nsfw"):
                 continue
-            rows.append({"u": sub, "er": k["score"] + 3 * k.get("num_comments", 0),
-                         "cap": k["title"][:220], "t": datetime.fromtimestamp(
-                             k["created_utc"], timezone.utc).isoformat(), "type": "IMAGE"})
+            rows.append({"u": name, "er": max(c.get("score", 0), 0) + 3 * c.get("comments", 0),
+                         "cap": title[:220], "t": post.get("published", ""), "type": "IMAGE"})
         if len(rows) >= 10:
             avg = statistics.mean(x["er"] for x in rows) or 1
             for x in rows:
                 x["rel"] = round(x["er"] / avg, 3)
             posts += rows
-            ok.append(sub)
+            ok.append(f"{name}@{host}")
     print(f"::warning::peers: {len(ok)} communities readable {ok}" + (f"; last error {err}" if err else ""))
     st["fetched_at"] = now.isoformat()
     if not posts:
@@ -98,7 +102,7 @@ def report(state):
     st = state.get("peers") or {}
     if not st.get("n"):
         return []
-    lines = [f"## Learned from this week's top meme posts (Reddit meme communities) ({st['n']} posts from {len(st['ok'])} pages)"]
+    lines = [f"## Learned from this week's top meme posts (public meme communities) ({st['n']} posts from {len(st['ok'])} pages)"]
     for title, key in (("Opening style", "by_start"), ("Caption length", "by_len")):
         d = st.get(key) or {}
         if d:

@@ -19,8 +19,8 @@
    },
    {
     "t": "2026-10-25T21:35:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "dump"
    },
    {
@@ -88,6 +88,20 @@
    "music": "bouncy",
    "news": true,
    "news_age_h": 0.4001120127777778,
+   "funny": 7
+  },
+  {
+   "media_id": "18119656603999765",
+   "posted_at": "2026-10-25T22:18:48.025266+00:00",
+   "template_id": "27813981",
+   "template_name": "Hide the Pain Harold",
+   "theme": "school and studying",
+   "text": "When the teacher says \u2018pick your own groups\u2019 and you\u2019re the only one left.",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "awkward",
+   "news": false,
+   "news_age_h": null,
    "funny": 7
   }
  ],

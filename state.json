@@ -14,8 +14,8 @@
    },
    {
     "t": "2026-10-25T14:58:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-25T21:35:00+00:00",
@@ -74,6 +74,20 @@
    "music": "chill",
    "news": false,
    "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "17920745877243183",
+   "posted_at": "2026-10-25T17:42:29.321353+00:00",
+   "template_id": "5496396",
+   "template_name": "Leonardo Dicaprio Cheers",
+   "theme": "news",
+   "text": "me when you see a 90s diet video and remember your mom's lettuce\u2011only lunch",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "bouncy",
+   "news": true,
+   "news_age_h": 0.4001120127777778,
    "funny": 7
   }
  ],
@@ -879,5 +893,347 @@
    "score": 281
   }
  ],
- "imported_done": true
+ "imported_done": true,
+ "peers": {
+  "fetched_at": "2026-10-25T17:40:23.288866+00:00",
+  "ok": [
+   "memes@lemmy.world",
+   "memes@lemmy.ml"
+  ],
+  "n": 72,
+  "best": [
+   {
+    "u": "memes",
+    "er": 954,
+    "cap": "90% of \"vote blue no matter who\" discourse on lemmy",
+    "t": "2026-10-24T05:48:50.599658Z",
+    "type": "IMAGE",
+    "rel": 5.131
+   },
+   {
+    "u": "memes",
+    "er": 788,
+    "cap": "Be like the French",
+    "t": "2026-10-21T23:40:35.748905Z",
+    "type": "IMAGE",
+    "rel": 4.238
+   },
+   {
+    "u": "memes",
+    "er": 500,
+    "cap": "Fall Bucket List",
+    "t": "2026-10-22T22:41:01.707860Z",
+    "type": "IMAGE",
+    "rel": 2.689
+   },
+   {
+    "u": "memes",
+    "er": 1492,
+    "cap": "Doing our part",
+    "t": "2026-10-19T18:31:44.191644Z",
+    "type": "IMAGE",
+    "rel": 2.622
+   },
+   {
+    "u": "memes",
+    "er": 1461,
+    "cap": "The old ways",
+    "t": "2026-10-23T13:27:32.105042Z",
+    "type": "IMAGE",
+    "rel": 2.567
+   },
+   {
+    "u": "memes",
+    "er": 1284,
+    "cap": "We're highly competitive",
+    "t": "2026-10-23T13:01:41.158965Z",
+    "type": "IMAGE",
+    "rel": 2.256
+   },
+   {
+    "u": "memes",
+    "er": 1209,
+    "cap": "C.R.E.A.M.",
+    "t": "2026-10-19T08:10:39.176925Z",
+    "type": "IMAGE",
+    "rel": 2.124
+   },
+   {
+    "u": "memes",
+    "er": 1146,
+    "cap": "We're all family",
+    "t": "2026-10-22T14:01:32.590497Z",
+    "type": "IMAGE",
+    "rel": 2.014
+   },
+   {
+    "u": "memes",
+    "er": 1122,
+    "cap": "History was made last night",
+    "t": "2026-10-18T20:37:32.599614Z",
+    "type": "IMAGE",
+    "rel": 1.971
+   },
+   {
+    "u": "memes",
+    "er": 355,
+    "cap": "It used to be a library",
+    "t": "2026-10-22T06:35:45.681941Z",
+    "type": "IMAGE",
+    "rel": 1.909
+   },
+   {
+    "u": "memes",
+    "er": 1075,
+    "cap": "The largest escape room",
+    "t": "2026-10-19T13:12:02.520684Z",
+    "type": "IMAGE",
+    "rel": 1.889
+   },
+   {
+    "u": "memes",
+    "er": 350,
+    "cap": "Show me what slimed you.",
+    "t": "2026-10-24T00:18:43.607889Z",
+    "type": "IMAGE",
+    "rel": 1.882
+   },
+   {
+    "u": "memes",
+    "er": 318,
+    "cap": "Albanian students are more French than the French",
+    "t": "2026-10-19T14:01:27.378012Z",
+    "type": "IMAGE",
+    "rel": 1.71
+   },
+   {
+    "u": "memes",
+    "er": 941,
+    "cap": "Didn\u2019t see that one coming",
+    "t": "2026-10-18T23:50:29.698986Z",
+    "type": "IMAGE",
+    "rel": 1.653
+   },
+   {
+    "u": "memes",
+    "er": 908,
+    "cap": "YOU CAN'T CHANGE THE MEME",
+    "t": "2026-10-20T02:00:11.063257Z",
+    "type": "IMAGE",
+    "rel": 1.595
+   },
+   {
+    "u": "memes",
+    "er": 902,
+    "cap": "Good luck",
+    "t": "2026-10-18T18:44:35.832282Z",
+    "type": "IMAGE",
+    "rel": 1.585
+   },
+   {
+    "u": "memes",
+    "er": 813,
+    "cap": "One hell of a hook",
+    "t": "2026-10-21T06:53:05.793118Z",
+    "type": "IMAGE",
+    "rel": 1.429
+   },
+   {
+    "u": "memes",
+    "er": 806,
+    "cap": "Four",
+    "t": "2026-10-22T14:52:24.190747Z",
+    "type": "IMAGE",
+    "rel": 1.416
+   },
+   {
+    "u": "memes",
+    "er": 794,
+    "cap": "I'll never let go..... whoops.",
+    "t": "2026-10-20T11:30:55.696325Z",
+    "type": "IMAGE",
+    "rel": 1.395
+   },
+   {
+    "u": "memes",
+    "er": 259,
+    "cap": "nOw iS NOt tHe TimE",
+    "t": "2026-10-20T07:12:12.367156Z",
+    "type": "IMAGE",
+    "rel": 1.393
+   },
+   {
+    "u": "memes",
+    "er": 767,
+    "cap": "Buy bitcoin, bro",
+    "t": "2026-10-25T06:31:51.561766Z",
+    "type": "IMAGE",
+    "rel": 1.348
+   },
+   {
+    "u": "memes",
+    "er": 763,
+    "cap": "Super /s",
+    "t": "2026-10-20T17:40:36.480408Z",
+    "type": "IMAGE",
+    "rel": 1.341
+   },
+   {
+    "u": "memes",
+    "er": 746,
+    "cap": "-----BEGIN PRIVATE KEY-----",
+    "t": "2026-10-22T03:03:01.255943Z",
+    "type": "IMAGE",
+    "rel": 1.311
+   },
+   {
+    "u": "memes",
+    "er": 717,
+    "cap": "2 sliding scales of interpretation, just how we like it.",
+    "t": "2026-10-24T22:08:33.080806Z",
+    "type": "IMAGE",
+    "rel": 1.26
+   },
+   {
+    "u": "memes",
+    "er": 222,
+    "cap": "Doing our part",
+    "t": "2026-10-19T18:31:12.668669Z",
+    "type": "IMAGE",
+    "rel": 1.194
+   }
+  ],
+  "worst": [
+   {
+    "u": "memes",
+    "er": 3,
+    "cap": "Average day in Russia:",
+    "t": "2026-10-22T17:29:20.580286Z",
+    "type": "IMAGE",
+    "rel": 0.005
+   },
+   {
+    "u": "memes",
+    "er": 12,
+    "cap": "Swarm Lord",
+    "t": "2026-10-25T13:08:41.269499Z",
+    "type": "IMAGE",
+    "rel": 0.021
+   },
+   {
+    "u": "memes",
+    "er": 15,
+    "cap": "Wink wink nudge nudge",
+    "t": "2026-10-25T14:23:19.945258Z",
+    "type": "IMAGE",
+    "rel": 0.026
+   },
+   {
+    "u": "memes",
+    "er": 24,
+    "cap": "The new Crapic Games launcher is quite bittersweet perhaps.",
+    "t": "2026-10-19T09:26:41.906181Z",
+    "type": "IMAGE",
+    "rel": 0.042
+   },
+   {
+    "u": "memes",
+    "er": 24,
+    "cap": "Narrator: \"They did, in fact, get deceived into voting and DZA went full zionazi\"",
+    "t": "2026-10-21T19:36:44.466958Z",
+    "type": "IMAGE",
+    "rel": 0.129
+   },
+   {
+    "u": "memes",
+    "er": 75,
+    "cap": "Malfoids",
+    "t": "2026-10-24T22:14:37.716780Z",
+    "type": "IMAGE",
+    "rel": 0.132
+   },
+   {
+    "u": "memes",
+    "er": 25,
+    "cap": "More stolen memes",
+    "t": "2026-10-22T01:58:09.881527Z",
+    "type": "IMAGE",
+    "rel": 0.134
+   },
+   {
+    "u": "memes",
+    "er": 81,
+    "cap": "NEIN! NEIN! .NEIN!",
+    "t": "2026-10-25T07:01:55.846644Z",
+    "type": "IMAGE",
+    "rel": 0.142
+   },
+   {
+    "u": "memes",
+    "er": 27,
+    "cap": "Me making a private key",
+    "t": "2026-10-23T14:54:20.077728Z",
+    "type": "IMAGE",
+    "rel": 0.145
+   },
+   {
+    "u": "memes",
+    "er": 27,
+    "cap": "Me making a private key",
+    "t": "2026-10-23T14:52:22.701497Z",
+    "type": "IMAGE",
+    "rel": 0.145
+   },
+   {
+    "u": "memes",
+    "er": 91,
+    "cap": "Beware of Friend Groups",
+    "t": "2026-10-22T22:23:34.496634Z",
+    "type": "IMAGE",
+    "rel": 0.16
+   },
+   {
+    "u": "memes",
+    "er": 30,
+    "cap": "trying to make friends, the potentials \ud83e\udd40:",
+    "t": "2026-10-21T20:07:27.839763Z",
+    "type": "IMAGE",
+    "rel": 0.161
+   },
+   {
+    "u": "memes",
+    "er": 104,
+    "cap": "The Two Kinds of Mustache",
+    "t": "2026-10-23T23:45:16.173558Z",
+    "type": "IMAGE",
+    "rel": 0.183
+   },
+   {
+    "u": "memes",
+    "er": 35,
+    "cap": "Scaring/Scarring The Children Since 1969",
+    "t": "2026-10-21T05:01:03.906103Z",
+    "type": "IMAGE",
+    "rel": 0.188
+   },
+   {
+    "u": "memes",
+    "er": 36,
+    "cap": "Peace is our profession",
+    "t": "2026-10-24T22:14:58.805165Z",
+    "type": "IMAGE",
+    "rel": 0.194
+   }
+  ],
+  "by_len": {
+   "very short caption": 1.01,
+   "short caption": 0.94
+  },
+  "by_start": {
+   "other opening": 1.03
+  }
+ },
+ "news_used": [
+  "It Was The \u201990s: This Viral Video Has Us All Remembering Those \u201cDiets\u201d"
+ ]
 }

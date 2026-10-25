@@ -202,8 +202,15 @@ def pick_candidates(templates, history, n=12):
     ids = {t["id"]: t for t in templates}
     best = [ids[t] for t in ranked if t in ids and t not in recent[-3:]][:4]
     pool = [t for t in templates if t["id"] not in recent and t not in best]
-    random.shuffle(pool)
-    return best + pool[: n - len(best)]
+    # Imgflip's "captions" count = how many memes people recently made with that photo, i.e.
+    # which formats are popular right now. Favour them without ignoring the long tail.
+    weights = [max(1.0, float(t.get("captions") or 1)) ** 0.5 for t in pool]
+    picked = []
+    while pool and len(picked) < n - len(best):
+        i = random.choices(range(len(pool)), weights)[0]
+        picked.append(pool.pop(i))
+        weights.pop(i)
+    return best + picked
 
 
 # ----------------------------------------------------------- learning from results
@@ -1195,10 +1202,6 @@ def _run(state, now, dry, force):
             import_history(state)
         plan_day(state, now)
         global PEER_HINT
-        try:
-            peers.refresh(state, graph, env("IG_USER_ID"), now)
-        except Exception as e:
-            print(f"::warning::peer learning failed: {e}")
         PEER_HINT = peers.hint(state)
         if not dry:
             ensure_dump(state, now)

@@ -146,7 +146,10 @@ def real_track(mood, workdir):
                      params={"q": q, "license": "cc0,pdm", "page_size": 20, "category": "music"},
                      headers={"User-Agent": "meme-bot"})
     r.raise_for_status()
-    pool = [x for x in r.json().get("results", [])
+    res = r.json().get("results", [])
+    print(f"::warning::openverse q={q!r}: {len(res)} results; sample="
+          f"{[(x.get('duration'), (x.get('url') or '')[:60]) for x in res[:3]]}")
+    pool = [x for x in res
             if (x.get("duration") or 0) >= 25000 and x.get("url")]
     random.shuffle(pool)
     for item in pool[:5]:

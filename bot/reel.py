@@ -127,30 +127,35 @@ def synth(name, out_wav, seconds=DURATION, seed=0):
 
 
 MOOD_QUERIES = {
-    "chill": ["lofi chill", "chill beat", "relaxing lofi"],
-    "upbeat": ["happy upbeat", "feel good pop", "upbeat funk"],
-    "bouncy": ["funny quirky", "playful comedy", "bouncy fun"],
-    "hype": ["energetic electronic", "edm hype", "trap beat"],
-    "sad": ["sad piano", "melancholy", "emotional sad"],
-    "wholesome": ["warm acoustic", "cheerful ukulele", "happy acoustic"],
-    "awkward": ["awkward quirky", "comedic pizzicato", "silly"],
-    "dramatic": ["dramatic cinematic", "tension suspense", "epic dramatic"],
+    "chill": ["chill", "lofi", "relax"],
+    "upbeat": ["happy", "upbeat", "funk"],
+    "bouncy": ["funny", "quirky", "playful"],
+    "hype": ["energetic", "dance", "electronic"],
+    "sad": ["sad", "piano", "melancholy"],
+    "wholesome": ["acoustic", "ukulele", "cheerful"],
+    "awkward": ["quirky", "comedy", "silly"],
+    "dramatic": ["dramatic", "cinematic", "suspense"],
 }
 
 
 def real_track(mood, workdir):
     """A real produced track (CC0/public-domain, via Openverse) trimmed to the reel length."""
     workdir = Path(workdir)
-    q = random.choice(MOOD_QUERIES.get(mood, ["upbeat"]))
-    r = requests.get("https://api.openverse.org/v1/audio/", timeout=30,
-                     params={"q": q, "license": "cc0,pdm", "page_size": 20, "category": "music"},
-                     headers={"User-Agent": "meme-bot"})
-    r.raise_for_status()
-    res = r.json().get("results", [])
-    print(f"::warning::openverse q={q!r}: {len(res)} results; sample="
-          f"{[(x.get('duration'), (x.get('url') or '')[:60]) for x in res[:3]]}")
-    pool = [x for x in res
-            if (x.get("duration") or 0) >= 25000 and x.get("url")]
+    pool = []
+    queries = MOOD_QUERIES.get(mood, ["upbeat"])[:]
+    random.shuffle(queries)
+    for q in queries + ["music"]:
+        for lic in ("cc0,pdm",):
+            r = requests.get("https://api.openverse.org/v1/audio/", timeout=30,
+                             params={"q": q, "license": lic, "page_size": 20},
+                             headers={"User-Agent": "meme-bot/1.0"})
+            res = r.json().get("results", []) if r.ok else []
+            print(f"::warning::openverse q={q!r} lic={lic} status={r.status_code}: {len(res)} results")
+            pool = [x for x in res if (x.get("duration") or 0) >= 25000 and x.get("url")]
+            if pool:
+                break
+        if pool:
+            break
     random.shuffle(pool)
     for item in pool[:5]:
         try:

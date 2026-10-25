@@ -170,7 +170,7 @@ def real_track(mood, workdir):
             print(f"::notice::real track used for {mood}: {item.get('title')!r} ({item.get('license')})")
             return out
         except Exception as e:
-            print(f"track failed ({e}), trying next")
+            print(f"::warning::track failed ({str(e)[:200]}), trying next")
     raise RuntimeError("no usable real track")
 
 
@@ -196,7 +196,7 @@ def make_reel(img, track, out_mp4, workdir):
     try:
         wav = real_track(track, workdir)
     except Exception as e:
-        print(f"real music unavailable ({e}); using built-in synth")
+        print(f"::warning::real music unavailable ({str(e)[:300]}); using built-in synth")
         synth(track, wav)
     frames = DURATION * 30
     # Text is fully readable from frame 1 (no intro); a very slow push-in keeps it alive

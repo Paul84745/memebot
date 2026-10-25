@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-10-25T12:52:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-25T14:58:00+00:00",
@@ -20,14 +20,16 @@
    {
     "t": "2026-10-25T21:35:00+00:00",
     "status": "pending",
-    "attempts": 0
+    "attempts": 0,
+    "kind": "dump"
    },
    {
     "t": "2026-10-25T22:49:00+00:00",
     "status": "pending",
     "attempts": 0
    }
-  ]
+  ],
+  "dump_checked": "2026-10-25"
  },
  "history": [
   {
@@ -58,6 +60,20 @@
    "kind": "reel",
    "music": "awkward",
    "news": false,
+   "funny": 7
+  },
+  {
+   "media_id": "18124163861317796",
+   "posted_at": "2026-10-25T14:02:21.543498+00:00",
+   "template_id": "3218037",
+   "template_name": "This Is Where I'd Put My Trophy If I Had One",
+   "theme": "procrastination",
+   "text": "when you tell yourself 'just one episode' at 10pm and end up bingeing three seasons",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "chill",
+   "news": false,
+   "news_age_h": null,
    "funny": 7
   }
  ],

@@ -127,10 +127,10 @@ def synth(name, out_wav, seconds=DURATION, seed=0):
 
 
 MOOD_QUERIES = {
-    "chill": ["chill", "lofi", "relax"],
-    "upbeat": ["happy", "upbeat", "funk"],
+    "chill": ["lofi", "chill", "lofi hip hop"],
+    "upbeat": ["happy", "upbeat", "funk", "pop"],
     "bouncy": ["funny", "quirky", "playful"],
-    "hype": ["energetic", "dance", "electronic"],
+    "hype": ["phonk", "trap", "energetic", "brazilian funk", "dance"],
     "sad": ["sad", "piano", "melancholy"],
     "wholesome": ["acoustic", "ukulele", "cheerful"],
     "awkward": ["quirky", "comedy", "silly"],

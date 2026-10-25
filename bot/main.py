@@ -23,6 +23,7 @@ from pathlib import Path
 import requests
 from PIL import Image, ImageDraw, ImageFont
 
+import peers
 import reel
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -303,6 +304,7 @@ def hour_stats(state):
             avg = statistics.mean(x["score"] for x in g) or 1
             groups.append([(parse_ts(x["t"]).hour // 2, x["score"] / avg) for x in g])
     samples = [x for g in groups for x in g]
+    samples += [tuple(x) for x in state.get("peers", {}).get("hour_samples", [])]
     if len(samples) < 15:
         return None
     by = defaultdict(list)
@@ -326,6 +328,7 @@ def write_insights(state):
         lines += ["## Meme dumps vs single memes",
                   f"- dumps: avg {statistics.mean(h['score'] for h in dumps):.1f} ({len(dumps)} posts)",
                   f"- single: avg {statistics.mean(h['score'] for h in done):.1f} ({len(done)} posts)", ""]
+    lines += peers.report(state)
     hs = hour_stats(state)
     if hs:
         best = sorted(hs, key=hs.get, reverse=True)[:3]
@@ -693,6 +696,9 @@ def news_probability(history):
 
 # ------------------------------------------------------------------------ generation
 
+PEER_HINT = ""
+
+
 def build_prompt(n, themes, fmt, tops, listing, recent, headlines):
     news_block = ""
     if headlines:
@@ -708,7 +714,7 @@ def build_prompt(n, themes, fmt, tops, listing, recent, headlines):
             "anything sad, political, violent or about a tragedy. Set \"news_index\" to that "
             "headline's number; for normal memes set it to null.\n"
             + "\n".join(f"{i}. {h['title']}{age(h)}" for i, h in enumerate(headlines)) + "\n\n")
-    return (
+    return PEER_HINT + (
         "You run a viral Instagram meme page for people in their teens and twenties. "
         f"Write {n} DIFFERENT original meme candidates. A harsh editor will post only the best "
         "one, so make every candidate a genuinely different situation and punchline.\n\n"
@@ -1188,6 +1194,12 @@ def _run(state, now, dry, force):
         if not dry:
             import_history(state)
         plan_day(state, now)
+        global PEER_HINT
+        try:
+            peers.refresh(state, graph, env("IG_USER_ID"), now)
+        except Exception as e:
+            print(f"::warning::peer learning failed: {e}")
+        PEER_HINT = peers.hint(state)
         if not dry:
             ensure_dump(state, now)
             refresh_metrics(state, now)

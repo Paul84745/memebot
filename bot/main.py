@@ -59,8 +59,8 @@ EXCLUDE_TEMPLATES = re.compile(
 # Last-resort local filter on top of Gemini's safety settings and the moderator pass.
 BLOCKED = re.compile(
     r"nazi|hitler|rape|suicide|kill (my|your)self|porn|nsfw|n[i1]gg|f[a@]gg?ot|retard|"
-    r"trump|biden|putin|election|abortion|gaza|israel|ukraine|palestin|isis|terror|"
-    r"cocaine|heroin|sex|nude|boob|dick|cum\b|fuck|shit|bitch",
+    r"trump|biden|putin|abortion|gaza|israel|ukraine|palestin|isis|terror|"
+    r"cocaine|heroin|nude|boob|dick|cum\b|cock\b|pussy|n[i1]gg|chink|spic|kike",
     re.I,
 )
 
@@ -544,11 +544,14 @@ def moderate_many(memes, by_id):
         for i, m in enumerate(memes))
     prompt = (
         "You review memes for an Instagram meme page aimed at young adults. For EACH meme decide "
-        "if it could realistically get the account restricted. Mark it UNSAFE only if it clearly "
-        "contains: sexual content or innuendo, hate or stereotypes about a group, politics or "
-        "religion, violence or self-harm, drugs, slurs or strong profanity, body-shaming, or a "
-        "real named person. Everyday relatable humor, mild slang (bro, nah, fr), self-deprecating "
-        "jokes and friendly teasing are SAFE.\n\n" + listing + "\n\n"
+        "if it would realistically get the account BANNED (not merely edgy). The page is edgy on "
+        "purpose, so SAFE includes: dark humor, crude or gross-out jokes, sexual innuendo and "
+        "double meanings, mild profanity, cringe, roasting yourself or generic types of people. "
+        "Mark UNSAFE only if it clearly contains: slurs; jokes demeaning or stereotyping a group "
+        "(race, ethnicity, religion, nationality, sexuality, gender identity, disability); explicit "
+        "sexual description or nudity; mocking the looks, weight or body of a real identifiable "
+        "person; a real person's name or political candidate/party; glorified violence, self-harm "
+        "or hard drugs; sexual content involving minors; or a tragedy with real victims.\n\n" + listing + "\n\n"
         'Reply JSON only: {"results": [{"i": 0, "safe": true, "reason": "short"}, ...]} '
         "with one entry per meme."
     )
@@ -760,12 +763,18 @@ def build_prompt(n, themes, fmt, tops, listing, recent, headlines):
         "the punchline; use different photos across candidates:\n"
         f"{listing}\n\n"
         "Do not reuse or paraphrase these recent jokes: " + json.dumps(recent) + "\n\n"
-        "Hard safety rules (an account ban is the worst outcome):\n"
-        "- No sexual jokes or innuendo, no body-shaming, no insults about anyone's looks.\n"
-        "- No politics, religion, race, ethnicity, nationality, gender, sexuality, disability "
-        "or tragedy jokes. No insults aimed at groups.\n"
-        "- No nudity, drugs, violence, self-harm, profanity, real people's names or brand attacks.\n"
-        "- Friendly, self-deprecating, wholesome-edgy humor only.\n\n"
+        "Edge level: this page is EDGY. Dark humor, crude and gross-out humor, sexual innuendo "
+        "and double meanings (suggestive but never explicit), mild profanity (damn, hell, ass, shit), "
+        "cringe, taboo-feeling observations, roasting yourself, your bro, your family and everyday "
+        "types of people (the gym guy, the group chat lurker) are all welcome. Push close to the "
+        "line: the best memes make people say 'bro WHAT' and then share it. Humor about "
+        "relationships, hookups and bodies is fine when it is about 'you', 'me' or a situation.\n"
+        "Hard lines (these get accounts banned, never cross them): no slurs; no jokes that "
+        "demean or stereotype a group by race, ethnicity, religion, nationality, sexuality, gender "
+        "identity or disability; no explicit sexual description or nudity; no mocking the looks, "
+        "weight or body of a real, identifiable person; no real people's names (celebrities, "
+        "politicians, strangers) and no political candidates or parties; no glorifying violence, "
+        "self-harm or hard drugs; nothing involving minors and sex; no tragedies with real victims.\n\n"
         "Post caption: one short line that adds to the joke, sometimes ending with a soft share "
         "hook like 'send this to your bro'. Never beg for likes or follows. "
         "Give 3 to 5 relevant hashtags.\n\n"

@@ -11,6 +11,38 @@ COMMUNITIES = [("lemmy.world", "memes"), ("lemmy.world", "me_irl"), ("lemmy.worl
                ("lemmy.ml", "memes"), ("lemmy.world", "dankmemes"), ("lemmy.world", "programmerhumor"),
                ("lemmy.world", "funny")]
 REFRESH_DAYS = 2
+REDDIT_SUBS = ["memes", "dankmemes", "me_irl", "wholesomememes", "funny", "memeeconomy"]
+
+
+def _reddit_rows():
+    """Official Reddit API (free app credentials). Returns {sub: [rows]} or {} if no keys."""
+    import os
+    import requests
+    cid, secret = os.environ.get("REDDIT_CLIENT_ID"), os.environ.get("REDDIT_CLIENT_SECRET")
+    if not (cid and secret):
+        return {}
+    ua = "meme-bot/1.0 by plqmemes"
+    tok = requests.post("https://www.reddit.com/api/v1/access_token", auth=(cid, secret),
+                        data={"grant_type": "client_credentials"}, headers={"User-Agent": ua}, timeout=25)
+    tok.raise_for_status()
+    token = tok.json()["access_token"]
+    out = {}
+    for sub in REDDIT_SUBS:
+        try:
+            r = requests.get(f"https://oauth.reddit.com/r/{sub}/top", params={"t": "week", "limit": 60, "raw_json": 1},
+                             headers={"User-Agent": ua, "Authorization": f"bearer {token}"}, timeout=25)
+            r.raise_for_status()
+            rows = []
+            for k in r.json()["data"]["children"]:
+                d = k["data"]
+                if d.get("over_18") or not (d.get("title") or "").strip():
+                    continue
+                rows.append({"u": sub, "er": d["score"] + 3 * d.get("num_comments", 0),
+                             "cap": d["title"][:220], "t": "", "type": "IMAGE"})
+            out[f"r/{sub}"] = rows
+        except Exception as e:
+            print(f"::warning::reddit r/{sub} failed: {str(e)[:150]}")
+    return out
 
 
 def refresh(state, graph, ig_user_id, now):
@@ -47,6 +79,16 @@ def refresh(state, graph, ig_user_id, now):
                 x["rel"] = round(x["er"] / avg, 3)
             posts += rows
             ok.append(f"{name}@{host}")
+    try:
+        for name, rows in _reddit_rows().items():
+            if len(rows) >= 10:
+                avg = statistics.mean(x["er"] for x in rows) or 1
+                for x in rows:
+                    x["rel"] = round(x["er"] / avg, 3)
+                posts += rows
+                ok.append(name)
+    except Exception as e:
+        err = f"reddit: {str(e)[:150]}"
     print(f"::warning::peers: {len(ok)} communities readable {ok}" + (f"; last error {err}" if err else ""))
     st["fetched_at"] = now.isoformat()
     if not posts:

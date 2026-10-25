@@ -220,6 +220,7 @@ FORMATS = {
     "me_when": "starts with 'me when ...' or 'me ...'",
     "how_me_bro": "starts with 'how me and bro gon be ...'",
     "pov": "starts with 'POV: ...'",
+    "how_x": "starts with 'How [someone] looks/feels when/after ...' with an exact time, number or detail",
     "other": "any other casual caption style",
 }
 
@@ -230,6 +231,8 @@ def classify_format(text):
         return "when_you"
     if t.startswith("how me") or t.startswith("how we"):
         return "how_me_bro"
+    if t.startswith("how "):
+        return "how_x"
     if t.startswith("pov"):
         return "pov"
     if t.startswith("me ") or t.startswith("me,"):
@@ -909,7 +912,7 @@ def wrap(text, font, max_w):
     return lines
 
 
-def render(meme, template, dark=None):
+def render(meme, template, dark=None, snap_ok=False):
     """Caption bar on top, reaction photo underneath (the style of the page).
     Big text so it reads instantly on a phone in the first second."""
     raw = requests.get(template["url"], timeout=30).content
@@ -917,6 +920,8 @@ def render(meme, template, dark=None):
     W = 1080
     photo = photo.resize((W, round(photo.height * W / photo.width)), Image.LANCZOS)
 
+    if snap_ok and len(meme["text"]) <= 75 and random.random() < 0.3:
+        return _snap_render(meme["text"], photo)
     if dark is None:
         dark = random.random() < 0.35
     bg, fg = ((0, 0, 0), (255, 255, 255)) if dark else ((255, 255, 255), (0, 0, 0))
@@ -945,6 +950,34 @@ def render(meme, template, dark=None):
         y += lh
     canvas.paste(photo, (0, bar_h))
     return canvas
+
+
+def _snap_render(text, photo):
+    """Snapchat-style: white text on a dark translucent band across the photo."""
+    W = 1080
+    if photo.height > 1350:
+        top = (photo.height - 1350) // 2
+        photo = photo.crop((0, top, W, top + 1350))
+    size = 56
+    while True:
+        font = load_font(size, bold=False)
+        lines = wrap(text, font, W - 120)
+        if len(lines) <= 3 or size <= 36:
+            break
+        size -= 4
+    lh = round(size * 1.3)
+    band_h = len(lines) * lh + 50
+    y0 = round(photo.height * 0.62) - band_h // 2
+    over = Image.new("RGBA", photo.size, (0, 0, 0, 0))
+    ImageDraw.Draw(over).rectangle([0, y0, W, y0 + band_h], fill=(0, 0, 0, 165))
+    img = Image.alpha_composite(photo.convert("RGBA"), over).convert("RGB")
+    d = ImageDraw.Draw(img)
+    y = y0 + 25
+    for line in lines:
+        w = d.textlength(line, font=font)
+        d.text(((W - w) / 2, y), line, font=font, fill=(255, 255, 255))
+        y += lh
+    return img
 
 
 def to_portrait(img, dark):
@@ -1136,7 +1169,7 @@ def run_post(state, slot, dry):
         raise RuntimeError("Could not produce a safe, funny meme in time")
     meme, template = items[0]
     print(json.dumps(meme, indent=1), "| template:", template["name"])
-    img = render(meme, template)
+    img = render(meme, template, snap_ok=True)
     music = meme.get("mood") or pick_music(state["history"])
     if dry:
         OUT_DIR.mkdir(exist_ok=True)
@@ -1206,7 +1239,7 @@ def _run(state, now, dry, force):
             peers.refresh(state, graph, env("IG_USER_ID"), now)
         except Exception as e:
             print(f"::warning::peer learning failed: {e}")
-        PEER_HINT = peers.hint(state)
+        PEER_HINT = (Path(__file__).with_name("style_guide.txt").read_text() + "\n\n") + peers.hint(state)
         if not dry:
             ensure_dump(state, now)
             refresh_metrics(state, now)

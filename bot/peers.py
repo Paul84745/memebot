@@ -6,70 +6,62 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-DEFAULT_PEERS = ["9gag", "memezar", "sarcasm_only", "pubity", "ladbible", "betches",
-                 "tank.sinatra", "funnyhumor", "memes", "dankmemes"]
-REFRESH_DAYS = 3
-
-
-def usernames():
-    f = Path(__file__).with_name("peers.txt")
-    if f.exists():
-        names = [x.strip().lstrip("@") for x in f.read_text().splitlines()
-                 if x.strip() and not x.startswith("#")]
-        if names:
-            return names
-    return DEFAULT_PEERS
+SUBS = ["memes", "dankmemes", "me_irl", "wholesomememes", "funny", "memeeconomy"]
+REFRESH_DAYS = 2
 
 
 def refresh(state, graph, ig_user_id, now):
+    """Instagram's API (Instagram Login) cannot read other accounts, so the largest open source
+    of 'what memes work right now' is used instead: this week's top posts on Reddit meme
+    communities, scored relative to each community's own average."""
+    import requests
     st = state.setdefault("peers", {})
     last = st.get("fetched_at")
     if last and now - datetime.fromisoformat(last) < timedelta(days=REFRESH_DAYS):
         return
-    posts, ok, failed = [], [], []
-    for u in usernames():
+    posts, ok, err = [], [], ""
+    for sub in SUBS:
         try:
-            data = graph("GET", ig_user_id, fields=(
-                f"business_discovery.username({u})"
-                "{followers_count,media.limit(40){caption,like_count,comments_count,timestamp,media_type}}"))
-            bd = data["business_discovery"]
-            foll = max(bd.get("followers_count") or 1, 1)
-            media = bd.get("media", {}).get("data", [])
+            r = requests.get(f"https://www.reddit.com/r/{sub}/top.json",
+                             params={"t": "week", "limit": 60, "raw_json": 1},
+                             headers={"User-Agent": "Mozilla/5.0 (compatible; meme-bot/1.0)"}, timeout=20)
+            r.raise_for_status()
+            kids = [k["data"] for k in r.json()["data"]["children"]]
         except Exception as e:
-            failed.append(u)
-            err = str(e)[:160]
+            err = f"{sub}: {str(e)[:120]}"
             continue
         rows = []
-        for m in media:
-            likes = m.get("like_count")
-            if likes is None:
+        for k in kids:
+            if k.get("over_18") or not (k.get("title") or "").strip():
                 continue
-            er = (likes + 3 * (m.get("comments_count") or 0)) / foll * 1000
-            rows.append({"u": u, "er": er, "cap": (m.get("caption") or "")[:220],
-                         "t": m["timestamp"], "type": m.get("media_type")})
-        if len(rows) >= 5:
-            avg = statistics.mean(r["er"] for r in rows) or 1
-            for r in rows:
-                r["rel"] = round(r["er"] / avg, 3)
+            rows.append({"u": sub, "er": k["score"] + 3 * k.get("num_comments", 0),
+                         "cap": k["title"][:220], "t": datetime.fromtimestamp(
+                             k["created_utc"], timezone.utc).isoformat(), "type": "IMAGE"})
+        if len(rows) >= 10:
+            avg = statistics.mean(x["er"] for x in rows) or 1
+            for x in rows:
+                x["rel"] = round(x["er"] / avg, 3)
             posts += rows
-            ok.append(u)
-    print(f"::warning::peers: {len(ok)} accounts readable {ok}, {len(failed)} failed "
-          f"{failed[:6]}{' last error: ' + err if failed else ''}")
+            ok.append(sub)
+    print(f"::warning::peers: {len(ok)} communities readable {ok}" + (f"; last error {err}" if err else ""))
+    st["fetched_at"] = now.isoformat()
     if not posts:
-        st["fetched_at"] = now.isoformat()
-        st["ok"] = []
         return
     st.update({
-        "fetched_at": now.isoformat(), "ok": ok, "n": len(posts),
-        "hour_samples": [(datetime.fromisoformat(p["t"].replace("+0000", "+00:00")).hour // 2, p["rel"])
-                         for p in posts],
+        "ok": ok, "n": len(posts),
         "best": sorted(posts, key=lambda p: p["rel"], reverse=True)[:25],
         "worst": sorted(posts, key=lambda p: p["rel"])[:15],
-        "by_type": {k: round(statistics.mean(p["rel"] for p in posts if p["type"] == k), 2)
-                    for k in {p["type"] for p in posts}},
-        "by_tags": _bucket(posts, lambda p: _tagbucket(len(re.findall(r"#\w+", p["cap"])))),
         "by_len": _bucket(posts, lambda p: _lenbucket(len(p["cap"]))),
+        "by_start": _bucket(posts, lambda p: _startbucket(p["cap"])),
     })
+
+
+def _startbucket(cap):
+    c = cap.lower().strip()
+    for k in ("when ", "me ", "pov", "how ", "nobody", "my "):
+        if c.startswith(k):
+            return f"starts with '{k.strip()}'"
+    return "other opening"
 
 
 def _tagbucket(n):
@@ -94,11 +86,11 @@ def hint(state):
         return ""
     best = [p["cap"].replace("\n", " ")[:120] for p in st["best"][:8] if p["cap"].strip()]
     worst = [p["cap"].replace("\n", " ")[:120] for p in st["worst"][:5] if p["cap"].strip()]
-    s = "LESSONS FROM OTHER BIG MEME PAGES (study the style, never copy; write something new):\n"
+    s = "LESSONS FROM THIS WEEK'S TOP MEMES ACROSS THE INTERNET (study the style, never copy; write something new):\n"
     if best:
-        s += "Their top-performing post captions: " + " | ".join(best) + "\n"
+        s += "Top-performing meme titles: " + " | ".join(best) + "\n"
     if worst:
-        s += "Their worst-performing post captions (avoid this kind): " + " | ".join(worst) + "\n"
+        s += "Worst-performing meme titles (avoid this kind): " + " | ".join(worst) + "\n"
     return s + "\n"
 
 
@@ -106,8 +98,8 @@ def report(state):
     st = state.get("peers") or {}
     if not st.get("n"):
         return []
-    lines = [f"## Learned from other meme pages ({st['n']} posts from {len(st['ok'])} pages)"]
-    for title, key in (("Post type", "by_type"), ("Hashtags", "by_tags"), ("Caption length", "by_len")):
+    lines = [f"## Learned from this week's top meme posts (Reddit meme communities) ({st['n']} posts from {len(st['ok'])} pages)"]
+    for title, key in (("Opening style", "by_start"), ("Caption length", "by_len")):
         d = st.get(key) or {}
         if d:
             lines.append(f"- {title}: " + ", ".join(f"{k} x{v}" for k, v in

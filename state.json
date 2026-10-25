@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-10-25T09:45:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-25T12:52:00+00:00",
@@ -46,6 +46,19 @@
    "theme": "gaming",
    "text": "me when the squad says 'just one more round' at 2am and you have a math test tomorrow",
    "format": "me_when"
+  },
+  {
+   "media_id": "18121523920968961",
+   "posted_at": "2026-10-25T09:51:33.921763+00:00",
+   "template_id": "61585",
+   "template_name": "Bad Luck Brian",
+   "theme": "friends and group chats",
+   "text": "me when the group chat has 200 msgs and the plan is still \u2018we\u2019ll see\u2019",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "awkward",
+   "news": false,
+   "funny": 7
   }
  ],
  "imported": [

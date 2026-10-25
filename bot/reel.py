@@ -4,6 +4,7 @@ The music is synthesised here from scratch (no samples, no copyrighted material)
 never trigger a copyright claim or get the account muted/banned. Several moods are available
 and the bot learns which one performs best.
 """
+import os
 import subprocess
 import wave
 from pathlib import Path
@@ -12,7 +13,7 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 SR = 44100
-DURATION = 10  # seconds; short loops get replayed, which boosts watch time
+DURATION = int(os.environ.get("REEL_SECONDS", "7"))  # short loops get rewatched; rewatches count as views
 
 # name -> (bpm, root MIDI note, chord offsets per bar, scale for the melody, style)
 TRACKS = {
@@ -111,7 +112,7 @@ def synth(name, out_wav, seconds=DURATION, seed=0):
     # gentle low-pass for a warmer sound, then fades so the loop restarts cleanly
     k = np.ones(4) / 4
     buf = np.convolve(buf, k, mode="same")
-    fade = int(SR * 0.4)
+    fade = int(SR * 0.25)
     buf[:int(SR * 0.02)] *= np.linspace(0, 1, int(SR * 0.02))
     buf[-fade:] *= np.linspace(1, 0, fade)
     peak = np.max(np.abs(buf)) or 1
@@ -144,7 +145,9 @@ def make_reel(img, track, out_mp4, workdir):
     vertical_frame(img).save(frame)
     synth(track, wav)
     frames = DURATION * 30
-    vf = (f"zoompan=z='min(1+0.0007*on,1.12)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+    # Text is fully readable from frame 1 (no intro); a very slow push-in keeps it alive
+    # without a visible jump when the loop restarts.
+    vf = (f"zoompan=z='min(1+0.0002*on,1.04)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
           f":d={frames}:s=1080x1920:fps=30,format=yuv420p")
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", str(frame), "-i", str(wav),
            "-vf", vf, "-t", str(DURATION), "-c:v", "libx264", "-preset", "veryfast", "-crf", "24",

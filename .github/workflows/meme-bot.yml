@@ -13,6 +13,10 @@ on:
         description: "Post one meme right now, ignoring the schedule"
         type: boolean
         default: false
+      dump:
+        description: "Make a carousel meme dump instead of a single meme"
+        type: boolean
+        default: false
 
 concurrency:
   group: meme-bot
@@ -47,6 +51,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
           FORCE: ${{ inputs.force && '1' || '0' }}
+          DUMP: ${{ inputs.dump && '1' || '0' }}
         run: python bot/main.py
 
       - uses: actions/upload-artifact@v4

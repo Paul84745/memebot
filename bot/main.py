@@ -13,8 +13,9 @@ import subprocess
 import sys
 import tempfile
 import xml.etree.ElementTree as ET
+from email.utils import parsedate_to_datetime
 import time
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from io import BytesIO
 from pathlib import Path
@@ -161,12 +162,22 @@ def next_due_slot(state, now):
 # ------------------------------------------------------------------------- learning
 
 def score_of(m):
-    return (m.get("like_count", 0) + 3 * m.get("comments_count", 0)
-            + 5 * m.get("shares", 0) + 4 * m.get("saved", 0))
+    """Engagement per 1,000 people reached, with DM sends weighted heaviest: sends are what
+    push a post to non-followers. Returns None when reach is unknown (kept out of learning,
+    so every learned score is on the same scale)."""
+    reach = m.get("reach")
+    if not reach:
+        return None
+    raw = (8 * m.get("shares", 0) + 3 * m.get("saved", 0)
+           + 2 * m.get("comments_count", 0) + m.get("like_count", 0))
+    return round(1000 * raw / max(reach, 100), 1)
 
 
-def finalized(history):
-    return [h for h in history if h.get("final") and h.get("score") is not None]
+def finalized(history, kinds=("reel", "image", None)):
+    """Measured single-meme posts. Carousel dumps are tracked separately so they don't skew
+    what the bot learns about individual jokes, photos and posting times."""
+    return [h for h in history if h.get("final") and h.get("score") is not None
+            and h.get("kind") in kinds]
 
 
 def pick_theme(history):
@@ -181,7 +192,7 @@ def pick_theme(history):
     return random.choices(THEMES, weights)[0]
 
 
-def pick_candidates(templates, history):
+def pick_candidates(templates, history, n=12):
     recent = [h["template_id"] for h in history[-8:]]
     by_tpl = defaultdict(list)
     for h in finalized(history):
@@ -191,7 +202,7 @@ def pick_candidates(templates, history):
     best = [ids[t] for t in ranked if t in ids and t not in recent[-3:]][:4]
     pool = [t for t in templates if t["id"] not in recent and t not in best]
     random.shuffle(pool)
-    return best + pool[: 12 - len(best)]
+    return best + pool[: n - len(best)]
 
 
 # ----------------------------------------------------------- learning from results
@@ -304,7 +315,17 @@ def hour_stats(state):
 def write_insights(state):
     done = finalized(state["history"])
     lines = ["# What the bot has learned", "",
-             f"Posts measured so far: {len(done)} (plus {len(state.get('imported', []))} older page posts)", ""]
+             f"Posts measured so far: {len(done)} (plus {len(state.get('imported', []))} older page posts)", "",
+             "Score = engagement per 1,000 people reached, with DM sends counted 8x a like.", ""]
+    sp = [h["sends_per_1k"] for h in done if h.get("sends_per_1k") is not None]
+    if sp:
+        lines += ["## Sends", f"- average: {statistics.mean(sp):.2f} sends per 1,000 reached "
+                  f"(last 10 posts: {statistics.mean(sp[-10:]):.2f})", ""]
+    dumps = finalized(state["history"], kinds=("carousel",))
+    if dumps and done:
+        lines += ["## Meme dumps vs single memes",
+                  f"- dumps: avg {statistics.mean(h['score'] for h in dumps):.1f} ({len(dumps)} posts)",
+                  f"- single: avg {statistics.mean(h['score'] for h in done):.1f} ({len(done)} posts)", ""]
     hs = hour_stats(state)
     if hs:
         best = sorted(hs, key=hs.get, reverse=True)[:3]
@@ -345,12 +366,16 @@ def fetch_metrics(media_id):
     fields = graph("GET", media_id, fields="like_count,comments_count")
     m["like_count"] = fields.get("like_count", 0)
     m["comments_count"] = fields.get("comments_count", 0)
-    try:
-        ins = graph("GET", f"{media_id}/insights", metric="reach,shares,saved")
-        for d in ins.get("data", []):
-            m[d["name"]] = d["values"][0]["value"]
-    except Exception as e:  # insights are optional
-        print(f"insights unavailable for {media_id}: {e}")
+    for metrics in ("reach,shares,saved,views", "reach,shares,saved"):
+        try:
+            ins = graph("GET", f"{media_id}/insights", metric=metrics)
+            for d in ins.get("data", []):
+                m[d["name"]] = d["values"][0]["value"]
+            break
+        except Exception as e:  # insights are optional
+            print(f"insights ({metrics}) unavailable for {media_id}: {e}")
+    if m.get("reach"):
+        m["sends_per_1k"] = round(1000 * m.get("shares", 0) / m["reach"], 2)
     return m
 
 
@@ -413,9 +438,9 @@ def gemini(prompt, temperature=1.0):
     raise RuntimeError("Gemini unavailable")
 
 
-def claude(prompt, temperature=1.0):
+def claude(prompt, temperature=1.0, max_tokens=1000):
     model = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")
-    body = {"model": model, "max_tokens": 1000, "temperature": min(temperature, 1.0),
+    body = {"model": model, "max_tokens": max_tokens, "temperature": min(temperature, 1.0),
             "messages": [{"role": "user", "content": prompt}]}
     headers = {"x-api-key": env("ANTHROPIC_API_KEY"), "anthropic-version": "2023-06-01",
                "content-type": "application/json"}
@@ -433,7 +458,7 @@ def claude(prompt, temperature=1.0):
         if not r.ok:
             raise RuntimeError(f"Claude API {r.status_code}: {r.text[:300]}")
         text = "".join(b.get("text", "") for b in r.json().get("content", []))
-        m = re.search(r"\{.*\}", text, re.S)
+        m = re.search(r"\{.*\}|\[.*\]", text, re.S)
         if not m:
             raise RuntimeError("Claude returned no JSON")
         return m.group(0)
@@ -478,62 +503,95 @@ def groq(prompt, temperature=1.0):
     raise RuntimeError(f"Groq unavailable ({last})")
 
 
-def llm(prompt, temperature=1.0):
+def llm(prompt, temperature=1.0, max_tokens=1000):
     if os.environ.get("ANTHROPIC_API_KEY"):
-        return claude(prompt, temperature)
+        return claude(prompt, temperature, max_tokens)
     if os.environ.get("GROQ_API_KEY"):
         return groq(prompt, temperature)
     return gemini(prompt, temperature)
 
 
-def moderate(meme, template_name):
-    prompt = (
-        "You review memes for an Instagram meme page aimed at young adults. Decide if this "
-        "meme could realistically get the account restricted. Mark it UNSAFE only if it "
-        "clearly contains: sexual content or innuendo, hate or stereotypes about a group, "
-        "politics or religion, violence or self-harm, drugs, slurs or strong profanity, "
-        "body-shaming, or a real named person. Everyday relatable humor, mild slang "
-        "(bro, nah, fr), self-deprecating jokes and friendly teasing are SAFE.\n\n"
-        f"Reaction image: {template_name}\nCaption on image: {meme['text']}\n"
-        f"Post caption: {meme['caption']}\nHashtags: {' '.join(meme['hashtags'])}\n\n"
-        'Reply JSON only: {"safe": true or false, "reason": "short reason"}'
-    )
-    try:
-        verdict = json.loads(llm(prompt, temperature=0.0))
-        if isinstance(verdict, list):
-            verdict = verdict[0]
-        safe = bool(verdict.get("safe")) is True
-        if not safe:
-            print(f"moderator rejected: {meme['text']!r} -> {verdict.get('reason')}")
-        return safe
-    except Exception as e:
-        print(f"moderation failed, treating as unsafe: {e}")
-        return False
+def _items(raw, key):
+    """Parse an LLM JSON reply into a list of dicts, accepting {key: [...]}, [...] or {...}."""
+    data = json.loads(raw)
+    if isinstance(data, dict):
+        data = data.get(key, data)
+    if isinstance(data, dict):
+        data = [data]
+    return [d for d in data if isinstance(d, dict)] if isinstance(data, list) else []
 
 
-def funny_score(meme, template_name):
-    """Strict comedy judge. Returns 1-10 (0 on failure)."""
+def moderate_many(memes, by_id):
+    """One safety review for a batch of memes. Returns a list of booleans (failure = unsafe)."""
+    if not memes:
+        return []
+    listing = "\n".join(
+        f"{i}. image: {by_id[m['template_id']]['name']} | caption on image: {m['text']} | "
+        f"post caption: {m['caption']} | hashtags: {' '.join(m['hashtags'])}"
+        for i, m in enumerate(memes))
     prompt = (
-        "You are a harsh comedy editor for a meme page with millions of followers aged 16-30. "
-        "Rate how funny and shareable this meme is. Be strict: 5 = meh, 7 = would send to a "
-        "friend, 9 = would go viral. Penalise: generic or vague situations, no clear punchline, "
-        "explaining the joke, forced slang, a reaction photo that doesn't match the feeling, "
-        "anything that sounds written by a corporation. Reward: a specific detail, an "
-        "unexpected but true turn, perfect photo/caption match.\n\n"
-        f"Reaction image: {template_name}\nCaption on image: {meme['text']}\n\n"
-        'Reply JSON only: {"score": 1-10, "why": "short"}'
+        "You review memes for an Instagram meme page aimed at young adults. For EACH meme decide "
+        "if it could realistically get the account restricted. Mark it UNSAFE only if it clearly "
+        "contains: sexual content or innuendo, hate or stereotypes about a group, politics or "
+        "religion, violence or self-harm, drugs, slurs or strong profanity, body-shaming, or a "
+        "real named person. Everyday relatable humor, mild slang (bro, nah, fr), self-deprecating "
+        "jokes and friendly teasing are SAFE.\n\n" + listing + "\n\n"
+        'Reply JSON only: {"results": [{"i": 0, "safe": true, "reason": "short"}, ...]} '
+        "with one entry per meme."
     )
+    verdict = [False] * len(memes)
     try:
-        v = json.loads(llm(prompt, temperature=0.0))
-        if isinstance(v, list):
-            v = v[0]
-        return int(float(v.get("score", 0)))
+        for it in _items(llm(prompt, temperature=0.0, max_tokens=2500), "results"):
+            i = int(it.get("i", -1))
+            if 0 <= i < len(memes):
+                verdict[i] = it.get("safe") is True
+                if not verdict[i]:
+                    print(f"moderator rejected: {memes[i]['text']!r} -> {it.get('reason')}")
     except Exception as e:
-        print(f"funny rating failed: {e}")
-        return 0
+        print(f"moderation failed, treating batch as unsafe: {e}")
+    return verdict
+
+
+def judge(memes, by_id):
+    """Harsh comparative comedy judge. Sets meme['funny'] (1-10) and meme['send'] (bool)."""
+    listing = "\n".join(f"{i}. [photo: {by_id[m['template_id']]['name']}] {m['text']}"
+                        for i, m in enumerate(memes))
+    prompt = (
+        "You are the harshest comedy editor of a meme page with millions of followers aged 16-30. "
+        "Below are candidate memes (a caption above a reaction photo). Only the best get posted.\n\n"
+        "For each one ask: would a stranger scrolling past stop, laugh out loud, and SEND it to a "
+        "friend in DMs ('this is literally you')? Score 1-10: 5 = meh, 7 = would send to a friend, "
+        "9 = would go viral. Hard cap at 4 if the joke needs explaining, the situation is generic "
+        "or vague, there is no clear punchline, the slang is forced, it sounds corporate, or the "
+        "photo's mood doesn't match the feeling. Reward a hyper-specific detail everyone has "
+        "lived, an unexpected but true twist, and a perfect photo/caption match. Most candidates "
+        "should score below 7; be honest, not generous.\n\n" + listing + "\n\n"
+        'Reply JSON only: {"scores": [{"i": 0, "score": 6, "send": false}, ...]} '
+        "with one entry per candidate. \"send\" = true only if you would personally DM it to a friend."
+    )
+    for m in memes:
+        m["funny"], m["send"] = 0, False
+    try:
+        for it in _items(llm(prompt, temperature=0.0, max_tokens=3000), "scores"):
+            i = int(it.get("i", -1))
+            if 0 <= i < len(memes):
+                memes[i]["funny"] = int(round(float(it.get("score", 0))))
+                memes[i]["send"] = it.get("send") is True
+    except Exception as e:
+        print(f"judging failed: {e}")
+
+
+def rank(m):
+    """Funniness first; small boosts for 'would DM it' and for very fresh news."""
+    bonus = 0.5 if m.get("send") else 0.0
+    age = m.get("news_age_h")
+    if age is not None:
+        bonus += 1.0 if age <= 6 else 0.5 if age <= 12 else 0.0
+    return m.get("funny", 0) + bonus
 
 
 MIN_FUNNY = int(os.environ.get("MIN_FUNNY", "7"))
+CANDIDATES = int(os.environ.get("CANDIDATES", "12"))
 
 
 def fetch_templates():
@@ -559,6 +617,8 @@ NEWS_FEEDS = [
     "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
     "https://www.reddit.com/r/nottheonion/.rss",
 ]
+NEWS_MAX_AGE_H = float(os.environ.get("NEWS_MAX_AGE_H", "24"))
+ATOM = "{http://www.w3.org/2005/Atom}"
 # News is only used when it is light-hearted; anything heavy is dropped before the AI sees it.
 NEWS_AVOID = re.compile(
     r"war|kill|dead|death|die[sd]?\b|murder|attack|shoot|bomb|missile|troops|army|terror|"
@@ -571,8 +631,25 @@ NEWS_AVOID = re.compile(
 )
 
 
+def _age_hours(text, now):
+    if not text:
+        return None
+    try:
+        t = parsedate_to_datetime(text)
+    except (TypeError, ValueError):
+        try:
+            t = datetime.fromisoformat(text.strip().replace("Z", "+00:00"))
+        except ValueError:
+            return None
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    return max(0.0, (now - t).total_seconds() / 3600)
+
+
 def fetch_news(state, limit=12):
+    """Light headlines from the last day, freshest first. Each: {"title", "age_h"}."""
     used = set(state.get("news_used", []))
+    now = now_utc()
     items, seen = [], set()
     for url in NEWS_FEEDS:
         try:
@@ -581,69 +658,75 @@ def fetch_news(state, limit=12):
         except Exception as e:
             print(f"news feed failed ({url[:50]}): {e}")
             continue
-        for it in root.iter("item"):
-            title = re.sub(r"\s+-\s+[^-]{2,40}$", "", (it.findtext("title") or "").strip())
+        entries = [(it.findtext("title"), it.findtext("pubDate")) for it in root.iter("item")]
+        entries += [(e.findtext(f"{ATOM}title"), e.findtext(f"{ATOM}updated") or e.findtext(f"{ATOM}published"))
+                    for e in root.iter(f"{ATOM}entry")]  # reddit serves Atom, not RSS
+        for raw_title, date in entries:
+            title = re.sub(r"\s+-\s+[^-]{2,40}$", "", (raw_title or "").strip())
             if not (20 <= len(title) <= 160) or title in seen or title in used:
                 continue
             if NEWS_AVOID.search(title) or BLOCKED.search(title):
                 continue
+            age = _age_hours(date, now)
+            if age is not None and age > NEWS_MAX_AGE_H:
+                continue
             seen.add(title)
-            items.append(title)
+            items.append({"title": title, "age_h": age})
+    # freshest first; undated items go after dated ones, in random order
     random.shuffle(items)
-    print(f"::notice::{len(items)} usable light news headlines found")
+    items.sort(key=lambda x: x["age_h"] if x["age_h"] is not None else NEWS_MAX_AGE_H)
+    fresh = sum(1 for x in items if x["age_h"] is not None and x["age_h"] <= 6)
+    print(f"::notice::{len(items)} usable light news headlines ({fresh} from the last 6h)")
     return items[:limit]
 
 
 def news_probability(history):
-    done = [h for h in finalized(history)]
+    done = finalized(history)
     news = [h["score"] for h in done if h.get("news")]
     plain = [h["score"] for h in done if not h.get("news")]
+    # The judge picks news memes only when they beat the normal ones, so news is tried often.
     if len(news) >= 4 and len(plain) >= 4:
         ratio = statistics.mean(news) / max(statistics.mean(plain), 1)
-        return min(0.7, max(0.1, 0.3 * ratio))
-    return 0.3
+        return min(0.85, max(0.2, 0.5 * ratio))
+    return 0.6
 
 
-def generate(state):
-    started = time.time()
-    templates = fetch_templates()
-    by_id = {t["id"]: t for t in templates}
-    history = state["history"]
-    theme = pick_theme(history)
-    fmt = pick_format(history)
-    tops = top_examples(history)
-    cands = pick_candidates(templates, history)
-    cand_ids = {c["id"] for c in cands}
-    recent = [h.get("text") or f"{h.get('top', '')} / {h.get('bottom', '')}" for h in history[-15:]]
-    listing = "\n".join(f"{c['id']} | {c['name']}" for c in cands)
+# ------------------------------------------------------------------------ generation
 
-    headlines = fetch_news(state) if random.random() < news_probability(history) else []
+def build_prompt(n, themes, fmt, tops, listing, recent, headlines):
     news_block = ""
     if headlines:
+        def age(h):
+            return f" ({h['age_h']:.0f}h ago)" if h["age_h"] is not None else ""
+        k = max(2, n // 3)
         news_block = (
-            "NEWS MODE: below are today's light news headlines. If ONE of them is genuinely funny "
-            "or very relatable, base the meme on the situation in it (keep it recognisable as the "
-            "story, but never name real people, politicians, countries in conflict or brands being "
-            "attacked; skip anything sad, political, violent or about a tragedy). Set \"news_index\" "
-            "to that headline's number. If none is clearly good, ignore the news, write a normal "
-            "meme on the theme and set \"news_index\" to null.\n"
-            + "\n".join(f"{i}. {h}" for i, h in enumerate(headlines)) + "\n\n")
-
-    prompt = (
+            f"NEWS: below are today's light news headlines, freshest first. Make up to {k} of the "
+            "memes about these stories (fresh ones matter most: a meme about something that "
+            "happened a few hours ago spreads much further). Only use a headline if it is "
+            "genuinely funny or very relatable; keep it recognisable as the story, but never name "
+            "real people, politicians, countries in conflict or brands being attacked, and skip "
+            "anything sad, political, violent or about a tragedy. Set \"news_index\" to that "
+            "headline's number; for normal memes set it to null.\n"
+            + "\n".join(f"{i}. {h['title']}{age(h)}" for i, h in enumerate(headlines)) + "\n\n")
+    return (
         "You run a viral Instagram meme page for people in their teens and twenties. "
-        "Write ONE original meme.\n\n"
+        f"Write {n} DIFFERENT original meme candidates. A harsh editor will post only the best "
+        "one, so make every candidate a genuinely different situation and punchline.\n\n"
         + news_block +
-        f"Theme: {theme}\n"
-        f"Preferred caption style this time: {FORMATS[fmt]}\n\n"
-        + ("These are this page's best-performing memes so far; aim for the same kind of "
-           "humor and structure but with a completely new situation: "
-           + json.dumps(tops) + "\n\n" if tops else "") +
+        f"Themes to spread the candidates over: {json.dumps(themes)}\n"
+        f"Caption style for at least half of them: {FORMATS[fmt]}\n\n"
+        + ("These are this page's most-shared memes so far; aim for the same kind of humor and "
+           "structure but with completely new situations: " + json.dumps(tops) + "\n\n"
+           if tops else "") +
         "Format: a single caption that sits ABOVE a reaction photo. Use formats like "
         "'When you ...', 'How me and bro gon be ... after ...', 'Me when ...', 'POV: ...'. "
         "Casual texting voice (words like bro, nah, fr, lowkey are fine; lowercase is fine). "
         "Under 22 words. Hyper-specific and relatable: friends, school, work, gym, food, "
-        "money, sleep, phones, being late, group chats. The kind of meme people send to a "
-        "friend with 'this is literally us'.\n\n"
+        "money, sleep, phones, being late, group chats.\n\n"
+        "What matters most is SENDS: the meme people DM to a friend with 'this is literally "
+        "you' / 'this is us'. That means a moment almost everyone has lived but nobody says out "
+        "loud, with one specific detail that makes it feel personal. The joke must land in one "
+        "read, without explanation.\n\n"
         "Examples of the voice and rhythm to match (write something NEW, never copy these):\n"
         "- when you tell yourself you're going to bed early and it's already 3am\n"
         "- how me and bro gon be posted up at the pizza place after we hear the first slice is free\n"
@@ -655,9 +738,10 @@ def generate(state):
         "- me pretending to listen to the whole gym story from the guy who just started going\n"
         "Rules for quality: ONE clear situation, a specific detail, an obvious punchline or "
         "relatable pain, and the reaction photo's mood must match the feeling. Never write "
-        "about AI, technology trends, or abstract ideas - only real everyday situations.\n\n"
-        "Pick the reaction photo from this list (id | name) whose face or mood best fits the "
-        "punchline:\n"
+        "about AI, technology trends, or abstract ideas - only real everyday situations "
+        "(or the news story).\n\n"
+        "Pick each meme's reaction photo from this list (id | name) whose face or mood best fits "
+        "the punchline; use different photos across candidates:\n"
         f"{listing}\n\n"
         "Do not reuse or paraphrase these recent jokes: " + json.dumps(recent) + "\n\n"
         "Hard safety rules (an account ban is the worst outcome):\n"
@@ -673,58 +757,108 @@ def generate(state):
         "strongly. Options: " + ", ".join(reel.TRACKS) + " (chill=lazy/tired, upbeat=happy win, "
         "bouncy=playful/funny, hype=excited/chaos, sad=disappointment/loss, wholesome=sweet/friends, "
         "awkward=cringe/embarrassed, dramatic=tension/betrayal/dread).\n\n"
-        'Return JSON only: {"template_id": "...", "text": "...", '
-        '"caption": "...", "hashtags": ["#..."], "mood": "...", "news_index": null}'
+        'Return JSON only: {"memes": [{"template_id": "...", "theme": "one of the themes", '
+        '"text": "...", "caption": "...", "hashtags": ["#..."], "mood": "...", '
+        '"news_index": null}, ...]}'
     )
 
-    best = None  # (score, meme, template) fallback if nothing reaches the bar
-    for attempt in range(7):
-        if time.time() - started > 900:
-            break
+
+def parse_candidates(raw, cand_ids, recent, themes, headlines):
+    out, seen = [], set()
+    for data in _items(raw, "memes"):
         try:
-            data = json.loads(llm(prompt))
-            if isinstance(data, list):
-                data = data[0]
             tid = str(data["template_id"])
-            text = data["text"].strip()
-            caption = data["caption"].strip()
+            text = str(data["text"]).strip()
+            caption = str(data["caption"]).strip()
             tags = []
-            for h in data["hashtags"][:5]:
-                h = "#" + re.sub(r"[^\w]", "", h)
+            for h in list(data["hashtags"])[:5]:
+                h = "#" + re.sub(r"[^\w]", "", str(h))
                 if len(h) > 2:
                     tags.append(h)
-        except Exception as e:
-            print(f"bad generation ({e}), retrying")
+        except Exception:
             continue
         if tid not in cand_ids or not text or len(text) > 170 or len(caption) > 200 \
-                or len(tags) < 3:
-            print("generation failed validation, retrying")
-            continue
-        if text in recent:
+                or len(tags) < 3 or text in recent or text.lower() in seen:
             continue
         if BLOCKED.search(" ".join([text, caption, *tags])):
-            print("local blocklist hit, retrying")
+            print(f"local blocklist hit: {text!r}")
             continue
+        seen.add(text.lower())
+        theme = data.get("theme") if data.get("theme") in themes else themes[0]
         mood = str(data.get("mood", "")).lower().strip()
-        meme = {"template_id": tid, "text": text, "caption": caption,
-                "hashtags": tags, "theme": theme, "mood": mood if mood in reel.TRACKS else None}
+        meme = {"template_id": tid, "text": text, "caption": caption, "hashtags": tags,
+                "theme": theme, "mood": mood if mood in reel.TRACKS else None}
         ni = data.get("news_index")
         if isinstance(ni, int) and 0 <= ni < len(headlines):
-            meme["news"] = headlines[ni]
-        if not moderate(meme, by_id[tid]["name"]):
-            print("moderator rejected, retrying")
+            meme["news"] = headlines[ni]["title"]
+            meme["news_age_h"] = headlines[ni]["age_h"]
+            meme["theme"] = "news"
+        out.append(meme)
+    return out
+
+
+def make_memes(state, want=1, n_cands=CANDIDATES, min_score=MIN_FUNNY, floor=5):
+    """Generate a batch of candidates, judge them, moderate the best, return up to `want`
+    (meme, template) pairs, best first. Never returns anything below `floor`."""
+    started = time.time()
+    templates = fetch_templates()
+    by_id = {t["id"]: t for t in templates}
+    history = state["history"]
+    tops = top_examples(history)
+    recent = [h.get("text") or f"{h.get('top', '')} / {h.get('bottom', '')}" for h in history[-15:]]
+    headlines = fetch_news(state) if random.random() < news_probability(history) else []
+    picked, spare = [], []
+    for rnd in range(3):
+        if time.time() - started > 720 or len(picked) >= want:
+            break
+        themes = []
+        while len(themes) < min(3, len(THEMES)):
+            t = pick_theme(history)
+            if t not in themes:
+                themes.append(t)
+        fmt = pick_format(history)
+        cands = pick_candidates(templates, history, n=20)
+        cand_ids = {c["id"] for c in cands}
+        listing = "\n".join(f"{c['id']} | {c['name']}" for c in cands)
+        prompt = build_prompt(n_cands, themes, fmt, tops, listing, recent, headlines)
+        try:
+            raw = llm(prompt, temperature=1.0, max_tokens=6000)
+        except Exception as e:
+            print(f"generation failed ({e}), retrying")
             continue
-        fs = funny_score(meme, by_id[tid]["name"])
-        print(f"funny score {fs}: {text!r}")
-        if fs >= MIN_FUNNY:
-            meme["funny"] = fs
-            return meme, by_id[tid]
-        if best is None or fs > best[0]:
-            best = (fs, meme, by_id[tid])
-    if best and best[0] >= 5:
-        best[1]["funny"] = best[0]
-        return best[1], best[2]
-    raise RuntimeError("Could not produce a safe, funny meme in time")
+        used = {m["text"].lower() for m in picked + spare}
+        memes = [m for m in parse_candidates(raw, cand_ids, recent, themes, headlines)
+                 if m["text"].lower() not in used]
+        print(f"round {rnd + 1}: {len(memes)} valid candidates")
+        if not memes:
+            continue
+        judge(memes, by_id)
+        memes.sort(key=rank, reverse=True)
+        for m in memes:
+            flag = (" [news %sh]" % (f"{m['news_age_h']:.0f}" if m.get("news_age_h") is not None else "?")
+                    if m.get("news") else "")
+            print(f"  {m['funny']:>2}{' send' if m['send'] else '     '}{flag}  {m['text']}")
+        top = [m for m in memes if m["funny"] >= floor][: want - len(picked) + 3]
+        tpls = {m["template_id"] for m in picked}
+        for m, ok in zip(top, moderate_many(top, by_id)):
+            if not ok:
+                continue
+            if m["funny"] >= min_score and len(picked) < want and \
+                    (want == 1 or m["template_id"] not in tpls):
+                picked.append(m)
+                tpls.add(m["template_id"])
+            else:
+                spare.append(m)
+    if len(picked) < want:  # nothing reached the bar: fall back to the best safe ones above floor
+        tpls = {m["template_id"] for m in picked}
+        for m in sorted(spare, key=rank, reverse=True):
+            if len(picked) >= want:
+                break
+            if want == 1 or m["template_id"] not in tpls:
+                picked.append(m)
+                tpls.add(m["template_id"])
+    picked.sort(key=rank, reverse=True)
+    return [(m, by_id[m["template_id"]]) for m in picked]
 
 
 # ------------------------------------------------------------------------ rendering
@@ -762,24 +896,26 @@ def wrap(text, font, max_w):
     return lines
 
 
-def render(meme, template):
-    """Caption bar on top, reaction photo underneath (the style of the page)."""
+def render(meme, template, dark=None):
+    """Caption bar on top, reaction photo underneath (the style of the page).
+    Big text so it reads instantly on a phone in the first second."""
     raw = requests.get(template["url"], timeout=30).content
     photo = Image.open(BytesIO(raw)).convert("RGB")
     W = 1080
     photo = photo.resize((W, round(photo.height * W / photo.width)), Image.LANCZOS)
 
-    dark = random.random() < 0.35
+    if dark is None:
+        dark = random.random() < 0.35
     bg, fg = ((0, 0, 0), (255, 255, 255)) if dark else ((255, 255, 255), (0, 0, 0))
-    pad = 40
-    size = 58
+    pad = 44
+    size = 68
     while True:
         font = load_font(size, bold=dark)
         lines = wrap(meme["text"], font, W - 2 * pad)
-        if len(lines) <= 4 or size <= 34:
+        if len(lines) <= 4 or size <= 40:
             break
         size -= 4
-    lh = round(size * 1.28)
+    lh = round(size * 1.24)
     bar_h = len(lines) * lh + 2 * pad - round(size * 0.2)
 
     max_total = 1350  # Instagram's tallest allowed ratio (4:5)
@@ -798,6 +934,16 @@ def render(meme, template):
     return canvas
 
 
+def to_portrait(img, dark):
+    """Carousel slides must share one shape: centre each meme on a 1080x1350 (4:5) card."""
+    W, H = 1080, 1350
+    if img.height > H:
+        img = img.resize((round(img.width * H / img.height), H), Image.LANCZOS)
+    card = Image.new("RGB", (W, H), (0, 0, 0) if dark else (255, 255, 255))
+    card.paste(img, ((W - img.width) // 2, (H - img.height) // 2))
+    return card
+
+
 # ------------------------------------------------------------------------ Instagram
 
 def graph(method, path, **params):
@@ -809,18 +955,39 @@ def graph(method, path, **params):
     return r.json()
 
 
-def host_file(path):
+def host_files(paths):
+    """Push files to the public repo (one commit) and return their raw URLs."""
     if not os.environ.get("GITHUB_ACTIONS"):
         raise RuntimeError("Publishing only works inside GitHub Actions (needs a public URL)")
-    commit_push(f"bot: add {path.name}")
+    commit_push(f"bot: add {len(paths)} file(s)")
     repo = os.environ["GITHUB_REPOSITORY"]
     branch = os.environ.get("GITHUB_REF_NAME", "main")
-    url = f"https://raw.githubusercontent.com/{repo}/{branch}/images/{path.name}"
-    for _ in range(20):
-        if requests.get(url, timeout=15, stream=True).status_code == 200:
-            return url
-        time.sleep(3)
-    raise RuntimeError("Hosted file never became reachable (is the repo public?)")
+    urls = []
+    for path in paths:
+        url = f"https://raw.githubusercontent.com/{repo}/{branch}/images/{path.name}"
+        for _ in range(20):
+            if requests.get(url, timeout=15, stream=True).status_code == 200:
+                break
+            time.sleep(3)
+        else:
+            raise RuntimeError("Hosted file never became reachable (is the repo public?)")
+        urls.append(url)
+    return urls
+
+
+def host_file(path):
+    return host_files([path])[0]
+
+
+def wait_container(cid, video=False):
+    for _ in range(60 if video else 30):
+        status = graph("GET", cid, fields="status_code").get("status_code")
+        if status == "FINISHED":
+            return
+        if status in ("ERROR", "EXPIRED"):
+            raise RuntimeError(f"Instagram container status: {status}")
+        time.sleep(5 if video else 3)
+    raise RuntimeError("Instagram container never finished processing")
 
 
 def publish(media_url, caption, video=False):
@@ -830,15 +997,18 @@ def publish(media_url, caption, video=False):
     else:
         params = dict(image_url=media_url, caption=caption)
     cid = graph("POST", f"{ig}/media", **params)["id"]
-    for _ in range(60 if video else 30):
-        status = graph("GET", cid, fields="status_code").get("status_code")
-        if status == "FINISHED":
-            break
-        if status in ("ERROR", "EXPIRED"):
-            raise RuntimeError(f"Instagram container status: {status}")
-        time.sleep(5 if video else 3)
-    else:
-        raise RuntimeError("Instagram container never finished processing")
+    wait_container(cid, video)
+    return graph("POST", f"{ig}/media_publish", creation_id=cid)["id"]
+
+
+def publish_carousel(urls, caption):
+    ig = env("IG_USER_ID")
+    kids = [graph("POST", f"{ig}/media", image_url=u, is_carousel_item="true")["id"] for u in urls]
+    for k in kids:
+        wait_container(k)
+    cid = graph("POST", f"{ig}/media", media_type="CAROUSEL",
+                children=",".join(kids), caption=caption)["id"]
+    wait_container(cid)
     return graph("POST", f"{ig}/media_publish", creation_id=cid)["id"]
 
 
@@ -851,10 +1021,107 @@ def cleanup_images():
             pass
 
 
+# ------------------------------------------------------------------------ meme dumps
+
+DUMP_DAYS = {int(d) for d in os.environ.get("DUMP_DAYS", "2,6").split(",") if d.strip()}  # Wed, Sun
+DUMP_SIZE = int(os.environ.get("DUMP_SIZE", "8"))
+DUMP_MIN = 5
+DUMP_CAPTIONS = [
+    "meme dump 🧃 which one is you? (1-{n})",
+    "weekly meme dump. comment the number that's literally you 💀",
+    "meme dump 📦 send #{k} to the friend it's about",
+    "dump time. which one hit too close to home? (1-{n})",
+    "meme dump 🗑️ tag the friend who is #{k}",
+]
+
+
+def ensure_dump(state, now):
+    """On dump days, turn the day's best-timed remaining slot into a carousel meme dump."""
+    sched = state["schedule"]
+    if sched.get("dump_checked") == sched.get("date"):
+        return
+    sched["dump_checked"] = sched.get("date")
+    if now.weekday() not in DUMP_DAYS or DUMP_SIZE < 2:
+        return
+    pending = [s for s in sched["slots"]
+               if s["status"] == "pending" and datetime.fromisoformat(s["t"]) > now]
+    if not pending:
+        return
+    hs = hour_stats(state)
+    if hs:
+        target = max(pending, key=lambda s: hs.get(datetime.fromisoformat(s["t"]).hour // 2, 0))
+    else:
+        evening = [s for s in pending if 17 <= datetime.fromisoformat(s["t"]).hour <= 21]
+        target = evening[0] if evening else pending[-1]
+    target["kind"] = "dump"
+    print(f"Meme dump planned for {target['t']}")
+
+
+def dump_caption(items):
+    n = len(items)
+    line = random.choice(DUMP_CAPTIONS).format(n=n, k=random.randint(1, n))
+    counts = Counter(t for m, _ in items for t in m["hashtags"] if t.lower() != "#memedump")
+    tags = ["#memedump"] + [t for t, _ in counts.most_common(4)]
+    return line + "\n\n" + " ".join(tags)
+
+
+def run_dump(state, slot, dry):
+    items = make_memes(state, want=DUMP_SIZE, n_cands=16, min_score=MIN_FUNNY,
+                       floor=max(5, MIN_FUNNY - 1))
+    if len(items) < DUMP_MIN:
+        raise RuntimeError(f"only {len(items)} memes were good enough for a dump")
+    dark = random.random() < 0.35
+    imgs = [to_portrait(render(m, t, dark=dark), dark) for m, t in items]
+    caption = dump_caption(items)
+    for m, t in items:
+        print(f"  dump item ({m['funny']}): {m['text']} | {t['name']}")
+    if dry:
+        OUT_DIR.mkdir(exist_ok=True)
+        for i, img in enumerate(imgs, 1):
+            img.save(OUT_DIR / f"dump_{i}.jpg", quality=92)
+        (OUT_DIR / "dump.json").write_text(json.dumps(
+            {"caption": caption, "memes": [m for m, _ in items]}, indent=1))
+        print(f"Dry run: {len(imgs)}-slide meme dump saved to out/")
+        return
+    IMG_DIR.mkdir(exist_ok=True)
+    stamp = int(time.time())
+    paths = []
+    for i, img in enumerate(imgs):
+        p = IMG_DIR / f"{stamp}_dump{i}.jpg"
+        img.save(p, quality=92)
+        paths.append(p)
+    media_id = publish_carousel(host_files(paths), caption)
+    slot["status"] = "done"
+    for m, _ in items:
+        if m.get("news"):
+            state.setdefault("news_used", []).append(m["news"])
+    state["news_used"] = state.get("news_used", [])[-200:]
+    state["history"].append({
+        "media_id": media_id,
+        "posted_at": now_utc().isoformat(),
+        "template_id": "dump",
+        "template_name": "meme dump",
+        "theme": "meme dump",
+        "text": " | ".join(m["text"] for m, _ in items),
+        "kind": "carousel",
+        "slides": len(items),
+        "funny": round(statistics.mean(m["funny"] for m, _ in items), 1),
+    })
+    print(f"Posted meme dump {media_id} ({len(items)} slides)")
+
+
 # ---------------------------------------------------------------------------- main
 
 def run_post(state, slot, dry):
-    meme, template = generate(state)
+    if slot.get("kind") == "dump" or os.environ.get("DUMP") == "1":
+        try:
+            return run_dump(state, slot, dry)
+        except Exception as e:
+            print(f"::warning::meme dump failed ({e}); posting a single meme instead")
+    items = make_memes(state, want=1)
+    if not items:
+        raise RuntimeError("Could not produce a safe, funny meme in time")
+    meme, template = items[0]
     print(json.dumps(meme, indent=1), "| template:", template["name"])
     img = render(meme, template)
     music = meme.get("mood") or pick_music(state["history"])
@@ -894,6 +1161,7 @@ def run_post(state, slot, dry):
         "kind": kind,
         "music": music,
         "news": bool(meme.get("news")),
+        "news_age_h": meme.get("news_age_h"),
         "funny": meme.get("funny"),
     })
     print(f"Posted {media_id}")
@@ -921,6 +1189,7 @@ def _run(state, now, dry, force):
             import_history(state)
         plan_day(state, now)
         if not dry:
+            ensure_dump(state, now)
             refresh_metrics(state, now)
             cleanup_images()
             write_insights(state)

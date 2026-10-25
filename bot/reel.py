@@ -5,11 +5,13 @@ never trigger a copyright claim or get the account muted/banned. Several moods a
 and the bot learns which one performs best.
 """
 import os
+import random
 import subprocess
 import wave
 from pathlib import Path
 
 import numpy as np
+import requests
 from PIL import Image, ImageFilter
 
 SR = 44100
@@ -124,6 +126,54 @@ def synth(name, out_wav, seconds=DURATION, seed=0):
         w.writeframes((buf * 32767).astype(np.int16).tobytes())
 
 
+MOOD_QUERIES = {
+    "chill": ["lofi chill", "chill beat", "relaxing lofi"],
+    "upbeat": ["happy upbeat", "feel good pop", "upbeat funk"],
+    "bouncy": ["funny quirky", "playful comedy", "bouncy fun"],
+    "hype": ["energetic electronic", "edm hype", "trap beat"],
+    "sad": ["sad piano", "melancholy", "emotional sad"],
+    "wholesome": ["warm acoustic", "cheerful ukulele", "happy acoustic"],
+    "awkward": ["awkward quirky", "comedic pizzicato", "silly"],
+    "dramatic": ["dramatic cinematic", "tension suspense", "epic dramatic"],
+}
+
+
+def real_track(mood, workdir):
+    """A real produced track (CC0/public-domain, via Openverse) trimmed to the reel length."""
+    workdir = Path(workdir)
+    q = random.choice(MOOD_QUERIES.get(mood, ["upbeat"]))
+    r = requests.get("https://api.openverse.org/v1/audio/", timeout=30,
+                     params={"q": q, "license": "cc0,pdm", "page_size": 20, "category": "music"},
+                     headers={"User-Agent": "meme-bot"})
+    r.raise_for_status()
+    pool = [x for x in r.json().get("results", [])
+            if (x.get("duration") or 0) >= 25000 and x.get("url")]
+    random.shuffle(pool)
+    for item in pool[:5]:
+        try:
+            raw = workdir / "src_audio"
+            with requests.get(item["url"], timeout=60, stream=True) as resp:
+                resp.raise_for_status()
+                size = 0
+                with open(raw, "wb") as f:
+                    for chunk in resp.iter_content(1 << 16):
+                        size += len(chunk)
+                        if size > 25 * 1024 * 1024:
+                            raise RuntimeError("too big")
+                        f.write(chunk)
+            start = max(0, min(item["duration"] / 1000 * 0.25, item["duration"] / 1000 - DURATION - 1))
+            out = workdir / "music.wav"
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{start:.1f}", "-i", str(raw),
+                            "-t", str(DURATION), "-ac", "2", "-ar", "44100",
+                            "-af", f"afade=t=in:d=0.3,afade=t=out:st={DURATION - 0.6}:d=0.6,loudnorm=I=-14",
+                            str(out)], check=True, timeout=120)
+            print(f"::notice::real track used for {mood}: {item.get('title')!r} ({item.get('license')})")
+            return out
+        except Exception as e:
+            print(f"track failed ({e}), trying next")
+    raise RuntimeError("no usable real track")
+
+
 def vertical_frame(img):
     """Place the meme on a blurred 9:16 backdrop (1080x1920)."""
     W, H = 1080, 1920
@@ -143,7 +193,11 @@ def make_reel(img, track, out_mp4, workdir):
     frame = workdir / "frame.png"
     wav = workdir / "music.wav"
     vertical_frame(img).save(frame)
-    synth(track, wav)
+    try:
+        wav = real_track(track, workdir)
+    except Exception as e:
+        print(f"real music unavailable ({e}); using built-in synth")
+        synth(track, wav)
     frames = DURATION * 30
     # Text is fully readable from frame 1 (no intro); a very slow push-in keeps it alive
     # without a visible jump when the loop restarts.

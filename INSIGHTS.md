@@ -1,8 +1,11 @@
 # What the bot has learned
 
-Posts measured so far: 0 (plus 200 older page posts)
+Posts measured so far: 1 (plus 200 older page posts)
 
 Score = engagement per 1,000 people reached, with DM sends counted 8x a like.
+
+## Sends
+- average: 0.00 sends per 1,000 reached (last 10 posts: 0.00)
 
 ## Learned from this week's top meme posts (public meme communities) (72 posts from 2 pages)
 - Opening style: other opening x1.03

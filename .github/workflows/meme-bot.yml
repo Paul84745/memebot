@@ -24,11 +24,12 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -55,6 +56,32 @@ jobs:
           FORCE: ${{ inputs.force && '1' || '0' }}
           DUMP: ${{ inputs.dump && '1' || '0' }}
         run: python bot/main.py
+
+      # GitHub heavily throttles `schedule` crons (runs can be hours apart). So after each
+      # run, if the next post slot is due within 40 min, wait for it and re-trigger ourselves.
+      - name: Chain to next slot
+        if: ${{ always() && !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          WAIT=$(python3 - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          try:
+              slots = json.load(open("state.json"))["schedule"]["slots"]
+              now = datetime.now(timezone.utc)
+              d = [(datetime.fromisoformat(s["t"]) - now).total_seconds() for s in slots if s["status"] == "pending"]
+              d = [x for x in d if x > -1500]  # slots later than MAX_LATE get skipped anyway
+              print(int(max(60, min(d) + 30)) if d and min(d) < 2400 else "")
+          except Exception:
+              print("")
+          PY
+          )
+          if [ -n "$WAIT" ]; then
+            echo "Next slot in ${WAIT}s - waiting, then re-triggering"
+            sleep "$WAIT"
+            gh workflow run meme-bot.yml --ref main -f dry_run=false -f force=false
+          fi
 
       - uses: actions/upload-artifact@v4
         if: ${{ inputs.dry_run }}

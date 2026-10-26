@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-10-26T11:51:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-26T12:12:00+00:00",
@@ -116,6 +116,20 @@
    "news": false,
    "news_age_h": null,
    "funny": 8
+  },
+  {
+   "media_id": "18501223405101747",
+   "posted_at": "2026-10-26T14:28:36+00:00",
+   "template_id": "102156234",
+   "template_name": "Mocking Spongebob",
+   "theme": "news",
+   "text": "when you spend $3k on a dress just to get free champagne",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "hype",
+   "news": true,
+   "news_age_h": 0.109,
+   "funny": 7
   }
  ],
  "imported": [
@@ -1261,6 +1275,7 @@
   }
  },
  "news_used": [
-  "It Was The \u201990s: This Viral Video Has Us All Remembering Those \u201cDiets\u201d"
+  "It Was The \u201990s: This Viral Video Has Us All Remembering Those \u201cDiets\u201d",
+  "Charlize Theron wore Givenchy to amfAR Dallas"
  ]
 }

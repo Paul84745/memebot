@@ -109,13 +109,13 @@ def commit_push(message):
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
         return
     git("commit", "-q", "-m", message)
-    for _ in range(3):
+    for i in range(6):  # GitHub occasionally returns transient 500s; back off and retry
         try:
             git("pull", "--rebase", "-q")
             git("push", "-q")
             return
         except subprocess.CalledProcessError:
-            time.sleep(5)
+            time.sleep(5 * (2 ** i))
     raise RuntimeError("git push failed")
 
 

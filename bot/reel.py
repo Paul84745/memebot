@@ -14,6 +14,7 @@ from pathlib import Path
 
 import numpy as np
 import requests
+from urllib.parse import quote
 from PIL import Image, ImageFilter
 
 SR = 44100
@@ -190,8 +191,80 @@ def _search(q):
     return pool
 
 
+def _ia_length(v):
+    """Internet Archive file length: '183.42' seconds or 'm:ss' / 'h:mm:ss'."""
+    try:
+        parts = [float(x) for x in str(v).split(":")]
+    except ValueError:
+        return 0
+    sec = 0.0
+    for x in parts:
+        sec = sec * 60 + x
+    return sec
+
+
+def _ia_license(url):
+    u = (url or "").lower()
+    if "publicdomain" in u or "/zero/" in u:
+        return "pdm"
+    if re.search(r"/licenses/by/\d", u):
+        return "by"
+    return None  # NC / ND / SA and unlicensed music are never used
+
+
+def _archive_search(q, want=5):
+    """Second music source: the Internet Archive's netlabel collection (free CC music by
+    independent labels, no key needed). Only public-domain and CC BY tracks."""
+    if _MODE.get("ia_down"):
+        return []
+    t0 = time.time()
+    try:
+        r = requests.get("https://archive.org/advancedsearch.php", timeout=20, params={
+            "q": f"({q}) AND mediatype:(audio) AND collection:(netlabels)",
+            "fl[]": ["identifier", "title", "creator", "licenseurl"],
+            "sort[]": "downloads desc", "rows": 60, "output": "json"},
+            headers={"User-Agent": "meme-bot/1.0"})
+        docs = r.json().get("response", {}).get("docs", []) if r.ok else []
+    except Exception as e:
+        SEARCH_LOG.append(f"{q}:archive ERR {type(e).__name__}")
+        _MODE["ia_down"] = True
+        return []
+    docs = [d for d in docs if _ia_license(d.get("licenseurl"))]
+    # mostly the popular releases (better produced), with some variety
+    docs = docs[:12] + random.sample(docs[12:], min(6, len(docs[12:])))
+    random.shuffle(docs)
+    pool = []
+    for d in docs:
+        if len(pool) >= want or time.time() - t0 > 60:
+            break
+        try:
+            meta = requests.get(f"https://archive.org/metadata/{d['identifier']}", timeout=15,
+                                headers={"User-Agent": "meme-bot/1.0"}).json()
+        except Exception:
+            continue
+        files = [f for f in meta.get("files", []) if str(f.get("name", "")).lower().endswith(".mp3")
+                 and 60 <= _ia_length(f.get("length")) <= 900
+                 and int(f.get("size") or 0) < 25 * 1024 * 1024]
+        if not files:
+            continue
+        f = random.choice(files)
+        creator = d.get("creator")
+        if isinstance(creator, list):
+            creator = creator[0] if creator else None
+        pool.append({"title": f.get("title") or re.sub(r"\.mp3$", "", f["name"], flags=re.I),
+                     "creator": f.get("creator") or creator,
+                     "url": f"https://archive.org/download/{d['identifier']}/{quote(f['name'])}",
+                     "duration": _ia_length(f.get("length")) * 1000,
+                     "license": _ia_license(d.get("licenseurl")), "source": "archive.org"})
+    SEARCH_LOG.append(f"{q}:archive {r.status_code} {len(docs)}/{len(pool)} {time.time() - t0:.0f}s")
+    print(f"archive.org q={q!r}: {len(docs)} licensed releases, {len(pool)} usable songs")
+    pool.sort(key=lambda x: x.get("license") != "pdm")
+    return pool
+
+
 def real_track(mood, workdir, style=None):
-    """A real produced song via Openverse (public domain, or CC BY with credit in the caption),
+    """A real produced song via Openverse, or the Internet Archive when Openverse is down
+    (public domain, or CC BY with credit in the caption),
     trimmed to the reel length.
     With a trend style, searches that genre first and applies its edit (sped up / slowed)."""
     workdir = Path(workdir)
@@ -203,6 +276,8 @@ def real_track(mood, workdir, style=None):
     pool, used_q = [], None
     for q in queries + ["music"]:
         pool = _search(q)
+        if not pool and _MODE.get("down"):
+            pool = _archive_search(q)  # Openverse unreachable: use the Internet Archive instead
         if pool:
             used_q = q
             break
@@ -233,6 +308,7 @@ def real_track(mood, workdir, style=None):
                         credit=(f"music: {item.get('title')} by {item.get('creator') or 'unknown'} (CC BY)"
                                 if item.get("license") == "by" else None))
             print(f"::notice::track for {mood}: {item.get('title')!r} ({item.get('license')}, "
+                  f"{item.get('source', 'openverse')}, "
                   f"search {used_q!r}, edit {fx})")
             return out
         except Exception as e:

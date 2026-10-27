@@ -158,6 +158,8 @@ _MODE = {"category": True}
 def _search(q):
     """Openverse search for songs. If the music-category search keeps timing out, switch to a
     plain search and keep only song-length results (sound effects are short)."""
+    if _MODE.get("down"):
+        return []
     params = {"q": q, "license": "cc0,pdm,by", "page_size": 20}
     if _MODE["category"]:
         params["category"] = "music"
@@ -170,6 +172,7 @@ def _search(q):
         if _MODE["category"]:
             _MODE["category"] = False
             return _search(q)
+        _MODE["down"] = True  # Openverse unreachable: don't spend minutes retrying every query
         return []
     res = r.json().get("results", []) if r.ok else []
     if not _MODE["category"]:

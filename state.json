@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-10-27T21:03:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-27T22:02:00+00:00",
@@ -154,7 +154,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.24
+   "follows_attr": -0.341
   },
   {
    "media_id": "18117111383011798",
@@ -169,7 +169,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.33
+   "follows_attr": -0.38
   },
   {
    "media_id": "18501223405101747",
@@ -184,7 +184,7 @@
    "news": true,
    "news_age_h": 0.109,
    "funny": 7,
-   "follows_attr": -0.18
+   "follows_attr": -0.255
   },
   {
    "media_id": "17881446297630560",
@@ -199,7 +199,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.24
+   "follows_attr": -0.341
   },
   {
    "media_id": "18110207612220185",
@@ -214,7 +214,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.12
+   "follows_attr": -0.195
   },
   {
    "media_id": "18106694573573795",
@@ -232,7 +232,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -7.89
+   "follows_attr": -8.091
   },
   {
    "media_id": "18070919150507681",
@@ -249,7 +249,8 @@
    "track": "Companion",
    "news": true,
    "news_age_h": 0.27315236138888893,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -1.257
   },
   {
    "media_id": "17993037480111307",
@@ -259,7 +260,25 @@
    "theme": "story",
    "text": "when dad asks 'who wants dessert?' and you realize you\u2019re the only one awake",
    "kind": "story",
-   "story_type": "rate"
+   "story_type": "rate",
+   "follows_attr": -7.14
+  },
+  {
+   "media_id": "18025334810864490",
+   "posted_at": "2026-10-27T22:20:26.542316+00:00",
+   "template_id": "21735",
+   "template_name": "The Rock Driving",
+   "theme": "gym and diets",
+   "text": "How bro feels after a 10\u2011rep bench, realizing the bar was only 45\u202flb.",
+   "format": "how_x",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "NovaTrax - Wave Length (Fun and Energetic Vibe Music)",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -1485,16 +1504,17 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-27T19:22:38.422407+00:00",
-  "followers": 48539,
+  "t": "2026-10-27T22:17:18.739426+00:00",
+  "followers": 48530,
   "reach": {
-   "18119656603999765": 237,
-   "18117111383011798": 307,
-   "18501223405101747": 238,
-   "17881446297630560": 253,
-   "18110207612220185": 188,
-   "18106694573573795": 264,
-   "18070919150507681": 34
+   "18119656603999765": 241,
+   "18117111383011798": 309,
+   "18501223405101747": 241,
+   "17881446297630560": 257,
+   "18110207612220185": 191,
+   "18106694573573795": 272,
+   "18070919150507681": 84,
+   "17993037480111307": 284
   }
  },
  "follower_log": [

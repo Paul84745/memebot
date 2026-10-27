@@ -152,22 +152,34 @@ LAST = {}  # details of the last track used, for the bot's learning log
 SEARCH_LOG = []
 
 
+_MODE = {"category": True}
+
+
 def _search(q):
+    """Openverse search for songs. If the music-category search keeps timing out, switch to a
+    plain search and keep only song-length results (sound effects are short)."""
+    params = {"q": q, "license": "cc0,pdm,by", "page_size": 20}
+    if _MODE["category"]:
+        params["category"] = "music"
     t0 = time.time()
     try:
-        r = requests.get("https://api.openverse.org/v1/audio/", timeout=30,
-                     params={"q": q, "license": "cc0,pdm,by", "category": "music", "page_size": 20,
-                             "filter_dead": "false"},
-                     headers={"User-Agent": "meme-bot/1.0"})
+        r = requests.get("https://api.openverse.org/v1/audio/", timeout=25, params=params,
+                         headers={"User-Agent": "meme-bot/1.0"})
     except requests.exceptions.RequestException as e:
-        SEARCH_LOG.append(f"{q}:ERR {type(e).__name__} {time.time() - t0:.0f}s")
+        SEARCH_LOG.append(f"{q}:{'cat' if _MODE['category'] else 'plain'} ERR {type(e).__name__}")
+        if _MODE["category"]:
+            _MODE["category"] = False
+            return _search(q)
         return []
     res = r.json().get("results", []) if r.ok else []
+    if not _MODE["category"]:
+        res = [x for x in res if (x.get("duration") or 0) >= 60000]
     # real songs only: long enough to have a proper section, never a one-shot sound effect
     pool = [x for x in res if (x.get("duration") or 0) >= 30000 and x.get("url")
             and not re.search(r"\b(kick|snare|hat|loop|sfx|fx|sample|one ?shot|drum hit)\b",
                               (x.get("title") or "").lower())]
-    SEARCH_LOG.append(f"{q}:{r.status_code} {len(res)}/{len(pool)} {time.time() - t0:.0f}s")
+    SEARCH_LOG.append(f"{q}:{'cat' if _MODE['category'] else 'plain'} {r.status_code} "
+                      f"{len(res)}/{len(pool)} {time.time() - t0:.0f}s")
     print(f"openverse q={q!r}: {len(res)} results, {len(pool)} usable songs")
     # public-domain first (no credit needed), then CC BY (credited in the post caption)
     random.shuffle(pool)

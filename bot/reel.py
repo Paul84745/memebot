@@ -156,7 +156,7 @@ def _search(q):
     t0 = time.time()
     try:
         r = requests.get("https://api.openverse.org/v1/audio/", timeout=30,
-                     params={"q": q, "license": "cc0,pdm,by", "category": "music", "page_size": 40},
+                     params={"q": q, "license": "cc0,pdm,by", "category": "music", "page_size": 20},
                      headers={"User-Agent": "meme-bot/1.0"})
     except requests.exceptions.RequestException as e:
         SEARCH_LOG.append(f"{q}:ERR {type(e).__name__} {time.time() - t0:.0f}s")

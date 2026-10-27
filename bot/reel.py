@@ -150,7 +150,7 @@ LAST = {}  # details of the last track used, for the bot's learning log
 
 def _search(q):
     r = requests.get("https://api.openverse.org/v1/audio/", timeout=30,
-                     params={"q": q, "license": "cc0,pdm", "category": "music", "page_size": 20},
+                     params={"q": q, "license": "cc0,pdm,by", "category": "music", "page_size": 40},
                      headers={"User-Agent": "meme-bot/1.0"})
     res = r.json().get("results", []) if r.ok else []
     # real songs only: long enough to have a proper section, never a one-shot sound effect
@@ -158,11 +158,15 @@ def _search(q):
             and not re.search(r"\b(kick|snare|hat|loop|sfx|fx|sample|one ?shot|drum hit)\b",
                               (x.get("title") or "").lower())]
     print(f"openverse q={q!r}: {len(res)} results, {len(pool)} usable songs")
+    # public-domain first (no credit needed), then CC BY (credited in the post caption)
+    random.shuffle(pool)
+    pool.sort(key=lambda x: x.get("license") not in ("cc0", "pdm"))
     return pool
 
 
 def real_track(mood, workdir, style=None):
-    """A real produced track (CC0/public-domain music via Openverse) trimmed to the reel length.
+    """A real produced song via Openverse (public domain, or CC BY with credit in the caption),
+    trimmed to the reel length.
     With a trend style, searches that genre first and applies its edit (sped up / slowed)."""
     workdir = Path(workdir)
     queries = MOOD_QUERIES.get(mood, ["upbeat"])[:]
@@ -178,7 +182,6 @@ def real_track(mood, workdir, style=None):
             break
     if style and used_q != style["query"]:
         fx = "none"  # the trend genre had nothing usable; don't apply its edit to another genre
-    random.shuffle(pool)
     for item in pool[:5]:
         try:
             raw = workdir / "src_audio"
@@ -200,7 +203,9 @@ def real_track(mood, workdir, style=None):
                            check=True, timeout=120)
             LAST.clear()
             LAST.update(title=item.get("title"), query=used_q, fx=fx,
-                        style=style["query"] if style and used_q == style["query"] else None)
+                        style=style["query"] if style and used_q == style["query"] else None,
+                        credit=(f"music: {item.get('title')} by {item.get('creator') or 'unknown'} (CC BY)"
+                                if item.get("license") == "by" else None))
             print(f"::notice::track for {mood}: {item.get('title')!r} ({item.get('license')}, "
                   f"search {used_q!r}, edit {fx})")
             return out

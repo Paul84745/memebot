@@ -1274,7 +1274,7 @@ def story_ctx():
 def run_story(state, slot, dry):
     want = os.environ.get("STORY_TYPE") or stories.pick_type(state["history"])
     kind, img, meta = stories.make(state, want, story_ctx())
-    print(f"Story ({kind}): {meta['text']}")
+    print(f"::notice::Story ({kind}): {meta['text'][:200]}")
     if dry:
         OUT_DIR.mkdir(exist_ok=True)
         img.save(OUT_DIR / "story.jpg", quality=92)
@@ -1340,7 +1340,8 @@ def run_post(state, slot, dry):
     try:
         mp4 = reel.make_reel(img, music, IMG_DIR / f"{stamp}.mp4", tempfile.mkdtemp(), style)
         sound = dict(reel.LAST)
-        media_id = publish(host_file(mp4), caption, video=True, audio_name=audio_name(sound, music))
+        cap = caption + (f"\n\n{sound['credit']}" if sound.get("credit") else "")
+        media_id = publish(host_file(mp4), cap, video=True, audio_name=audio_name(sound, music))
         kind = "reel"
     except Exception as e:  # never lose a post slot because of the video step
         print(f"Reel failed ({e}); posting as a normal image instead")

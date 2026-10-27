@@ -4,8 +4,14 @@
   "slots": [
    {
     "t": "2026-10-27T10:57:00+00:00",
+    "status": "done",
+    "attempts": 1
+   },
+   {
+    "t": "2026-10-27T13:28:16.966049+00:00",
     "status": "pending",
-    "attempts": 0
+    "attempts": 0,
+    "kind": "story"
    },
    {
     "t": "2026-10-27T14:24:00+00:00",
@@ -18,6 +24,12 @@
     "attempts": 0
    },
    {
+    "t": "2026-10-27T18:55:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "story"
+   },
+   {
     "t": "2026-10-27T21:03:00+00:00",
     "status": "pending",
     "attempts": 0
@@ -28,7 +40,8 @@
     "attempts": 0
    }
   ],
-  "dump_checked": "2026-10-27"
+  "dump_checked": "2026-10-27",
+  "stories_date": "2026-10-27"
  },
  "history": [
   {
@@ -68,7 +81,17 @@
    "kind": "reel",
    "music": "awkward",
    "news": false,
-   "funny": 7
+   "funny": 7,
+   "follows_src": null,
+   "like_count": 19,
+   "comments_count": 0,
+   "reach": 180,
+   "shares": 0,
+   "saved": 0,
+   "views": 241,
+   "sends_per_1k": 0.0,
+   "score": 105.6,
+   "final": true
   },
   {
    "media_id": "18124163861317796",
@@ -167,6 +190,23 @@
    "news": false,
    "news_age_h": null,
    "funny": 7
+  },
+  {
+   "media_id": "18106694573573795",
+   "posted_at": "2026-10-27T12:44:08.775957+00:00",
+   "template_id": "148909805",
+   "template_name": "Monkey Puppet",
+   "theme": "gaming",
+   "text": "when you finally beat the boss after 12 attempts and the victory screen shows 'continue?'",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "built-in synth",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -1314,5 +1354,99 @@
  "news_used": [
   "It Was The \u201990s: This Viral Video Has Us All Remembering Those \u201cDiets\u201d",
   "Charlize Theron wore Givenchy to amfAR Dallas"
+ ],
+ "trends": {
+  "fetched_at": "2026-10-27T12:42:16.966049+00:00",
+  "styles": [
+   {
+    "query": "hyperpop",
+    "moods": [
+     "upbeat",
+     "bouncy",
+     "hype"
+    ],
+    "fx": "sped_up"
+   },
+   {
+    "query": "uk garage",
+    "moods": [
+     "bouncy",
+     "upbeat",
+     "hype"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "ambient electronic",
+    "moods": [
+     "chill",
+     "dramatic"
+    ],
+    "fx": "slowed_reverb"
+   },
+   {
+    "query": "acoustic folk",
+    "moods": [
+     "sad",
+     "wholesome"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "disco funk",
+    "moods": [
+     "upbeat",
+     "bouncy",
+     "hype"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "phonk",
+    "moods": [
+     "hype",
+     "dramatic"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "funk",
+    "moods": [
+     "upbeat",
+     "bouncy",
+     "hype"
+    ],
+    "fx": "sped_up"
+   },
+   {
+    "query": "lofi",
+    "moods": [
+     "chill",
+     "sad",
+     "wholesome"
+    ],
+    "fx": "slowed_reverb"
+   }
+  ],
+  "source": "27 headlines"
+ },
+ "follow_track": {
+  "t": "2026-10-27T12:42:16.966049+00:00",
+  "followers": 48548,
+  "reach": {
+   "18124163861317796": 235,
+   "17920745877243183": 259,
+   "18119656603999765": 229,
+   "18117111383011798": 296,
+   "18501223405101747": 231,
+   "17881446297630560": 244,
+   "18110207612220185": 183
+  }
+ },
+ "follower_log": [
+  [
+   "2026-10-27T12:42:16.966049+00:00",
+   48548
+  ]
  ]
 }

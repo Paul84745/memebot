@@ -17,6 +17,10 @@ on:
         description: "Make a carousel meme dump instead of a single meme"
         type: boolean
         default: false
+      story:
+        description: "Make an interactive Story instead of a post"
+        type: boolean
+        default: false
 
 concurrency:
   group: meme-bot
@@ -55,6 +59,7 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
           FORCE: ${{ inputs.force && '1' || '0' }}
           DUMP: ${{ inputs.dump && '1' || '0' }}
+          STORY: ${{ inputs.story && '1' || '0' }}
         run: python bot/main.py
 
       # GitHub heavily throttles `schedule` crons (runs can be hours apart). So after each

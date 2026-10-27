@@ -19,12 +19,16 @@ from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from io import BytesIO
 from pathlib import Path
+from types import SimpleNamespace
 
 import requests
 from PIL import Image, ImageDraw, ImageFont
 
+import follows
 import peers
 import reel
+import stories
+import trends
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_FILE = ROOT / "state.json"
@@ -37,6 +41,9 @@ POSTS_PER_DAY = int(os.environ.get("POSTS_PER_DAY", "5"))
 # Posting windows in UTC (covers European morning through US afternoon/evening).
 WINDOWS_UTC = [(6, 9), (9, 12), (12, 15), (15, 18), (18, 22)]
 MAX_LATE = timedelta(hours=3)  # skip a slot rather than post in a burst after an outage
+# Interactive Stories on top of the feed posts (lunch break and evening, UTC).
+STORIES_PER_DAY = int(os.environ.get("STORIES_PER_DAY", "2"))
+STORY_WINDOWS_UTC = [(11, 14), (18, 21)]
 
 THEMES = [
     "being tired and sleep", "being broke and money", "friends and group chats",
@@ -146,6 +153,29 @@ def plan_day(state, now):
     state["schedule"] = {"date": today, "slots": slots}
 
 
+def ensure_story_slots(state, now):
+    """Add today's Story slots (kept separate from the feed slots so they never become dumps)."""
+    sched = state["schedule"]
+    if sched.get("stories_date") == sched.get("date") or STORIES_PER_DAY <= 0:
+        return
+    sched["stories_date"] = sched.get("date")
+    midnight = datetime(now.year, now.month, now.day, tzinfo=timezone.utc)
+    feed = [datetime.fromisoformat(s["t"]) for s in sched["slots"] if s.get("kind") != "story"]
+    for i in range(STORIES_PER_DAY):
+        a, b = STORY_WINDOWS_UTC[i % len(STORY_WINDOWS_UTC)]
+        start = max(midnight + timedelta(hours=a), now + timedelta(minutes=10))
+        end = midnight + timedelta(hours=b)
+        if start >= end:
+            continue  # this window already passed today
+        for _ in range(20):  # keep at least 40 min away from feed posts so each gets attention
+            t = start + timedelta(minutes=random.randint(0, int((end - start).total_seconds() // 60)))
+            if all(abs((t - f).total_seconds()) > 2400 for f in feed):
+                break
+        sched["slots"].append({"t": t.isoformat(), "status": "pending", "attempts": 0, "kind": "story"})
+        print(f"Story planned for {t.isoformat()}")
+    sched["slots"].sort(key=lambda s: s["t"])
+
+
 def next_due_slot(state, now):
     for slot in state["schedule"]["slots"]:
         if slot["status"] != "pending":
@@ -163,13 +193,13 @@ def next_due_slot(state, now):
 # ------------------------------------------------------------------------- learning
 
 def score_of(m):
-    """Engagement per 1,000 people reached, with DM sends weighted heaviest: sends are what
-    push a post to non-followers. Returns None when reach is unknown (kept out of learning,
+    """Engagement per 1,000 people reached. A new follower counts 20x a like, a DM send 8x:
+    sends push a post to non-followers, follows are what actually grows the page. Returns None when reach is unknown (kept out of learning,
     so every learned score is on the same scale)."""
     reach = m.get("reach")
     if not reach:
         return None
-    raw = (8 * m.get("shares", 0) + 3 * m.get("saved", 0)
+    raw = (20 * max(m.get("follows") or 0, 0) + 8 * m.get("shares", 0) + 3 * m.get("saved", 0)
            + 2 * m.get("comments_count", 0) + m.get("like_count", 0))
     return round(1000 * raw / max(reach, 100), 1)
 
@@ -328,7 +358,8 @@ def write_insights(state):
     done = finalized(state["history"])
     lines = ["# What the bot has learned", "",
              f"Posts measured so far: {len(done)} (plus {len(state.get('imported', []))} older page posts)", "",
-             "Score = engagement per 1,000 people reached, with DM sends counted 8x a like.", ""]
+             "Score = engagement per 1,000 people reached: a new follower counts 20x a like, "
+             "a DM send 8x.", ""]
     sp = [h["sends_per_1k"] for h in done if h.get("sends_per_1k") is not None]
     if sp:
         lines += ["## Sends", f"- average: {statistics.mean(sp):.2f} sends per 1,000 reached "
@@ -338,6 +369,9 @@ def write_insights(state):
         lines += ["## Meme dumps vs single memes",
                   f"- dumps: avg {statistics.mean(h['score'] for h in dumps):.1f} ({len(dumps)} posts)",
                   f"- single: avg {statistics.mean(h['score'] for h in done):.1f} ({len(done)} posts)", ""]
+    lines += follows.report(state, done + dumps)
+    lines += stories.report(state["history"])
+    lines += trends.report(state, done)
     lines += peers.report(state)
     hs = hour_stats(state)
     if hs:
@@ -379,7 +413,9 @@ def fetch_metrics(media_id):
     fields = graph("GET", media_id, fields="like_count,comments_count")
     m["like_count"] = fields.get("like_count", 0)
     m["comments_count"] = fields.get("comments_count", 0)
-    for metrics in ("reach,shares,saved,views", "reach,shares,saved"):
+    # follows/profile_visits exist for feed photos and carousels only (not Reels): try them first
+    for metrics in ("reach,shares,saved,views,follows,profile_visits", "reach,shares,saved,views",
+                    "reach,shares,saved"):
         try:
             ins = graph("GET", f"{media_id}/insights", metric=metrics)
             for d in ins.get("data", []):
@@ -392,11 +428,26 @@ def fetch_metrics(media_id):
     return m
 
 
+def fetch_story_metrics(media_id):
+    m = {}
+    for metrics in ("reach,shares,replies,follows,profile_visits", "reach,shares,replies", "reach"):
+        try:
+            ins = graph("GET", f"{media_id}/insights", metric=metrics)
+            for d in ins.get("data", []):
+                m[d["name"]] = d["values"][0]["value"]
+            return m
+        except Exception as e:
+            last = e
+    raise last
+
+
 def refresh_metrics(state, now):
     checked = 0
     for h in state["history"]:
         if h.get("final") or not h.get("media_id") or checked >= 8:
             continue
+        if h.get("kind") == "story":
+            continue  # Stories are measured separately, before they expire (refresh_story_metrics)
         if now - datetime.fromisoformat(h["posted_at"]) < timedelta(hours=48):
             continue
         try:
@@ -404,11 +455,37 @@ def refresh_metrics(state, now):
         except Exception as e:
             print(f"metrics failed for {h['media_id']}: {e}")
             continue
+        m["follows"], h["follows_src"] = follows.follows_for(h, m)
+        if m["follows"] is None:
+            m.pop("follows")
         h.update(m)
         h["score"] = score_of(m)
+        if m.get("reach") and h.get("follows") is not None:
+            h["follows_per_1k"] = round(1000 * h["follows"] / m["reach"], 2)
         h["final"] = True
         checked += 1
-        print(f"final score {h['score']} for {h['template_name']} / {h['theme']}")
+        print(f"final score {h['score']} for {h['template_name']} / {h['theme']} "
+              f"(follows {h.get('follows')} {h.get('follows_src') or ''})")
+
+
+def refresh_story_metrics(state, now):
+    """Story insights disappear after 24h, so read them from 3h on and lock them in by ~18h."""
+    for h in state["history"]:
+        if h.get("kind") != "story" or h.get("final") or not h.get("media_id"):
+            continue
+        age = now - datetime.fromisoformat(h["posted_at"])
+        if age < timedelta(hours=3):
+            continue
+        try:
+            m = fetch_story_metrics(h["media_id"])
+            h.update(m)
+            h["score"] = stories.score_story(m)
+            h["measured_at"] = now.isoformat()
+        except Exception as e:
+            print(f"story metrics unavailable for {h['media_id']}: {str(e)[:150]}")
+        if (age >= timedelta(hours=18) and h.get("measured_at")) or age >= timedelta(hours=26):
+            h["final"] = True
+            print(f"story final: {h.get('story_type')} score {h.get('score')} reach {h.get('reach')}")
 
 
 # -------------------------------------------------------------------------- Gemini
@@ -921,7 +998,7 @@ def wrap(text, font, max_w):
     return lines
 
 
-def render(meme, template, dark=None, snap_ok=False):
+def render(meme, template, dark=None, snap_ok=False, max_total=1350):
     """Caption bar on top, reaction photo underneath (the style of the page).
     Big text so it reads instantly on a phone in the first second."""
     raw = requests.get(template["url"], timeout=30).content
@@ -945,7 +1022,7 @@ def render(meme, template, dark=None, snap_ok=False):
     lh = round(size * 1.24)
     bar_h = len(lines) * lh + 2 * pad - round(size * 0.2)
 
-    max_total = 1350  # Instagram's tallest allowed ratio (4:5)
+    # 1350 = Instagram's tallest allowed ratio (4:5); Stories ask for shorter, wider memes
     if bar_h + photo.height > max_total:
         keep = max_total - bar_h
         top = (photo.height - keep) // 2
@@ -1045,14 +1122,31 @@ def wait_container(cid, video=False):
     raise RuntimeError("Instagram container never finished processing")
 
 
-def publish(media_url, caption, video=False):
+def publish(media_url, caption, video=False, audio_name=None):
     ig = env("IG_USER_ID")
     if video:
         params = dict(media_type="REELS", video_url=media_url, caption=caption, share_to_feed="true")
+        if audio_name:
+            # Names the Reel's sound after the page: anyone who reuses it is linked back here.
+            params["audio_name"] = audio_name
     else:
         params = dict(image_url=media_url, caption=caption)
-    cid = graph("POST", f"{ig}/media", **params)["id"]
+    try:
+        cid = graph("POST", f"{ig}/media", **params)["id"]
+    except RuntimeError as e:
+        if "audio_name" not in params:
+            raise
+        print(f"::warning::audio_name refused ({str(e)[:150]}); posting without it")
+        params.pop("audio_name")
+        cid = graph("POST", f"{ig}/media", **params)["id"]
     wait_container(cid, video)
+    return graph("POST", f"{ig}/media_publish", creation_id=cid)["id"]
+
+
+def publish_story(media_url):
+    ig = env("IG_USER_ID")
+    cid = graph("POST", f"{ig}/media", media_type="STORIES", image_url=media_url)["id"]
+    wait_container(cid)
     return graph("POST", f"{ig}/media_publish", creation_id=cid)["id"]
 
 
@@ -1098,8 +1192,8 @@ def ensure_dump(state, now):
     sched["dump_checked"] = sched.get("date")
     if now.weekday() not in DUMP_DAYS or DUMP_SIZE < 2:
         return
-    pending = [s for s in sched["slots"]
-               if s["status"] == "pending" and datetime.fromisoformat(s["t"]) > now]
+    pending = [s for s in sched["slots"] if s["status"] == "pending" and s.get("kind") != "story"
+               and datetime.fromisoformat(s["t"]) > now]
     if not pending:
         return
     hs = hour_stats(state)
@@ -1167,7 +1261,57 @@ def run_dump(state, slot, dry):
 
 # ---------------------------------------------------------------------------- main
 
+def fetch_image(url):
+    return Image.open(BytesIO(requests.get(url, timeout=30).content)).convert("RGB")
+
+
+def story_ctx():
+    return SimpleNamespace(render=render, fetch_templates=fetch_templates, make_memes=make_memes,
+                           fetch_image=fetch_image, llm=llm, items=_items, BLOCKED=BLOCKED,
+                           load_font=load_font, wrap=wrap)
+
+
+def run_story(state, slot, dry):
+    want = os.environ.get("STORY_TYPE") or stories.pick_type(state["history"])
+    kind, img, meta = stories.make(state, want, story_ctx())
+    print(f"Story ({kind}): {meta['text']}")
+    if dry:
+        OUT_DIR.mkdir(exist_ok=True)
+        img.save(OUT_DIR / "story.jpg", quality=92)
+        (OUT_DIR / "story.json").write_text(json.dumps(dict(meta, story_type=kind), indent=1))
+        print("Dry run: story saved to out/")
+        return
+    IMG_DIR.mkdir(exist_ok=True)
+    path = IMG_DIR / f"{int(time.time())}_story.jpg"
+    img.save(path, quality=90)
+    media_id = publish_story(host_file(path))
+    slot["status"] = "done"
+    if meta.get("news"):
+        state.setdefault("news_used", []).append(meta["news"])
+    state["history"].append({
+        "media_id": media_id,
+        "posted_at": now_utc().isoformat(),
+        "template_id": meta.get("template_id", "story"),
+        "template_name": "story",
+        "theme": "story",
+        "text": meta["text"],
+        "kind": "story",
+        "story_type": kind,
+    })
+    print(f"Posted story {media_id}")
+
+
+def audio_name(sound, mood):
+    """e.g. 'plqmemes - sped up funk'. Original audio carries this name wherever it's reused."""
+    handle = os.environ.get("PAGE_HANDLE", "@plqmemes").lstrip("@")
+    style = sound.get("query") or mood or "original"
+    fx = {"sped_up": "sped up ", "slowed_reverb": "slowed + reverb "}.get(sound.get("fx"), "")
+    return f"{handle} - {fx}{style}"[:60]
+
+
 def run_post(state, slot, dry):
+    if slot.get("kind") == "story" or os.environ.get("STORY") == "1":
+        return run_story(state, slot, dry)
     if slot.get("kind") == "dump" or os.environ.get("DUMP") == "1":
         try:
             return run_dump(state, slot, dry)
@@ -1180,27 +1324,30 @@ def run_post(state, slot, dry):
     print(json.dumps(meme, indent=1), "| template:", template["name"])
     img = render(meme, template, snap_ok=True)
     music = meme.get("mood") or pick_music(state["history"])
+    style = trends.pick_style(state, music, state["history"])
     if dry:
         OUT_DIR.mkdir(exist_ok=True)
         img.save(OUT_DIR / "preview.jpg", quality=92)
-        (OUT_DIR / "preview.json").write_text(json.dumps(meme, indent=1))
-        reel.make_reel(img, music, OUT_DIR / "preview.mp4", tempfile.mkdtemp())
-        print(f"Dry run: preview saved to out/ (music: {music})")
+        reel.make_reel(img, music, OUT_DIR / "preview.mp4", tempfile.mkdtemp(), style)
+        (OUT_DIR / "preview.json").write_text(json.dumps(dict(meme, sound=dict(reel.LAST)), indent=1))
+        print(f"Dry run: preview saved to out/ (music: {music}, sound: {reel.LAST})")
         return
     IMG_DIR.mkdir(exist_ok=True)
     stamp = f"{int(time.time())}_{template['id']}"
     caption = meme["caption"] + "\n\n" + " ".join(meme["hashtags"])
     media_id = None
+    sound = {}
     try:
-        mp4 = reel.make_reel(img, music, IMG_DIR / f"{stamp}.mp4", tempfile.mkdtemp())
-        media_id = publish(host_file(mp4), caption, video=True)
+        mp4 = reel.make_reel(img, music, IMG_DIR / f"{stamp}.mp4", tempfile.mkdtemp(), style)
+        sound = dict(reel.LAST)
+        media_id = publish(host_file(mp4), caption, video=True, audio_name=audio_name(sound, music))
         kind = "reel"
     except Exception as e:  # never lose a post slot because of the video step
         print(f"Reel failed ({e}); posting as a normal image instead")
         path = IMG_DIR / f"{stamp}.jpg"
         img.save(path, quality=92)
         media_id = publish(host_file(path), caption)
-        kind, music = "image", None
+        kind, music, sound = "image", None, {}
     slot["status"] = "done"
     if meme.get("news"):
         state.setdefault("news_used", []).append(meme["news"])
@@ -1215,6 +1362,9 @@ def run_post(state, slot, dry):
         "format": classify_format(meme["text"]),
         "kind": kind,
         "music": music,
+        "music_style": sound.get("style"),
+        "music_fx": sound.get("fx"),
+        "track": sound.get("title"),
         "news": bool(meme.get("news")),
         "news_age_h": meme.get("news_age_h"),
         "funny": meme.get("funny"),
@@ -1249,9 +1399,19 @@ def _run(state, now, dry, force):
         except Exception as e:
             print(f"::warning::peer learning failed: {e}")
         PEER_HINT = (Path(__file__).with_name("style_guide.txt").read_text() + "\n\n") + peers.hint(state)
+        try:
+            trends.refresh(state, llm, _items, now)
+        except Exception as e:
+            print(f"::warning::trend refresh failed: {e}")
         if not dry:
             ensure_dump(state, now)
+            ensure_story_slots(state, now)
+            try:
+                follows.track(state, graph, env("IG_USER_ID"), now)
+            except Exception as e:
+                print(f"::warning::follow tracking failed: {e}")
             refresh_metrics(state, now)
+            refresh_story_metrics(state, now)
             cleanup_images()
             write_insights(state)
         if dry:

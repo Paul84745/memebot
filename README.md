@@ -41,8 +41,11 @@ If posts stop, GitHub emails you about the failed run. That email means: renew t
 - Reels are 7-second loops with the text readable from the first frame.
 - Wednesdays and Sundays, the best-timed slot becomes a carousel "meme dump" (8 memes). To preview one: Run workflow with dry_run + dump ticked.
 - News: light headlines from the last 24h, freshest first; very fresh stories get a ranking boost.
+- Follows: Instagram only reports follows per post for photos, carousels and Stories, so for Reels the bot estimates them: each run it notes the follower count and how many new people each recent post reached, and shares the new followers out accordingly. A new follower counts 20x a like in the score, so the bot learns what turns viewers into followers, not just likers.
+- Stories: 2 interactive Stories a day (lunchtime and evening UTC): "which one is funnier? reply 1 or 2" (two recent memes), "rate this 1-10" (a fresh meme), "would you rather... reply A or B" and "caption this". Instagram's API can't add real poll/quiz stickers, so they ask for replies instead; replies arrive in your DMs. The bot measures each Story before it expires and learns which kind works best. To preview one: Run workflow with dry_run + story ticked.
+- Music: every few days the bot reads headlines about trending TikTok/Reels sounds and turns them into music styles (genre + sped up / slowed + reverb). Most Reels use royalty-free music in a trending style that fits the joke's mood; the rest use plain mood music so it can compare. Each Reel's sound is named after the page (e.g. "plqmemes - sped up funk"). Instagram's API can't attach songs from Instagram's own music library, and real copyrighted songs would get Reels muted, so this is the safe way to ride sound trends.
 
 ## Tweaks (optional)
-Optional settings (add under `env:` in the workflow): `MIN_FUNNY`, `CANDIDATES`, `DUMP_DAYS` (0=Mon … 6=Sun), `DUMP_SIZE`, `REEL_SECONDS`, `NEWS_MAX_AGE_H`.
+Optional settings (add under `env:` in the workflow): `STORIES_PER_DAY` (0 turns Stories off), `MIN_FUNNY`, `CANDIDATES`, `DUMP_DAYS` (0=Mon … 6=Sun), `DUMP_SIZE`, `REEL_SECONDS`, `NEWS_MAX_AGE_H`.
 - Posts per day, posting hours: top of `bot/main.py`.
 - If a template looks wrong, add its name to `EXCLUDE_REGEX` in `bot/main.py`.

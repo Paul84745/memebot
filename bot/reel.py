@@ -6,6 +6,7 @@ and the bot learns which one performs best.
 """
 import os
 import random
+import re
 import subprocess
 import wave
 from pathlib import Path
@@ -138,24 +139,45 @@ MOOD_QUERIES = {
 }
 
 
-def real_track(mood, workdir):
-    """A real produced track (CC0/public-domain, via Openverse) trimmed to the reel length."""
+FX_FILTERS = {
+    # the two edits that dominate trending Reels audio
+    "sped_up": "asetrate=44100*1.22,aresample=44100,",
+    "slowed_reverb": "asetrate=44100*0.86,aresample=44100,aecho=0.8:0.82:70|140:0.32|0.2,",
+    "none": "",
+}
+LAST = {}  # details of the last track used, for the bot's learning log
+
+
+def _search(q):
+    r = requests.get("https://api.openverse.org/v1/audio/", timeout=30,
+                     params={"q": q, "license": "cc0,pdm", "category": "music", "page_size": 20},
+                     headers={"User-Agent": "meme-bot/1.0"})
+    res = r.json().get("results", []) if r.ok else []
+    # real songs only: long enough to have a proper section, never a one-shot sound effect
+    pool = [x for x in res if (x.get("duration") or 0) >= 30000 and x.get("url")
+            and not re.search(r"\b(kick|snare|hat|loop|sfx|fx|sample|one ?shot|drum hit)\b",
+                              (x.get("title") or "").lower())]
+    print(f"openverse q={q!r}: {len(res)} results, {len(pool)} usable songs")
+    return pool
+
+
+def real_track(mood, workdir, style=None):
+    """A real produced track (CC0/public-domain music via Openverse) trimmed to the reel length.
+    With a trend style, searches that genre first and applies its edit (sped up / slowed)."""
     workdir = Path(workdir)
-    pool = []
     queries = MOOD_QUERIES.get(mood, ["upbeat"])[:]
     random.shuffle(queries)
+    if style:
+        queries = [style["query"]] + queries
+    fx = (style or {}).get("fx", "none")
+    pool, used_q = [], None
     for q in queries + ["music"]:
-        for lic in ("cc0,pdm",):
-            r = requests.get("https://api.openverse.org/v1/audio/", timeout=30,
-                             params={"q": q, "license": lic, "page_size": 20},
-                             headers={"User-Agent": "meme-bot/1.0"})
-            res = r.json().get("results", []) if r.ok else []
-            print(f"::warning::openverse q={q!r} lic={lic} status={r.status_code}: {len(res)} results")
-            pool = [x for x in res if (x.get("duration") or 0) >= 25000 and x.get("url")]
-            if pool:
-                break
+        pool = _search(q)
         if pool:
+            used_q = q
             break
+    if style and used_q != style["query"]:
+        fx = "none"  # the trend genre had nothing usable; don't apply its edit to another genre
     random.shuffle(pool)
     for item in pool[:5]:
         try:
@@ -169,13 +191,18 @@ def real_track(mood, workdir):
                         if size > 25 * 1024 * 1024:
                             raise RuntimeError("too big")
                         f.write(chunk)
-            start = max(0, min(item["duration"] / 1000 * 0.25, item["duration"] / 1000 - DURATION - 1))
+            need = DURATION * 1.3 + 1
+            start = max(0, min(item["duration"] / 1000 * 0.25, item["duration"] / 1000 - need))
             out = workdir / "music.wav"
+            af = (FX_FILTERS.get(fx, "") + f"afade=t=in:d=0.3,afade=t=out:st={DURATION - 0.6}:d=0.6,loudnorm=I=-14")
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{start:.1f}", "-i", str(raw),
-                            "-t", str(DURATION), "-ac", "2", "-ar", "44100",
-                            "-af", f"afade=t=in:d=0.3,afade=t=out:st={DURATION - 0.6}:d=0.6,loudnorm=I=-14",
-                            str(out)], check=True, timeout=120)
-            print(f"::notice::real track used for {mood}: {item.get('title')!r} ({item.get('license')})")
+                            "-af", af, "-t", str(DURATION), "-ac", "2", "-ar", "44100", str(out)],
+                           check=True, timeout=120)
+            LAST.clear()
+            LAST.update(title=item.get("title"), query=used_q, fx=fx,
+                        style=style["query"] if style and used_q == style["query"] else None)
+            print(f"::notice::track for {mood}: {item.get('title')!r} ({item.get('license')}, "
+                  f"search {used_q!r}, edit {fx})")
             return out
         except Exception as e:
             print(f"::warning::track failed ({str(e)[:200]}), trying next")
@@ -195,15 +222,17 @@ def vertical_frame(img):
     return bg
 
 
-def make_reel(img, track, out_mp4, workdir):
+def make_reel(img, track, out_mp4, workdir, style=None):
     workdir = Path(workdir)
     workdir.mkdir(parents=True, exist_ok=True)
     frame = workdir / "frame.png"
     wav = workdir / "music.wav"
     vertical_frame(img).save(frame)
     try:
-        wav = real_track(track, workdir)
+        wav = real_track(track, workdir, style)
     except Exception as e:
+        LAST.clear()
+        LAST.update(title="built-in synth", query=None, fx="none", style=None)
         print(f"::warning::real music unavailable ({str(e)[:300]}); using built-in synth")
         synth(track, wav)
     frames = DURATION * 30

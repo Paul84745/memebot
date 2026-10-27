@@ -9,19 +9,19 @@
    },
    {
     "t": "2026-10-27T13:28:16.966049+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0,
     "kind": "story"
    },
    {
     "t": "2026-10-27T14:24:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
     "t": "2026-10-27T16:51:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-27T18:55:00+00:00",
@@ -105,7 +105,17 @@
    "music": "chill",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_src": null,
+   "like_count": 41,
+   "comments_count": 0,
+   "reach": 235,
+   "shares": 1,
+   "saved": 1,
+   "views": 349,
+   "sends_per_1k": 4.26,
+   "score": 221.3,
+   "final": true
   },
   {
    "media_id": "17920745877243183",
@@ -119,7 +129,17 @@
    "music": "bouncy",
    "news": true,
    "news_age_h": 0.4001120127777778,
-   "funny": 7
+   "funny": 7,
+   "follows_src": null,
+   "like_count": 17,
+   "comments_count": 0,
+   "reach": 259,
+   "shares": 0,
+   "saved": 0,
+   "views": 349,
+   "sends_per_1k": 0.0,
+   "score": 65.6,
+   "final": true
   },
   {
    "media_id": "18119656603999765",
@@ -133,7 +153,8 @@
    "music": "awkward",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.24
   },
   {
    "media_id": "18117111383011798",
@@ -147,7 +168,8 @@
    "music": "dramatic",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.33
   },
   {
    "media_id": "18501223405101747",
@@ -161,7 +183,8 @@
    "music": "hype",
    "news": true,
    "news_age_h": 0.109,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.18
   },
   {
    "media_id": "17881446297630560",
@@ -175,7 +198,8 @@
    "music": "chill",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.24
   },
   {
    "media_id": "18110207612220185",
@@ -189,7 +213,8 @@
    "music": "hype",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.12
   },
   {
    "media_id": "18106694573573795",
@@ -206,7 +231,25 @@
    "track": "built-in synth",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -7.89
+  },
+  {
+   "media_id": "18070919150507681",
+   "posted_at": "2026-10-27T18:26:12.973053+00:00",
+   "template_id": "5496396",
+   "template_name": "Leonardo Dicaprio Cheers",
+   "theme": "news",
+   "text": "how a 5\u2011year\u2011old DJ makes my playlist sound like trash at a rave",
+   "format": "how_x",
+   "kind": "reel",
+   "music": "upbeat",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Companion",
+   "news": true,
+   "news_age_h": 0.27315236138888893,
+   "funny": 7
   }
  ],
  "imported": [
@@ -1013,7 +1056,7 @@
  ],
  "imported_done": true,
  "peers": {
-  "fetched_at": "2026-10-25T17:40:23.288866+00:00",
+  "fetched_at": "2026-10-27T18:24:14.529417+00:00",
   "ok": [
    "memes@lemmy.world",
    "memes@lemmy.ml"
@@ -1022,203 +1065,203 @@
   "best": [
    {
     "u": "memes",
-    "er": 954,
+    "er": 988,
     "cap": "90% of \"vote blue no matter who\" discourse on lemmy",
     "t": "2026-10-24T05:48:50.599658Z",
     "type": "IMAGE",
-    "rel": 5.131
+    "rel": 5.004
    },
    {
     "u": "memes",
-    "er": 788,
+    "er": 800,
     "cap": "Be like the French",
     "t": "2026-10-21T23:40:35.748905Z",
     "type": "IMAGE",
-    "rel": 4.238
+    "rel": 4.052
    },
    {
     "u": "memes",
-    "er": 500,
-    "cap": "Fall Bucket List",
-    "t": "2026-10-22T22:41:01.707860Z",
-    "type": "IMAGE",
-    "rel": 2.689
-   },
-   {
-    "u": "memes",
-    "er": 1492,
-    "cap": "Doing our part",
-    "t": "2026-10-19T18:31:44.191644Z",
-    "type": "IMAGE",
-    "rel": 2.622
-   },
-   {
-    "u": "memes",
-    "er": 1461,
+    "er": 1475,
     "cap": "The old ways",
     "t": "2026-10-23T13:27:32.105042Z",
     "type": "IMAGE",
-    "rel": 2.567
+    "rel": 3.038
    },
    {
     "u": "memes",
-    "er": 1284,
+    "er": 1300,
     "cap": "We're highly competitive",
     "t": "2026-10-23T13:01:41.158965Z",
     "type": "IMAGE",
-    "rel": 2.256
+    "rel": 2.678
    },
    {
     "u": "memes",
-    "er": 1209,
-    "cap": "C.R.E.A.M.",
-    "t": "2026-10-19T08:10:39.176925Z",
+    "er": 506,
+    "cap": "Fall Bucket List",
+    "t": "2026-10-22T22:41:01.707860Z",
     "type": "IMAGE",
-    "rel": 2.124
+    "rel": 2.563
    },
    {
     "u": "memes",
-    "er": 1146,
-    "cap": "We're all family",
-    "t": "2026-10-22T14:01:32.590497Z",
+    "er": 495,
+    "cap": "How the tables have turned",
+    "t": "2026-10-27T01:45:07.100262Z",
     "type": "IMAGE",
-    "rel": 2.014
+    "rel": 2.507
    },
    {
     "u": "memes",
-    "er": 1122,
-    "cap": "History was made last night",
-    "t": "2026-10-18T20:37:32.599614Z",
-    "type": "IMAGE",
-    "rel": 1.971
-   },
-   {
-    "u": "memes",
-    "er": 355,
-    "cap": "It used to be a library",
-    "t": "2026-10-22T06:35:45.681941Z",
-    "type": "IMAGE",
-    "rel": 1.909
-   },
-   {
-    "u": "memes",
-    "er": 1075,
-    "cap": "The largest escape room",
-    "t": "2026-10-19T13:12:02.520684Z",
-    "type": "IMAGE",
-    "rel": 1.889
-   },
-   {
-    "u": "memes",
-    "er": 350,
-    "cap": "Show me what slimed you.",
-    "t": "2026-10-24T00:18:43.607889Z",
-    "type": "IMAGE",
-    "rel": 1.882
-   },
-   {
-    "u": "memes",
-    "er": 318,
-    "cap": "Albanian students are more French than the French",
-    "t": "2026-10-19T14:01:27.378012Z",
-    "type": "IMAGE",
-    "rel": 1.71
-   },
-   {
-    "u": "memes",
-    "er": 941,
-    "cap": "Didn\u2019t see that one coming",
-    "t": "2026-10-18T23:50:29.698986Z",
-    "type": "IMAGE",
-    "rel": 1.653
-   },
-   {
-    "u": "memes",
-    "er": 908,
-    "cap": "YOU CAN'T CHANGE THE MEME",
-    "t": "2026-10-20T02:00:11.063257Z",
-    "type": "IMAGE",
-    "rel": 1.595
-   },
-   {
-    "u": "memes",
-    "er": 902,
-    "cap": "Good luck",
-    "t": "2026-10-18T18:44:35.832282Z",
-    "type": "IMAGE",
-    "rel": 1.585
-   },
-   {
-    "u": "memes",
-    "er": 813,
-    "cap": "One hell of a hook",
-    "t": "2026-10-21T06:53:05.793118Z",
-    "type": "IMAGE",
-    "rel": 1.429
-   },
-   {
-    "u": "memes",
-    "er": 806,
-    "cap": "Four",
-    "t": "2026-10-22T14:52:24.190747Z",
-    "type": "IMAGE",
-    "rel": 1.416
-   },
-   {
-    "u": "memes",
-    "er": 794,
-    "cap": "I'll never let go..... whoops.",
-    "t": "2026-10-20T11:30:55.696325Z",
-    "type": "IMAGE",
-    "rel": 1.395
-   },
-   {
-    "u": "memes",
-    "er": 259,
-    "cap": "nOw iS NOt tHe TimE",
-    "t": "2026-10-20T07:12:12.367156Z",
-    "type": "IMAGE",
-    "rel": 1.393
-   },
-   {
-    "u": "memes",
-    "er": 767,
+    "er": 1177,
     "cap": "Buy bitcoin, bro",
     "t": "2026-10-25T06:31:51.561766Z",
     "type": "IMAGE",
-    "rel": 1.348
+    "rel": 2.424
    },
    {
     "u": "memes",
-    "er": 763,
-    "cap": "Super /s",
-    "t": "2026-10-20T17:40:36.480408Z",
+    "er": 1154,
+    "cap": "We're all family",
+    "t": "2026-10-22T14:01:32.590497Z",
     "type": "IMAGE",
-    "rel": 1.341
+    "rel": 2.377
    },
    {
     "u": "memes",
-    "er": 746,
+    "er": 1107,
+    "cap": "And proud of it",
+    "t": "2026-10-26T20:13:45.100301Z",
+    "type": "IMAGE",
+    "rel": 2.28
+   },
+   {
+    "u": "memes",
+    "er": 905,
+    "cap": "AI doomerism is AI company marketing",
+    "t": "2026-10-26T22:19:09.912890Z",
+    "type": "IMAGE",
+    "rel": 1.864
+   },
+   {
+    "u": "memes",
+    "er": 359,
+    "cap": "It used to be a library",
+    "t": "2026-10-22T06:35:45.681941Z",
+    "type": "IMAGE",
+    "rel": 1.818
+   },
+   {
+    "u": "memes",
+    "er": 348,
+    "cap": "Show me what slimed you.",
+    "t": "2026-10-24T00:18:43.607889Z",
+    "type": "IMAGE",
+    "rel": 1.763
+   },
+   {
+    "u": "memes",
+    "er": 818,
+    "cap": "One hell of a hook",
+    "t": "2026-10-21T06:53:05.793118Z",
+    "type": "IMAGE",
+    "rel": 1.685
+   },
+   {
+    "u": "memes",
+    "er": 812,
+    "cap": "Four",
+    "t": "2026-10-22T14:52:24.190747Z",
+    "type": "IMAGE",
+    "rel": 1.673
+   },
+   {
+    "u": "memes",
+    "er": 752,
     "cap": "-----BEGIN PRIVATE KEY-----",
     "t": "2026-10-22T03:03:01.255943Z",
     "type": "IMAGE",
-    "rel": 1.311
+    "rel": 1.549
    },
    {
     "u": "memes",
-    "er": 717,
+    "er": 752,
     "cap": "2 sliding scales of interpretation, just how we like it.",
     "t": "2026-10-24T22:08:33.080806Z",
     "type": "IMAGE",
-    "rel": 1.26
+    "rel": 1.549
    },
    {
     "u": "memes",
-    "er": 222,
-    "cap": "Doing our part",
-    "t": "2026-10-19T18:31:12.668669Z",
+    "er": 744,
+    "cap": "Good luck in the shrine of the silver monkey.",
+    "t": "2026-10-26T13:28:43.496861Z",
     "type": "IMAGE",
-    "rel": 1.194
+    "rel": 1.533
+   },
+   {
+    "u": "memes",
+    "er": 725,
+    "cap": "Cyrpto Tools",
+    "t": "2026-10-24T19:50:46.456770Z",
+    "type": "IMAGE",
+    "rel": 1.493
+   },
+   {
+    "u": "memes",
+    "er": 658,
+    "cap": "May I offer you a bellpepper in these trying times?",
+    "t": "2026-10-26T10:50:36.945446Z",
+    "type": "IMAGE",
+    "rel": 1.355
+   },
+   {
+    "u": "memes",
+    "er": 624,
+    "cap": "Practice Makes Perfect",
+    "t": "2026-10-24T15:46:40.062550Z",
+    "type": "IMAGE",
+    "rel": 1.285
+   },
+   {
+    "u": "memes",
+    "er": 604,
+    "cap": "Still better than Twilight",
+    "t": "2026-10-25T07:02:53.826426Z",
+    "type": "IMAGE",
+    "rel": 1.244
+   },
+   {
+    "u": "memes",
+    "er": 242,
+    "cap": "Western media and its misinfo",
+    "t": "2026-10-24T12:03:21.047095Z",
+    "type": "IMAGE",
+    "rel": 1.226
+   },
+   {
+    "u": "memes",
+    "er": 235,
+    "cap": "frog meme",
+    "t": "2026-10-24T18:52:44.208753Z",
+    "type": "IMAGE",
+    "rel": 1.19
+   },
+   {
+    "u": "memes",
+    "er": 546,
+    "cap": "faster than a quantum computer",
+    "t": "2026-10-26T17:28:59.560298Z",
+    "type": "IMAGE",
+    "rel": 1.125
+   },
+   {
+    "u": "memes",
+    "er": 513,
+    "cap": "Shrinkflation",
+    "t": "2026-10-24T05:48:28.484286Z",
+    "type": "IMAGE",
+    "rel": 1.057
    }
   ],
   "worst": [
@@ -1228,87 +1271,79 @@
     "cap": "Average day in Russia:",
     "t": "2026-10-22T17:29:20.580286Z",
     "type": "IMAGE",
-    "rel": 0.005
+    "rel": 0.006
+   },
+   {
+    "u": "memes",
+    "er": 11,
+    "cap": "I\u2019ll get around to it, one of these days",
+    "t": "2026-10-27T17:17:58.115905Z",
+    "type": "IMAGE",
+    "rel": 0.023
    },
    {
     "u": "memes",
     "er": 12,
-    "cap": "Swarm Lord",
-    "t": "2026-10-25T13:08:41.269499Z",
+    "cap": "They drew first blood, not me.",
+    "t": "2026-10-27T18:03:49.247906Z",
     "type": "IMAGE",
-    "rel": 0.021
+    "rel": 0.025
    },
    {
     "u": "memes",
     "er": 15,
+    "cap": "Swarm Lord",
+    "t": "2026-10-25T13:08:41.269499Z",
+    "type": "IMAGE",
+    "rel": 0.031
+   },
+   {
+    "u": "memes",
+    "er": 42,
     "cap": "Wink wink nudge nudge",
     "t": "2026-10-25T14:23:19.945258Z",
     "type": "IMAGE",
-    "rel": 0.026
+    "rel": 0.087
    },
    {
     "u": "memes",
-    "er": 24,
-    "cap": "The new Crapic Games launcher is quite bittersweet perhaps.",
-    "t": "2026-10-19T09:26:41.906181Z",
-    "type": "IMAGE",
-    "rel": 0.042
-   },
-   {
-    "u": "memes",
-    "er": 24,
+    "er": 25,
     "cap": "Narrator: \"They did, in fact, get deceived into voting and DZA went full zionazi\"",
     "t": "2026-10-21T19:36:44.466958Z",
     "type": "IMAGE",
-    "rel": 0.129
+    "rel": 0.127
    },
    {
     "u": "memes",
-    "er": 75,
-    "cap": "Malfoids",
-    "t": "2026-10-24T22:14:37.716780Z",
+    "er": 26,
+    "cap": "More stolen memes",
+    "t": "2026-10-22T01:58:09.881527Z",
     "type": "IMAGE",
     "rel": 0.132
    },
    {
     "u": "memes",
-    "er": 25,
-    "cap": "More stolen memes",
-    "t": "2026-10-22T01:58:09.881527Z",
-    "type": "IMAGE",
-    "rel": 0.134
-   },
-   {
-    "u": "memes",
-    "er": 81,
-    "cap": "NEIN! NEIN! .NEIN!",
-    "t": "2026-10-25T07:01:55.846644Z",
+    "er": 28,
+    "cap": "Me making a private key",
+    "t": "2026-10-23T14:54:20.077728Z",
     "type": "IMAGE",
     "rel": 0.142
    },
    {
     "u": "memes",
-    "er": 27,
-    "cap": "Me making a private key",
-    "t": "2026-10-23T14:54:20.077728Z",
-    "type": "IMAGE",
-    "rel": 0.145
-   },
-   {
-    "u": "memes",
-    "er": 27,
+    "er": 28,
     "cap": "Me making a private key",
     "t": "2026-10-23T14:52:22.701497Z",
     "type": "IMAGE",
-    "rel": 0.145
+    "rel": 0.142
    },
    {
     "u": "memes",
-    "er": 91,
-    "cap": "Beware of Friend Groups",
-    "t": "2026-10-22T22:23:34.496634Z",
+    "er": 74,
+    "cap": "Kink Shame",
+    "t": "2026-10-27T16:51:58.798070Z",
     "type": "IMAGE",
-    "rel": 0.16
+    "rel": 0.152
    },
    {
     "u": "memes",
@@ -1316,44 +1351,53 @@
     "cap": "trying to make friends, the potentials \ud83e\udd40:",
     "t": "2026-10-21T20:07:27.839763Z",
     "type": "IMAGE",
-    "rel": 0.161
+    "rel": 0.152
    },
    {
     "u": "memes",
-    "er": 104,
-    "cap": "The Two Kinds of Mustache",
-    "t": "2026-10-23T23:45:16.173558Z",
+    "er": 87,
+    "cap": "Malfoids",
+    "t": "2026-10-24T22:14:37.716780Z",
     "type": "IMAGE",
-    "rel": 0.183
+    "rel": 0.179
    },
    {
     "u": "memes",
-    "er": 35,
+    "er": 37,
     "cap": "Scaring/Scarring The Children Since 1969",
     "t": "2026-10-21T05:01:03.906103Z",
     "type": "IMAGE",
-    "rel": 0.188
+    "rel": 0.187
    },
    {
     "u": "memes",
-    "er": 36,
-    "cap": "Peace is our profession",
-    "t": "2026-10-24T22:14:58.805165Z",
+    "er": 93,
+    "cap": "Beware of Friend Groups",
+    "t": "2026-10-22T22:23:34.496634Z",
     "type": "IMAGE",
-    "rel": 0.194
+    "rel": 0.192
+   },
+   {
+    "u": "memes",
+    "er": 41,
+    "cap": "Neues Heimat",
+    "t": "2026-10-23T19:45:13.978525Z",
+    "type": "IMAGE",
+    "rel": 0.208
    }
   ],
   "by_len": {
-   "very short caption": 1.01,
-   "short caption": 0.94
+   "very short caption": 1.04,
+   "short caption": 0.9
   },
   "by_start": {
-   "other opening": 1.03
+   "other opening": 1.01
   }
  },
  "news_used": [
   "It Was The \u201990s: This Viral Video Has Us All Remembering Those \u201cDiets\u201d",
-  "Charlize Theron wore Givenchy to amfAR Dallas"
+  "Charlize Theron wore Givenchy to amfAR Dallas",
+  "5-Year-Old DJ LeeLee Goes Viral for House Music Remix of Disney's 'Cinderella'"
  ],
  "trends": {
   "fetched_at": "2026-10-27T12:42:16.966049+00:00",
@@ -1431,16 +1475,15 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-27T12:42:16.966049+00:00",
-  "followers": 48548,
+  "t": "2026-10-27T18:24:14.529417+00:00",
+  "followers": 48539,
   "reach": {
-   "18124163861317796": 235,
-   "17920745877243183": 259,
-   "18119656603999765": 229,
-   "18117111383011798": 296,
-   "18501223405101747": 231,
-   "17881446297630560": 244,
-   "18110207612220185": 183
+   "18119656603999765": 237,
+   "18117111383011798": 307,
+   "18501223405101747": 237,
+   "17881446297630560": 252,
+   "18110207612220185": 187,
+   "18106694573573795": 263
   }
  },
  "follower_log": [

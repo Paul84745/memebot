@@ -1,11 +1,16 @@
 # What the bot has learned
 
-Posts measured so far: 1 (plus 200 older page posts)
+Posts measured so far: 2 (plus 200 older page posts)
 
-Score = engagement per 1,000 people reached, with DM sends counted 8x a like.
+Score = engagement per 1,000 people reached: a new follower counts 20x a like, a DM send 8x.
 
 ## Sends
 - average: 0.00 sends per 1,000 reached (last 10 posts: 0.00)
+
+## Trending music styles right now (27 headlines, 2026-10-27)
+- hyperpop (sped up), uk garage, ambient electronic (slowed reverb), acoustic folk, disco funk, phonk, funk (sped up), lofi (slowed reverb)
+- results by sound style:
+  - plain mood music: avg 105.6 (1 posts)
 
 ## Learned from this week's top meme posts (public meme communities) (72 posts from 2 pages)
 - Opening style: other opening x1.03

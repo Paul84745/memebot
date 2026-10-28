@@ -10,8 +10,8 @@
    },
    {
     "t": "2026-10-28T13:26:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-28T19:15:00+00:00",
@@ -209,7 +209,19 @@
    "news": true,
    "news_age_h": 0.109,
    "funny": 7,
-   "follows_attr": -0.407
+   "follows_attr": -0.407,
+   "follows_src": "estimated",
+   "like_count": 14,
+   "comments_count": 0,
+   "reach": 248,
+   "shares": 0,
+   "saved": 0,
+   "views": 323,
+   "sends_per_1k": 0.0,
+   "follows": -0.4,
+   "score": 56.5,
+   "follows_per_1k": -1.61,
+   "final": true
   },
   {
    "media_id": "17881446297630560",
@@ -275,7 +287,7 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -2.145
+   "follows_attr": -2.256
   },
   {
    "media_id": "17993037480111307",
@@ -286,7 +298,7 @@
    "text": "when dad asks 'who wants dessert?' and you realize you\u2019re the only one awake",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -16.567,
+   "follows_attr": -17.345,
    "reach": 762,
    "shares": 0,
    "replies": 1,
@@ -312,7 +324,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.085
+   "follows_attr": -4.196
   },
   {
    "media_id": "18114747128332090",
@@ -341,6 +353,23 @@
    "text": "caption this: Types of Headaches meme",
    "kind": "story",
    "story_type": "caption_this"
+  },
+  {
+   "media_id": "18115599170467857",
+   "posted_at": "2026-10-28T14:31:44.490240+00:00",
+   "template_id": "27813981",
+   "template_name": "Hide the Pain Harold",
+   "theme": "news",
+   "text": "POV: you stay up to watch Wrexham win, then realize you have 8\u202fam class.",
+   "format": "pov",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Any Ideas",
+   "news": true,
+   "news_age_h": 0.5540311236111111,
+   "funny": 7
   }
  ],
  "imported": [
@@ -1488,7 +1517,8 @@
  "news_used": [
   "It Was The \u201990s: This Viral Video Has Us All Remembering Those \u201cDiets\u201d",
   "Charlize Theron wore Givenchy to amfAR Dallas",
-  "5-Year-Old DJ LeeLee Goes Viral for House Music Remix of Disney's 'Cinderella'"
+  "5-Year-Old DJ LeeLee Goes Viral for House Music Remix of Disney's 'Cinderella'",
+  "Wrexham news: Red Dragons aiming to buck bizarre Championship trend"
  ],
  "trends": {
   "fetched_at": "2026-10-27T12:42:16.966049+00:00",
@@ -1566,17 +1596,17 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-28T14:07:50.096040+00:00",
-  "followers": 48511,
+  "t": "2026-10-28T14:29:38.880548+00:00",
+  "followers": 48510,
   "reach": {
-   "18501223405101747": 248,
    "17881446297630560": 271,
    "18110207612220185": 198,
    "18106694573573795": 287,
-   "18070919150507681": 126,
-   "17993037480111307": 762,
-   "18025334810864490": 219,
-   "18114747128332090": 192
+   "18070919150507681": 128,
+   "17993037480111307": 776,
+   "18025334810864490": 221,
+   "18114747128332090": 192,
+   "18140273137651554": 0
   }
  },
  "follower_log": [

@@ -15,8 +15,8 @@
    },
    {
     "t": "2026-10-28T19:15:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-28T19:55:00+00:00",
@@ -236,7 +236,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.692
+   "follows_attr": -0.692,
+   "follows_src": "estimated",
+   "like_count": 21,
+   "comments_count": 0,
+   "reach": 273,
+   "shares": 0,
+   "saved": 1,
+   "views": 382,
+   "sends_per_1k": 0.0,
+   "follows": -0.7,
+   "score": 87.9,
+   "follows_per_1k": -2.56,
+   "final": true
   },
   {
    "media_id": "18110207612220185",
@@ -251,7 +263,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.327
+   "follows_attr": -0.372
   },
   {
    "media_id": "18106694573573795",
@@ -269,7 +281,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -8.45
+   "follows_attr": -8.57
   },
   {
    "media_id": "18070919150507681",
@@ -287,7 +299,7 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -2.256
+   "follows_attr": -2.482
   },
   {
    "media_id": "17993037480111307",
@@ -324,7 +336,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.196
+   "follows_attr": -4.467
   },
   {
    "media_id": "18114747128332090",
@@ -342,7 +354,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.41
+   "follows_attr": -3.515
   },
   {
    "media_id": "18140273137651554",
@@ -352,7 +364,15 @@
    "theme": "story",
    "text": "caption this: Types of Headaches meme",
    "kind": "story",
-   "story_type": "caption_this"
+   "story_type": "caption_this",
+   "follows_attr": -2.135,
+   "reach": 142,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 6,
+   "score": 84.5,
+   "measured_at": "2026-10-28T19:36:28.510675+00:00"
   },
   {
    "media_id": "18115599170467857",
@@ -369,6 +389,24 @@
    "track": "Any Ideas",
    "news": true,
    "news_age_h": 0.5540311236111111,
+   "funny": 7,
+   "follows_attr": -1.098
+  },
+  {
+   "media_id": "18108672161244816",
+   "posted_at": "2026-10-28T19:40:53.892623+00:00",
+   "template_id": "102156234",
+   "template_name": "Mocking Spongebob",
+   "theme": "news",
+   "text": "how me and bro gon be hitting every hot dog stand at 2am after the holiday crawl",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Automatic Landing Zone",
+   "news": true,
+   "news_age_h": 0.5038018425,
    "funny": 7
   }
  ],
@@ -1518,7 +1556,8 @@
   "It Was The \u201990s: This Viral Video Has Us All Remembering Those \u201cDiets\u201d",
   "Charlize Theron wore Givenchy to amfAR Dallas",
   "5-Year-Old DJ LeeLee Goes Viral for House Music Remix of Disney's 'Cinderella'",
-  "Wrexham news: Red Dragons aiming to buck bizarre Championship trend"
+  "Wrexham news: Red Dragons aiming to buck bizarre Championship trend",
+  "Charlotte's viral hot dog crawl organizer is back for the holidays"
  ],
  "trends": {
   "fetched_at": "2026-10-27T12:42:16.966049+00:00",
@@ -1596,17 +1635,17 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-28T14:29:38.880548+00:00",
-  "followers": 48510,
+  "t": "2026-10-28T19:36:28.510675+00:00",
+  "followers": 48506,
   "reach": {
-   "17881446297630560": 271,
-   "18110207612220185": 198,
-   "18106694573573795": 287,
-   "18070919150507681": 128,
+   "18110207612220185": 201,
+   "18106694573573795": 295,
+   "18070919150507681": 143,
    "17993037480111307": 776,
-   "18025334810864490": 221,
-   "18114747128332090": 192,
-   "18140273137651554": 0
+   "18025334810864490": 239,
+   "18114747128332090": 199,
+   "18140273137651554": 142,
+   "18115599170467857": 73
   }
  },
  "follower_log": [

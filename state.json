@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-10-28T20:58:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -263,7 +263,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.372
+   "follows_attr": -0.372,
+   "follows_src": "estimated",
+   "like_count": 9,
+   "comments_count": 0,
+   "reach": 202,
+   "shares": 0,
+   "saved": 0,
+   "views": 248,
+   "sends_per_1k": 0.0,
+   "follows": -0.4,
+   "score": 44.6,
+   "follows_per_1k": -1.98,
+   "final": true
   },
   {
    "media_id": "18106694573573795",
@@ -281,7 +293,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -8.57
+   "follows_attr": -8.607
   },
   {
    "media_id": "18070919150507681",
@@ -299,7 +311,7 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -2.482
+   "follows_attr": -2.504
   },
   {
    "media_id": "17993037480111307",
@@ -336,7 +348,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.467
+   "follows_attr": -4.504
   },
   {
    "media_id": "18114747128332090",
@@ -354,7 +366,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.515
+   "follows_attr": -3.537
   },
   {
    "media_id": "18140273137651554",
@@ -365,14 +377,14 @@
    "text": "caption this: Types of Headaches meme",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -2.135,
-   "reach": 158,
+   "follows_attr": -2.56,
+   "reach": 211,
    "shares": 0,
    "replies": 0,
    "follows": 0,
-   "profile_visits": 6,
-   "score": 75.9,
-   "measured_at": "2026-10-28T20:10:05.137142+00:00"
+   "profile_visits": 9,
+   "score": 85.3,
+   "measured_at": "2026-10-28T23:29:38.750784+00:00"
   },
   {
    "media_id": "18115599170467857",
@@ -390,7 +402,7 @@
    "news": true,
    "news_age_h": 0.5540311236111111,
    "funny": 7,
-   "follows_attr": -1.098
+   "follows_attr": -1.18
   },
   {
    "media_id": "18108672161244816",
@@ -407,7 +419,8 @@
    "track": "Automatic Landing Zone",
    "news": true,
    "news_age_h": 0.5038018425,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.834
   },
   {
    "media_id": "18127578188308430",
@@ -424,7 +437,8 @@
    "track": "Tones",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -1.117
   },
   {
    "media_id": "17950301643341357",
@@ -435,7 +449,18 @@
    "text": "How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season",
    "kind": "carousel",
    "slides": 7,
-   "funny": 7.1
+   "funny": 7.1,
+   "follows_attr": -1.423
+  },
+  {
+   "media_id": "17998456569001056",
+   "posted_at": "2026-10-28T23:29:55.765784+00:00",
+   "template_id": "252600902",
+   "template_name": "story",
+   "theme": "story",
+   "text": "caption this: Always Has Been",
+   "kind": "story",
+   "story_type": "caption_this"
   }
  ],
  "imported": [
@@ -1663,18 +1688,19 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-28T19:56:12.429408+00:00",
-  "followers": 48506,
+  "t": "2026-10-28T23:29:38.750784+00:00",
+  "followers": 48502,
   "reach": {
-   "18110207612220185": 201,
-   "18106694573573795": 296,
-   "18070919150507681": 144,
+   "18106694573573795": 301,
+   "18070919150507681": 147,
    "17993037480111307": 776,
-   "18025334810864490": 239,
-   "18114747128332090": 199,
-   "18140273137651554": 154,
-   "18115599170467857": 73,
-   "18108672161244816": 0
+   "18025334810864490": 244,
+   "18114747128332090": 202,
+   "18140273137651554": 211,
+   "18115599170467857": 84,
+   "18108672161244816": 112,
+   "18127578188308430": 150,
+   "17950301643341357": 191
   }
  },
  "follower_log": [

@@ -20,8 +20,8 @@
    },
    {
     "t": "2026-10-28T19:55:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-28T20:09:00+00:00",
@@ -366,13 +366,13 @@
    "kind": "story",
    "story_type": "caption_this",
    "follows_attr": -2.135,
-   "reach": 142,
+   "reach": 154,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 6,
-   "score": 84.5,
-   "measured_at": "2026-10-28T19:36:28.510675+00:00"
+   "score": 77.9,
+   "measured_at": "2026-10-28T19:56:12.429408+00:00"
   },
   {
    "media_id": "18115599170467857",
@@ -407,6 +407,23 @@
    "track": "Automatic Landing Zone",
    "news": true,
    "news_age_h": 0.5038018425,
+   "funny": 7
+  },
+  {
+   "media_id": "18127578188308430",
+   "posted_at": "2026-10-28T20:00:39.133142+00:00",
+   "template_id": "99683372",
+   "template_name": "Sleeping Shaq",
+   "theme": "work and bad bosses",
+   "text": "how me feels after the boss says \u2018quick 5\u2011minute meeting\u2019 at 4:58\u202fpm",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "lofi",
+   "music_fx": "slowed_reverb",
+   "track": "Tones",
+   "news": false,
+   "news_age_h": null,
    "funny": 7
   }
  ],
@@ -1635,17 +1652,18 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-28T19:36:28.510675+00:00",
+  "t": "2026-10-28T19:56:12.429408+00:00",
   "followers": 48506,
   "reach": {
    "18110207612220185": 201,
-   "18106694573573795": 295,
-   "18070919150507681": 143,
+   "18106694573573795": 296,
+   "18070919150507681": 144,
    "17993037480111307": 776,
    "18025334810864490": 239,
    "18114747128332090": 199,
-   "18140273137651554": 142,
-   "18115599170467857": 73
+   "18140273137651554": 154,
+   "18115599170467857": 73,
+   "18108672161244816": 0
   }
  },
  "follower_log": [

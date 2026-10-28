@@ -182,7 +182,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.468
+   "follows_attr": -0.578
   },
   {
    "media_id": "18501223405101747",
@@ -197,7 +197,7 @@
    "news": true,
    "news_age_h": 0.109,
    "funny": 7,
-   "follows_attr": -0.326
+   "follows_attr": -0.399
   },
   {
    "media_id": "17881446297630560",
@@ -212,7 +212,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.412
+   "follows_attr": -0.668
   },
   {
    "media_id": "18110207612220185",
@@ -227,7 +227,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.23
+   "follows_attr": -0.303
   },
   {
    "media_id": "18106694573573795",
@@ -245,7 +245,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -8.215
+   "follows_attr": -8.434
   },
   {
    "media_id": "18070919150507681",
@@ -263,7 +263,7 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -1.486
+   "follows_attr": -2.034
   },
   {
    "media_id": "17993037480111307",
@@ -274,14 +274,14 @@
    "text": "when dad asks 'who wants dessert?' and you realize you\u2019re the only one awake",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -9.699,
-   "reach": 429,
+   "follows_attr": -15.105,
+   "reach": 577,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 23,
-   "score": 116.6,
-   "measured_at": "2026-10-28T01:27:46.745042+00:00"
+   "profile_visits": 32,
+   "score": 117.9,
+   "measured_at": "2026-10-28T07:20:22.420066+00:00"
   },
   {
    "media_id": "18025334810864490",
@@ -299,7 +299,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -3.071
+   "follows_attr": -3.911
   },
   {
    "media_id": "18114747128332090",
@@ -317,7 +317,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.753
+   "follows_attr": -3.228
   }
  ],
  "imported": [
@@ -1543,18 +1543,18 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-28T01:27:46.745042+00:00",
-  "followers": 48521,
+  "t": "2026-10-28T07:20:22.420066+00:00",
+  "followers": 48513,
   "reach": {
-   "18117111383011798": 314,
-   "18501223405101747": 245,
-   "17881446297630560": 261,
-   "18110207612220185": 193,
-   "18106694573573795": 279,
-   "18070919150507681": 97,
-   "17993037480111307": 429,
-   "18025334810864490": 174,
-   "18114747128332090": 156
+   "18117111383011798": 317,
+   "18501223405101747": 247,
+   "17881446297630560": 268,
+   "18110207612220185": 195,
+   "18106694573573795": 285,
+   "18070919150507681": 112,
+   "17993037480111307": 577,
+   "18025334810864490": 197,
+   "18114747128332090": 169
   }
  },
  "follower_log": [

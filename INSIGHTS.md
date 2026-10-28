@@ -1,17 +1,18 @@
 # What the bot has learned
 
-Posts measured so far: 6 (plus 200 older page posts)
+Posts measured so far: 7 (plus 200 older page posts)
 
 Score = engagement per 1,000 people reached: a new follower counts 20x a like, a DM send 8x.
 
 ## Sends
-- average: 0.71 sends per 1,000 reached (last 10 posts: 0.71)
+- average: 0.61 sends per 1,000 reached (last 10 posts: 0.61)
 
 ## Followers
 - now 48521 (-27 since 2026-10-27)
-- new followers per 1,000 people reached: -1.56 on average (2 posts)
+- new followers per 1,000 people reached: -1.58 on average (3 posts)
 - posts that brought the most followers:
   - (-1.24/1k, -0.3 follows) When the teacher says ‘pick your own groups’ and you’re the only one left.
+  - (-1.61/1k, -0.4 follows) when you spend $3k on a dress just to get free champagne
   - (-1.88/1k, -0.6 follows) when you finally read the electricity bill and it's $127.45 for the month you were home
 
 ## Stories (1 measured)
@@ -20,7 +21,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 ## Trending music styles right now (27 headlines, 2026-10-27)
 - hyperpop (sped up), uk garage, ambient electronic (slowed reverb), acoustic folk, disco funk, phonk, funk (sped up), lofi (slowed reverb)
 - results by sound style:
-  - plain mood music: avg 104.9 (5 posts)
+  - plain mood music: avg 96.8 (6 posts)
 
 ## Learned from this week's top meme posts (public meme communities) (72 posts from 2 pages)
 - Opening style: other opening x1.01
@@ -36,7 +37,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - friends and group chats: avg 105.6 (1 posts)
 - gaming: avg 98.2 (1 posts)
 - school and studying: avg 78.8 (1 posts)
-- news: avg 65.6 (1 posts)
+- news: avg 61.0 (2 posts)
 
 ## Best photos
 - This Is Where I'd Put My Trophy If I Had One: avg 221.3 (1 posts)
@@ -46,17 +47,18 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - Leonardo Dicaprio Cheers: avg 65.6 (1 posts)
 
 ## Best formats
-- when_you: avg 117.7 (3 posts)
+- when_you: avg 102.4 (4 posts)
 - me_when: avg 89.8 (3 posts)
 
 ## Best music
 - chill: avg 221.3 (1 posts)
 - awkward: avg 92.2 (2 posts)
 - bouncy: avg 65.6 (1 posts)
+- hype: avg 56.5 (1 posts)
 - dramatic: avg 53.1 (1 posts)
 
 ## News memes vs normal
-- news: avg 65.6 (1 posts)
+- news: avg 61.0 (2 posts)
 - normal: avg 111.4 (5 posts)
 
 ## Top posts

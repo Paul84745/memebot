@@ -8,6 +8,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - average: 0.85 sends per 1,000 reached (last 10 posts: 0.85)
 
 ## Followers
+- now 48521 (-27 since 2026-10-27)
 - new followers per 1,000 people reached: -1.24 on average (1 posts)
 - posts that brought the most followers:
   - (-1.24/1k, -0.3 follows) When the teacher says ‘pick your own groups’ and you’re the only one left.

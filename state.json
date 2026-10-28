@@ -1,47 +1,48 @@
 {
  "schedule": {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "slots": [
    {
-    "t": "2026-10-27T10:57:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-10-27T13:28:16.966049+00:00",
-    "status": "skipped",
+    "t": "2026-10-28T12:12:00+00:00",
+    "status": "pending",
     "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-10-27T14:24:00+00:00",
-    "status": "skipped",
+    "t": "2026-10-28T13:26:00+00:00",
+    "status": "pending",
     "attempts": 0
    },
    {
-    "t": "2026-10-27T16:51:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-10-28T19:15:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-10-27T18:55:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-10-28T19:55:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-28T20:09:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "dump"
+   },
+   {
+    "t": "2026-10-28T20:58:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-10-27T21:03:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-10-27T22:02:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-10-28T22:46:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-10-27",
-  "stories_date": "2026-10-27"
+  "dump_checked": "2026-10-28",
+  "stories_date": "2026-10-28"
  },
  "history": [
   {
@@ -181,7 +182,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.38
+   "follows_attr": -0.468
   },
   {
    "media_id": "18501223405101747",
@@ -196,7 +197,7 @@
    "news": true,
    "news_age_h": 0.109,
    "funny": 7,
-   "follows_attr": -0.255
+   "follows_attr": -0.326
   },
   {
    "media_id": "17881446297630560",
@@ -211,7 +212,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.341
+   "follows_attr": -0.412
   },
   {
    "media_id": "18110207612220185",
@@ -226,7 +227,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.195
+   "follows_attr": -0.23
   },
   {
    "media_id": "18106694573573795",
@@ -244,7 +245,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -8.091
+   "follows_attr": -8.215
   },
   {
    "media_id": "18070919150507681",
@@ -262,7 +263,7 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -1.257
+   "follows_attr": -1.486
   },
   {
    "media_id": "17993037480111307",
@@ -273,7 +274,14 @@
    "text": "when dad asks 'who wants dessert?' and you realize you\u2019re the only one awake",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -7.14
+   "follows_attr": -9.699,
+   "reach": 429,
+   "shares": 0,
+   "replies": 1,
+   "follows": 0,
+   "profile_visits": 23,
+   "score": 116.6,
+   "measured_at": "2026-10-28T01:27:46.745042+00:00"
   },
   {
    "media_id": "18025334810864490",
@@ -290,7 +298,8 @@
    "track": "NovaTrax - Wave Length (Fun and Energetic Vibe Music)",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -3.071
   },
   {
    "media_id": "18114747128332090",
@@ -307,7 +316,8 @@
    "track": "Danik",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -2.753
   }
  ],
  "imported": [
@@ -1533,23 +1543,28 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-27T22:17:18.739426+00:00",
-  "followers": 48530,
+  "t": "2026-10-28T01:27:46.745042+00:00",
+  "followers": 48521,
   "reach": {
-   "18119656603999765": 241,
-   "18117111383011798": 309,
-   "18501223405101747": 241,
-   "17881446297630560": 257,
-   "18110207612220185": 191,
-   "18106694573573795": 272,
-   "18070919150507681": 84,
-   "17993037480111307": 284
+   "18117111383011798": 314,
+   "18501223405101747": 245,
+   "17881446297630560": 261,
+   "18110207612220185": 193,
+   "18106694573573795": 279,
+   "18070919150507681": 97,
+   "17993037480111307": 429,
+   "18025334810864490": 174,
+   "18114747128332090": 156
   }
  },
  "follower_log": [
   [
    "2026-10-27T12:42:16.966049+00:00",
    48548
+  ],
+  [
+   "2026-10-28T01:27:46.745042+00:00",
+   48521
   ]
  ]
 }

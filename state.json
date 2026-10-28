@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-10-28T12:12:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -182,7 +182,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.578
+   "follows_attr": -0.578,
+   "follows_src": "estimated",
+   "like_count": 17,
+   "comments_count": 0,
+   "reach": 320,
+   "shares": 0,
+   "saved": 0,
+   "views": 570,
+   "sends_per_1k": 0.0,
+   "follows": -0.6,
+   "score": 53.1,
+   "follows_per_1k": -1.88,
+   "final": true
   },
   {
    "media_id": "18501223405101747",
@@ -197,7 +209,7 @@
    "news": true,
    "news_age_h": 0.109,
    "funny": 7,
-   "follows_attr": -0.399
+   "follows_attr": -0.407
   },
   {
    "media_id": "17881446297630560",
@@ -212,7 +224,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.668
+   "follows_attr": -0.692
   },
   {
    "media_id": "18110207612220185",
@@ -227,7 +239,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.303
+   "follows_attr": -0.327
   },
   {
    "media_id": "18106694573573795",
@@ -245,7 +257,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -8.434
+   "follows_attr": -8.45
   },
   {
    "media_id": "18070919150507681",
@@ -263,7 +275,7 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -2.034
+   "follows_attr": -2.145
   },
   {
    "media_id": "17993037480111307",
@@ -274,14 +286,15 @@
    "text": "when dad asks 'who wants dessert?' and you realize you\u2019re the only one awake",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -15.105,
-   "reach": 577,
+   "follows_attr": -16.567,
+   "reach": 762,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 32,
-   "score": 117.9,
-   "measured_at": "2026-10-28T07:20:22.420066+00:00"
+   "profile_visits": 35,
+   "score": 97.1,
+   "measured_at": "2026-10-28T14:07:50.096040+00:00",
+   "final": true
   },
   {
    "media_id": "18025334810864490",
@@ -299,7 +312,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -3.911
+   "follows_attr": -4.085
   },
   {
    "media_id": "18114747128332090",
@@ -317,7 +330,17 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.228
+   "follows_attr": -3.41
+  },
+  {
+   "media_id": "18140273137651554",
+   "posted_at": "2026-10-28T14:08:10.634582+00:00",
+   "template_id": "119215120",
+   "template_name": "story",
+   "theme": "story",
+   "text": "caption this: Types of Headaches meme",
+   "kind": "story",
+   "story_type": "caption_this"
   }
  ],
  "imported": [
@@ -1543,18 +1566,17 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-28T07:20:22.420066+00:00",
-  "followers": 48513,
+  "t": "2026-10-28T14:07:50.096040+00:00",
+  "followers": 48511,
   "reach": {
-   "18117111383011798": 317,
-   "18501223405101747": 247,
-   "17881446297630560": 268,
-   "18110207612220185": 195,
-   "18106694573573795": 285,
-   "18070919150507681": 112,
-   "17993037480111307": 577,
-   "18025334810864490": 197,
-   "18114747128332090": 169
+   "18501223405101747": 248,
+   "17881446297630560": 271,
+   "18110207612220185": 198,
+   "18106694573573795": 287,
+   "18070919150507681": 126,
+   "17993037480111307": 762,
+   "18025334810864490": 219,
+   "18114747128332090": 192
   }
  },
  "follower_log": [

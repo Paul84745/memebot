@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-10-29T13:07:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-29T13:48:00+00:00",
@@ -480,7 +480,7 @@
    "follows": 0,
    "profile_visits": 2,
    "score": 40.8,
-   "measured_at": "2026-10-29T14:35:04.546143+00:00"
+   "measured_at": "2026-10-29T14:39:17.983314+00:00"
   },
   {
    "media_id": "18118915343004352",
@@ -498,6 +498,23 @@
    "news": true,
    "news_age_h": 0.37536223361111115,
    "funny": 7
+  },
+  {
+   "media_id": "17940011733121252",
+   "posted_at": "2026-10-29T14:41:27.033111+00:00",
+   "template_id": "28251713",
+   "template_name": "Oprah You Get A",
+   "theme": "phone battery and screen time",
+   "text": "POV: you promise a 10\u2011minute phone charge, it's now 2:45 AM and the battery shows 2%",
+   "format": "pov",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "I used to talk to you all the time (even though I was alone)",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [

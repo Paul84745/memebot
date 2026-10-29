@@ -14,8 +14,8 @@
    },
    {
     "t": "2026-10-29T13:48:00+00:00",
-    "status": "pending",
-    "attempts": 1,
+    "status": "done",
+    "attempts": 2,
     "kind": "story"
    },
    {
@@ -480,7 +480,7 @@
    "follows": 0,
    "profile_visits": 2,
    "score": 40.8,
-   "measured_at": "2026-10-29T14:43:07.623490+00:00"
+   "measured_at": "2026-10-29T14:45:04.065884+00:00"
   },
   {
    "media_id": "18118915343004352",
@@ -515,6 +515,16 @@
    "news": false,
    "news_age_h": null,
    "funny": 8
+  },
+  {
+   "media_id": "18501921094129712",
+   "posted_at": "2026-10-29T14:45:19.354710+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "this or that | A: forget to defrost chicken before dinner | B: burn popcorn and set off smoke alarm",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [

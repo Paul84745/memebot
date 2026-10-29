@@ -292,7 +292,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -8.648
+   "follows_attr": -8.692
   },
   {
    "media_id": "18070919150507681",
@@ -310,7 +310,7 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -2.545
+   "follows_attr": -2.589
   },
   {
    "media_id": "17993037480111307",
@@ -347,7 +347,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.545
+   "follows_attr": -4.603
   },
   {
    "media_id": "18114747128332090",
@@ -365,7 +365,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.537
+   "follows_attr": -3.61
   },
   {
    "media_id": "18140273137651554",
@@ -376,14 +376,15 @@
    "text": "caption this: Types of Headaches meme",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -3.053,
-   "reach": 235,
+   "follows_attr": -3.316,
+   "reach": 253,
    "shares": 0,
    "replies": 0,
    "follows": 0,
-   "profile_visits": 9,
-   "score": 76.6,
-   "measured_at": "2026-10-29T02:47:27.747487+00:00"
+   "profile_visits": 10,
+   "score": 79.1,
+   "measured_at": "2026-10-29T08:19:55.163531+00:00",
+   "final": true
   },
   {
    "media_id": "18115599170467857",
@@ -401,7 +402,7 @@
    "news": true,
    "news_age_h": 0.5540311236111111,
    "funny": 7,
-   "follows_attr": -1.262
+   "follows_attr": -1.335
   },
   {
    "media_id": "18108672161244816",
@@ -419,7 +420,7 @@
    "news": true,
    "news_age_h": 0.5038018425,
    "funny": 7,
-   "follows_attr": -1.307
+   "follows_attr": -1.599
   },
   {
    "media_id": "18127578188308430",
@@ -437,7 +438,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.466
+   "follows_attr": -1.729
   },
   {
    "media_id": "17950301643341357",
@@ -449,7 +450,7 @@
    "kind": "carousel",
    "slides": 7,
    "funny": 7.1,
-   "follows_attr": -1.998
+   "follows_attr": -2.553
   },
   {
    "media_id": "17998456569001056",
@@ -460,14 +461,14 @@
    "text": "caption this: Always Has Been",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -0.904,
-   "reach": 44,
+   "follows_attr": -1.24,
+   "reach": 67,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 1,
-   "score": 45.5,
-   "measured_at": "2026-10-29T02:47:27.747487+00:00"
+   "score": 29.9,
+   "measured_at": "2026-10-29T08:19:55.163531+00:00"
   }
  ],
  "imported": [
@@ -1695,20 +1696,20 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-29T02:47:27.747487+00:00",
-  "followers": 48499,
+  "t": "2026-10-29T08:19:55.163531+00:00",
+  "followers": 48497,
   "reach": {
-   "18106694573573795": 303,
-   "18070919150507681": 149,
+   "18106694573573795": 306,
+   "18070919150507681": 152,
    "17993037480111307": 776,
-   "18025334810864490": 246,
-   "18114747128332090": 202,
-   "18140273137651554": 235,
-   "18115599170467857": 88,
-   "18108672161244816": 135,
-   "18127578188308430": 167,
-   "17950301643341357": 219,
-   "17998456569001056": 44
+   "18025334810864490": 250,
+   "18114747128332090": 207,
+   "18140273137651554": 253,
+   "18115599170467857": 93,
+   "18108672161244816": 155,
+   "18127578188308430": 185,
+   "17950301643341357": 257,
+   "17998456569001056": 67
   }
  },
  "follower_log": [

@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-10-29T11:39:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-29T13:07:00+00:00",
@@ -292,7 +292,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -8.692
+   "follows_attr": -8.692,
+   "follows_src": "estimated",
+   "like_count": 17,
+   "comments_count": 0,
+   "reach": 306,
+   "shares": 0,
+   "saved": 0,
+   "views": 423,
+   "sends_per_1k": 0.0,
+   "follows": -8.7,
+   "score": 55.6,
+   "follows_per_1k": -28.43,
+   "final": true
   },
   {
    "media_id": "18070919150507681",
@@ -310,7 +322,7 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -2.589
+   "follows_attr": -2.748
   },
   {
    "media_id": "17993037480111307",
@@ -347,7 +359,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.603
+   "follows_attr": -4.793
   },
   {
    "media_id": "18114747128332090",
@@ -365,7 +377,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.61
+   "follows_attr": -3.705
   },
   {
    "media_id": "18140273137651554",
@@ -402,7 +414,7 @@
    "news": true,
    "news_age_h": 0.5540311236111111,
    "funny": 7,
-   "follows_attr": -1.335
+   "follows_attr": -1.462
   },
   {
    "media_id": "18108672161244816",
@@ -420,7 +432,7 @@
    "news": true,
    "news_age_h": 0.5038018425,
    "funny": 7,
-   "follows_attr": -1.599
+   "follows_attr": -2.329
   },
   {
    "media_id": "18127578188308430",
@@ -438,7 +450,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.729
+   "follows_attr": -2.523
   },
   {
    "media_id": "17950301643341357",
@@ -450,7 +462,7 @@
    "kind": "carousel",
    "slides": 7,
    "funny": 7.1,
-   "follows_attr": -2.553
+   "follows_attr": -3.569
   },
   {
    "media_id": "17998456569001056",
@@ -461,14 +473,31 @@
    "text": "caption this: Always Has Been",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -1.24,
-   "reach": 70,
+   "follows_attr": -2.129,
+   "reach": 98,
    "shares": 0,
    "replies": 0,
    "follows": 0,
-   "profile_visits": 1,
-   "score": 28.6,
-   "measured_at": "2026-10-29T09:07:09.687090+00:00"
+   "profile_visits": 2,
+   "score": 40.8,
+   "measured_at": "2026-10-29T14:35:04.546143+00:00"
+  },
+  {
+   "media_id": "18118915343004352",
+   "posted_at": "2026-10-29T14:37:44.734670+00:00",
+   "template_id": "27813981",
+   "template_name": "Hide the Pain Harold",
+   "theme": "news",
+   "text": "how me feels applying for an art grant that wants 'weird, wonderful' and you just submit your doodle",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "chill",
+   "music_style": "lofi",
+   "music_fx": "slowed_reverb",
+   "track": "Retreat",
+   "news": true,
+   "news_age_h": 0.37536223361111115,
+   "funny": 7
   }
  ],
  "imported": [
@@ -1618,7 +1647,8 @@
   "Charlize Theron wore Givenchy to amfAR Dallas",
   "5-Year-Old DJ LeeLee Goes Viral for House Music Remix of Disney's 'Cinderella'",
   "Wrexham news: Red Dragons aiming to buck bizarre Championship trend",
-  "Charlotte's viral hot dog crawl organizer is back for the holidays"
+  "Charlotte's viral hot dog crawl organizer is back for the holidays",
+  "Joy Engine Is Giving Art Grants for \u2018Weird, Wonderful\u2019 Ideas"
  ],
  "trends": {
   "fetched_at": "2026-10-27T12:42:16.966049+00:00",
@@ -1696,20 +1726,19 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-29T09:07:09.687090+00:00",
-  "followers": 48497,
+  "t": "2026-10-29T14:35:04.546143+00:00",
+  "followers": 48493,
   "reach": {
-   "18106694573573795": 306,
-   "18070919150507681": 153,
+   "18070919150507681": 158,
    "17993037480111307": 776,
-   "18025334810864490": 250,
-   "18114747128332090": 207,
+   "18025334810864490": 256,
+   "18114747128332090": 210,
    "18140273137651554": 254,
-   "18115599170467857": 94,
-   "18108672161244816": 156,
-   "18127578188308430": 185,
-   "17950301643341357": 259,
-   "17998456569001056": 70
+   "18115599170467857": 98,
+   "18108672161244816": 179,
+   "18127578188308430": 210,
+   "17950301643341357": 291,
+   "17998456569001056": 98
   }
  },
  "follower_log": [

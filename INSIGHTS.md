@@ -1,37 +1,37 @@
 # What the bot has learned
 
-Posts measured so far: 10 (plus 200 older page posts)
+Posts measured so far: 11 (plus 200 older page posts)
 
 Score = engagement per 1,000 people reached: a new follower counts 20x a like, a DM send 8x.
 
 ## Sends
-- average: 0.43 sends per 1,000 reached (last 10 posts: 0.43)
+- average: 0.39 sends per 1,000 reached (last 10 posts: 0.43)
 
 ## Followers
 - now 48499 (-49 since 2026-10-27)
-- new followers per 1,000 people reached: -6.28 on average (6 posts)
+- new followers per 1,000 people reached: -7.80 on average (7 posts)
 - posts that brought the most followers:
   - (-1.24/1k, -0.3 follows) When the teacher says ‘pick your own groups’ and you’re the only one left.
   - (-1.61/1k, -0.4 follows) when you spend $3k on a dress just to get free champagne
   - (-1.88/1k, -0.6 follows) when you finally read the electricity bill and it's $127.45 for the month you were home
 
-## Stories (2 measured)
+## Stories (3 measured)
 - rate: score 97.1, reach 762, follows 0 (1 stories)
-- caption_this: score 79.1, reach 253, follows 0 (1 stories)
+- caption_this: score 68.8, reach 195, follows 0 (2 stories)
 
 ## Trending music styles right now (27 headlines, 2026-10-27)
 - hyperpop (sped up), uk garage, ambient electronic (slowed reverb), acoustic folk, disco funk, phonk, funk (sped up), lofi (slowed reverb)
 - results by sound style:
-  - plain mood music: avg 85.4 (9 posts)
+  - plain mood music: avg 83.8 (10 posts)
 
-## Learned from this week's top meme posts (public meme communities) (72 posts from 2 pages)
-- Opening style: other opening x1.01
-- Caption length: very short caption x1.04, short caption x0.9
+## Learned from this week's top meme posts (public meme communities) (64 posts from 2 pages)
+- Opening style: other opening x0.98
+- Caption length: short caption x1.12, very short caption x0.99
 
 ## Best posting times (UTC)
 - 20:00-22:00 (score x2.15)
 - 12:00-14:00 (score x1.77)
-- 14:00-16:00 (score x0.37)
+- 18:00-20:00 (score x0.38)
 
 ## Best themes
 - procrastination: avg 221.3 (1 posts)
@@ -50,16 +50,18 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 ## Best formats
 - me_when: avg 89.3 (4 posts)
 - when_you: avg 85.0 (6 posts)
+- how_x: avg 68.8 (1 posts)
 
 ## Best music
 - chill: avg 154.6 (2 posts)
 - awkward: avg 92.2 (2 posts)
+- upbeat: avg 68.8 (1 posts)
 - bouncy: avg 60.6 (2 posts)
 - dramatic: avg 53.1 (1 posts)
 - hype: avg 50.5 (2 posts)
 
 ## News memes vs normal
-- news: avg 61.0 (2 posts)
+- news: avg 63.6 (3 posts)
 - normal: avg 93.1 (8 posts)
 
 ## Top posts

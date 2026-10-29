@@ -1,48 +1,47 @@
 {
  "schedule": {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "slots": [
    {
-    "t": "2026-10-28T12:12:00+00:00",
-    "status": "done",
-    "attempts": 1,
-    "kind": "story"
-   },
-   {
-    "t": "2026-10-28T13:26:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-10-28T19:15:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-10-28T19:55:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-10-28T20:09:00+00:00",
-    "status": "done",
-    "attempts": 1,
-    "kind": "dump"
-   },
-   {
-    "t": "2026-10-28T20:58:00+00:00",
-    "status": "done",
-    "attempts": 1,
-    "kind": "story"
-   },
-   {
-    "t": "2026-10-28T22:46:00+00:00",
+    "t": "2026-10-29T11:39:00+00:00",
     "status": "pending",
     "attempts": 0
+   },
+   {
+    "t": "2026-10-29T13:07:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-29T13:48:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "story"
+   },
+   {
+    "t": "2026-10-29T14:31:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-29T16:50:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-29T19:51:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-29T20:37:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "story"
    }
   ],
-  "dump_checked": "2026-10-28",
-  "stories_date": "2026-10-28"
+  "dump_checked": "2026-10-29",
+  "stories_date": "2026-10-29"
  },
  "history": [
   {
@@ -293,7 +292,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -8.607
+   "follows_attr": -8.648
   },
   {
    "media_id": "18070919150507681",
@@ -311,7 +310,7 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -2.504
+   "follows_attr": -2.545
   },
   {
    "media_id": "17993037480111307",
@@ -348,7 +347,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.504
+   "follows_attr": -4.545
   },
   {
    "media_id": "18114747128332090",
@@ -377,14 +376,14 @@
    "text": "caption this: Types of Headaches meme",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -2.56,
-   "reach": 211,
+   "follows_attr": -3.053,
+   "reach": 235,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 9,
-   "score": 85.3,
-   "measured_at": "2026-10-28T23:29:38.750784+00:00"
+   "score": 76.6,
+   "measured_at": "2026-10-29T02:47:27.747487+00:00"
   },
   {
    "media_id": "18115599170467857",
@@ -402,7 +401,7 @@
    "news": true,
    "news_age_h": 0.5540311236111111,
    "funny": 7,
-   "follows_attr": -1.18
+   "follows_attr": -1.262
   },
   {
    "media_id": "18108672161244816",
@@ -420,7 +419,7 @@
    "news": true,
    "news_age_h": 0.5038018425,
    "funny": 7,
-   "follows_attr": -0.834
+   "follows_attr": -1.307
   },
   {
    "media_id": "18127578188308430",
@@ -438,7 +437,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.117
+   "follows_attr": -1.466
   },
   {
    "media_id": "17950301643341357",
@@ -450,7 +449,7 @@
    "kind": "carousel",
    "slides": 7,
    "funny": 7.1,
-   "follows_attr": -1.423
+   "follows_attr": -1.998
   },
   {
    "media_id": "17998456569001056",
@@ -460,7 +459,15 @@
    "theme": "story",
    "text": "caption this: Always Has Been",
    "kind": "story",
-   "story_type": "caption_this"
+   "story_type": "caption_this",
+   "follows_attr": -0.904,
+   "reach": 44,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 1,
+   "score": 45.5,
+   "measured_at": "2026-10-29T02:47:27.747487+00:00"
   }
  ],
  "imported": [
@@ -1688,19 +1695,20 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-28T23:29:38.750784+00:00",
-  "followers": 48502,
+  "t": "2026-10-29T02:47:27.747487+00:00",
+  "followers": 48499,
   "reach": {
-   "18106694573573795": 301,
-   "18070919150507681": 147,
+   "18106694573573795": 303,
+   "18070919150507681": 149,
    "17993037480111307": 776,
-   "18025334810864490": 244,
+   "18025334810864490": 246,
    "18114747128332090": 202,
-   "18140273137651554": 211,
-   "18115599170467857": 84,
-   "18108672161244816": 112,
-   "18127578188308430": 150,
-   "17950301643341357": 191
+   "18140273137651554": 235,
+   "18115599170467857": 88,
+   "18108672161244816": 135,
+   "18127578188308430": 167,
+   "17950301643341357": 219,
+   "17998456569001056": 44
   }
  },
  "follower_log": [
@@ -1711,6 +1719,10 @@
   [
    "2026-10-28T01:27:46.745042+00:00",
    48521
+  ],
+  [
+   "2026-10-29T02:47:27.747487+00:00",
+   48499
   ]
  ]
 }

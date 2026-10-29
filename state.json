@@ -25,8 +25,8 @@
    },
    {
     "t": "2026-10-29T16:50:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-29T19:51:00+00:00",
@@ -359,7 +359,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.793
+   "follows_attr": -4.806
   },
   {
    "media_id": "18114747128332090",
@@ -414,7 +414,7 @@
    "news": true,
    "news_age_h": 0.5540311236111111,
    "funny": 7,
-   "follows_attr": -1.462
+   "follows_attr": -1.475
   },
   {
    "media_id": "18108672161244816",
@@ -432,7 +432,7 @@
    "news": true,
    "news_age_h": 0.5038018425,
    "funny": 7,
-   "follows_attr": -2.329
+   "follows_attr": -2.374
   },
   {
    "media_id": "18127578188308430",
@@ -450,7 +450,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.523
+   "follows_attr": -2.555
   },
   {
    "media_id": "17950301643341357",
@@ -462,7 +462,7 @@
    "kind": "carousel",
    "slides": 7,
    "funny": 7.1,
-   "follows_attr": -3.569
+   "follows_attr": -3.646
   },
   {
    "media_id": "17998456569001056",
@@ -473,14 +473,14 @@
    "text": "caption this: Always Has Been",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -2.129,
-   "reach": 98,
+   "follows_attr": -2.238,
+   "reach": 115,
    "shares": 0,
    "replies": 0,
    "follows": 0,
-   "profile_visits": 2,
-   "score": 40.8,
-   "measured_at": "2026-10-29T14:46:52.654516+00:00"
+   "profile_visits": 4,
+   "score": 69.6,
+   "measured_at": "2026-10-29T16:50:57.997763+00:00"
   },
   {
    "media_id": "18118915343004352",
@@ -497,7 +497,8 @@
    "track": "Retreat",
    "news": true,
    "news_age_h": 0.37536223361111115,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.945
   },
   {
    "media_id": "17940011733121252",
@@ -514,7 +515,8 @@
    "track": "I used to talk to you all the time (even though I was alone)",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -1.136
   },
   {
    "media_id": "18501921094129712",
@@ -524,7 +526,8 @@
    "theme": "story",
    "text": "this or that | A: forget to defrost chicken before dinner | B: burn popcorn and set off smoke alarm",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": -0.166
   },
   {
    "media_id": "18286213396293352",
@@ -541,6 +544,24 @@
    "track": "Do Komorky",
    "news": true,
    "news_age_h": 0.11228234222222222,
+   "funny": 7,
+   "follows_attr": -0.466
+  },
+  {
+   "media_id": "18060710555803584",
+   "posted_at": "2026-10-29T16:52:46.390762+00:00",
+   "template_id": "27813981",
+   "template_name": "Hide the Pain Harold",
+   "theme": "news",
+   "text": "How me and bro gon be at the polling booth, both wearing masks and whispering 'anyone else lost their ballot?'",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": "disco funk",
+   "music_fx": "none",
+   "track": "Sanity",
+   "news": true,
+   "news_age_h": 0.18564519777777777,
    "funny": 7
   }
  ],
@@ -1693,7 +1714,8 @@
   "Wrexham news: Red Dragons aiming to buck bizarre Championship trend",
   "Charlotte's viral hot dog crawl organizer is back for the holidays",
   "Joy Engine Is Giving Art Grants for \u2018Weird, Wonderful\u2019 Ideas",
-  "Saratoga\u2019s Latest Viral Sensation: Cheesesteak Alley"
+  "Saratoga\u2019s Latest Viral Sensation: Cheesesteak Alley",
+  "Got a question about voting? Saw something weird at a polling site? Text us!"
  ],
  "trends": {
   "fetched_at": "2026-10-27T12:42:16.966049+00:00",
@@ -1771,19 +1793,23 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-29T14:35:04.546143+00:00",
-  "followers": 48493,
+  "t": "2026-10-29T16:50:57.997763+00:00",
+  "followers": 48490,
   "reach": {
    "18070919150507681": 158,
    "17993037480111307": 776,
-   "18025334810864490": 256,
+   "18025334810864490": 258,
    "18114747128332090": 210,
    "18140273137651554": 254,
-   "18115599170467857": 98,
-   "18108672161244816": 179,
-   "18127578188308430": 210,
-   "17950301643341357": 291,
-   "17998456569001056": 98
+   "18115599170467857": 100,
+   "18108672161244816": 186,
+   "18127578188308430": 215,
+   "17950301643341357": 303,
+   "17998456569001056": 115,
+   "18118915343004352": 148,
+   "17940011733121252": 178,
+   "18501921094129712": 26,
+   "18286213396293352": 73
   }
  },
  "follower_log": [

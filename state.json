@@ -30,8 +30,8 @@
    },
    {
     "t": "2026-10-29T19:51:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-29T20:37:00+00:00",
@@ -322,7 +322,19 @@
    "news": true,
    "news_age_h": 0.27315236138888893,
    "funny": 7,
-   "follows_attr": -2.748
+   "follows_attr": -2.748,
+   "follows_src": "estimated",
+   "like_count": 11,
+   "comments_count": 0,
+   "reach": 160,
+   "shares": 0,
+   "saved": 0,
+   "views": 263,
+   "sends_per_1k": 0.0,
+   "follows": -2.7,
+   "score": 68.8,
+   "follows_per_1k": -16.88,
+   "final": true
   },
   {
    "media_id": "17993037480111307",
@@ -359,7 +371,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.806
+   "follows_attr": -4.843
   },
   {
    "media_id": "18114747128332090",
@@ -414,7 +426,7 @@
    "news": true,
    "news_age_h": 0.5540311236111111,
    "funny": 7,
-   "follows_attr": -1.475
+   "follows_attr": -1.512
   },
   {
    "media_id": "18108672161244816",
@@ -432,7 +444,7 @@
    "news": true,
    "news_age_h": 0.5038018425,
    "funny": 7,
-   "follows_attr": -2.374
+   "follows_attr": -2.424
   },
   {
    "media_id": "18127578188308430",
@@ -450,7 +462,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.555
+   "follows_attr": -2.642
   },
   {
    "media_id": "17950301643341357",
@@ -462,7 +474,7 @@
    "kind": "carousel",
    "slides": 7,
    "funny": 7.1,
-   "follows_attr": -3.646
+   "follows_attr": -3.757
   },
   {
    "media_id": "17998456569001056",
@@ -473,14 +485,15 @@
    "text": "caption this: Always Has Been",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -2.238,
-   "reach": 115,
+   "follows_attr": -2.51,
+   "reach": 137,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 4,
-   "score": 69.6,
-   "measured_at": "2026-10-29T16:50:57.997763+00:00"
+   "score": 58.4,
+   "measured_at": "2026-10-29T19:52:00.130006+00:00",
+   "final": true
   },
   {
    "media_id": "18118915343004352",
@@ -498,7 +511,7 @@
    "news": true,
    "news_age_h": 0.37536223361111115,
    "funny": 7,
-   "follows_attr": -0.945
+   "follows_attr": -1.131
   },
   {
    "media_id": "17940011733121252",
@@ -516,7 +529,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.136
+   "follows_attr": -1.495
   },
   {
    "media_id": "18501921094129712",
@@ -527,7 +540,14 @@
    "text": "this or that | A: forget to defrost chicken before dinner | B: burn popcorn and set off smoke alarm",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.166
+   "follows_attr": -0.525,
+   "reach": 55,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 1,
+   "score": 36.4,
+   "measured_at": "2026-10-29T19:52:00.130006+00:00"
   },
   {
    "media_id": "18286213396293352",
@@ -545,7 +565,7 @@
    "news": true,
    "news_age_h": 0.11228234222222222,
    "funny": 7,
-   "follows_attr": -0.466
+   "follows_attr": -1.085
   },
   {
    "media_id": "18060710555803584",
@@ -562,6 +582,24 @@
    "track": "Sanity",
    "news": true,
    "news_age_h": 0.18564519777777777,
+   "funny": 7,
+   "follows_attr": -1.882
+  },
+  {
+   "media_id": "18132425587813320",
+   "posted_at": "2026-10-29T19:54:42.050479+00:00",
+   "template_id": "61520",
+   "template_name": "Futurama Fry",
+   "theme": "news",
+   "text": "how me and bro gon be paying $60 for a loaf because it said 'artisan'",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Tanya - Magic Penny/Tanya Introduces Herself And Her Brother Justin",
+   "news": true,
+   "news_age_h": 0.71991535,
    "funny": 7
   }
  ],
@@ -1369,278 +1407,230 @@
  ],
  "imported_done": true,
  "peers": {
-  "fetched_at": "2026-10-27T18:24:14.529417+00:00",
+  "fetched_at": "2026-10-29T19:52:00.130006+00:00",
   "ok": [
    "memes@lemmy.world",
    "memes@lemmy.ml"
   ],
-  "n": 72,
+  "n": 64,
   "best": [
    {
     "u": "memes",
-    "er": 988,
+    "er": 1009,
     "cap": "90% of \"vote blue no matter who\" discourse on lemmy",
     "t": "2026-10-24T05:48:50.599658Z",
     "type": "IMAGE",
-    "rel": 5.004
+    "rel": 4.762
    },
    {
     "u": "memes",
-    "er": 800,
-    "cap": "Be like the French",
-    "t": "2026-10-21T23:40:35.748905Z",
-    "type": "IMAGE",
-    "rel": 4.052
-   },
-   {
-    "u": "memes",
-    "er": 1475,
-    "cap": "The old ways",
-    "t": "2026-10-23T13:27:32.105042Z",
-    "type": "IMAGE",
-    "rel": 3.038
-   },
-   {
-    "u": "memes",
-    "er": 1300,
-    "cap": "We're highly competitive",
-    "t": "2026-10-23T13:01:41.158965Z",
-    "type": "IMAGE",
-    "rel": 2.678
-   },
-   {
-    "u": "memes",
-    "er": 506,
-    "cap": "Fall Bucket List",
-    "t": "2026-10-22T22:41:01.707860Z",
-    "type": "IMAGE",
-    "rel": 2.563
-   },
-   {
-    "u": "memes",
-    "er": 495,
+    "er": 630,
     "cap": "How the tables have turned",
     "t": "2026-10-27T01:45:07.100262Z",
     "type": "IMAGE",
-    "rel": 2.507
+    "rel": 2.973
    },
    {
     "u": "memes",
-    "er": 1177,
-    "cap": "Buy bitcoin, bro",
-    "t": "2026-10-25T06:31:51.561766Z",
+    "er": 1631,
+    "cap": "Your guide to grad school",
+    "t": "2026-10-28T13:12:44.546855Z",
     "type": "IMAGE",
-    "rel": 2.424
+    "rel": 2.971
    },
    {
     "u": "memes",
-    "er": 1154,
-    "cap": "We're all family",
-    "t": "2026-10-22T14:01:32.590497Z",
+    "er": 1480,
+    "cap": "The old ways",
+    "t": "2026-10-23T13:27:32.105042Z",
     "type": "IMAGE",
-    "rel": 2.377
+    "rel": 2.696
    },
    {
     "u": "memes",
-    "er": 1107,
+    "er": 507,
+    "cap": "Fall Bucket List",
+    "t": "2026-10-22T22:41:01.707860Z",
+    "type": "IMAGE",
+    "rel": 2.393
+   },
+   {
+    "u": "memes",
+    "er": 1306,
+    "cap": "We're highly competitive",
+    "t": "2026-10-23T13:01:41.158965Z",
+    "type": "IMAGE",
+    "rel": 2.379
+   },
+   {
+    "u": "memes",
+    "er": 1269,
     "cap": "And proud of it",
     "t": "2026-10-26T20:13:45.100301Z",
     "type": "IMAGE",
-    "rel": 2.28
+    "rel": 2.311
    },
    {
     "u": "memes",
-    "er": 905,
+    "er": 1207,
+    "cap": "Buy bitcoin, bro",
+    "t": "2026-10-25T06:31:51.561766Z",
+    "type": "IMAGE",
+    "rel": 2.198
+   },
+   {
+    "u": "memes",
+    "er": 1183,
+    "cap": "Do not redeem",
+    "t": "2026-10-27T16:18:58.199889Z",
+    "type": "IMAGE",
+    "rel": 2.155
+   },
+   {
+    "u": "memes",
+    "er": 1096,
     "cap": "AI doomerism is AI company marketing",
     "t": "2026-10-26T22:19:09.912890Z",
     "type": "IMAGE",
-    "rel": 1.864
+    "rel": 1.996
    },
    {
     "u": "memes",
-    "er": 359,
-    "cap": "It used to be a library",
-    "t": "2026-10-22T06:35:45.681941Z",
-    "type": "IMAGE",
-    "rel": 1.818
-   },
-   {
-    "u": "memes",
-    "er": 348,
+    "er": 353,
     "cap": "Show me what slimed you.",
     "t": "2026-10-24T00:18:43.607889Z",
     "type": "IMAGE",
-    "rel": 1.763
+    "rel": 1.666
    },
    {
     "u": "memes",
-    "er": 818,
-    "cap": "One hell of a hook",
-    "t": "2026-10-21T06:53:05.793118Z",
-    "type": "IMAGE",
-    "rel": 1.685
-   },
-   {
-    "u": "memes",
-    "er": 812,
-    "cap": "Four",
-    "t": "2026-10-22T14:52:24.190747Z",
-    "type": "IMAGE",
-    "rel": 1.673
-   },
-   {
-    "u": "memes",
-    "er": 752,
-    "cap": "-----BEGIN PRIVATE KEY-----",
-    "t": "2026-10-22T03:03:01.255943Z",
-    "type": "IMAGE",
-    "rel": 1.549
-   },
-   {
-    "u": "memes",
-    "er": 752,
-    "cap": "2 sliding scales of interpretation, just how we like it.",
-    "t": "2026-10-24T22:08:33.080806Z",
-    "type": "IMAGE",
-    "rel": 1.549
-   },
-   {
-    "u": "memes",
-    "er": 744,
+    "er": 837,
     "cap": "Good luck in the shrine of the silver monkey.",
     "t": "2026-10-26T13:28:43.496861Z",
     "type": "IMAGE",
-    "rel": 1.533
+    "rel": 1.524
    },
    {
     "u": "memes",
-    "er": 725,
+    "er": 316,
+    "cap": "Surely they won't send *me* to the camps",
+    "t": "2026-10-29T05:45:56.354154Z",
+    "type": "IMAGE",
+    "rel": 1.491
+   },
+   {
+    "u": "memes",
+    "er": 293,
+    "cap": "Of course this would all be fixed if people would just vote for the blue oligarch",
+    "t": "2026-10-29T04:57:21.647150Z",
+    "type": "IMAGE",
+    "rel": 1.383
+   },
+   {
+    "u": "memes",
+    "er": 757,
+    "cap": "2 sliding scales of interpretation, just how we like it.",
+    "t": "2026-10-24T22:08:33.080806Z",
+    "type": "IMAGE",
+    "rel": 1.379
+   },
+   {
+    "u": "memes",
+    "er": 728,
     "cap": "Cyrpto Tools",
     "t": "2026-10-24T19:50:46.456770Z",
     "type": "IMAGE",
-    "rel": 1.493
+    "rel": 1.326
    },
    {
     "u": "memes",
-    "er": 658,
+    "er": 703,
+    "cap": "There is no explanation",
+    "t": "2026-10-27T22:28:23.570714Z",
+    "type": "IMAGE",
+    "rel": 1.28
+   },
+   {
+    "u": "memes",
+    "er": 684,
     "cap": "May I offer you a bellpepper in these trying times?",
     "t": "2026-10-26T10:50:36.945446Z",
     "type": "IMAGE",
-    "rel": 1.355
+    "rel": 1.246
    },
    {
     "u": "memes",
-    "er": 624,
-    "cap": "Practice Makes Perfect",
-    "t": "2026-10-24T15:46:40.062550Z",
-    "type": "IMAGE",
-    "rel": 1.285
-   },
-   {
-    "u": "memes",
-    "er": 604,
-    "cap": "Still better than Twilight",
-    "t": "2026-10-25T07:02:53.826426Z",
-    "type": "IMAGE",
-    "rel": 1.244
-   },
-   {
-    "u": "memes",
-    "er": 242,
+    "er": 262,
     "cap": "Western media and its misinfo",
     "t": "2026-10-24T12:03:21.047095Z",
     "type": "IMAGE",
-    "rel": 1.226
+    "rel": 1.237
    },
    {
     "u": "memes",
-    "er": 235,
+    "er": 627,
+    "cap": "Practice Makes Perfect",
+    "t": "2026-10-24T15:46:40.062550Z",
+    "type": "IMAGE",
+    "rel": 1.142
+   },
+   {
+    "u": "memes",
+    "er": 239,
     "cap": "frog meme",
     "t": "2026-10-24T18:52:44.208753Z",
     "type": "IMAGE",
-    "rel": 1.19
+    "rel": 1.128
    },
    {
     "u": "memes",
-    "er": 546,
+    "er": 610,
+    "cap": "Still better than Twilight",
+    "t": "2026-10-25T07:02:53.826426Z",
+    "type": "IMAGE",
+    "rel": 1.111
+   },
+   {
+    "u": "memes",
+    "er": 218,
+    "cap": "I'm not changing the sheets, I don't care.",
+    "t": "2026-10-26T20:45:55.344982Z",
+    "type": "IMAGE",
+    "rel": 1.029
+   },
+   {
+    "u": "memes",
+    "er": 563,
     "cap": "faster than a quantum computer",
     "t": "2026-10-26T17:28:59.560298Z",
     "type": "IMAGE",
-    "rel": 1.125
+    "rel": 1.025
    },
    {
     "u": "memes",
-    "er": 513,
-    "cap": "Shrinkflation",
-    "t": "2026-10-24T05:48:28.484286Z",
+    "er": 202,
+    "cap": "Just vute",
+    "t": "2026-10-23T23:09:59.049011Z",
     "type": "IMAGE",
-    "rel": 1.057
+    "rel": 0.953
    }
   ],
   "worst": [
-   {
-    "u": "memes",
-    "er": 3,
-    "cap": "Average day in Russia:",
-    "t": "2026-10-22T17:29:20.580286Z",
-    "type": "IMAGE",
-    "rel": 0.006
-   },
-   {
-    "u": "memes",
-    "er": 11,
-    "cap": "I\u2019ll get around to it, one of these days",
-    "t": "2026-10-27T17:17:58.115905Z",
-    "type": "IMAGE",
-    "rel": 0.023
-   },
-   {
-    "u": "memes",
-    "er": 12,
-    "cap": "They drew first blood, not me.",
-    "t": "2026-10-27T18:03:49.247906Z",
-    "type": "IMAGE",
-    "rel": 0.025
-   },
    {
     "u": "memes",
     "er": 15,
     "cap": "Swarm Lord",
     "t": "2026-10-25T13:08:41.269499Z",
     "type": "IMAGE",
-    "rel": 0.031
+    "rel": 0.027
    },
    {
     "u": "memes",
-    "er": 42,
+    "er": 33,
     "cap": "Wink wink nudge nudge",
     "t": "2026-10-25T14:23:19.945258Z",
     "type": "IMAGE",
-    "rel": 0.087
-   },
-   {
-    "u": "memes",
-    "er": 25,
-    "cap": "Narrator: \"They did, in fact, get deceived into voting and DZA went full zionazi\"",
-    "t": "2026-10-21T19:36:44.466958Z",
-    "type": "IMAGE",
-    "rel": 0.127
-   },
-   {
-    "u": "memes",
-    "er": 26,
-    "cap": "More stolen memes",
-    "t": "2026-10-22T01:58:09.881527Z",
-    "type": "IMAGE",
-    "rel": 0.132
-   },
-   {
-    "u": "memes",
-    "er": 28,
-    "cap": "Me making a private key",
-    "t": "2026-10-23T14:54:20.077728Z",
-    "type": "IMAGE",
-    "rel": 0.142
+    "rel": 0.06
    },
    {
     "u": "memes",
@@ -1648,23 +1638,15 @@
     "cap": "Me making a private key",
     "t": "2026-10-23T14:52:22.701497Z",
     "type": "IMAGE",
-    "rel": 0.142
+    "rel": 0.132
    },
    {
     "u": "memes",
-    "er": 74,
-    "cap": "Kink Shame",
-    "t": "2026-10-27T16:51:58.798070Z",
+    "er": 85,
+    "cap": "I\u2019ll get around to it, one of these days",
+    "t": "2026-10-27T17:17:58.115905Z",
     "type": "IMAGE",
-    "rel": 0.152
-   },
-   {
-    "u": "memes",
-    "er": 30,
-    "cap": "trying to make friends, the potentials \ud83e\udd40:",
-    "t": "2026-10-21T20:07:27.839763Z",
-    "type": "IMAGE",
-    "rel": 0.152
+    "rel": 0.155
    },
    {
     "u": "memes",
@@ -1672,15 +1654,7 @@
     "cap": "Malfoids",
     "t": "2026-10-24T22:14:37.716780Z",
     "type": "IMAGE",
-    "rel": 0.179
-   },
-   {
-    "u": "memes",
-    "er": 37,
-    "cap": "Scaring/Scarring The Children Since 1969",
-    "t": "2026-10-21T05:01:03.906103Z",
-    "type": "IMAGE",
-    "rel": 0.187
+    "rel": 0.158
    },
    {
     "u": "memes",
@@ -1688,7 +1662,7 @@
     "cap": "Beware of Friend Groups",
     "t": "2026-10-22T22:23:34.496634Z",
     "type": "IMAGE",
-    "rel": 0.192
+    "rel": 0.169
    },
    {
     "u": "memes",
@@ -1696,15 +1670,79 @@
     "cap": "Neues Heimat",
     "t": "2026-10-23T19:45:13.978525Z",
     "type": "IMAGE",
+    "rel": 0.194
+   },
+   {
+    "u": "memes",
+    "er": 111,
+    "cap": "The Two Kinds of Mustache",
+    "t": "2026-10-23T23:45:16.173558Z",
+    "type": "IMAGE",
+    "rel": 0.202
+   },
+   {
+    "u": "memes",
+    "er": 44,
+    "cap": "Peace is our profession",
+    "t": "2026-10-24T22:14:58.805165Z",
+    "type": "IMAGE",
     "rel": 0.208
+   },
+   {
+    "u": "memes",
+    "er": 117,
+    "cap": "NEIN! NEIN! .NEIN!",
+    "t": "2026-10-25T07:01:55.846644Z",
+    "type": "IMAGE",
+    "rel": 0.213
+   },
+   {
+    "u": "memes",
+    "er": 46,
+    "cap": "\"So what are we burning today my fellow kids?\"",
+    "t": "2026-10-26T11:40:35.505261Z",
+    "type": "IMAGE",
+    "rel": 0.217
+   },
+   {
+    "u": "memes",
+    "er": 53,
+    "cap": "I\u2019m in a hell of my own creation",
+    "t": "2026-10-22T21:07:48.558440Z",
+    "type": "IMAGE",
+    "rel": 0.25
+   },
+   {
+    "u": "memes",
+    "er": 55,
+    "cap": "If I don't get my bone powder, how am I gonna stay up all night?",
+    "t": "2026-10-29T04:49:04.182476Z",
+    "type": "IMAGE",
+    "rel": 0.26
+   },
+   {
+    "u": "memes",
+    "er": 66,
+    "cap": "Lazy fucks didn't update the script.",
+    "t": "2026-10-28T23:43:13.675448Z",
+    "type": "IMAGE",
+    "rel": 0.311
+   },
+   {
+    "u": "memes",
+    "er": 67,
+    "cap": "It is better to be at the bottom of a ladder that you want to be on and not in the middle of one that you don\u2019t want to be on",
+    "t": "2026-10-29T04:02:39.813202Z",
+    "type": "IMAGE",
+    "rel": 0.316
    }
   ],
   "by_len": {
-   "very short caption": 1.04,
-   "short caption": 0.9
+   "very short caption": 0.99,
+   "short caption": 1.12
   },
   "by_start": {
-   "other opening": 1.01
+   "other opening": 0.98
   }
  },
  "news_used": [
@@ -1715,7 +1753,8 @@
   "Charlotte's viral hot dog crawl organizer is back for the holidays",
   "Joy Engine Is Giving Art Grants for \u2018Weird, Wonderful\u2019 Ideas",
   "Saratoga\u2019s Latest Viral Sensation: Cheesesteak Alley",
-  "Got a question about voting? Saw something weird at a polling site? Text us!"
+  "Got a question about voting? Saw something weird at a polling site? Text us!",
+  "Would You Pay $60 for Bread? Inside New York's Viral Bakery"
  ],
  "trends": {
   "fetched_at": "2026-10-27T12:42:16.966049+00:00",
@@ -1793,23 +1832,22 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-29T16:50:57.997763+00:00",
-  "followers": 48490,
+  "t": "2026-10-29T19:52:00.130006+00:00",
+  "followers": 48486,
   "reach": {
-   "18070919150507681": 158,
-   "17993037480111307": 776,
-   "18025334810864490": 258,
+   "18025334810864490": 261,
    "18114747128332090": 210,
    "18140273137651554": 254,
-   "18115599170467857": 100,
-   "18108672161244816": 186,
-   "18127578188308430": 215,
-   "17950301643341357": 303,
-   "17998456569001056": 115,
-   "18118915343004352": 148,
-   "17940011733121252": 178,
-   "18501921094129712": 26,
-   "18286213396293352": 73
+   "18115599170467857": 103,
+   "18108672161244816": 190,
+   "18127578188308430": 222,
+   "17950301643341357": 312,
+   "17998456569001056": 137,
+   "18118915343004352": 163,
+   "17940011733121252": 207,
+   "18501921094129712": 55,
+   "18286213396293352": 123,
+   "18060710555803584": 152
   }
  },
  "follower_log": [

@@ -35,8 +35,8 @@
    },
    {
     "t": "2026-10-29T20:37:00+00:00",
-    "status": "pending",
-    "attempts": 2,
+    "status": "done",
+    "attempts": 3,
     "kind": "story"
    }
   ],
@@ -547,7 +547,7 @@
    "follows": 0,
    "profile_visits": 1,
    "score": 32.8,
-   "measured_at": "2026-10-29T20:40:05.667773+00:00"
+   "measured_at": "2026-10-29T20:41:42.702945+00:00"
   },
   {
    "media_id": "18286213396293352",
@@ -601,6 +601,16 @@
    "news": true,
    "news_age_h": 0.71991535,
    "funny": 7
+  },
+  {
+   "media_id": "18133773475823062",
+   "posted_at": "2026-10-29T20:41:55.971216+00:00",
+   "template_id": "77045868",
+   "template_name": "story",
+   "theme": "story",
+   "text": "caption this: Pawn Stars Best I Can Do",
+   "kind": "story",
+   "story_type": "caption_this"
   }
  ],
  "imported": [

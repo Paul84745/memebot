@@ -36,7 +36,7 @@
    {
     "t": "2026-10-29T20:37:00+00:00",
     "status": "pending",
-    "attempts": 1,
+    "attempts": 2,
     "kind": "story"
    }
   ],
@@ -547,7 +547,7 @@
    "follows": 0,
    "profile_visits": 1,
    "score": 32.8,
-   "measured_at": "2026-10-29T20:38:16.840420+00:00"
+   "measured_at": "2026-10-29T20:40:05.667773+00:00"
   },
   {
    "media_id": "18286213396293352",

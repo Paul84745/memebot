@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-10-30T21:16:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-30T22:05:00+00:00",
@@ -480,7 +480,19 @@
    "news": true,
    "news_age_h": 0.5038018425,
    "funny": 7,
-   "follows_attr": -2.777
+   "follows_attr": -2.777,
+   "follows_src": "estimated",
+   "like_count": 35,
+   "comments_count": 0,
+   "reach": 205,
+   "shares": 3,
+   "saved": 2,
+   "views": 301,
+   "sends_per_1k": 14.63,
+   "follows": -2.8,
+   "score": 317.1,
+   "follows_per_1k": -13.66,
+   "final": true
   },
   {
    "media_id": "18127578188308430",
@@ -498,7 +510,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.042
+   "follows_attr": -3.042,
+   "follows_src": "estimated",
+   "like_count": 18,
+   "comments_count": 0,
+   "reach": 237,
+   "shares": 0,
+   "saved": 0,
+   "views": 332,
+   "sends_per_1k": 0.0,
+   "follows": -3.0,
+   "score": 75.9,
+   "follows_per_1k": -12.66,
+   "final": true
   },
   {
    "media_id": "17950301643341357",
@@ -510,7 +534,20 @@
    "kind": "carousel",
    "slides": 7,
    "funny": 7.1,
-   "follows_attr": -3.993
+   "follows_attr": -3.993,
+   "follows_src": "instagram",
+   "like_count": 28,
+   "comments_count": 0,
+   "reach": 323,
+   "shares": 0,
+   "saved": 3,
+   "views": 853,
+   "follows": 0,
+   "profile_visits": 6,
+   "sends_per_1k": 0.0,
+   "score": 114.6,
+   "follows_per_1k": 0.0,
+   "final": true
   },
   {
    "media_id": "17998456569001056",
@@ -704,6 +741,23 @@
    "text": "when you set 7:00 am alarm, snooze till 8:46, and the train left 5 minutes ago || POV: you promise a 10\u2011minute phone charge, it's now 2:45 AM and the battery shows 2%",
    "kind": "story",
    "story_type": "faceoff"
+  },
+  {
+   "media_id": "18507925504097930",
+   "posted_at": "2026-10-30T21:20:23.102967+00:00",
+   "template_id": "99683372",
+   "template_name": "Sleeping Shaq",
+   "theme": "news",
+   "text": "when astronomers find a weird moon and you realize your brain is still on sleep mode",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "folk",
+   "music_fx": "none",
+   "track": "01 Reliable Source",
+   "news": true,
+   "news_age_h": 0.5168477269444445,
+   "funny": 7
   }
  ],
  "imported": [
@@ -1858,7 +1912,8 @@
   "Saratoga\u2019s Latest Viral Sensation: Cheesesteak Alley",
   "Got a question about voting? Saw something weird at a polling site? Text us!",
   "Would You Pay $60 for Bread? Inside New York's Viral Bakery",
-  "Someone ran Rivian\u2019s pedal-by-wire e-bike out of battery and things got weird"
+  "Someone ran Rivian\u2019s pedal-by-wire e-bike out of battery and things got weird",
+  "Astronomers May Have Just Discovered A Bizarre Moon Unlike Any We Know"
  ],
  "trends": {
   "fetched_at": "2026-10-30T14:12:29.252663+00:00",
@@ -1946,22 +2001,20 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-30T18:42:05.869502+00:00",
+  "t": "2026-10-30T21:17:52.359488+00:00",
   "followers": 48465,
   "reach": {
-   "18108672161244816": 203,
-   "18127578188308430": 235,
-   "17950301643341357": 321,
    "17998456569001056": 146,
-   "18118915343004352": 192,
-   "17940011733121252": 251,
+   "18118915343004352": 193,
+   "17940011733121252": 253,
    "18501921094129712": 144,
-   "18286213396293352": 210,
-   "18060710555803584": 209,
+   "18286213396293352": 216,
+   "18060710555803584": 211,
    "18132425587813320": 181,
    "18133773475823062": 105,
    "18132019591705315": 212,
-   "17963441541226805": 140
+   "17963441541226805": 148,
+   "17914287921509320": 21
   }
  },
  "follower_log": [

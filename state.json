@@ -9,19 +9,19 @@
    },
    {
     "t": "2026-10-30T11:15:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 1,
     "kind": "story"
    },
    {
     "t": "2026-10-30T12:20:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
     "t": "2026-10-30T15:55:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-30T18:41:00+00:00",
@@ -450,7 +450,19 @@
    "news": true,
    "news_age_h": 0.5540311236111111,
    "funny": 7,
-   "follows_attr": -1.717
+   "follows_attr": -1.717,
+   "follows_src": "estimated",
+   "like_count": 7,
+   "comments_count": 0,
+   "reach": 108,
+   "shares": 0,
+   "saved": 0,
+   "views": 153,
+   "sends_per_1k": 0.0,
+   "follows": -1.7,
+   "score": 64.8,
+   "follows_per_1k": -15.74,
+   "final": true
   },
   {
    "media_id": "18108672161244816",
@@ -486,7 +498,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.981
+   "follows_attr": -3.031
   },
   {
    "media_id": "17950301643341357",
@@ -535,7 +547,7 @@
    "news": true,
    "news_age_h": 0.37536223361111115,
    "funny": 7,
-   "follows_attr": -1.901
+   "follows_attr": -2.101
   },
   {
    "media_id": "17940011733121252",
@@ -553,7 +565,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.599
+   "follows_attr": -2.699
   },
   {
    "media_id": "18501921094129712",
@@ -590,7 +602,7 @@
    "news": true,
    "news_age_h": 0.11228234222222222,
    "funny": 7,
-   "follows_attr": -3.094
+   "follows_attr": -3.344
   },
   {
    "media_id": "18060710555803584",
@@ -608,7 +620,7 @@
    "news": true,
    "news_age_h": 0.18564519777777777,
    "funny": 7,
-   "follows_attr": -3.1
+   "follows_attr": -3.15
   },
   {
    "media_id": "18132425587813320",
@@ -626,7 +638,7 @@
    "news": true,
    "news_age_h": 0.71991535,
    "funny": 7,
-   "follows_attr": -1.519
+   "follows_attr": -1.719
   },
   {
    "media_id": "18133773475823062",
@@ -637,14 +649,15 @@
    "text": "caption this: Pawn Stars Best I Can Do",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -3.393,
-   "reach": 83,
+   "follows_attr": -4.043,
+   "reach": 96,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 2,
-   "score": 48.2,
-   "measured_at": "2026-10-30T14:12:29.252663+00:00"
+   "score": 41.7,
+   "measured_at": "2026-10-30T15:57:03.762974+00:00",
+   "final": true
   },
   {
    "media_id": "18132019591705315",
@@ -662,7 +675,24 @@
    "news": true,
    "news_age_h": 0.9605861472222222,
    "funny": 7,
-   "follows_attr": -3.845
+   "follows_attr": -4.345
+  },
+  {
+   "media_id": "17963441541226805",
+   "posted_at": "2026-10-30T15:59:06.809159+00:00",
+   "template_id": "3218037",
+   "template_name": "This Is Where I'd Put My Trophy If I Had One",
+   "theme": "being late and plans falling through",
+   "text": "when you set 7:00 am alarm, snooze till 8:46, and the train left 5 minutes ago",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "lofi",
+   "music_fx": "slowed_reverb",
+   "track": "Tones",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -1905,22 +1935,21 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-30T14:12:29.252663+00:00",
-  "followers": 48468,
+  "t": "2026-10-30T15:57:03.762974+00:00",
+  "followers": 48466,
   "reach": {
-   "18115599170467857": 108,
    "18108672161244816": 203,
-   "18127578188308430": 232,
+   "18127578188308430": 233,
    "17950301643341357": 319,
    "17998456569001056": 146,
-   "18118915343004352": 187,
-   "17940011733121252": 246,
+   "18118915343004352": 191,
+   "17940011733121252": 248,
    "18501921094129712": 144,
-   "18286213396293352": 192,
-   "18060710555803584": 201,
-   "18132425587813320": 176,
-   "18133773475823062": 83,
-   "18132019591705315": 198
+   "18286213396293352": 197,
+   "18060710555803584": 202,
+   "18132425587813320": 180,
+   "18133773475823062": 96,
+   "18132019591705315": 208
   }
  },
  "follower_log": [

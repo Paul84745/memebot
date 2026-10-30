@@ -25,8 +25,8 @@
    },
    {
     "t": "2026-10-30T18:41:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -498,7 +498,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.031
+   "follows_attr": -3.042
   },
   {
    "media_id": "17950301643341357",
@@ -510,7 +510,7 @@
    "kind": "carousel",
    "slides": 7,
    "funny": 7.1,
-   "follows_attr": -3.982
+   "follows_attr": -3.993
   },
   {
    "media_id": "17998456569001056",
@@ -547,7 +547,7 @@
    "news": true,
    "news_age_h": 0.37536223361111115,
    "funny": 7,
-   "follows_attr": -2.101
+   "follows_attr": -2.106
   },
   {
    "media_id": "17940011733121252",
@@ -565,7 +565,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.699
+   "follows_attr": -2.715
   },
   {
    "media_id": "18501921094129712",
@@ -602,7 +602,7 @@
    "news": true,
    "news_age_h": 0.11228234222222222,
    "funny": 7,
-   "follows_attr": -3.344
+   "follows_attr": -3.415
   },
   {
    "media_id": "18060710555803584",
@@ -620,7 +620,7 @@
    "news": true,
    "news_age_h": 0.18564519777777777,
    "funny": 7,
-   "follows_attr": -3.15
+   "follows_attr": -3.188
   },
   {
    "media_id": "18132425587813320",
@@ -638,7 +638,7 @@
    "news": true,
    "news_age_h": 0.71991535,
    "funny": 7,
-   "follows_attr": -1.719
+   "follows_attr": -1.724
   },
   {
    "media_id": "18133773475823062",
@@ -649,7 +649,7 @@
    "text": "caption this: Pawn Stars Best I Can Do",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -4.043,
+   "follows_attr": -4.092,
    "reach": 96,
    "shares": 0,
    "replies": 0,
@@ -675,7 +675,7 @@
    "news": true,
    "news_age_h": 0.9605861472222222,
    "funny": 7,
-   "follows_attr": -4.345
+   "follows_attr": -4.367
   },
   {
    "media_id": "17963441541226805",
@@ -692,7 +692,18 @@
    "track": "Tones",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.769
+  },
+  {
+   "media_id": "17914287921509320",
+   "posted_at": "2026-10-30T18:42:22.765181+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "when you set 7:00 am alarm, snooze till 8:46, and the train left 5 minutes ago || POV: you promise a 10\u2011minute phone charge, it's now 2:45 AM and the battery shows 2%",
+   "kind": "story",
+   "story_type": "faceoff"
   }
  ],
  "imported": [
@@ -1935,21 +1946,22 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-30T15:57:03.762974+00:00",
-  "followers": 48466,
+  "t": "2026-10-30T18:42:05.869502+00:00",
+  "followers": 48465,
   "reach": {
    "18108672161244816": 203,
-   "18127578188308430": 233,
-   "17950301643341357": 319,
+   "18127578188308430": 235,
+   "17950301643341357": 321,
    "17998456569001056": 146,
-   "18118915343004352": 191,
-   "17940011733121252": 248,
+   "18118915343004352": 192,
+   "17940011733121252": 251,
    "18501921094129712": 144,
-   "18286213396293352": 197,
-   "18060710555803584": 202,
-   "18132425587813320": 180,
-   "18133773475823062": 96,
-   "18132019591705315": 208
+   "18286213396293352": 210,
+   "18060710555803584": 209,
+   "18132425587813320": 181,
+   "18133773475823062": 105,
+   "18132019591705315": 212,
+   "17963441541226805": 140
   }
  },
  "follower_log": [

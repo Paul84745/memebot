@@ -10,7 +10,7 @@
    {
     "t": "2026-10-30T11:15:00+00:00",
     "status": "pending",
-    "attempts": 0,
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -450,7 +450,7 @@
    "news": true,
    "news_age_h": 0.5540311236111111,
    "funny": 7,
-   "follows_attr": -1.698
+   "follows_attr": -1.717
   },
   {
    "media_id": "18108672161244816",
@@ -468,7 +468,7 @@
    "news": true,
    "news_age_h": 0.5038018425,
    "funny": 7,
-   "follows_attr": -2.719
+   "follows_attr": -2.777
   },
   {
    "media_id": "18127578188308430",
@@ -486,7 +486,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.884
+   "follows_attr": -2.981
   },
   {
    "media_id": "17950301643341357",
@@ -498,7 +498,7 @@
    "kind": "carousel",
    "slides": 7,
    "funny": 7.1,
-   "follows_attr": -3.943
+   "follows_attr": -3.982
   },
   {
    "media_id": "17998456569001056",
@@ -535,7 +535,7 @@
    "news": true,
    "news_age_h": 0.37536223361111115,
    "funny": 7,
-   "follows_attr": -1.843
+   "follows_attr": -1.901
   },
   {
    "media_id": "17940011733121252",
@@ -553,7 +553,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.385
+   "follows_attr": -2.599
   },
   {
    "media_id": "18501921094129712",
@@ -564,14 +564,15 @@
    "text": "this or that | A: forget to defrost chicken before dinner | B: burn popcorn and set off smoke alarm",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -3.117,
-   "reach": 122,
+   "follows_attr": -3.544,
+   "reach": 144,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 3,
-   "score": 82.0,
-   "measured_at": "2026-10-30T08:07:00.352797+00:00"
+   "profile_visits": 4,
+   "score": 83.3,
+   "measured_at": "2026-10-30T14:12:29.252663+00:00",
+   "final": true
   },
   {
    "media_id": "18286213396293352",
@@ -589,7 +590,7 @@
    "news": true,
    "news_age_h": 0.11228234222222222,
    "funny": 7,
-   "follows_attr": -2.764
+   "follows_attr": -3.094
   },
   {
    "media_id": "18060710555803584",
@@ -607,7 +608,7 @@
    "news": true,
    "news_age_h": 0.18564519777777777,
    "funny": 7,
-   "follows_attr": -2.809
+   "follows_attr": -3.1
   },
   {
    "media_id": "18132425587813320",
@@ -625,7 +626,7 @@
    "news": true,
    "news_age_h": 0.71991535,
    "funny": 7,
-   "follows_attr": -1.228
+   "follows_attr": -1.519
   },
   {
    "media_id": "18133773475823062",
@@ -636,14 +637,14 @@
    "text": "caption this: Pawn Stars Best I Can Do",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -3.063,
-   "reach": 66,
+   "follows_attr": -3.393,
+   "reach": 83,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 2,
-   "score": 60.6,
-   "measured_at": "2026-10-30T08:07:00.352797+00:00"
+   "score": 48.2,
+   "measured_at": "2026-10-30T14:12:29.252663+00:00"
   },
   {
    "media_id": "18132019591705315",
@@ -660,7 +661,8 @@
    "track": "The Cheese Band - The Cheese Band",
    "news": true,
    "news_age_h": 0.9605861472222222,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -3.845
   }
  ],
  "imported": [
@@ -1818,58 +1820,59 @@
   "Someone ran Rivian\u2019s pedal-by-wire e-bike out of battery and things got weird"
  ],
  "trends": {
-  "fetched_at": "2026-10-27T12:42:16.966049+00:00",
+  "fetched_at": "2026-10-30T14:12:29.252663+00:00",
   "styles": [
    {
-    "query": "hyperpop",
+    "query": "phonk",
     "moods": [
-     "upbeat",
-     "bouncy",
-     "hype"
-    ],
-    "fx": "sped_up"
-   },
-   {
-    "query": "uk garage",
-    "moods": [
-     "bouncy",
-     "upbeat",
-     "hype"
+     "hype",
+     "bouncy"
     ],
     "fx": "none"
    },
    {
-    "query": "ambient electronic",
+    "query": "afrobeats",
     "moods": [
-     "chill",
-     "dramatic"
+     "upbeat",
+     "bouncy",
+     "wholesome"
     ],
-    "fx": "slowed_reverb"
+    "fx": "none"
    },
    {
-    "query": "acoustic folk",
+    "query": "drill",
     "moods": [
+     "hype",
+     "dramatic"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "folk",
+    "moods": [
+     "chill",
      "sad",
      "wholesome"
     ],
     "fx": "none"
    },
    {
-    "query": "disco funk",
+    "query": "arab pop",
     "moods": [
      "upbeat",
      "bouncy",
-     "hype"
+     "wholesome"
     ],
     "fx": "none"
    },
    {
-    "query": "phonk",
+    "query": "chipmunk",
     "moods": [
      "hype",
-     "dramatic"
+     "upbeat",
+     "awkward"
     ],
-    "fx": "none"
+    "fx": "sped_up"
    },
    {
     "query": "funk",
@@ -1888,27 +1891,36 @@
      "wholesome"
     ],
     "fx": "slowed_reverb"
+   },
+   {
+    "query": "piano",
+    "moods": [
+     "sad",
+     "dramatic",
+     "wholesome"
+    ],
+    "fx": "slowed_reverb"
    }
   ],
-  "source": "27 headlines"
+  "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-30T08:07:00.352797+00:00",
-  "followers": 48474,
+  "t": "2026-10-30T14:12:29.252663+00:00",
+  "followers": 48468,
   "reach": {
-   "18140273137651554": 254,
-   "18115599170467857": 107,
-   "18108672161244816": 200,
-   "18127578188308430": 227,
-   "17950301643341357": 317,
+   "18115599170467857": 108,
+   "18108672161244816": 203,
+   "18127578188308430": 232,
+   "17950301643341357": 319,
    "17998456569001056": 146,
-   "18118915343004352": 184,
-   "17940011733121252": 235,
-   "18501921094129712": 122,
-   "18286213396293352": 175,
-   "18060710555803584": 186,
-   "18132425587813320": 161,
-   "18133773475823062": 66
+   "18118915343004352": 187,
+   "17940011733121252": 246,
+   "18501921094129712": 144,
+   "18286213396293352": 192,
+   "18060710555803584": 201,
+   "18132425587813320": 176,
+   "18133773475823062": 83,
+   "18132019591705315": 198
   }
  },
  "follower_log": [

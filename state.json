@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-10-30T08:06:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-30T11:15:00+00:00",
@@ -565,13 +565,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -3.117,
-   "reach": 121,
+   "reach": 122,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 82.6,
-   "measured_at": "2026-10-30T07:10:24.618722+00:00"
+   "score": 82.0,
+   "measured_at": "2026-10-30T08:07:00.352797+00:00"
   },
   {
    "media_id": "18286213396293352",
@@ -637,13 +637,30 @@
    "kind": "story",
    "story_type": "caption_this",
    "follows_attr": -3.063,
-   "reach": 65,
+   "reach": 66,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 2,
-   "score": 61.5,
-   "measured_at": "2026-10-30T07:10:24.618722+00:00"
+   "score": 60.6,
+   "measured_at": "2026-10-30T08:07:00.352797+00:00"
+  },
+  {
+   "media_id": "18132019591705315",
+   "posted_at": "2026-10-30T08:08:55.442708+00:00",
+   "template_id": "61585",
+   "template_name": "Bad Luck Brian",
+   "theme": "news",
+   "text": "how me and bro gon be cruising on e\u2011bike, battery dies at 0.2% on the hill",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "The Cheese Band - The Cheese Band",
+   "news": true,
+   "news_age_h": 0.9605861472222222,
+   "funny": 7
   }
  ],
  "imported": [
@@ -1797,7 +1814,8 @@
   "Joy Engine Is Giving Art Grants for \u2018Weird, Wonderful\u2019 Ideas",
   "Saratoga\u2019s Latest Viral Sensation: Cheesesteak Alley",
   "Got a question about voting? Saw something weird at a polling site? Text us!",
-  "Would You Pay $60 for Bread? Inside New York's Viral Bakery"
+  "Would You Pay $60 for Bread? Inside New York's Viral Bakery",
+  "Someone ran Rivian\u2019s pedal-by-wire e-bike out of battery and things got weird"
  ],
  "trends": {
   "fetched_at": "2026-10-27T12:42:16.966049+00:00",
@@ -1875,22 +1893,22 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-30T07:10:24.618722+00:00",
+  "t": "2026-10-30T08:07:00.352797+00:00",
   "followers": 48474,
   "reach": {
    "18140273137651554": 254,
    "18115599170467857": 107,
-   "18108672161244816": 199,
+   "18108672161244816": 200,
    "18127578188308430": 227,
    "17950301643341357": 317,
    "17998456569001056": 146,
    "18118915343004352": 184,
    "17940011733121252": 235,
-   "18501921094129712": 121,
-   "18286213396293352": 173,
-   "18060710555803584": 185,
+   "18501921094129712": 122,
+   "18286213396293352": 175,
+   "18060710555803584": 186,
    "18132425587813320": 161,
-   "18133773475823062": 65
+   "18133773475823062": 66
   }
  },
  "follower_log": [

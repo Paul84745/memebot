@@ -15,12 +15,13 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - (-1.61/1k, -0.4 follows) when you spend $3k on a dress just to get free champagne
   - (-1.88/1k, -0.6 follows) when you finally read the electricity bill and it's $127.45 for the month you were home
 
-## Stories (3 measured)
+## Stories (4 measured)
 - rate: score 97.1, reach 762, follows 0 (1 stories)
+- wyr: score 83.3, reach 144, follows 0 (1 stories)
 - caption_this: score 68.8, reach 195, follows 0 (2 stories)
 
-## Trending music styles right now (27 headlines, 2026-10-27)
-- hyperpop (sped up), uk garage, ambient electronic (slowed reverb), acoustic folk, disco funk, phonk, funk (sped up), lofi (slowed reverb)
+## Trending music styles right now (23 headlines, 2026-10-30)
+- phonk, afrobeats, drill, folk, arab pop, chipmunk (sped up), funk (sped up), lofi (slowed reverb), piano (slowed reverb)
 - results by sound style:
   - plain mood music: avg 84.2 (12 posts)
 

@@ -657,7 +657,7 @@
    "news": true,
    "news_age_h": 0.18564519777777777,
    "funny": 7,
-   "follows_attr": -3.188
+   "follows_attr": -3.195
   },
   {
    "media_id": "18132425587813320",
@@ -712,7 +712,7 @@
    "news": true,
    "news_age_h": 0.9605861472222222,
    "funny": 7,
-   "follows_attr": -4.367
+   "follows_attr": -4.374
   },
   {
    "media_id": "17963441541226805",
@@ -730,7 +730,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.769
+   "follows_attr": -0.795
   },
   {
    "media_id": "17914287921509320",
@@ -741,13 +741,14 @@
    "text": "when you set 7:00 am alarm, snooze till 8:46, and the train left 5 minutes ago || POV: you promise a 10\u2011minute phone charge, it's now 2:45 AM and the battery shows 2%",
    "kind": "story",
    "story_type": "faceoff",
-   "reach": 37,
+   "reach": 50,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-10-30T22:06:01.642626+00:00"
+   "measured_at": "2026-10-30T23:11:29.725299+00:00",
+   "follows_attr": -0.086
   },
   {
    "media_id": "18507925504097930",
@@ -764,7 +765,8 @@
    "track": "01 Reliable Source",
    "news": true,
    "news_age_h": 0.5168477269444445,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.066
   },
   {
    "media_id": "18099270026114308",
@@ -781,7 +783,8 @@
    "track": "08 Reality to Me",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.809
   }
  ],
  "imported": [
@@ -2025,21 +2028,22 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-30T22:06:01.642626+00:00",
-  "followers": 48465,
+  "t": "2026-10-30T23:11:29.725299+00:00",
+  "followers": 48464,
   "reach": {
    "17998456569001056": 146,
    "18118915343004352": 193,
    "17940011733121252": 254,
    "18501921094129712": 144,
    "18286213396293352": 216,
-   "18060710555803584": 213,
+   "18060710555803584": 214,
    "18132425587813320": 181,
    "18133773475823062": 105,
-   "18132019591705315": 212,
-   "17963441541226805": 149,
-   "17914287921509320": 37,
-   "18507925504097930": 22
+   "18132019591705315": 213,
+   "17963441541226805": 153,
+   "17914287921509320": 50,
+   "18507925504097930": 32,
+   "18099270026114308": 123
   }
  },
  "follower_log": [

@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-10-30T22:05:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-10-30",
@@ -740,7 +740,14 @@
    "theme": "story",
    "text": "when you set 7:00 am alarm, snooze till 8:46, and the train left 5 minutes ago || POV: you promise a 10\u2011minute phone charge, it's now 2:45 AM and the battery shows 2%",
    "kind": "story",
-   "story_type": "faceoff"
+   "story_type": "faceoff",
+   "reach": 37,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-10-30T22:06:01.642626+00:00"
   },
   {
    "media_id": "18507925504097930",
@@ -757,6 +764,23 @@
    "track": "01 Reliable Source",
    "news": true,
    "news_age_h": 0.5168477269444445,
+   "funny": 7
+  },
+  {
+   "media_id": "18099270026114308",
+   "posted_at": "2026-10-30T22:07:47.812838+00:00",
+   "template_id": "4087833",
+   "template_name": "Waiting Skeleton",
+   "theme": "being tired and sleep",
+   "text": "when you set alarm 6:30, snooze till 6:45, then remember class started 7",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "folk",
+   "music_fx": "none",
+   "track": "08 Reality to Me",
+   "news": false,
+   "news_age_h": null,
    "funny": 7
   }
  ],
@@ -2001,20 +2025,21 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-30T21:17:52.359488+00:00",
+  "t": "2026-10-30T22:06:01.642626+00:00",
   "followers": 48465,
   "reach": {
    "17998456569001056": 146,
    "18118915343004352": 193,
-   "17940011733121252": 253,
+   "17940011733121252": 254,
    "18501921094129712": 144,
    "18286213396293352": 216,
-   "18060710555803584": 211,
+   "18060710555803584": 213,
    "18132425587813320": 181,
    "18133773475823062": 105,
    "18132019591705315": 212,
-   "17963441541226805": 148,
-   "17914287921509320": 21
+   "17963441541226805": 149,
+   "17914287921509320": 37,
+   "18507925504097930": 22
   }
  },
  "follower_log": [

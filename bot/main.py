@@ -1122,6 +1122,19 @@ def wait_container(cid, video=False):
     raise RuntimeError("Instagram container never finished processing")
 
 
+def media_publish(ig, cid):
+    # Instagram sometimes answers "Media Not Found" (2207006) right after a container
+    # reports FINISHED; nothing was published then, so retrying is safe.
+    for i in range(4):
+        try:
+            return graph("POST", f"{ig}/media_publish", creation_id=cid)["id"]
+        except RuntimeError as e:
+            if "2207006" not in str(e) or i == 3:
+                raise
+            print(f"::warning::media_publish not ready ({str(e)[:80]}); retry {i + 1}")
+            time.sleep(15)
+
+
 def publish(media_url, caption, video=False, audio_name=None):
     ig = env("IG_USER_ID")
     if video:
@@ -1140,14 +1153,14 @@ def publish(media_url, caption, video=False, audio_name=None):
         params.pop("audio_name")
         cid = graph("POST", f"{ig}/media", **params)["id"]
     wait_container(cid, video)
-    return graph("POST", f"{ig}/media_publish", creation_id=cid)["id"]
+    return media_publish(ig, cid)
 
 
 def publish_story(media_url):
     ig = env("IG_USER_ID")
     cid = graph("POST", f"{ig}/media", media_type="STORIES", image_url=media_url)["id"]
     wait_container(cid)
-    return graph("POST", f"{ig}/media_publish", creation_id=cid)["id"]
+    return media_publish(ig, cid)
 
 
 def publish_carousel(urls, caption):
@@ -1158,7 +1171,7 @@ def publish_carousel(urls, caption):
     cid = graph("POST", f"{ig}/media", media_type="CAROUSEL",
                 children=",".join(kids), caption=caption)["id"]
     wait_container(cid)
-    return graph("POST", f"{ig}/media_publish", creation_id=cid)["id"]
+    return media_publish(ig, cid)
 
 
 def cleanup_images():

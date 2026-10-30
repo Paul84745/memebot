@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "slots": [
    {
-    "t": "2026-10-29T11:39:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-10-30T08:06:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-10-29T13:07:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-10-29T13:48:00+00:00",
-    "status": "done",
-    "attempts": 2,
+    "t": "2026-10-30T11:15:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-10-29T14:31:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-10-30T12:20:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-10-29T16:50:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-10-30T15:55:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-10-29T19:51:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-10-29T20:37:00+00:00",
-    "status": "done",
-    "attempts": 3,
+    "t": "2026-10-30T18:41:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
+   },
+   {
+    "t": "2026-10-30T21:16:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-30T22:05:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-10-29",
-  "stories_date": "2026-10-29"
+  "dump_checked": "2026-10-30",
+  "stories_date": "2026-10-30"
  },
  "history": [
   {
@@ -371,7 +371,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.843
+   "follows_attr": -4.843,
+   "follows_src": "estimated",
+   "like_count": 12,
+   "comments_count": 0,
+   "reach": 263,
+   "shares": 0,
+   "saved": 0,
+   "views": 382,
+   "sends_per_1k": 0.0,
+   "follows": -4.8,
+   "score": 45.6,
+   "follows_per_1k": -18.25,
+   "final": true
   },
   {
    "media_id": "18114747128332090",
@@ -389,7 +401,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.705
+   "follows_attr": -3.705,
+   "follows_src": "estimated",
+   "like_count": 21,
+   "comments_count": 0,
+   "reach": 213,
+   "shares": 0,
+   "saved": 2,
+   "views": 293,
+   "sends_per_1k": 0.0,
+   "follows": -3.7,
+   "score": 126.8,
+   "follows_per_1k": -17.37,
+   "final": true
   },
   {
    "media_id": "18140273137651554",
@@ -426,7 +450,7 @@
    "news": true,
    "news_age_h": 0.5540311236111111,
    "funny": 7,
-   "follows_attr": -1.512
+   "follows_attr": -1.625
   },
   {
    "media_id": "18108672161244816",
@@ -444,7 +468,7 @@
    "news": true,
    "news_age_h": 0.5038018425,
    "funny": 7,
-   "follows_attr": -2.424
+   "follows_attr": -2.537
   },
   {
    "media_id": "18127578188308430",
@@ -462,7 +486,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.642
+   "follows_attr": -2.811
   },
   {
    "media_id": "17950301643341357",
@@ -474,7 +498,7 @@
    "kind": "carousel",
    "slides": 7,
    "funny": 7.1,
-   "follows_attr": -3.757
+   "follows_attr": -3.87
   },
   {
    "media_id": "17998456569001056",
@@ -511,7 +535,7 @@
    "news": true,
    "news_age_h": 0.37536223361111115,
    "funny": 7,
-   "follows_attr": -1.131
+   "follows_attr": -1.807
   },
   {
    "media_id": "17940011733121252",
@@ -529,7 +553,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.495
+   "follows_attr": -2.058
   },
   {
    "media_id": "18501921094129712",
@@ -540,14 +564,14 @@
    "text": "this or that | A: forget to defrost chicken before dinner | B: burn popcorn and set off smoke alarm",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.525,
-   "reach": 64,
+   "follows_attr": -1.99,
+   "reach": 90,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
-   "profile_visits": 1,
-   "score": 31.2,
-   "measured_at": "2026-10-29T21:09:22.135936+00:00"
+   "profile_visits": 2,
+   "score": 88.9,
+   "measured_at": "2026-10-30T01:02:49.738512+00:00"
   },
   {
    "media_id": "18286213396293352",
@@ -565,7 +589,7 @@
    "news": true,
    "news_age_h": 0.11228234222222222,
    "funny": 7,
-   "follows_attr": -1.085
+   "follows_attr": -2.437
   },
   {
    "media_id": "18060710555803584",
@@ -583,7 +607,7 @@
    "news": true,
    "news_age_h": 0.18564519777777777,
    "funny": 7,
-   "follows_attr": -1.882
+   "follows_attr": -2.445
   },
   {
    "media_id": "18132425587813320",
@@ -600,7 +624,8 @@
    "track": "Tanya - Magic Penny/Tanya Introduces Herself And Her Brother Justin",
    "news": true,
    "news_age_h": 0.71991535,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.901
   },
   {
    "media_id": "18133773475823062",
@@ -610,7 +635,15 @@
    "theme": "story",
    "text": "caption this: Pawn Stars Best I Can Do",
    "kind": "story",
-   "story_type": "caption_this"
+   "story_type": "caption_this",
+   "follows_attr": -1.972,
+   "reach": 35,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 1,
+   "score": 57.1,
+   "measured_at": "2026-10-30T01:02:49.738512+00:00"
   }
  ],
  "imported": [
@@ -1842,24 +1875,22 @@
   "source": "27 headlines"
  },
  "follow_track": {
-  "t": "2026-10-29T21:09:22.135936+00:00",
-  "followers": 48486,
+  "t": "2026-10-30T01:02:49.738512+00:00",
+  "followers": 48478,
   "reach": {
-   "18025334810864490": 261,
-   "18114747128332090": 210,
    "18140273137651554": 254,
-   "18115599170467857": 103,
-   "18108672161244816": 192,
-   "18127578188308430": 222,
-   "17950301643341357": 313,
+   "18115599170467857": 105,
+   "18108672161244816": 194,
+   "18127578188308430": 225,
+   "17950301643341357": 315,
    "17998456569001056": 146,
-   "18118915343004352": 171,
-   "17940011733121252": 216,
-   "18501921094129712": 64,
-   "18286213396293352": 140,
-   "18060710555803584": 165,
-   "18132425587813320": 136,
-   "18133773475823062": 0
+   "18118915343004352": 183,
+   "17940011733121252": 226,
+   "18501921094129712": 90,
+   "18286213396293352": 164,
+   "18060710555803584": 175,
+   "18132425587813320": 152,
+   "18133773475823062": 35
   }
  },
  "follower_log": [
@@ -1874,6 +1905,10 @@
   [
    "2026-10-29T02:47:27.747487+00:00",
    48499
+  ],
+  [
+   "2026-10-30T01:02:49.738512+00:00",
+   48478
   ]
  ]
 }

@@ -741,13 +741,13 @@
    "text": "when you set 7:00 am alarm, snooze till 8:46, and the train left 5 minutes ago || POV: you promise a 10\u2011minute phone charge, it's now 2:45 AM and the battery shows 2%",
    "kind": "story",
    "story_type": "faceoff",
-   "reach": 140,
+   "reach": 146,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 28.6,
-   "measured_at": "2026-10-31T08:20:42.812222+00:00",
+   "score": 27.4,
+   "measured_at": "2026-10-31T08:48:54.491627+00:00",
    "follows_attr": -2.084
   },
   {
@@ -2045,7 +2045,7 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-31T08:18:51.098754+00:00",
+  "t": "2026-10-31T08:48:54.491627+00:00",
   "followers": 48460,
   "reach": {
    "18118915343004352": 196,
@@ -2056,10 +2056,11 @@
    "18132425587813320": 182,
    "18133773475823062": 105,
    "18132019591705315": 220,
-   "17963441541226805": 160,
-   "17914287921509320": 140,
+   "17963441541226805": 161,
+   "17914287921509320": 146,
    "18507925504097930": 57,
-   "18099270026114308": 144
+   "18099270026114308": 145,
+   "18080071229721549": 2
   }
  },
  "follower_log": [

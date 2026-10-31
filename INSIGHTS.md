@@ -1,19 +1,19 @@
 # What the bot has learned
 
-Posts measured so far: 20 (plus 200 older page posts)
+Posts measured so far: 21 (plus 200 older page posts)
 
 Score = engagement per 1,000 people reached: a new follower counts 20x a like, a DM send 8x.
 
 ## Sends
-- average: 0.94 sends per 1,000 reached (last 10 posts: 1.46)
+- average: 0.90 sends per 1,000 reached (last 10 posts: 1.46)
 
 ## Meme dumps vs single memes
 - dumps: avg 114.6 (1 posts)
-- single: avg 88.3 (20 posts)
+- single: avg 86.2 (21 posts)
 
 ## Followers
 - now 48463 (-85 since 2026-10-27)
-- new followers per 1,000 people reached: -10.87 on average (17 posts)
+- new followers per 1,000 people reached: -10.81 on average (18 posts)
 - posts that brought the most followers:
   - (0.00/1k, 0 follows) How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season
   - (-1.24/1k, -0.3 follows) When the teacher says ‘pick your own groups’ and you’re the only one left.
@@ -28,14 +28,14 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 ## Trending music styles right now (23 headlines, 2026-10-30)
 - phonk, afrobeats, drill, folk, arab pop, chipmunk (sped up), funk (sped up), lofi (slowed reverb), piano (slowed reverb)
 - results by sound style:
-  - plain mood music: avg 96.2 (15 posts)
+  - plain mood music: avg 92.9 (16 posts)
   - uk garage: avg 69.9 (1 posts)
   - disco funk: avg 54.1 (1 posts)
   - lofi: avg 50.6 (2 posts)
 
-## Learned from this week's top meme posts (public meme communities) (64 posts from 2 pages)
-- Opening style: other opening x0.98
-- Caption length: short caption x1.12, very short caption x0.99
+## Learned from this week's top meme posts (public meme communities) (75 posts from 3 pages)
+- Opening style: other opening x0.97
+- Caption length: very short caption x1.07, short caption x0.95
 
 ## Best posting times (UTC)
 - 20:00-22:00 (score x2.11)
@@ -46,26 +46,26 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - procrastination: avg 221.3 (1 posts)
 - friends and group chats: avg 105.6 (1 posts)
 - work and bad bosses: avg 101.3 (2 posts)
-- news: avg 90.3 (8 posts)
 - being tired and sleep: avg 87.9 (1 posts)
+- news: avg 85.1 (9 posts)
 
 ## Best photos
 - This Is Where I'd Put My Trophy If I Had One: avg 221.3 (1 posts)
 - Mocking Spongebob: avg 186.8 (2 posts)
-- Futurama Fry: avg 126.8 (1 posts)
 - Bad Luck Brian: avg 105.6 (1 posts)
 - One Does Not Simply: avg 98.2 (1 posts)
+- Futurama Fry: avg 85.2 (2 posts)
 
 ## Best formats
-- how_me_bro: avg 108.5 (5 posts)
+- how_me_bro: avg 97.6 (6 posts)
 - me_when: avg 89.3 (4 posts)
 - when_you: avg 85.0 (6 posts)
 - pov: avg 80.6 (3 posts)
 - how_x: avg 57.2 (2 posts)
 
 ## Best music
-- bouncy: avg 112.5 (5 posts)
 - chill: avg 111.5 (3 posts)
+- bouncy: avg 101.0 (6 posts)
 - awkward: avg 83.1 (3 posts)
 - dramatic: avg 76.7 (3 posts)
 - sad: avg 75.9 (1 posts)
@@ -73,7 +73,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - hype: avg 48.9 (3 posts)
 
 ## News memes vs normal
-- news: avg 90.3 (8 posts)
+- news: avg 85.1 (9 posts)
 - normal: avg 87.0 (12 posts)
 
 ## Top posts

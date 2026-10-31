@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-10-31T08:19:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-31T11:55:00+00:00",
@@ -747,7 +747,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 28.6,
-   "measured_at": "2026-10-31T08:18:51.098754+00:00",
+   "measured_at": "2026-10-31T08:20:42.812222+00:00",
    "follows_attr": -2.084
   },
   {
@@ -785,6 +785,23 @@
    "news_age_h": null,
    "funny": 7,
    "follows_attr": -1.334
+  },
+  {
+   "media_id": "18080071229721549",
+   "posted_at": "2026-10-31T08:22:41.380120+00:00",
+   "template_id": "61585",
+   "template_name": "Bad Luck Brian",
+   "theme": "work and bad bosses",
+   "text": "when you volunteer for the 'quick 5\u2011minute meeting' and the clock hits 4:59\u202fpm",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Tanya - Practice Makes Perfect",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [

@@ -584,7 +584,7 @@
    "news": true,
    "news_age_h": 0.37536223361111115,
    "funny": 7,
-   "follows_attr": -2.106
+   "follows_attr": -2.202
   },
   {
    "media_id": "17940011733121252",
@@ -602,7 +602,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.729
+   "follows_attr": -2.825
   },
   {
    "media_id": "18501921094129712",
@@ -639,7 +639,7 @@
    "news": true,
    "news_age_h": 0.11228234222222222,
    "funny": 7,
-   "follows_attr": -3.442
+   "follows_attr": -3.57
   },
   {
    "media_id": "18060710555803584",
@@ -657,7 +657,7 @@
    "news": true,
    "news_age_h": 0.18564519777777777,
    "funny": 7,
-   "follows_attr": -3.209
+   "follows_attr": -3.273
   },
   {
    "media_id": "18132425587813320",
@@ -675,7 +675,7 @@
    "news": true,
    "news_age_h": 0.71991535,
    "funny": 7,
-   "follows_attr": -1.724
+   "follows_attr": -1.756
   },
   {
    "media_id": "18133773475823062",
@@ -712,7 +712,7 @@
    "news": true,
    "news_age_h": 0.9605861472222222,
    "funny": 7,
-   "follows_attr": -4.401
+   "follows_attr": -4.561
   },
   {
    "media_id": "17963441541226805",
@@ -730,7 +730,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.822
+   "follows_attr": -0.982
   },
   {
    "media_id": "17914287921509320",
@@ -741,14 +741,14 @@
    "text": "when you set 7:00 am alarm, snooze till 8:46, and the train left 5 minutes ago || POV: you promise a 10\u2011minute phone charge, it's now 2:45 AM and the battery shows 2%",
    "kind": "story",
    "story_type": "faceoff",
-   "reach": 98,
+   "reach": 140,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 40.8,
-   "measured_at": "2026-10-31T02:25:44.551973+00:00",
-   "follows_attr": -0.744
+   "score": 28.6,
+   "measured_at": "2026-10-31T08:18:51.098754+00:00",
+   "follows_attr": -2.084
   },
   {
    "media_id": "18507925504097930",
@@ -766,7 +766,7 @@
    "news": true,
    "news_age_h": 0.5168477269444445,
    "funny": 7,
-   "follows_attr": -0.189
+   "follows_attr": -0.7
   },
   {
    "media_id": "18099270026114308",
@@ -784,7 +784,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.919
+   "follows_attr": -1.334
   }
  ],
  "imported": [
@@ -2028,21 +2028,21 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-31T02:25:44.551973+00:00",
-  "followers": 48463,
+  "t": "2026-10-31T08:18:51.098754+00:00",
+  "followers": 48460,
   "reach": {
-   "18118915343004352": 193,
-   "17940011733121252": 255,
+   "18118915343004352": 196,
+   "17940011733121252": 258,
    "18501921094129712": 144,
-   "18286213396293352": 218,
-   "18060710555803584": 215,
-   "18132425587813320": 181,
+   "18286213396293352": 222,
+   "18060710555803584": 217,
+   "18132425587813320": 182,
    "18133773475823062": 105,
-   "18132019591705315": 215,
-   "17963441541226805": 155,
-   "17914287921509320": 98,
-   "18507925504097930": 41,
-   "18099270026114308": 131
+   "18132019591705315": 220,
+   "17963441541226805": 160,
+   "17914287921509320": 140,
+   "18507925504097930": 57,
+   "18099270026114308": 144
   }
  },
  "follower_log": [

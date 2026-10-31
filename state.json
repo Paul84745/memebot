@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-10-31T21:53:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-10-31",
@@ -875,13 +875,13 @@
    "kind": "story",
    "story_type": "rate",
    "follows_attr": -0.79,
-   "reach": 52,
+   "reach": 59,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-10-31T20:30:44.259948+00:00"
+   "measured_at": "2026-10-31T21:54:00.282391+00:00"
   },
   {
    "media_id": "18001818387037390",
@@ -908,7 +908,14 @@
    "theme": "story",
    "text": "caption this: The Scroll Of Truth",
    "kind": "story",
-   "story_type": "caption_this"
+   "story_type": "caption_this",
+   "reach": 24,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-10-31T21:54:00.282391+00:00"
   },
   {
    "media_id": "18071295299507249",
@@ -926,6 +933,23 @@
    "news": false,
    "news_age_h": null,
    "funny": 8
+  },
+  {
+   "media_id": "17951232447343098",
+   "posted_at": "2026-10-31T21:56:47.587374+00:00",
+   "template_id": "61520",
+   "template_name": "Futurama Fry",
+   "theme": "news",
+   "text": "POV: you step outside at 8:24\u202fam, expecting sun, but a snowflake smacks your face.",
+   "format": "pov",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Stupid Track 15",
+   "news": true,
+   "news_age_h": 0.17600323444444443,
+   "funny": 7
   }
  ],
  "imported": [
@@ -2083,7 +2107,8 @@
   "Would You Pay $60 for Bread? Inside New York's Viral Bakery",
   "Someone ran Rivian\u2019s pedal-by-wire e-bike out of battery and things got weird",
   "Astronomers May Have Just Discovered A Bizarre Moon Unlike Any We Know",
-  "Brady Quinn shares bizarre pregame ritual on \u2018Big Noon Kickoff\u2019"
+  "Brady Quinn shares bizarre pregame ritual on \u2018Big Noon Kickoff\u2019",
+  "Super El Ni\u00f1o and polar vortex could bring unexpected weather changes across the US this November | Hindustan Times"
  ],
  "trends": {
   "fetched_at": "2026-10-30T14:12:29.252663+00:00",
@@ -2171,19 +2196,19 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-31T20:30:44.259948+00:00",
+  "t": "2026-10-31T21:54:00.282391+00:00",
   "followers": 48457,
   "reach": {
-   "18133773475823062": 105,
-   "18132019591705315": 223,
-   "17963441541226805": 167,
+   "18132019591705315": 225,
+   "17963441541226805": 168,
    "17914287921509320": 226,
-   "18507925504097930": 71,
-   "18099270026114308": 160,
-   "18080071229721549": 184,
-   "18115147141857726": 52,
-   "18001818387037390": 234,
-   "18135180451664487": 17
+   "18507925504097930": 72,
+   "18099270026114308": 161,
+   "18080071229721549": 188,
+   "18115147141857726": 59,
+   "18001818387037390": 311,
+   "18135180451664487": 24,
+   "18071295299507249": 625
   }
  },
  "follower_log": [

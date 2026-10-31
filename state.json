@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-10-31T11:55:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -639,7 +639,7 @@
    "news": true,
    "news_age_h": 0.11228234222222222,
    "funny": 7,
-   "follows_attr": -3.57
+   "follows_attr": -3.583
   },
   {
    "media_id": "18060710555803584",
@@ -657,7 +657,7 @@
    "news": true,
    "news_age_h": 0.18564519777777777,
    "funny": 7,
-   "follows_attr": -3.273
+   "follows_attr": -3.282
   },
   {
    "media_id": "18132425587813320",
@@ -675,7 +675,7 @@
    "news": true,
    "news_age_h": 0.71991535,
    "funny": 7,
-   "follows_attr": -1.756
+   "follows_attr": -1.76
   },
   {
    "media_id": "18133773475823062",
@@ -712,7 +712,7 @@
    "news": true,
    "news_age_h": 0.9605861472222222,
    "funny": 7,
-   "follows_attr": -4.561
+   "follows_attr": -4.565
   },
   {
    "media_id": "17963441541226805",
@@ -730,7 +730,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.982
+   "follows_attr": -0.995
   },
   {
    "media_id": "17914287921509320",
@@ -741,14 +741,15 @@
    "text": "when you set 7:00 am alarm, snooze till 8:46, and the train left 5 minutes ago || POV: you promise a 10\u2011minute phone charge, it's now 2:45 AM and the battery shows 2%",
    "kind": "story",
    "story_type": "faceoff",
-   "reach": 146,
+   "reach": 197,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 27.4,
-   "measured_at": "2026-10-31T08:48:54.491627+00:00",
-   "follows_attr": -2.084
+   "profile_visits": 1,
+   "score": 30.5,
+   "measured_at": "2026-10-31T14:18:59.241707+00:00",
+   "follows_attr": -2.302,
+   "final": true
   },
   {
    "media_id": "18507925504097930",
@@ -766,7 +767,7 @@
    "news": true,
    "news_age_h": 0.5168477269444445,
    "funny": 7,
-   "follows_attr": -0.7
+   "follows_attr": -0.734
   },
   {
    "media_id": "18099270026114308",
@@ -784,7 +785,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.334
+   "follows_attr": -1.372
   },
   {
    "media_id": "18080071229721549",
@@ -801,7 +802,18 @@
    "track": "Tanya - Practice Makes Perfect",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.667
+  },
+  {
+   "media_id": "18115147141857726",
+   "posted_at": "2026-10-31T14:19:24.606952+00:00",
+   "template_id": "27813981",
+   "template_name": "story",
+   "theme": "story",
+   "text": "POV: you promise to start the 10\u2011minute essay at 2\u202fpm, it's now 11:59\u202fpm and the cursor is still blinking",
+   "kind": "story",
+   "story_type": "rate"
   }
  ],
  "imported": [
@@ -2045,22 +2057,22 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-31T08:48:54.491627+00:00",
-  "followers": 48460,
+  "t": "2026-10-31T14:18:59.241707+00:00",
+  "followers": 48459,
   "reach": {
    "18118915343004352": 196,
    "17940011733121252": 258,
    "18501921094129712": 144,
-   "18286213396293352": 222,
-   "18060710555803584": 217,
-   "18132425587813320": 182,
+   "18286213396293352": 225,
+   "18060710555803584": 219,
+   "18132425587813320": 183,
    "18133773475823062": 105,
-   "18132019591705315": 220,
-   "17963441541226805": 161,
-   "17914287921509320": 146,
-   "18507925504097930": 57,
-   "18099270026114308": 145,
-   "18080071229721549": 2
+   "18132019591705315": 221,
+   "17963441541226805": 164,
+   "17914287921509320": 197,
+   "18507925504097930": 65,
+   "18099270026114308": 154,
+   "18080071229721549": 158
   }
  },
  "follower_log": [

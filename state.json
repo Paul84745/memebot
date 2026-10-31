@@ -15,13 +15,13 @@
    },
    {
     "t": "2026-10-31T13:42:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
     "t": "2026-10-31T17:12:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-31T18:18:00+00:00",
@@ -584,7 +584,19 @@
    "news": true,
    "news_age_h": 0.37536223361111115,
    "funny": 7,
-   "follows_attr": -2.202
+   "follows_attr": -2.202,
+   "follows_src": "estimated",
+   "like_count": 5,
+   "comments_count": 0,
+   "reach": 198,
+   "shares": 0,
+   "saved": 0,
+   "views": 288,
+   "sends_per_1k": 0.0,
+   "follows": -2.2,
+   "score": 25.3,
+   "follows_per_1k": -11.11,
+   "final": true
   },
   {
    "media_id": "17940011733121252",
@@ -602,7 +614,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.825
+   "follows_attr": -2.825,
+   "follows_src": "estimated",
+   "like_count": 13,
+   "comments_count": 0,
+   "reach": 259,
+   "shares": 0,
+   "saved": 0,
+   "views": 387,
+   "sends_per_1k": 0.0,
+   "follows": -2.8,
+   "score": 50.2,
+   "follows_per_1k": -10.81,
+   "final": true
   },
   {
    "media_id": "18501921094129712",
@@ -639,7 +663,19 @@
    "news": true,
    "news_age_h": 0.11228234222222222,
    "funny": 7,
-   "follows_attr": -3.583
+   "follows_attr": -3.583,
+   "follows_src": "estimated",
+   "like_count": 16,
+   "comments_count": 0,
+   "reach": 229,
+   "shares": 0,
+   "saved": 0,
+   "views": 389,
+   "sends_per_1k": 0.0,
+   "follows": -3.6,
+   "score": 69.9,
+   "follows_per_1k": -15.72,
+   "final": true
   },
   {
    "media_id": "18060710555803584",
@@ -657,7 +693,19 @@
    "news": true,
    "news_age_h": 0.18564519777777777,
    "funny": 7,
-   "follows_attr": -3.282
+   "follows_attr": -3.282,
+   "follows_src": "estimated",
+   "like_count": 12,
+   "comments_count": 0,
+   "reach": 222,
+   "shares": 0,
+   "saved": 0,
+   "views": 324,
+   "sends_per_1k": 0.0,
+   "follows": -3.3,
+   "score": 54.1,
+   "follows_per_1k": -14.86,
+   "final": true
   },
   {
    "media_id": "18132425587813320",
@@ -675,7 +723,7 @@
    "news": true,
    "news_age_h": 0.71991535,
    "funny": 7,
-   "follows_attr": -1.76
+   "follows_attr": -1.785
   },
   {
    "media_id": "18133773475823062",
@@ -730,7 +778,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.995
+   "follows_attr": -1.044
   },
   {
    "media_id": "17914287921509320",
@@ -748,7 +796,7 @@
    "profile_visits": 1,
    "score": 30.5,
    "measured_at": "2026-10-31T14:18:59.241707+00:00",
-   "follows_attr": -2.302,
+   "follows_attr": -2.919,
    "final": true
   },
   {
@@ -767,7 +815,7 @@
    "news": true,
    "news_age_h": 0.5168477269444445,
    "funny": 7,
-   "follows_attr": -0.734
+   "follows_attr": -0.808
   },
   {
    "media_id": "18099270026114308",
@@ -785,7 +833,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.372
+   "follows_attr": -1.495
   },
   {
    "media_id": "18080071229721549",
@@ -803,7 +851,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.667
+   "follows_attr": -0.988
   },
   {
    "media_id": "18115147141857726",
@@ -813,7 +861,25 @@
    "theme": "story",
    "text": "POV: you promise to start the 10\u2011minute essay at 2\u202fpm, it's now 11:59\u202fpm and the cursor is still blinking",
    "kind": "story",
-   "story_type": "rate"
+   "story_type": "rate",
+   "follows_attr": -0.79
+  },
+  {
+   "media_id": "18001818387037390",
+   "posted_at": "2026-10-31T17:14:50.337303+00:00",
+   "template_id": "61579",
+   "template_name": "One Does Not Simply",
+   "theme": "news",
+   "text": "How the dude looks after his 4:23\u202fam pregame ritual",
+   "format": "how_x",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "The Trap",
+   "news": true,
+   "news_age_h": 0.11905285138888888,
+   "funny": 7
   }
  ],
  "imported": [
@@ -1969,7 +2035,8 @@
   "Got a question about voting? Saw something weird at a polling site? Text us!",
   "Would You Pay $60 for Bread? Inside New York's Viral Bakery",
   "Someone ran Rivian\u2019s pedal-by-wire e-bike out of battery and things got weird",
-  "Astronomers May Have Just Discovered A Bizarre Moon Unlike Any We Know"
+  "Astronomers May Have Just Discovered A Bizarre Moon Unlike Any We Know",
+  "Brady Quinn shares bizarre pregame ritual on \u2018Big Noon Kickoff\u2019"
  ],
  "trends": {
   "fetched_at": "2026-10-30T14:12:29.252663+00:00",
@@ -2057,22 +2124,18 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-31T14:18:59.241707+00:00",
-  "followers": 48459,
+  "t": "2026-10-31T17:13:32.224656+00:00",
+  "followers": 48457,
   "reach": {
-   "18118915343004352": 196,
-   "17940011733121252": 258,
-   "18501921094129712": 144,
-   "18286213396293352": 225,
-   "18060710555803584": 219,
-   "18132425587813320": 183,
+   "18132425587813320": 184,
    "18133773475823062": 105,
    "18132019591705315": 221,
-   "17963441541226805": 164,
-   "17914287921509320": 197,
-   "18507925504097930": 65,
-   "18099270026114308": 154,
-   "18080071229721549": 158
+   "17963441541226805": 166,
+   "17914287921509320": 222,
+   "18507925504097930": 68,
+   "18099270026114308": 159,
+   "18080071229721549": 171,
+   "18115147141857726": 32
   }
  },
  "follower_log": [

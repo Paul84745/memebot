@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-10-31T20:29:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-10-31T21:53:00+00:00",
@@ -723,7 +723,19 @@
    "news": true,
    "news_age_h": 0.71991535,
    "funny": 7,
-   "follows_attr": -1.785
+   "follows_attr": -1.785,
+   "follows_src": "estimated",
+   "like_count": 8,
+   "comments_count": 0,
+   "reach": 184,
+   "shares": 0,
+   "saved": 0,
+   "views": 246,
+   "sends_per_1k": 0.0,
+   "follows": -1.8,
+   "score": 43.5,
+   "follows_per_1k": -9.78,
+   "final": true
   },
   {
    "media_id": "18133773475823062",
@@ -863,13 +875,13 @@
    "kind": "story",
    "story_type": "rate",
    "follows_attr": -0.79,
-   "reach": 37,
+   "reach": 52,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-10-31T18:19:06.102387+00:00"
+   "measured_at": "2026-10-31T20:30:44.259948+00:00"
   },
   {
    "media_id": "18001818387037390",
@@ -897,6 +909,23 @@
    "text": "caption this: The Scroll Of Truth",
    "kind": "story",
    "story_type": "caption_this"
+  },
+  {
+   "media_id": "18071295299507249",
+   "posted_at": "2026-10-31T20:34:02.503467+00:00",
+   "template_id": "3218037",
+   "template_name": "This Is Where I'd Put My Trophy If I Had One",
+   "theme": "food and cravings",
+   "text": "How I feel when the last chicken nugget appears at 2:07\u202fam",
+   "format": "how_x",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "3_vadz_-_e+a",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -1703,222 +1732,247 @@
  ],
  "imported_done": true,
  "peers": {
-  "fetched_at": "2026-10-29T19:52:00.130006+00:00",
+  "fetched_at": "2026-10-31T20:30:44.259948+00:00",
   "ok": [
    "memes@lemmy.world",
-   "memes@lemmy.ml"
+   "memes@lemmy.ml",
+   "funny@lemmy.world"
   ],
-  "n": 64,
+  "n": 75,
   "best": [
    {
     "u": "memes",
-    "er": 1009,
-    "cap": "90% of \"vote blue no matter who\" discourse on lemmy",
-    "t": "2026-10-24T05:48:50.599658Z",
-    "type": "IMAGE",
-    "rel": 4.762
-   },
-   {
-    "u": "memes",
-    "er": 630,
+    "er": 636,
     "cap": "How the tables have turned",
     "t": "2026-10-27T01:45:07.100262Z",
     "type": "IMAGE",
-    "rel": 2.973
+    "rel": 3.95
    },
    {
     "u": "memes",
-    "er": 1631,
+    "er": 1748,
+    "cap": "Old friend",
+    "t": "2026-10-30T13:19:05.542141Z",
+    "type": "IMAGE",
+    "rel": 3.559
+   },
+   {
+    "u": "memes",
+    "er": 1736,
     "cap": "Your guide to grad school",
     "t": "2026-10-28T13:12:44.546855Z",
     "type": "IMAGE",
-    "rel": 2.971
+    "rel": 3.535
    },
    {
-    "u": "memes",
-    "er": 1480,
-    "cap": "The old ways",
-    "t": "2026-10-23T13:27:32.105042Z",
+    "u": "funny",
+    "er": 1532,
+    "cap": "Teehee",
+    "t": "2026-10-30T15:38:56.495496Z",
     "type": "IMAGE",
-    "rel": 2.696
+    "rel": 3.026
    },
    {
-    "u": "memes",
-    "er": 507,
-    "cap": "Fall Bucket List",
-    "t": "2026-10-22T22:41:01.707860Z",
+    "u": "funny",
+    "er": 1422,
+    "cap": "It's about time somebody invented Amish 2",
+    "t": "2026-10-28T13:15:08.682217Z",
     "type": "IMAGE",
-    "rel": 2.393
+    "rel": 2.809
    },
    {
     "u": "memes",
-    "er": 1306,
-    "cap": "We're highly competitive",
-    "t": "2026-10-23T13:01:41.158965Z",
-    "type": "IMAGE",
-    "rel": 2.379
-   },
-   {
-    "u": "memes",
-    "er": 1269,
+    "er": 1279,
     "cap": "And proud of it",
     "t": "2026-10-26T20:13:45.100301Z",
     "type": "IMAGE",
-    "rel": 2.311
+    "rel": 2.604
    },
    {
     "u": "memes",
-    "er": 1207,
+    "er": 1279,
     "cap": "Buy bitcoin, bro",
     "t": "2026-10-25T06:31:51.561766Z",
     "type": "IMAGE",
-    "rel": 2.198
+    "rel": 2.604
    },
    {
     "u": "memes",
-    "er": 1183,
+    "er": 1217,
+    "cap": "Don't be evil",
+    "t": "2026-10-30T19:03:46.222829Z",
+    "type": "IMAGE",
+    "rel": 2.478
+   },
+   {
+    "u": "memes",
+    "er": 1196,
     "cap": "Do not redeem",
     "t": "2026-10-27T16:18:58.199889Z",
     "type": "IMAGE",
-    "rel": 2.155
+    "rel": 2.435
    },
    {
     "u": "memes",
-    "er": 1096,
-    "cap": "AI doomerism is AI company marketing",
-    "t": "2026-10-26T22:19:09.912890Z",
-    "type": "IMAGE",
-    "rel": 1.996
-   },
-   {
-    "u": "memes",
-    "er": 353,
-    "cap": "Show me what slimed you.",
-    "t": "2026-10-24T00:18:43.607889Z",
-    "type": "IMAGE",
-    "rel": 1.666
-   },
-   {
-    "u": "memes",
-    "er": 837,
-    "cap": "Good luck in the shrine of the silver monkey.",
-    "t": "2026-10-26T13:28:43.496861Z",
-    "type": "IMAGE",
-    "rel": 1.524
-   },
-   {
-    "u": "memes",
-    "er": 316,
+    "er": 378,
     "cap": "Surely they won't send *me* to the camps",
     "t": "2026-10-29T05:45:56.354154Z",
     "type": "IMAGE",
-    "rel": 1.491
+    "rel": 2.348
    },
    {
     "u": "memes",
-    "er": 293,
+    "er": 1104,
+    "cap": "AI doomerism is AI company marketing",
+    "t": "2026-10-26T22:19:09.912890Z",
+    "type": "IMAGE",
+    "rel": 2.248
+   },
+   {
+    "u": "memes",
+    "er": 1103,
+    "cap": "Life is one big slot machine",
+    "t": "2026-10-29T14:17:45.809649Z",
+    "type": "IMAGE",
+    "rel": 2.246
+   },
+   {
+    "u": "memes",
+    "er": 1046,
+    "cap": "Terrifying",
+    "t": "2026-10-29T15:07:54.184495Z",
+    "type": "IMAGE",
+    "rel": 2.13
+   },
+   {
+    "u": "memes",
+    "er": 336,
     "cap": "Of course this would all be fixed if people would just vote for the blue oligarch",
     "t": "2026-10-29T04:57:21.647150Z",
+    "type": "IMAGE",
+    "rel": 2.087
+   },
+   {
+    "u": "memes",
+    "er": 841,
+    "cap": "Good luck in the shrine of the silver monkey.",
+    "t": "2026-10-26T13:28:43.496861Z",
+    "type": "IMAGE",
+    "rel": 1.712
+   },
+   {
+    "u": "memes",
+    "er": 760,
+    "cap": "2 sliding scales of interpretation, just how we like it.",
+    "t": "2026-10-24T22:08:33.080806Z",
+    "type": "IMAGE",
+    "rel": 1.547
+   },
+   {
+    "u": "memes",
+    "er": 710,
+    "cap": "There is no explanation",
+    "t": "2026-10-27T22:28:23.570714Z",
+    "type": "IMAGE",
+    "rel": 1.446
+   },
+   {
+    "u": "funny",
+    "er": 728,
+    "cap": "The Addams Family",
+    "t": "2026-10-30T13:19:50.191811Z",
+    "type": "IMAGE",
+    "rel": 1.438
+   },
+   {
+    "u": "memes",
+    "er": 689,
+    "cap": "May I offer you a bellpepper in these trying times?",
+    "t": "2026-10-26T10:50:36.945446Z",
+    "type": "IMAGE",
+    "rel": 1.403
+   },
+   {
+    "u": "memes",
+    "er": 225,
+    "cap": "I'm not changing the sheets, I don't care.",
+    "t": "2026-10-26T20:45:55.344982Z",
+    "type": "IMAGE",
+    "rel": 1.398
+   },
+   {
+    "u": "memes",
+    "er": 679,
+    "cap": "God and Lucifer were chatting one day",
+    "t": "2026-10-31T01:58:41.275888Z",
     "type": "IMAGE",
     "rel": 1.383
    },
    {
     "u": "memes",
-    "er": 757,
-    "cap": "2 sliding scales of interpretation, just how we like it.",
-    "t": "2026-10-24T22:08:33.080806Z",
-    "type": "IMAGE",
-    "rel": 1.379
-   },
-   {
-    "u": "memes",
-    "er": 728,
-    "cap": "Cyrpto Tools",
-    "t": "2026-10-24T19:50:46.456770Z",
-    "type": "IMAGE",
-    "rel": 1.326
-   },
-   {
-    "u": "memes",
-    "er": 703,
-    "cap": "There is no explanation",
-    "t": "2026-10-27T22:28:23.570714Z",
-    "type": "IMAGE",
-    "rel": 1.28
-   },
-   {
-    "u": "memes",
-    "er": 684,
-    "cap": "May I offer you a bellpepper in these trying times?",
-    "t": "2026-10-26T10:50:36.945446Z",
-    "type": "IMAGE",
-    "rel": 1.246
-   },
-   {
-    "u": "memes",
-    "er": 262,
-    "cap": "Western media and its misinfo",
-    "t": "2026-10-24T12:03:21.047095Z",
-    "type": "IMAGE",
-    "rel": 1.237
-   },
-   {
-    "u": "memes",
-    "er": 627,
-    "cap": "Practice Makes Perfect",
-    "t": "2026-10-24T15:46:40.062550Z",
-    "type": "IMAGE",
-    "rel": 1.142
-   },
-   {
-    "u": "memes",
-    "er": 239,
-    "cap": "frog meme",
-    "t": "2026-10-24T18:52:44.208753Z",
-    "type": "IMAGE",
-    "rel": 1.128
-   },
-   {
-    "u": "memes",
-    "er": 610,
+    "er": 615,
     "cap": "Still better than Twilight",
     "t": "2026-10-25T07:02:53.826426Z",
     "type": "IMAGE",
-    "rel": 1.111
+    "rel": 1.252
    },
    {
     "u": "memes",
-    "er": 218,
-    "cap": "I'm not changing the sheets, I don't care.",
-    "t": "2026-10-26T20:45:55.344982Z",
+    "er": 199,
+    "cap": "rip to a real one",
+    "t": "2026-10-30T02:14:37.328357Z",
     "type": "IMAGE",
-    "rel": 1.029
+    "rel": 1.236
    },
    {
     "u": "memes",
-    "er": 563,
+    "er": 568,
     "cap": "faster than a quantum computer",
     "t": "2026-10-26T17:28:59.560298Z",
     "type": "IMAGE",
-    "rel": 1.025
+    "rel": 1.157
    },
    {
     "u": "memes",
-    "er": 202,
-    "cap": "Just vute",
-    "t": "2026-10-23T23:09:59.049011Z",
+    "er": 167,
+    "cap": "The feds read my email?",
+    "t": "2026-10-29T17:43:57.110400Z",
     "type": "IMAGE",
-    "rel": 0.953
+    "rel": 1.037
    }
   ],
   "worst": [
+   {
+    "u": "funny",
+    "er": 5,
+    "cap": "One of my strongest sets so far",
+    "t": "2026-10-30T08:57:49.886234Z",
+    "type": "IMAGE",
+    "rel": 0.01
+   },
    {
     "u": "memes",
     "er": 15,
     "cap": "Swarm Lord",
     "t": "2026-10-25T13:08:41.269499Z",
     "type": "IMAGE",
-    "rel": 0.027
+    "rel": 0.031
+   },
+   {
+    "u": "funny",
+    "er": 18,
+    "cap": "Permanent Motorcycle Helmet",
+    "t": "2026-10-30T16:07:45.606635Z",
+    "type": "IMAGE",
+    "rel": 0.036
+   },
+   {
+    "u": "memes",
+    "er": 23,
+    "cap": "What should you do if someone gives you a large boulder as a present? Take it for granite!",
+    "t": "2026-10-30T17:48:37.785262Z",
+    "type": "IMAGE",
+    "rel": 0.047
    },
    {
     "u": "memes",
@@ -1926,119 +1980,95 @@
     "cap": "Wink wink nudge nudge",
     "t": "2026-10-25T14:23:19.945258Z",
     "type": "IMAGE",
-    "rel": 0.06
+    "rel": 0.067
    },
    {
     "u": "memes",
-    "er": 28,
-    "cap": "Me making a private key",
-    "t": "2026-10-23T14:52:22.701497Z",
+    "er": 47,
+    "cap": "i dont have a problem",
+    "t": "2026-10-31T18:05:09.047922Z",
     "type": "IMAGE",
-    "rel": 0.132
+    "rel": 0.096
    },
    {
     "u": "memes",
-    "er": 85,
-    "cap": "I\u2019ll get around to it, one of these days",
-    "t": "2026-10-27T17:17:58.115905Z",
+    "er": 47,
+    "cap": "What is the name of this fallacy?",
+    "t": "2026-10-31T17:15:53.263692Z",
     "type": "IMAGE",
-    "rel": 0.155
+    "rel": 0.096
    },
    {
     "u": "memes",
-    "er": 87,
+    "er": 48,
+    "cap": "When a guy shows me basic human decency",
+    "t": "2026-10-30T17:01:30.878610Z",
+    "type": "IMAGE",
+    "rel": 0.098
+   },
+   {
+    "u": "memes",
+    "er": 50,
+    "cap": "Made this wojak, feel free to use it!",
+    "t": "2026-10-31T18:05:17.378494Z",
+    "type": "IMAGE",
+    "rel": 0.102
+   },
+   {
+    "u": "funny",
+    "er": 52,
+    "cap": "Cursed",
+    "t": "2026-10-31T15:01:36.766137Z",
+    "type": "IMAGE",
+    "rel": 0.103
+   },
+   {
+    "u": "memes",
+    "er": 22,
+    "cap": "revolution! (but only for governments that are problematic for neoliberal imperialism)",
+    "t": "2026-10-30T23:01:58.643869Z",
+    "type": "IMAGE",
+    "rel": 0.137
+   },
+   {
+    "u": "memes",
+    "er": 23,
+    "cap": "RIP sir pat",
+    "t": "2026-10-30T15:59:54.222478Z",
+    "type": "IMAGE",
+    "rel": 0.143
+   },
+   {
+    "u": "memes",
+    "er": 72,
+    "cap": "Take my soul! I just want a couple peanut butter cups.",
+    "t": "2026-10-30T19:21:49.989623Z",
+    "type": "IMAGE",
+    "rel": 0.147
+   },
+   {
+    "u": "memes",
+    "er": 81,
     "cap": "Malfoids",
     "t": "2026-10-24T22:14:37.716780Z",
     "type": "IMAGE",
-    "rel": 0.158
+    "rel": 0.165
    },
    {
     "u": "memes",
-    "er": 93,
-    "cap": "Beware of Friend Groups",
-    "t": "2026-10-22T22:23:34.496634Z",
+    "er": 90,
+    "cap": "I\u2019ll get around to it, one of these days",
+    "t": "2026-10-27T17:17:58.115905Z",
     "type": "IMAGE",
-    "rel": 0.169
-   },
-   {
-    "u": "memes",
-    "er": 41,
-    "cap": "Neues Heimat",
-    "t": "2026-10-23T19:45:13.978525Z",
-    "type": "IMAGE",
-    "rel": 0.194
-   },
-   {
-    "u": "memes",
-    "er": 111,
-    "cap": "The Two Kinds of Mustache",
-    "t": "2026-10-23T23:45:16.173558Z",
-    "type": "IMAGE",
-    "rel": 0.202
-   },
-   {
-    "u": "memes",
-    "er": 44,
-    "cap": "Peace is our profession",
-    "t": "2026-10-24T22:14:58.805165Z",
-    "type": "IMAGE",
-    "rel": 0.208
-   },
-   {
-    "u": "memes",
-    "er": 117,
-    "cap": "NEIN! NEIN! .NEIN!",
-    "t": "2026-10-25T07:01:55.846644Z",
-    "type": "IMAGE",
-    "rel": 0.213
-   },
-   {
-    "u": "memes",
-    "er": 46,
-    "cap": "\"So what are we burning today my fellow kids?\"",
-    "t": "2026-10-26T11:40:35.505261Z",
-    "type": "IMAGE",
-    "rel": 0.217
-   },
-   {
-    "u": "memes",
-    "er": 53,
-    "cap": "I\u2019m in a hell of my own creation",
-    "t": "2026-10-22T21:07:48.558440Z",
-    "type": "IMAGE",
-    "rel": 0.25
-   },
-   {
-    "u": "memes",
-    "er": 55,
-    "cap": "If I don't get my bone powder, how am I gonna stay up all night?",
-    "t": "2026-10-29T04:49:04.182476Z",
-    "type": "IMAGE",
-    "rel": 0.26
-   },
-   {
-    "u": "memes",
-    "er": 66,
-    "cap": "Lazy fucks didn't update the script.",
-    "t": "2026-10-28T23:43:13.675448Z",
-    "type": "IMAGE",
-    "rel": 0.311
-   },
-   {
-    "u": "memes",
-    "er": 67,
-    "cap": "It is better to be at the bottom of a ladder that you want to be on and not in the middle of one that you don\u2019t want to be on",
-    "t": "2026-10-29T04:02:39.813202Z",
-    "type": "IMAGE",
-    "rel": 0.316
+    "rel": 0.183
    }
   ],
   "by_len": {
-   "very short caption": 0.99,
-   "short caption": 1.12
+   "very short caption": 1.07,
+   "short caption": 0.95
   },
   "by_start": {
-   "other opening": 0.98
+   "other opening": 0.97
   }
  },
  "news_used": [
@@ -2141,19 +2171,19 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-31T18:19:06.102387+00:00",
+  "t": "2026-10-31T20:30:44.259948+00:00",
   "followers": 48457,
   "reach": {
-   "18132425587813320": 184,
    "18133773475823062": 105,
-   "18132019591705315": 221,
-   "17963441541226805": 166,
+   "18132019591705315": 223,
+   "17963441541226805": 167,
    "17914287921509320": 226,
-   "18507925504097930": 69,
-   "18099270026114308": 159,
-   "18080071229721549": 177,
-   "18115147141857726": 37,
-   "18001818387037390": 127
+   "18507925504097930": 71,
+   "18099270026114308": 160,
+   "18080071229721549": 184,
+   "18115147141857726": 52,
+   "18001818387037390": 234,
+   "18135180451664487": 17
   }
  },
  "follower_log": [

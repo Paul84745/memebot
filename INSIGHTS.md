@@ -12,7 +12,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - single: avg 97.9 (16 posts)
 
 ## Followers
-- now 48478 (-70 since 2026-10-27)
+- now 48463 (-85 since 2026-10-27)
 - new followers per 1,000 people reached: -10.17 on average (13 posts)
 - posts that brought the most followers:
   - (0.00/1k, 0 follows) How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season

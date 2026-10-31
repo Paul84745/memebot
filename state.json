@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "slots": [
    {
-    "t": "2026-10-30T08:06:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-10-30T11:15:00+00:00",
-    "status": "skipped",
-    "attempts": 1,
-    "kind": "story"
-   },
-   {
-    "t": "2026-10-30T12:20:00+00:00",
-    "status": "skipped",
+    "t": "2026-10-31T08:19:00+00:00",
+    "status": "pending",
     "attempts": 0
    },
    {
-    "t": "2026-10-30T15:55:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-10-30T18:41:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-10-31T11:55:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-10-30T21:16:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-10-31T13:42:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-10-30T22:05:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-10-31T17:12:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-31T18:18:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "story"
+   },
+   {
+    "t": "2026-10-31T20:29:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-10-31T21:53:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-10-30",
-  "stories_date": "2026-10-30"
+  "dump_checked": "2026-10-31",
+  "stories_date": "2026-10-31"
  },
  "history": [
   {
@@ -602,7 +602,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.715
+   "follows_attr": -2.729
   },
   {
    "media_id": "18501921094129712",
@@ -639,7 +639,7 @@
    "news": true,
    "news_age_h": 0.11228234222222222,
    "funny": 7,
-   "follows_attr": -3.415
+   "follows_attr": -3.442
   },
   {
    "media_id": "18060710555803584",
@@ -657,7 +657,7 @@
    "news": true,
    "news_age_h": 0.18564519777777777,
    "funny": 7,
-   "follows_attr": -3.195
+   "follows_attr": -3.209
   },
   {
    "media_id": "18132425587813320",
@@ -712,7 +712,7 @@
    "news": true,
    "news_age_h": 0.9605861472222222,
    "funny": 7,
-   "follows_attr": -4.374
+   "follows_attr": -4.401
   },
   {
    "media_id": "17963441541226805",
@@ -730,7 +730,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.795
+   "follows_attr": -0.822
   },
   {
    "media_id": "17914287921509320",
@@ -741,14 +741,14 @@
    "text": "when you set 7:00 am alarm, snooze till 8:46, and the train left 5 minutes ago || POV: you promise a 10\u2011minute phone charge, it's now 2:45 AM and the battery shows 2%",
    "kind": "story",
    "story_type": "faceoff",
-   "reach": 50,
+   "reach": 98,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-10-30T23:11:29.725299+00:00",
-   "follows_attr": -0.086
+   "score": 40.8,
+   "measured_at": "2026-10-31T02:25:44.551973+00:00",
+   "follows_attr": -0.744
   },
   {
    "media_id": "18507925504097930",
@@ -766,7 +766,7 @@
    "news": true,
    "news_age_h": 0.5168477269444445,
    "funny": 7,
-   "follows_attr": -0.066
+   "follows_attr": -0.189
   },
   {
    "media_id": "18099270026114308",
@@ -784,7 +784,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.809
+   "follows_attr": -0.919
   }
  ],
  "imported": [
@@ -2028,22 +2028,21 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-10-30T23:11:29.725299+00:00",
-  "followers": 48464,
+  "t": "2026-10-31T02:25:44.551973+00:00",
+  "followers": 48463,
   "reach": {
-   "17998456569001056": 146,
    "18118915343004352": 193,
-   "17940011733121252": 254,
+   "17940011733121252": 255,
    "18501921094129712": 144,
-   "18286213396293352": 216,
-   "18060710555803584": 214,
+   "18286213396293352": 218,
+   "18060710555803584": 215,
    "18132425587813320": 181,
    "18133773475823062": 105,
-   "18132019591705315": 213,
-   "17963441541226805": 153,
-   "17914287921509320": 50,
-   "18507925504097930": 32,
-   "18099270026114308": 123
+   "18132019591705315": 215,
+   "17963441541226805": 155,
+   "17914287921509320": 98,
+   "18507925504097930": 41,
+   "18099270026114308": 131
   }
  },
  "follower_log": [
@@ -2062,6 +2061,10 @@
   [
    "2026-10-30T01:02:49.738512+00:00",
    48478
+  ],
+  [
+   "2026-10-31T02:25:44.551973+00:00",
+   48463
   ]
  ]
 }

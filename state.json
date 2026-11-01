@@ -20,8 +20,8 @@
    },
    {
     "t": "2026-11-01T12:45:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-01T18:41:00+00:00",
@@ -1004,6 +1004,23 @@
    "news": false,
    "news_age_h": null,
    "funny": 8
+  },
+  {
+   "media_id": "18033284360883786",
+   "posted_at": "2026-11-01T14:30:30.554605+00:00",
+   "template_id": "61585",
+   "template_name": "Bad Luck Brian",
+   "theme": "news",
+   "text": "how me and bro gon be scrolling Bluesky memes at 1am, forgetting homework",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Part 7",
+   "news": true,
+   "news_age_h": 0.9459012233333334,
+   "funny": 7
   }
  ],
  "imported": [
@@ -2162,7 +2179,8 @@
   "Someone ran Rivian\u2019s pedal-by-wire e-bike out of battery and things got weird",
   "Astronomers May Have Just Discovered A Bizarre Moon Unlike Any We Know",
   "Brady Quinn shares bizarre pregame ritual on \u2018Big Noon Kickoff\u2019",
-  "Super El Ni\u00f1o and polar vortex could bring unexpected weather changes across the US this November | Hindustan Times"
+  "Super El Ni\u00f1o and polar vortex could bring unexpected weather changes across the US this November | Hindustan Times",
+  "Julie (@gaga19): \"These memes on Bluesky are hilarious \ud83d\ude02 \ud83d\udc47\ud83c\udffb\ud83e\udd2a\""
  ],
  "trends": {
   "fetched_at": "2026-10-30T14:12:29.252663+00:00",

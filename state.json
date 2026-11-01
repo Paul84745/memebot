@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-11-01T19:32:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-01T21:02:00+00:00",
@@ -870,7 +870,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.786
+   "follows_attr": -2.186
   },
   {
    "media_id": "18080071229721549",
@@ -980,7 +980,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.168
+   "follows_attr": -0.368
   },
   {
    "media_id": "18140475175628237",
@@ -998,7 +998,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.517
+   "follows_attr": -0.717
   },
   {
    "media_id": "18078709187767187",
@@ -1034,7 +1034,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -2.818
+   "follows_attr": -3.018
   },
   {
    "media_id": "17895264546615300",
@@ -1045,6 +1045,23 @@
    "text": "caption this: I Bet He's Thinking About Other Women",
    "kind": "story",
    "story_type": "caption_this"
+  },
+  {
+   "media_id": "18253185151308903",
+   "posted_at": "2026-11-01T19:35:01.219872+00:00",
+   "template_id": "61579",
+   "template_name": "One Does Not Simply",
+   "theme": "being broke and money",
+   "text": "when you check your bank after buying ramen for the third night this week",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "folk",
+   "music_fx": "none",
+   "track": "03 A Thousand Times",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -2292,20 +2309,21 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-11-01T19:10:07.763735+00:00",
-  "followers": 48447,
+  "t": "2026-11-01T19:33:01.495111+00:00",
+  "followers": 48446,
   "reach": {
    "18507925504097930": 102,
-   "18099270026114308": 187,
+   "18099270026114308": 189,
    "18080071229721549": 225,
    "18115147141857726": 150,
    "18001818387037390": 490,
    "18135180451664487": 97,
    "18071295299507249": 1068,
-   "17951232447343098": 50,
-   "18140475175628237": 65,
+   "17951232447343098": 51,
+   "18140475175628237": 66,
    "18078709187767187": 154,
-   "18033284360883786": 153
+   "18033284360883786": 154,
+   "17895264546615300": 0
   }
  },
  "follower_log": [

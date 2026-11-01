@@ -9,14 +9,14 @@
    },
    {
     "t": "2026-11-01T11:18:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0,
     "kind": "story"
    },
    {
     "t": "2026-11-01T12:07:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-01T12:45:00+00:00",
@@ -773,7 +773,19 @@
    "news": true,
    "news_age_h": 0.9605861472222222,
    "funny": 7,
-   "follows_attr": -4.577
+   "follows_attr": -4.577,
+   "follows_src": "estimated",
+   "like_count": 8,
+   "comments_count": 0,
+   "reach": 226,
+   "shares": 0,
+   "saved": 0,
+   "views": 317,
+   "sends_per_1k": 0.0,
+   "follows": -4.6,
+   "score": 35.4,
+   "follows_per_1k": -20.35,
+   "final": true
   },
   {
    "media_id": "17963441541226805",
@@ -791,7 +803,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.068
+   "follows_attr": -1.084
   },
   {
    "media_id": "17914287921509320",
@@ -828,7 +840,7 @@
    "news": true,
    "news_age_h": 0.5168477269444445,
    "funny": 7,
-   "follows_attr": -0.867
+   "follows_attr": -0.894
   },
   {
    "media_id": "18099270026114308",
@@ -846,7 +858,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.602
+   "follows_attr": -1.639
   },
   {
    "media_id": "18080071229721549",
@@ -864,7 +876,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.142
+   "follows_attr": -1.185
   },
   {
    "media_id": "18115147141857726",
@@ -875,14 +887,15 @@
    "text": "POV: you promise to start the 10\u2011minute essay at 2\u202fpm, it's now 11:59\u202fpm and the cursor is still blinking",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -1.204,
-   "reach": 122,
+   "follows_attr": -1.354,
+   "reach": 150,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 49.2,
-   "measured_at": "2026-11-01T07:35:38.964657+00:00"
+   "score": 40.0,
+   "measured_at": "2026-11-01T14:18:05.802722+00:00",
+   "final": true
   },
   {
    "media_id": "18001818387037390",
@@ -900,7 +913,7 @@
    "news": true,
    "news_age_h": 0.11905285138888888,
    "funny": 7,
-   "follows_attr": -0.639
+   "follows_attr": -0.896
   },
   {
    "media_id": "18135180451664487",
@@ -911,14 +924,15 @@
    "text": "caption this: The Scroll Of Truth",
    "kind": "story",
    "story_type": "caption_this",
-   "reach": 73,
+   "reach": 97,
    "shares": 0,
    "replies": 0,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-01T07:35:38.964657+00:00",
-   "follows_attr": -0.331
+   "profile_visits": 1,
+   "score": 20.6,
+   "measured_at": "2026-11-01T14:18:05.802722+00:00",
+   "follows_attr": -0.459,
+   "final": true
   },
   {
    "media_id": "18071295299507249",
@@ -936,7 +950,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.154
+   "follows_attr": -0.175
   },
   {
    "media_id": "17951232447343098",
@@ -954,7 +968,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.107
+   "follows_attr": -0.15
   },
   {
    "media_id": "18140475175628237",
@@ -969,6 +983,24 @@
    "music_style": null,
    "music_fx": "none",
    "track": "Play The Victim",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8,
+   "follows_attr": -0.278
+  },
+  {
+   "media_id": "18078709187767187",
+   "posted_at": "2026-11-01T14:19:55.553629+00:00",
+   "template_id": "27813981",
+   "template_name": "Hide the Pain Harold",
+   "theme": "gaming",
+   "text": "how me looks after 12\u2011hour raid and the loot drop is a single health potion",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": "piano",
+   "music_fx": "slowed_reverb",
+   "track": "Shannon And April With Friends - Holiday Recordings",
    "news": false,
    "news_age_h": null,
    "funny": 8
@@ -2218,20 +2250,20 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-11-01T07:35:38.964657+00:00",
-  "followers": 48455,
+  "t": "2026-11-01T14:18:05.802722+00:00",
+  "followers": 48454,
   "reach": {
-   "18132019591705315": 226,
-   "17963441541226805": 175,
+   "17963441541226805": 178,
    "17914287921509320": 226,
-   "18507925504097930": 84,
-   "18099270026114308": 172,
-   "18080071229721549": 208,
-   "18115147141857726": 122,
-   "18001818387037390": 413,
-   "18135180451664487": 73,
-   "18071295299507249": 1064,
-   "17951232447343098": 41
+   "18507925504097930": 89,
+   "18099270026114308": 179,
+   "18080071229721549": 216,
+   "18115147141857726": 150,
+   "18001818387037390": 461,
+   "18135180451664487": 97,
+   "18071295299507249": 1068,
+   "17951232447343098": 49,
+   "18140475175628237": 52
   }
  },
  "follower_log": [

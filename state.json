@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-01T21:02:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "dump"
    }
   ],
@@ -852,7 +852,7 @@
    "news": true,
    "news_age_h": 0.5168477269444445,
    "funny": 7,
-   "follows_attr": -1.133
+   "follows_attr": -1.146
   },
   {
    "media_id": "18099270026114308",
@@ -888,7 +888,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.351
+   "follows_attr": -1.364
   },
   {
    "media_id": "18115147141857726",
@@ -925,7 +925,7 @@
    "news": true,
    "news_age_h": 0.11905285138888888,
    "funny": 7,
-   "follows_attr": -1.43
+   "follows_attr": -1.443
   },
   {
    "media_id": "18135180451664487",
@@ -962,7 +962,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.175
+   "follows_attr": -0.179
   },
   {
    "media_id": "17951232447343098",
@@ -980,7 +980,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.368
+   "follows_attr": -0.381
   },
   {
    "media_id": "18140475175628237",
@@ -998,7 +998,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.717
+   "follows_attr": -0.739
   },
   {
    "media_id": "18078709187767187",
@@ -1016,7 +1016,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.837
+   "follows_attr": -2.85
   },
   {
    "media_id": "18033284360883786",
@@ -1034,7 +1034,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.018
+   "follows_attr": -3.027
   },
   {
    "media_id": "17895264546615300",
@@ -1044,7 +1044,8 @@
    "theme": "story",
    "text": "caption this: I Bet He's Thinking About Other Women",
    "kind": "story",
-   "story_type": "caption_this"
+   "story_type": "caption_this",
+   "follows_attr": -0.15
   },
   {
    "media_id": "18253185151308903",
@@ -1061,7 +1062,19 @@
    "track": "03 A Thousand Times",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.749
+  },
+  {
+   "media_id": "18079497281727445",
+   "posted_at": "2026-11-01T21:04:45.388192+00:00",
+   "template_id": "dump",
+   "template_name": "meme dump",
+   "theme": "meme dump",
+   "text": "POV: you walk into the kitchen at 3:22 am, fridge light blinds you, and the pizza is gone | POV: you hit send at 2:07 am, then see 'seen' at 2:08 and it\u2019s already sunrise | When you promise a 5\u2011minute TikTok break at 8:45 pm and it's now 1 am | Me when the group chat hits 150 messages and the plan is still 'maybe Friday' | POV: you open the essay at 3 pm, close it at 3:01 pm, and stare at the blank page till midnight",
+   "kind": "carousel",
+   "slides": 5,
+   "funny": 6.6
   }
  ],
  "imported": [
@@ -2309,21 +2322,22 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-11-01T19:33:01.495111+00:00",
-  "followers": 48446,
+  "t": "2026-11-01T21:03:05.270676+00:00",
+  "followers": 48445,
   "reach": {
-   "18507925504097930": 102,
+   "18507925504097930": 105,
    "18099270026114308": 189,
-   "18080071229721549": 225,
+   "18080071229721549": 228,
    "18115147141857726": 150,
-   "18001818387037390": 490,
+   "18001818387037390": 493,
    "18135180451664487": 97,
-   "18071295299507249": 1068,
-   "17951232447343098": 51,
-   "18140475175628237": 66,
-   "18078709187767187": 154,
-   "18033284360883786": 154,
-   "17895264546615300": 0
+   "18071295299507249": 1069,
+   "17951232447343098": 54,
+   "18140475175628237": 71,
+   "18078709187767187": 157,
+   "18033284360883786": 156,
+   "17895264546615300": 34,
+   "18253185151308903": 170
   }
  },
  "follower_log": [

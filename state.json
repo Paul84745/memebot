@@ -25,8 +25,8 @@
    },
    {
     "t": "2026-11-01T18:41:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -803,7 +803,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.084
+   "follows_attr": -1.084,
+   "follows_src": "estimated",
+   "like_count": 14,
+   "comments_count": 0,
+   "reach": 179,
+   "shares": 0,
+   "saved": 0,
+   "views": 255,
+   "sends_per_1k": 0.0,
+   "follows": -1.1,
+   "score": 78.2,
+   "follows_per_1k": -6.15,
+   "final": true
   },
   {
    "media_id": "17914287921509320",
@@ -840,7 +852,7 @@
    "news": true,
    "news_age_h": 0.5168477269444445,
    "funny": 7,
-   "follows_attr": -0.894
+   "follows_attr": -1.133
   },
   {
    "media_id": "18099270026114308",
@@ -858,7 +870,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.639
+   "follows_attr": -1.786
   },
   {
    "media_id": "18080071229721549",
@@ -876,7 +888,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.185
+   "follows_attr": -1.351
   },
   {
    "media_id": "18115147141857726",
@@ -913,7 +925,7 @@
    "news": true,
    "news_age_h": 0.11905285138888888,
    "funny": 7,
-   "follows_attr": -0.896
+   "follows_attr": -1.43
   },
   {
    "media_id": "18135180451664487",
@@ -968,7 +980,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.15
+   "follows_attr": -0.168
   },
   {
    "media_id": "18140475175628237",
@@ -986,7 +998,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.278
+   "follows_attr": -0.517
   },
   {
    "media_id": "18078709187767187",
@@ -1003,7 +1015,8 @@
    "track": "Shannon And April With Friends - Holiday Recordings",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -2.837
   },
   {
    "media_id": "18033284360883786",
@@ -1020,7 +1033,18 @@
    "track": "Part 7",
    "news": true,
    "news_age_h": 0.9459012233333334,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -2.818
+  },
+  {
+   "media_id": "17895264546615300",
+   "posted_at": "2026-11-01T19:10:33.552724+00:00",
+   "template_id": "110163934",
+   "template_name": "story",
+   "theme": "story",
+   "text": "caption this: I Bet He's Thinking About Other Women",
+   "kind": "story",
+   "story_type": "caption_this"
   }
  ],
  "imported": [
@@ -2268,20 +2292,20 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-11-01T14:18:05.802722+00:00",
-  "followers": 48454,
+  "t": "2026-11-01T19:10:07.763735+00:00",
+  "followers": 48447,
   "reach": {
-   "17963441541226805": 178,
-   "17914287921509320": 226,
-   "18507925504097930": 89,
-   "18099270026114308": 179,
-   "18080071229721549": 216,
+   "18507925504097930": 102,
+   "18099270026114308": 187,
+   "18080071229721549": 225,
    "18115147141857726": 150,
-   "18001818387037390": 461,
+   "18001818387037390": 490,
    "18135180451664487": 97,
    "18071295299507249": 1068,
-   "17951232447343098": 49,
-   "18140475175628237": 52
+   "17951232447343098": 50,
+   "18140475175628237": 65,
+   "18078709187767187": 154,
+   "18033284360883786": 153
   }
  },
  "follower_log": [

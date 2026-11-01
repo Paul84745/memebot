@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-01T06:58:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-01T11:18:00+00:00",
@@ -773,7 +773,7 @@
    "news": true,
    "news_age_h": 0.9605861472222222,
    "funny": 7,
-   "follows_attr": -4.565
+   "follows_attr": -4.577
   },
   {
    "media_id": "17963441541226805",
@@ -791,7 +791,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.044
+   "follows_attr": -1.068
   },
   {
    "media_id": "17914287921509320",
@@ -828,7 +828,7 @@
    "news": true,
    "news_age_h": 0.5168477269444445,
    "funny": 7,
-   "follows_attr": -0.808
+   "follows_attr": -0.867
   },
   {
    "media_id": "18099270026114308",
@@ -846,7 +846,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.495
+   "follows_attr": -1.602
   },
   {
    "media_id": "18080071229721549",
@@ -864,7 +864,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.988
+   "follows_attr": -1.142
   },
   {
    "media_id": "18115147141857726",
@@ -875,14 +875,14 @@
    "text": "POV: you promise to start the 10\u2011minute essay at 2\u202fpm, it's now 11:59\u202fpm and the cursor is still blinking",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.79,
-   "reach": 87,
+   "follows_attr": -1.204,
+   "reach": 122,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 46.0,
-   "measured_at": "2026-11-01T01:13:23.312907+00:00"
+   "profile_visits": 1,
+   "score": 49.2,
+   "measured_at": "2026-11-01T07:35:38.964657+00:00"
   },
   {
    "media_id": "18001818387037390",
@@ -899,7 +899,8 @@
    "track": "The Trap",
    "news": true,
    "news_age_h": 0.11905285138888888,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.639
   },
   {
    "media_id": "18135180451664487",
@@ -910,13 +911,14 @@
    "text": "caption this: The Scroll Of Truth",
    "kind": "story",
    "story_type": "caption_this",
-   "reach": 45,
+   "reach": 73,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-01T01:13:23.312907+00:00"
+   "measured_at": "2026-11-01T07:35:38.964657+00:00",
+   "follows_attr": -0.331
   },
   {
    "media_id": "18071295299507249",
@@ -933,7 +935,8 @@
    "track": "3_vadz_-_e+a",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.154
   },
   {
    "media_id": "17951232447343098",
@@ -950,7 +953,25 @@
    "track": "Stupid Track 15",
    "news": true,
    "news_age_h": 0.17600323444444443,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.107
+  },
+  {
+   "media_id": "18140475175628237",
+   "posted_at": "2026-11-01T07:37:23.439333+00:00",
+   "template_id": "99683372",
+   "template_name": "Sleeping Shaq",
+   "theme": "work and bad bosses",
+   "text": "POV: boss says 'quick sync' at 4:58pm, you already scheduled your nap for 5",
+   "format": "pov",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Play The Victim",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -2197,20 +2218,20 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-11-01T01:13:23.312907+00:00",
-  "followers": 48457,
+  "t": "2026-11-01T07:35:38.964657+00:00",
+  "followers": 48455,
   "reach": {
-   "18132019591705315": 225,
-   "17963441541226805": 173,
+   "18132019591705315": 226,
+   "17963441541226805": 175,
    "17914287921509320": 226,
-   "18507925504097930": 79,
-   "18099270026114308": 163,
-   "18080071229721549": 195,
-   "18115147141857726": 87,
-   "18001818387037390": 359,
-   "18135180451664487": 45,
-   "18071295299507249": 1051,
-   "17951232447343098": 32
+   "18507925504097930": 84,
+   "18099270026114308": 172,
+   "18080071229721549": 208,
+   "18115147141857726": 122,
+   "18001818387037390": 413,
+   "18135180451664487": 73,
+   "18071295299507249": 1064,
+   "17951232447343098": 41
   }
  },
  "follower_log": [

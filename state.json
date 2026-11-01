@@ -852,7 +852,19 @@
    "news": true,
    "news_age_h": 0.5168477269444445,
    "funny": 7,
-   "follows_attr": -1.146
+   "follows_attr": -1.146,
+   "follows_src": "estimated",
+   "like_count": 10,
+   "comments_count": 0,
+   "reach": 107,
+   "shares": 0,
+   "saved": 0,
+   "views": 175,
+   "sends_per_1k": 0.0,
+   "follows": -1.1,
+   "score": 93.5,
+   "follows_per_1k": -10.28,
+   "final": true
   },
   {
    "media_id": "18099270026114308",
@@ -870,7 +882,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.186
+   "follows_attr": -2.186,
+   "follows_src": "estimated",
+   "like_count": 11,
+   "comments_count": 0,
+   "reach": 192,
+   "shares": 0,
+   "saved": 0,
+   "views": 279,
+   "sends_per_1k": 0.0,
+   "follows": -2.2,
+   "score": 57.3,
+   "follows_per_1k": -11.46,
+   "final": true
   },
   {
    "media_id": "18080071229721549",
@@ -888,7 +912,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.364
+   "follows_attr": -1.419
   },
   {
    "media_id": "18115147141857726",
@@ -925,7 +949,7 @@
    "news": true,
    "news_age_h": 0.11905285138888888,
    "funny": 7,
-   "follows_attr": -1.443
+   "follows_attr": -1.47
   },
   {
    "media_id": "18135180451664487",
@@ -962,7 +986,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.179
+   "follows_attr": -0.234
   },
   {
    "media_id": "17951232447343098",
@@ -998,7 +1022,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.739
+   "follows_attr": -0.821
   },
   {
    "media_id": "18078709187767187",
@@ -1016,7 +1040,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.85
+   "follows_attr": -2.877
   },
   {
    "media_id": "18033284360883786",
@@ -1034,7 +1058,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.027
+   "follows_attr": -3.054
   },
   {
    "media_id": "17895264546615300",
@@ -1045,7 +1069,14 @@
    "text": "caption this: I Bet He's Thinking About Other Women",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -0.15
+   "follows_attr": -0.805,
+   "reach": 58,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-01T22:51:24.951911+00:00"
   },
   {
    "media_id": "18253185151308903",
@@ -1063,7 +1094,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.749
+   "follows_attr": -0.913
   },
   {
    "media_id": "18079497281727445",
@@ -1074,7 +1105,8 @@
    "text": "POV: you walk into the kitchen at 3:22 am, fridge light blinds you, and the pizza is gone | POV: you hit send at 2:07 am, then see 'seen' at 2:08 and it\u2019s already sunrise | When you promise a 5\u2011minute TikTok break at 8:45 pm and it's now 1 am | Me when the group chat hits 150 messages and the plan is still 'maybe Friday' | POV: you open the essay at 3 pm, close it at 3:01 pm, and stare at the blank page till midnight",
    "kind": "carousel",
    "slides": 5,
-   "funny": 6.6
+   "funny": 6.6,
+   "follows_attr": -1.909
   }
  ],
  "imported": [
@@ -2322,22 +2354,21 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-11-01T21:03:05.270676+00:00",
-  "followers": 48445,
+  "t": "2026-11-01T22:51:24.951911+00:00",
+  "followers": 48442,
   "reach": {
-   "18507925504097930": 105,
-   "18099270026114308": 189,
-   "18080071229721549": 228,
+   "18080071229721549": 230,
    "18115147141857726": 150,
-   "18001818387037390": 493,
+   "18001818387037390": 494,
    "18135180451664487": 97,
-   "18071295299507249": 1069,
+   "18071295299507249": 1071,
    "17951232447343098": 54,
-   "18140475175628237": 71,
-   "18078709187767187": 157,
-   "18033284360883786": 156,
-   "17895264546615300": 34,
-   "18253185151308903": 170
+   "18140475175628237": 74,
+   "18078709187767187": 158,
+   "18033284360883786": 157,
+   "17895264546615300": 58,
+   "18253185151308903": 176,
+   "18079497281727445": 70
   }
  },
  "follower_log": [

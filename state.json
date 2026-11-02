@@ -14,14 +14,14 @@
    },
    {
     "t": "2026-11-02T13:16:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0,
     "kind": "story"
    },
    {
     "t": "2026-11-02T16:29:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-02T19:24:00+00:00",
@@ -997,7 +997,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.295
+   "follows_attr": -0.35
   },
   {
    "media_id": "17951232447343098",
@@ -1015,7 +1015,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.614
+   "follows_attr": -0.632
   },
   {
    "media_id": "18140475175628237",
@@ -1033,7 +1033,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.998
+   "follows_attr": -1.053
   },
   {
    "media_id": "18078709187767187",
@@ -1051,7 +1051,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -3.133
+   "follows_attr": -3.169
   },
   {
    "media_id": "18033284360883786",
@@ -1069,7 +1069,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.123
+   "follows_attr": -3.141
   },
   {
    "media_id": "17895264546615300",
@@ -1080,7 +1080,7 @@
    "text": "caption this: I Bet He's Thinking About Other Women",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -1.948,
+   "follows_attr": -2.039,
    "reach": 132,
    "shares": 0,
    "replies": 0,
@@ -1106,7 +1106,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.045
+   "follows_attr": -1.063
   },
   {
    "media_id": "18079497281727445",
@@ -1118,7 +1118,7 @@
    "kind": "carousel",
    "slides": 5,
    "funny": 6.6,
-   "follows_attr": -4.058
+   "follows_attr": -4.24
   },
   {
    "media_id": "17910415047564411",
@@ -1136,7 +1136,7 @@
    "news": true,
    "news_age_h": 0.4707303836111111,
    "funny": 7,
-   "follows_attr": -3.676
+   "follows_attr": -3.803
   },
   {
    "media_id": "18140883160620425",
@@ -1153,7 +1153,25 @@
    "track": "built-in synth",
    "news": true,
    "news_age_h": 0.5122291230555556,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.4
+  },
+  {
+   "media_id": "18359377585169637",
+   "posted_at": "2026-11-02T16:33:20.947715+00:00",
+   "template_id": "61579",
+   "template_name": "One Does Not Simply",
+   "theme": "procrastination",
+   "text": "when you promise a 10\u2011minute study sesh at 7pm and it becomes a 3\u2011hour TikTok scroll",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Part 6",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -2401,20 +2419,21 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-02T15:02:39.061074+00:00",
-  "followers": 48434,
+  "t": "2026-11-02T16:30:15.546897+00:00",
+  "followers": 48433,
   "reach": {
    "18001818387037390": 498,
    "18135180451664487": 97,
-   "18071295299507249": 1076,
-   "17951232447343098": 69,
-   "18140475175628237": 88,
-   "18078709187767187": 176,
-   "18033284360883786": 163,
-   "17895264546615300": 132,
-   "18253185151308903": 186,
-   "18079497281727445": 228,
-   "17910415047564411": 205
+   "18071295299507249": 1079,
+   "17951232447343098": 70,
+   "18140475175628237": 91,
+   "18078709187767187": 178,
+   "18033284360883786": 164,
+   "17895264546615300": 137,
+   "18253185151308903": 187,
+   "18079497281727445": 238,
+   "17910415047564411": 212,
+   "18140883160620425": 22
   }
  },
  "follower_log": [

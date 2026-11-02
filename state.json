@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-02T21:39:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-02",
@@ -1039,7 +1039,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.644
+   "follows_attr": -0.665
   },
   {
    "media_id": "18140475175628237",
@@ -1057,7 +1057,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.055
+   "follows_attr": -1.076
   },
   {
    "media_id": "18078709187767187",
@@ -1075,7 +1075,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -3.171
+   "follows_attr": -3.213
   },
   {
    "media_id": "18033284360883786",
@@ -1093,7 +1093,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.148
+   "follows_attr": -3.169
   },
   {
    "media_id": "17895264546615300",
@@ -1142,7 +1142,7 @@
    "kind": "carousel",
    "slides": 5,
    "funny": 6.6,
-   "follows_attr": -4.277
+   "follows_attr": -4.34
   },
   {
    "media_id": "17910415047564411",
@@ -1160,7 +1160,7 @@
    "news": true,
    "news_age_h": 0.4707303836111111,
    "funny": 7,
-   "follows_attr": -3.833
+   "follows_attr": -4.021
   },
   {
    "media_id": "18140883160620425",
@@ -1196,7 +1196,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.886
+   "follows_attr": -1.969
   },
   {
    "media_id": "18138457324735660",
@@ -1213,7 +1213,8 @@
    "track": "City streets by Night - Ambient Atmospheres - Sofia, Bulgaria",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.125
   },
   {
    "media_id": "18145845175517393",
@@ -1223,7 +1224,25 @@
    "theme": "story",
    "text": "would you rather miss gym or skip shower | A: miss leg day, forever weak calves | B: skip shower, smell like gym socks",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": -0.438
+  },
+  {
+   "media_id": "17892702330456267",
+   "posted_at": "2026-11-02T21:45:11.399403+00:00",
+   "template_id": "102156234",
+   "template_name": "Mocking Spongebob",
+   "theme": "being late and plans falling through",
+   "text": "me when the 8:15 am class starts and my alarm snoozed at 7:58",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "ambient",
+   "music_fx": "slowed_reverb",
+   "track": "City streets by Night - Ambient Atmospheres - Sofia, Bulgaria",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -2471,20 +2490,21 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-02T20:49:16.103338+00:00",
-  "followers": 48431,
+  "t": "2026-11-02T21:40:01.357330+00:00",
+  "followers": 48430,
   "reach": {
-   "17951232447343098": 78,
-   "18140475175628237": 92,
-   "18078709187767187": 179,
-   "18033284360883786": 167,
+   "17951232447343098": 79,
+   "18140475175628237": 93,
+   "18078709187767187": 181,
+   "18033284360883786": 168,
    "17895264546615300": 137,
    "18253185151308903": 190,
-   "18079497281727445": 256,
-   "17910415047564411": 236,
+   "18079497281727445": 259,
+   "17910415047564411": 245,
    "18140883160620425": 34,
-   "18359377585169637": 1134,
-   "18138457324735660": 20
+   "18359377585169637": 1138,
+   "18138457324735660": 26,
+   "18145845175517393": 21
   }
  },
  "follower_log": [

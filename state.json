@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-02T08:14:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-02T12:21:00+00:00",
@@ -911,7 +911,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.452
+   "follows_attr": -1.452,
+   "follows_src": "estimated",
+   "like_count": 11,
+   "comments_count": 0,
+   "reach": 239,
+   "shares": 0,
+   "saved": 0,
+   "views": 342,
+   "sends_per_1k": 0.0,
+   "follows": -1.5,
+   "score": 46.0,
+   "follows_per_1k": -6.28,
+   "final": true
   },
   {
    "media_id": "18115147141857726",
@@ -948,7 +960,7 @@
    "news": true,
    "news_age_h": 0.11905285138888888,
    "funny": 7,
-   "follows_attr": -1.47
+   "follows_attr": -1.524
   },
   {
    "media_id": "18135180451664487",
@@ -1003,7 +1015,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.414
+   "follows_attr": -0.504
   },
   {
    "media_id": "18140475175628237",
@@ -1021,7 +1033,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.87
+   "follows_attr": -0.888
   },
   {
    "media_id": "18078709187767187",
@@ -1039,7 +1051,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.934
+   "follows_attr": -3.096
   },
   {
    "media_id": "18033284360883786",
@@ -1057,7 +1069,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.087
+   "follows_attr": -3.105
   },
   {
    "media_id": "17895264546615300",
@@ -1068,14 +1080,14 @@
    "text": "caption this: I Bet He's Thinking About Other Women",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -0.968,
-   "reach": 78,
+   "follows_attr": -1.635,
+   "reach": 115,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-02T01:58:28.497420+00:00"
+   "measured_at": "2026-11-02T08:33:05.969202+00:00"
   },
   {
    "media_id": "18253185151308903",
@@ -1093,7 +1105,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.954
+   "follows_attr": -1.008
   },
   {
    "media_id": "18079497281727445",
@@ -1105,7 +1117,24 @@
    "kind": "carousel",
    "slides": 5,
    "funny": 6.6,
-   "follows_attr": -2.478
+   "follows_attr": -3.415
+  },
+  {
+   "media_id": "17910415047564411",
+   "posted_at": "2026-11-02T08:35:05.692686+00:00",
+   "template_id": "61520",
+   "template_name": "Futurama Fry",
+   "theme": "news",
+   "text": "when you scream 'we did it' and your ACL screams 'we\u2019re out'",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "passed_conflicts_found",
+   "news": true,
+   "news_age_h": 0.4707303836111111,
+   "funny": 7
   }
  ],
  "imported": [
@@ -2265,7 +2294,8 @@
   "Astronomers May Have Just Discovered A Bizarre Moon Unlike Any We Know",
   "Brady Quinn shares bizarre pregame ritual on \u2018Big Noon Kickoff\u2019",
   "Super El Ni\u00f1o and polar vortex could bring unexpected weather changes across the US this November | Hindustan Times",
-  "Julie (@gaga19): \"These memes on Bluesky are hilarious \ud83d\ude02 \ud83d\udc47\ud83c\udffb\ud83e\udd2a\""
+  "Julie (@gaga19): \"These memes on Bluesky are hilarious \ud83d\ude02 \ud83d\udc47\ud83c\udffb\ud83e\udd2a\"",
+  "WATCH: USC Fan Appears to Tear ACL Storming Field After Upset Win Over Ohio State, Video Goes Viral"
  ],
  "trends": {
   "fetched_at": "2026-10-30T14:12:29.252663+00:00",
@@ -2353,21 +2383,20 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-11-02T01:58:28.497420+00:00",
-  "followers": 48441,
+  "t": "2026-11-02T08:33:05.969202+00:00",
+  "followers": 48439,
   "reach": {
-   "18080071229721549": 234,
    "18115147141857726": 150,
-   "18001818387037390": 494,
+   "18001818387037390": 497,
    "18135180451664487": 97,
    "18071295299507249": 1074,
-   "17951232447343098": 58,
-   "18140475175628237": 80,
-   "18078709187767187": 165,
-   "18033284360883786": 161,
-   "17895264546615300": 78,
-   "18253185151308903": 181,
-   "18079497281727445": 140
+   "17951232447343098": 63,
+   "18140475175628237": 81,
+   "18078709187767187": 174,
+   "18033284360883786": 162,
+   "17895264546615300": 115,
+   "18253185151308903": 184,
+   "18079497281727445": 192
   }
  },
  "follower_log": [

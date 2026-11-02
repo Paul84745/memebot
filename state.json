@@ -25,8 +25,8 @@
    },
    {
     "t": "2026-11-02T19:24:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-02T20:48:00+00:00",
@@ -960,7 +960,19 @@
    "news": true,
    "news_age_h": 0.11905285138888888,
    "funny": 7,
-   "follows_attr": -1.542
+   "follows_attr": -1.542,
+   "follows_src": "estimated",
+   "like_count": 18,
+   "comments_count": 0,
+   "reach": 499,
+   "shares": 0,
+   "saved": 1,
+   "views": 618,
+   "sends_per_1k": 0.0,
+   "follows": -1.5,
+   "score": 42.1,
+   "follows_per_1k": -3.01,
+   "final": true
   },
   {
    "media_id": "18135180451664487",
@@ -1015,7 +1027,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.632
+   "follows_attr": -0.644
   },
   {
    "media_id": "18140475175628237",
@@ -1033,7 +1045,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.053
+   "follows_attr": -1.055
   },
   {
    "media_id": "18078709187767187",
@@ -1051,7 +1063,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -3.169
+   "follows_attr": -3.171
   },
   {
    "media_id": "18033284360883786",
@@ -1069,7 +1081,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.141
+   "follows_attr": -3.148
   },
   {
    "media_id": "17895264546615300",
@@ -1106,7 +1118,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.063
+   "follows_attr": -1.068
   },
   {
    "media_id": "18079497281727445",
@@ -1118,7 +1130,7 @@
    "kind": "carousel",
    "slides": 5,
    "funny": 6.6,
-   "follows_attr": -4.24
+   "follows_attr": -4.277
   },
   {
    "media_id": "17910415047564411",
@@ -1136,7 +1148,7 @@
    "news": true,
    "news_age_h": 0.4707303836111111,
    "funny": 7,
-   "follows_attr": -3.803
+   "follows_attr": -3.833
   },
   {
    "media_id": "18140883160620425",
@@ -1154,7 +1166,7 @@
    "news": true,
    "news_age_h": 0.5122291230555556,
    "funny": 7,
-   "follows_attr": -0.4
+   "follows_attr": -0.417
   },
   {
    "media_id": "18359377585169637",
@@ -1169,6 +1181,24 @@
    "music_style": null,
    "music_fx": "none",
    "track": "Part 6",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8,
+   "follows_attr": -1.886
+  },
+  {
+   "media_id": "18138457324735660",
+   "posted_at": "2026-11-02T19:30:34.645137+00:00",
+   "template_id": "61585",
+   "template_name": "Bad Luck Brian",
+   "theme": "procrastination",
+   "text": "POV: you promised a 10\u2011minute essay at 2 pm, it\u2019s now 11:59 pm and you\u2019re still staring at the blank page.",
+   "format": "pov",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "ambient",
+   "music_fx": "slowed_reverb",
+   "track": "City streets by Night - Ambient Atmospheres - Sofia, Bulgaria",
    "news": false,
    "news_age_h": null,
    "funny": 8
@@ -2419,21 +2449,20 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-02T16:30:15.546897+00:00",
-  "followers": 48433,
+  "t": "2026-11-02T19:25:09.176295+00:00",
+  "followers": 48431,
   "reach": {
-   "18001818387037390": 498,
-   "18135180451664487": 97,
    "18071295299507249": 1079,
-   "17951232447343098": 70,
-   "18140475175628237": 91,
-   "18078709187767187": 178,
-   "18033284360883786": 164,
+   "17951232447343098": 75,
+   "18140475175628237": 92,
+   "18078709187767187": 179,
+   "18033284360883786": 167,
    "17895264546615300": 137,
-   "18253185151308903": 187,
-   "18079497281727445": 238,
-   "17910415047564411": 212,
-   "18140883160620425": 22
+   "18253185151308903": 189,
+   "18079497281727445": 253,
+   "17910415047564411": 224,
+   "18140883160620425": 29,
+   "18359377585169637": 764
   }
  },
  "follower_log": [

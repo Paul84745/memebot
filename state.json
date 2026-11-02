@@ -1,48 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "slots": [
    {
-    "t": "2026-11-01T06:58:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-02T08:14:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-01T11:18:00+00:00",
-    "status": "skipped",
+    "t": "2026-11-02T12:21:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-02T13:16:00+00:00",
+    "status": "pending",
     "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-01T12:07:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-02T16:29:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-01T12:45:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-02T19:24:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-01T18:41:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-02T20:48:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-01T19:32:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-01T21:02:00+00:00",
-    "status": "done",
-    "attempts": 1,
-    "kind": "dump"
+    "t": "2026-11-02T21:39:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-01",
-  "stories_date": "2026-11-01"
+  "dump_checked": "2026-11-02",
+  "stories_date": "2026-11-02"
  },
  "history": [
   {
@@ -912,7 +911,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.419
+   "follows_attr": -1.452
   },
   {
    "media_id": "18115147141857726",
@@ -986,7 +985,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.234
+   "follows_attr": -0.258
   },
   {
    "media_id": "17951232447343098",
@@ -1004,7 +1003,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.381
+   "follows_attr": -0.414
   },
   {
    "media_id": "18140475175628237",
@@ -1022,7 +1021,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.821
+   "follows_attr": -0.87
   },
   {
    "media_id": "18078709187767187",
@@ -1040,7 +1039,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.877
+   "follows_attr": -2.934
   },
   {
    "media_id": "18033284360883786",
@@ -1058,7 +1057,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.054
+   "follows_attr": -3.087
   },
   {
    "media_id": "17895264546615300",
@@ -1069,14 +1068,14 @@
    "text": "caption this: I Bet He's Thinking About Other Women",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -0.805,
-   "reach": 58,
+   "follows_attr": -0.968,
+   "reach": 78,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-01T22:51:24.951911+00:00"
+   "measured_at": "2026-11-02T01:58:28.497420+00:00"
   },
   {
    "media_id": "18253185151308903",
@@ -1094,7 +1093,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.913
+   "follows_attr": -0.954
   },
   {
    "media_id": "18079497281727445",
@@ -1106,7 +1105,7 @@
    "kind": "carousel",
    "slides": 5,
    "funny": 6.6,
-   "follows_attr": -1.909
+   "follows_attr": -2.478
   }
  ],
  "imported": [
@@ -2354,21 +2353,21 @@
   "source": "23 headlines"
  },
  "follow_track": {
-  "t": "2026-11-01T22:51:24.951911+00:00",
-  "followers": 48442,
+  "t": "2026-11-02T01:58:28.497420+00:00",
+  "followers": 48441,
   "reach": {
-   "18080071229721549": 230,
+   "18080071229721549": 234,
    "18115147141857726": 150,
    "18001818387037390": 494,
    "18135180451664487": 97,
-   "18071295299507249": 1071,
-   "17951232447343098": 54,
-   "18140475175628237": 74,
-   "18078709187767187": 158,
-   "18033284360883786": 157,
-   "17895264546615300": 58,
-   "18253185151308903": 176,
-   "18079497281727445": 70
+   "18071295299507249": 1074,
+   "17951232447343098": 58,
+   "18140475175628237": 80,
+   "18078709187767187": 165,
+   "18033284360883786": 161,
+   "17895264546615300": 78,
+   "18253185151308903": 181,
+   "18079497281727445": 140
   }
  },
  "follower_log": [
@@ -2395,6 +2394,10 @@
   [
    "2026-11-01T01:13:23.312907+00:00",
    48457
+  ],
+  [
+   "2026-11-02T01:58:28.497420+00:00",
+   48441
   ]
  ]
 }

@@ -19,14 +19,14 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - (-1.24/1k, -0.3 follows) When the teacher says ‘pick your own groups’ and you’re the only one left.
   - (-1.61/1k, -0.4 follows) when you spend $3k on a dress just to get free champagne
 
-## Stories (8 measured)
+## Stories (9 measured)
 - wyr: score 83.3, reach 144, follows 0 (1 stories)
 - rate: score 68.5, reach 456, follows 0 (2 stories)
-- caption_this: score 50.0, reach 146, follows 0 (4 stories)
+- caption_this: score 43.0, reach 143, follows 0 (5 stories)
 - faceoff: score 30.5, reach 197, follows 0 (1 stories)
 
-## Trending music styles right now (23 headlines, 2026-10-30)
-- phonk, afrobeats, drill, folk, arab pop, chipmunk (sped up), funk (sped up), lofi (slowed reverb), piano (slowed reverb)
+## Trending music styles right now (28 headlines, 2026-11-02)
+- k-pop, drill, lofi, ambient (slowed reverb), synthwave, house, phonk, funk (sped up), piano (slowed reverb)
 - results by sound style:
   - plain mood music: avg 87.1 (18 posts)
   - folk: avg 75.4 (2 posts)

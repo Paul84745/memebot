@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-02T12:21:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-02T13:16:00+00:00",
@@ -960,7 +960,7 @@
    "news": true,
    "news_age_h": 0.11905285138888888,
    "funny": 7,
-   "follows_attr": -1.524
+   "follows_attr": -1.542
   },
   {
    "media_id": "18135180451664487",
@@ -997,7 +997,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.258
+   "follows_attr": -0.295
   },
   {
    "media_id": "17951232447343098",
@@ -1015,7 +1015,7 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.504
+   "follows_attr": -0.614
   },
   {
    "media_id": "18140475175628237",
@@ -1033,7 +1033,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.888
+   "follows_attr": -0.998
   },
   {
    "media_id": "18078709187767187",
@@ -1051,7 +1051,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -3.096
+   "follows_attr": -3.133
   },
   {
    "media_id": "18033284360883786",
@@ -1069,7 +1069,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.105
+   "follows_attr": -3.123
   },
   {
    "media_id": "17895264546615300",
@@ -1080,14 +1080,15 @@
    "text": "caption this: I Bet He's Thinking About Other Women",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -1.635,
-   "reach": 115,
+   "follows_attr": -1.948,
+   "reach": 132,
    "shares": 0,
    "replies": 0,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-02T08:54:26.454601+00:00"
+   "profile_visits": 1,
+   "score": 15.2,
+   "measured_at": "2026-11-02T15:02:39.061074+00:00",
+   "final": true
   },
   {
    "media_id": "18253185151308903",
@@ -1105,7 +1106,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.008
+   "follows_attr": -1.045
   },
   {
    "media_id": "18079497281727445",
@@ -1117,7 +1118,7 @@
    "kind": "carousel",
    "slides": 5,
    "funny": 6.6,
-   "follows_attr": -3.415
+   "follows_attr": -4.058
   },
   {
    "media_id": "17910415047564411",
@@ -1134,6 +1135,24 @@
    "track": "passed_conflicts_found",
    "news": true,
    "news_age_h": 0.4707303836111111,
+   "funny": 7,
+   "follows_attr": -3.676
+  },
+  {
+   "media_id": "18140883160620425",
+   "posted_at": "2026-11-02T15:05:38.307316+00:00",
+   "template_id": "148909805",
+   "template_name": "Monkey Puppet",
+   "theme": "news",
+   "text": "How it feels when the boss says 'team building' and you end up in a heist movie",
+   "format": "how_x",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "built-in synth",
+   "news": true,
+   "news_age_h": 0.5122291230555556,
    "funny": 7
   }
  ],
@@ -2295,25 +2314,18 @@
   "Brady Quinn shares bizarre pregame ritual on \u2018Big Noon Kickoff\u2019",
   "Super El Ni\u00f1o and polar vortex could bring unexpected weather changes across the US this November | Hindustan Times",
   "Julie (@gaga19): \"These memes on Bluesky are hilarious \ud83d\ude02 \ud83d\udc47\ud83c\udffb\ud83e\udd2a\"",
-  "WATCH: USC Fan Appears to Tear ACL Storming Field After Upset Win Over Ohio State, Video Goes Viral"
+  "WATCH: USC Fan Appears to Tear ACL Storming Field After Upset Win Over Ohio State, Video Goes Viral",
+  "I Love Boosters review \u2013 supercool outlaw women go shoplifting in Boots Riley\u2019s frantic and funny caper"
  ],
  "trends": {
-  "fetched_at": "2026-10-30T14:12:29.252663+00:00",
+  "fetched_at": "2026-11-02T15:02:39.061074+00:00",
   "styles": [
    {
-    "query": "phonk",
-    "moods": [
-     "hype",
-     "bouncy"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "afrobeats",
+    "query": "k-pop",
     "moods": [
      "upbeat",
      "bouncy",
-     "wholesome"
+     "hype"
     ],
     "fx": "none"
    },
@@ -2321,36 +2333,51 @@
     "query": "drill",
     "moods": [
      "hype",
+     "upbeat",
      "dramatic"
     ],
     "fx": "none"
    },
    {
-    "query": "folk",
+    "query": "lofi",
     "moods": [
      "chill",
-     "sad",
      "wholesome"
     ],
     "fx": "none"
    },
    {
-    "query": "arab pop",
+    "query": "ambient",
     "moods": [
-     "upbeat",
-     "bouncy",
-     "wholesome"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "chipmunk",
-    "moods": [
-     "hype",
-     "upbeat",
+     "dramatic",
      "awkward"
     ],
-    "fx": "sped_up"
+    "fx": "slowed_reverb"
+   },
+   {
+    "query": "synthwave",
+    "moods": [
+     "upbeat",
+     "bouncy"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "house",
+    "moods": [
+     "upbeat",
+     "hype",
+     "bouncy"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "phonk",
+    "moods": [
+     "hype",
+     "dramatic"
+    ],
+    "fx": "none"
    },
    {
     "query": "funk",
@@ -2362,15 +2389,6 @@
     "fx": "sped_up"
    },
    {
-    "query": "lofi",
-    "moods": [
-     "chill",
-     "sad",
-     "wholesome"
-    ],
-    "fx": "slowed_reverb"
-   },
-   {
     "query": "piano",
     "moods": [
      "sad",
@@ -2380,24 +2398,23 @@
     "fx": "slowed_reverb"
    }
   ],
-  "source": "23 headlines"
+  "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-02T08:54:26.454601+00:00",
-  "followers": 48439,
+  "t": "2026-11-02T15:02:39.061074+00:00",
+  "followers": 48434,
   "reach": {
-   "18115147141857726": 150,
-   "18001818387037390": 497,
+   "18001818387037390": 498,
    "18135180451664487": 97,
-   "18071295299507249": 1074,
-   "17951232447343098": 63,
-   "18140475175628237": 82,
-   "18078709187767187": 174,
-   "18033284360883786": 162,
-   "17895264546615300": 115,
-   "18253185151308903": 184,
-   "18079497281727445": 193,
-   "17910415047564411": 5
+   "18071295299507249": 1076,
+   "17951232447343098": 69,
+   "18140475175628237": 88,
+   "18078709187767187": 176,
+   "18033284360883786": 163,
+   "17895264546615300": 132,
+   "18253185151308903": 186,
+   "18079497281727445": 228,
+   "17910415047564411": 205
   }
  },
  "follower_log": [

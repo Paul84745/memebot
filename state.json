@@ -14,8 +14,8 @@
    },
    {
     "t": "2026-11-03T11:56:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -1154,7 +1154,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.097
+   "follows_attr": -1.1
   },
   {
    "media_id": "18079497281727445",
@@ -1166,7 +1166,7 @@
    "kind": "carousel",
    "slides": 5,
    "funny": 6.6,
-   "follows_attr": -4.758
+   "follows_attr": -4.795
   },
   {
    "media_id": "17910415047564411",
@@ -1184,7 +1184,7 @@
    "news": true,
    "news_age_h": 0.4707303836111111,
    "funny": 7,
-   "follows_attr": -5.269
+   "follows_attr": -5.282
   },
   {
    "media_id": "18140883160620425",
@@ -1202,7 +1202,7 @@
    "news": true,
    "news_age_h": 0.5122291230555556,
    "funny": 7,
-   "follows_attr": -0.749
+   "follows_attr": -0.759
   },
   {
    "media_id": "18359377585169637",
@@ -1220,7 +1220,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.257
+   "follows_attr": -2.287
   },
   {
    "media_id": "18138457324735660",
@@ -1238,7 +1238,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.777
+   "follows_attr": -0.821
   },
   {
    "media_id": "18145845175517393",
@@ -1249,14 +1249,14 @@
    "text": "would you rather miss gym or skip shower | A: miss leg day, forever weak calves | B: skip shower, smell like gym socks",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -2.563,
-   "reach": 115,
+   "follows_attr": -2.707,
+   "reach": 156,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 1,
-   "score": 52.2,
-   "measured_at": "2026-11-03T08:32:36.566195+00:00"
+   "profile_visits": 2,
+   "score": 51.3,
+   "measured_at": "2026-11-03T14:19:37.513954+00:00"
   },
   {
    "media_id": "17892702330456267",
@@ -1274,7 +1274,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.85
+   "follows_attr": -2.884
   },
   {
    "media_id": "18136682851659838",
@@ -1291,7 +1291,8 @@
    "track": "Rising Phoenix",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.53
   },
   {
    "media_id": "17965626717235418",
@@ -1308,7 +1309,18 @@
    "track": "Song for ambient samadhi \u4e09\u6627",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.154
+  },
+  {
+   "media_id": "18127100302921038",
+   "posted_at": "2026-11-03T14:20:02.208120+00:00",
+   "template_id": "99683372",
+   "template_name": "story",
+   "theme": "story",
+   "text": "When the boss schedules a \u201cquick 5\u2011minute meeting\u201d at 4:58\u202fpm",
+   "kind": "story",
+   "story_type": "rate"
   }
  ],
  "imported": [
@@ -2556,20 +2568,22 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-03T08:18:19.917911+00:00",
-  "followers": 48422,
+  "t": "2026-11-03T14:19:37.513954+00:00",
+  "followers": 48421,
   "reach": {
    "18078709187767187": 181,
    "18033284360883786": 170,
    "17895264546615300": 137,
-   "18253185151308903": 192,
-   "18079497281727445": 276,
-   "17910415047564411": 307,
-   "18140883160620425": 47,
-   "18359377585169637": 1148,
-   "18138457324735660": 56,
-   "18145845175517393": 113,
-   "17892702330456267": 183
+   "18253185151308903": 193,
+   "18079497281727445": 287,
+   "17910415047564411": 311,
+   "18140883160620425": 50,
+   "18359377585169637": 1157,
+   "18138457324735660": 69,
+   "18145845175517393": 156,
+   "17892702330456267": 193,
+   "18136682851659838": 158,
+   "17965626717235418": 46
   }
  },
  "follower_log": [

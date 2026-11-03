@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-03T08:05:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-03T11:56:00+00:00",
@@ -1256,7 +1256,7 @@
    "follows": 0,
    "profile_visits": 1,
    "score": 53.1,
-   "measured_at": "2026-11-03T08:18:19.917911+00:00"
+   "measured_at": "2026-11-03T08:21:02.085508+00:00"
   },
   {
    "media_id": "17892702330456267",
@@ -1289,6 +1289,23 @@
    "music_style": null,
    "music_fx": "none",
    "track": "Rising Phoenix",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "17965626717235418",
+   "posted_at": "2026-11-03T08:21:54.582914+00:00",
+   "template_id": "61585",
+   "template_name": "Bad Luck Brian",
+   "theme": "gaming",
+   "text": "when you finally clutch the win at 2:13am but the server crashes",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": "ambient",
+   "music_fx": "slowed_reverb",
+   "track": "Song for ambient samadhi \u4e09\u6627",
    "news": false,
    "news_age_h": null,
    "funny": 7

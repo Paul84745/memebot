@@ -30,8 +30,8 @@
    },
    {
     "t": "2026-11-03T19:53:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -1178,7 +1178,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.1
+   "follows_attr": -1.1,
+   "follows_src": "estimated",
+   "like_count": 7,
+   "comments_count": 0,
+   "reach": 194,
+   "shares": 0,
+   "saved": 0,
+   "views": 219,
+   "sends_per_1k": 0.0,
+   "follows": -1.1,
+   "score": 36.1,
+   "follows_per_1k": -5.67,
+   "final": true
   },
   {
    "media_id": "18079497281727445",
@@ -1190,7 +1202,7 @@
    "kind": "carousel",
    "slides": 5,
    "funny": 6.6,
-   "follows_attr": -4.795
+   "follows_attr": -4.82
   },
   {
    "media_id": "17910415047564411",
@@ -1208,7 +1220,7 @@
    "news": true,
    "news_age_h": 0.4707303836111111,
    "funny": 7,
-   "follows_attr": -5.282
+   "follows_attr": -5.29
   },
   {
    "media_id": "18140883160620425",
@@ -1226,7 +1238,7 @@
    "news": true,
    "news_age_h": 0.5122291230555556,
    "funny": 7,
-   "follows_attr": -0.759
+   "follows_attr": -0.784
   },
   {
    "media_id": "18359377585169637",
@@ -1244,7 +1256,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.287
+   "follows_attr": -2.321
   },
   {
    "media_id": "18138457324735660",
@@ -1262,7 +1274,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.821
+   "follows_attr": -0.838
   },
   {
    "media_id": "18145845175517393",
@@ -1273,7 +1285,7 @@
    "text": "would you rather miss gym or skip shower | A: miss leg day, forever weak calves | B: skip shower, smell like gym socks",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -2.707,
+   "follows_attr": -2.919,
    "reach": 160,
    "shares": 0,
    "replies": 1,
@@ -1317,7 +1329,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.53
+   "follows_attr": -0.564
   },
   {
    "media_id": "17965626717235418",
@@ -1335,7 +1347,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.154
+   "follows_attr": -0.162
   },
   {
    "media_id": "18127100302921038",
@@ -1345,7 +1357,15 @@
    "theme": "story",
    "text": "When the boss schedules a \u201cquick 5\u2011minute meeting\u201d at 4:58\u202fpm",
    "kind": "story",
-   "story_type": "rate"
+   "story_type": "rate",
+   "follows_attr": -0.322,
+   "reach": 53,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-03T20:19:25.750493+00:00"
   },
   {
    "media_id": "18119250239017807",
@@ -1362,7 +1382,18 @@
    "track": "Piano Remix.mp3",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -1.314
+  },
+  {
+   "media_id": "18095925602269234",
+   "posted_at": "2026-11-03T20:20:13.415865+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "pick one: weird family dinner or gym selfie | A: uncle tells cringe jokes, you fake laugh till it hurts | B: gym selfie with sweaty hair, caption look at me",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [
@@ -2610,21 +2641,20 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-03T16:34:12.784654+00:00",
-  "followers": 48421,
+  "t": "2026-11-03T20:19:25.750493+00:00",
+  "followers": 48419,
   "reach": {
-   "17895264546615300": 137,
-   "18253185151308903": 193,
-   "18079497281727445": 291,
-   "17910415047564411": 312,
-   "18140883160620425": 50,
-   "18359377585169637": 1157,
-   "18138457324735660": 73,
-   "18145845175517393": 160,
+   "18079497281727445": 294,
+   "17910415047564411": 313,
+   "18140883160620425": 53,
+   "18359377585169637": 1161,
+   "18138457324735660": 75,
+   "18145845175517393": 185,
    "17892702330456267": 196,
-   "18136682851659838": 169,
-   "17965626717235418": 50,
-   "18127100302921038": 15
+   "18136682851659838": 173,
+   "17965626717235418": 51,
+   "18127100302921038": 53,
+   "18119250239017807": 155
   }
  },
  "follower_log": [

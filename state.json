@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-03T20:35:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-03",
@@ -1274,7 +1274,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.838
+   "follows_attr": -0.949
   },
   {
    "media_id": "18145845175517393",
@@ -1285,7 +1285,7 @@
    "text": "would you rather miss gym or skip shower | A: miss leg day, forever weak calves | B: skip shower, smell like gym socks",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -2.919,
+   "follows_attr": -3.475,
    "reach": 160,
    "shares": 0,
    "replies": 1,
@@ -1358,14 +1358,14 @@
    "text": "When the boss schedules a \u201cquick 5\u2011minute meeting\u201d at 4:58\u202fpm",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.322,
-   "reach": 53,
+   "follows_attr": -0.544,
+   "reach": 55,
    "shares": 0,
    "replies": 0,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-03T20:19:25.750493+00:00"
+   "profile_visits": 1,
+   "score": 36.4,
+   "measured_at": "2026-11-03T20:36:21.208809+00:00"
   },
   {
    "media_id": "18119250239017807",
@@ -1383,7 +1383,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.314
+   "follows_attr": -1.425
   },
   {
    "media_id": "18095925602269234",
@@ -1394,6 +1394,23 @@
    "text": "pick one: weird family dinner or gym selfie | A: uncle tells cringe jokes, you fake laugh till it hurts | B: gym selfie with sweaty hair, caption look at me",
    "kind": "story",
    "story_type": "wyr"
+  },
+  {
+   "media_id": "17912955915479594",
+   "posted_at": "2026-11-03T20:38:47.330037+00:00",
+   "template_id": "101288",
+   "template_name": "Third World Skeptical Kid",
+   "theme": "being late and plans falling through",
+   "text": "when you check your bank after a $7 avocado toast and see $1.02 left",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Karen - Hello Everybody",
+   "news": false,
+   "news_age_h": null,
+   "funny": 9
   }
  ],
  "imported": [
@@ -2641,20 +2658,21 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-03T20:19:25.750493+00:00",
-  "followers": 48419,
+  "t": "2026-11-03T20:36:21.208809+00:00",
+  "followers": 48418,
   "reach": {
    "18079497281727445": 294,
    "17910415047564411": 313,
    "18140883160620425": 53,
    "18359377585169637": 1161,
-   "18138457324735660": 75,
-   "18145845175517393": 185,
+   "18138457324735660": 76,
+   "18145845175517393": 190,
    "17892702330456267": 196,
    "18136682851659838": 173,
    "17965626717235418": 51,
-   "18127100302921038": 53,
-   "18119250239017807": 155
+   "18127100302921038": 55,
+   "18119250239017807": 156,
+   "18095925602269234": 0
   }
  },
  "follower_log": [

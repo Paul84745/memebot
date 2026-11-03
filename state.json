@@ -20,13 +20,13 @@
    },
    {
     "t": "2026-11-03T12:51:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
     "t": "2026-11-03T16:33:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-03T19:53:00+00:00",
@@ -1099,7 +1099,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -3.213
+   "follows_attr": -3.213,
+   "follows_src": "estimated",
+   "like_count": 1,
+   "comments_count": 0,
+   "reach": 181,
+   "shares": 0,
+   "saved": 0,
+   "views": 223,
+   "sends_per_1k": 0.0,
+   "follows": -3.2,
+   "score": 5.5,
+   "follows_per_1k": -17.68,
+   "final": true
   },
   {
    "media_id": "18033284360883786",
@@ -1117,7 +1129,19 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.213
+   "follows_attr": -3.213,
+   "follows_src": "estimated",
+   "like_count": 2,
+   "comments_count": 0,
+   "reach": 170,
+   "shares": 0,
+   "saved": 0,
+   "views": 202,
+   "sends_per_1k": 0.0,
+   "follows": -3.2,
+   "score": 11.8,
+   "follows_per_1k": -18.82,
+   "final": true
   },
   {
    "media_id": "17895264546615300",
@@ -1250,13 +1274,14 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -2.707,
-   "reach": 156,
+   "reach": 160,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 2,
-   "score": 51.3,
-   "measured_at": "2026-11-03T14:19:37.513954+00:00"
+   "score": 50.0,
+   "measured_at": "2026-11-03T16:34:12.784654+00:00",
+   "final": true
   },
   {
    "media_id": "17892702330456267",
@@ -1321,6 +1346,23 @@
    "text": "When the boss schedules a \u201cquick 5\u2011minute meeting\u201d at 4:58\u202fpm",
    "kind": "story",
    "story_type": "rate"
+  },
+  {
+   "media_id": "18119250239017807",
+   "posted_at": "2026-11-03T16:36:26.058303+00:00",
+   "template_id": "129242436",
+   "template_name": "Change My Mind",
+   "theme": "being broke and money",
+   "text": "when you check your bank after buying ramen for the 4th night and see $2.13 left",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "piano",
+   "music_fx": "slowed_reverb",
+   "track": "Piano Remix.mp3",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -2568,22 +2610,21 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-03T14:19:37.513954+00:00",
+  "t": "2026-11-03T16:34:12.784654+00:00",
   "followers": 48421,
   "reach": {
-   "18078709187767187": 181,
-   "18033284360883786": 170,
    "17895264546615300": 137,
    "18253185151308903": 193,
-   "18079497281727445": 287,
-   "17910415047564411": 311,
+   "18079497281727445": 291,
+   "17910415047564411": 312,
    "18140883160620425": 50,
    "18359377585169637": 1157,
-   "18138457324735660": 69,
-   "18145845175517393": 156,
-   "17892702330456267": 193,
-   "18136682851659838": 158,
-   "17965626717235418": 46
+   "18138457324735660": 73,
+   "18145845175517393": 160,
+   "17892702330456267": 196,
+   "18136682851659838": 169,
+   "17965626717235418": 50,
+   "18127100302921038": 15
   }
  },
  "follower_log": [

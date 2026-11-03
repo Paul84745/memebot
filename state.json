@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "slots": [
    {
-    "t": "2026-11-02T08:14:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-03T06:58:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-02T12:21:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-03T08:05:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-02T13:16:00+00:00",
-    "status": "skipped",
+    "t": "2026-11-03T11:56:00+00:00",
+    "status": "pending",
     "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-02T16:29:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-03T12:51:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-02T19:24:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-03T16:33:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-02T20:48:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-03T19:53:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-02T21:39:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-03T20:35:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-02",
-  "stories_date": "2026-11-02"
+  "dump_checked": "2026-11-03",
+  "stories_date": "2026-11-03"
  },
  "history": [
   {
@@ -1039,7 +1039,19 @@
    "news": true,
    "news_age_h": 0.17600323444444443,
    "funny": 7,
-   "follows_attr": -0.665
+   "follows_attr": -0.665,
+   "follows_src": "estimated",
+   "like_count": 5,
+   "comments_count": 0,
+   "reach": 82,
+   "shares": 0,
+   "saved": 0,
+   "views": 114,
+   "sends_per_1k": 0.0,
+   "follows": -0.7,
+   "score": 50.0,
+   "follows_per_1k": -8.54,
+   "final": true
   },
   {
    "media_id": "18140475175628237",
@@ -1057,7 +1069,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.076
+   "follows_attr": -1.091
   },
   {
    "media_id": "18078709187767187",
@@ -1093,7 +1105,7 @@
    "news": true,
    "news_age_h": 0.9459012233333334,
    "funny": 7,
-   "follows_attr": -3.169
+   "follows_attr": -3.184
   },
   {
    "media_id": "17895264546615300",
@@ -1130,7 +1142,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.068
+   "follows_attr": -1.097
   },
   {
    "media_id": "18079497281727445",
@@ -1142,7 +1154,7 @@
    "kind": "carousel",
    "slides": 5,
    "funny": 6.6,
-   "follows_attr": -4.34
+   "follows_attr": -4.413
   },
   {
    "media_id": "17910415047564411",
@@ -1160,7 +1172,7 @@
    "news": true,
    "news_age_h": 0.4707303836111111,
    "funny": 7,
-   "follows_attr": -4.021
+   "follows_attr": -4.578
   },
   {
    "media_id": "18140883160620425",
@@ -1178,7 +1190,7 @@
    "news": true,
    "news_age_h": 0.5122291230555556,
    "funny": 7,
-   "follows_attr": -0.417
+   "follows_attr": -0.461
   },
   {
    "media_id": "18359377585169637",
@@ -1214,7 +1226,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.125
+   "follows_attr": -0.345
   },
   {
    "media_id": "18145845175517393",
@@ -1225,7 +1237,14 @@
    "text": "would you rather miss gym or skip shower | A: miss leg day, forever weak calves | B: skip shower, smell like gym socks",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.438
+   "follows_attr": -0.98,
+   "reach": 58,
+   "shares": 0,
+   "replies": 1,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 69.0,
+   "measured_at": "2026-11-03T01:27:24.803557+00:00"
   },
   {
    "media_id": "17892702330456267",
@@ -1242,7 +1261,8 @@
    "track": "City streets by Night - Ambient Atmospheres - Sofia, Bulgaria",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -2.505
   }
  ],
  "imported": [
@@ -2490,21 +2510,21 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-02T21:40:01.357330+00:00",
-  "followers": 48430,
+  "t": "2026-11-03T01:27:24.803557+00:00",
+  "followers": 48426,
   "reach": {
-   "17951232447343098": 79,
-   "18140475175628237": 93,
+   "18140475175628237": 94,
    "18078709187767187": 181,
-   "18033284360883786": 168,
+   "18033284360883786": 169,
    "17895264546615300": 137,
-   "18253185151308903": 190,
-   "18079497281727445": 259,
-   "17910415047564411": 245,
-   "18140883160620425": 34,
+   "18253185151308903": 192,
+   "18079497281727445": 264,
+   "17910415047564411": 283,
+   "18140883160620425": 37,
    "18359377585169637": 1138,
-   "18138457324735660": 26,
-   "18145845175517393": 21
+   "18138457324735660": 41,
+   "18145845175517393": 58,
+   "17892702330456267": 171
   }
  },
  "follower_log": [
@@ -2535,6 +2555,10 @@
   [
    "2026-11-02T01:58:28.497420+00:00",
    48441
+  ],
+  [
+   "2026-11-03T01:27:24.803557+00:00",
+   48426
   ]
  ]
 }

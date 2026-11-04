@@ -51,7 +51,99 @@ THEMES = [
     "being late and plans falling through", "phone battery and screen time",
     "procrastination", "weekends and Mondays", "texting and replies",
     "family at home", "gaming", "sports and watching games with friends",
+    "dating, situationships and exes", "roommates", "pets acting weird", "customers and retail jobs",
+    "siblings", "parents and their weird habits", "your body betraying you (knees, back, stomach)",
+    "drinking, hangovers and nights out", "bad decisions you made anyway", "public transport",
+    "awkward social moments", "online shopping and deliveries", "doctors, dentists and haircuts",
+    "cooking disasters", "being the friend who drives", "weddings, birthdays and family events",
+    "holidays and travel", "neighbours", "getting older", "cringe from your past",
+    "petty revenge and tiny victories", "lying to get out of plans", "being the third wheel",
 ]
+
+# The writer falls back on the same props again and again; once one shows up too often in
+# recent posts it is banned for the next batch (and anything still using it is down-ranked).
+CRUTCHES = {
+    "clock times like 2:07am / 8:24 am": re.compile(r"\b\d{1,2}[:.]\d{2}\b|\b\d{1,2}\s?(am|pm)\b", re.I),
+    "money amounts and bank balances": re.compile(r"[$€£]\s?\d|\bbank\b|\bbroke\b", re.I),
+    "alarms and snoozing": re.compile(r"alarm|snooz", re.I),
+    "'5/10-minute' promises and 'quick' things": re.compile(r"\b\d+[\s-]*min(ute)?s?\b|\bquick\b", re.I),
+    "phone battery and percentages": re.compile(r"batter|\d\s?%|charger", re.I),
+    "group chat message counts": re.compile(r"group ?chat", re.I),
+    "essays, homework and assignments": re.compile(r"essay|homework|assignment|study", re.I),
+    "boss meetings and 'syncs'": re.compile(r"meeting|\bsync\b|\bboss\b", re.I),
+    "late-night fridge / snacks": re.compile(r"fridge|nugget|ramen|pizza|snack", re.I),
+    "replies, 'seen' and texting back": re.compile(r"\breply|\bseen\b|text(ed)? back", re.I),
+    "gaming loot, raids and servers": re.compile(r"loot|raid|server|legendary|skin\b", re.I),
+}
+
+# Comedy engines. Each batch spreads candidates over several of these so jokes don't all have
+# the same shape ("when you X at <time> and Y").
+MECHANISMS = [
+    "misdirection: the setup points one way, the last 2-3 words flip it",
+    "absurd escalation: a normal situation taken one step too far",
+    "dark twist: an innocent setup with a grim punchline (about yourself or a situation)",
+    "brutal honesty: saying out loud the petty, selfish or gross thing everyone secretly does",
+    "ironic contrast: a wholesome or motivational line that the photo completely contradicts",
+    "deadpan observation: a tiny weird real-life thing stated flatly, no setup",
+    "role reversal: a parent, pet, teacher, your liver or your knees acting like the other side",
+    "innuendo: an innocent sentence that reads dirty (suggestive, never explicit)",
+    "the photo IS the joke: a short label that re-frames what the person in the photo is doing",
+    "tiny victory treated like an epic achievement, or petty revenge treated like a heist",
+    "self-roast: a brutal honest jab at yourself",
+    "nobody/me or 'my last brain cell' style: the reaction nobody asked for",
+]
+
+STOP = set("""a an the and or but to of in on at for with my your you me i im i'm is it its it's be
+been that this when how bro gon like just so after before our we us they them he she his her what
+who are was were do does did not no all one up out about from by as if then than now still already
+only feel feels looks look gets get got pov finally""".split())
+
+
+def words(text):
+    return {w for w in re.findall(r"[a-z']+", (text or "").lower()) if len(w) > 2 and w not in STOP}
+
+
+def opener(text):
+    return " ".join(re.findall(r"[a-z]+", (text or "").lower())[:2])
+
+
+def recent_texts(history, n):
+    out = []
+    for h in history:
+        if h.get("kind") == "carousel":
+            out += [t for t in (h.get("text") or "").split(" | ") if t]
+        elif h.get("kind") != "story" and h.get("text"):
+            out.append(h["text"])
+    return out[-n:]
+
+
+def overused(history):
+    """Crutches seen in 3+ of the last 20 memes (clock times: 2+ of the last 10) and content
+    words seen in 3+ of the last 20. Returns (crutch names, words)."""
+    last = recent_texts(history, 20)
+    banned = [name for name, rx in CRUTCHES.items()
+              if sum(bool(rx.search(t)) for t in last) >= 3]
+    if "clock times like 2:07am / 8:24 am" not in banned and \
+            sum(bool(CRUTCHES["clock times like 2:07am / 8:24 am"].search(t)) for t in last[-10:]) >= 2:
+        banned.append("clock times like 2:07am / 8:24 am")
+    count = Counter(w for t in last for w in words(t))
+    return banned, sorted(w for w, c in count.items() if c >= 3)
+
+
+def staleness(meme, history, banned):
+    """Why a candidate feels like a rerun (empty string if it's fresh)."""
+    text = meme["text"]
+    for name in banned:
+        if CRUTCHES[name].search(text):
+            return f"overused crutch: {name}"
+    mine = words(text)
+    for old in recent_texts(history, 60):
+        o = words(old)
+        if mine and o and len(mine & o) / len(mine | o) >= 0.3:
+            return f"too close to a recent post: {old[:60]}"
+    if opener(text) in {opener(t) for t in recent_texts(history, 3)}:
+        return f"same opening as the last posts ('{opener(text)}')"
+    return ""
 
 # Multi-panel templates look wrong with simple top/bottom captions. Tune via EXCLUDE_REGEX.
 EXCLUDE_TEMPLATES = re.compile(
@@ -224,17 +316,19 @@ def pick_theme(history):
 
 
 def pick_candidates(templates, history, n=12):
-    recent = [h["template_id"] for h in history[-8:]]
+    # Photos used in the last ~2.5 days are off the menu, so the feed doesn't keep showing
+    # the same handful of faces.
+    recent = [h.get("template_id") for h in history if h.get("kind") in ("reel", "image")][-12:]
     by_tpl = defaultdict(list)
     for h in finalized(history):
         by_tpl[h["template_id"]].append(h["score"])
     ranked = sorted(by_tpl, key=lambda t: statistics.mean(by_tpl[t]), reverse=True)
     ids = {t["id"]: t for t in templates}
-    best = [ids[t] for t in ranked if t in ids and t not in recent[-3:]][:4]
+    best = [ids[t] for t in ranked if t in ids and t not in recent][:3]
     pool = [t for t in templates if t["id"] not in recent and t not in best]
     # Imgflip's "captions" count = how many memes people recently made with that photo, i.e.
     # which formats are popular right now. Favour them without ignoring the long tail.
-    weights = [max(1.0, float(t.get("captions") or 1)) ** 0.5 for t in pool]
+    weights = [max(1.0, float(t.get("captions") or 1)) ** 0.25 for t in pool]
     picked = []
     while pool and len(picked) < n - len(best):
         i = random.choices(range(len(pool)), weights)[0]
@@ -645,20 +739,30 @@ def moderate_many(memes, by_id):
     return verdict
 
 
-def judge(memes, by_id):
+def judge(memes, by_id, history=()):
     """Harsh comparative comedy judge. Sets meme['funny'] (1-10) and meme['send'] (bool)."""
-    listing = "\n".join(f"{i}. [photo: {by_id[m['template_id']]['name']}] {m['text']}"
-                        for i, m in enumerate(memes))
+    order = list(range(len(memes)))
+    random.shuffle(order)  # so position in the list doesn't bias the score
+    listing = "\n".join(f"{i}. [photo: {by_id[memes[i]['template_id']]['name']}] {memes[i]['text']}"
+                        for i in order)
+    anchors = recent_texts(history, 8)
     prompt = (
         "You are the harshest comedy editor of a meme page with millions of followers aged 16-30. "
         "Below are candidate memes (a caption above a reaction photo). Only the best get posted.\n\n"
-        "For each one ask: would a stranger scrolling past stop, laugh out loud, and SEND it to a "
-        "friend in DMs ('this is literally you')? Score 1-10: 5 = meh, 7 = would send to a friend, "
-        "9 = would go viral. Hard cap at 4 if the joke needs explaining, the situation is generic "
-        "or vague, there is no clear punchline, the slang is forced, it sounds corporate, or the "
-        "photo's mood doesn't match the feeling. Reward a hyper-specific detail everyone has "
-        "lived, an unexpected but true twist, and a perfect photo/caption match. Most candidates "
-        "should score below 7; be honest, not generous.\n\n" + listing + "\n\n"
+        + ("CALIBRATION: these are memes the page posted recently. Followers found them "
+           "predictable and samey; treat this level as a 5 out of 10. Anything with the same "
+           "shape, topic or props as these scores 4 at most:\n- " + "\n- ".join(anchors) + "\n\n"
+           if anchors else "") +
+        "For each candidate ask: would a stranger scrolling past stop, actually laugh out loud, "
+        "and SEND it to a friend in DMs? Score 1-10: 5 = meh/seen it, 6 = mild smile, 7 = would "
+        "send to a friend, 8 = laughed out loud, 9 = would go viral. Hard cap at 4 if the joke "
+        "needs explaining, is generic, is a 'when you X and Y happens' list of facts with no real "
+        "punchline, relies on a clock time or money amount for the humor, the slang is forced, "
+        "the grammar is broken ('me when you'), or the photo's mood doesn't match. Reward a real "
+        "surprise in the last words, a dark or crude edge that makes people say 'bro WHAT', "
+        "something people secretly do but never say, and a perfect photo/caption match. Most "
+        "candidates should score 4-6; a 7+ must be genuinely funny, not just relatable.\n\n"
+        + listing + "\n\n"
         'Reply JSON only: {"scores": [{"i": 0, "score": 6, "send": false}, ...]} '
         "with one entry per candidate. \"send\" = true only if you would personally DM it to a friend."
     )
@@ -680,11 +784,48 @@ def rank(m):
     age = m.get("news_age_h")
     if age is not None:
         bonus += 1.0 if age <= 6 else 0.5 if age <= 12 else 0.0
+    if m.get("stale"):
+        bonus -= 3.0
     return m.get("funny", 0) + bonus
 
 
+def punch_up(memes, by_id, banned):
+    """Ask for sharper rewrites of the most promising candidates (same photo). Returns new
+    candidate dicts; the judge then compares them with the originals."""
+    if not memes:
+        return []
+    listing = "\n".join(f"{i}. [photo: {by_id[m['template_id']]['name']}] {m['text']}"
+                        for i, m in enumerate(memes))
+    prompt = (
+        "You are a professional comedy punch-up writer for an edgy meme page (ages 16-30). "
+        "For EACH meme below write 2 rewrites that are clearly FUNNIER: cut every unnecessary "
+        "word, put the surprise in the last 2-4 words, make the detail more vivid or weirder, "
+        "push the edge (dark, crude, petty, suggestive but never explicit). One rewrite may "
+        "change the angle completely while keeping the same photo. Correct grammar ('me when I', "
+        "never 'me when you'). Keep under 18 words."
+        + (" Do NOT use: " + "; ".join(banned) + "." if banned else "") +
+        " Same hard lines as always: no slurs, no jokes about groups, no real names, nothing "
+        "explicit, nothing about minors and sex, no real tragedies.\n\n" + listing + "\n\n"
+        'Reply JSON only: {"rewrites": [{"i": 0, "text": "...", "caption": "short post caption"}, ...]}'
+    )
+    out = []
+    try:
+        for it in _items(llm(prompt, temperature=1.0, max_tokens=2500), "rewrites"):
+            i, text = int(it.get("i", -1)), str(it.get("text", "")).strip()
+            if not (0 <= i < len(memes)) or not text or len(text) > 170 or BLOCKED.search(text):
+                continue
+            new = dict(memes[i], text=text, funny=0, send=False, punched=True)
+            cap = str(it.get("caption", "")).strip()
+            if cap and len(cap) <= 200 and not BLOCKED.search(cap):
+                new["caption"] = cap
+            out.append(new)
+    except Exception as e:
+        print(f"punch-up failed: {e}")
+    return out
+
+
 MIN_FUNNY = int(os.environ.get("MIN_FUNNY", "7"))
-CANDIDATES = int(os.environ.get("CANDIDATES", "12"))
+CANDIDATES = int(os.environ.get("CANDIDATES", "16"))
 
 
 def fetch_templates():
@@ -789,7 +930,8 @@ def news_probability(history):
 PEER_HINT = ""
 
 
-def build_prompt(n, themes, fmt, tops, listing, recent, headlines):
+def build_prompt(n, themes, fmt, tops, listing, recent, headlines, banned=(), banned_words=(),
+                 mechs=()):
     news_block = ""
     if headlines:
         def age(h):
@@ -809,37 +951,37 @@ def build_prompt(n, themes, fmt, tops, listing, recent, headlines):
         f"Write {n} DIFFERENT original meme candidates. A harsh editor will post only the best "
         "one, so make every candidate a genuinely different situation and punchline.\n\n"
         + news_block +
-        f"Themes to spread the candidates over: {json.dumps(themes)}\n"
-        f"Caption style for at least half of them: {FORMATS[fmt]}\n\n"
-        + ("These are this page's most-shared memes so far; aim for the same kind of humor and "
-           "structure but with completely new situations: " + json.dumps(tops) + "\n\n"
+        f"Themes to spread the candidates over (at most 2 candidates per theme): {json.dumps(themes)}\n\n"
+        "Comedy engine: give each candidate one of these engines, using every engine at least "
+        "once and rotating through them:\n"
+        + "\n".join(f"{i}. {m}" for i, m in enumerate(mechs)) + "\n\n"
+        + ("These were this page's most-shared memes; they worked because of their energy, NOT "
+           "their topic. Do not reuse their topics, props or wording: " + json.dumps(tops) + "\n\n"
            if tops else "") +
-        "Format: a single caption that sits ABOVE a reaction photo. Use formats like "
-        "'When you ...', 'How me and bro gon be ... after ...', 'Me when ...', 'POV: ...'. "
-        "Casual texting voice (words like bro, nah, fr, lowkey are fine; lowercase is fine). "
-        "Under 22 words. Hyper-specific and relatable: friends, school, work, gym, food, "
-        "money, sleep, phones, being late, group chats.\n\n"
-        "What matters most is SENDS: the meme people DM to a friend with 'this is literally "
-        "you' / 'this is us'. That means a moment almost everyone has lived but nobody says out "
-        "loud, with one specific detail that makes it feel personal. The joke must land in one "
-        "read, without explanation.\n\n"
-        "Examples of the voice and rhythm to match (write something NEW, never copy these):\n"
-        "- when you tell yourself you're going to bed early and it's already 3am\n"
-        "- how me and bro gon be posted up at the pizza place after we hear the first slice is free\n"
-        "- me explaining to my mom that the 'quick nap' was 6 hours\n"
-        "- when the group chat has 200 messages and the plan is still 'we'll see'\n"
-        "- when you check your bank account after saying 'it's only $5' twelve times\n"
-        "- POV: you said you'd start the assignment 'in 10 minutes' at 2pm and it's now midnight\n"
-        "- when the teacher says 'pick your own groups' and everyone looks at you\n"
-        "- me pretending to listen to the whole gym story from the guy who just started going\n"
-        "Rules for quality: ONE clear situation, a specific detail, an obvious punchline or "
-        "relatable pain, and the reaction photo's mood must match the feeling. Never write "
-        "about AI, technology trends, or abstract ideas - only real everyday situations "
+        "Format: a single caption that sits ABOVE a reaction photo. Vary the opening: at most "
+        "2 candidates may start with 'when you', at most 2 with 'me when', at most 2 with "
+        "'POV', at most 2 with 'how me and bro'. The rest start any other way (a statement, a "
+        "label like 'my last brain cell during ___', 'nobody: / me: ___', a quote someone says, "
+        f"a fake headline, 'first day at ___'...). One option worth trying: {FORMATS[fmt]}. "
+        "Grammar must be correct: 'me when I...', never 'me when you...'. "
+        "Casual texting voice (bro, nah, fr, lowkey are fine; lowercase is fine). "
+        "Under 18 words; shorter is funnier.\n\n"
+        "A meme is NOT funny just because it is relatable. 'when you do X and Y happens' with a "
+        "timestamp is a description, not a joke. Every candidate needs a real punchline: a "
+        "twist, an exaggeration, a dark or crude turn, or a brutally honest admission, landing "
+        "in the LAST few words. The goal is the meme people DM to a friend with 'bro WHAT' or "
+        "'this is literally you'.\n\n"
+        + ("BANNED this batch because the page has overused them: " + "; ".join(banned) + ".\n"
+           if banned else "")
+        + ("Also avoid these overused words: " + ", ".join(banned_words) + ".\n"
+           if banned_words else "") +
+        "Never write about AI, technology trends, or abstract ideas - only real situations "
         "(or the news story).\n\n"
         "Pick each meme's reaction photo from this list (id | name) whose face or mood best fits "
-        "the punchline; use different photos across candidates:\n"
+        "the punchline; every candidate must use a DIFFERENT photo:\n"
         f"{listing}\n\n"
-        "Do not reuse or paraphrase these recent jokes: " + json.dumps(recent) + "\n\n"
+        "These jokes were already posted. Do not reuse their situations, props or punchlines, "
+        "not even reworded: " + json.dumps(recent) + "\n\n"
         "Edge level: this page is EDGY. Dark humor, crude and gross-out humor, sexual innuendo "
         "and double meanings (suggestive but never explicit), mild profanity (damn, hell, ass, shit), "
         "cringe, taboo-feeling observations, roasting yourself, your bro, your family and everyday "
@@ -907,22 +1049,29 @@ def make_memes(state, want=1, n_cands=CANDIDATES, min_score=MIN_FUNNY, floor=5):
     by_id = {t["id"]: t for t in templates}
     history = state["history"]
     tops = top_examples(history)
-    recent = [h.get("text") or f"{h.get('top', '')} / {h.get('bottom', '')}" for h in history[-15:]]
+    recent = recent_texts(history, 40)
+    banned, banned_words = overused(history)
+    if banned or banned_words:
+        print(f"::notice::overused, banned this batch: {banned} words: {banned_words}")
+    recent_themes = {h.get("theme") for h in history[-6:]}
     headlines = fetch_news(state) if random.random() < news_probability(history) else []
     picked, spare = [], []
     for rnd in range(3):
         if time.time() - started > 720 or len(picked) >= want:
             break
-        themes = []
-        while len(themes) < min(3, len(THEMES)):
+        themes, tries = [], 0
+        while len(themes) < min(5, len(THEMES)) and tries < 200:
+            tries += 1
             t = pick_theme(history)
-            if t not in themes:
+            if t not in themes and (t not in recent_themes or tries > 100):
                 themes.append(t)
+        mechs = random.sample(MECHANISMS, min(8, len(MECHANISMS)))
         fmt = pick_format(history)
-        cands = pick_candidates(templates, history, n=20)
+        cands = pick_candidates(templates, history, n=25)
         cand_ids = {c["id"] for c in cands}
         listing = "\n".join(f"{c['id']} | {c['name']}" for c in cands)
-        prompt = build_prompt(n_cands, themes, fmt, tops, listing, recent, headlines)
+        prompt = build_prompt(n_cands, themes, fmt, tops, listing, recent, headlines,
+                              banned, banned_words, mechs)
         try:
             raw = llm(prompt, temperature=1.0, max_tokens=6000)
         except Exception as e:
@@ -934,18 +1083,33 @@ def make_memes(state, want=1, n_cands=CANDIDATES, min_score=MIN_FUNNY, floor=5):
         print(f"round {rnd + 1}: {len(memes)} valid candidates")
         if not memes:
             continue
-        judge(memes, by_id)
+        for m in memes:
+            m["stale"] = staleness(m, history, banned)
+        judge(memes, by_id, history)
         memes.sort(key=rank, reverse=True)
+        # Punch up the 4 best fresh ones and let the judge compare rewrites with originals.
+        best = [m for m in memes if not m["stale"]][:4]
+        extra = [m for m in punch_up(best, by_id, banned)
+                 if m["text"].lower() not in used and m["text"] not in recent]
+        if extra:
+            for m in extra:
+                m["stale"] = staleness(m, history, banned)
+            pool = best + extra
+            judge(pool, by_id, history)
+            memes = pool + [m for m in memes if m not in best]
+            memes.sort(key=rank, reverse=True)
         for m in memes:
             flag = (" [news %sh]" % (f"{m['news_age_h']:.0f}" if m.get("news_age_h") is not None else "?")
                     if m.get("news") else "")
+            flag += " [punched]" if m.get("punched") else ""
+            flag += f" [STALE: {m['stale']}]" if m.get("stale") else ""
             print(f"  {m['funny']:>2}{' send' if m['send'] else '     '}{flag}  {m['text']}")
         top = [m for m in memes if m["funny"] >= floor][: want - len(picked) + 3]
         tpls = {m["template_id"] for m in picked}
         for m, ok in zip(top, moderate_many(top, by_id)):
             if not ok:
                 continue
-            if m["funny"] >= min_score and len(picked) < want and \
+            if m["funny"] >= min_score and not m.get("stale") and len(picked) < want and \
                     (want == 1 or m["template_id"] not in tpls):
                 picked.append(m)
                 tpls.add(m["template_id"])

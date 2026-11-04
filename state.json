@@ -37,7 +37,7 @@
    {
     "t": "2026-11-04T21:45:00+00:00",
     "status": "pending",
-    "attempts": 1,
+    "attempts": 2,
     "kind": "dump"
    }
   ],
@@ -1531,7 +1531,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 69.0,
-   "measured_at": "2026-11-04T21:46:08.731840+00:00"
+   "measured_at": "2026-11-04T21:50:06.978827+00:00"
   },
   {
    "media_id": "17898580812476739",

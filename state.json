@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-04T09:08:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-04T11:53:00+00:00",
@@ -1234,7 +1234,19 @@
    "news": true,
    "news_age_h": 0.4707303836111111,
    "funny": 7,
-   "follows_attr": -5.391
+   "follows_attr": -5.391,
+   "follows_src": "estimated",
+   "like_count": 3,
+   "comments_count": 0,
+   "reach": 316,
+   "shares": 1,
+   "saved": 0,
+   "views": 387,
+   "sends_per_1k": 3.16,
+   "follows": -5.4,
+   "score": 34.8,
+   "follows_per_1k": -17.09,
+   "final": true
   },
   {
    "media_id": "18140883160620425",
@@ -1373,13 +1385,14 @@
    "kind": "story",
    "story_type": "rate",
    "follows_attr": -3.364,
-   "reach": 164,
+   "reach": 183,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 61.0,
-   "measured_at": "2026-11-04T08:18:31.111566+00:00"
+   "score": 54.6,
+   "measured_at": "2026-11-04T09:09:02.742030+00:00",
+   "final": true
   },
   {
    "media_id": "18119250239017807",
@@ -1408,13 +1421,13 @@
    "text": "pick one: weird family dinner or gym selfie | A: uncle tells cringe jokes, you fake laugh till it hurts | B: gym selfie with sweaty hair, caption look at me",
    "kind": "story",
    "story_type": "wyr",
-   "reach": 102,
+   "reach": 115,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 58.8,
-   "measured_at": "2026-11-04T08:18:31.111566+00:00",
+   "score": 52.2,
+   "measured_at": "2026-11-04T09:09:02.742030+00:00",
    "follows_attr": -2.266
   },
   {
@@ -1434,6 +1447,23 @@
    "news_age_h": null,
    "funny": 9,
    "follows_attr": -0.554
+  },
+  {
+   "media_id": "18087746591311909",
+   "posted_at": "2026-11-04T09:11:41.490066+00:00",
+   "template_id": "102156234",
+   "template_name": "Mocking Spongebob",
+   "theme": "phone battery and screen time",
+   "text": "when your phone hits 1% at 3:07 pm and the group chat is asking for the meetup location",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "piano",
+   "music_fx": "slowed_reverb",
+   "track": "piano music 1",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -2681,10 +2711,9 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-04T08:18:31.111566+00:00",
+  "t": "2026-11-04T09:09:02.742030+00:00",
   "followers": 48411,
   "reach": {
-   "17910415047564411": 316,
    "18140883160620425": 60,
    "18359377585169637": 1169,
    "18138457324735660": 83,
@@ -2692,10 +2721,10 @@
    "17892702330456267": 202,
    "18136682851659838": 182,
    "17965626717235418": 56,
-   "18127100302921038": 164,
-   "18119250239017807": 180,
-   "18095925602269234": 102,
-   "17912955915479594": 41
+   "18127100302921038": 183,
+   "18119250239017807": 181,
+   "18095925602269234": 115,
+   "17912955915479594": 42
   }
  },
  "follower_log": [

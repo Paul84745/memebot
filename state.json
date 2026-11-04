@@ -15,8 +15,8 @@
    },
    {
     "t": "2026-11-04T12:44:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-04T15:37:00+00:00",
@@ -1300,7 +1300,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.15
+   "follows_attr": -1.174
   },
   {
    "media_id": "18145845175517393",
@@ -1337,7 +1337,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.985
+   "follows_attr": -3.034
   },
   {
    "media_id": "18136682851659838",
@@ -1355,7 +1355,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.765
+   "follows_attr": -0.789
   },
   {
    "media_id": "17965626717235418",
@@ -1384,7 +1384,7 @@
    "text": "When the boss schedules a \u201cquick 5\u2011minute meeting\u201d at 4:58\u202fpm",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -3.364,
+   "follows_attr": -3.657,
    "reach": 183,
    "shares": 0,
    "replies": 1,
@@ -1410,7 +1410,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.727
+   "follows_attr": -1.776
   },
   {
    "media_id": "18095925602269234",
@@ -1421,14 +1421,14 @@
    "text": "pick one: weird family dinner or gym selfie | A: uncle tells cringe jokes, you fake laugh till it hurts | B: gym selfie with sweaty hair, caption look at me",
    "kind": "story",
    "story_type": "wyr",
-   "reach": 138,
+   "reach": 147,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 43.5,
-   "measured_at": "2026-11-04T11:53:57.879090+00:00",
-   "follows_attr": -2.266
+   "score": 40.8,
+   "measured_at": "2026-11-04T12:45:39.228533+00:00",
+   "follows_attr": -2.486
   },
   {
    "media_id": "17912955915479594",
@@ -1446,7 +1446,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 9,
-   "follows_attr": -0.554
+   "follows_attr": -0.578
   },
   {
    "media_id": "18087746591311909",
@@ -1463,7 +1463,8 @@
    "track": "piano music 1",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.146
   },
   {
    "media_id": "18065791922717301",
@@ -1473,7 +1474,25 @@
    "theme": "story",
    "text": "would you rather | A: lose Wi\u2011Fi during final exam, panic | B: accidentally send boss a meme about layoffs",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": -0.171
+  },
+  {
+   "media_id": "17898580812476739",
+   "posted_at": "2026-11-04T12:47:02.701909+00:00",
+   "template_id": "61520",
+   "template_name": "Futurama Fry",
+   "theme": "weekends and Mondays",
+   "text": "How we feel after pulling an all\u2011night gaming marathon and the sun is 9:03am",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": "house",
+   "music_fx": "none",
+   "track": "DJ John - \u041d\u0435\u043b\u044e\u0431\u0438\u043c\u0430\u044f (Club House RMX vs. \u0420\u0443\u043a\u0438 \u0412\u0432\u0435\u0440\u0445)",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -2721,21 +2740,22 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-04T11:53:57.879090+00:00",
-  "followers": 48411,
+  "t": "2026-11-04T12:45:39.228533+00:00",
+  "followers": 48410,
   "reach": {
    "18140883160620425": 60,
    "18359377585169637": 1169,
-   "18138457324735660": 84,
+   "18138457324735660": 85,
    "18145845175517393": 190,
-   "17892702330456267": 202,
-   "18136682851659838": 182,
+   "17892702330456267": 204,
+   "18136682851659838": 183,
    "17965626717235418": 57,
-   "18127100302921038": 218,
-   "18119250239017807": 186,
-   "18095925602269234": 138,
-   "17912955915479594": 44,
-   "18087746591311909": 22
+   "18127100302921038": 230,
+   "18119250239017807": 188,
+   "18095925602269234": 147,
+   "17912955915479594": 45,
+   "18087746591311909": 28,
+   "18065791922717301": 7
   }
  },
  "follower_log": [

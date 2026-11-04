@@ -21,7 +21,7 @@
    {
     "t": "2026-11-04T15:37:00+00:00",
     "status": "pending",
-    "attempts": 0
+    "attempts": 1
    },
    {
     "t": "2026-11-04T18:06:00+00:00",
@@ -1264,7 +1264,19 @@
    "news": true,
    "news_age_h": 0.5122291230555556,
    "funny": 7,
-   "follows_attr": -0.935
+   "follows_attr": -0.935,
+   "follows_src": "estimated",
+   "like_count": 8,
+   "comments_count": 0,
+   "reach": 62,
+   "shares": 0,
+   "saved": 1,
+   "views": 88,
+   "sends_per_1k": 0.0,
+   "follows": -0.9,
+   "score": 110.0,
+   "follows_per_1k": -14.52,
+   "final": true
   },
   {
    "media_id": "18359377585169637",
@@ -1300,7 +1312,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.174
+   "follows_attr": -1.204
   },
   {
    "media_id": "18145845175517393",
@@ -1337,7 +1349,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.034
+   "follows_attr": -3.123
   },
   {
    "media_id": "18136682851659838",
@@ -1355,7 +1367,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.789
+   "follows_attr": -0.819
   },
   {
    "media_id": "17965626717235418",
@@ -1410,7 +1422,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.776
+   "follows_attr": -1.865
   },
   {
    "media_id": "18095925602269234",
@@ -1421,14 +1433,15 @@
    "text": "pick one: weird family dinner or gym selfie | A: uncle tells cringe jokes, you fake laugh till it hurts | B: gym selfie with sweaty hair, caption look at me",
    "kind": "story",
    "story_type": "wyr",
-   "reach": 147,
+   "reach": 172,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 40.8,
-   "measured_at": "2026-11-04T12:45:39.228533+00:00",
-   "follows_attr": -2.486
+   "score": 34.9,
+   "measured_at": "2026-11-04T15:38:00.145321+00:00",
+   "follows_attr": -3.231,
+   "final": true
   },
   {
    "media_id": "17912955915479594",
@@ -1446,7 +1459,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 9,
-   "follows_attr": -0.578
+   "follows_attr": -0.727
   },
   {
    "media_id": "18087746591311909",
@@ -1464,7 +1477,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.146
+   "follows_attr": -0.533
   },
   {
    "media_id": "18065791922717301",
@@ -1475,7 +1488,14 @@
    "text": "would you rather | A: lose Wi\u2011Fi during final exam, panic | B: accidentally send boss a meme about layoffs",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.171
+   "follows_attr": -0.916,
+   "reach": 32,
+   "shares": 0,
+   "replies": 1,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 125.0,
+   "measured_at": "2026-11-04T15:38:00.145321+00:00"
   },
   {
    "media_id": "17898580812476739",
@@ -1492,7 +1512,8 @@
    "track": "DJ John - \u041d\u0435\u043b\u044e\u0431\u0438\u043c\u0430\u044f (Club House RMX vs. \u0420\u0443\u043a\u0438 \u0412\u0432\u0435\u0440\u0445)",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -4.736
   }
  ],
  "imported": [
@@ -2740,22 +2761,22 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-04T12:45:39.228533+00:00",
-  "followers": 48410,
+  "t": "2026-11-04T15:38:00.145321+00:00",
+  "followers": 48403,
   "reach": {
-   "18140883160620425": 60,
    "18359377585169637": 1169,
-   "18138457324735660": 85,
+   "18138457324735660": 86,
    "18145845175517393": 190,
-   "17892702330456267": 204,
-   "18136682851659838": 183,
+   "17892702330456267": 207,
+   "18136682851659838": 184,
    "17965626717235418": 57,
    "18127100302921038": 230,
-   "18119250239017807": 188,
-   "18095925602269234": 147,
-   "17912955915479594": 45,
-   "18087746591311909": 28,
-   "18065791922717301": 7
+   "18119250239017807": 191,
+   "18095925602269234": 172,
+   "17912955915479594": 50,
+   "18087746591311909": 41,
+   "18065791922717301": 32,
+   "17898580812476739": 159
   }
  },
  "follower_log": [

@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-04T11:53:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -1421,13 +1421,13 @@
    "text": "pick one: weird family dinner or gym selfie | A: uncle tells cringe jokes, you fake laugh till it hurts | B: gym selfie with sweaty hair, caption look at me",
    "kind": "story",
    "story_type": "wyr",
-   "reach": 115,
+   "reach": 138,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 52.2,
-   "measured_at": "2026-11-04T09:09:02.742030+00:00",
+   "score": 43.5,
+   "measured_at": "2026-11-04T11:53:57.879090+00:00",
    "follows_attr": -2.266
   },
   {
@@ -1464,6 +1464,16 @@
    "news": false,
    "news_age_h": null,
    "funny": 7
+  },
+  {
+   "media_id": "18065791922717301",
+   "posted_at": "2026-11-04T11:54:21.034835+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "would you rather | A: lose Wi\u2011Fi during final exam, panic | B: accidentally send boss a meme about layoffs",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [
@@ -2711,20 +2721,21 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-04T09:09:02.742030+00:00",
+  "t": "2026-11-04T11:53:57.879090+00:00",
   "followers": 48411,
   "reach": {
    "18140883160620425": 60,
    "18359377585169637": 1169,
-   "18138457324735660": 83,
+   "18138457324735660": 84,
    "18145845175517393": 190,
    "17892702330456267": 202,
    "18136682851659838": 182,
-   "17965626717235418": 56,
-   "18127100302921038": 183,
-   "18119250239017807": 181,
-   "18095925602269234": 115,
-   "17912955915479594": 42
+   "17965626717235418": 57,
+   "18127100302921038": 218,
+   "18119250239017807": 186,
+   "18095925602269234": 138,
+   "17912955915479594": 44,
+   "18087746591311909": 22
   }
  },
  "follower_log": [

@@ -1234,7 +1234,7 @@
    "news": true,
    "news_age_h": 0.4707303836111111,
    "funny": 7,
-   "follows_attr": -5.29
+   "follows_attr": -5.391
   },
   {
    "media_id": "18140883160620425",
@@ -1252,7 +1252,7 @@
    "news": true,
    "news_age_h": 0.5122291230555556,
    "funny": 7,
-   "follows_attr": -0.784
+   "follows_attr": -0.935
   },
   {
    "media_id": "18359377585169637",
@@ -1270,7 +1270,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.321
+   "follows_attr": -2.472
   },
   {
    "media_id": "18138457324735660",
@@ -1288,7 +1288,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.949
+   "follows_attr": -1.15
   },
   {
    "media_id": "18145845175517393",
@@ -1325,7 +1325,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.884
+   "follows_attr": -2.985
   },
   {
    "media_id": "18136682851659838",
@@ -1343,7 +1343,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.564
+   "follows_attr": -0.765
   },
   {
    "media_id": "17965626717235418",
@@ -1361,7 +1361,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.162
+   "follows_attr": -0.313
   },
   {
    "media_id": "18127100302921038",
@@ -1372,14 +1372,14 @@
    "text": "When the boss schedules a \u201cquick 5\u2011minute meeting\u201d at 4:58\u202fpm",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.544,
-   "reach": 108,
+   "follows_attr": -3.364,
+   "reach": 164,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 1,
-   "score": 55.6,
-   "measured_at": "2026-11-04T01:49:31.768252+00:00"
+   "profile_visits": 3,
+   "score": 61.0,
+   "measured_at": "2026-11-04T08:18:31.111566+00:00"
   },
   {
    "media_id": "18119250239017807",
@@ -1397,7 +1397,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.425
+   "follows_attr": -1.727
   },
   {
    "media_id": "18095925602269234",
@@ -1408,13 +1408,14 @@
    "text": "pick one: weird family dinner or gym selfie | A: uncle tells cringe jokes, you fake laugh till it hurts | B: gym selfie with sweaty hair, caption look at me",
    "kind": "story",
    "story_type": "wyr",
-   "reach": 57,
+   "reach": 102,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 70.2,
-   "measured_at": "2026-11-04T01:49:31.768252+00:00"
+   "profile_visits": 1,
+   "score": 58.8,
+   "measured_at": "2026-11-04T08:18:31.111566+00:00",
+   "follows_attr": -2.266
   },
   {
    "media_id": "17912955915479594",
@@ -1431,7 +1432,8 @@
    "track": "Karen - Hello Everybody",
    "news": false,
    "news_age_h": null,
-   "funny": 9
+   "funny": 9,
+   "follows_attr": -0.554
   }
  ],
  "imported": [
@@ -2679,21 +2681,21 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-04T01:49:31.768252+00:00",
-  "followers": 48418,
+  "t": "2026-11-04T08:18:31.111566+00:00",
+  "followers": 48411,
   "reach": {
-   "17910415047564411": 314,
-   "18140883160620425": 57,
-   "18359377585169637": 1166,
-   "18138457324735660": 79,
+   "17910415047564411": 316,
+   "18140883160620425": 60,
+   "18359377585169637": 1169,
+   "18138457324735660": 83,
    "18145845175517393": 190,
-   "17892702330456267": 200,
-   "18136682851659838": 178,
-   "17965626717235418": 53,
-   "18127100302921038": 108,
-   "18119250239017807": 174,
-   "18095925602269234": 57,
-   "17912955915479594": 30
+   "17892702330456267": 202,
+   "18136682851659838": 182,
+   "17965626717235418": 56,
+   "18127100302921038": 164,
+   "18119250239017807": 180,
+   "18095925602269234": 102,
+   "17912955915479594": 41
   }
  },
  "follower_log": [

@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-04T21:45:00+00:00",
-    "status": "pending",
-    "attempts": 3,
+    "status": "skipped",
+    "attempts": 4,
     "kind": "dump"
    }
   ],
@@ -1525,13 +1525,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -1.034,
-   "reach": 58,
+   "reach": 59,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 69.0,
-   "measured_at": "2026-11-04T21:54:09.552363+00:00"
+   "score": 67.8,
+   "measured_at": "2026-11-04T21:58:02.630118+00:00"
   },
   {
    "media_id": "17898580812476739",
@@ -1601,7 +1601,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-04T21:54:09.552363+00:00"
+   "measured_at": "2026-11-04T21:58:02.630118+00:00"
   }
  ],
  "imported": [

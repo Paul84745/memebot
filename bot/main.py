@@ -649,9 +649,25 @@ def claude(prompt, temperature=1.0, max_tokens=1000):
     raise RuntimeError("Claude unavailable")
 
 
-GROQ_MODELS = ["llama-3.3-70b-versatile", "openai/gpt-oss-120b",
-               "openai/gpt-oss-20b", "llama-3.1-8b-instant"]
+GROQ_MODELS = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.3-70b-versatile",
+               "llama-3.1-8b-instant"]
 _groq_ok = {"model": None}
+
+
+def _extract_json(text):
+    """Return the largest valid JSON object found in text, or None."""
+    text = re.sub(r"^```(?:json)?|```$", "", (text or "").strip(), flags=re.M).strip()
+    start = text.find("{")
+    while start != -1:
+        end = text.rfind("}")
+        while end > start:
+            try:
+                json.loads(text[start:end + 1])
+                return text[start:end + 1]
+            except ValueError:
+                end = text.rfind("}", start, end)
+        start = text.find("{", start + 1)
+    return None
 
 
 def groq(prompt, temperature=1.0):
@@ -667,7 +683,7 @@ def groq(prompt, temperature=1.0):
         for attempt in range(4):
             try:
                 r = requests.post("https://api.groq.com/openai/v1/chat/completions",
-                                  headers=headers, json=body, timeout=60)
+                                  headers=headers, json=body, timeout=150)
             except requests.exceptions.RequestException as e:
                 last = f"network error: {e}"
                 time.sleep(5)
@@ -676,14 +692,31 @@ def groq(prompt, temperature=1.0):
                 last = f"{model}: {r.status_code}"
                 time.sleep(10 * (attempt + 1))
                 continue
-            if r.status_code in (400, 403, 404):
-                last = f"{model}: {r.status_code} {r.text[:200]}"
-                print(f"Groq model {model} not usable ({r.status_code}), trying next")
+            if r.status_code == 400 and "response_format" in body:
+                # The model wrote broken or over-long JSON. Salvage it if possible, otherwise
+                # retry without strict JSON mode and pull the JSON out of the plain reply.
+                last = f"{model}: 400 {r.text[:300]}"
+                print(f"::warning::Groq {model} JSON error, retrying: {r.text[:300]}")
+                try:
+                    fg = r.json()["error"].get("failed_generation") or ""
+                    fixed = _extract_json(fg)
+                    if fixed:
+                        return fixed
+                except Exception:
+                    pass
+                body.pop("response_format", None)
+                body["messages"] = [{"role": "user", "content": prompt + "\n\nReply with ONE "
+                                     "valid JSON object and nothing else."}]
+                continue
+            if r.status_code in (400, 403, 404, 413):
+                last = f"{model}: {r.status_code} {r.text[:300]}"
+                print(f"Groq model {model} not usable ({r.status_code}): {r.text[:300]}")
                 break
             if not r.ok:
                 raise RuntimeError(f"Groq API {r.status_code}: {r.text[:300]}")
             _groq_ok["model"] = model
-            return r.json()["choices"][0]["message"]["content"]
+            content = r.json()["choices"][0]["message"]["content"] or ""
+            return content if "response_format" in body else (_extract_json(content) or content)
     raise RuntimeError(f"Groq unavailable ({last})")
 
 

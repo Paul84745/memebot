@@ -37,7 +37,7 @@
    {
     "t": "2026-11-04T21:45:00+00:00",
     "status": "pending",
-    "attempts": 0,
+    "attempts": 1,
     "kind": "dump"
    }
   ],
@@ -1324,7 +1324,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.204
+   "follows_attr": -1.204,
+   "follows_src": "estimated",
+   "like_count": 8,
+   "comments_count": 0,
+   "reach": 86,
+   "shares": 0,
+   "saved": 0,
+   "views": 131,
+   "sends_per_1k": 0.0,
+   "follows": -1.2,
+   "score": 80.0,
+   "follows_per_1k": -13.95,
+   "final": true
   },
   {
    "media_id": "18145845175517393",
@@ -1361,7 +1373,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.143
+   "follows_attr": -3.143,
+   "follows_src": "estimated",
+   "like_count": 10,
+   "comments_count": 0,
+   "reach": 210,
+   "shares": 0,
+   "saved": 2,
+   "views": 288,
+   "sends_per_1k": 0.0,
+   "follows": -3.1,
+   "score": 76.2,
+   "follows_per_1k": -14.76,
+   "final": true
   },
   {
    "media_id": "18136682851659838",
@@ -1501,13 +1525,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -1.034,
-   "reach": 46,
+   "reach": 58,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 87.0,
-   "measured_at": "2026-11-04T18:52:19.743220+00:00"
+   "score": 69.0,
+   "measured_at": "2026-11-04T21:46:08.731840+00:00"
   },
   {
    "media_id": "17898580812476739",
@@ -2377,213 +2401,212 @@
  ],
  "imported_done": true,
  "peers": {
-  "fetched_at": "2026-11-02T20:49:16.103338+00:00",
+  "fetched_at": "2026-11-04T21:46:08.731840+00:00",
   "ok": [
    "memes@lemmy.world",
-   "memes@lemmy.ml",
-   "funny@lemmy.world"
+   "memes@lemmy.ml"
   ],
-  "n": 86,
+  "n": 79,
   "best": [
    {
     "u": "memes",
-    "er": 637,
-    "cap": "How the tables have turned",
-    "t": "2026-10-27T01:45:07.100262Z",
-    "type": "IMAGE",
-    "rel": 4.901
-   },
-   {
-    "u": "memes",
-    "er": 1933,
-    "cap": "Old friend",
-    "t": "2026-10-30T13:19:05.542141Z",
-    "type": "IMAGE",
-    "rel": 3.421
-   },
-   {
-    "u": "memes",
-    "er": 1772,
-    "cap": "Your guide to grad school",
-    "t": "2026-10-28T13:12:44.546855Z",
-    "type": "IMAGE",
-    "rel": 3.136
-   },
-   {
-    "u": "funny",
-    "er": 1660,
-    "cap": "Teehee",
-    "t": "2026-10-30T15:38:56.495496Z",
-    "type": "IMAGE",
-    "rel": 3.127
-   },
-   {
-    "u": "memes",
-    "er": 1757,
-    "cap": "Those selfish home pc builders",
-    "t": "2026-10-31T17:26:19.574659Z",
-    "type": "IMAGE",
-    "rel": 3.109
-   },
-   {
-    "u": "memes",
-    "er": 1658,
-    "cap": "Earth review",
-    "t": "2026-11-01T15:52:58.053165Z",
-    "type": "IMAGE",
-    "rel": 2.934
-   },
-   {
-    "u": "memes",
-    "er": 379,
+    "er": 381,
     "cap": "Surely they won't send *me* to the camps",
     "t": "2026-10-29T05:45:56.354154Z",
     "type": "IMAGE",
-    "rel": 2.916
-   },
-   {
-    "u": "funny",
-    "er": 1437,
-    "cap": "It's about time somebody invented Amish 2",
-    "t": "2026-10-28T13:15:08.682217Z",
-    "type": "IMAGE",
-    "rel": 2.707
+    "rel": 3.455
    },
    {
     "u": "memes",
-    "er": 1496,
-    "cap": "Don't be evil",
-    "t": "2026-10-30T19:03:46.222829Z",
+    "er": 1947,
+    "cap": "Old friend",
+    "t": "2026-10-30T13:19:05.542141Z",
     "type": "IMAGE",
-    "rel": 2.647
+    "rel": 3.387
    },
    {
     "u": "memes",
-    "er": 340,
+    "er": 342,
     "cap": "Of course this would all be fixed if people would just vote for the blue oligarch",
     "t": "2026-10-29T04:57:21.647150Z",
     "type": "IMAGE",
-    "rel": 2.616
+    "rel": 3.102
    },
    {
     "u": "memes",
-    "er": 1209,
-    "cap": "Do not redeem",
-    "t": "2026-10-27T16:18:58.199889Z",
+    "er": 1782,
+    "cap": "Those selfish home pc builders",
+    "t": "2026-10-31T17:26:19.574659Z",
     "type": "IMAGE",
-    "rel": 2.14
+    "rel": 3.1
    },
    {
     "u": "memes",
-    "er": 1117,
+    "er": 1690,
+    "cap": "Earth review",
+    "t": "2026-11-01T15:52:58.053165Z",
+    "type": "IMAGE",
+    "rel": 2.94
+   },
+   {
+    "u": "memes",
+    "er": 1510,
+    "cap": "Seems like they worked fine for decades before the internet",
+    "t": "2026-11-03T02:55:22.671089Z",
+    "type": "IMAGE",
+    "rel": 2.627
+   },
+   {
+    "u": "memes",
+    "er": 1505,
+    "cap": "Don't be evil",
+    "t": "2026-10-30T19:03:46.222829Z",
+    "type": "IMAGE",
+    "rel": 2.618
+   },
+   {
+    "u": "memes",
+    "er": 1120,
     "cap": "Life is one big slot machine",
     "t": "2026-10-29T14:17:45.809649Z",
     "type": "IMAGE",
-    "rel": 1.977
+    "rel": 1.948
    },
    {
     "u": "memes",
-    "er": 1116,
-    "cap": "AI doomerism is AI company marketing",
-    "t": "2026-10-26T22:19:09.912890Z",
-    "type": "IMAGE",
-    "rel": 1.975
-   },
-   {
-    "u": "memes",
-    "er": 1074,
+    "er": 1077,
     "cap": "God and Lucifer were chatting one day",
     "t": "2026-10-31T01:58:41.275888Z",
     "type": "IMAGE",
-    "rel": 1.901
+    "rel": 1.873
    },
    {
     "u": "memes",
-    "er": 1058,
+    "er": 206,
+    "cap": "rip to a real one",
+    "t": "2026-10-30T02:14:37.328357Z",
+    "type": "IMAGE",
+    "rel": 1.868
+   },
+   {
+    "u": "memes",
+    "er": 1063,
     "cap": "Terrifying",
     "t": "2026-10-29T15:07:54.184495Z",
     "type": "IMAGE",
-    "rel": 1.872
+    "rel": 1.849
    },
    {
     "u": "memes",
     "er": 203,
-    "cap": "rip to a real one",
-    "t": "2026-10-30T02:14:37.328357Z",
+    "cap": "Sammy Sammy Alty I just popped 32gb of RAMy",
+    "t": "2026-11-03T09:38:14.105580Z",
     "type": "IMAGE",
-    "rel": 1.562
-   },
-   {
-    "u": "funny",
-    "er": 806,
-    "cap": "The Addams Family",
-    "t": "2026-10-30T13:19:50.191811Z",
-    "type": "IMAGE",
-    "rel": 1.518
+    "rel": 1.841
    },
    {
     "u": "memes",
-    "er": 826,
-    "cap": "Simpler times",
-    "t": "2026-10-31T17:27:28.133379Z",
-    "type": "IMAGE",
-    "rel": 1.462
-   },
-   {
-    "u": "memes",
-    "er": 816,
-    "cap": "When you\u2019ve been waiting to build a new PC and you see tech stocks crashing",
-    "t": "2026-10-30T16:51:45.553070Z",
-    "type": "IMAGE",
-    "rel": 1.444
-   },
-   {
-    "u": "memes",
-    "er": 771,
-    "cap": "Clammy Sammy",
-    "t": "2026-11-01T08:51:56Z",
-    "type": "IMAGE",
-    "rel": 1.364
-   },
-   {
-    "u": "memes",
-    "er": 753,
-    "cap": "it do be like that",
-    "t": "2026-11-01T11:17:19.992843Z",
-    "type": "IMAGE",
-    "rel": 1.333
-   },
-   {
-    "u": "memes",
-    "er": 736,
-    "cap": "RAM and Ditch",
-    "t": "2026-11-01T23:59:25.204440Z",
-    "type": "IMAGE",
-    "rel": 1.302
-   },
-   {
-    "u": "memes",
-    "er": 169,
+    "er": 170,
     "cap": "The feds read my email?",
     "t": "2026-10-29T17:43:57.110400Z",
     "type": "IMAGE",
-    "rel": 1.3
+    "rel": 1.542
    },
    {
     "u": "memes",
-    "er": 718,
-    "cap": "There is no explanation",
-    "t": "2026-10-27T22:28:23.570714Z",
+    "er": 850,
+    "cap": "Simpler times",
+    "t": "2026-10-31T17:27:28.133379Z",
     "type": "IMAGE",
-    "rel": 1.271
+    "rel": 1.479
    },
    {
-    "u": "funny",
-    "er": 673,
-    "cap": "The 2 types of Lymphoma",
-    "t": "2026-11-01T15:48:40.998863Z",
+    "u": "memes",
+    "er": 163,
+    "cap": "Know the difference",
+    "t": "2026-10-29T14:07:11.935132Z",
     "type": "IMAGE",
-    "rel": 1.268
+    "rel": 1.478
+   },
+   {
+    "u": "memes",
+    "er": 162,
+    "cap": "So how was *your* Halloween?",
+    "t": "2026-11-03T04:13:07.633313Z",
+    "type": "IMAGE",
+    "rel": 1.469
+   },
+   {
+    "u": "memes",
+    "er": 822,
+    "cap": "When you\u2019ve been waiting to build a new PC and you see tech stocks crashing",
+    "t": "2026-10-30T16:51:45.553070Z",
+    "type": "IMAGE",
+    "rel": 1.43
+   },
+   {
+    "u": "memes",
+    "er": 820,
+    "cap": "Gotta Be Careful Out There",
+    "t": "2026-11-02T04:59:41.352443Z",
+    "type": "IMAGE",
+    "rel": 1.426
+   },
+   {
+    "u": "memes",
+    "er": 155,
+    "cap": "\"Vote _ _ _ _ no matter who!\"",
+    "t": "2026-11-02T00:06:18.793673Z",
+    "type": "IMAGE",
+    "rel": 1.406
+   },
+   {
+    "u": "memes",
+    "er": 783,
+    "cap": "Clammy Sammy",
+    "t": "2026-11-01T08:51:56Z",
+    "type": "IMAGE",
+    "rel": 1.362
+   },
+   {
+    "u": "memes",
+    "er": 783,
+    "cap": "RAM and Ditch",
+    "t": "2026-11-01T23:59:25.204440Z",
+    "type": "IMAGE",
+    "rel": 1.362
+   },
+   {
+    "u": "memes",
+    "er": 772,
+    "cap": "Delay, Deny, Defend",
+    "t": "2026-11-03T03:36:42.790417Z",
+    "type": "IMAGE",
+    "rel": 1.343
+   },
+   {
+    "u": "memes",
+    "er": 761,
+    "cap": "it do be like that",
+    "t": "2026-11-01T11:17:19.992843Z",
+    "type": "IMAGE",
+    "rel": 1.324
+   },
+   {
+    "u": "memes",
+    "er": 138,
+    "cap": "The Midterms are here",
+    "t": "2026-10-31T21:09:29.632495Z",
+    "type": "IMAGE",
+    "rel": 1.252
+   },
+   {
+    "u": "memes",
+    "er": 714,
+    "cap": "This would be cool in a gameroom",
+    "t": "2026-11-03T13:33:55.012361Z",
+    "type": "IMAGE",
+    "rel": 1.242
    }
   ],
   "worst": [
@@ -2596,14 +2619,6 @@
     "rel": 0.0
    },
    {
-    "u": "funny",
-    "er": 5,
-    "cap": "One of my strongest sets so far",
-    "t": "2026-10-30T08:57:49.886234Z",
-    "type": "IMAGE",
-    "rel": 0.009
-   },
-   {
     "u": "memes",
     "er": 9,
     "cap": "Real money comes from a printer.",
@@ -2613,31 +2628,15 @@
    },
    {
     "u": "memes",
-    "er": 4,
-    "cap": "Pro-AI PACs and Pro-AIPAC, same picture",
-    "t": "2026-11-02T20:23:57.533417Z",
-    "type": "IMAGE",
-    "rel": 0.031
-   },
-   {
-    "u": "funny",
-    "er": 18,
-    "cap": "Permanent Motorcycle Helmet",
-    "t": "2026-10-30T16:07:45.606635Z",
-    "type": "IMAGE",
-    "rel": 0.034
-   },
-   {
-    "u": "memes",
-    "er": 26,
+    "er": 27,
     "cap": "What should you do if someone gives you a large boulder as a present? Take it for granite!",
     "t": "2026-10-30T17:48:37.785262Z",
     "type": "IMAGE",
-    "rel": 0.046
+    "rel": 0.047
    },
    {
     "u": "memes",
-    "er": 52,
+    "er": 53,
     "cap": "When a guy shows me basic human decency",
     "t": "2026-10-30T17:01:30.878610Z",
     "type": "IMAGE",
@@ -2645,35 +2644,43 @@
    },
    {
     "u": "memes",
-    "er": 75,
-    "cap": "Wishing a joyous Edmund Fitzgerald season to all who celebrate!",
-    "t": "2026-11-01T15:25:02.189755Z",
+    "er": 57,
+    "cap": "games are the only useful feature of linkedin",
+    "t": "2026-11-04T12:31:09.805582Z",
     "type": "IMAGE",
-    "rel": 0.133
+    "rel": 0.099
    },
    {
     "u": "memes",
-    "er": 80,
+    "er": 81,
     "cap": "Take my soul! I just want a couple peanut butter cups.",
     "t": "2026-10-30T19:21:49.989623Z",
     "type": "IMAGE",
-    "rel": 0.142
-   },
-   {
-    "u": "funny",
-    "er": 77,
-    "cap": "Cursed",
-    "t": "2026-10-31T15:01:36.766137Z",
-    "type": "IMAGE",
-    "rel": 0.145
+    "rel": 0.141
    },
    {
     "u": "memes",
-    "er": 92,
-    "cap": "I\u2019ll get around to it, one of these days",
-    "t": "2026-10-27T17:17:58.115905Z",
+    "er": 82,
+    "cap": "Wishing a joyous Edmund Fitzgerald season to all who celebrate!",
+    "t": "2026-11-01T15:25:02.189755Z",
+    "type": "IMAGE",
+    "rel": 0.143
+   },
+   {
+    "u": "memes",
+    "er": 18,
+    "cap": "OC: So much RAM",
+    "t": "2026-11-04T15:51:47.841148Z",
     "type": "IMAGE",
     "rel": 0.163
+   },
+   {
+    "u": "memes",
+    "er": 21,
+    "cap": "Pro-AI PACs and Pro-AIPAC, same picture",
+    "t": "2026-11-02T20:23:57.533417Z",
+    "type": "IMAGE",
+    "rel": 0.19
    },
    {
     "u": "memes",
@@ -2681,39 +2688,55 @@
     "cap": "RIP sir pat",
     "t": "2026-10-30T15:59:54.222478Z",
     "type": "IMAGE",
-    "rel": 0.169
+    "rel": 0.2
    },
    {
     "u": "memes",
-    "er": 114,
+    "er": 124,
+    "cap": "i dont have a problem",
+    "t": "2026-10-31T18:05:09.047922Z",
+    "type": "IMAGE",
+    "rel": 0.216
+   },
+   {
+    "u": "memes",
+    "er": 128,
+    "cap": "Hahaha, I'm dying!",
+    "t": "2026-10-30T16:03:29.021546Z",
+    "type": "IMAGE",
+    "rel": 0.223
+   },
+   {
+    "u": "memes",
+    "er": 141,
+    "cap": "When you buy your dog a kitten.",
+    "t": "2026-11-01T18:33:00.107582Z",
+    "type": "IMAGE",
+    "rel": 0.245
+   },
+   {
+    "u": "memes",
+    "er": 141,
+    "cap": "Made this wojak, feel free to use it!",
+    "t": "2026-10-31T18:05:17.378494Z",
+    "type": "IMAGE",
+    "rel": 0.245
+   },
+   {
+    "u": "memes",
+    "er": 146,
     "cap": "Me when someone asks if I understood Trump's latest rant",
     "t": "2026-11-02T14:02:02.146432Z",
     "type": "IMAGE",
-    "rel": 0.202
-   },
-   {
-    "u": "memes",
-    "er": 120,
-    "cap": "What's your most disastrous date?",
-    "t": "2026-11-02T18:43:49.888977Z",
-    "type": "IMAGE",
-    "rel": 0.212
-   },
-   {
-    "u": "memes",
-    "er": 28,
-    "cap": "revolution! (but only for governments that are problematic for neoliberal imperialism)",
-    "t": "2026-10-30T23:01:58.643869Z",
-    "type": "IMAGE",
-    "rel": 0.215
+    "rel": 0.254
    }
   ],
   "by_len": {
-   "short caption": 0.76,
-   "very short caption": 1.19
+   "short caption": 0.87,
+   "very short caption": 1.13
   },
   "by_start": {
-   "other opening": 0.99
+   "other opening": 1.04
   }
  },
  "news_used": [
@@ -2819,23 +2842,21 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-04T18:52:19.743220+00:00",
+  "t": "2026-11-04T21:46:08.731840+00:00",
   "followers": 48401,
   "reach": {
-   "18138457324735660": 86,
-   "18145845175517393": 190,
-   "17892702330456267": 210,
-   "18136682851659838": 184,
+   "18136682851659838": 185,
    "17965626717235418": 58,
    "18127100302921038": 230,
-   "18119250239017807": 197,
+   "18119250239017807": 201,
    "18095925602269234": 188,
-   "17912955915479594": 58,
-   "18087746591311909": 51,
-   "18065791922717301": 46,
-   "17898580812476739": 171,
-   "18138506686631623": 149,
-   "17958502677266864": 12
+   "17912955915479594": 60,
+   "18087746591311909": 53,
+   "18065791922717301": 58,
+   "17898580812476739": 174,
+   "18138506686631623": 152,
+   "17958502677266864": 29,
+   "18073771739775638": 18
   }
  },
  "follower_log": [

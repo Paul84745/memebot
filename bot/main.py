@@ -680,6 +680,10 @@ def groq(prompt, temperature=1.0):
         body = {"model": model, "temperature": min(temperature, 1.0),
                 "response_format": {"type": "json_object"},
                 "messages": [{"role": "user", "content": prompt}]}
+        if "gpt-oss" in model:
+            # Reasoning models spend tokens thinking before they answer; give them room and
+            # keep the thinking short, or long prompts come back empty.
+            body.update(max_completion_tokens=16000, reasoning_effort="medium")
         for attempt in range(4):
             try:
                 r = requests.post("https://api.groq.com/openai/v1/chat/completions",
@@ -697,6 +701,8 @@ def groq(prompt, temperature=1.0):
                 # retry without strict JSON mode and pull the JSON out of the plain reply.
                 last = f"{model}: 400 {r.text[:300]}"
                 print(f"::warning::Groq {model} JSON error, retrying: {r.text[:300]}")
+                if "reasoning_effort" in body:
+                    body["reasoning_effort"] = "low"
                 try:
                     fg = r.json()["error"].get("failed_generation") or ""
                     fixed = _extract_json(fg)
@@ -716,6 +722,12 @@ def groq(prompt, temperature=1.0):
                 raise RuntimeError(f"Groq API {r.status_code}: {r.text[:300]}")
             _groq_ok["model"] = model
             content = r.json()["choices"][0]["message"]["content"] or ""
+            if not content.strip():
+                last = f"{model}: empty reply"
+                print(f"::warning::Groq {model} returned an empty reply, retrying with less thinking")
+                if "reasoning_effort" in body:
+                    body["reasoning_effort"] = "low"
+                continue
             return content if "response_format" in body else (_extract_json(content) or content)
     raise RuntimeError(f"Groq unavailable ({last})")
 

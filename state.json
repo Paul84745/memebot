@@ -20,8 +20,8 @@
    },
    {
     "t": "2026-11-04T15:37:00+00:00",
-    "status": "pending",
-    "attempts": 1
+    "status": "done",
+    "attempts": 2
    },
    {
     "t": "2026-11-04T18:06:00+00:00",
@@ -1495,7 +1495,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 125.0,
-   "measured_at": "2026-11-04T15:38:00.145321+00:00"
+   "measured_at": "2026-11-04T15:40:20.126004+00:00"
   },
   {
    "media_id": "17898580812476739",
@@ -1514,6 +1514,23 @@
    "news_age_h": null,
    "funny": 8,
    "follows_attr": -4.736
+  },
+  {
+   "media_id": "18138506686631623",
+   "posted_at": "2026-11-04T15:41:41.364026+00:00",
+   "template_id": "61579",
+   "template_name": "One Does Not Simply",
+   "theme": "news",
+   "text": "me when you try the $5 chipotle hack and realize guac still costs extra",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "playfulness",
+   "news": true,
+   "news_age_h": 0.5816261027777778,
+   "funny": 7
   }
  ],
  "imported": [
@@ -2675,7 +2692,8 @@
   "Super El Ni\u00f1o and polar vortex could bring unexpected weather changes across the US this November | Hindustan Times",
   "Julie (@gaga19): \"These memes on Bluesky are hilarious \ud83d\ude02 \ud83d\udc47\ud83c\udffb\ud83e\udd2a\"",
   "WATCH: USC Fan Appears to Tear ACL Storming Field After Upset Win Over Ohio State, Video Goes Viral",
-  "I Love Boosters review \u2013 supercool outlaw women go shoplifting in Boots Riley\u2019s frantic and funny caper"
+  "I Love Boosters review \u2013 supercool outlaw women go shoplifting in Boots Riley\u2019s frantic and funny caper",
+  "This $5 Chipotle meal hack is going viral. Does it actually save you money?"
  ],
  "trends": {
   "fetched_at": "2026-11-02T15:02:39.061074+00:00",

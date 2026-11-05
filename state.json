@@ -1699,14 +1699,14 @@
    "text": "pick one | A: text your ex at 2am, they ghost you instantly | B: reply all in group chat, expose your secret crush",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.531,
-   "reach": 51,
+   "follows_attr": -0.543,
+   "reach": 52,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-05T22:22:09.493089+00:00"
+   "measured_at": "2026-11-05T23:02:32.386842+00:00"
   },
   {
    "media_id": "18632145394034244",
@@ -1742,7 +1742,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-05T22:22:09.493089+00:00"
+   "measured_at": "2026-11-05T23:02:32.386842+00:00"
   },
   {
    "media_id": "18121889950948582",
@@ -1760,7 +1760,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.836
+   "follows_attr": -0.884
   },
   {
    "media_id": "17919408198532922",
@@ -1777,7 +1777,8 @@
    "track": "Suspense and Tension-stem-4-1min",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.94
   }
  ],
  "imported": [
@@ -3026,8 +3027,8 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-05T22:22:09.493089+00:00",
-  "followers": 48394,
+  "t": "2026-11-05T23:02:32.386842+00:00",
+  "followers": 48393,
   "reach": {
    "18087746591311909": 61,
    "18065791922717301": 93,
@@ -3037,10 +3038,11 @@
    "18073771739775638": 87,
    "18126137929897988": 56,
    "17895490401439791": 181,
-   "17939583903401666": 51,
+   "17939583903401666": 52,
    "18632145394034244": 208,
    "18083452964349337": 14,
-   "18121889950948582": 148
+   "18121889950948582": 152,
+   "17919408198532922": 78
   }
  },
  "follower_log": [

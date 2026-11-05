@@ -1481,7 +1481,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -2.095
+   "follows_attr": -2.095,
+   "follows_src": "estimated",
+   "like_count": 11,
+   "comments_count": 0,
+   "reach": 215,
+   "shares": 0,
+   "saved": 0,
+   "views": 304,
+   "sends_per_1k": 0.0,
+   "follows": -2.1,
+   "score": 51.2,
+   "follows_per_1k": -9.77,
+   "final": true
   },
   {
    "media_id": "18095925602269234",
@@ -1518,7 +1530,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 9,
-   "follows_attr": -1.085
+   "follows_attr": -1.178
   },
   {
    "media_id": "18087746591311909",
@@ -1536,7 +1548,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.822
+   "follows_attr": -0.829
   },
   {
    "media_id": "18065791922717301",
@@ -1573,7 +1585,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.914
+   "follows_attr": -4.943
   },
   {
    "media_id": "18138506686631623",
@@ -1591,7 +1603,7 @@
    "news": true,
    "news_age_h": 0.5816261027777778,
    "funny": 7,
-   "follows_attr": -1.473
+   "follows_attr": -1.487
   },
   {
    "media_id": "17958502677266864",
@@ -1609,7 +1621,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.444
+   "follows_attr": -0.473
   },
   {
    "media_id": "18073771739775638",
@@ -1627,7 +1639,7 @@
    "profile_visits": 0,
    "score": 60.6,
    "measured_at": "2026-11-05T13:07:09.195685+00:00",
-   "follows_attr": -0.911,
+   "follows_attr": -1.062,
    "final": true
   },
   {
@@ -1645,7 +1657,8 @@
    "track": "Bring back tha funk",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.086
   },
   {
    "media_id": "17895490401439791",
@@ -1662,7 +1675,8 @@
    "track": "The mind trap - Part 1",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.129
   },
   {
    "media_id": "17939583903401666",
@@ -1672,7 +1686,15 @@
    "theme": "story",
    "text": "pick one | A: text your ex at 2am, they ghost you instantly | B: reply all in group chat, expose your secret crush",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": -0.129,
+   "reach": 24,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-05T17:46:03.975726+00:00"
   },
   {
    "media_id": "18632145394034244",
@@ -1689,7 +1711,8 @@
    "track": "Dusty Piano Keys",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -1.333
   }
  ],
  "imported": [
@@ -2854,14 +2877,40 @@
   "This $5 Chipotle meal hack is going viral. Does it actually save you money?"
  ],
  "trends": {
-  "fetched_at": "2026-11-02T15:02:39.061074+00:00",
+  "fetched_at": "2026-11-05T17:46:03.975726+00:00",
   "styles": [
    {
-    "query": "k-pop",
+    "query": "jersey club",
+    "moods": [
+     "bouncy",
+     "upbeat",
+     "hype"
+    ],
+    "fx": "sped_up"
+   },
+   {
+    "query": "phonk",
+    "moods": [
+     "chill",
+     "awkward",
+     "dramatic"
+    ],
+    "fx": "slowed_reverb"
+   },
+   {
+    "query": "synthwave",
+    "moods": [
+     "dramatic",
+     "hype"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "afrobeats",
     "moods": [
      "upbeat",
      "bouncy",
-     "hype"
+     "wholesome"
     ],
     "fx": "none"
    },
@@ -2869,7 +2918,6 @@
     "query": "drill",
     "moods": [
      "hype",
-     "upbeat",
      "dramatic"
     ],
     "fx": "none"
@@ -2878,40 +2926,8 @@
     "query": "lofi",
     "moods": [
      "chill",
+     "sad",
      "wholesome"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "ambient",
-    "moods": [
-     "dramatic",
-     "awkward"
-    ],
-    "fx": "slowed_reverb"
-   },
-   {
-    "query": "synthwave",
-    "moods": [
-     "upbeat",
-     "bouncy"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "house",
-    "moods": [
-     "upbeat",
-     "hype",
-     "bouncy"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "phonk",
-    "moods": [
-     "hype",
-     "dramatic"
     ],
     "fx": "none"
    },
@@ -2932,27 +2948,34 @@
      "wholesome"
     ],
     "fx": "slowed_reverb"
+   },
+   {
+    "query": "electronic",
+    "moods": [
+     "hype",
+     "upbeat"
+    ],
+    "fx": "sped_up"
    }
   ],
-  "source": "28 headlines"
+  "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-05T13:07:09.195685+00:00",
-  "followers": 48398,
+  "t": "2026-11-05T17:46:03.975726+00:00",
+  "followers": 48396,
   "reach": {
-   "18127100302921038": 230,
-   "18119250239017807": 208,
    "18095925602269234": 188,
-   "17912955915479594": 77,
-   "18087746591311909": 58,
+   "17912955915479594": 90,
+   "18087746591311909": 59,
    "18065791922717301": 93,
-   "17898580812476739": 181,
-   "18138506686631623": 156,
-   "17958502677266864": 49,
-   "18073771739775638": 66,
-   "18126137929897988": 30,
-   "17895490401439791": 158,
-   "17939583903401666": 6
+   "17898580812476739": 185,
+   "18138506686631623": 158,
+   "17958502677266864": 53,
+   "18073771739775638": 87,
+   "18126137929897988": 42,
+   "17895490401439791": 176,
+   "17939583903401666": 24,
+   "18632145394034244": 186
   }
  },
  "follower_log": [

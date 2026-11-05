@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-05T22:21:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-05",
@@ -1560,7 +1560,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.829
+   "follows_attr": -0.835
   },
   {
    "media_id": "18065791922717301",
@@ -1615,7 +1615,7 @@
    "news": true,
    "news_age_h": 0.5816261027777778,
    "funny": 7,
-   "follows_attr": -1.523
+   "follows_attr": -1.534
   },
   {
    "media_id": "17958502677266864",
@@ -1633,7 +1633,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.509
+   "follows_attr": -0.515
   },
   {
    "media_id": "18073771739775638",
@@ -1670,7 +1670,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.193
+   "follows_attr": -0.227
   },
   {
    "media_id": "17895490401439791",
@@ -1699,14 +1699,14 @@
    "text": "pick one | A: text your ex at 2am, they ghost you instantly | B: reply all in group chat, expose your secret crush",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.486,
-   "reach": 43,
+   "follows_attr": -0.531,
+   "reach": 51,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-05T20:42:00.680739+00:00"
+   "measured_at": "2026-11-05T22:22:09.493089+00:00"
   },
   {
    "media_id": "18632145394034244",
@@ -1724,7 +1724,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.654
+   "follows_attr": -1.677
   },
   {
    "media_id": "18083452964349337",
@@ -1734,7 +1734,15 @@
    "theme": "story",
    "text": "would you rather | A: miss payday, eat ramen forever | B: lose phone, can't ghost anyone",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": -0.04,
+   "reach": 14,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-05T22:22:09.493089+00:00"
   },
   {
    "media_id": "18121889950948582",
@@ -1749,6 +1757,24 @@
    "music_style": "funk",
    "music_fx": "sped_up",
    "track": "world funk bs",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7,
+   "follows_attr": -0.836
+  },
+  {
+   "media_id": "17919408198532922",
+   "posted_at": "2026-11-05T22:24:59.314251+00:00",
+   "template_id": "284929871",
+   "template_name": "They don't know",
+   "theme": "siblings",
+   "text": "first day at family reunion: i bring a bottle, they bring a therapist",
+   "format": "other",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Suspense and Tension-stem-4-1min",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -3000,20 +3026,21 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-05T20:42:00.680739+00:00",
-  "followers": 48395,
+  "t": "2026-11-05T22:22:09.493089+00:00",
+  "followers": 48394,
   "reach": {
-   "18087746591311909": 60,
+   "18087746591311909": 61,
    "18065791922717301": 93,
    "17898580812476739": 186,
-   "18138506686631623": 159,
-   "17958502677266864": 55,
+   "18138506686631623": 161,
+   "17958502677266864": 56,
    "18073771739775638": 87,
-   "18126137929897988": 50,
+   "18126137929897988": 56,
    "17895490401439791": 181,
-   "17939583903401666": 43,
-   "18632145394034244": 204,
-   "18083452964349337": 7
+   "17939583903401666": 51,
+   "18632145394034244": 208,
+   "18083452964349337": 14,
+   "18121889950948582": 148
   }
  },
  "follower_log": [

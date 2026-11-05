@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-05T10:19:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-05T12:20:00+00:00",
@@ -1620,13 +1620,13 @@
    "text": "pick one: burnt toast or soggy cereal | A: burnt toast, smoke alarm, kitchen fire drill | B: soggy cereal, milk drowning, spoon stuck forever",
    "kind": "story",
    "story_type": "wyr",
-   "reach": 47,
+   "reach": 51,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 85.1,
-   "measured_at": "2026-11-05T08:40:06.853889+00:00",
+   "score": 78.4,
+   "measured_at": "2026-11-05T10:20:52.899679+00:00",
    "follows_attr": -0.911
   },
   {
@@ -1642,6 +1642,23 @@
    "music_style": "funk",
    "music_fx": "sped_up",
    "track": "Bring back tha funk",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "17895490401439791",
+   "posted_at": "2026-11-05T10:23:00.439315+00:00",
+   "template_id": "97984",
+   "template_name": "Disaster Girl",
+   "theme": "dating, situationships and exes",
+   "text": "Bro and I, already planning the apocalypse after she says \u2018just chill.\u2019",
+   "format": "other",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "The mind trap - Part 1",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -2892,19 +2909,20 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-05T08:40:06.853889+00:00",
+  "t": "2026-11-05T10:20:52.899679+00:00",
   "followers": 48398,
   "reach": {
    "18127100302921038": 230,
-   "18119250239017807": 206,
+   "18119250239017807": 207,
    "18095925602269234": 188,
-   "17912955915479594": 73,
-   "18087746591311909": 56,
-   "18065791922717301": 87,
-   "17898580812476739": 179,
-   "18138506686631623": 155,
-   "17958502677266864": 43,
-   "18073771739775638": 47
+   "17912955915479594": 75,
+   "18087746591311909": 57,
+   "18065791922717301": 93,
+   "17898580812476739": 180,
+   "18138506686631623": 156,
+   "17958502677266864": 45,
+   "18073771739775638": 51,
+   "18126137929897988": 13
   }
  },
  "follower_log": [

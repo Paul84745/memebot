@@ -14,8 +14,8 @@
    },
    {
     "t": "2026-11-05T12:20:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -1620,13 +1620,13 @@
    "text": "pick one: burnt toast or soggy cereal | A: burnt toast, smoke alarm, kitchen fire drill | B: soggy cereal, milk drowning, spoon stuck forever",
    "kind": "story",
    "story_type": "wyr",
-   "reach": 51,
+   "reach": 62,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 78.4,
-   "measured_at": "2026-11-05T10:20:52.899679+00:00",
+   "score": 64.5,
+   "measured_at": "2026-11-05T12:21:07.926467+00:00",
    "follows_attr": -0.911
   },
   {
@@ -1662,6 +1662,16 @@
    "news": false,
    "news_age_h": null,
    "funny": 7
+  },
+  {
+   "media_id": "17939583903401666",
+   "posted_at": "2026-11-05T12:21:29.455814+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "pick one | A: text your ex at 2am, they ghost you instantly | B: reply all in group chat, expose your secret crush",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [
@@ -2909,20 +2919,21 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-05T10:20:52.899679+00:00",
+  "t": "2026-11-05T12:21:07.926467+00:00",
   "followers": 48398,
   "reach": {
    "18127100302921038": 230,
-   "18119250239017807": 207,
+   "18119250239017807": 208,
    "18095925602269234": 188,
-   "17912955915479594": 75,
-   "18087746591311909": 57,
+   "17912955915479594": 77,
+   "18087746591311909": 58,
    "18065791922717301": 93,
-   "17898580812476739": 180,
+   "17898580812476739": 181,
    "18138506686631623": 156,
-   "17958502677266864": 45,
-   "18073771739775638": 51,
-   "18126137929897988": 13
+   "17958502677266864": 47,
+   "18073771739775638": 62,
+   "18126137929897988": 27,
+   "17895490401439791": 111
   }
  },
  "follower_log": [

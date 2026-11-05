@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-11-05T20:41:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-05T22:21:00+00:00",
@@ -1530,7 +1530,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 9,
-   "follows_attr": -1.214
+   "follows_attr": -1.214,
+   "follows_src": "estimated",
+   "like_count": 3,
+   "comments_count": 0,
+   "reach": 91,
+   "shares": 0,
+   "saved": 0,
+   "views": 133,
+   "sends_per_1k": 0.0,
+   "follows": -1.2,
+   "score": 30.0,
+   "follows_per_1k": -13.19,
+   "final": true
   },
   {
    "media_id": "18087746591311909",
@@ -1688,13 +1700,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -0.486,
-   "reach": 34,
+   "reach": 43,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-05T19:17:05.163632+00:00"
+   "measured_at": "2026-11-05T20:42:00.680739+00:00"
   },
   {
    "media_id": "18632145394034244",
@@ -1723,6 +1735,23 @@
    "text": "would you rather | A: miss payday, eat ramen forever | B: lose phone, can't ghost anyone",
    "kind": "story",
    "story_type": "wyr"
+  },
+  {
+   "media_id": "18121889950948582",
+   "posted_at": "2026-11-05T20:44:37.783005+00:00",
+   "template_id": "110163934",
+   "template_name": "I Bet He's Thinking About Other Women",
+   "theme": "texting and replies",
+   "text": "Mom says 'we need to talk'\u2014I'm at episode 12, season 1.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": "funk",
+   "music_fx": "sped_up",
+   "track": "world funk bs",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -2971,21 +3000,20 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-05T19:17:05.163632+00:00",
+  "t": "2026-11-05T20:42:00.680739+00:00",
   "followers": 48395,
   "reach": {
-   "18095925602269234": 188,
-   "17912955915479594": 91,
-   "18087746591311909": 59,
+   "18087746591311909": 60,
    "18065791922717301": 93,
-   "17898580812476739": 185,
+   "17898580812476739": 186,
    "18138506686631623": 159,
-   "17958502677266864": 54,
+   "17958502677266864": 55,
    "18073771739775638": 87,
-   "18126137929897988": 45,
-   "17895490401439791": 179,
-   "17939583903401666": 34,
-   "18632145394034244": 195
+   "18126137929897988": 50,
+   "17895490401439791": 181,
+   "17939583903401666": 43,
+   "18632145394034244": 204,
+   "18083452964349337": 7
   }
  },
  "follower_log": [

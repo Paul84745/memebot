@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-05T08:39:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-05T10:19:00+00:00",
@@ -1402,7 +1402,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.863
+   "follows_attr": -0.863,
+   "follows_src": "estimated",
+   "like_count": 2,
+   "comments_count": 0,
+   "reach": 188,
+   "shares": 0,
+   "saved": 0,
+   "views": 224,
+   "sends_per_1k": 0.0,
+   "follows": -0.9,
+   "score": 10.6,
+   "follows_per_1k": -4.79,
+   "final": true
   },
   {
    "media_id": "17965626717235418",
@@ -1420,7 +1432,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.323
+   "follows_attr": -0.323,
+   "follows_src": "estimated",
+   "like_count": 5,
+   "comments_count": 0,
+   "reach": 59,
+   "shares": 0,
+   "saved": 0,
+   "views": 80,
+   "sends_per_1k": 0.0,
+   "follows": -0.3,
+   "score": 50.0,
+   "follows_per_1k": -5.08,
+   "final": true
   },
   {
    "media_id": "18127100302921038",
@@ -1602,8 +1626,25 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 85.1,
-   "measured_at": "2026-11-05T08:18:29.339284+00:00",
+   "measured_at": "2026-11-05T08:40:06.853889+00:00",
    "follows_attr": -0.911
+  },
+  {
+   "media_id": "18126137929897988",
+   "posted_at": "2026-11-05T08:42:24.411026+00:00",
+   "template_id": "99683372",
+   "template_name": "Sleeping Shaq",
+   "theme": "cooking disasters",
+   "text": "Tried flamb\u00e9, now Shaq's snoozing on a charred ceiling\u2014hotter than his nightcap.",
+   "format": "other",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": "funk",
+   "music_fx": "sped_up",
+   "track": "Bring back tha funk",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -2851,11 +2892,9 @@
   "source": "28 headlines"
  },
  "follow_track": {
-  "t": "2026-11-05T08:18:29.339284+00:00",
+  "t": "2026-11-05T08:40:06.853889+00:00",
   "followers": 48398,
   "reach": {
-   "18136682851659838": 188,
-   "17965626717235418": 59,
    "18127100302921038": 230,
    "18119250239017807": 206,
    "18095925602269234": 188,

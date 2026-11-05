@@ -25,8 +25,8 @@
    },
    {
     "t": "2026-11-05T19:16:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -1530,7 +1530,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 9,
-   "follows_attr": -1.178
+   "follows_attr": -1.214
   },
   {
    "media_id": "18087746591311909",
@@ -1603,7 +1603,7 @@
    "news": true,
    "news_age_h": 0.5816261027777778,
    "funny": 7,
-   "follows_attr": -1.487
+   "follows_attr": -1.523
   },
   {
    "media_id": "17958502677266864",
@@ -1621,7 +1621,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.473
+   "follows_attr": -0.509
   },
   {
    "media_id": "18073771739775638",
@@ -1658,7 +1658,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.086
+   "follows_attr": -0.193
   },
   {
    "media_id": "17895490401439791",
@@ -1676,7 +1676,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.129
+   "follows_attr": -0.236
   },
   {
    "media_id": "17939583903401666",
@@ -1687,14 +1687,14 @@
    "text": "pick one | A: text your ex at 2am, they ghost you instantly | B: reply all in group chat, expose your secret crush",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.129,
-   "reach": 24,
+   "follows_attr": -0.486,
+   "reach": 34,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-05T17:46:03.975726+00:00"
+   "measured_at": "2026-11-05T19:17:05.163632+00:00"
   },
   {
    "media_id": "18632145394034244",
@@ -1712,7 +1712,17 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.333
+   "follows_attr": -1.654
+  },
+  {
+   "media_id": "18083452964349337",
+   "posted_at": "2026-11-05T19:17:31.515530+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "would you rather | A: miss payday, eat ramen forever | B: lose phone, can't ghost anyone",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [
@@ -2961,21 +2971,21 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-05T17:46:03.975726+00:00",
-  "followers": 48396,
+  "t": "2026-11-05T19:17:05.163632+00:00",
+  "followers": 48395,
   "reach": {
    "18095925602269234": 188,
-   "17912955915479594": 90,
+   "17912955915479594": 91,
    "18087746591311909": 59,
    "18065791922717301": 93,
    "17898580812476739": 185,
-   "18138506686631623": 158,
-   "17958502677266864": 53,
+   "18138506686631623": 159,
+   "17958502677266864": 54,
    "18073771739775638": 87,
-   "18126137929897988": 42,
-   "17895490401439791": 176,
-   "17939583903401666": 24,
-   "18632145394034244": 186
+   "18126137929897988": 45,
+   "17895490401439791": 179,
+   "17939583903401666": 34,
+   "18632145394034244": 195
   }
  },
  "follower_log": [

@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-06T09:14:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-06T12:25:00+00:00",
@@ -1560,7 +1560,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.835
+   "follows_attr": -0.835,
+   "follows_src": "estimated",
+   "like_count": 4,
+   "comments_count": 0,
+   "reach": 63,
+   "shares": 0,
+   "saved": 0,
+   "views": 83,
+   "sends_per_1k": 0.0,
+   "follows": -0.8,
+   "score": 40.0,
+   "follows_per_1k": -12.7,
+   "final": true
   },
   {
    "media_id": "18065791922717301",
@@ -1737,13 +1749,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -0.48,
-   "reach": 66,
+   "reach": 70,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 60.6,
-   "measured_at": "2026-11-06T08:18:54.917870+00:00"
+   "score": 57.1,
+   "measured_at": "2026-11-06T09:15:00.306255+00:00"
   },
   {
    "media_id": "18121889950948582",
@@ -1797,6 +1809,23 @@
    "news": false,
    "news_age_h": null,
    "funny": 7
+  },
+  {
+   "media_id": "18157356076484650",
+   "posted_at": "2026-11-06T09:17:14.346233+00:00",
+   "template_id": "4087833",
+   "template_name": "Waiting Skeleton",
+   "theme": "doctors, dentists and haircuts",
+   "text": "Asked for a cleaning, got a skeleton playing a tuba\u2011driven dental concerto.",
+   "format": "other",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Trance Etude 2",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -3045,22 +3074,22 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-06T08:18:54.917870+00:00",
+  "t": "2026-11-06T09:15:00.306255+00:00",
   "followers": 48391,
   "reach": {
-   "18087746591311909": 61,
    "18065791922717301": 93,
    "17898580812476739": 188,
-   "18138506686631623": 164,
+   "18138506686631623": 165,
    "17958502677266864": 57,
    "18073771739775638": 87,
-   "18126137929897988": 65,
+   "18126137929897988": 67,
    "17895490401439791": 188,
-   "17939583903401666": 123,
-   "18632145394034244": 222,
-   "18083452964349337": 66,
+   "17939583903401666": 128,
+   "18632145394034244": 223,
+   "18083452964349337": 70,
    "18121889950948582": 162,
-   "17919408198532922": 192
+   "17919408198532922": 200,
+   "18381379825215679": 13
   }
  },
  "follower_log": [

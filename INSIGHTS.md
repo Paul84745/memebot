@@ -37,9 +37,9 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - house: avg 38.2 (2 posts)
   - piano: avg 32.2 (3 posts)
 
-## Learned from this week's top meme posts (public meme communities) (79 posts from 2 pages)
-- Opening style: other opening x1.04
-- Caption length: very short caption x1.13, short caption x0.87
+## Learned from this week's top meme posts (public meme communities) (67 posts from 2 pages)
+- Opening style: other opening x1.03
+- Caption length: very short caption x1.12, short caption x0.87
 
 ## Best posting times (UTC)
 - 20:00-22:00 (score x1.95)

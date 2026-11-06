@@ -19,9 +19,9 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - (0.00/1k, 0 follows) POV: you walk into the kitchen at 3:22 am, fridge light blinds you, and the pizza is gone | POV: you hit send at 2:07 am, then see 'seen' at 2:08 and it’s already sunrise | When you promise a 5‑minute TikTok break at 8:45 pm and it's now 1 am | Me when the group chat hits 150 messages and the plan is still 'maybe Friday' | POV: you open the essay at 3 pm, close it at 3:01 pm, and stare at the blank page till midnight
   - (-0.28/1k, -0.3 follows) How I feel when the last chicken nugget appears at 2:07 am
 
-## Stories (14 measured)
+## Stories (15 measured)
 - rate: score 63.9, reach 365, follows 0 (3 stories)
-- wyr: score 55.0, reach 126, follows 0 (5 stories)
+- wyr: score 56.6, reach 125, follows 0 (6 stories)
 - caption_this: score 43.0, reach 143, follows 0 (5 stories)
 - faceoff: score 30.5, reach 197, follows 0 (1 stories)
 

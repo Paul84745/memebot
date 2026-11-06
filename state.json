@@ -14,8 +14,8 @@
    },
    {
     "t": "2026-11-06T12:25:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -1749,13 +1749,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -0.48,
-   "reach": 74,
+   "reach": 75,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 54.1,
-   "measured_at": "2026-11-06T11:26:04.658574+00:00"
+   "score": 53.3,
+   "measured_at": "2026-11-06T12:25:57.532947+00:00"
   },
   {
    "media_id": "18121889950948582",
@@ -1826,6 +1826,16 @@
    "news": false,
    "news_age_h": null,
    "funny": 8
+  },
+  {
+   "media_id": "18107957732365860",
+   "posted_at": "2026-11-06T12:27:31.888181+00:00",
+   "template_id": "249257686",
+   "template_name": "story",
+   "theme": "story",
+   "text": "I\u2019m saving water for the beetles that choreograph my shower soundtrack.",
+   "kind": "story",
+   "story_type": "rate"
   }
  ],
  "imported": [
@@ -2987,7 +2997,8 @@
   "Julie (@gaga19): \"These memes on Bluesky are hilarious \ud83d\ude02 \ud83d\udc47\ud83c\udffb\ud83e\udd2a\"",
   "WATCH: USC Fan Appears to Tear ACL Storming Field After Upset Win Over Ohio State, Video Goes Viral",
   "I Love Boosters review \u2013 supercool outlaw women go shoplifting in Boots Riley\u2019s frantic and funny caper",
-  "This $5 Chipotle meal hack is going viral. Does it actually save you money?"
+  "This $5 Chipotle meal hack is going viral. Does it actually save you money?",
+  "These bizarre insects make sounds with their genitals to escape hungry predators"
  ],
  "trends": {
   "fetched_at": "2026-11-05T17:46:03.975726+00:00",
@@ -3074,23 +3085,22 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-06T11:26:04.658574+00:00",
+  "t": "2026-11-06T12:25:57.532947+00:00",
   "followers": 48391,
   "reach": {
-   "18065791922717301": 93,
    "17898580812476739": 188,
    "18138506686631623": 165,
    "17958502677266864": 57,
    "18073771739775638": 87,
-   "18126137929897988": 67,
+   "18126137929897988": 68,
    "17895490401439791": 188,
    "17939583903401666": 131,
-   "18632145394034244": 224,
-   "18083452964349337": 74,
-   "18121889950948582": 164,
-   "17919408198532922": 214,
-   "18381379825215679": 35,
-   "18157356076484650": 146
+   "18632145394034244": 225,
+   "18083452964349337": 75,
+   "18121889950948582": 165,
+   "17919408198532922": 217,
+   "18381379825215679": 41,
+   "18157356076484650": 152
   }
  },
  "follower_log": [

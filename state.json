@@ -25,8 +25,8 @@
    },
    {
     "t": "2026-11-06T14:43:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-06T18:50:00+00:00",
@@ -1869,6 +1869,23 @@
    "news": true,
    "news_age_h": 0.27454722527777775,
    "funny": 8
+  },
+  {
+   "media_id": "18117994049121201",
+   "posted_at": "2026-11-06T14:48:15.225953+00:00",
+   "template_id": "101470",
+   "template_name": "Ancient Aliens",
+   "theme": "news",
+   "text": "It was a turkey so realistic I considered complimenting it before it became dinner.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": "funk",
+   "music_fx": "sped_up",
+   "track": "no balan\u00e7o na harmonia do funk",
+   "news": true,
+   "news_age_h": 0.3856755286111111,
+   "funny": 8
   }
  ],
  "imported": [
@@ -3032,7 +3049,8 @@
   "I Love Boosters review \u2013 supercool outlaw women go shoplifting in Boots Riley\u2019s frantic and funny caper",
   "This $5 Chipotle meal hack is going viral. Does it actually save you money?",
   "These bizarre insects make sounds with their genitals to escape hungry predators",
-  "1969: Paul McCartney Had to Prove He Was Alive After a Bizarre Beatles Rumor Swept America"
+  "1969: Paul McCartney Had to Prove He Was Alive After a Bizarre Beatles Rumor Swept America",
+  "This viral Thanksgiving turkey looks shockingly real, but it\u2019s actually cake"
  ],
  "trends": {
   "fetched_at": "2026-11-05T17:46:03.975726+00:00",
@@ -3119,22 +3137,23 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-06T13:43:22.985427+00:00",
+  "t": "2026-11-06T14:44:02.627846+00:00",
   "followers": 48390,
   "reach": {
-   "18138506686631623": 165,
+   "18138506686631623": 166,
    "17958502677266864": 57,
    "18073771739775638": 87,
-   "18126137929897988": 70,
-   "17895490401439791": 188,
+   "18126137929897988": 71,
+   "17895490401439791": 189,
    "17939583903401666": 131,
    "18632145394034244": 227,
-   "18083452964349337": 88,
-   "18121889950948582": 167,
+   "18083452964349337": 96,
+   "18121889950948582": 171,
    "17919408198532922": 219,
-   "18381379825215679": 52,
-   "18157356076484650": 166,
-   "18107957732365860": 16
+   "18381379825215679": 60,
+   "18157356076484650": 172,
+   "18107957732365860": 25,
+   "17953317792336350": 105
   }
  },
  "follower_log": [

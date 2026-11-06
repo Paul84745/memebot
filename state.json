@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-06T21:45:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-06",
@@ -1876,13 +1876,13 @@
    "kind": "story",
    "story_type": "rate",
    "follows_attr": -0.258,
-   "reach": 54,
+   "reach": 74,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-06T18:51:00.328311+00:00"
+   "measured_at": "2026-11-06T21:46:03.126938+00:00"
   },
   {
    "media_id": "17953317792336350",
@@ -1927,6 +1927,23 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || when you check your bank after a $7 avocado toast and see $1.02 left",
    "kind": "story",
    "story_type": "faceoff"
+  },
+  {
+   "media_id": "18210234556368953",
+   "posted_at": "2026-11-06T21:48:51.562997+00:00",
+   "template_id": "370867422",
+   "template_name": "Megamind peeking",
+   "theme": "gaming",
+   "text": "Solo run turned diplomatic\u2014now I'm bartering with NPCs for bonus loot.",
+   "format": "other",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": "drill",
+   "music_fx": "none",
+   "track": "To Drill The Brain",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3178,22 +3195,22 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-06T18:51:00.328311+00:00",
+  "t": "2026-11-06T21:46:03.126938+00:00",
   "followers": 48390,
   "reach": {
-   "18073771739775638": 87,
-   "18126137929897988": 77,
-   "17895490401439791": 191,
+   "18126137929897988": 79,
+   "17895490401439791": 197,
    "17939583903401666": 131,
-   "18632145394034244": 232,
+   "18632145394034244": 234,
    "18083452964349337": 118,
-   "18121889950948582": 177,
-   "17919408198532922": 229,
-   "18381379825215679": 75,
-   "18157356076484650": 191,
-   "18107957732365860": 54,
-   "17953317792336350": 178,
-   "18117994049121201": 109
+   "18121889950948582": 181,
+   "17919408198532922": 235,
+   "18381379825215679": 79,
+   "18157356076484650": 196,
+   "18107957732365860": 74,
+   "17953317792336350": 194,
+   "18117994049121201": 112,
+   "18397758112201929": 24
   }
  },
  "follower_log": [

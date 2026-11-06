@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-06T06:37:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-06T09:14:00+00:00",
@@ -1597,7 +1597,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -4.943
+   "follows_attr": -4.98
   },
   {
    "media_id": "18138506686631623",
@@ -1615,7 +1615,7 @@
    "news": true,
    "news_age_h": 0.5816261027777778,
    "funny": 7,
-   "follows_attr": -1.534
+   "follows_attr": -1.571
   },
   {
    "media_id": "17958502677266864",
@@ -1633,7 +1633,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.515
+   "follows_attr": -0.533
   },
   {
    "media_id": "18073771739775638",
@@ -1670,7 +1670,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.227
+   "follows_attr": -0.282
   },
   {
    "media_id": "17895490401439791",
@@ -1688,7 +1688,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.236
+   "follows_attr": -0.328
   },
   {
    "media_id": "17939583903401666",
@@ -1699,14 +1699,15 @@
    "text": "pick one | A: text your ex at 2am, they ghost you instantly | B: reply all in group chat, expose your secret crush",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.543,
-   "reach": 89,
+   "follows_attr": -1.167,
+   "reach": 123,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 1,
-   "score": 67.4,
-   "measured_at": "2026-11-06T03:27:17.299076+00:00"
+   "profile_visits": 2,
+   "score": 65.0,
+   "measured_at": "2026-11-06T08:18:54.917870+00:00",
+   "final": true
   },
   {
    "media_id": "18632145394034244",
@@ -1724,7 +1725,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.677
+   "follows_attr": -1.86
   },
   {
    "media_id": "18083452964349337",
@@ -1735,14 +1736,14 @@
    "text": "would you rather | A: miss payday, eat ramen forever | B: lose phone, can't ghost anyone",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.04,
-   "reach": 42,
+   "follows_attr": -0.48,
+   "reach": 66,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 95.2,
-   "measured_at": "2026-11-06T03:27:17.299076+00:00"
+   "score": 60.6,
+   "measured_at": "2026-11-06T08:18:54.917870+00:00"
   },
   {
    "media_id": "18121889950948582",
@@ -1760,7 +1761,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.884
+   "follows_attr": -1.031
   },
   {
    "media_id": "17919408198532922",
@@ -1778,7 +1779,24 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.94
+   "follows_attr": -1.307
+  },
+  {
+   "media_id": "18381379825215679",
+   "posted_at": "2026-11-06T08:20:47.624044+00:00",
+   "template_id": "3218037",
+   "template_name": "This Is Where I'd Put My Trophy If I Had One",
+   "theme": "drinking, hangovers and nights out",
+   "text": "Third shot unlocks memory: dignity is still on the couch, snoring.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "playfulness",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3027,22 +3045,22 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-06T03:27:17.299076+00:00",
-  "followers": 48393,
+  "t": "2026-11-06T08:18:54.917870+00:00",
+  "followers": 48391,
   "reach": {
    "18087746591311909": 61,
    "18065791922717301": 93,
-   "17898580812476739": 186,
-   "18138506686631623": 162,
-   "17958502677266864": 56,
+   "17898580812476739": 188,
+   "18138506686631623": 164,
+   "17958502677266864": 57,
    "18073771739775638": 87,
-   "18126137929897988": 62,
-   "17895490401439791": 183,
-   "17939583903401666": 89,
-   "18632145394034244": 212,
-   "18083452964349337": 42,
-   "18121889950948582": 154,
-   "17919408198532922": 172
+   "18126137929897988": 65,
+   "17895490401439791": 188,
+   "17939583903401666": 123,
+   "18632145394034244": 222,
+   "18083452964349337": 66,
+   "18121889950948582": 162,
+   "17919408198532922": 192
   }
  },
  "follower_log": [

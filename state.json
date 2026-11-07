@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-07T06:17:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-07T11:21:00+00:00",
@@ -1736,7 +1736,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.357
+   "follows_attr": -0.405
   },
   {
    "media_id": "17939583903401666",
@@ -1773,7 +1773,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.937
+   "follows_attr": -1.985
   },
   {
    "media_id": "18083452964349337",
@@ -1810,7 +1810,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.141
+   "follows_attr": -1.157
   },
   {
    "media_id": "17919408198532922",
@@ -1828,7 +1828,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.447
+   "follows_attr": -1.463
   },
   {
    "media_id": "18381379825215679",
@@ -1846,7 +1846,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.252
+   "follows_attr": -0.284
   },
   {
    "media_id": "18157356076484650",
@@ -1864,7 +1864,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.314
+   "follows_attr": -0.346
   },
   {
    "media_id": "18107957732365860",
@@ -1875,14 +1875,15 @@
    "text": "I\u2019m saving water for the beetles that choreograph my shower soundtrack.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -1.143,
-   "reach": 132,
+   "follows_attr": -1.949,
+   "reach": 182,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 1,
-   "score": 45.5,
-   "measured_at": "2026-11-07T03:10:03.369783+00:00"
+   "profile_visits": 2,
+   "score": 44.0,
+   "measured_at": "2026-11-07T08:19:15.252881+00:00",
+   "final": true
   },
   {
    "media_id": "17953317792336350",
@@ -1900,7 +1901,7 @@
    "news": true,
    "news_age_h": 0.27454722527777775,
    "funny": 8,
-   "follows_attr": -0.241
+   "follows_attr": -0.37
   },
   {
    "media_id": "18117994049121201",
@@ -1918,7 +1919,7 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.137
+   "follows_attr": -0.218
   },
   {
    "media_id": "18397758112201929",
@@ -1929,14 +1930,14 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || when you check your bank after a $7 avocado toast and see $1.02 left",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.703,
-   "reach": 70,
+   "follows_attr": -1.332,
+   "reach": 109,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 57.1,
-   "measured_at": "2026-11-07T03:10:03.369783+00:00"
+   "profile_visits": 1,
+   "score": 55.0,
+   "measured_at": "2026-11-07T08:19:15.252881+00:00"
   },
   {
    "media_id": "18210234556368953",
@@ -1954,7 +1955,24 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.549
+   "follows_attr": -0.71
+  },
+  {
+   "media_id": "18104790881156165",
+   "posted_at": "2026-11-07T08:21:55.466338+00:00",
+   "template_id": "137501417",
+   "template_name": "Friendship ended",
+   "theme": "news",
+   "text": "when Link starts complaining about loading screens",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": "funk",
+   "music_fx": "sped_up",
+   "track": "Bring back the funk",
+   "news": true,
+   "news_age_h": 1.8397554275,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3119,7 +3137,8 @@
   "This $5 Chipotle meal hack is going viral. Does it actually save you money?",
   "These bizarre insects make sounds with their genitals to escape hungry predators",
   "1969: Paul McCartney Had to Prove He Was Alive After a Bizarre Beatles Rumor Swept America",
-  "This viral Thanksgiving turkey looks shockingly real, but it\u2019s actually cake"
+  "This viral Thanksgiving turkey looks shockingly real, but it\u2019s actually cake",
+  "Ocarina of Time Switch 2 Remake: 6 Changes [2026] - https://tech-insider.org/"
  ],
  "trends": {
   "fetched_at": "2026-11-05T17:46:03.975726+00:00",
@@ -3206,23 +3225,23 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-07T03:10:03.369783+00:00",
-  "followers": 48387,
+  "t": "2026-11-07T08:19:15.252881+00:00",
+  "followers": 48385,
   "reach": {
    "18126137929897988": 83,
-   "17895490401439791": 199,
+   "17895490401439791": 202,
    "17939583903401666": 131,
-   "18632145394034244": 237,
+   "18632145394034244": 240,
    "18083452964349337": 118,
-   "18121889950948582": 186,
-   "17919408198532922": 242,
-   "18381379825215679": 84,
-   "18157356076484650": 202,
-   "18107957732365860": 132,
-   "17953317792336350": 210,
-   "18117994049121201": 121,
-   "18397758112201929": 70,
-   "18210234556368953": 38
+   "18121889950948582": 187,
+   "17919408198532922": 243,
+   "18381379825215679": 86,
+   "18157356076484650": 204,
+   "18107957732365860": 182,
+   "17953317792336350": 218,
+   "18117994049121201": 126,
+   "18397758112201929": 109,
+   "18210234556368953": 48
   }
  },
  "follower_log": [

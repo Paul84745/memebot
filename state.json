@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-07T11:21:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -1718,7 +1718,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.375
+   "follows_attr": -0.375,
+   "follows_src": "estimated",
+   "like_count": 2,
+   "comments_count": 0,
+   "reach": 85,
+   "shares": 0,
+   "saved": 0,
+   "views": 119,
+   "sends_per_1k": 0.0,
+   "follows": -0.4,
+   "score": 20.0,
+   "follows_per_1k": -4.71,
+   "final": true
   },
   {
    "media_id": "17895490401439791",
@@ -1736,7 +1748,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.405
+   "follows_attr": -0.405,
+   "follows_src": "estimated",
+   "like_count": 3,
+   "comments_count": 0,
+   "reach": 202,
+   "shares": 0,
+   "saved": 0,
+   "views": 283,
+   "sends_per_1k": 0.0,
+   "follows": -0.4,
+   "score": 14.9,
+   "follows_per_1k": -1.98,
+   "final": true
   },
   {
    "media_id": "17939583903401666",
@@ -1810,7 +1834,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.157
+   "follows_attr": -1.166
   },
   {
    "media_id": "17919408198532922",
@@ -1828,7 +1852,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.463
+   "follows_attr": -1.485
   },
   {
    "media_id": "18381379825215679",
@@ -1846,7 +1870,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.284
+   "follows_attr": -0.288
   },
   {
    "media_id": "18157356076484650",
@@ -1864,7 +1888,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.346
+   "follows_attr": -0.355
   },
   {
    "media_id": "18107957732365860",
@@ -1875,7 +1899,7 @@
    "text": "I\u2019m saving water for the beetles that choreograph my shower soundtrack.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -1.949,
+   "follows_attr": -2.121,
    "reach": 182,
    "shares": 0,
    "replies": 1,
@@ -1919,7 +1943,7 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.218
+   "follows_attr": -0.227
   },
   {
    "media_id": "18397758112201929",
@@ -1930,14 +1954,14 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || when you check your bank after a $7 avocado toast and see $1.02 left",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -1.332,
-   "reach": 109,
+   "follows_attr": -1.464,
+   "reach": 139,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 1,
-   "score": 55.0,
-   "measured_at": "2026-11-07T08:19:15.252881+00:00"
+   "profile_visits": 2,
+   "score": 57.6,
+   "measured_at": "2026-11-07T11:21:58.652381+00:00"
   },
   {
    "media_id": "18210234556368953",
@@ -1955,7 +1979,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.71
+   "follows_attr": -0.728
   },
   {
    "media_id": "18104790881156165",
@@ -1972,7 +1996,18 @@
    "track": "Bring back the funk",
    "news": true,
    "news_age_h": 1.8397554275,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.626
+  },
+  {
+   "media_id": "17910654852325745",
+   "posted_at": "2026-11-07T11:22:22.714598+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "pick one: gym selfie or sweaty gym shoes | A: post flex, get meme'd as broccoli arms | B: wear stinky shoes, coworkers whisper 'biohazard'",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [
@@ -3225,23 +3260,22 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-07T08:19:15.252881+00:00",
-  "followers": 48385,
+  "t": "2026-11-07T11:21:58.652381+00:00",
+  "followers": 48384,
   "reach": {
-   "18126137929897988": 83,
-   "17895490401439791": 202,
    "17939583903401666": 131,
    "18632145394034244": 240,
    "18083452964349337": 118,
-   "18121889950948582": 187,
-   "17919408198532922": 243,
-   "18381379825215679": 86,
-   "18157356076484650": 204,
-   "18107957732365860": 182,
+   "18121889950948582": 189,
+   "17919408198532922": 248,
+   "18381379825215679": 87,
+   "18157356076484650": 206,
+   "18107957732365860": 221,
    "17953317792336350": 218,
-   "18117994049121201": 126,
-   "18397758112201929": 109,
-   "18210234556368953": 48
+   "18117994049121201": 128,
+   "18397758112201929": 139,
+   "18210234556368953": 52,
+   "18104790881156165": 142
   }
  },
  "follower_log": [

@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-11-07T21:46:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-07T23:13:00+00:00",
@@ -1846,7 +1846,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.333
+   "follows_attr": -1.333,
+   "follows_src": "estimated",
+   "like_count": 3,
+   "comments_count": 0,
+   "reach": 195,
+   "shares": 0,
+   "saved": 0,
+   "views": 279,
+   "sends_per_1k": 0.0,
+   "follows": -1.3,
+   "score": 15.4,
+   "follows_per_1k": -6.67,
+   "final": true
   },
   {
    "media_id": "17919408198532922",
@@ -1864,7 +1876,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.971
+   "follows_attr": -2.145
   },
   {
    "media_id": "18381379825215679",
@@ -1900,7 +1912,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.555
+   "follows_attr": -0.598
   },
   {
    "media_id": "18107957732365860",
@@ -1937,7 +1949,7 @@
    "news": true,
    "news_age_h": 0.27454722527777775,
    "funny": 8,
-   "follows_attr": -0.589
+   "follows_attr": -0.632
   },
   {
    "media_id": "18117994049121201",
@@ -1955,7 +1967,7 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.473
+   "follows_attr": -0.603
   },
   {
    "media_id": "18397758112201929",
@@ -1992,7 +2004,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.278
+   "follows_attr": -1.408
   },
   {
    "media_id": "18104790881156165",
@@ -2010,7 +2022,7 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -0.941
+   "follows_attr": -0.984
   },
   {
    "media_id": "17910654852325745",
@@ -2021,14 +2033,14 @@
    "text": "pick one: gym selfie or sweaty gym shoes | A: post flex, get meme'd as broccoli arms | B: wear stinky shoes, coworkers whisper 'biohazard'",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -2.552,
-   "reach": 123,
+   "follows_attr": -3.204,
+   "reach": 138,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 81.3,
-   "measured_at": "2026-11-07T20:18:37.626911+00:00"
+   "score": 72.5,
+   "measured_at": "2026-11-07T21:47:01.340953+00:00"
   },
   {
    "media_id": "18115849366842694",
@@ -2046,7 +2058,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.336
+   "follows_attr": -2.51
   },
   {
    "media_id": "18117380444624129",
@@ -2064,7 +2076,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.277
+   "follows_attr": -1.364
   },
   {
    "media_id": "18130373260867455",
@@ -2074,7 +2086,25 @@
    "theme": "story",
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || Ask for loyalty card, get a lecture on free will.",
    "kind": "story",
-   "story_type": "faceoff"
+   "story_type": "faceoff",
+   "follows_attr": -0.522
+  },
+  {
+   "media_id": "18118990166327968",
+   "posted_at": "2026-11-07T21:50:46.138881+00:00",
+   "template_id": "177682295",
+   "template_name": "You Guys are Getting Paid",
+   "theme": "being the third wheel",
+   "text": "Boss coffee machine: 'Congrats, you got paid.' Then spits out actual espresso.",
+   "format": "other",
+   "kind": "reel",
+   "music": "upbeat",
+   "music_style": "electronic",
+   "music_fx": "sped_up",
+   "track": "Electron Libre (Feat.Decko M16)",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3327,22 +3357,22 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-07T20:18:37.626911+00:00",
-  "followers": 48375,
+  "t": "2026-11-07T21:47:01.340953+00:00",
+  "followers": 48373,
   "reach": {
-   "18121889950948582": 193,
-   "17919408198532922": 263,
+   "17919408198532922": 267,
    "18381379825215679": 92,
-   "18157356076484650": 220,
+   "18157356076484650": 221,
    "18107957732365860": 221,
-   "17953317792336350": 237,
-   "18117994049121201": 144,
+   "17953317792336350": 238,
+   "18117994049121201": 147,
    "18397758112201929": 209,
-   "18210234556368953": 83,
-   "18104790881156165": 159,
-   "17910654852325745": 123,
-   "18115849366842694": 175,
-   "18117380444624129": 119
+   "18210234556368953": 86,
+   "18104790881156165": 160,
+   "17910654852325745": 138,
+   "18115849366842694": 179,
+   "18117380444624129": 121,
+   "18130373260867455": 12
   }
  },
  "follower_log": [

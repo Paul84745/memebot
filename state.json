@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-07T23:13:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-07",
@@ -1876,7 +1876,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.145
+   "follows_attr": -2.145,
+   "follows_src": "estimated",
+   "like_count": 11,
+   "comments_count": 0,
+   "reach": 267,
+   "shares": 0,
+   "saved": 0,
+   "views": 381,
+   "sends_per_1k": 0.0,
+   "follows": -2.1,
+   "score": 41.2,
+   "follows_per_1k": -7.87,
+   "final": true
   },
   {
    "media_id": "18381379825215679",
@@ -2034,13 +2046,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -3.204,
-   "reach": 138,
+   "reach": 150,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 72.5,
-   "measured_at": "2026-11-07T21:47:01.340953+00:00"
+   "score": 66.7,
+   "measured_at": "2026-11-07T23:14:02.474119+00:00"
   },
   {
    "media_id": "18115849366842694",
@@ -2102,6 +2114,23 @@
    "music_style": "electronic",
    "music_fx": "sped_up",
    "track": "Electron Libre (Feat.Decko M16)",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "18161544853503121",
+   "posted_at": "2026-11-07T23:16:04.949329+00:00",
+   "template_id": "163573",
+   "template_name": "Imagination Spongebob",
+   "theme": "weekends and Mondays",
+   "text": "when your savings are a meme and also your funeral",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Desert queen",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -3357,22 +3386,22 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-07T21:47:01.340953+00:00",
+  "t": "2026-11-07T23:14:02.474119+00:00",
   "followers": 48373,
   "reach": {
-   "17919408198532922": 267,
-   "18381379825215679": 92,
-   "18157356076484650": 221,
+   "18381379825215679": 93,
+   "18157356076484650": 223,
    "18107957732365860": 221,
-   "17953317792336350": 238,
-   "18117994049121201": 147,
+   "17953317792336350": 240,
+   "18117994049121201": 149,
    "18397758112201929": 209,
-   "18210234556368953": 86,
-   "18104790881156165": 160,
-   "17910654852325745": 138,
-   "18115849366842694": 179,
-   "18117380444624129": 121,
-   "18130373260867455": 12
+   "18210234556368953": 90,
+   "18104790881156165": 164,
+   "17910654852325745": 150,
+   "18115849366842694": 184,
+   "18117380444624129": 122,
+   "18130373260867455": 33,
+   "18118990166327968": 161
   }
  },
  "follower_log": [

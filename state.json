@@ -15,8 +15,8 @@
    },
    {
     "t": "2026-11-07T13:22:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-07T14:29:00+00:00",
@@ -1797,7 +1797,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.985
+   "follows_attr": -1.985,
+   "follows_src": "estimated",
+   "like_count": 11,
+   "comments_count": 0,
+   "reach": 240,
+   "shares": 2,
+   "saved": 0,
+   "views": 299,
+   "sends_per_1k": 8.33,
+   "follows": -2.0,
+   "score": 112.5,
+   "follows_per_1k": -8.33,
+   "final": true
   },
   {
    "media_id": "18083452964349337",
@@ -1955,13 +1967,14 @@
    "kind": "story",
    "story_type": "faceoff",
    "follows_attr": -1.464,
-   "reach": 139,
+   "reach": 158,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 2,
-   "score": 57.6,
-   "measured_at": "2026-11-07T11:21:58.652381+00:00"
+   "score": 50.6,
+   "measured_at": "2026-11-07T13:23:05.270513+00:00",
+   "final": true
   },
   {
    "media_id": "18210234556368953",
@@ -2008,6 +2021,23 @@
    "text": "pick one: gym selfie or sweaty gym shoes | A: post flex, get meme'd as broccoli arms | B: wear stinky shoes, coworkers whisper 'biohazard'",
    "kind": "story",
    "story_type": "wyr"
+  },
+  {
+   "media_id": "18115849366842694",
+   "posted_at": "2026-11-07T13:25:36.788563+00:00",
+   "template_id": "221578498",
+   "template_name": "Grant Gustin over grave",
+   "theme": "drinking, hangovers and nights out",
+   "text": "me trying to remember where i left my dignity after last night",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "piano",
+   "music_fx": "slowed_reverb",
+   "track": "Emotional - Piano Instrumental",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3260,22 +3290,21 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-07T11:21:58.652381+00:00",
+  "t": "2026-11-07T13:23:05.270513+00:00",
   "followers": 48384,
   "reach": {
-   "17939583903401666": 131,
-   "18632145394034244": 240,
    "18083452964349337": 118,
    "18121889950948582": 189,
-   "17919408198532922": 248,
-   "18381379825215679": 87,
-   "18157356076484650": 206,
+   "17919408198532922": 249,
+   "18381379825215679": 88,
+   "18157356076484650": 209,
    "18107957732365860": 221,
-   "17953317792336350": 218,
-   "18117994049121201": 128,
-   "18397758112201929": 139,
-   "18210234556368953": 52,
-   "18104790881156165": 142
+   "17953317792336350": 224,
+   "18117994049121201": 135,
+   "18397758112201929": 158,
+   "18210234556368953": 59,
+   "18104790881156165": 146,
+   "17910654852325745": 20
   }
  },
  "follower_log": [

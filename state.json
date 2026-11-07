@@ -1864,7 +1864,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.495
+   "follows_attr": -1.513
   },
   {
    "media_id": "18381379825215679",
@@ -1900,7 +1900,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.385
+   "follows_attr": -0.43
   },
   {
    "media_id": "18107957732365860",
@@ -1937,7 +1937,7 @@
    "news": true,
    "news_age_h": 0.27454722527777775,
    "funny": 8,
-   "follows_attr": -0.4
+   "follows_attr": -0.464
   },
   {
    "media_id": "18117994049121201",
@@ -1955,7 +1955,7 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.247
+   "follows_attr": -0.265
   },
   {
    "media_id": "18397758112201929",
@@ -1966,7 +1966,7 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || when you check your bank after a $7 avocado toast and see $1.02 left",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -1.704,
+   "follows_attr": -1.949,
    "reach": 158,
    "shares": 0,
    "replies": 1,
@@ -1992,7 +1992,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.788
+   "follows_attr": -0.861
   },
   {
    "media_id": "18104790881156165",
@@ -2010,7 +2010,7 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -0.646
+   "follows_attr": -0.691
   },
   {
    "media_id": "17910654852325745",
@@ -2021,14 +2021,14 @@
    "text": "pick one: gym selfie or sweaty gym shoes | A: post flex, get meme'd as broccoli arms | B: wear stinky shoes, coworkers whisper 'biohazard'",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.21,
-   "reach": 41,
+   "follows_attr": -0.51,
+   "reach": 74,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 2,
-   "score": 195.1,
-   "measured_at": "2026-11-07T14:29:59.479441+00:00"
+   "profile_visits": 3,
+   "score": 135.1,
+   "measured_at": "2026-11-07T16:29:00.900241+00:00"
   },
   {
    "media_id": "18115849366842694",
@@ -2046,7 +2046,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.38
+   "follows_attr": -1.544
   },
   {
    "media_id": "18117380444624129",
@@ -2063,7 +2063,8 @@
    "track": "1",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -1.027
   }
  ],
  "imported": [
@@ -3316,22 +3317,23 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-07T14:29:59.479441+00:00",
-  "followers": 48382,
+  "t": "2026-11-07T16:29:00.900241+00:00",
+  "followers": 48380,
   "reach": {
    "18083452964349337": 118,
    "18121889950948582": 189,
-   "17919408198532922": 250,
+   "17919408198532922": 252,
    "18381379825215679": 88,
-   "18157356076484650": 212,
+   "18157356076484650": 217,
    "18107957732365860": 221,
-   "17953317792336350": 227,
-   "18117994049121201": 137,
-   "18397758112201929": 182,
-   "18210234556368953": 65,
-   "18104790881156165": 148,
-   "17910654852325745": 41,
-   "18115849366842694": 138
+   "17953317792336350": 234,
+   "18117994049121201": 139,
+   "18397758112201929": 209,
+   "18210234556368953": 73,
+   "18104790881156165": 153,
+   "17910654852325745": 74,
+   "18115849366842694": 156,
+   "18117380444624129": 113
   }
  },
  "follower_log": [

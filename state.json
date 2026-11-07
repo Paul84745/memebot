@@ -1906,7 +1906,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.455
+   "follows_attr": -0.464
   },
   {
    "media_id": "18157356076484650",
@@ -1924,7 +1924,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.598
+   "follows_attr": -0.607
   },
   {
    "media_id": "18107957732365860",
@@ -1979,7 +1979,7 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.603
+   "follows_attr": -0.612
   },
   {
    "media_id": "18397758112201929",
@@ -2016,7 +2016,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.408
+   "follows_attr": -1.443
   },
   {
    "media_id": "18104790881156165",
@@ -2034,7 +2034,7 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -0.984
+   "follows_attr": -0.993
   },
   {
    "media_id": "17910654852325745",
@@ -2045,14 +2045,14 @@
    "text": "pick one: gym selfie or sweaty gym shoes | A: post flex, get meme'd as broccoli arms | B: wear stinky shoes, coworkers whisper 'biohazard'",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -3.204,
-   "reach": 150,
+   "follows_attr": -3.248,
+   "reach": 155,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 66.7,
-   "measured_at": "2026-11-07T23:14:02.474119+00:00"
+   "score": 64.5,
+   "measured_at": "2026-11-07T23:55:08.132569+00:00"
   },
   {
    "media_id": "18115849366842694",
@@ -2070,7 +2070,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.51
+   "follows_attr": -2.528
   },
   {
    "media_id": "18117380444624129",
@@ -2099,7 +2099,14 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || Ask for loyalty card, get a lecture on free will.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.522
+   "follows_attr": -0.575,
+   "reach": 39,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-07T23:55:08.132569+00:00"
   },
   {
    "media_id": "18118990166327968",
@@ -2116,7 +2123,8 @@
    "track": "Electron Libre (Feat.Decko M16)",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.062
   },
   {
    "media_id": "18161544853503121",
@@ -2133,7 +2141,8 @@
    "track": "Desert queen",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.752
   }
  ],
  "imported": [
@@ -3386,22 +3395,23 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-07T23:14:02.474119+00:00",
-  "followers": 48373,
+  "t": "2026-11-07T23:55:08.132569+00:00",
+  "followers": 48372,
   "reach": {
-   "18381379825215679": 93,
-   "18157356076484650": 223,
+   "18381379825215679": 94,
+   "18157356076484650": 224,
    "18107957732365860": 221,
    "17953317792336350": 240,
-   "18117994049121201": 149,
+   "18117994049121201": 150,
    "18397758112201929": 209,
-   "18210234556368953": 90,
-   "18104790881156165": 164,
-   "17910654852325745": 150,
-   "18115849366842694": 184,
+   "18210234556368953": 94,
+   "18104790881156165": 165,
+   "17910654852325745": 155,
+   "18115849366842694": 186,
    "18117380444624129": 122,
-   "18130373260867455": 33,
-   "18118990166327968": 161
+   "18130373260867455": 39,
+   "18118990166327968": 168,
+   "18161544853503121": 85
   }
  },
  "follower_log": [

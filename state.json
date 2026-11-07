@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "slots": [
    {
-    "t": "2026-11-06T06:37:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-07T06:17:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-06T09:14:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-06T12:25:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-07T11:21:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-06T13:40:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-07T13:22:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-06T14:43:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-07T14:29:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-06T18:50:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-07T19:54:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-06T21:45:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-07T21:46:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-07T23:13:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-06",
-  "stories_date": "2026-11-06"
+  "dump_checked": "2026-11-07",
+  "stories_date": "2026-11-07"
  },
  "history": [
   {
@@ -1718,7 +1718,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.327
+   "follows_attr": -0.375
   },
   {
    "media_id": "17895490401439791",
@@ -1736,7 +1736,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.341
+   "follows_attr": -0.357
   },
   {
    "media_id": "17939583903401666",
@@ -1773,7 +1773,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.905
+   "follows_attr": -1.937
   },
   {
    "media_id": "18083452964349337",
@@ -1810,7 +1810,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.076
+   "follows_attr": -1.141
   },
   {
    "media_id": "17919408198532922",
@@ -1828,7 +1828,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.366
+   "follows_attr": -1.447
   },
   {
    "media_id": "18381379825215679",
@@ -1846,7 +1846,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.204
+   "follows_attr": -0.252
   },
   {
    "media_id": "18157356076484650",
@@ -1864,7 +1864,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.266
+   "follows_attr": -0.314
   },
   {
    "media_id": "18107957732365860",
@@ -1875,14 +1875,14 @@
    "text": "I\u2019m saving water for the beetles that choreograph my shower soundtrack.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.498,
-   "reach": 92,
+   "follows_attr": -1.143,
+   "reach": 132,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-06T23:29:12.193542+00:00"
+   "profile_visits": 1,
+   "score": 45.5,
+   "measured_at": "2026-11-07T03:10:03.369783+00:00"
   },
   {
    "media_id": "17953317792336350",
@@ -1900,7 +1900,7 @@
    "news": true,
    "news_age_h": 0.27454722527777775,
    "funny": 8,
-   "follows_attr": -0.08
+   "follows_attr": -0.241
   },
   {
    "media_id": "18117994049121201",
@@ -1918,7 +1918,7 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.04
+   "follows_attr": -0.137
   },
   {
    "media_id": "18397758112201929",
@@ -1929,14 +1929,14 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || when you check your bank after a $7 avocado toast and see $1.02 left",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.187,
-   "reach": 38,
+   "follows_attr": -0.703,
+   "reach": 70,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-06T23:29:12.193542+00:00"
+   "score": 57.1,
+   "measured_at": "2026-11-07T03:10:03.369783+00:00"
   },
   {
    "media_id": "18210234556368953",
@@ -1954,7 +1954,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.307
+   "follows_attr": -0.549
   }
  ],
  "imported": [
@@ -3206,23 +3206,23 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-06T23:29:12.193542+00:00",
-  "followers": 48389,
+  "t": "2026-11-07T03:10:03.369783+00:00",
+  "followers": 48387,
   "reach": {
-   "18126137929897988": 80,
-   "17895490401439791": 198,
+   "18126137929897988": 83,
+   "17895490401439791": 199,
    "17939583903401666": 131,
-   "18632145394034244": 235,
+   "18632145394034244": 237,
    "18083452964349337": 118,
-   "18121889950948582": 182,
-   "17919408198532922": 237,
-   "18381379825215679": 81,
-   "18157356076484650": 199,
-   "18107957732365860": 92,
-   "17953317792336350": 200,
-   "18117994049121201": 115,
-   "18397758112201929": 38,
-   "18210234556368953": 23
+   "18121889950948582": 186,
+   "17919408198532922": 242,
+   "18381379825215679": 84,
+   "18157356076484650": 202,
+   "18107957732365860": 132,
+   "17953317792336350": 210,
+   "18117994049121201": 121,
+   "18397758112201929": 70,
+   "18210234556368953": 38
   }
  },
  "follower_log": [
@@ -3269,6 +3269,10 @@
   [
    "2026-11-06T03:27:17.299076+00:00",
    48393
+  ],
+  [
+   "2026-11-07T03:10:03.369783+00:00",
+   48387
   ]
  ]
 }

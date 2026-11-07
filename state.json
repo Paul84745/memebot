@@ -25,8 +25,8 @@
    },
    {
     "t": "2026-11-07T19:54:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -1846,7 +1846,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.166
+   "follows_attr": -1.333
   },
   {
    "media_id": "17919408198532922",
@@ -1864,7 +1864,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.513
+   "follows_attr": -1.971
   },
   {
    "media_id": "18381379825215679",
@@ -1882,7 +1882,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.288
+   "follows_attr": -0.455
   },
   {
    "media_id": "18157356076484650",
@@ -1900,7 +1900,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.43
+   "follows_attr": -0.555
   },
   {
    "media_id": "18107957732365860",
@@ -1937,7 +1937,7 @@
    "news": true,
    "news_age_h": 0.27454722527777775,
    "funny": 8,
-   "follows_attr": -0.464
+   "follows_attr": -0.589
   },
   {
    "media_id": "18117994049121201",
@@ -1955,7 +1955,7 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.265
+   "follows_attr": -0.473
   },
   {
    "media_id": "18397758112201929",
@@ -1992,7 +1992,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.861
+   "follows_attr": -1.278
   },
   {
    "media_id": "18104790881156165",
@@ -2010,7 +2010,7 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -0.691
+   "follows_attr": -0.941
   },
   {
    "media_id": "17910654852325745",
@@ -2021,14 +2021,14 @@
    "text": "pick one: gym selfie or sweaty gym shoes | A: post flex, get meme'd as broccoli arms | B: wear stinky shoes, coworkers whisper 'biohazard'",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.51,
-   "reach": 74,
+   "follows_attr": -2.552,
+   "reach": 123,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 135.1,
-   "measured_at": "2026-11-07T16:29:00.900241+00:00"
+   "score": 81.3,
+   "measured_at": "2026-11-07T20:18:37.626911+00:00"
   },
   {
    "media_id": "18115849366842694",
@@ -2046,7 +2046,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.544
+   "follows_attr": -2.336
   },
   {
    "media_id": "18117380444624129",
@@ -2064,7 +2064,17 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.027
+   "follows_attr": -1.277
+  },
+  {
+   "media_id": "18130373260867455",
+   "posted_at": "2026-11-07T20:18:53.074244+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || Ask for loyalty card, get a lecture on free will.",
+   "kind": "story",
+   "story_type": "faceoff"
   }
  ],
  "imported": [
@@ -3317,23 +3327,22 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-07T16:29:00.900241+00:00",
-  "followers": 48380,
+  "t": "2026-11-07T20:18:37.626911+00:00",
+  "followers": 48375,
   "reach": {
-   "18083452964349337": 118,
-   "18121889950948582": 189,
-   "17919408198532922": 252,
-   "18381379825215679": 88,
-   "18157356076484650": 217,
+   "18121889950948582": 193,
+   "17919408198532922": 263,
+   "18381379825215679": 92,
+   "18157356076484650": 220,
    "18107957732365860": 221,
-   "17953317792336350": 234,
-   "18117994049121201": 139,
+   "17953317792336350": 237,
+   "18117994049121201": 144,
    "18397758112201929": 209,
-   "18210234556368953": 73,
-   "18104790881156165": 153,
-   "17910654852325745": 74,
-   "18115849366842694": 156,
-   "18117380444624129": 113
+   "18210234556368953": 83,
+   "18104790881156165": 159,
+   "17910654852325745": 123,
+   "18115849366842694": 175,
+   "18117380444624129": 119
   }
  },
  "follower_log": [

@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-08T12:50:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-08T13:36:00+00:00",
@@ -2126,13 +2126,13 @@
    "kind": "story",
    "story_type": "faceoff",
    "follows_attr": -2.756,
-   "reach": 115,
+   "reach": 120,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 52.2,
-   "measured_at": "2026-11-08T12:22:09.204421+00:00"
+   "score": 50.0,
+   "measured_at": "2026-11-08T12:51:02.041220+00:00"
   },
   {
    "media_id": "18118990166327968",
@@ -2183,6 +2183,23 @@
    "music_style": null,
    "music_fx": "none",
    "track": "50",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "17905158657368692",
+   "posted_at": "2026-11-08T12:53:10.021829+00:00",
+   "template_id": "124055727",
+   "template_name": "Y'all Got Any More Of That",
+   "theme": "phone battery and screen time",
+   "text": "i honestly love watching my phone die more than any Netflix series",
+   "format": "other",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Love Too Serious",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -3438,21 +3455,21 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-08T12:22:09.204421+00:00",
+  "t": "2026-11-08T12:51:02.041220+00:00",
   "followers": 48365,
   "reach": {
-   "18107957732365860": 221,
    "17953317792336350": 243,
    "18117994049121201": 157,
    "18397758112201929": 209,
-   "18210234556368953": 100,
+   "18210234556368953": 102,
    "18104790881156165": 175,
    "17910654852325745": 220,
    "18115849366842694": 210,
    "18117380444624129": 126,
-   "18130373260867455": 115,
-   "18118990166327968": 196,
-   "18161544853503121": 161
+   "18130373260867455": 120,
+   "18118990166327968": 198,
+   "18161544853503121": 164,
+   "18118836305121726": 6
   }
  },
  "follower_log": [

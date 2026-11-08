@@ -1986,7 +1986,19 @@
    "news": true,
    "news_age_h": 0.27454722527777775,
    "funny": 8,
-   "follows_attr": -0.666
+   "follows_attr": -0.666,
+   "follows_src": "estimated",
+   "like_count": 10,
+   "comments_count": 0,
+   "reach": 245,
+   "shares": 0,
+   "saved": 0,
+   "views": 353,
+   "sends_per_1k": 0.0,
+   "follows": -0.7,
+   "score": 40.8,
+   "follows_per_1k": -2.86,
+   "final": true
   },
   {
    "media_id": "18117994049121201",
@@ -2004,7 +2016,19 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.825
+   "follows_attr": -0.825,
+   "follows_src": "estimated",
+   "like_count": 4,
+   "comments_count": 0,
+   "reach": 160,
+   "shares": 0,
+   "saved": 0,
+   "views": 229,
+   "sends_per_1k": 0.0,
+   "follows": -0.8,
+   "score": 25.0,
+   "follows_per_1k": -5.0,
+   "final": true
   },
   {
    "media_id": "18397758112201929",
@@ -2041,7 +2065,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.589
+   "follows_attr": -1.621
   },
   {
    "media_id": "18104790881156165",
@@ -2059,7 +2083,7 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -1.323
+   "follows_attr": -1.388
   },
   {
    "media_id": "17910654852325745",
@@ -2096,7 +2120,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.175
+   "follows_attr": -3.272
   },
   {
    "media_id": "18117380444624129",
@@ -2114,7 +2138,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.364
+   "follows_attr": -1.396
   },
   {
    "media_id": "18130373260867455",
@@ -2125,14 +2149,15 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || Ask for loyalty card, get a lecture on free will.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -2.756,
-   "reach": 125,
+   "follows_attr": -3.756,
+   "reach": 156,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 48.0,
-   "measured_at": "2026-11-08T13:37:02.144500+00:00"
+   "score": 38.5,
+   "measured_at": "2026-11-08T16:51:30.824828+00:00",
+   "final": true
   },
   {
    "media_id": "18118990166327968",
@@ -2150,7 +2175,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.911
+   "follows_attr": -1.201
   },
   {
    "media_id": "18161544853503121",
@@ -2168,7 +2193,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.296
+   "follows_attr": -1.554
   },
   {
    "media_id": "18118836305121726",
@@ -2185,7 +2210,8 @@
    "track": "50",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.677
   },
   {
    "media_id": "17905158657368692",
@@ -2202,7 +2228,8 @@
    "track": "Love Too Serious",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -1.677
   },
   {
    "media_id": "18179926078378935",
@@ -2212,7 +2239,15 @@
    "theme": "story",
    "text": "Nobody: / me: 'stay positive, it's just a birthday' looking at a burnt cake",
    "kind": "story",
-   "story_type": "rate"
+   "story_type": "rate",
+   "follows_attr": -0.871,
+   "reach": 27,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 1,
+   "score": 66.7,
+   "measured_at": "2026-11-08T16:51:30.824828+00:00"
   }
  ],
  "imported": [
@@ -3465,22 +3500,21 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-08T13:37:02.144500+00:00",
-  "followers": 48365,
+  "t": "2026-11-08T16:51:30.824828+00:00",
+  "followers": 48360,
   "reach": {
-   "17953317792336350": 243,
-   "18117994049121201": 157,
    "18397758112201929": 209,
-   "18210234556368953": 102,
-   "18104790881156165": 176,
+   "18210234556368953": 103,
+   "18104790881156165": 178,
    "17910654852325745": 220,
-   "18115849366842694": 211,
-   "18117380444624129": 126,
-   "18130373260867455": 125,
-   "18118990166327968": 201,
-   "18161544853503121": 166,
-   "18118836305121726": 128,
-   "17905158657368692": 83
+   "18115849366842694": 214,
+   "18117380444624129": 127,
+   "18130373260867455": 156,
+   "18118990166327968": 210,
+   "18161544853503121": 174,
+   "18118836305121726": 149,
+   "17905158657368692": 135,
+   "18179926078378935": 27
   }
  },
  "follower_log": [

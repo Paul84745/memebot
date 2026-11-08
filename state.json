@@ -1907,7 +1907,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.464
+   "follows_attr": -0.531
   },
   {
    "media_id": "18157356076484650",
@@ -1925,7 +1925,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.607
+   "follows_attr": -0.708
   },
   {
    "media_id": "18107957732365860",
@@ -1962,7 +1962,7 @@
    "news": true,
    "news_age_h": 0.27454722527777775,
    "funny": 8,
-   "follows_attr": -0.632
+   "follows_attr": -0.666
   },
   {
    "media_id": "18117994049121201",
@@ -1980,7 +1980,7 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.612
+   "follows_attr": -0.713
   },
   {
    "media_id": "18397758112201929",
@@ -2017,7 +2017,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.443
+   "follows_attr": -1.477
   },
   {
    "media_id": "18104790881156165",
@@ -2035,7 +2035,7 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -0.993
+   "follows_attr": -1.195
   },
   {
    "media_id": "17910654852325745",
@@ -2046,14 +2046,15 @@
    "text": "pick one: gym selfie or sweaty gym shoes | A: post flex, get meme'd as broccoli arms | B: wear stinky shoes, coworkers whisper 'biohazard'",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -3.248,
-   "reach": 181,
+   "follows_attr": -3.922,
+   "reach": 201,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 55.2,
-   "measured_at": "2026-11-08T03:23:53.457288+00:00"
+   "score": 49.8,
+   "measured_at": "2026-11-08T08:19:00.166041+00:00",
+   "final": true
   },
   {
    "media_id": "18115849366842694",
@@ -2071,7 +2072,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.528
+   "follows_attr": -2.73
   },
   {
    "media_id": "18117380444624129",
@@ -2100,14 +2101,14 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || Ask for loyalty card, get a lecture on free will.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.575,
-   "reach": 67,
+   "follows_attr": -1.418,
+   "reach": 92,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 59.7,
-   "measured_at": "2026-11-08T03:23:53.457288+00:00"
+   "score": 43.5,
+   "measured_at": "2026-11-08T08:19:00.166041+00:00"
   },
   {
    "media_id": "18118990166327968",
@@ -2125,7 +2126,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.062
+   "follows_attr": -0.466
   },
   {
    "media_id": "18161544853503121",
@@ -2143,7 +2144,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.752
+   "follows_attr": -1.089
   }
  ],
  "imported": [
@@ -3396,23 +3397,23 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-08T03:23:53.457288+00:00",
-  "followers": 48372,
+  "t": "2026-11-08T08:19:00.166041+00:00",
+  "followers": 48369,
   "reach": {
-   "18381379825215679": 96,
-   "18157356076484650": 229,
+   "18381379825215679": 98,
+   "18157356076484650": 232,
    "18107957732365860": 221,
-   "17953317792336350": 242,
-   "18117994049121201": 152,
+   "17953317792336350": 243,
+   "18117994049121201": 155,
    "18397758112201929": 209,
-   "18210234556368953": 97,
-   "18104790881156165": 167,
-   "17910654852325745": 181,
-   "18115849366842694": 196,
+   "18210234556368953": 98,
+   "18104790881156165": 173,
+   "17910654852325745": 201,
+   "18115849366842694": 202,
    "18117380444624129": 126,
-   "18130373260867455": 67,
-   "18118990166327968": 176,
-   "18161544853503121": 147
+   "18130373260867455": 92,
+   "18118990166327968": 188,
+   "18161544853503121": 157
   }
  },
  "follower_log": [

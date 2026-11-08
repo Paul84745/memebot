@@ -20,8 +20,8 @@
    },
    {
     "t": "2026-11-08T18:41:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-08T18:51:00+00:00",
@@ -2065,7 +2065,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.621
+   "follows_attr": -1.67
   },
   {
    "media_id": "18104790881156165",
@@ -2083,7 +2083,7 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -1.388
+   "follows_attr": -1.421
   },
   {
    "media_id": "17910654852325745",
@@ -2120,7 +2120,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.272
+   "follows_attr": -3.305
   },
   {
    "media_id": "18117380444624129",
@@ -2149,7 +2149,7 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || Ask for loyalty card, get a lecture on free will.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -3.756,
+   "follows_attr": -4.035,
    "reach": 156,
    "shares": 0,
    "replies": 1,
@@ -2175,7 +2175,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.201
+   "follows_attr": -1.25
   },
   {
    "media_id": "18161544853503121",
@@ -2211,7 +2211,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.677
+   "follows_attr": -0.841
   },
   {
    "media_id": "17905158657368692",
@@ -2229,7 +2229,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.677
+   "follows_attr": -1.743
   },
   {
    "media_id": "18179926078378935",
@@ -2240,14 +2240,31 @@
    "text": "Nobody: / me: 'stay positive, it's just a birthday' looking at a burnt cake",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.871,
-   "reach": 27,
+   "follows_attr": -1.199,
+   "reach": 47,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 1,
-   "score": 66.7,
-   "measured_at": "2026-11-08T16:51:30.824828+00:00"
+   "score": 42.6,
+   "measured_at": "2026-11-08T18:42:04.510319+00:00"
+  },
+  {
+   "media_id": "18133178935760909",
+   "posted_at": "2026-11-08T18:49:00.028143+00:00",
+   "template_id": "129315248",
+   "template_name": "No - Yes",
+   "theme": "news",
+   "text": "Friend: 'I\u2019m scared of koalas' / me: 'So we\u2019re getting a koala therapist?'",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "The Gallant Tailor - Funny theme 2",
+   "news": true,
+   "news_age_h": 0.5568116061111111,
+   "funny": 6
   }
  ],
  "imported": [
@@ -3413,36 +3430,20 @@
   "These bizarre insects make sounds with their genitals to escape hungry predators",
   "1969: Paul McCartney Had to Prove He Was Alive After a Bizarre Beatles Rumor Swept America",
   "This viral Thanksgiving turkey looks shockingly real, but it\u2019s actually cake",
-  "Ocarina of Time Switch 2 Remake: 6 Changes [2026] - https://tech-insider.org/"
+  "Ocarina of Time Switch 2 Remake: 6 Changes [2026] - https://tech-insider.org/",
+  "'I don't know what it is!': American reveals the bizarre thing she is 'genuinely scared' of in Australia"
  ],
  "trends": {
-  "fetched_at": "2026-11-05T17:46:03.975726+00:00",
+  "fetched_at": "2026-11-08T18:42:04.510319+00:00",
   "styles": [
    {
-    "query": "jersey club",
+    "query": "house",
     "moods": [
-     "bouncy",
      "upbeat",
+     "bouncy",
      "hype"
     ],
     "fx": "sped_up"
-   },
-   {
-    "query": "phonk",
-    "moods": [
-     "chill",
-     "awkward",
-     "dramatic"
-    ],
-    "fx": "slowed_reverb"
-   },
-   {
-    "query": "synthwave",
-    "moods": [
-     "dramatic",
-     "hype"
-    ],
-    "fx": "none"
    },
    {
     "query": "afrobeats",
@@ -3454,10 +3455,29 @@
     "fx": "none"
    },
    {
+    "query": "kpop",
+    "moods": [
+     "upbeat",
+     "hype",
+     "wholesome"
+    ],
+    "fx": "sped_up"
+   },
+   {
+    "query": "p-pop",
+    "moods": [
+     "upbeat",
+     "bouncy",
+     "hype"
+    ],
+    "fx": "none"
+   },
+   {
     "query": "drill",
     "moods": [
      "hype",
-     "dramatic"
+     "dramatic",
+     "awkward"
     ],
     "fx": "none"
    },
@@ -3467,6 +3487,14 @@
      "chill",
      "sad",
      "wholesome"
+    ],
+    "fx": "slowed_reverb"
+   },
+   {
+    "query": "phonk",
+    "moods": [
+     "hype",
+     "dramatic"
     ],
     "fx": "none"
    },
@@ -3487,34 +3515,26 @@
      "wholesome"
     ],
     "fx": "slowed_reverb"
-   },
-   {
-    "query": "electronic",
-    "moods": [
-     "hype",
-     "upbeat"
-    ],
-    "fx": "sped_up"
    }
   ],
-  "source": "29 headlines"
+  "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-08T16:51:30.824828+00:00",
-  "followers": 48360,
+  "t": "2026-11-08T18:42:04.510319+00:00",
+  "followers": 48359,
   "reach": {
    "18397758112201929": 209,
-   "18210234556368953": 103,
-   "18104790881156165": 178,
+   "18210234556368953": 106,
+   "18104790881156165": 180,
    "17910654852325745": 220,
-   "18115849366842694": 214,
+   "18115849366842694": 216,
    "18117380444624129": 127,
-   "18130373260867455": 156,
-   "18118990166327968": 210,
+   "18130373260867455": 173,
+   "18118990166327968": 213,
    "18161544853503121": 174,
-   "18118836305121726": 149,
-   "17905158657368692": 135,
-   "18179926078378935": 27
+   "18118836305121726": 159,
+   "17905158657368692": 139,
+   "18179926078378935": 47
   }
  },
  "follower_log": [

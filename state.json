@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-08T20:48:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "dump"
    }
   ],
@@ -2083,7 +2083,7 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -1.421
+   "follows_attr": -1.426
   },
   {
    "media_id": "17910654852325745",
@@ -2120,7 +2120,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.305
+   "follows_attr": -3.31
   },
   {
    "media_id": "18117380444624129",
@@ -2175,7 +2175,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.25
+   "follows_attr": -1.27
   },
   {
    "media_id": "18161544853503121",
@@ -2193,7 +2193,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.554
+   "follows_attr": -1.564
   },
   {
    "media_id": "18118836305121726",
@@ -2211,7 +2211,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.841
+   "follows_attr": -0.846
   },
   {
    "media_id": "17905158657368692",
@@ -2229,7 +2229,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.743
+   "follows_attr": -1.763
   },
   {
    "media_id": "18179926078378935",
@@ -2240,14 +2240,14 @@
    "text": "Nobody: / me: 'stay positive, it's just a birthday' looking at a burnt cake",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -1.199,
-   "reach": 58,
+   "follows_attr": -1.243,
+   "reach": 67,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 3,
-   "score": 103.4,
-   "measured_at": "2026-11-08T19:55:04.613506+00:00"
+   "score": 89.6,
+   "measured_at": "2026-11-08T20:48:58.671529+00:00"
   },
   {
    "media_id": "18133178935760909",
@@ -2264,7 +2264,8 @@
    "track": "The Gallant Tailor - Funny theme 2",
    "news": true,
    "news_age_h": 0.5568116061111111,
-   "funny": 6
+   "funny": 6,
+   "follows_attr": -0.049
   },
   {
    "media_id": "17888153271622700",
@@ -2281,7 +2282,8 @@
    "track": "morphium drill",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.804
   },
   {
    "media_id": "18079215194454597",
@@ -2291,7 +2293,19 @@
    "theme": "story",
    "text": "pick one: locked out or lose keys | A: locked out, hear neighbors gossip through thin walls | B: lose keys, spend night camping on couch with cat",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": -0.039
+  },
+  {
+   "media_id": "18414080590095118",
+   "posted_at": "2026-11-08T20:52:30.507622+00:00",
+   "template_id": "dump",
+   "template_name": "meme dump",
+   "theme": "meme dump",
+   "text": "Balloon pilot lands in my grass, now he's dreaming of slam\u2011dunks. | Dog waiting for bone that's actually a human | Crab on dad's towel? He flips like a puppet on caffeine. | Solo race, hot air balloon crashes, I'm now the unchallenged sky-king. | Goal: finish project by 5pm. Reality: watching cat videos | Cat thinks it's the Dark Knight | I signed up for a gym, now I have a personal trainer named Lenny | My dumbbell thinks it's a sword",
+   "kind": "carousel",
+   "slides": 8,
+   "funny": 6.2
   }
  ],
  "imported": [
@@ -3458,7 +3472,10 @@
   "1969: Paul McCartney Had to Prove He Was Alive After a Bizarre Beatles Rumor Swept America",
   "This viral Thanksgiving turkey looks shockingly real, but it\u2019s actually cake",
   "Ocarina of Time Switch 2 Remake: 6 Changes [2026] - https://tech-insider.org/",
-  "'I don't know what it is!': American reveals the bizarre thing she is 'genuinely scared' of in Australia"
+  "'I don't know what it is!': American reveals the bizarre thing she is 'genuinely scared' of in Australia",
+  "Video shows hot air balloon make unexpected landing in Menifee neighborhood",
+  "Dad stunned after unexpected encounter on remote Aussie beach while digging for crabs: 'Never had that'",
+  "Video shows hot air balloon make unexpected landing in Menifee neighborhood"
  ],
  "trends": {
   "fetched_at": "2026-11-08T18:42:04.510319+00:00",
@@ -3547,22 +3564,23 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-08T19:55:04.613506+00:00",
-  "followers": 48359,
+  "t": "2026-11-08T20:48:58.671529+00:00",
+  "followers": 48358,
   "reach": {
    "18210234556368953": 109,
-   "18104790881156165": 180,
+   "18104790881156165": 181,
    "17910654852325745": 220,
-   "18115849366842694": 217,
+   "18115849366842694": 218,
    "18117380444624129": 129,
    "18130373260867455": 184,
-   "18118990166327968": 215,
-   "18161544853503121": 175,
-   "18118836305121726": 162,
-   "17905158657368692": 139,
-   "18179926078378935": 58,
-   "18133178935760909": 128,
-   "17888153271622700": 10
+   "18118990166327968": 219,
+   "18161544853503121": 177,
+   "18118836305121726": 163,
+   "17905158657368692": 143,
+   "18179926078378935": 67,
+   "18133178935760909": 138,
+   "17888153271622700": 174,
+   "18079215194454597": 8
   }
  },
  "follower_log": [

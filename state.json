@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-08T12:21:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-08T12:50:00+00:00",
@@ -2004,7 +2004,7 @@
    "news": true,
    "news_age_h": 0.3856755286111111,
    "funny": 8,
-   "follows_attr": -0.777
+   "follows_attr": -0.825
   },
   {
    "media_id": "18397758112201929",
@@ -2041,7 +2041,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.541
+   "follows_attr": -1.589
   },
   {
    "media_id": "18104790881156165",
@@ -2096,7 +2096,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.985
+   "follows_attr": -3.175
   },
   {
    "media_id": "18117380444624129",
@@ -2125,14 +2125,14 @@
    "text": "It was a turkey so realistic I considered complimenting it before it became dinner. || Ask for loyalty card, get a lecture on free will.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -2.375,
-   "reach": 107,
+   "follows_attr": -2.756,
+   "reach": 115,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 56.1,
-   "measured_at": "2026-11-08T10:44:06.582823+00:00"
+   "score": 52.2,
+   "measured_at": "2026-11-08T12:22:09.204421+00:00"
   },
   {
    "media_id": "18118990166327968",
@@ -2150,7 +2150,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.721
+   "follows_attr": -0.911
   },
   {
    "media_id": "18161544853503121",
@@ -2168,7 +2168,24 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.153
+   "follows_attr": -1.296
+  },
+  {
+   "media_id": "18118836305121726",
+   "posted_at": "2026-11-08T12:24:21.300779+00:00",
+   "template_id": "217743513",
+   "template_name": "UNO Draw 25 Cards",
+   "theme": "food and cravings",
+   "text": "me when I\u2019m stuck between a snack and a nap, and both win",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "50",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3421,21 +3438,21 @@
   "source": "29 headlines"
  },
  "follow_track": {
-  "t": "2026-11-08T10:44:06.582823+00:00",
-  "followers": 48366,
+  "t": "2026-11-08T12:22:09.204421+00:00",
+  "followers": 48365,
   "reach": {
    "18107957732365860": 221,
    "17953317792336350": 243,
-   "18117994049121201": 156,
+   "18117994049121201": 157,
    "18397758112201929": 209,
-   "18210234556368953": 99,
+   "18210234556368953": 100,
    "18104790881156165": 175,
    "17910654852325745": 220,
-   "18115849366842694": 206,
+   "18115849366842694": 210,
    "18117380444624129": 126,
-   "18130373260867455": 107,
-   "18118990166327968": 192,
-   "18161544853503121": 158
+   "18130373260867455": 115,
+   "18118990166327968": 196,
+   "18161544853503121": 161
   }
  },
  "follower_log": [

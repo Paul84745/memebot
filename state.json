@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-09T08:02:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-09T11:09:00+00:00",
@@ -2252,13 +2252,14 @@
    "kind": "story",
    "story_type": "rate",
    "follows_attr": -2.082,
-   "reach": 153,
+   "reach": 154,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 65.4,
-   "measured_at": "2026-11-09T07:22:00.983529+00:00"
+   "score": 64.9,
+   "measured_at": "2026-11-09T08:03:06.116703+00:00",
+   "final": true
   },
   {
    "media_id": "18133178935760909",
@@ -2312,7 +2313,7 @@
    "follows": 0,
    "profile_visits": 1,
    "score": 65.2,
-   "measured_at": "2026-11-09T07:22:00.983529+00:00"
+   "measured_at": "2026-11-09T08:03:06.116703+00:00"
   },
   {
    "media_id": "18414080590095118",
@@ -2339,6 +2340,23 @@
    "music_style": "drill",
    "music_fx": "none",
    "track": "morphium drill",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "18115112405098480",
+   "posted_at": "2026-11-09T08:05:02.407044+00:00",
+   "template_id": "97984",
+   "template_name": "Disaster Girl",
+   "theme": "food and cravings",
+   "text": "Last neuron on taco run: 'Brace for tomorrow's regret.'",
+   "format": "other",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "lofi",
+   "music_fx": "slowed_reverb",
+   "track": "Lofy",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -3600,7 +3618,7 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-09T07:22:00.983529+00:00",
+  "t": "2026-11-09T08:03:06.116703+00:00",
   "followers": 48354,
   "reach": {
    "18104790881156165": 185,
@@ -3612,11 +3630,12 @@
    "18161544853503121": 181,
    "18118836305121726": 166,
    "17905158657368692": 157,
-   "18179926078378935": 153,
+   "18179926078378935": 154,
    "18133178935760909": 162,
-   "17888153271622700": 212,
+   "17888153271622700": 215,
    "18079215194454597": 92,
-   "18414080590095118": 156
+   "18414080590095118": 158,
+   "17916258453281129": 11
   }
  },
  "follower_log": [

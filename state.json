@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-09T07:21:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-09T08:02:00+00:00",
@@ -2252,13 +2252,13 @@
    "kind": "story",
    "story_type": "rate",
    "follows_attr": -2.082,
-   "reach": 152,
+   "reach": 153,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 65.8,
-   "measured_at": "2026-11-09T06:51:50.422412+00:00"
+   "score": 65.4,
+   "measured_at": "2026-11-09T07:22:00.983529+00:00"
   },
   {
    "media_id": "18133178935760909",
@@ -2306,13 +2306,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -0.839,
-   "reach": 91,
+   "reach": 92,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 65.9,
-   "measured_at": "2026-11-09T06:51:50.422412+00:00"
+   "score": 65.2,
+   "measured_at": "2026-11-09T07:22:00.983529+00:00"
   },
   {
    "media_id": "18414080590095118",
@@ -2325,6 +2325,23 @@
    "slides": 8,
    "funny": 6.2,
    "follows_attr": -1.387
+  },
+  {
+   "media_id": "17916258453281129",
+   "posted_at": "2026-11-09T07:24:47.919128+00:00",
+   "template_id": "148909805",
+   "template_name": "Monkey Puppet",
+   "theme": "awkward social moments",
+   "text": "When you walk into the wrong Zoom room, everyone thinks it's a performance",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "drill",
+   "music_fx": "none",
+   "track": "morphium drill",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3583,7 +3600,7 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-09T06:51:50.422412+00:00",
+  "t": "2026-11-09T07:22:00.983529+00:00",
   "followers": 48354,
   "reach": {
    "18104790881156165": 185,
@@ -3591,15 +3608,15 @@
    "18115849366842694": 225,
    "18117380444624129": 134,
    "18130373260867455": 184,
-   "18118990166327968": 224,
+   "18118990166327968": 226,
    "18161544853503121": 181,
    "18118836305121726": 166,
    "17905158657368692": 157,
-   "18179926078378935": 152,
+   "18179926078378935": 153,
    "18133178935760909": 162,
-   "17888153271622700": 209,
-   "18079215194454597": 91,
-   "18414080590095118": 154
+   "17888153271622700": 212,
+   "18079215194454597": 92,
+   "18414080590095118": 156
   }
  },
  "follower_log": [

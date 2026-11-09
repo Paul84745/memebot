@@ -14,14 +14,14 @@
    },
    {
     "t": "2026-11-09T11:09:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0,
     "kind": "story"
    },
    {
     "t": "2026-11-09T12:07:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-09T12:56:00+00:00",
@@ -2094,7 +2094,19 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -1.47
+   "follows_attr": -1.47,
+   "follows_src": "estimated",
+   "like_count": 5,
+   "comments_count": 0,
+   "reach": 187,
+   "shares": 0,
+   "saved": 0,
+   "views": 264,
+   "sends_per_1k": 0.0,
+   "follows": -1.5,
+   "score": 26.7,
+   "follows_per_1k": -8.02,
+   "final": true
   },
   {
    "media_id": "17910654852325745",
@@ -2131,7 +2143,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.382
+   "follows_attr": -3.382,
+   "follows_src": "estimated",
+   "like_count": 19,
+   "comments_count": 0,
+   "reach": 229,
+   "shares": 2,
+   "saved": 0,
+   "views": 303,
+   "sends_per_1k": 8.73,
+   "follows": -3.4,
+   "score": 152.8,
+   "follows_per_1k": -14.85,
+   "final": true
   },
   {
    "media_id": "18117380444624129",
@@ -2149,7 +2173,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.448
+   "follows_attr": -1.473
   },
   {
    "media_id": "18130373260867455",
@@ -2186,7 +2210,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.322
+   "follows_attr": -1.36
   },
   {
    "media_id": "18161544853503121",
@@ -2204,7 +2228,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.603
+   "follows_attr": -1.622
   },
   {
    "media_id": "18118836305121726",
@@ -2222,7 +2246,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.879
+   "follows_attr": -0.904
   },
   {
    "media_id": "17905158657368692",
@@ -2240,7 +2264,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.892
+   "follows_attr": -1.898
   },
   {
    "media_id": "18179926078378935",
@@ -2277,7 +2301,7 @@
    "news": true,
    "news_age_h": 0.5568116061111111,
    "funny": 6,
-   "follows_attr": -0.269
+   "follows_attr": -0.338
   },
   {
    "media_id": "17888153271622700",
@@ -2295,7 +2319,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.135
+   "follows_attr": -1.26
   },
   {
    "media_id": "18079215194454597",
@@ -2306,14 +2330,15 @@
    "text": "pick one: locked out or lose keys | A: locked out, hear neighbors gossip through thin walls | B: lose keys, spend night camping on couch with cat",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.839,
-   "reach": 92,
+   "follows_attr": -1.033,
+   "reach": 123,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 65.2,
-   "measured_at": "2026-11-09T08:03:06.116703+00:00"
+   "score": 48.8,
+   "measured_at": "2026-11-09T14:25:01.384435+00:00",
+   "final": true
   },
   {
    "media_id": "18414080590095118",
@@ -2325,7 +2350,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -1.387
+   "follows_attr": -1.55
   },
   {
    "media_id": "17916258453281129",
@@ -2342,7 +2367,8 @@
    "track": "morphium drill",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.213
   },
   {
    "media_id": "18115112405098480",
@@ -2359,7 +2385,25 @@
    "track": "Lofy",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -1.122
+  },
+  {
+   "media_id": "18125597546317770",
+   "posted_at": "2026-11-09T14:27:04.466864+00:00",
+   "template_id": "29617627",
+   "template_name": "Look At Me",
+   "theme": "petty revenge and tiny victories",
+   "text": "nobody: / me: silently delete his meme saves before he notices",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Gliding Through City Streets",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -3618,24 +3662,22 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-09T08:03:06.116703+00:00",
-  "followers": 48354,
+  "t": "2026-11-09T14:25:01.384435+00:00",
+  "followers": 48352,
   "reach": {
-   "18104790881156165": 185,
-   "17910654852325745": 220,
-   "18115849366842694": 225,
-   "18117380444624129": 134,
+   "18117380444624129": 138,
    "18130373260867455": 184,
-   "18118990166327968": 226,
-   "18161544853503121": 181,
-   "18118836305121726": 166,
-   "17905158657368692": 157,
+   "18118990166327968": 232,
+   "18161544853503121": 184,
+   "18118836305121726": 170,
+   "17905158657368692": 158,
    "18179926078378935": 154,
-   "18133178935760909": 162,
-   "17888153271622700": 215,
-   "18079215194454597": 92,
-   "18414080590095118": 158,
-   "17916258453281129": 11
+   "18133178935760909": 173,
+   "17888153271622700": 235,
+   "18079215194454597": 123,
+   "18414080590095118": 184,
+   "17916258453281129": 45,
+   "18115112405098480": 179
   }
  },
  "follower_log": [

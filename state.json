@@ -30,8 +30,8 @@
    },
    {
     "t": "2026-11-09T18:25:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -2222,7 +2222,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.36
+   "follows_attr": -1.789
   },
   {
    "media_id": "18161544853503121",
@@ -2240,7 +2240,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.622
+   "follows_attr": -1.765
   },
   {
    "media_id": "18118836305121726",
@@ -2258,7 +2258,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.904
+   "follows_attr": -0.975
   },
   {
    "media_id": "17905158657368692",
@@ -2276,7 +2276,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.898
+   "follows_attr": -1.969
   },
   {
    "media_id": "18179926078378935",
@@ -2313,7 +2313,7 @@
    "news": true,
    "news_age_h": 0.5568116061111111,
    "funny": 6,
-   "follows_attr": -0.338
+   "follows_attr": -0.695
   },
   {
    "media_id": "17888153271622700",
@@ -2331,7 +2331,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.26
+   "follows_attr": -1.831
   },
   {
    "media_id": "18079215194454597",
@@ -2362,7 +2362,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -1.55
+   "follows_attr": -2.336
   },
   {
    "media_id": "17916258453281129",
@@ -2380,7 +2380,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.213
+   "follows_attr": -1.427
   },
   {
    "media_id": "18115112405098480",
@@ -2398,7 +2398,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.122
+   "follows_attr": -1.765
   },
   {
    "media_id": "18125597546317770",
@@ -2415,7 +2415,18 @@
    "track": "Gliding Through City Streets",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.714
+  },
+  {
+   "media_id": "18125493466919224",
+   "posted_at": "2026-11-09T20:21:17.858855+00:00",
+   "template_id": "101470",
+   "template_name": "story",
+   "theme": "story",
+   "text": "Camel struts in, eyes the lot, thinks it\u2019s a monster truck.",
+   "kind": "story",
+   "story_type": "rate"
   }
  ],
  "imported": [
@@ -3585,7 +3596,8 @@
   "'I don't know what it is!': American reveals the bizarre thing she is 'genuinely scared' of in Australia",
   "Video shows hot air balloon make unexpected landing in Menifee neighborhood",
   "Dad stunned after unexpected encounter on remote Aussie beach while digging for crabs: 'Never had that'",
-  "Video shows hot air balloon make unexpected landing in Menifee neighborhood"
+  "Video shows hot air balloon make unexpected landing in Menifee neighborhood",
+  "Camel spotted walking through Little Rock parking lot in now-viral video"
  ],
  "trends": {
   "fetched_at": "2026-11-08T18:42:04.510319+00:00",
@@ -3674,22 +3686,21 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-09T16:59:09.368726+00:00",
-  "followers": 48352,
+  "t": "2026-11-09T20:19:17.384907+00:00",
+  "followers": 48347,
   "reach": {
-   "18130373260867455": 184,
-   "18118990166327968": 237,
-   "18161544853503121": 184,
-   "18118836305121726": 170,
-   "17905158657368692": 159,
+   "18118990166327968": 243,
+   "18161544853503121": 186,
+   "18118836305121726": 171,
+   "17905158657368692": 160,
    "18179926078378935": 154,
-   "18133178935760909": 174,
-   "17888153271622700": 238,
+   "18133178935760909": 179,
+   "17888153271622700": 246,
    "18079215194454597": 152,
-   "18414080590095118": 198,
-   "17916258453281129": 59,
-   "18115112405098480": 189,
-   "18125597546317770": 158
+   "18414080590095118": 209,
+   "17916258453281129": 76,
+   "18115112405098480": 198,
+   "18125597546317770": 168
   }
  },
  "follower_log": [

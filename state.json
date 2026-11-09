@@ -2094,7 +2094,7 @@
    "news": true,
    "news_age_h": 1.8397554275,
    "funny": 7,
-   "follows_attr": -1.426
+   "follows_attr": -1.47
   },
   {
    "media_id": "17910654852325745",
@@ -2131,7 +2131,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.327
+   "follows_attr": -3.382
   },
   {
    "media_id": "18117380444624129",
@@ -2149,7 +2149,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.404
+   "follows_attr": -1.448
   },
   {
    "media_id": "18130373260867455",
@@ -2186,7 +2186,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.278
+   "follows_attr": -1.322
   },
   {
    "media_id": "18161544853503121",
@@ -2204,7 +2204,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.581
+   "follows_attr": -1.603
   },
   {
    "media_id": "18118836305121726",
@@ -2222,7 +2222,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.846
+   "follows_attr": -0.879
   },
   {
    "media_id": "17905158657368692",
@@ -2240,7 +2240,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.837
+   "follows_attr": -1.892
   },
   {
    "media_id": "18179926078378935",
@@ -2251,14 +2251,14 @@
    "text": "Nobody: / me: 'stay positive, it's just a birthday' looking at a burnt cake",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -1.541,
-   "reach": 103,
+   "follows_attr": -2.082,
+   "reach": 152,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 3,
-   "score": 97.1,
-   "measured_at": "2026-11-09T00:19:55.076674+00:00"
+   "score": 65.8,
+   "measured_at": "2026-11-09T06:51:50.422412+00:00"
   },
   {
    "media_id": "18133178935760909",
@@ -2276,7 +2276,7 @@
    "news": true,
    "news_age_h": 0.5568116061111111,
    "funny": 6,
-   "follows_attr": -0.181
+   "follows_attr": -0.269
   },
   {
    "media_id": "17888153271622700",
@@ -2294,7 +2294,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.969
+   "follows_attr": -1.135
   },
   {
    "media_id": "18079215194454597",
@@ -2305,14 +2305,14 @@
    "text": "pick one: locked out or lose keys | A: locked out, hear neighbors gossip through thin walls | B: lose keys, spend night camping on couch with cat",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.386,
-   "reach": 50,
+   "follows_attr": -0.839,
+   "reach": 91,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 120.0,
-   "measured_at": "2026-11-09T00:19:55.076674+00:00"
+   "score": 65.9,
+   "measured_at": "2026-11-09T06:51:50.422412+00:00"
   },
   {
    "media_id": "18414080590095118",
@@ -2324,7 +2324,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -0.934
+   "follows_attr": -1.387
   }
  ],
  "imported": [
@@ -3583,23 +3583,23 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-09T00:19:55.076674+00:00",
-  "followers": 48356,
+  "t": "2026-11-09T06:51:50.422412+00:00",
+  "followers": 48354,
   "reach": {
-   "18104790881156165": 181,
+   "18104790881156165": 185,
    "17910654852325745": 220,
-   "18115849366842694": 220,
-   "18117380444624129": 130,
+   "18115849366842694": 225,
+   "18117380444624129": 134,
    "18130373260867455": 184,
-   "18118990166327968": 220,
-   "18161544853503121": 179,
-   "18118836305121726": 163,
-   "17905158657368692": 152,
-   "18179926078378935": 103,
-   "18133178935760909": 154,
-   "17888153271622700": 194,
-   "18079215194454597": 50,
-   "18414080590095118": 113
+   "18118990166327968": 224,
+   "18161544853503121": 181,
+   "18118836305121726": 166,
+   "17905158657368692": 157,
+   "18179926078378935": 152,
+   "18133178935760909": 162,
+   "17888153271622700": 209,
+   "18079215194454597": 91,
+   "18414080590095118": 154
   }
  },
  "follower_log": [

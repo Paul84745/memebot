@@ -1,19 +1,19 @@
 # What the bot has learned
 
-Posts measured so far: 55 (plus 200 older page posts)
+Posts measured so far: 56 (plus 200 older page posts)
 
 Score = engagement per 1,000 people reached: a new follower counts 20x a like, a DM send 8x.
 
 ## Sends
-- average: 0.66 sends per 1,000 reached (last 10 posts: 0.83)
+- average: 0.65 sends per 1,000 reached (last 10 posts: 0.83)
 
 ## Meme dumps vs single memes
 - dumps: avg 94.4 (2 posts)
-- single: avg 62.4 (55 posts)
+- single: avg 62.8 (56 posts)
 
 ## Followers
-- now 48372 (-85 since 2026-11-01)
-- new followers per 1,000 people reached: -9.68 on average (53 posts)
+- now 48356 (-85 since 2026-11-02)
+- new followers per 1,000 people reached: -9.78 on average (54 posts)
 - posts that brought the most followers:
   - (0.00/1k, 0 follows) How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season
   - (0.00/1k, 0 follows) POV: you walk into the kitchen at 3:22 am, fridge light blinds you, and the pizza is gone | POV: you hit send at 2:07 am, then see 'seen' at 2:08 and it’s already sunrise | When you promise a 5‑minute TikTok break at 8:45 pm and it's now 1 am | Me when the group chat hits 150 messages and the plan is still 'maybe Friday' | POV: you open the essay at 3 pm, close it at 3:01 pm, and stare at the blank page till midnight
@@ -28,6 +28,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 ## Trending music styles right now (17 headlines, 2026-11-08)
 - house (sped up), afrobeats, kpop (sped up), p-pop, drill, lofi (slowed reverb), phonk, funk (sped up), piano (slowed reverb)
 - results by sound style:
+  - drill: avg 89.3 (1 posts)
   - uk garage: avg 69.9 (1 posts)
   - ambient: avg 68.7 (3 posts)
   - plain mood music: avg 67.3 (34 posts)
@@ -38,12 +39,12 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - house: avg 38.2 (2 posts)
   - funk: avg 20.1 (3 posts)
 
-## Learned from this week's top meme posts (public meme communities) (67 posts from 2 pages)
-- Opening style: other opening x1.03
-- Caption length: very short caption x1.12, short caption x0.87
+## Learned from this week's top meme posts (public meme communities) (49 posts from 2 pages)
+- Opening style: other opening x1.04
+- Caption length: very short caption x1.0, short caption x0.99
 
 ## Best posting times (UTC)
-- 20:00-22:00 (score x1.92)
+- 20:00-22:00 (score x1.90)
 - 12:00-14:00 (score x1.69)
 - 18:00-20:00 (score x0.60)
 
@@ -58,8 +59,8 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - Mocking Spongebob: avg 122.5 (4 posts)
 - All My Homies Hate: avg 112.5 (1 posts)
 - This Is Where I'd Put My Trophy If I Had One: avg 98.2 (4 posts)
+- Megamind peeking: avg 89.3 (1 posts)
 - Monkey Puppet: avg 82.8 (2 posts)
-- Sleeping Shaq: avg 74.5 (6 posts)
 
 ## Best formats
 - pov: avg 78.6 (6 posts)
@@ -67,7 +68,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - when_you: avg 65.2 (17 posts)
 - how_x: avg 62.0 (5 posts)
 - how_me_bro: avg 61.4 (11 posts)
-- other: avg 38.9 (9 posts)
+- other: avg 43.9 (10 posts)
 
 ## Best music
 - chill: avg 111.5 (3 posts)
@@ -76,11 +77,11 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - sad: avg 63.9 (9 posts)
 - bouncy: avg 62.5 (15 posts)
 - dramatic: avg 53.6 (9 posts)
-- hype: avg 37.1 (8 posts)
+- hype: avg 42.9 (9 posts)
 
 ## News memes vs normal
 - news: avg 65.2 (19 posts)
-- normal: avg 60.9 (36 posts)
+- normal: avg 61.6 (37 posts)
 
 ## Top posts
 - (317.1) how me and bro gon be hitting every hot dog stand at 2am after the holiday crawl

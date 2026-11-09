@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-09T21:08:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-09",
@@ -2331,7 +2331,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.831
+   "follows_attr": -1.902
   },
   {
    "media_id": "18079215194454597",
@@ -2362,7 +2362,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -2.336
+   "follows_attr": -2.479
   },
   {
    "media_id": "17916258453281129",
@@ -2380,7 +2380,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.427
+   "follows_attr": -1.641
   },
   {
    "media_id": "18115112405098480",
@@ -2398,7 +2398,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.765
+   "follows_attr": -2.051
   },
   {
    "media_id": "18125597546317770",
@@ -2426,7 +2426,25 @@
    "theme": "story",
    "text": "Camel struts in, eyes the lot, thinks it\u2019s a monster truck.",
    "kind": "story",
-   "story_type": "rate"
+   "story_type": "rate",
+   "follows_attr": -1.286
+  },
+  {
+   "media_id": "18292816102290480",
+   "posted_at": "2026-11-09T21:11:16.633132+00:00",
+   "template_id": "123999232",
+   "template_name": "The Scroll Of Truth",
+   "theme": "cooking disasters",
+   "text": "Secret sauce? Regret, served cold on parchment.",
+   "format": "other",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Suspense and Tension-stem-3-1min",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3686,8 +3704,8 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-09T20:19:17.384907+00:00",
-  "followers": 48347,
+  "t": "2026-11-09T21:09:03.225249+00:00",
+  "followers": 48345,
   "reach": {
    "18118990166327968": 243,
    "18161544853503121": 186,
@@ -3695,12 +3713,13 @@
    "17905158657368692": 160,
    "18179926078378935": 154,
    "18133178935760909": 179,
-   "17888153271622700": 246,
+   "17888153271622700": 247,
    "18079215194454597": 152,
-   "18414080590095118": 209,
-   "17916258453281129": 76,
-   "18115112405098480": 198,
-   "18125597546317770": 168
+   "18414080590095118": 211,
+   "17916258453281129": 79,
+   "18115112405098480": 202,
+   "18125597546317770": 168,
+   "18125493466919224": 18
   }
  },
  "follower_log": [

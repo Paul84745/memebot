@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-10T08:27:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-10T12:11:00+00:00",
@@ -2452,13 +2452,13 @@
    "kind": "story",
    "story_type": "rate",
    "follows_attr": -3.995,
-   "reach": 187,
+   "reach": 190,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 32.1,
-   "measured_at": "2026-11-10T07:41:54.097121+00:00"
+   "score": 31.6,
+   "measured_at": "2026-11-10T08:31:43.295444+00:00"
   },
   {
    "media_id": "18292816102290480",
@@ -2477,6 +2477,23 @@
    "news_age_h": null,
    "funny": 7,
    "follows_attr": -2.106
+  },
+  {
+   "media_id": "17910036699597345",
+   "posted_at": "2026-11-10T08:33:34.208832+00:00",
+   "template_id": "370867422",
+   "template_name": "Megamind peeking",
+   "theme": "news",
+   "text": "Collecting centuries\u2011old timber because IKEA never felt historic enough.",
+   "format": "other",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "drill",
+   "music_fx": "none",
+   "track": "To Drill The Brain",
+   "news": true,
+   "news_age_h": 0.30135309555555556,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3647,7 +3664,8 @@
   "Video shows hot air balloon make unexpected landing in Menifee neighborhood",
   "Dad stunned after unexpected encounter on remote Aussie beach while digging for crabs: 'Never had that'",
   "Video shows hot air balloon make unexpected landing in Menifee neighborhood",
-  "Camel spotted walking through Little Rock parking lot in now-viral video"
+  "Camel spotted walking through Little Rock parking lot in now-viral video",
+  "Locals launch campaign to buy ancient wood"
  ],
  "trends": {
   "fetched_at": "2026-11-08T18:42:04.510319+00:00",
@@ -3736,10 +3754,10 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-10T07:41:54.097121+00:00",
+  "t": "2026-11-10T08:31:43.295444+00:00",
   "followers": 48339,
   "reach": {
-   "18118836305121726": 172,
+   "18118836305121726": 173,
    "17905158657368692": 162,
    "18179926078378935": 154,
    "18133178935760909": 183,
@@ -3749,7 +3767,7 @@
    "17916258453281129": 95,
    "18115112405098480": 213,
    "18125597546317770": 183,
-   "18125493466919224": 187,
+   "18125493466919224": 190,
    "18292816102290480": 165
   }
  },

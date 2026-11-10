@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-11-10T19:33:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-10T21:09:00+00:00",
@@ -2361,7 +2361,19 @@
    "news": true,
    "news_age_h": 0.5568116061111111,
    "funny": 6,
-   "follows_attr": -0.804
+   "follows_attr": -0.804,
+   "follows_src": "estimated",
+   "like_count": 5,
+   "comments_count": 0,
+   "reach": 188,
+   "shares": 0,
+   "saved": 0,
+   "views": 252,
+   "sends_per_1k": 0.0,
+   "follows": -0.8,
+   "score": 26.6,
+   "follows_per_1k": -4.26,
+   "final": true
   },
   {
    "media_id": "17888153271622700",
@@ -2379,7 +2391,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.258
+   "follows_attr": -2.258,
+   "follows_src": "estimated",
+   "like_count": 10,
+   "comments_count": 0,
+   "reach": 271,
+   "shares": 0,
+   "saved": 0,
+   "views": 397,
+   "sends_per_1k": 0.0,
+   "follows": -2.3,
+   "score": 36.9,
+   "follows_per_1k": -8.49,
+   "final": true
   },
   {
    "media_id": "18079215194454597",
@@ -2548,7 +2572,14 @@
    "text": "caption this: Anime Girl Hiding from Terminator",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -0.159
+   "follows_attr": -0.159,
+   "reach": 42,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-10T19:34:17.342353+00:00"
   },
   {
    "media_id": "17944987674377856",
@@ -2559,6 +2590,23 @@
    "text": "nobody: / me: silently delete his meme saves before he notices || The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified.",
    "kind": "story",
    "story_type": "faceoff"
+  },
+  {
+   "media_id": "18150285085559990",
+   "posted_at": "2026-11-10T19:36:54.452000+00:00",
+   "template_id": "99683372",
+   "template_name": "Sleeping Shaq",
+   "theme": "customers and retail jobs",
+   "text": "Boss wants a grin while the receipt screams 'RIP'\u2014my soul's on coffee break.",
+   "format": "other",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": "drill",
+   "music_fx": "none",
+   "track": "YOU DRILL MY BRAIN",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3819,21 +3867,20 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-10T18:20:24.340051+00:00",
+  "t": "2026-11-10T19:34:17.342353+00:00",
   "followers": 48333,
   "reach": {
-   "18133178935760909": 187,
-   "17888153271622700": 269,
    "18079215194454597": 152,
    "18414080590095118": 238,
    "17916258453281129": 106,
    "18115112405098480": 217,
-   "18125597546317770": 196,
-   "18125493466919224": 297,
-   "18292816102290480": 179,
-   "17910036699597345": 181,
-   "18014769038986883": 158,
-   "18423876442158552": 29
+   "18125597546317770": 197,
+   "18125493466919224": 309,
+   "18292816102290480": 181,
+   "17910036699597345": 183,
+   "18014769038986883": 161,
+   "18423876442158552": 42,
+   "17944987674377856": 11
   }
  },
  "follower_log": [

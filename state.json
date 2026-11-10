@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-10T12:11:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-10T13:07:00+00:00",
@@ -2282,7 +2282,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.987
+   "follows_attr": -0.987,
+   "follows_src": "estimated",
+   "like_count": 5,
+   "comments_count": 0,
+   "reach": 175,
+   "shares": 0,
+   "saved": 0,
+   "views": 237,
+   "sends_per_1k": 0.0,
+   "follows": -1.0,
+   "score": 28.6,
+   "follows_per_1k": -5.71,
+   "final": true
   },
   {
    "media_id": "17905158657368692",
@@ -2300,7 +2312,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.0
+   "follows_attr": -2.0,
+   "follows_src": "estimated",
+   "like_count": 8,
+   "comments_count": 0,
+   "reach": 163,
+   "shares": 0,
+   "saved": 0,
+   "views": 216,
+   "sends_per_1k": 0.0,
+   "follows": -2.0,
+   "score": 49.1,
+   "follows_per_1k": -12.27,
+   "final": true
   },
   {
    "media_id": "18179926078378935",
@@ -2337,7 +2361,7 @@
    "news": true,
    "news_age_h": 0.5568116061111111,
    "funny": 6,
-   "follows_attr": -0.756
+   "follows_attr": -0.793
   },
   {
    "media_id": "17888153271622700",
@@ -2355,7 +2379,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.123
+   "follows_attr": -2.253
   },
   {
    "media_id": "18079215194454597",
@@ -2386,7 +2410,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -2.656
+   "follows_attr": -2.786
   },
   {
    "media_id": "17916258453281129",
@@ -2404,7 +2428,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.906
+   "follows_attr": -2.036
   },
   {
    "media_id": "18115112405098480",
@@ -2422,7 +2446,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.23
+   "follows_attr": -2.286
   },
   {
    "media_id": "18125597546317770",
@@ -2440,7 +2464,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.954
+   "follows_attr": -1.102
   },
   {
    "media_id": "18125493466919224",
@@ -2451,14 +2475,15 @@
    "text": "Camel struts in, eyes the lot, thinks it\u2019s a monster truck.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -3.995,
-   "reach": 190,
+   "follows_attr": -5.217,
+   "reach": 256,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 31.6,
-   "measured_at": "2026-11-10T08:31:43.295444+00:00"
+   "score": 23.4,
+   "measured_at": "2026-11-10T14:29:22.298608+00:00",
+   "final": true
   },
   {
    "media_id": "18292816102290480",
@@ -2476,7 +2501,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.106
+   "follows_attr": -2.31
   },
   {
    "media_id": "17910036699597345",
@@ -2493,7 +2518,25 @@
    "track": "To Drill The Brain",
    "news": true,
    "news_age_h": 0.30135309555555556,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -2.944
+  },
+  {
+   "media_id": "18014769038986883",
+   "posted_at": "2026-11-10T14:32:23.256375+00:00",
+   "template_id": "110163934",
+   "template_name": "I Bet He's Thinking About Other Women",
+   "theme": "bad decisions you made anyway",
+   "text": "The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "3a",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -3754,21 +3797,19 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-10T08:31:43.295444+00:00",
-  "followers": 48339,
+  "t": "2026-11-10T14:29:22.298608+00:00",
+  "followers": 48334,
   "reach": {
-   "18118836305121726": 173,
-   "17905158657368692": 162,
-   "18179926078378935": 154,
-   "18133178935760909": 183,
-   "17888153271622700": 260,
+   "18133178935760909": 185,
+   "17888153271622700": 267,
    "18079215194454597": 152,
-   "18414080590095118": 224,
-   "17916258453281129": 95,
-   "18115112405098480": 213,
-   "18125597546317770": 183,
-   "18125493466919224": 190,
-   "18292816102290480": 165
+   "18414080590095118": 231,
+   "17916258453281129": 102,
+   "18115112405098480": 216,
+   "18125597546317770": 191,
+   "18125493466919224": 256,
+   "18292816102290480": 176,
+   "17910036699597345": 159
   }
  },
  "follower_log": [

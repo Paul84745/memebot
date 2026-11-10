@@ -2586,13 +2586,13 @@
    "kind": "story",
    "story_type": "caption_this",
    "follows_attr": -0.159,
-   "reach": 52,
+   "reach": 60,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-10T21:10:00.817411+00:00"
+   "measured_at": "2026-11-10T21:36:32.660492+00:00"
   },
   {
    "media_id": "17944987674377856",
@@ -2602,7 +2602,14 @@
    "theme": "story",
    "text": "nobody: / me: silently delete his meme saves before he notices || The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified.",
    "kind": "story",
-   "story_type": "faceoff"
+   "story_type": "faceoff",
+   "reach": 28,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 1,
+   "score": 66.7,
+   "measured_at": "2026-11-10T21:36:32.660492+00:00"
   },
   {
    "media_id": "18150285085559990",
@@ -3897,19 +3904,20 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-10T21:10:00.817411+00:00",
+  "t": "2026-11-10T21:36:32.660492+00:00",
   "followers": 48333,
   "reach": {
    "17916258453281129": 108,
    "18115112405098480": 217,
    "18125597546317770": 199,
    "18125493466919224": 309,
-   "18292816102290480": 181,
+   "18292816102290480": 182,
    "17910036699597345": 186,
-   "18014769038986883": 163,
-   "18423876442158552": 52,
-   "17944987674377856": 23,
-   "18150285085559990": 27
+   "18014769038986883": 165,
+   "18423876442158552": 60,
+   "17944987674377856": 28,
+   "18150285085559990": 32,
+   "18087017441336010": 18
   }
  },
  "follower_log": [

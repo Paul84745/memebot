@@ -8,16 +8,16 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - average: 0.69 sends per 1,000 reached (last 10 posts: 0.87)
 
 ## Meme dumps vs single memes
-- dumps: avg 94.4 (2 posts)
+- dumps: avg 85.4 (3 posts)
 - single: avg 60.1 (65 posts)
 
 ## Followers
 - now 48342 (-84 since 2026-11-03)
-- new followers per 1,000 people reached: -9.68 on average (63 posts)
+- new followers per 1,000 people reached: -9.53 on average (64 posts)
 - posts that brought the most followers:
   - (0.00/1k, 0 follows) How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season
   - (0.00/1k, 0 follows) POV: you walk into the kitchen at 3:22 am, fridge light blinds you, and the pizza is gone | POV: you hit send at 2:07 am, then see 'seen' at 2:08 and it’s already sunrise | When you promise a 5‑minute TikTok break at 8:45 pm and it's now 1 am | Me when the group chat hits 150 messages and the plan is still 'maybe Friday' | POV: you open the essay at 3 pm, close it at 3:01 pm, and stare at the blank page till midnight
-  - (-0.28/1k, -0.3 follows) How I feel when the last chicken nugget appears at 2:07 am
+  - (0.00/1k, 0 follows) Balloon pilot lands in my grass, now he's dreaming of slam‑dunks. | Dog waiting for bone that's actually a human | Crab on dad's towel? He flips like a puppet on caffeine. | Solo race, hot air balloon crashes, I'm now the unchallenged sky-king. | Goal: finish project by 5pm. Reality: watching cat videos | Cat thinks it's the Dark Knight | I signed up for a gym, now I have a personal trainer named Lenny | My dumbbell thinks it's a sword
 
 ## Stories (23 measured)
 - rate: score 54.0, reach 281, follows 0 (6 stories)

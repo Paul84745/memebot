@@ -20,13 +20,13 @@
    },
    {
     "t": "2026-11-10T14:06:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
     "t": "2026-11-10T18:19:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -2361,7 +2361,7 @@
    "news": true,
    "news_age_h": 0.5568116061111111,
    "funny": 6,
-   "follows_attr": -0.793
+   "follows_attr": -0.804
   },
   {
    "media_id": "17888153271622700",
@@ -2379,7 +2379,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.253
+   "follows_attr": -2.258
   },
   {
    "media_id": "18079215194454597",
@@ -2410,7 +2410,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -2.786
+   "follows_attr": -2.802
   },
   {
    "media_id": "17916258453281129",
@@ -2428,7 +2428,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.036
+   "follows_attr": -2.058
   },
   {
    "media_id": "18115112405098480",
@@ -2464,7 +2464,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.102
+   "follows_attr": -1.113
   },
   {
    "media_id": "18125493466919224",
@@ -2475,7 +2475,7 @@
    "text": "Camel struts in, eyes the lot, thinks it\u2019s a monster truck.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -5.217,
+   "follows_attr": -5.321,
    "reach": 256,
    "shares": 0,
    "replies": 1,
@@ -2501,7 +2501,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.31
+   "follows_attr": -2.315
   },
   {
    "media_id": "17910036699597345",
@@ -2519,7 +2519,7 @@
    "news": true,
    "news_age_h": 0.30135309555555556,
    "funny": 7,
-   "follows_attr": -2.944
+   "follows_attr": -3.021
   },
   {
    "media_id": "18014769038986883",
@@ -2536,7 +2536,8 @@
    "track": "3a",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.588
   },
   {
    "media_id": "18423876442158552",
@@ -2546,7 +2547,18 @@
    "theme": "story",
    "text": "caption this: Anime Girl Hiding from Terminator",
    "kind": "story",
-   "story_type": "caption_this"
+   "story_type": "caption_this",
+   "follows_attr": -0.159
+  },
+  {
+   "media_id": "17944987674377856",
+   "posted_at": "2026-11-10T18:20:42.582923+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "nobody: / me: silently delete his meme saves before he notices || The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified.",
+   "kind": "story",
+   "story_type": "faceoff"
   }
  ],
  "imported": [
@@ -3807,20 +3819,21 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-10T15:56:42.958164+00:00",
-  "followers": 48334,
+  "t": "2026-11-10T18:20:24.340051+00:00",
+  "followers": 48333,
   "reach": {
-   "18133178935760909": 185,
-   "17888153271622700": 268,
+   "18133178935760909": 187,
+   "17888153271622700": 269,
    "18079215194454597": 152,
-   "18414080590095118": 235,
-   "17916258453281129": 102,
+   "18414080590095118": 238,
+   "17916258453281129": 106,
    "18115112405098480": 217,
-   "18125597546317770": 194,
-   "18125493466919224": 278,
-   "18292816102290480": 178,
-   "17910036699597345": 167,
-   "18014769038986883": 51
+   "18125597546317770": 196,
+   "18125493466919224": 297,
+   "18292816102290480": 179,
+   "17910036699597345": 181,
+   "18014769038986883": 158,
+   "18423876442158552": 29
   }
  },
  "follower_log": [

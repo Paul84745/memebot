@@ -2300,7 +2300,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.981
+   "follows_attr": -2.0
   },
   {
    "media_id": "18179926078378935",
@@ -2337,7 +2337,7 @@
    "news": true,
    "news_age_h": 0.5568116061111111,
    "funny": 6,
-   "follows_attr": -0.719
+   "follows_attr": -0.756
   },
   {
    "media_id": "17888153271622700",
@@ -2355,7 +2355,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.938
+   "follows_attr": -2.123
   },
   {
    "media_id": "18079215194454597",
@@ -2386,7 +2386,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -2.6
+   "follows_attr": -2.656
   },
   {
    "media_id": "17916258453281129",
@@ -2404,7 +2404,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.702
+   "follows_attr": -1.906
   },
   {
    "media_id": "18115112405098480",
@@ -2422,7 +2422,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.1
+   "follows_attr": -2.23
   },
   {
    "media_id": "18125597546317770",
@@ -2440,7 +2440,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.787
+   "follows_attr": -0.954
   },
   {
    "media_id": "18125493466919224",
@@ -2451,14 +2451,14 @@
    "text": "Camel struts in, eyes the lot, thinks it\u2019s a monster truck.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -2.088,
-   "reach": 84,
+   "follows_attr": -3.995,
+   "reach": 187,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-10T00:34:06.647588+00:00"
+   "profile_visits": 1,
+   "score": 32.1,
+   "measured_at": "2026-11-10T07:41:54.097121+00:00"
   },
   {
    "media_id": "18292816102290480",
@@ -2476,7 +2476,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.81
+   "follows_attr": -2.106
   }
  ],
  "imported": [
@@ -3736,21 +3736,21 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-10T00:34:06.647588+00:00",
-  "followers": 48342,
+  "t": "2026-11-10T07:41:54.097121+00:00",
+  "followers": 48339,
   "reach": {
    "18118836305121726": 172,
-   "17905158657368692": 161,
+   "17905158657368692": 162,
    "18179926078378935": 154,
-   "18133178935760909": 181,
-   "17888153271622700": 250,
+   "18133178935760909": 183,
+   "17888153271622700": 260,
    "18079215194454597": 152,
-   "18414080590095118": 221,
-   "17916258453281129": 84,
-   "18115112405098480": 206,
-   "18125597546317770": 174,
-   "18125493466919224": 84,
-   "18292816102290480": 149
+   "18414080590095118": 224,
+   "17916258453281129": 95,
+   "18115112405098480": 213,
+   "18125597546317770": 183,
+   "18125493466919224": 187,
+   "18292816102290480": 165
   }
  },
  "follower_log": [

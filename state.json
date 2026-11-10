@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-10T21:09:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-10",
@@ -2434,7 +2434,20 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -2.802
+   "follows_attr": -2.802,
+   "follows_src": "instagram",
+   "like_count": 16,
+   "comments_count": 0,
+   "reach": 238,
+   "shares": 0,
+   "saved": 0,
+   "views": 551,
+   "follows": 0,
+   "profile_visits": 6,
+   "sends_per_1k": 0.0,
+   "score": 67.2,
+   "follows_per_1k": 0.0,
+   "final": true
   },
   {
    "media_id": "17916258453281129",
@@ -2573,13 +2586,13 @@
    "kind": "story",
    "story_type": "caption_this",
    "follows_attr": -0.159,
-   "reach": 42,
+   "reach": 52,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-10T19:34:17.342353+00:00"
+   "measured_at": "2026-11-10T21:10:00.817411+00:00"
   },
   {
    "media_id": "17944987674377856",
@@ -2604,6 +2617,23 @@
    "music_style": "drill",
    "music_fx": "none",
    "track": "YOU DRILL MY BRAIN",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "18087017441336010",
+   "posted_at": "2026-11-10T21:13:13.327095+00:00",
+   "template_id": "161865971",
+   "template_name": "Marked Safe From",
+   "theme": "drinking, hangovers and nights out",
+   "text": "how me and bro plan a night out, end up with a funeral",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "lofi",
+   "music_fx": "slowed_reverb",
+   "track": "Lofy",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -3867,20 +3897,19 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-10T19:34:17.342353+00:00",
+  "t": "2026-11-10T21:10:00.817411+00:00",
   "followers": 48333,
   "reach": {
-   "18079215194454597": 152,
-   "18414080590095118": 238,
-   "17916258453281129": 106,
+   "17916258453281129": 108,
    "18115112405098480": 217,
-   "18125597546317770": 197,
+   "18125597546317770": 199,
    "18125493466919224": 309,
    "18292816102290480": 181,
-   "17910036699597345": 183,
-   "18014769038986883": 161,
-   "18423876442158552": 42,
-   "17944987674377856": 11
+   "17910036699597345": 186,
+   "18014769038986883": 163,
+   "18423876442158552": 52,
+   "17944987674377856": 23,
+   "18150285085559990": 27
   }
  },
  "follower_log": [

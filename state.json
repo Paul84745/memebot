@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "slots": [
    {
-    "t": "2026-11-09T07:21:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-10T08:27:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-09T08:02:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-10T12:11:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-09T11:09:00+00:00",
-    "status": "skipped",
+    "t": "2026-11-10T13:07:00+00:00",
+    "status": "pending",
     "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-09T12:07:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-09T12:56:00+00:00",
-    "status": "skipped",
+    "t": "2026-11-10T14:06:00+00:00",
+    "status": "pending",
     "attempts": 0
    },
    {
-    "t": "2026-11-09T18:25:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-10T18:19:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-09T21:08:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-10T19:33:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-10T21:09:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-09",
-  "stories_date": "2026-11-09"
+  "dump_checked": "2026-11-10",
+  "stories_date": "2026-11-10"
  },
  "history": [
   {
@@ -2222,7 +2222,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.789
+   "follows_attr": -1.789,
+   "follows_src": "estimated",
+   "like_count": 6,
+   "comments_count": 0,
+   "reach": 244,
+   "shares": 0,
+   "saved": 0,
+   "views": 349,
+   "sends_per_1k": 0.0,
+   "follows": -1.8,
+   "score": 24.6,
+   "follows_per_1k": -7.38,
+   "final": true
   },
   {
    "media_id": "18161544853503121",
@@ -2240,7 +2252,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.765
+   "follows_attr": -1.765,
+   "follows_src": "estimated",
+   "like_count": 7,
+   "comments_count": 0,
+   "reach": 187,
+   "shares": 0,
+   "saved": 0,
+   "views": 268,
+   "sends_per_1k": 0.0,
+   "follows": -1.8,
+   "score": 37.4,
+   "follows_per_1k": -9.63,
+   "final": true
   },
   {
    "media_id": "18118836305121726",
@@ -2258,7 +2282,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.975
+   "follows_attr": -0.987
   },
   {
    "media_id": "17905158657368692",
@@ -2276,7 +2300,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.969
+   "follows_attr": -1.981
   },
   {
    "media_id": "18179926078378935",
@@ -2313,7 +2337,7 @@
    "news": true,
    "news_age_h": 0.5568116061111111,
    "funny": 6,
-   "follows_attr": -0.695
+   "follows_attr": -0.719
   },
   {
    "media_id": "17888153271622700",
@@ -2331,7 +2355,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.902
+   "follows_attr": -1.938
   },
   {
    "media_id": "18079215194454597",
@@ -2362,7 +2386,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -2.479
+   "follows_attr": -2.6
   },
   {
    "media_id": "17916258453281129",
@@ -2380,7 +2404,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.641
+   "follows_attr": -1.702
   },
   {
    "media_id": "18115112405098480",
@@ -2398,7 +2422,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.051
+   "follows_attr": -2.1
   },
   {
    "media_id": "18125597546317770",
@@ -2416,7 +2440,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.714
+   "follows_attr": -0.787
   },
   {
    "media_id": "18125493466919224",
@@ -2427,7 +2451,14 @@
    "text": "Camel struts in, eyes the lot, thinks it\u2019s a monster truck.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -1.286
+   "follows_attr": -2.088,
+   "reach": 84,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-10T00:34:06.647588+00:00"
   },
   {
    "media_id": "18292816102290480",
@@ -2444,7 +2475,8 @@
    "track": "Suspense and Tension-stem-3-1min",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -1.81
   }
  ],
  "imported": [
@@ -3704,22 +3736,21 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-09T21:09:03.225249+00:00",
-  "followers": 48345,
+  "t": "2026-11-10T00:34:06.647588+00:00",
+  "followers": 48342,
   "reach": {
-   "18118990166327968": 243,
-   "18161544853503121": 186,
-   "18118836305121726": 171,
-   "17905158657368692": 160,
+   "18118836305121726": 172,
+   "17905158657368692": 161,
    "18179926078378935": 154,
-   "18133178935760909": 179,
-   "17888153271622700": 247,
+   "18133178935760909": 181,
+   "17888153271622700": 250,
    "18079215194454597": 152,
-   "18414080590095118": 211,
-   "17916258453281129": 79,
-   "18115112405098480": 202,
-   "18125597546317770": 168,
-   "18125493466919224": 18
+   "18414080590095118": 221,
+   "17916258453281129": 84,
+   "18115112405098480": 206,
+   "18125597546317770": 174,
+   "18125493466919224": 84,
+   "18292816102290480": 149
   }
  },
  "follower_log": [
@@ -3778,6 +3809,10 @@
   [
    "2026-11-09T00:19:55.076674+00:00",
    48356
+  ],
+  [
+   "2026-11-10T00:34:06.647588+00:00",
+   48342
   ]
  ]
 }

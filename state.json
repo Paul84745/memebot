@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-11-11T20:02:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -2575,7 +2575,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.382
+   "follows_attr": -2.391
   },
   {
    "media_id": "17910036699597345",
@@ -2593,7 +2593,7 @@
    "news": true,
    "news_age_h": 0.30135309555555556,
    "funny": 7,
-   "follows_attr": -3.094
+   "follows_attr": -3.112
   },
   {
    "media_id": "18014769038986883",
@@ -2611,7 +2611,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.736
+   "follows_attr": -0.754
   },
   {
    "media_id": "18423876442158552",
@@ -2685,7 +2685,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.483
+   "follows_attr": -1.492
   },
   {
    "media_id": "18403097131206646",
@@ -2703,7 +2703,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.134
+   "follows_attr": -0.179
   },
   {
    "media_id": "18160333063504696",
@@ -2714,14 +2714,14 @@
    "text": "when you finally get a meeting invite",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.194,
-   "reach": 59,
+   "follows_attr": -0.527,
+   "reach": 96,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 67.8,
-   "measured_at": "2026-11-11T18:14:41.808316+00:00"
+   "profile_visits": 1,
+   "score": 62.5,
+   "measured_at": "2026-11-11T20:03:01.834595+00:00"
   },
   {
    "media_id": "18121549466045866",
@@ -2733,7 +2733,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -0.461
+   "follows_attr": -0.641
   },
   {
    "media_id": "17885828007525938",
@@ -2750,7 +2750,8 @@
    "track": "50",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.279
   },
   {
    "media_id": "17893786503617849",
@@ -2767,7 +2768,18 @@
    "track": "Super Power Pop Rock",
    "news": true,
    "news_age_h": 0.2452111372222222,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.108
+  },
+  {
+   "media_id": "18008699720789506",
+   "posted_at": "2026-11-11T20:04:24.644906+00:00",
+   "template_id": "101470",
+   "template_name": "story",
+   "theme": "story",
+   "text": "be kind, they\u2019re probably just as confused as you",
+   "kind": "story",
+   "story_type": "rate"
   }
  ],
  "imported": [
@@ -3946,59 +3958,30 @@
   "\u2018Primetime\u2019 composer Ari Balouzian reveals score\u2019s unexpected influences"
  ],
  "trends": {
-  "fetched_at": "2026-11-08T18:42:04.510319+00:00",
+  "fetched_at": "2026-11-11T20:03:01.834595+00:00",
   "styles": [
    {
-    "query": "house",
-    "moods": [
-     "upbeat",
-     "bouncy",
-     "hype"
-    ],
-    "fx": "sped_up"
-   },
-   {
-    "query": "afrobeats",
-    "moods": [
-     "upbeat",
-     "bouncy",
-     "wholesome"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "kpop",
-    "moods": [
-     "upbeat",
-     "hype",
-     "wholesome"
-    ],
-    "fx": "sped_up"
-   },
-   {
-    "query": "p-pop",
-    "moods": [
-     "upbeat",
-     "bouncy",
-     "hype"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "drill",
+    "query": "uk drill",
     "moods": [
      "hype",
-     "dramatic",
-     "awkward"
+     "bouncy"
     ],
     "fx": "none"
    },
    {
-    "query": "lofi",
+    "query": "jersey club",
+    "moods": [
+     "bouncy",
+     "upbeat"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "ambient synth",
     "moods": [
      "chill",
-     "sad",
-     "wholesome"
+     "awkward",
+     "dramatic"
     ],
     "fx": "slowed_reverb"
    },
@@ -4006,7 +3989,16 @@
     "query": "phonk",
     "moods": [
      "hype",
-     "dramatic"
+     "bouncy"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "country pop",
+    "moods": [
+     "wholesome",
+     "sad",
+     "upbeat"
     ],
     "fx": "none"
    },
@@ -4020,6 +4012,15 @@
     "fx": "sped_up"
    },
    {
+    "query": "lofi",
+    "moods": [
+     "chill",
+     "sad",
+     "wholesome"
+    ],
+    "fx": "slowed_reverb"
+   },
+   {
     "query": "piano",
     "moods": [
      "sad",
@@ -4029,23 +4030,25 @@
     "fx": "slowed_reverb"
    }
   ],
-  "source": "17 headlines"
+  "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-11T18:10:05.875683+00:00",
-  "followers": 48328,
+  "t": "2026-11-11T20:03:01.834595+00:00",
+  "followers": 48327,
   "reach": {
    "18125493466919224": 309,
-   "18292816102290480": 190,
-   "17910036699597345": 196,
-   "18014769038986883": 182,
+   "18292816102290480": 191,
+   "17910036699597345": 198,
+   "18014769038986883": 184,
    "18423876442158552": 154,
    "17944987674377856": 154,
    "18150285085559990": 82,
-   "18087017441336010": 201,
-   "18403097131206646": 84,
-   "18160333063504696": 59,
-   "18121549466045866": 107
+   "18087017441336010": 202,
+   "18403097131206646": 89,
+   "18160333063504696": 96,
+   "18121549466045866": 127,
+   "17885828007525938": 31,
+   "17893786503617849": 12
   }
  },
  "follower_log": [

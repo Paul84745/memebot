@@ -37,8 +37,8 @@
    },
    {
     "t": "2026-11-11T23:21:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-11",
@@ -2727,13 +2727,13 @@
    "kind": "story",
    "story_type": "rate",
    "follows_attr": -0.527,
-   "reach": 114,
+   "reach": 123,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 52.6,
-   "measured_at": "2026-11-11T22:46:46.664497+00:00"
+   "score": 48.8,
+   "measured_at": "2026-11-11T23:22:46.684493+00:00"
   },
   {
    "media_id": "18121549466045866",
@@ -2791,7 +2791,31 @@
    "theme": "story",
    "text": "be kind, they\u2019re probably just as confused as you",
    "kind": "story",
-   "story_type": "rate"
+   "story_type": "rate",
+   "reach": 36,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-11T23:22:46.684493+00:00"
+  },
+  {
+   "media_id": "17936959035143616",
+   "posted_at": "2026-11-11T23:24:49.487404+00:00",
+   "template_id": "102156234",
+   "template_name": "Mocking Spongebob",
+   "theme": "holidays and travel",
+   "text": "Guard asks about illegal items; I reply, 'my regret luggage.'",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "\u0413\u0430\u0440\u0440\u0438 \u041f\u043e\u0442\u0442\u0435\u0440 (Harry Potter)",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -4045,21 +4069,21 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-11T22:46:46.664497+00:00",
+  "t": "2026-11-11T23:22:46.684493+00:00",
   "followers": 48327,
   "reach": {
-   "17910036699597345": 199,
-   "18014769038986883": 185,
+   "17910036699597345": 200,
+   "18014769038986883": 188,
    "18423876442158552": 154,
    "17944987674377856": 154,
    "18150285085559990": 83,
    "18087017441336010": 206,
    "18403097131206646": 96,
-   "18160333063504696": 114,
-   "18121549466045866": 153,
-   "17885828007525938": 50,
-   "17893786503617849": 23,
-   "18008699720789506": 27
+   "18160333063504696": 123,
+   "18121549466045866": 165,
+   "17885828007525938": 53,
+   "17893786503617849": 27,
+   "18008699720789506": 36
   }
  },
  "follower_log": [

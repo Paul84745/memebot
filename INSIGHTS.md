@@ -25,8 +25,8 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - faceoff: score 41.9, reach 159, follows 0 (4 stories)
 - caption_this: score 35.8, reach 143, follows 0 (6 stories)
 
-## Trending music styles right now (17 headlines, 2026-11-08)
-- house (sped up), afrobeats, kpop (sped up), p-pop, drill, lofi (slowed reverb), phonk, funk (sped up), piano (slowed reverb)
+## Trending music styles right now (22 headlines, 2026-11-11)
+- uk drill, jersey club, ambient synth (slowed reverb), phonk, country pop, funk (sped up), lofi (slowed reverb), piano (slowed reverb)
 - results by sound style:
   - drill: avg 84.8 (3 posts)
   - piano: avg 72.4 (5 posts)

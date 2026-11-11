@@ -26,8 +26,8 @@
    },
    {
     "t": "2026-11-11T18:09:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-11T20:02:00+00:00",
@@ -2721,7 +2721,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 67.8,
-   "measured_at": "2026-11-11T18:10:05.875683+00:00"
+   "measured_at": "2026-11-11T18:14:41.808316+00:00"
   },
   {
    "media_id": "18121549466045866",
@@ -2751,6 +2751,23 @@
    "news": false,
    "news_age_h": null,
    "funny": 7
+  },
+  {
+   "media_id": "17893786503617849",
+   "posted_at": "2026-11-11T18:17:09.535511+00:00",
+   "template_id": "101288",
+   "template_name": "Third World Skeptical Kid",
+   "theme": "news",
+   "text": "me when I write symphonies about laser\u2011pointer chases\u2014entire orchestra looks like they missed the memo",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "upbeat",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Super Power Pop Rock",
+   "news": true,
+   "news_age_h": 0.2452111372222222,
+   "funny": 8
   }
  ],
  "imported": [
@@ -3925,7 +3942,8 @@
   "Locals launch campaign to buy ancient wood",
   "Cat Convention 'Confused' After Jake Lang Turned Up Shouting About Furries",
   "Amanda Seyfried Makes Unexpected Statement About Divorce & People Are Praising Her Different Approach",
-  "Basics of sleepmaxxing: Which viral bedtime hacks are actually worth it?"
+  "Basics of sleepmaxxing: Which viral bedtime hacks are actually worth it?",
+  "\u2018Primetime\u2019 composer Ari Balouzian reveals score\u2019s unexpected influences"
  ],
  "trends": {
   "fetched_at": "2026-11-08T18:42:04.510319+00:00",

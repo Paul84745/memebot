@@ -21,8 +21,8 @@
    },
    {
     "t": "2026-11-11T15:45:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-11T18:09:00+00:00",
@@ -2526,7 +2526,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.192
+   "follows_attr": -1.192,
+   "follows_src": "estimated",
+   "like_count": 5,
+   "comments_count": 0,
+   "reach": 209,
+   "shares": 0,
+   "saved": 0,
+   "views": 267,
+   "sends_per_1k": 0.0,
+   "follows": -1.2,
+   "score": 23.9,
+   "follows_per_1k": -5.74,
+   "final": true
   },
   {
    "media_id": "18125493466919224",
@@ -2563,7 +2575,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.378
+   "follows_attr": -2.382
   },
   {
    "media_id": "17910036699597345",
@@ -2581,7 +2593,7 @@
    "news": true,
    "news_age_h": 0.30135309555555556,
    "funny": 7,
-   "follows_attr": -3.081
+   "follows_attr": -3.094
   },
   {
    "media_id": "18014769038986883",
@@ -2599,7 +2611,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.732
+   "follows_attr": -0.736
   },
   {
    "media_id": "18423876442158552",
@@ -2636,7 +2648,7 @@
    "profile_visits": 1,
    "score": 48.0,
    "measured_at": "2026-11-11T13:45:16.807149+00:00",
-   "follows_attr": -0.918,
+   "follows_attr": -1.043,
    "final": true
   },
   {
@@ -2655,7 +2667,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.269
+   "follows_attr": -0.308
   },
   {
    "media_id": "18087017441336010",
@@ -2673,7 +2685,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.457
+   "follows_attr": -1.483
   },
   {
    "media_id": "18403097131206646",
@@ -2690,7 +2702,8 @@
    "track": "To Drill The Brain",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.134
   },
   {
    "media_id": "18160333063504696",
@@ -2700,7 +2713,15 @@
    "theme": "story",
    "text": "when you finally get a meeting invite",
    "kind": "story",
-   "story_type": "rate"
+   "story_type": "rate",
+   "follows_attr": -0.194,
+   "reach": 59,
+   "shares": 0,
+   "replies": 1,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 67.8,
+   "measured_at": "2026-11-11T18:10:05.875683+00:00"
   },
   {
    "media_id": "18121549466045866",
@@ -2711,7 +2732,25 @@
    "text": "Behind the mech, kittens plot: 'Free treats, no Terminators.' | He said 'just one beer'\u2014now the fridge looks like a crime scene. | Plot twist: my dating life got a laugh track and a canned laugh. | Pro tip: scroll forever, dream of never sleeping. | my boss: 'deadline tomorrow'\u2014me: *slap* | nobody: / me: explains why my mom hoards empty pizza boxes | first day at the mailbox: found the package i ordered last month | when you eat the entire pizza and the delivery guy leaves a note: 'good luck'",
    "kind": "carousel",
    "slides": 8,
-   "funny": 6.2
+   "funny": 6.2,
+   "follows_attr": -0.461
+  },
+  {
+   "media_id": "17885828007525938",
+   "posted_at": "2026-11-11T18:12:56.475596+00:00",
+   "template_id": "177682295",
+   "template_name": "You Guys are Getting Paid",
+   "theme": "gaming",
+   "text": "Beat the final boss, it birthing triplets\u2014guess I'm on a grind loop.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "50",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3975,20 +4014,20 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-11T13:45:16.807149+00:00",
-  "followers": 48329,
+  "t": "2026-11-11T18:10:05.875683+00:00",
+  "followers": 48328,
   "reach": {
-   "18125597546317770": 208,
    "18125493466919224": 309,
-   "18292816102290480": 189,
-   "17910036699597345": 193,
-   "18014769038986883": 181,
+   "18292816102290480": 190,
+   "17910036699597345": 196,
+   "18014769038986883": 182,
    "18423876442158552": 154,
-   "17944987674377856": 125,
-   "18150285085559990": 73,
-   "18087017441336010": 195,
-   "18403097131206646": 53,
-   "18160333063504696": 14
+   "17944987674377856": 154,
+   "18150285085559990": 82,
+   "18087017441336010": 201,
+   "18403097131206646": 84,
+   "18160333063504696": 59,
+   "18121549466045866": 107
   }
  },
  "follower_log": [

@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-11T08:37:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-11T11:39:00+00:00",
@@ -2611,13 +2611,13 @@
    "kind": "story",
    "story_type": "caption_this",
    "follows_attr": -1.131,
-   "reach": 127,
+   "reach": 128,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-11T08:18:51.882831+00:00"
+   "measured_at": "2026-11-11T08:38:14.864695+00:00"
   },
   {
    "media_id": "17944987674377856",
@@ -2628,13 +2628,13 @@
    "text": "nobody: / me: silently delete his meme saves before he notices || The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified.",
    "kind": "story",
    "story_type": "faceoff",
-   "reach": 96,
+   "reach": 97,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 62.5,
-   "measured_at": "2026-11-11T08:18:51.882831+00:00",
+   "score": 61.9,
+   "measured_at": "2026-11-11T08:38:14.864695+00:00",
    "follows_attr": -0.918
   },
   {
@@ -2672,6 +2672,23 @@
    "news_age_h": null,
    "funny": 7,
    "follows_attr": -1.457
+  },
+  {
+   "media_id": "18403097131206646",
+   "posted_at": "2026-11-11T08:39:59.320867+00:00",
+   "template_id": "61585",
+   "template_name": "Bad Luck Brian",
+   "theme": "friends and group chats",
+   "text": "Group chat says 'surprise party', I arrive dressed as the surprise\u2014presents for my own face.",
+   "format": "other",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "drill",
+   "music_fx": "none",
+   "track": "To Drill The Brain",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3932,7 +3949,7 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-11T08:18:51.882831+00:00",
+  "t": "2026-11-11T08:38:14.864695+00:00",
   "followers": 48329,
   "reach": {
    "18125597546317770": 205,
@@ -3940,8 +3957,8 @@
    "18292816102290480": 186,
    "17910036699597345": 191,
    "18014769038986883": 178,
-   "18423876442158552": 127,
-   "17944987674377856": 96,
+   "18423876442158552": 128,
+   "17944987674377856": 97,
    "18150285085559990": 57,
    "18087017441336010": 188
   }

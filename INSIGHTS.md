@@ -1,19 +1,19 @@
 # What the bot has learned
 
-Posts measured so far: 67 (plus 200 older page posts)
+Posts measured so far: 68 (plus 200 older page posts)
 
 Score = engagement per 1,000 people reached: a new follower counts 20x a like, a DM send 8x.
 
 ## Sends
-- average: 0.67 sends per 1,000 reached (last 10 posts: 0.87)
+- average: 0.66 sends per 1,000 reached (last 10 posts: 0.00)
 
 ## Meme dumps vs single memes
 - dumps: avg 85.4 (3 posts)
-- single: avg 60.9 (67 posts)
+- single: avg 60.4 (68 posts)
 
 ## Followers
 - now 48331 (-87 since 2026-11-04)
-- new followers per 1,000 people reached: -9.67 on average (66 posts)
+- new followers per 1,000 people reached: -9.61 on average (67 posts)
 - posts that brought the most followers:
   - (0.00/1k, 0 follows) How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season
   - (0.00/1k, 0 follows) POV: you walk into the kitchen at 3:22 am, fridge light blinds you, and the pizza is gone | POV: you hit send at 2:07 am, then see 'seen' at 2:08 and it’s already sunrise | When you promise a 5‑minute TikTok break at 8:45 pm and it's now 1 am | Me when the group chat hits 150 messages and the plan is still 'maybe Friday' | POV: you open the essay at 3 pm, close it at 3:01 pm, and stare at the blank page till midnight
@@ -32,8 +32,8 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - piano: avg 72.4 (5 posts)
   - uk garage: avg 69.9 (1 posts)
   - ambient: avg 68.7 (3 posts)
-  - plain mood music: avg 62.5 (39 posts)
   - folk: avg 62.3 (3 posts)
+  - plain mood music: avg 61.5 (40 posts)
   - lofi: avg 56.2 (4 posts)
   - disco funk: avg 54.1 (1 posts)
   - house: avg 38.2 (2 posts)
@@ -47,7 +47,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 ## Best posting times (UTC)
 - 20:00-22:00 (score x1.87)
 - 12:00-14:00 (score x1.66)
-- 18:00-20:00 (score x0.60)
+- 18:00-20:00 (score x0.61)
 
 ## Best themes
 - awkward social moments: avg 128.2 (1 posts)
@@ -69,20 +69,20 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - when_you: avg 63.7 (21 posts)
 - how_x: avg 62.0 (5 posts)
 - how_me_bro: avg 61.4 (11 posts)
-- other: avg 39.5 (15 posts)
+- other: avg 38.5 (16 posts)
 
 ## Best music
 - chill: avg 111.5 (3 posts)
 - sad: avg 70.2 (11 posts)
 - awkward: avg 67.4 (12 posts)
-- bouncy: avg 56.6 (18 posts)
+- bouncy: avg 54.9 (19 posts)
 - dramatic: avg 52.0 (10 posts)
 - upbeat: avg 46.7 (2 posts)
 - hype: avg 43.6 (10 posts)
 
 ## News memes vs normal
 - news: avg 61.5 (21 posts)
-- normal: avg 60.7 (46 posts)
+- normal: avg 59.9 (47 posts)
 
 ## Top posts
 - (317.1) how me and bro gon be hitting every hot dog stand at 2am after the holiday crawl

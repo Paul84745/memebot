@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-11T11:39:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -2611,13 +2611,14 @@
    "kind": "story",
    "story_type": "caption_this",
    "follows_attr": -1.131,
-   "reach": 128,
+   "reach": 145,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-11T08:38:14.864695+00:00"
+   "measured_at": "2026-11-11T11:40:11.629704+00:00",
+   "final": true
   },
   {
    "media_id": "17944987674377856",
@@ -2628,13 +2629,13 @@
    "text": "nobody: / me: silently delete his meme saves before he notices || The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified.",
    "kind": "story",
    "story_type": "faceoff",
-   "reach": 97,
+   "reach": 113,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 61.9,
-   "measured_at": "2026-11-11T08:38:14.864695+00:00",
+   "score": 53.1,
+   "measured_at": "2026-11-11T11:40:11.629704+00:00",
    "follows_attr": -0.918
   },
   {
@@ -2689,6 +2690,16 @@
    "news": false,
    "news_age_h": null,
    "funny": 7
+  },
+  {
+   "media_id": "18160333063504696",
+   "posted_at": "2026-11-11T11:43:48.530539+00:00",
+   "template_id": "221578498",
+   "template_name": "story",
+   "theme": "story",
+   "text": "when you finally get a meeting invite",
+   "kind": "story",
+   "story_type": "rate"
   }
  ],
  "imported": [
@@ -3949,18 +3960,19 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-11T08:38:14.864695+00:00",
+  "t": "2026-11-11T11:40:11.629704+00:00",
   "followers": 48329,
   "reach": {
-   "18125597546317770": 205,
+   "18125597546317770": 208,
    "18125493466919224": 309,
    "18292816102290480": 186,
    "17910036699597345": 191,
-   "18014769038986883": 178,
-   "18423876442158552": 128,
-   "17944987674377856": 97,
-   "18150285085559990": 57,
-   "18087017441336010": 188
+   "18014769038986883": 181,
+   "18423876442158552": 145,
+   "17944987674377856": 113,
+   "18150285085559990": 66,
+   "18087017441336010": 192,
+   "18403097131206646": 35
   }
  },
  "follower_log": [

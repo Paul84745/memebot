@@ -2466,7 +2466,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.09
+   "follows_attr": -2.09,
+   "follows_src": "estimated",
+   "like_count": 12,
+   "comments_count": 0,
+   "reach": 117,
+   "shares": 0,
+   "saved": 1,
+   "views": 167,
+   "sends_per_1k": 0.0,
+   "follows": -2.1,
+   "score": 128.2,
+   "follows_per_1k": -17.95,
+   "final": true
   },
   {
    "media_id": "18115112405098480",
@@ -2484,7 +2496,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.294
+   "follows_attr": -2.294,
+   "follows_src": "estimated",
+   "like_count": 10,
+   "comments_count": 0,
+   "reach": 221,
+   "shares": 0,
+   "saved": 0,
+   "views": 296,
+   "sends_per_1k": 0.0,
+   "follows": -2.3,
+   "score": 45.2,
+   "follows_per_1k": -10.41,
+   "final": true
   },
   {
    "media_id": "18125597546317770",
@@ -2502,7 +2526,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.137
+   "follows_attr": -1.192
   },
   {
    "media_id": "18125493466919224",
@@ -2539,7 +2563,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.323
+   "follows_attr": -2.378
   },
   {
    "media_id": "17910036699597345",
@@ -2557,7 +2581,7 @@
    "news": true,
    "news_age_h": 0.30135309555555556,
    "funny": 7,
-   "follows_attr": -3.045
+   "follows_attr": -3.081
   },
   {
    "media_id": "18014769038986883",
@@ -2575,7 +2599,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.659
+   "follows_attr": -0.732
   },
   {
    "media_id": "18423876442158552",
@@ -2586,14 +2610,14 @@
    "text": "caption this: Anime Girl Hiding from Terminator",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -0.349,
-   "reach": 84,
+   "follows_attr": -1.131,
+   "reach": 127,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-11T01:28:05.145977+00:00"
+   "measured_at": "2026-11-11T08:18:51.882831+00:00"
   },
   {
    "media_id": "17944987674377856",
@@ -2604,14 +2628,14 @@
    "text": "nobody: / me: silently delete his meme saves before he notices || The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified.",
    "kind": "story",
    "story_type": "faceoff",
-   "reach": 59,
+   "reach": 96,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 101.7,
-   "measured_at": "2026-11-11T01:28:05.145977+00:00",
-   "follows_attr": -0.245
+   "score": 62.5,
+   "measured_at": "2026-11-11T08:18:51.882831+00:00",
+   "follows_attr": -0.918
   },
   {
    "media_id": "18150285085559990",
@@ -2629,7 +2653,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.142
+   "follows_attr": -0.269
   },
   {
    "media_id": "18087017441336010",
@@ -2647,7 +2671,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.257
+   "follows_attr": -1.457
   }
  ],
  "imported": [
@@ -3908,20 +3932,18 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-11T01:28:05.145977+00:00",
-  "followers": 48331,
+  "t": "2026-11-11T08:18:51.882831+00:00",
+  "followers": 48329,
   "reach": {
-   "17916258453281129": 112,
-   "18115112405098480": 218,
-   "18125597546317770": 202,
+   "18125597546317770": 205,
    "18125493466919224": 309,
-   "18292816102290480": 183,
-   "17910036699597345": 189,
-   "18014769038986883": 174,
-   "18423876442158552": 84,
-   "17944987674377856": 59,
-   "18150285085559990": 50,
-   "18087017441336010": 177
+   "18292816102290480": 186,
+   "17910036699597345": 191,
+   "18014769038986883": 178,
+   "18423876442158552": 127,
+   "17944987674377856": 96,
+   "18150285085559990": 57,
+   "18087017441336010": 188
   }
  },
  "follower_log": [

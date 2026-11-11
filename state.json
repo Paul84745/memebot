@@ -15,8 +15,8 @@
    },
    {
     "t": "2026-11-11T13:44:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "dump"
    },
    {
@@ -2629,14 +2629,15 @@
    "text": "nobody: / me: silently delete his meme saves before he notices || The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified.",
    "kind": "story",
    "story_type": "faceoff",
-   "reach": 113,
+   "reach": 125,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 53.1,
-   "measured_at": "2026-11-11T11:40:11.629704+00:00",
-   "follows_attr": -0.918
+   "score": 48.0,
+   "measured_at": "2026-11-11T13:45:16.807149+00:00",
+   "follows_attr": -0.918,
+   "final": true
   },
   {
    "media_id": "18150285085559990",
@@ -2700,6 +2701,17 @@
    "text": "when you finally get a meeting invite",
    "kind": "story",
    "story_type": "rate"
+  },
+  {
+   "media_id": "18121549466045866",
+   "posted_at": "2026-11-11T13:50:30.877727+00:00",
+   "template_id": "dump",
+   "template_name": "meme dump",
+   "theme": "meme dump",
+   "text": "Behind the mech, kittens plot: 'Free treats, no Terminators.' | He said 'just one beer'\u2014now the fridge looks like a crime scene. | Plot twist: my dating life got a laugh track and a canned laugh. | Pro tip: scroll forever, dream of never sleeping. | my boss: 'deadline tomorrow'\u2014me: *slap* | nobody: / me: explains why my mom hoards empty pizza boxes | first day at the mailbox: found the package i ordered last month | when you eat the entire pizza and the delivery guy leaves a note: 'good luck'",
+   "kind": "carousel",
+   "slides": 8,
+   "funny": 6.2
   }
  ],
  "imported": [
@@ -3871,7 +3883,10 @@
   "Dad stunned after unexpected encounter on remote Aussie beach while digging for crabs: 'Never had that'",
   "Video shows hot air balloon make unexpected landing in Menifee neighborhood",
   "Camel spotted walking through Little Rock parking lot in now-viral video",
-  "Locals launch campaign to buy ancient wood"
+  "Locals launch campaign to buy ancient wood",
+  "Cat Convention 'Confused' After Jake Lang Turned Up Shouting About Furries",
+  "Amanda Seyfried Makes Unexpected Statement About Divorce & People Are Praising Her Different Approach",
+  "Basics of sleepmaxxing: Which viral bedtime hacks are actually worth it?"
  ],
  "trends": {
   "fetched_at": "2026-11-08T18:42:04.510319+00:00",
@@ -3960,19 +3975,20 @@
   "source": "17 headlines"
  },
  "follow_track": {
-  "t": "2026-11-11T11:40:11.629704+00:00",
+  "t": "2026-11-11T13:45:16.807149+00:00",
   "followers": 48329,
   "reach": {
    "18125597546317770": 208,
    "18125493466919224": 309,
-   "18292816102290480": 186,
-   "17910036699597345": 191,
+   "18292816102290480": 189,
+   "17910036699597345": 193,
    "18014769038986883": 181,
-   "18423876442158552": 145,
-   "17944987674377856": 113,
-   "18150285085559990": 66,
-   "18087017441336010": 192,
-   "18403097131206646": 35
+   "18423876442158552": 154,
+   "17944987674377856": 125,
+   "18150285085559990": 73,
+   "18087017441336010": 195,
+   "18403097131206646": 53,
+   "18160333063504696": 14
   }
  },
  "follower_log": [

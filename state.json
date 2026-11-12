@@ -1,48 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "slots": [
    {
-    "t": "2026-11-11T08:37:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-12T07:21:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-11T11:39:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-12T09:05:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-12T11:06:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-11T13:44:00+00:00",
-    "status": "done",
-    "attempts": 1,
-    "kind": "dump"
+    "t": "2026-11-12T12:02:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-11T15:45:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-11T18:09:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-11T20:02:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-12T18:13:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-11T23:21:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-12T20:06:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-12T21:13:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-11",
-  "stories_date": "2026-11-11"
+  "dump_checked": "2026-11-12",
+  "stories_date": "2026-11-12"
  },
  "history": [
   {
@@ -2605,7 +2604,7 @@
    "news": true,
    "news_age_h": 0.30135309555555556,
    "funny": 7,
-   "follows_attr": -3.112
+   "follows_attr": -3.134
   },
   {
    "media_id": "18014769038986883",
@@ -2679,7 +2678,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.308
+   "follows_attr": -0.322
   },
   {
    "media_id": "18087017441336010",
@@ -2697,7 +2696,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.492
+   "follows_attr": -1.499
   },
   {
    "media_id": "18403097131206646",
@@ -2715,7 +2714,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.179
+   "follows_attr": -0.208
   },
   {
    "media_id": "18160333063504696",
@@ -2726,14 +2725,14 @@
    "text": "when you finally get a meeting invite",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.527,
-   "reach": 123,
+   "follows_attr": -0.728,
+   "reach": 151,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 48.8,
-   "measured_at": "2026-11-11T23:22:46.684493+00:00"
+   "score": 39.7,
+   "measured_at": "2026-11-12T03:29:46.294905+00:00"
   },
   {
    "media_id": "18121549466045866",
@@ -2745,7 +2744,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -0.641
+   "follows_attr": -0.735
   },
   {
    "media_id": "17885828007525938",
@@ -2763,7 +2762,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.279
+   "follows_attr": -0.423
   },
   {
    "media_id": "17893786503617849",
@@ -2781,7 +2780,7 @@
    "news": true,
    "news_age_h": 0.2452111372222222,
    "funny": 8,
-   "follows_attr": -0.108
+   "follows_attr": -0.144
   },
   {
    "media_id": "18008699720789506",
@@ -2792,13 +2791,14 @@
    "text": "be kind, they\u2019re probably just as confused as you",
    "kind": "story",
    "story_type": "rate",
-   "reach": 36,
+   "reach": 67,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-11T23:22:46.684493+00:00"
+   "score": 59.7,
+   "measured_at": "2026-11-12T03:29:46.294905+00:00",
+   "follows_attr": -0.223
   },
   {
    "media_id": "17936959035143616",
@@ -2815,7 +2815,8 @@
    "track": "\u0413\u0430\u0440\u0440\u0438 \u041f\u043e\u0442\u0442\u0435\u0440 (Harry Potter)",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.23
   }
  ],
  "imported": [
@@ -4069,21 +4070,22 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-11T23:22:46.684493+00:00",
-  "followers": 48327,
+  "t": "2026-11-12T03:29:46.294905+00:00",
+  "followers": 48326,
   "reach": {
-   "17910036699597345": 200,
+   "17910036699597345": 203,
    "18014769038986883": 188,
    "18423876442158552": 154,
    "17944987674377856": 154,
-   "18150285085559990": 83,
-   "18087017441336010": 206,
-   "18403097131206646": 96,
-   "18160333063504696": 123,
-   "18121549466045866": 165,
-   "17885828007525938": 53,
-   "17893786503617849": 27,
-   "18008699720789506": 36
+   "18150285085559990": 85,
+   "18087017441336010": 207,
+   "18403097131206646": 100,
+   "18160333063504696": 151,
+   "18121549466045866": 178,
+   "17885828007525938": 73,
+   "17893786503617849": 32,
+   "18008699720789506": 67,
+   "17936959035143616": 32
   }
  },
  "follower_log": [
@@ -4150,6 +4152,10 @@
   [
    "2026-11-11T01:28:05.145977+00:00",
    48331
+  ],
+  [
+   "2026-11-12T03:29:46.294905+00:00",
+   48326
   ]
  ]
 }

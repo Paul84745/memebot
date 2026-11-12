@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-12T21:13:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-12",
@@ -2732,7 +2732,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.565
+   "follows_attr": -1.565,
+   "follows_src": "estimated",
+   "like_count": 8,
+   "comments_count": 0,
+   "reach": 214,
+   "shares": 0,
+   "saved": 0,
+   "views": 282,
+   "sends_per_1k": 0.0,
+   "follows": -1.6,
+   "score": 37.4,
+   "follows_per_1k": -7.48,
+   "final": true
   },
   {
    "media_id": "18403097131206646",
@@ -2902,13 +2914,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -1.145,
-   "reach": 96,
+   "reach": 99,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 62.5,
-   "measured_at": "2026-11-12T20:07:08.832600+00:00"
+   "score": 60.6,
+   "measured_at": "2026-11-12T21:14:04.638495+00:00"
   },
   {
    "media_id": "17877248985637767",
@@ -2955,6 +2967,23 @@
    "news": false,
    "news_age_h": null,
    "funny": 8
+  },
+  {
+   "media_id": "18111546679920253",
+   "posted_at": "2026-11-12T21:17:31.688175+00:00",
+   "template_id": "438680",
+   "template_name": "Batman Slapping Robin",
+   "theme": "news",
+   "text": "Started with cheap joe, ended up running a coffee syndicate that scares the barista.",
+   "format": "other",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Trapped in Panels",
+   "news": true,
+   "news_age_h": 0.29650452055555554,
+   "funny": 7
   }
  ],
  "imported": [
@@ -4132,7 +4161,8 @@
   "Basics of sleepmaxxing: Which viral bedtime hacks are actually worth it?",
   "\u2018Primetime\u2019 composer Ari Balouzian reveals score\u2019s unexpected influences",
   "Watch Rory McIlroy's hilarious attempt at hitting the world's longest driver! Credit: @GOLF_com",
-  "'Don't buy too much': Viral South Korean scarf seller sells out online after crowds overwhelm Seoul stall"
+  "'Don't buy too much': Viral South Korean scarf seller sells out online after crowds overwhelm Seoul stall",
+  "\u201cYou activate your big toe?\u201d \u2013 Peyton Watson on Nikola Jokic's bizarre ritual that completely changed his approach to the NBA"
  ],
  "trends": {
   "fetched_at": "2026-11-11T20:03:01.834595+00:00",
@@ -4210,22 +4240,22 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-12T20:07:08.832600+00:00",
+  "t": "2026-11-12T21:14:04.638495+00:00",
   "followers": 48316,
   "reach": {
-   "18087017441336010": 214,
    "18403097131206646": 118,
    "18160333063504696": 186,
-   "18121549466045866": 234,
-   "17885828007525938": 114,
-   "17893786503617849": 66,
+   "18121549466045866": 236,
+   "17885828007525938": 115,
+   "17893786503617849": 67,
    "18008699720789506": 188,
-   "17936959035143616": 64,
-   "18117157088025982": 259,
-   "18026267150944616": 203,
-   "18132894409689032": 96,
+   "17936959035143616": 65,
+   "18117157088025982": 261,
+   "18026267150944616": 207,
+   "18132894409689032": 99,
    "17877248985637767": 190,
-   "18148129231597809": 6
+   "18148129231597809": 11,
+   "18609628651068914": 169
   }
  },
  "follower_log": [

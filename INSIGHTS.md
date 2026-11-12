@@ -1,6 +1,6 @@
 # What the bot has learned
 
-Posts measured so far: 69 (plus 200 older page posts)
+Posts measured so far: 70 (plus 200 older page posts)
 
 Score = engagement per 1,000 people reached: a new follower counts 20x a like, a DM send 8x.
 
@@ -9,11 +9,11 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 
 ## Meme dumps vs single memes
 - dumps: avg 85.4 (3 posts)
-- single: avg 59.7 (69 posts)
+- single: avg 59.1 (70 posts)
 
 ## Followers
 - now 48326 (-74 since 2026-11-05)
-- new followers per 1,000 people reached: -9.65 on average (68 posts)
+- new followers per 1,000 people reached: -9.74 on average (69 posts)
 - posts that brought the most followers:
   - (0.00/1k, 0 follows) How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season
   - (0.00/1k, 0 follows) POV: you walk into the kitchen at 3:22 am, fridge light blinds you, and the pizza is gone | POV: you hit send at 2:07 am, then see 'seen' at 2:08 and it’s already sunrise | When you promise a 5‑minute TikTok break at 8:45 pm and it's now 1 am | Me when the group chat hits 150 messages and the plan is still 'maybe Friday' | POV: you open the essay at 3 pm, close it at 3:01 pm, and stare at the blank page till midnight
@@ -28,10 +28,10 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 ## Trending music styles right now (22 headlines, 2026-11-11)
 - uk drill, jersey club, ambient synth (slowed reverb), phonk, country pop, funk (sped up), lofi (slowed reverb), piano (slowed reverb)
 - results by sound style:
-  - drill: avg 84.8 (3 posts)
   - piano: avg 72.4 (5 posts)
   - uk garage: avg 69.9 (1 posts)
   - ambient: avg 68.7 (3 posts)
+  - drill: avg 68.5 (4 posts)
   - folk: avg 62.3 (3 posts)
   - plain mood music: avg 60.3 (41 posts)
   - lofi: avg 56.2 (4 posts)
@@ -61,7 +61,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - Mocking Spongebob: avg 99.4 (5 posts)
 - This Is Where I'd Put My Trophy If I Had One: avg 98.2 (4 posts)
 - Monkey Puppet: avg 97.9 (3 posts)
-- Megamind peeking: avg 89.3 (1 posts)
+- All My Homies Hate: avg 74.7 (2 posts)
 
 ## Best formats
 - pov: avg 78.6 (6 posts)
@@ -69,19 +69,19 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - when_you: avg 63.7 (21 posts)
 - how_x: avg 62.0 (5 posts)
 - how_me_bro: avg 61.4 (11 posts)
-- other: avg 36.8 (17 posts)
+- other: avg 35.9 (18 posts)
 
 ## Best music
 - chill: avg 111.5 (3 posts)
 - sad: avg 70.2 (11 posts)
-- awkward: avg 67.4 (12 posts)
+- awkward: avg 63.7 (13 posts)
 - bouncy: avg 54.9 (19 posts)
 - dramatic: avg 48.2 (11 posts)
 - upbeat: avg 46.7 (2 posts)
 - hype: avg 43.6 (10 posts)
 
 ## News memes vs normal
-- news: avg 61.5 (21 posts)
+- news: avg 59.6 (22 posts)
 - normal: avg 58.8 (48 posts)
 
 ## Top posts

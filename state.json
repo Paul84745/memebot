@@ -20,8 +20,8 @@
    },
    {
     "t": "2026-11-12T12:02:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-12T18:13:00+00:00",
@@ -2804,13 +2804,13 @@
    "text": "be kind, they\u2019re probably just as confused as you",
    "kind": "story",
    "story_type": "rate",
-   "reach": 108,
+   "reach": 114,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 2,
-   "score": 74.1,
-   "measured_at": "2026-11-12T11:07:02.041004+00:00",
+   "score": 70.2,
+   "measured_at": "2026-11-12T12:03:12.127586+00:00",
    "follows_attr": -0.769
   },
   {
@@ -2876,6 +2876,23 @@
    "text": "pick one | A: forgot lunch, eat cafeteria mystery meat | B: bring lunch, it spills on white shirt",
    "kind": "story",
    "story_type": "wyr"
+  },
+  {
+   "media_id": "17877248985637767",
+   "posted_at": "2026-11-12T12:09:00.620877+00:00",
+   "template_id": "92084495",
+   "template_name": "Charlie Conspiracy (Always Sunny in Philidelphia)",
+   "theme": "news",
+   "text": "Crowds fled, scarves vanished\u2014now I\u2019m the accidental runway king.",
+   "format": "other",
+   "kind": "reel",
+   "music": "wholesome",
+   "music_style": "lofi",
+   "music_fx": "slowed_reverb",
+   "track": "Lofy",
+   "news": true,
+   "news_age_h": 0.3454075552777778,
+   "funny": 7
   }
  ],
  "imported": [
@@ -4052,7 +4069,8 @@
   "Amanda Seyfried Makes Unexpected Statement About Divorce & People Are Praising Her Different Approach",
   "Basics of sleepmaxxing: Which viral bedtime hacks are actually worth it?",
   "\u2018Primetime\u2019 composer Ari Balouzian reveals score\u2019s unexpected influences",
-  "Watch Rory McIlroy's hilarious attempt at hitting the world's longest driver! Credit: @GOLF_com"
+  "Watch Rory McIlroy's hilarious attempt at hitting the world's longest driver! Credit: @GOLF_com",
+  "'Don't buy too much': Viral South Korean scarf seller sells out online after crowds overwhelm Seoul stall"
  ],
  "trends": {
   "fetched_at": "2026-11-11T20:03:01.834595+00:00",
@@ -4130,7 +4148,7 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-12T11:07:02.041004+00:00",
+  "t": "2026-11-12T12:03:12.127586+00:00",
   "followers": 48322,
   "reach": {
    "18014769038986883": 189,
@@ -4138,15 +4156,16 @@
    "17944987674377856": 154,
    "18150285085559990": 85,
    "18087017441336010": 212,
-   "18403097131206646": 110,
+   "18403097131206646": 111,
    "18160333063504696": 186,
-   "18121549466045866": 210,
-   "17885828007525938": 99,
-   "17893786503617849": 47,
-   "18008699720789506": 108,
-   "17936959035143616": 49,
-   "18117157088025982": 200,
-   "18026267150944616": 175
+   "18121549466045866": 215,
+   "17885828007525938": 100,
+   "17893786503617849": 49,
+   "18008699720789506": 114,
+   "17936959035143616": 50,
+   "18117157088025982": 211,
+   "18026267150944616": 181,
+   "18132894409689032": 7
   }
  },
  "follower_log": [

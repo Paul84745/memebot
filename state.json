@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-12T07:21:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-12T09:05:00+00:00",
@@ -2604,7 +2604,7 @@
    "news": true,
    "news_age_h": 0.30135309555555556,
    "funny": 7,
-   "follows_attr": -3.134
+   "follows_attr": -3.151
   },
   {
    "media_id": "18014769038986883",
@@ -2622,7 +2622,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.754
+   "follows_attr": -0.771
   },
   {
    "media_id": "18423876442158552",
@@ -2696,7 +2696,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.499
+   "follows_attr": -1.533
   },
   {
    "media_id": "18403097131206646",
@@ -2714,7 +2714,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.208
+   "follows_attr": -0.31
   },
   {
    "media_id": "18160333063504696",
@@ -2725,14 +2725,15 @@
    "text": "when you finally get a meeting invite",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.728,
-   "reach": 151,
+   "follows_attr": -1.169,
+   "reach": 177,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 39.7,
-   "measured_at": "2026-11-12T03:29:46.294905+00:00"
+   "score": 33.9,
+   "measured_at": "2026-11-12T08:18:47.052376+00:00",
+   "final": true
   },
   {
    "media_id": "18121549466045866",
@@ -2744,7 +2745,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -0.735
+   "follows_attr": -1.023
   },
   {
    "media_id": "17885828007525938",
@@ -2762,7 +2763,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.423
+   "follows_attr": -0.643
   },
   {
    "media_id": "17893786503617849",
@@ -2780,7 +2781,7 @@
    "news": true,
    "news_age_h": 0.2452111372222222,
    "funny": 8,
-   "follows_attr": -0.144
+   "follows_attr": -0.33
   },
   {
    "media_id": "18008699720789506",
@@ -2791,14 +2792,14 @@
    "text": "be kind, they\u2019re probably just as confused as you",
    "kind": "story",
    "story_type": "rate",
-   "reach": 67,
+   "reach": 97,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 59.7,
-   "measured_at": "2026-11-12T03:29:46.294905+00:00",
-   "follows_attr": -0.223
+   "profile_visits": 2,
+   "score": 82.5,
+   "measured_at": "2026-11-12T08:18:47.052376+00:00",
+   "follows_attr": -0.731
   },
   {
    "media_id": "17936959035143616",
@@ -2816,7 +2817,24 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.23
+   "follows_attr": -0.416
+  },
+  {
+   "media_id": "18117157088025982",
+   "posted_at": "2026-11-12T08:21:04.729183+00:00",
+   "template_id": "316466202",
+   "template_name": "where monkey",
+   "theme": "news",
+   "text": "He drove past three states; NASA now tracks his tail like a rogue satellite.",
+   "format": "other",
+   "kind": "reel",
+   "music": "hype",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Alternative Dance Music",
+   "news": true,
+   "news_age_h": 0.13699813333333333,
+   "funny": 7
   }
  ],
  "imported": [
@@ -3992,7 +4010,8 @@
   "Cat Convention 'Confused' After Jake Lang Turned Up Shouting About Furries",
   "Amanda Seyfried Makes Unexpected Statement About Divorce & People Are Praising Her Different Approach",
   "Basics of sleepmaxxing: Which viral bedtime hacks are actually worth it?",
-  "\u2018Primetime\u2019 composer Ari Balouzian reveals score\u2019s unexpected influences"
+  "\u2018Primetime\u2019 composer Ari Balouzian reveals score\u2019s unexpected influences",
+  "Watch Rory McIlroy's hilarious attempt at hitting the world's longest driver! Credit: @GOLF_com"
  ],
  "trends": {
   "fetched_at": "2026-11-11T20:03:01.834595+00:00",
@@ -4070,22 +4089,22 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-12T03:29:46.294905+00:00",
-  "followers": 48326,
+  "t": "2026-11-12T08:18:47.052376+00:00",
+  "followers": 48324,
   "reach": {
-   "17910036699597345": 203,
-   "18014769038986883": 188,
+   "17910036699597345": 204,
+   "18014769038986883": 189,
    "18423876442158552": 154,
    "17944987674377856": 154,
    "18150285085559990": 85,
-   "18087017441336010": 207,
-   "18403097131206646": 100,
-   "18160333063504696": 151,
-   "18121549466045866": 178,
-   "17885828007525938": 73,
-   "17893786503617849": 32,
-   "18008699720789506": 67,
-   "17936959035143616": 32
+   "18087017441336010": 209,
+   "18403097131206646": 106,
+   "18160333063504696": 177,
+   "18121549466045866": 195,
+   "17885828007525938": 86,
+   "17893786503617849": 43,
+   "18008699720789506": 97,
+   "17936959035143616": 43
   }
  },
  "follower_log": [

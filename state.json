@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-11-12T20:06:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-12T21:13:00+00:00",
@@ -2702,7 +2702,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.343
+   "follows_attr": -0.343,
+   "follows_src": "estimated",
+   "like_count": 9,
+   "comments_count": 0,
+   "reach": 87,
+   "shares": 0,
+   "saved": 0,
+   "views": 135,
+   "sends_per_1k": 0.0,
+   "follows": -0.3,
+   "score": 90.0,
+   "follows_per_1k": -3.45,
+   "final": true
   },
   {
    "media_id": "18087017441336010",
@@ -2769,7 +2781,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -1.264
+   "follows_attr": -1.312
   },
   {
    "media_id": "17885828007525938",
@@ -2805,7 +2817,7 @@
    "news": true,
    "news_age_h": 0.2452111372222222,
    "funny": 8,
-   "follows_attr": -0.481
+   "follows_attr": -0.671
   },
   {
    "media_id": "18008699720789506",
@@ -2860,7 +2872,7 @@
    "news": true,
    "news_age_h": 0.13699813333333333,
    "funny": 7,
-   "follows_attr": -1.254
+   "follows_attr": -1.349
   },
   {
    "media_id": "18026267150944616",
@@ -2878,7 +2890,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.176
+   "follows_attr": -1.224
   },
   {
    "media_id": "18132894409689032",
@@ -2889,14 +2901,14 @@
    "text": "pick one | A: forgot lunch, eat cafeteria mystery meat | B: bring lunch, it spills on white shirt",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.859,
-   "reach": 90,
+   "follows_attr": -1.145,
+   "reach": 96,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 66.7,
-   "measured_at": "2026-11-12T19:18:48.431571+00:00"
+   "score": 62.5,
+   "measured_at": "2026-11-12T20:07:08.832600+00:00"
   },
   {
    "media_id": "17877248985637767",
@@ -2914,7 +2926,7 @@
    "news": true,
    "news_age_h": 0.3454075552777778,
    "funny": 7,
-   "follows_attr": -1.957
+   "follows_attr": -2.005
   },
   {
    "media_id": "18148129231597809",
@@ -2924,7 +2936,25 @@
    "theme": "story",
    "text": "The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified. || me when I write symphonies about laser\u2011pointer chases\u2014entire orchestra looks like they missed the memo",
    "kind": "story",
-   "story_type": "faceoff"
+   "story_type": "faceoff",
+   "follows_attr": -0.286
+  },
+  {
+   "media_id": "18609628651068914",
+   "posted_at": "2026-11-12T20:10:23.612480+00:00",
+   "template_id": "224514655",
+   "template_name": "Anime Girl Hiding from Terminator",
+   "theme": "parents and their weird habits",
+   "text": "We rate dad's ash\u2011scented burgers five stars, because denial is tasty.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "50",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -4180,22 +4210,22 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-12T19:18:48.431571+00:00",
-  "followers": 48317,
+  "t": "2026-11-12T20:07:08.832600+00:00",
+  "followers": 48316,
   "reach": {
-   "18150285085559990": 87,
    "18087017441336010": 214,
    "18403097131206646": 118,
    "18160333063504696": 186,
-   "18121549466045866": 233,
+   "18121549466045866": 234,
    "17885828007525938": 114,
-   "17893786503617849": 62,
+   "17893786503617849": 66,
    "18008699720789506": 188,
    "17936959035143616": 64,
-   "18117157088025982": 257,
-   "18026267150944616": 202,
-   "18132894409689032": 90,
-   "17877248985637767": 189
+   "18117157088025982": 259,
+   "18026267150944616": 203,
+   "18132894409689032": 96,
+   "17877248985637767": 190,
+   "18148129231597809": 6
   }
  },
  "follower_log": [

@@ -25,8 +25,8 @@
    },
    {
     "t": "2026-11-13T15:14:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-13T18:51:00+00:00",
@@ -3065,6 +3065,23 @@
    "text": "would you rather | A: accidentally like your crush's old selfie | B: reply 'k' to boss's 3am rant",
    "kind": "story",
    "story_type": "wyr"
+  },
+  {
+   "media_id": "18087326645329608",
+   "posted_at": "2026-11-13T15:19:45.736712+00:00",
+   "template_id": "101470",
+   "template_name": "Ancient Aliens",
+   "theme": "texting and replies",
+   "text": "Auto-correct turned my 'lol' into 'please die'\u2014my phone just became a therapist.",
+   "format": "other",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "silly party pr\u00e9mix",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [

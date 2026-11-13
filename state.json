@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-13T20:08:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-13",
@@ -3097,7 +3097,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-13T20:19:05.086238+00:00"
+   "measured_at": "2026-11-13T20:21:04.531741+00:00"
   },
   {
    "media_id": "18087326645329608",
@@ -3126,6 +3126,23 @@
    "text": "pick one: lose wifi or lose charger | A: lose wifi, binge memes offline, panic | B: lose charger, phone dies, can't pretend busy",
    "kind": "story",
    "story_type": "wyr"
+  },
+  {
+   "media_id": "18398573095162858",
+   "posted_at": "2026-11-13T20:23:09.202999+00:00",
+   "template_id": "110163934",
+   "template_name": "I Bet He's Thinking About Other Women",
+   "theme": "parents and their weird habits",
+   "text": "Ex wants closure, I hand her a receipt\u2014still thinking about the next checkout.",
+   "format": "other",
+   "kind": "reel",
+   "music": "chill",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Data Collaborate - Marah (Chill-Out Mix)",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [

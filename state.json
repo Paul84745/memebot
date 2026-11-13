@@ -19,8 +19,8 @@
    },
    {
     "t": "2026-11-13T13:39:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -3055,6 +3055,16 @@
    "news": false,
    "news_age_h": null,
    "funny": 7
+  },
+  {
+   "media_id": "17907672597352142",
+   "posted_at": "2026-11-13T15:15:53.067175+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "would you rather | A: accidentally like your crush's old selfie | B: reply 'k' to boss's 3am rant",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [

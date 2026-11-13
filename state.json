@@ -9,13 +9,13 @@
    },
    {
     "t": "2026-11-13T11:53:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
     "t": "2026-11-13T12:47:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-13T13:39:00+00:00",
@@ -2762,7 +2762,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.52
+   "follows_attr": -0.52,
+   "follows_src": "estimated",
+   "like_count": 6,
+   "comments_count": 0,
+   "reach": 134,
+   "shares": 0,
+   "saved": 0,
+   "views": 207,
+   "sends_per_1k": 0.0,
+   "follows": -0.5,
+   "score": 44.8,
+   "follows_per_1k": -3.73,
+   "final": true
   },
   {
    "media_id": "18160333063504696",
@@ -2793,7 +2805,20 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -1.506
+   "follows_attr": -1.506,
+   "follows_src": "instagram",
+   "like_count": 12,
+   "comments_count": 0,
+   "reach": 280,
+   "shares": 0,
+   "saved": 1,
+   "views": 637,
+   "follows": 0,
+   "profile_visits": 1,
+   "sends_per_1k": 0.0,
+   "score": 53.6,
+   "follows_per_1k": 0.0,
+   "final": true
   },
   {
    "media_id": "17885828007525938",
@@ -2811,7 +2836,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.992
+   "follows_attr": -1.374
   },
   {
    "media_id": "17893786503617849",
@@ -2829,7 +2854,7 @@
    "news": true,
    "news_age_h": 0.2452111372222222,
    "funny": 8,
-   "follows_attr": -0.813
+   "follows_attr": -0.882
   },
   {
    "media_id": "18008699720789506",
@@ -2866,7 +2891,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.614
+   "follows_attr": -0.753
   },
   {
    "media_id": "18117157088025982",
@@ -2884,7 +2909,7 @@
    "news": true,
    "news_age_h": 0.13699813333333333,
    "funny": 7,
-   "follows_attr": -1.556
+   "follows_attr": -1.903
   },
   {
    "media_id": "18026267150944616",
@@ -2902,7 +2927,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.327
+   "follows_attr": -1.431
   },
   {
    "media_id": "18132894409689032",
@@ -2939,7 +2964,7 @@
    "news": true,
    "news_age_h": 0.3454075552777778,
    "funny": 7,
-   "follows_attr": -2.044
+   "follows_attr": -2.183
   },
   {
    "media_id": "18148129231597809",
@@ -2950,14 +2975,15 @@
    "text": "The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified. || me when I write symphonies about laser\u2011pointer chases\u2014entire orchestra looks like they missed the memo",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.842,
-   "reach": 82,
+   "follows_attr": -2.335,
+   "reach": 125,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 73.2,
-   "measured_at": "2026-11-13T07:11:24.967470+00:00"
+   "score": 48.0,
+   "measured_at": "2026-11-13T15:07:44.839328+00:00",
+   "final": true
   },
   {
    "media_id": "18609628651068914",
@@ -2975,7 +3001,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.556
+   "follows_attr": -0.973
   },
   {
    "media_id": "18111546679920253",
@@ -2993,7 +3019,7 @@
    "news": true,
    "news_age_h": 0.29650452055555554,
    "funny": 7,
-   "follows_attr": -0.31
+   "follows_attr": -0.414
   },
   {
    "media_id": "18468833743142278",
@@ -3008,6 +3034,24 @@
    "music_style": null,
    "music_fx": "none",
    "track": "I'll Be Right Behing You, Josephine (Instrumental)",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7,
+   "follows_attr": -1.806
+  },
+  {
+   "media_id": "18108721331525072",
+   "posted_at": "2026-11-13T15:09:57.687734+00:00",
+   "template_id": "14371066",
+   "template_name": "Star Wars Yoda",
+   "theme": "procrastination",
+   "text": "Me stepping into the shower: my perspiration joins Yoda\u2019s mist, whispering 'Do or do not\u2026'.",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Suspense and Tension-stem-6-1min",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -4267,23 +4311,21 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-13T07:11:24.967470+00:00",
-  "followers": 48313,
+  "t": "2026-11-13T15:07:44.839328+00:00",
+  "followers": 48308,
   "reach": {
-   "18403097131206646": 128,
-   "18160333063504696": 186,
-   "18121549466045866": 260,
-   "17885828007525938": 133,
-   "17893786503617849": 79,
+   "17885828007525938": 144,
+   "17893786503617849": 81,
    "18008699720789506": 188,
-   "17936959035143616": 73,
-   "18117157088025982": 297,
-   "18026267150944616": 220,
+   "17936959035143616": 77,
+   "18117157088025982": 307,
+   "18026267150944616": 223,
    "18132894409689032": 169,
-   "17877248985637767": 198,
-   "18148129231597809": 82,
-   "18609628651068914": 245,
-   "18111546679920253": 189
+   "17877248985637767": 202,
+   "18148129231597809": 125,
+   "18609628651068914": 257,
+   "18111546679920253": 192,
+   "18468833743142278": 52
   }
  },
  "follower_log": [

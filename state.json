@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-13T07:00:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-13T11:53:00+00:00",
@@ -2762,7 +2762,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.404
+   "follows_attr": -0.52
   },
   {
    "media_id": "18160333063504696",
@@ -2793,7 +2793,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 6.2,
-   "follows_attr": -1.312
+   "follows_attr": -1.506
   },
   {
    "media_id": "17885828007525938",
@@ -2811,7 +2811,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.837
+   "follows_attr": -0.992
   },
   {
    "media_id": "17893786503617849",
@@ -2829,7 +2829,7 @@
    "news": true,
    "news_age_h": 0.2452111372222222,
    "funny": 8,
-   "follows_attr": -0.671
+   "follows_attr": -0.813
   },
   {
    "media_id": "18008699720789506",
@@ -2866,7 +2866,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.588
+   "follows_attr": -0.614
   },
   {
    "media_id": "18117157088025982",
@@ -2884,7 +2884,7 @@
    "news": true,
    "news_age_h": 0.13699813333333333,
    "funny": 7,
-   "follows_attr": -1.349
+   "follows_attr": -1.556
   },
   {
    "media_id": "18026267150944616",
@@ -2902,7 +2902,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.224
+   "follows_attr": -1.327
   },
   {
    "media_id": "18132894409689032",
@@ -2913,14 +2913,15 @@
    "text": "pick one | A: forgot lunch, eat cafeteria mystery meat | B: bring lunch, it spills on white shirt",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -1.145,
-   "reach": 123,
+   "follows_attr": -1.74,
+   "reach": 169,
    "shares": 0,
    "replies": 1,
    "follows": 0,
-   "profile_visits": 1,
-   "score": 48.8,
-   "measured_at": "2026-11-13T00:32:41.279627+00:00"
+   "profile_visits": 3,
+   "score": 59.2,
+   "measured_at": "2026-11-13T07:11:24.967470+00:00",
+   "final": true
   },
   {
    "media_id": "17877248985637767",
@@ -2938,7 +2939,7 @@
    "news": true,
    "news_age_h": 0.3454075552777778,
    "funny": 7,
-   "follows_attr": -2.005
+   "follows_attr": -2.044
   },
   {
    "media_id": "18148129231597809",
@@ -2949,14 +2950,14 @@
    "text": "The roll asks, \u2018Deep dip or deep secrets?\u2019 I\u2019m terrified. || me when I write symphonies about laser\u2011pointer chases\u2014entire orchestra looks like they missed the memo",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.286,
-   "reach": 39,
+   "follows_attr": -0.842,
+   "reach": 82,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-13T00:32:41.279627+00:00"
+   "profile_visits": 1,
+   "score": 73.2,
+   "measured_at": "2026-11-13T07:11:24.967470+00:00"
   },
   {
    "media_id": "18609628651068914",
@@ -2973,7 +2974,8 @@
    "track": "50",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.556
   },
   {
    "media_id": "18111546679920253",
@@ -2990,6 +2992,24 @@
    "track": "Trapped in Panels",
    "news": true,
    "news_age_h": 0.29650452055555554,
+   "funny": 7,
+   "follows_attr": -0.31
+  },
+  {
+   "media_id": "18468833743142278",
+   "posted_at": "2026-11-13T07:13:17.850534+00:00",
+   "template_id": "148909805",
+   "template_name": "Monkey Puppet",
+   "theme": "weddings, birthdays and family events",
+   "text": "When the monkey leads, Auntie flash mob hijacks the first dance.",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "upbeat",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "I'll Be Right Behing You, Josephine (Instrumental)",
+   "news": false,
+   "news_age_h": null,
    "funny": 7
   }
  ],
@@ -3797,222 +3817,230 @@
  ],
  "imported_done": true,
  "peers": {
-  "fetched_at": "2026-11-11T01:28:05.145977+00:00",
+  "fetched_at": "2026-11-13T07:11:24.967470+00:00",
   "ok": [
    "memes@lemmy.world",
    "memes@lemmy.ml"
   ],
-  "n": 53,
+  "n": 60,
   "best": [
    {
     "u": "memes",
-    "er": 488,
-    "cap": "\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f",
-    "t": "2026-11-09T19:26:42.501531Z",
-    "type": "IMAGE",
-    "rel": 4.096
-   },
-   {
-    "u": "memes",
-    "er": 463,
+    "er": 723,
     "cap": "The dems are in the lab right now cooking up the giga-parlamentarian",
     "t": "2026-11-10T09:23:54.355349Z",
     "type": "IMAGE",
-    "rel": 3.886
+    "rel": 4.089
    },
    {
     "u": "memes",
-    "er": 447,
-    "cap": "2026 bingo: The Libertarian Party outflanking the dems from the left",
-    "t": "2026-11-10T09:22:18.724543Z",
-    "type": "IMAGE",
-    "rel": 3.752
-   },
-   {
-    "u": "memes",
-    "er": 1823,
+    "er": 1843,
     "cap": "So Unfair",
     "t": "2026-11-09T15:30:59.594464Z",
     "type": "IMAGE",
-    "rel": 3.527
+    "rel": 3.39
    },
    {
     "u": "memes",
-    "er": 270,
-    "cap": "ATT: YOUR SCHEDULED TIME OF LIBBING OUT IS OVER, RETURN TO REGULAR DUTIES",
-    "t": "2026-11-09T03:28:06.181929Z",
+    "er": 580,
+    "cap": "Courage",
+    "t": "2026-11-11T22:04:49.033688Z",
     "type": "IMAGE",
-    "rel": 2.266
+    "rel": 3.28
    },
    {
     "u": "memes",
-    "er": 956,
+    "er": 578,
+    "cap": "\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f",
+    "t": "2026-11-09T19:26:42.501531Z",
+    "type": "IMAGE",
+    "rel": 3.269
+   },
+   {
+    "u": "memes",
+    "er": 480,
+    "cap": "2026 bingo: The Libertarian Party outflanking the dems from the left",
+    "t": "2026-11-10T09:22:18.724543Z",
+    "type": "IMAGE",
+    "rel": 2.715
+   },
+   {
+    "u": "memes",
+    "er": 476,
+    "cap": "lol",
+    "t": "2026-11-11T08:36:32.433903Z",
+    "type": "IMAGE",
+    "rel": 2.692
+   },
+   {
+    "u": "memes",
+    "er": 1102,
+    "cap": "Not a bad instinct",
+    "t": "2026-11-11T13:50:18.869882Z",
+    "type": "IMAGE",
+    "rel": 2.027
+   },
+   {
+    "u": "memes",
+    "er": 955,
     "cap": "Pro Tip",
     "t": "2026-11-07T12:37:02.705987Z",
     "type": "IMAGE",
-    "rel": 1.85
+    "rel": 1.757
    },
    {
     "u": "memes",
-    "er": 950,
-    "cap": "Uploaded a meme, for the glory of the empire!",
-    "t": "2026-11-05T14:11:12.990708Z",
-    "type": "IMAGE",
-    "rel": 1.838
-   },
-   {
-    "u": "memes",
-    "er": 890,
+    "er": 896,
     "cap": "A disaster waiting to happen",
     "t": "2026-11-08T12:52:39.753690Z",
     "type": "IMAGE",
-    "rel": 1.722
+    "rel": 1.648
    },
    {
     "u": "memes",
-    "er": 845,
-    "cap": "\"Just checking in\"",
-    "t": "2026-11-04T13:36:29.600388Z",
-    "type": "IMAGE",
-    "rel": 1.635
-   },
-   {
-    "u": "memes",
-    "er": 843,
-    "cap": "Oh Clippy",
-    "t": "2026-11-08T12:18:14.934442Z",
-    "type": "IMAGE",
-    "rel": 1.631
-   },
-   {
-    "u": "memes",
-    "er": 791,
-    "cap": "Let it all hang out",
-    "t": "2026-11-05T13:01:49.261666Z",
-    "type": "IMAGE",
-    "rel": 1.531
-   },
-   {
-    "u": "memes",
-    "er": 176,
-    "cap": "thats not honey",
-    "t": "2026-11-09T16:48:10.653406Z",
-    "type": "IMAGE",
-    "rel": 1.477
-   },
-   {
-    "u": "memes",
-    "er": 687,
-    "cap": "Poor Yuna Song",
-    "t": "2026-11-10T11:52:04.858553Z",
-    "type": "IMAGE",
-    "rel": 1.329
-   },
-   {
-    "u": "memes",
-    "er": 661,
-    "cap": "The jacket stays on",
-    "t": "2026-11-09T23:17:52.778636Z",
-    "type": "IMAGE",
-    "rel": 1.279
-   },
-   {
-    "u": "memes",
-    "er": 645,
-    "cap": "Never sharing secrets again....",
-    "t": "2026-11-08T13:06:04.430820Z",
-    "type": "IMAGE",
-    "rel": 1.248
-   },
-   {
-    "u": "memes",
-    "er": 586,
-    "cap": "Old people tech help",
-    "t": "2026-11-08T23:57:30.919149Z",
-    "type": "IMAGE",
-    "rel": 1.134
-   },
-   {
-    "u": "memes",
-    "er": 122,
-    "cap": "Pink press for once",
-    "t": "2026-11-09T08:35:10.327174Z",
-    "type": "IMAGE",
-    "rel": 1.024
-   },
-   {
-    "u": "memes",
-    "er": 113,
-    "cap": "We gotta VOTE VOTE",
-    "t": "2026-11-05T22:08:57.102631Z",
-    "type": "IMAGE",
-    "rel": 0.948
-   },
-   {
-    "u": "memes",
-    "er": 472,
-    "cap": "Whoops",
-    "t": "2026-11-07T03:36:15.845119Z",
-    "type": "IMAGE",
-    "rel": 0.913
-   },
-   {
-    "u": "memes",
-    "er": 105,
+    "er": 282,
     "cap": "Western understanding of Asia in one picture",
     "t": "2026-11-10T19:43:00.702164Z",
     "type": "IMAGE",
-    "rel": 0.881
+    "rel": 1.595
    },
    {
     "u": "memes",
-    "er": 103,
-    "cap": "Donkey Awaken",
-    "t": "2026-11-07T14:58:41.067141Z",
+    "er": 278,
+    "cap": "ATT: YOUR SCHEDULED TIME OF LIBBING OUT IS OVER, RETURN TO REGULAR DUTIES",
+    "t": "2026-11-09T03:28:06.181929Z",
     "type": "IMAGE",
-    "rel": 0.865
+    "rel": 1.572
    },
    {
     "u": "memes",
-    "er": 444,
+    "er": 853,
+    "cap": "Oh Clippy",
+    "t": "2026-11-08T12:18:14.934442Z",
+    "type": "IMAGE",
+    "rel": 1.569
+   },
+   {
+    "u": "memes",
+    "er": 838,
+    "cap": "Operation Bear Trap is a go!",
+    "t": "2026-11-12T03:25:06.641172Z",
+    "type": "IMAGE",
+    "rel": 1.541
+   },
+   {
+    "u": "memes",
+    "er": 793,
+    "cap": "Poor Yuna Song",
+    "t": "2026-11-10T11:52:04.858553Z",
+    "type": "IMAGE",
+    "rel": 1.459
+   },
+   {
+    "u": "memes",
+    "er": 233,
+    "cap": "screenshot",
+    "t": "2026-11-12T08:14:00.503272Z",
+    "type": "IMAGE",
+    "rel": 1.318
+   },
+   {
+    "u": "memes",
+    "er": 680,
+    "cap": "The jacket stays on",
+    "t": "2026-11-09T23:17:52.778636Z",
+    "type": "IMAGE",
+    "rel": 1.251
+   },
+   {
+    "u": "memes",
+    "er": 648,
+    "cap": "Never sharing secrets again....",
+    "t": "2026-11-08T13:06:04.430820Z",
+    "type": "IMAGE",
+    "rel": 1.192
+   },
+   {
+    "u": "memes",
+    "er": 589,
+    "cap": "The shame",
+    "t": "2026-11-11T12:20:29.406011Z",
+    "type": "IMAGE",
+    "rel": 1.083
+   },
+   {
+    "u": "memes",
+    "er": 588,
+    "cap": "Old people tech help",
+    "t": "2026-11-08T23:57:30.919149Z",
+    "type": "IMAGE",
+    "rel": 1.082
+   },
+   {
+    "u": "memes",
+    "er": 571,
+    "cap": "Great nap",
+    "t": "2026-11-12T11:55:48.839473Z",
+    "type": "IMAGE",
+    "rel": 1.05
+   },
+   {
+    "u": "memes",
+    "er": 182,
+    "cap": "thats not honey",
+    "t": "2026-11-09T16:48:10.653406Z",
+    "type": "IMAGE",
+    "rel": 1.029
+   },
+   {
+    "u": "memes",
+    "er": 559,
     "cap": "happy circulatory system walking through the kitchen day y'all",
     "t": "2026-11-10T11:55:33.953404Z",
     "type": "IMAGE",
-    "rel": 0.859
+    "rel": 1.028
    },
    {
     "u": "memes",
-    "er": 91,
-    "cap": "No thanks, Honey isn't vegan",
-    "t": "2026-11-10T14:53:54.785851Z",
+    "er": 548,
+    "cap": "I answer to no one",
+    "t": "2026-11-11T12:25:20.769687Z",
     "type": "IMAGE",
-    "rel": 0.764
+    "rel": 1.008
    },
    {
     "u": "memes",
-    "er": 90,
-    "cap": "Happy wife hapy wallet",
-    "t": "2026-11-09T15:53:43.136124Z",
+    "er": 509,
+    "cap": "Frat boy Pete is a POS",
+    "t": "2026-11-12T11:10:08.287212Z",
     "type": "IMAGE",
-    "rel": 0.755
+    "rel": 0.936
    },
    {
     "u": "memes",
-    "er": 90,
-    "cap": "Today Is Russia Unity Day (\u0414\u0435\u043d\u044c \u043d\u0430\u0440\u043e\u0434\u043d\u043e\u0433\u043e \u0435\u0434\u0438\u043d\u0441\u0442\u0432\u0430, Den\u02b9 narodnogo yedinstva), an official public holiday celebrated in Russia every November 4th",
-    "t": "2026-11-05T19:38:59.623628Z",
+    "er": 165,
+    "cap": ":-)",
+    "t": "2026-11-12T10:20:53.969063Z",
     "type": "IMAGE",
-    "rel": 0.755
+    "rel": 0.933
    }
   ],
   "worst": [
    {
     "u": "memes",
     "er": 0,
-    "cap": "Russia is part of the axis of resistance",
-    "t": "2026-11-05T21:46:34.406047Z",
+    "cap": "Even though it\u2019s in Korean, I understand every sentence",
+    "t": "2026-11-11T07:14:37.324612Z",
     "type": "IMAGE",
     "rel": 0.0
+   },
+   {
+    "u": "memes",
+    "er": 1,
+    "cap": "rumors",
+    "t": "2026-11-13T07:01:14.109229Z",
+    "type": "IMAGE",
+    "rel": 0.006
    },
    {
     "u": "memes",
@@ -4020,116 +4048,108 @@
     "cap": "How we roll on the Internet since 1900",
     "t": "2026-11-07T00:28:49.955652Z",
     "type": "IMAGE",
-    "rel": 0.033
+    "rel": 0.031
    },
    {
     "u": "memes",
-    "er": 7,
-    "cap": "The spies who shagged us",
-    "t": "2026-11-11T00:25:18.402986Z",
+    "er": 18,
+    "cap": "17 years look in 1960s vs 17 years old in 2020s",
+    "t": "2026-11-12T15:04:40.022542Z",
     "type": "IMAGE",
-    "rel": 0.059
+    "rel": 0.102
    },
    {
     "u": "memes",
-    "er": 77,
-    "cap": "utterly beat down",
-    "t": "2026-11-10T21:06:45.625408Z",
+    "er": 41,
+    "cap": "he got traumatised becuase he saw all of his friends get turned into salad",
+    "t": "2026-11-12T23:39:57.618432Z",
     "type": "IMAGE",
-    "rel": 0.149
+    "rel": 0.232
    },
    {
     "u": "memes",
-    "er": 81,
-    "cap": "games are the only useful feature of linkedin",
-    "t": "2026-11-04T12:31:09.805582Z",
+    "er": 128,
+    "cap": "Don't ask her",
+    "t": "2026-11-11T20:29:17.802708Z",
     "type": "IMAGE",
-    "rel": 0.157
+    "rel": 0.235
    },
    {
     "u": "memes",
-    "er": 106,
-    "cap": "It\u2019s even funnier the second time!",
-    "t": "2026-11-05T17:44:12.867283Z",
+    "er": 50,
+    "cap": "Happy Veterans Day",
+    "t": "2026-11-12T01:21:32.499995Z",
     "type": "IMAGE",
-    "rel": 0.205
-   },
-   {
-    "u": "memes",
-    "er": 25,
-    "cap": "OC: So much RAM",
-    "t": "2026-11-04T15:51:47.841148Z",
-    "type": "IMAGE",
-    "rel": 0.21
-   },
-   {
-    "u": "memes",
-    "er": 36,
-    "cap": "German Wisdom",
-    "t": "2026-11-04T15:06:45.526230Z",
-    "type": "IMAGE",
-    "rel": 0.302
-   },
-   {
-    "u": "memes",
-    "er": 168,
-    "cap": "Tbr? Never met him",
-    "t": "2026-11-07T11:03:17.062672Z",
-    "type": "IMAGE",
-    "rel": 0.325
-   },
-   {
-    "u": "memes",
-    "er": 188,
-    "cap": "I like coffee, I like tea",
-    "t": "2026-11-05T02:17:20.037774Z",
-    "type": "IMAGE",
-    "rel": 0.364
-   },
-   {
-    "u": "memes",
-    "er": 46,
-    "cap": "Mississippi Runs Blue. Dems Claim the 13 Original Colonies unlock.",
-    "t": "2026-11-05T17:55:37.051025Z",
-    "type": "IMAGE",
-    "rel": 0.386
-   },
-   {
-    "u": "memes",
-    "er": 200,
-    "cap": "It's a good time!",
-    "t": "2026-11-06T00:29:16.630334Z",
-    "type": "IMAGE",
-    "rel": 0.387
-   },
-   {
-    "u": "memes",
-    "er": 51,
-    "cap": "Marxism-Leninism is a forever adapting science",
-    "t": "2026-11-04T09:00:03.975893Z",
-    "type": "IMAGE",
-    "rel": 0.428
+    "rel": 0.283
    },
    {
     "u": "memes",
     "er": 52,
+    "cap": "INB4 \"horse show could still exist under Leninism\"",
+    "t": "2026-11-12T19:20:22.121248Z",
+    "type": "IMAGE",
+    "rel": 0.294
+   },
+   {
+    "u": "memes",
+    "er": 53,
     "cap": "same ethno-nationalist picture",
     "t": "2026-11-08T22:04:13.172586Z",
     "type": "IMAGE",
-    "rel": 0.436
+    "rel": 0.3
    },
    {
     "u": "memes",
     "er": 54,
+    "cap": "Dengists be like\u2026",
+    "t": "2026-11-08T22:11:17.300562Z",
+    "type": "IMAGE",
+    "rel": 0.305
+   },
+   {
+    "u": "memes",
+    "er": 55,
     "cap": "this is very relatable",
     "t": "2026-11-06T18:14:55.872698Z",
     "type": "IMAGE",
-    "rel": 0.453
+    "rel": 0.311
+   },
+   {
+    "u": "memes",
+    "er": 170,
+    "cap": "Tbr? Never met him",
+    "t": "2026-11-07T11:03:17.062672Z",
+    "type": "IMAGE",
+    "rel": 0.313
+   },
+   {
+    "u": "memes",
+    "er": 60,
+    "cap": "Well\u2026",
+    "t": "2026-11-09T15:32:14.760089Z",
+    "type": "IMAGE",
+    "rel": 0.339
+   },
+   {
+    "u": "memes",
+    "er": 193,
+    "cap": "I just got my VIP ticket for the ride down to Hell!",
+    "t": "2026-11-12T17:46:18.169612Z",
+    "type": "IMAGE",
+    "rel": 0.355
+   },
+   {
+    "u": "memes",
+    "er": 63,
+    "cap": "Oh, behave!",
+    "t": "2026-11-09T18:44:09.547640Z",
+    "type": "IMAGE",
+    "rel": 0.356
    }
   ],
   "by_len": {
-   "very short caption": 1.01,
-   "short caption": 0.99
+   "very short caption": 1.06,
+   "short caption": 0.88
   },
   "by_start": {
    "other opening": 1.02
@@ -4247,23 +4267,23 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-13T00:32:41.279627+00:00",
-  "followers": 48316,
+  "t": "2026-11-13T07:11:24.967470+00:00",
+  "followers": 48313,
   "reach": {
-   "18403097131206646": 119,
+   "18403097131206646": 128,
    "18160333063504696": 186,
-   "18121549466045866": 245,
-   "17885828007525938": 121,
-   "17893786503617849": 68,
+   "18121549466045866": 260,
+   "17885828007525938": 133,
+   "17893786503617849": 79,
    "18008699720789506": 188,
-   "17936959035143616": 71,
-   "18117157088025982": 281,
-   "18026267150944616": 212,
-   "18132894409689032": 123,
-   "17877248985637767": 195,
-   "18148129231597809": 39,
-   "18609628651068914": 202,
-   "18111546679920253": 165
+   "17936959035143616": 73,
+   "18117157088025982": 297,
+   "18026267150944616": 220,
+   "18132894409689032": 169,
+   "17877248985637767": 198,
+   "18148129231597809": 82,
+   "18609628651068914": 245,
+   "18111546679920253": 189
   }
  },
  "follower_log": [

@@ -30,8 +30,8 @@
    },
    {
     "t": "2026-11-13T18:51:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -2836,7 +2836,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.374
+   "follows_attr": -1.374,
+   "follows_src": "estimated",
+   "like_count": 10,
+   "comments_count": 0,
+   "reach": 150,
+   "shares": 0,
+   "saved": 0,
+   "views": 231,
+   "sends_per_1k": 0.0,
+   "follows": -1.4,
+   "score": 66.7,
+   "follows_per_1k": -9.33,
+   "final": true
   },
   {
    "media_id": "17893786503617849",
@@ -2854,7 +2866,19 @@
    "news": true,
    "news_age_h": 0.2452111372222222,
    "funny": 8,
-   "follows_attr": -0.882
+   "follows_attr": -0.882,
+   "follows_src": "estimated",
+   "like_count": 6,
+   "comments_count": 0,
+   "reach": 81,
+   "shares": 0,
+   "saved": 0,
+   "views": 120,
+   "sends_per_1k": 0.0,
+   "follows": -0.9,
+   "score": 60.0,
+   "follows_per_1k": -11.11,
+   "final": true
   },
   {
    "media_id": "18008699720789506",
@@ -2891,7 +2915,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.753
+   "follows_attr": -0.797
   },
   {
    "media_id": "18117157088025982",
@@ -2909,7 +2933,7 @@
    "news": true,
    "news_age_h": 0.13699813333333333,
    "funny": 7,
-   "follows_attr": -1.903
+   "follows_attr": -1.939
   },
   {
    "media_id": "18026267150944616",
@@ -2964,7 +2988,7 @@
    "news": true,
    "news_age_h": 0.3454075552777778,
    "funny": 7,
-   "follows_attr": -2.183
+   "follows_attr": -2.19
   },
   {
    "media_id": "18148129231597809",
@@ -3001,7 +3025,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.973
+   "follows_attr": -1.038
   },
   {
    "media_id": "18111546679920253",
@@ -3019,7 +3043,7 @@
    "news": true,
    "news_age_h": 0.29650452055555554,
    "funny": 7,
-   "follows_attr": -0.414
+   "follows_attr": -0.429
   },
   {
    "media_id": "18468833743142278",
@@ -3037,7 +3061,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.806
+   "follows_attr": -1.871
   },
   {
    "media_id": "18108721331525072",
@@ -3054,7 +3078,8 @@
    "track": "Suspense and Tension-stem-6-1min",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -1.338
   },
   {
    "media_id": "17907672597352142",
@@ -3064,7 +3089,15 @@
    "theme": "story",
    "text": "would you rather | A: accidentally like your crush's old selfie | B: reply 'k' to boss's 3am rant",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": -0.255,
+   "reach": 35,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-13T20:19:05.086238+00:00"
   },
   {
    "media_id": "18087326645329608",
@@ -3081,7 +3114,18 @@
    "track": "silly party pr\u00e9mix",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.175
+  },
+  {
+   "media_id": "17892166104652932",
+   "posted_at": "2026-11-13T20:19:30.769206+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "pick one: lose wifi or lose charger | A: lose wifi, binge memes offline, panic | B: lose charger, phone dies, can't pretend busy",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [
@@ -4338,24 +4382,21 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-13T15:25:30.036917+00:00",
-  "followers": 48308,
+  "t": "2026-11-13T20:19:05.086238+00:00",
+  "followers": 48306,
   "reach": {
-   "17885828007525938": 145,
-   "17893786503617849": 81,
-   "18008699720789506": 188,
-   "17936959035143616": 78,
-   "18117157088025982": 308,
+   "17936959035143616": 84,
+   "18117157088025982": 313,
    "18026267150944616": 223,
    "18132894409689032": 169,
-   "17877248985637767": 202,
+   "17877248985637767": 203,
    "18148129231597809": 127,
-   "18609628651068914": 257,
-   "18111546679920253": 192,
-   "18468833743142278": 54,
-   "18108721331525072": 3,
-   "17907672597352142": 0,
-   "18087326645329608": 0
+   "18609628651068914": 266,
+   "18111546679920253": 194,
+   "18468833743142278": 63,
+   "18108721331525072": 187,
+   "17907672597352142": 35,
+   "18087326645329608": 24
   }
  },
  "follower_log": [

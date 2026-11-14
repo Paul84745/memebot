@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "slots": [
    {
-    "t": "2026-11-13T07:00:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-13T11:53:00+00:00",
-    "status": "skipped",
+    "t": "2026-11-14T07:42:00+00:00",
+    "status": "pending",
     "attempts": 0
    },
    {
-    "t": "2026-11-13T12:47:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-14T11:16:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-13T13:39:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-14T12:15:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-13T15:14:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-14T13:03:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-13T18:51:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-14T18:05:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-13T20:08:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-14T18:57:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-14T21:37:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-13",
-  "stories_date": "2026-11-13"
+  "dump_checked": "2026-11-14",
+  "stories_date": "2026-11-14"
  },
  "history": [
   {
@@ -2915,7 +2915,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.797
+   "follows_attr": -0.797,
+   "follows_src": "estimated",
+   "like_count": 11,
+   "comments_count": 0,
+   "reach": 87,
+   "shares": 0,
+   "saved": 0,
+   "views": 142,
+   "sends_per_1k": 0.0,
+   "follows": -0.8,
+   "score": 110.0,
+   "follows_per_1k": -9.2,
+   "final": true
   },
   {
    "media_id": "18117157088025982",
@@ -3025,7 +3037,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.038
+   "follows_attr": -1.086
   },
   {
    "media_id": "18111546679920253",
@@ -3043,7 +3055,7 @@
    "news": true,
    "news_age_h": 0.29650452055555554,
    "funny": 7,
-   "follows_attr": -0.429
+   "follows_attr": -0.443
   },
   {
    "media_id": "18468833743142278",
@@ -3061,7 +3073,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.871
+   "follows_attr": -1.905
   },
   {
    "media_id": "18108721331525072",
@@ -3079,7 +3091,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.338
+   "follows_attr": -1.379
   },
   {
    "media_id": "17907672597352142",
@@ -3090,14 +3102,14 @@
    "text": "would you rather | A: accidentally like your crush's old selfie | B: reply 'k' to boss's 3am rant",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.255,
-   "reach": 42,
+   "follows_attr": -0.473,
+   "reach": 74,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-13T21:35:08.851650+00:00"
+   "score": 54.1,
+   "measured_at": "2026-11-14T01:42:57.066178+00:00"
   },
   {
    "media_id": "18087326645329608",
@@ -3115,7 +3127,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.175
+   "follows_attr": -0.202
   },
   {
    "media_id": "17892166104652932",
@@ -3125,7 +3137,15 @@
    "theme": "story",
    "text": "pick one: lose wifi or lose charger | A: lose wifi, binge memes offline, panic | B: lose charger, phone dies, can't pretend busy",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": -0.211,
+   "reach": 40,
+   "shares": 0,
+   "replies": 1,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 100.0,
+   "measured_at": "2026-11-14T01:42:57.066178+00:00"
   },
   {
    "media_id": "18398573095162858",
@@ -3142,7 +3162,8 @@
    "track": "Data Collaborate - Marah (Chill-Out Mix)",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.408
   }
  ],
  "imported": [
@@ -4399,23 +4420,22 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-13T21:35:08.851650+00:00",
-  "followers": 48306,
+  "t": "2026-11-14T01:42:57.066178+00:00",
+  "followers": 48305,
   "reach": {
-   "17936959035143616": 84,
    "18117157088025982": 313,
    "18026267150944616": 223,
    "18132894409689032": 169,
    "17877248985637767": 203,
    "18148129231597809": 127,
-   "18609628651068914": 266,
-   "18111546679920253": 196,
-   "18468833743142278": 66,
-   "18108721331525072": 189,
-   "17907672597352142": 42,
-   "18087326645329608": 27,
-   "17892166104652932": 9,
-   "18398573095162858": 150
+   "18609628651068914": 273,
+   "18111546679920253": 198,
+   "18468833743142278": 71,
+   "18108721331525072": 195,
+   "17907672597352142": 74,
+   "18087326645329608": 31,
+   "17892166104652932": 40,
+   "18398573095162858": 210
   }
  },
  "follower_log": [
@@ -4490,6 +4510,10 @@
   [
    "2026-11-13T00:32:41.279627+00:00",
    48316
+  ],
+  [
+   "2026-11-14T01:42:57.066178+00:00",
+   48305
   ]
  ]
 }

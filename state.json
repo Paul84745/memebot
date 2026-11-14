@@ -3073,7 +3073,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.116
+   "follows_attr": -1.062
   },
   {
    "media_id": "18111546679920253",
@@ -3091,7 +3091,7 @@
    "news": true,
    "news_age_h": 0.29650452055555554,
    "funny": 7,
-   "follows_attr": -0.462
+   "follows_attr": -0.435
   },
   {
    "media_id": "18468833743142278",
@@ -3109,7 +3109,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.015
+   "follows_attr": -1.988
   },
   {
    "media_id": "18108721331525072",
@@ -3127,7 +3127,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.554
+   "follows_attr": -1.527
   },
   {
    "media_id": "17907672597352142",
@@ -3138,7 +3138,7 @@
    "text": "would you rather | A: accidentally like your crush's old selfie | B: reply 'k' to boss's 3am rant",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.876,
+   "follows_attr": -0.687,
    "reach": 107,
    "shares": 0,
    "replies": 1,
@@ -3164,7 +3164,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.221
+   "follows_attr": -0.194
   },
   {
    "media_id": "17892166104652932",
@@ -3175,14 +3175,15 @@
    "text": "pick one: lose wifi or lose charger | A: lose wifi, binge memes offline, panic | B: lose charger, phone dies, can't pretend busy",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.601,
-   "reach": 74,
+   "follows_attr": -0.385,
+   "reach": 82,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 54.1,
-   "measured_at": "2026-11-14T13:04:03.970526+00:00"
+   "score": 48.8,
+   "measured_at": "2026-11-14T15:11:42.977219+00:00",
+   "final": true
   },
   {
    "media_id": "18398573095162858",
@@ -3200,7 +3201,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.775
+   "follows_attr": -0.721
   },
   {
    "media_id": "18124992016981201",
@@ -3218,7 +3219,7 @@
    "news": true,
    "news_age_h": 1.7448458455555556,
    "funny": 7,
-   "follows_attr": -0.465
+   "follows_attr": -0.195
   },
   {
    "media_id": "17972584316962534",
@@ -3236,7 +3237,7 @@
    "news": true,
    "news_age_h": 1.1547902986111112,
    "funny": 7,
-   "follows_attr": -0.952
+   "follows_attr": -0.493
   },
   {
    "media_id": "18233631505328675",
@@ -3246,7 +3247,8 @@
    "theme": "story",
    "text": "would you rather | A: eat expired pizza, taste regret | B: skip lunch, starve till dinner",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": 0.378
   },
   {
    "media_id": "18106039472381800",
@@ -3263,7 +3265,8 @@
    "track": "Recycled Intro 2019",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": 1.27
   }
  ],
  "imported": [
@@ -4522,21 +4525,22 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-14T13:04:03.970526+00:00",
-  "followers": 48302,
+  "t": "2026-11-14T15:11:42.977219+00:00",
+  "followers": 48305,
   "reach": {
    "18148129231597809": 127,
-   "18609628651068914": 275,
-   "18111546679920253": 200,
-   "18468833743142278": 80,
-   "18108721331525072": 212,
-   "17907672597352142": 110,
-   "18087326645329608": 33,
-   "17892166104652932": 74,
-   "18398573095162858": 239,
-   "18124992016981201": 25,
-   "17972584316962534": 141,
-   "18233631505328675": 0
+   "18609628651068914": 277,
+   "18111546679920253": 201,
+   "18468833743142278": 81,
+   "18108721331525072": 213,
+   "17907672597352142": 117,
+   "18087326645329608": 34,
+   "17892166104652932": 82,
+   "18398573095162858": 241,
+   "18124992016981201": 35,
+   "17972584316962534": 158,
+   "18233631505328675": 14,
+   "18106039472381800": 47
   }
  },
  "follower_log": [

@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-14T21:37:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-14",
@@ -3073,7 +3073,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.062
+   "follows_attr": -1.062,
+   "follows_src": "estimated",
+   "like_count": 6,
+   "comments_count": 0,
+   "reach": 279,
+   "shares": 0,
+   "saved": 0,
+   "views": 384,
+   "sends_per_1k": 0.0,
+   "follows": -1.1,
+   "score": 21.5,
+   "follows_per_1k": -3.94,
+   "final": true
   },
   {
    "media_id": "18111546679920253",
@@ -3091,7 +3103,19 @@
    "news": true,
    "news_age_h": 0.29650452055555554,
    "funny": 7,
-   "follows_attr": -0.435
+   "follows_attr": -0.435,
+   "follows_src": "estimated",
+   "like_count": 5,
+   "comments_count": 0,
+   "reach": 202,
+   "shares": 0,
+   "saved": 0,
+   "views": 261,
+   "sends_per_1k": 0.0,
+   "follows": -0.4,
+   "score": 24.8,
+   "follows_per_1k": -1.98,
+   "final": true
   },
   {
    "media_id": "18468833743142278",
@@ -3109,7 +3133,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.988
+   "follows_attr": -1.999
   },
   {
    "media_id": "18108721331525072",
@@ -3127,7 +3151,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.527
+   "follows_attr": -1.548
   },
   {
    "media_id": "17907672597352142",
@@ -3201,7 +3225,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.721
+   "follows_attr": -0.742
   },
   {
    "media_id": "18124992016981201",
@@ -3219,7 +3243,7 @@
    "news": true,
    "news_age_h": 1.7448458455555556,
    "funny": 7,
-   "follows_attr": -0.195
+   "follows_attr": -0.237
   },
   {
    "media_id": "17972584316962534",
@@ -3237,7 +3261,7 @@
    "news": true,
    "news_age_h": 1.1547902986111112,
    "funny": 7,
-   "follows_attr": -0.493
+   "follows_attr": -0.62
   },
   {
    "media_id": "18233631505328675",
@@ -3248,14 +3272,14 @@
    "text": "would you rather | A: eat expired pizza, taste regret | B: skip lunch, starve till dinner",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": 0.378,
-   "reach": 46,
+   "follows_attr": 0.272,
+   "reach": 56,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-14T18:58:15.979011+00:00"
+   "measured_at": "2026-11-14T21:37:59.148000+00:00"
   },
   {
    "media_id": "18106039472381800",
@@ -3273,7 +3297,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": 1.27
+   "follows_attr": 1.132
   },
   {
    "media_id": "18123099295766801",
@@ -3283,7 +3307,15 @@
    "theme": "story",
    "text": "Hangover rookie: brain filed a noise complaint against its own ringing. || We rate dad's ash\u2011scented burgers five stars, because denial is tasty.",
    "kind": "story",
-   "story_type": "faceoff"
+   "story_type": "faceoff",
+   "follows_attr": -0.138,
+   "reach": 18,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-14T21:37:59.148000+00:00"
   },
   {
    "media_id": "18146840173613826",
@@ -3300,7 +3332,25 @@
    "track": "playfulness",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -1.397
+  },
+  {
+   "media_id": "18656552278037560",
+   "posted_at": "2026-11-14T21:40:19.652389+00:00",
+   "template_id": "371619279",
+   "template_name": "Megamind no bitches",
+   "theme": "being the friend who drives",
+   "text": "Picked up the crew, GPS rerouted to a funeral\u2014thanks, Megamind.",
+   "format": "other",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": "piano",
+   "music_fx": "slowed_reverb",
+   "track": "piano music 3",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -4484,30 +4534,58 @@
   "Got a weird smell in your home? Check these 17 places where odors like to hide."
  ],
  "trends": {
-  "fetched_at": "2026-11-11T20:03:01.834595+00:00",
+  "fetched_at": "2026-11-14T21:37:59.148000+00:00",
   "styles": [
    {
-    "query": "uk drill",
-    "moods": [
-     "hype",
-     "bouncy"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "jersey club",
+    "query": "amapiano",
     "moods": [
      "bouncy",
-     "upbeat"
+     "upbeat",
+     "hype"
     ],
     "fx": "none"
    },
    {
-    "query": "ambient synth",
+    "query": "pop",
+    "moods": [
+     "upbeat",
+     "hype",
+     "wholesome"
+    ],
+    "fx": "sped_up"
+   },
+   {
+    "query": "drill",
+    "moods": [
+     "hype",
+     "dramatic"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "lofi",
     "moods": [
      "chill",
      "awkward",
-     "dramatic"
+     "sad"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "reggaeton",
+    "moods": [
+     "bouncy",
+     "upbeat",
+     "wholesome"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "ambient",
+    "moods": [
+     "dramatic",
+     "sad",
+     "wholesome"
     ],
     "fx": "slowed_reverb"
    },
@@ -4515,16 +4593,7 @@
     "query": "phonk",
     "moods": [
      "hype",
-     "bouncy"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "country pop",
-    "moods": [
-     "wholesome",
-     "sad",
-     "upbeat"
+     "dramatic"
     ],
     "fx": "none"
    },
@@ -4538,15 +4607,6 @@
     "fx": "sped_up"
    },
    {
-    "query": "lofi",
-    "moods": [
-     "chill",
-     "sad",
-     "wholesome"
-    ],
-    "fx": "slowed_reverb"
-   },
-   {
     "query": "piano",
     "moods": [
      "sad",
@@ -4556,26 +4616,24 @@
     "fx": "slowed_reverb"
    }
   ],
-  "source": "22 headlines"
+  "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-14T18:58:15.979011+00:00",
-  "followers": 48305,
+  "t": "2026-11-14T21:37:59.148000+00:00",
+  "followers": 48303,
   "reach": {
-   "18148129231597809": 127,
-   "18609628651068914": 277,
-   "18111546679920253": 202,
-   "18468833743142278": 81,
-   "18108721331525072": 213,
+   "18468833743142278": 82,
+   "18108721331525072": 215,
    "17907672597352142": 117,
    "18087326645329608": 36,
    "17892166104652932": 112,
-   "18398573095162858": 244,
-   "18124992016981201": 46,
-   "17972584316962534": 187,
-   "18233631505328675": 46,
-   "18106039472381800": 75,
-   "18123099295766801": 5
+   "18398573095162858": 246,
+   "18124992016981201": 50,
+   "17972584316962534": 199,
+   "18233631505328675": 56,
+   "18106039472381800": 88,
+   "18123099295766801": 18,
+   "18146840173613826": 132
   }
  },
  "follower_log": [

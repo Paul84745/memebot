@@ -20,8 +20,8 @@
    },
    {
     "t": "2026-11-14T13:03:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-14T18:05:00+00:00",
@@ -3182,7 +3182,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 54.1,
-   "measured_at": "2026-11-14T12:16:00.828727+00:00"
+   "measured_at": "2026-11-14T13:04:03.970526+00:00"
   },
   {
    "media_id": "18398573095162858",
@@ -3247,6 +3247,23 @@
    "text": "would you rather | A: eat expired pizza, taste regret | B: skip lunch, starve till dinner",
    "kind": "story",
    "story_type": "wyr"
+  },
+  {
+   "media_id": "18106039472381800",
+   "posted_at": "2026-11-14T13:06:40.095727+00:00",
+   "template_id": "101956210",
+   "template_name": "Whisper and Goosebumps",
+   "theme": "drinking, hangovers and nights out",
+   "text": "Hangover rookie: brain filed a noise complaint against its own ringing.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Recycled Intro 2019",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -4505,20 +4522,21 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-14T12:16:00.828727+00:00",
+  "t": "2026-11-14T13:04:03.970526+00:00",
   "followers": 48302,
   "reach": {
    "18148129231597809": 127,
    "18609628651068914": 275,
    "18111546679920253": 200,
-   "18468833743142278": 79,
+   "18468833743142278": 80,
    "18108721331525072": 212,
-   "17907672597352142": 108,
+   "17907672597352142": 110,
    "18087326645329608": 33,
    "17892166104652932": 74,
-   "18398573095162858": 238,
-   "18124992016981201": 24,
-   "17972584316962534": 120
+   "18398573095162858": 239,
+   "18124992016981201": 25,
+   "17972584316962534": 141,
+   "18233631505328675": 0
   }
  },
  "follower_log": [

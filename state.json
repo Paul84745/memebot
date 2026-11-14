@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-11-14T18:57:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-14T21:37:00+00:00",
@@ -3249,13 +3249,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": 0.378,
-   "reach": 42,
+   "reach": 46,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-14T18:06:10.487132+00:00"
+   "measured_at": "2026-11-14T18:58:15.979011+00:00"
   },
   {
    "media_id": "18106039472381800",
@@ -3284,6 +3284,23 @@
    "text": "Hangover rookie: brain filed a noise complaint against its own ringing. || We rate dad's ash\u2011scented burgers five stars, because denial is tasty.",
    "kind": "story",
    "story_type": "faceoff"
+  },
+  {
+   "media_id": "18146840173613826",
+   "posted_at": "2026-11-14T19:01:07.856314+00:00",
+   "template_id": "61520",
+   "template_name": "Futurama Fry",
+   "theme": "procrastination",
+   "text": "Project launch at 9, two hours later my coffee's dead and the deadline's pregnant.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "playfulness",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -4542,22 +4559,23 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-14T18:06:10.487132+00:00",
+  "t": "2026-11-14T18:58:15.979011+00:00",
   "followers": 48305,
   "reach": {
    "18148129231597809": 127,
    "18609628651068914": 277,
-   "18111546679920253": 201,
+   "18111546679920253": 202,
    "18468833743142278": 81,
    "18108721331525072": 213,
    "17907672597352142": 117,
-   "18087326645329608": 35,
-   "17892166104652932": 107,
-   "18398573095162858": 243,
-   "18124992016981201": 43,
-   "17972584316962534": 182,
-   "18233631505328675": 42,
-   "18106039472381800": 69
+   "18087326645329608": 36,
+   "17892166104652932": 112,
+   "18398573095162858": 244,
+   "18124992016981201": 46,
+   "17972584316962534": 187,
+   "18233631505328675": 46,
+   "18106039472381800": 75,
+   "18123099295766801": 5
   }
  },
  "follower_log": [

@@ -25,8 +25,8 @@
    },
    {
     "t": "2026-11-14T18:05:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -3248,7 +3248,14 @@
    "text": "would you rather | A: eat expired pizza, taste regret | B: skip lunch, starve till dinner",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": 0.378
+   "follows_attr": 0.378,
+   "reach": 42,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-14T18:06:10.487132+00:00"
   },
   {
    "media_id": "18106039472381800",
@@ -3267,6 +3274,16 @@
    "news_age_h": null,
    "funny": 7,
    "follows_attr": 1.27
+  },
+  {
+   "media_id": "18123099295766801",
+   "posted_at": "2026-11-14T18:06:29.783382+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "Hangover rookie: brain filed a noise complaint against its own ringing. || We rate dad's ash\u2011scented burgers five stars, because denial is tasty.",
+   "kind": "story",
+   "story_type": "faceoff"
   }
  ],
  "imported": [
@@ -4525,7 +4542,7 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-14T15:11:42.977219+00:00",
+  "t": "2026-11-14T18:06:10.487132+00:00",
   "followers": 48305,
   "reach": {
    "18148129231597809": 127,
@@ -4534,13 +4551,13 @@
    "18468833743142278": 81,
    "18108721331525072": 213,
    "17907672597352142": 117,
-   "18087326645329608": 34,
-   "17892166104652932": 82,
-   "18398573095162858": 241,
-   "18124992016981201": 35,
-   "17972584316962534": 158,
-   "18233631505328675": 14,
-   "18106039472381800": 47
+   "18087326645329608": 35,
+   "17892166104652932": 107,
+   "18398573095162858": 243,
+   "18124992016981201": 43,
+   "17972584316962534": 182,
+   "18233631505328675": 42,
+   "18106039472381800": 69
   }
  },
  "follower_log": [

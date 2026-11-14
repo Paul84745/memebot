@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-14T11:16:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-14T12:15:00+00:00",
@@ -2945,7 +2945,19 @@
    "news": true,
    "news_age_h": 0.13699813333333333,
    "funny": 7,
-   "follows_attr": -1.968
+   "follows_attr": -1.968,
+   "follows_src": "estimated",
+   "like_count": 12,
+   "comments_count": 0,
+   "reach": 317,
+   "shares": 2,
+   "saved": 0,
+   "views": 483,
+   "sends_per_1k": 6.31,
+   "follows": -2.0,
+   "score": 88.3,
+   "follows_per_1k": -6.31,
+   "final": true
   },
   {
    "media_id": "18026267150944616",
@@ -2963,7 +2975,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.46
+   "follows_attr": -1.46,
+   "follows_src": "estimated",
+   "like_count": 6,
+   "comments_count": 0,
+   "reach": 226,
+   "shares": 1,
+   "saved": 0,
+   "views": 313,
+   "sends_per_1k": 4.42,
+   "follows": -1.5,
+   "score": 61.9,
+   "follows_per_1k": -6.64,
+   "final": true
   },
   {
    "media_id": "18132894409689032",
@@ -3037,7 +3061,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.096
+   "follows_attr": -1.116
   },
   {
    "media_id": "18111546679920253",
@@ -3073,7 +3097,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.954
+   "follows_attr": -2.015
   },
   {
    "media_id": "18108721331525072",
@@ -3091,7 +3115,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.534
+   "follows_attr": -1.554
   },
   {
    "media_id": "17907672597352142",
@@ -3102,14 +3126,15 @@
    "text": "would you rather | A: accidentally like your crush's old selfie | B: reply 'k' to boss's 3am rant",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.725,
-   "reach": 100,
+   "follows_attr": -0.868,
+   "reach": 107,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 40.0,
-   "measured_at": "2026-11-14T08:19:11.404108+00:00"
+   "score": 37.4,
+   "measured_at": "2026-11-14T11:17:03.749120+00:00",
+   "final": true
   },
   {
    "media_id": "18087326645329608",
@@ -3138,14 +3163,14 @@
    "text": "pick one: lose wifi or lose charger | A: lose wifi, binge memes offline, panic | B: lose charger, phone dies, can't pretend busy",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.463,
-   "reach": 66,
+   "follows_attr": -0.585,
+   "reach": 72,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 60.6,
-   "measured_at": "2026-11-14T08:19:11.404108+00:00"
+   "score": 55.6,
+   "measured_at": "2026-11-14T11:17:03.749120+00:00"
   },
   {
    "media_id": "18398573095162858",
@@ -3163,7 +3188,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.583
+   "follows_attr": -0.767
   },
   {
    "media_id": "18124992016981201",
@@ -3180,6 +3205,24 @@
    "track": "3",
    "news": true,
    "news_age_h": 1.7448458455555556,
+   "funny": 7,
+   "follows_attr": -0.449
+  },
+  {
+   "media_id": "17972584316962534",
+   "posted_at": "2026-11-14T11:19:38.659925+00:00",
+   "template_id": "284929871",
+   "template_name": "They don't know",
+   "theme": "news",
+   "text": "Me when my closet stinks: gym socks headbanging, solo concert.",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "silly party pr\u00e9mix",
+   "news": true,
+   "news_age_h": 1.1547902986111112,
    "funny": 7
   }
  ],
@@ -4360,7 +4403,8 @@
   "Watch Rory McIlroy's hilarious attempt at hitting the world's longest driver! Credit: @GOLF_com",
   "'Don't buy too much': Viral South Korean scarf seller sells out online after crowds overwhelm Seoul stall",
   "\u201cYou activate your big toe?\u201d \u2013 Peyton Watson on Nikola Jokic's bizarre ritual that completely changed his approach to the NBA",
-  "2004 Power Ballad Gets Unexpected Acoustic Rendition Aboard Plane During Nationwide Ground Stop"
+  "2004 Power Ballad Gets Unexpected Acoustic Rendition Aboard Plane During Nationwide Ground Stop",
+  "Got a weird smell in your home? Check these 17 places where odors like to hide."
  ],
  "trends": {
   "fetched_at": "2026-11-11T20:03:01.834595+00:00",
@@ -4438,22 +4482,20 @@
   "source": "22 headlines"
  },
  "follow_track": {
-  "t": "2026-11-14T08:19:11.404108+00:00",
-  "followers": 48304,
+  "t": "2026-11-14T11:17:03.749120+00:00",
+  "followers": 48303,
   "reach": {
-   "18117157088025982": 316,
-   "18026267150944616": 226,
-   "18132894409689032": 169,
    "17877248985637767": 204,
    "18148129231597809": 127,
-   "18609628651068914": 274,
+   "18609628651068914": 275,
    "18111546679920253": 200,
-   "18468833743142278": 76,
-   "18108721331525072": 211,
-   "17907672597352142": 100,
+   "18468833743142278": 79,
+   "18108721331525072": 212,
+   "17907672597352142": 107,
    "18087326645329608": 33,
-   "17892166104652932": 66,
-   "18398573095162858": 228
+   "17892166104652932": 72,
+   "18398573095162858": 237,
+   "18124992016981201": 22
   }
  },
  "follower_log": [

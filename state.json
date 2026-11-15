@@ -21,8 +21,8 @@
    },
    {
     "t": "2026-11-15T15:29:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-15T17:18:00+00:00",
@@ -3164,7 +3164,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.6
+   "follows_attr": -1.6,
+   "follows_src": "estimated",
+   "like_count": 4,
+   "comments_count": 0,
+   "reach": 218,
+   "shares": 0,
+   "saved": 1,
+   "views": 292,
+   "sends_per_1k": 0.0,
+   "follows": -1.6,
+   "score": 32.1,
+   "follows_per_1k": -7.34,
+   "final": true
   },
   {
    "media_id": "17907672597352142",
@@ -3201,7 +3213,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.211
+   "follows_attr": -0.211,
+   "follows_src": "estimated",
+   "like_count": 4,
+   "comments_count": 0,
+   "reach": 37,
+   "shares": 0,
+   "saved": 1,
+   "views": 63,
+   "sends_per_1k": 0.0,
+   "follows": -0.2,
+   "score": 70.0,
+   "follows_per_1k": -5.41,
+   "final": true
   },
   {
    "media_id": "17892166104652932",
@@ -3322,7 +3346,7 @@
    "text": "Hangover rookie: brain filed a noise complaint against its own ringing. || We rate dad's ash\u2011scented burgers five stars, because denial is tasty.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.577,
+   "follows_attr": -0.719,
    "reach": 92,
    "shares": 0,
    "replies": 1,
@@ -3366,7 +3390,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.018
+   "follows_attr": -2.035
   },
   {
    "media_id": "17969963061215822",
@@ -3377,7 +3401,14 @@
    "text": "would you rather: boss asks for weekend work | A: agree, lose sleep, become coffee zombie | B: refuse, get passive\u2011aggressive emails forever",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": 0.429
+   "follows_attr": 0.296,
+   "reach": 28,
+   "shares": 0,
+   "replies": 1,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 133.3,
+   "measured_at": "2026-11-15T15:30:28.487511+00:00"
   },
   {
    "media_id": "18148942642569268",
@@ -3389,7 +3420,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": 1.929
+   "follows_attr": 1.429
   },
   {
    "media_id": "18067410947538417",
@@ -3406,6 +3437,24 @@
    "track": "COME ON (REGGAETON VERSION) Dj D0n Paulinh0",
    "news": true,
    "news_age_h": 0.7839683230555555,
+   "funny": 7,
+   "follows_attr": -0.208
+  },
+  {
+   "media_id": "17913706203483499",
+   "posted_at": "2026-11-15T15:32:17.156662+00:00",
+   "template_id": "252600902",
+   "template_name": "Always Has Been",
+   "theme": "gym and diets",
+   "text": "Running at 6, motivation stuck at zero\u2014my legs filed a complaint.",
+   "format": "other",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "lofi",
+   "music_fx": "none",
+   "track": "Lofy",
+   "news": false,
+   "news_age_h": null,
    "funny": 7
   }
  ],
@@ -4676,23 +4725,21 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-15T13:47:12.965461+00:00",
-  "followers": 48300,
+  "t": "2026-11-15T15:30:28.487511+00:00",
+  "followers": 48299,
   "reach": {
-   "18108721331525072": 218,
-   "17907672597352142": 117,
-   "18087326645329608": 37,
    "17892166104652932": 112,
    "18398573095162858": 259,
    "18124992016981201": 58,
    "17972584316962534": 229,
    "18233631505328675": 139,
    "18106039472381800": 134,
-   "18123099295766801": 99,
+   "18123099295766801": 116,
    "18146840173613826": 156,
-   "18656552278037560": 142,
-   "17969963061215822": 12,
-   "18148942642569268": 27
+   "18656552278037560": 144,
+   "17969963061215822": 28,
+   "18148942642569268": 87,
+   "18067410947538417": 25
   }
  },
  "follower_log": [

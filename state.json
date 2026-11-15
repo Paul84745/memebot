@@ -10,8 +10,8 @@
    },
    {
     "t": "2026-11-15T12:59:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "dump"
    },
    {
@@ -3323,13 +3323,14 @@
    "kind": "story",
    "story_type": "faceoff",
    "follows_attr": -1.077,
-   "reach": 89,
+   "reach": 92,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 2,
-   "score": 89.9,
-   "measured_at": "2026-11-15T11:47:58.794637+00:00"
+   "score": 87.0,
+   "measured_at": "2026-11-15T12:59:57.598970+00:00",
+   "final": true
   },
   {
    "media_id": "18146840173613826",
@@ -3376,6 +3377,17 @@
    "text": "would you rather: boss asks for weekend work | A: agree, lose sleep, become coffee zombie | B: refuse, get passive\u2011aggressive emails forever",
    "kind": "story",
    "story_type": "wyr"
+  },
+  {
+   "media_id": "18148942642569268",
+   "posted_at": "2026-11-15T13:06:32.619768+00:00",
+   "template_id": "dump",
+   "template_name": "meme dump",
+   "theme": "meme dump",
+   "text": "My last brain cell spots a free subway seat and declares itself captain. | my mom's midnight snack: a half\u2011eaten cake, a note 'you\u2019re next' | me when the package finally arrives: 'I hope this was worth the landlord's eviction notice' | Last brain cell at checkout: 'Add one more, mortality pending' | Bus ride, I watch a dude interrogate his sandwich like it owes him money. | Roommate swipes my slice, I file a formal charge\u2026 against the cheese. | I beg the busted printer for forgiveness before it spits out my afterlife. | find a job you love, they said. now i\u2019m waiting for my soul to clock out",
+   "kind": "carousel",
+   "slides": 8,
+   "funny": 7
   }
  ],
  "imported": [
@@ -4644,21 +4656,22 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-15T11:47:58.794637+00:00",
+  "t": "2026-11-15T12:59:57.598970+00:00",
   "followers": 48297,
   "reach": {
    "18108721331525072": 218,
    "17907672597352142": 117,
    "18087326645329608": 37,
    "17892166104652932": 112,
-   "18398573095162858": 258,
+   "18398573095162858": 259,
    "18124992016981201": 58,
-   "17972584316962534": 228,
+   "17972584316962534": 229,
    "18233631505328675": 139,
-   "18106039472381800": 132,
-   "18123099295766801": 89,
-   "18146840173613826": 154,
-   "18656552278037560": 136
+   "18106039472381800": 134,
+   "18123099295766801": 92,
+   "18146840173613826": 156,
+   "18656552278037560": 140,
+   "17969963061215822": 6
   }
  },
  "follower_log": [

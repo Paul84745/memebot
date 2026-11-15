@@ -26,8 +26,8 @@
    },
    {
     "t": "2026-11-15T17:18:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-15T19:07:00+00:00",
@@ -3402,13 +3402,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": 0.296,
-   "reach": 28,
+   "reach": 49,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 133.3,
-   "measured_at": "2026-11-15T15:30:28.487511+00:00"
+   "score": 81.6,
+   "measured_at": "2026-11-15T17:19:10.014497+00:00"
   },
   {
    "media_id": "18148942642569268",
@@ -3453,6 +3453,23 @@
    "music_style": "lofi",
    "music_fx": "none",
    "track": "Lofy",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "18031422098874172",
+   "posted_at": "2026-11-15T17:21:11.187175+00:00",
+   "template_id": "259237855",
+   "template_name": "Laughing Leo",
+   "theme": "getting older",
+   "text": "laughing at my own funeral because I finally got my life together",
+   "format": "other",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Suspense and Tension-stem-4-1min",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -4725,21 +4742,22 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-15T15:30:28.487511+00:00",
+  "t": "2026-11-15T17:19:10.014497+00:00",
   "followers": 48299,
   "reach": {
    "17892166104652932": 112,
    "18398573095162858": 259,
    "18124992016981201": 58,
-   "17972584316962534": 229,
+   "17972584316962534": 230,
    "18233631505328675": 139,
-   "18106039472381800": 134,
-   "18123099295766801": 116,
-   "18146840173613826": 156,
-   "18656552278037560": 144,
-   "17969963061215822": 28,
-   "18148942642569268": 87,
-   "18067410947538417": 25
+   "18106039472381800": 135,
+   "18123099295766801": 134,
+   "18146840173613826": 158,
+   "18656552278037560": 146,
+   "17969963061215822": 49,
+   "18148942642569268": 105,
+   "18067410947538417": 38,
+   "17913706203483499": 330
   }
  },
  "follower_log": [

@@ -37,8 +37,8 @@
    },
    {
     "t": "2026-11-15T23:26:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-15",
@@ -3414,13 +3414,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": 0.177,
-   "reach": 81,
+   "reach": 87,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 49.4,
-   "measured_at": "2026-11-15T22:02:46.544485+00:00"
+   "score": 46.0,
+   "measured_at": "2026-11-15T23:27:05.585619+00:00"
   },
   {
    "media_id": "18148942642569268",
@@ -3497,7 +3497,31 @@
    "text": "We rate dad's ash\u2011scented burgers five stars, because denial is tasty. || Project launch at 9, two hours later my coffee's dead and the deadline's pregnant.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.119
+   "follows_attr": -0.119,
+   "reach": 26,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-15T23:27:05.585619+00:00"
+  },
+  {
+   "media_id": "18147685231595995",
+   "posted_at": "2026-11-15T23:29:37.170988+00:00",
+   "template_id": "221578498",
+   "template_name": "Grant Gustin over grave",
+   "theme": "neighbours",
+   "text": "Me after borrowing sugar: neighbor turned my lawn into Fort Knox.",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "lofi",
+   "music_fx": "none",
+   "track": "Lofy",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -4767,22 +4791,22 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-15T22:02:46.544485+00:00",
+  "t": "2026-11-15T23:27:05.585619+00:00",
   "followers": 48296,
   "reach": {
    "18124992016981201": 58,
-   "17972584316962534": 235,
+   "17972584316962534": 236,
    "18233631505328675": 139,
-   "18106039472381800": 148,
+   "18106039472381800": 149,
    "18123099295766801": 134,
    "18146840173613826": 160,
-   "18656552278037560": 164,
-   "17969963061215822": 81,
-   "18148942642569268": 174,
-   "18067410947538417": 47,
-   "17913706203483499": 1389,
-   "18031422098874172": 38,
-   "18111945496903404": 21
+   "18656552278037560": 165,
+   "17969963061215822": 87,
+   "18148942642569268": 183,
+   "18067410947538417": 53,
+   "17913706203483499": 1481,
+   "18031422098874172": 43,
+   "18111945496903404": 26
   }
  },
  "follower_log": [

@@ -1,27 +1,27 @@
 # What the bot has learned
 
-Posts measured so far: 82 (plus 200 older page posts)
+Posts measured so far: 83 (plus 200 older page posts)
 
 Score = engagement per 1,000 people reached: a new follower counts 20x a like, a DM send 8x.
 
 ## Sends
-- average: 0.68 sends per 1,000 reached (last 10 posts: 1.07)
+- average: 0.67 sends per 1,000 reached (last 10 posts: 1.07)
 
 ## Meme dumps vs single memes
 - dumps: avg 77.4 (4 posts)
-- single: avg 58.3 (82 posts)
+- single: avg 58.4 (83 posts)
 
 ## Followers
 - now 48300 (-72 since 2026-11-08)
-- new followers per 1,000 people reached: -9.15 on average (82 posts)
+- new followers per 1,000 people reached: -9.31 on average (83 posts)
 - posts that brought the most followers:
   - (0.00/1k, 0 follows) How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season
   - (0.00/1k, 0 follows) POV: you walk into the kitchen at 3:22 am, fridge light blinds you, and the pizza is gone | POV: you hit send at 2:07 am, then see 'seen' at 2:08 and it’s already sunrise | When you promise a 5‑minute TikTok break at 8:45 pm and it's now 1 am | Me when the group chat hits 150 messages and the plan is still 'maybe Friday' | POV: you open the essay at 3 pm, close it at 3:01 pm, and stare at the blank page till midnight
   - (0.00/1k, 0 follows) Balloon pilot lands in my grass, now he's dreaming of slam‑dunks. | Dog waiting for bone that's actually a human | Crab on dad's towel? He flips like a puppet on caffeine. | Solo race, hot air balloon crashes, I'm now the unchallenged sky-king. | Goal: finish project by 5pm. Reality: watching cat videos | Cat thinks it's the Dark Knight | I signed up for a gym, now I have a personal trainer named Lenny | My dumbbell thinks it's a sword
 
-## Stories (31 measured)
-- wyr: score 52.4, reach 127, follows 0 (12 stories)
+## Stories (32 measured)
 - rate: score 51.4, reach 256, follows 0 (8 stories)
+- wyr: score 50.7, reach 128, follows 0 (13 stories)
 - faceoff: score 43.1, reach 152, follows 0 (5 stories)
 - caption_this: score 35.8, reach 143, follows 0 (6 stories)
 
@@ -33,16 +33,16 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - ambient: avg 68.7 (3 posts)
   - drill: avg 68.1 (6 posts)
   - folk: avg 62.3 (3 posts)
-  - plain mood music: avg 59.7 (48 posts)
+  - plain mood music: avg 59.9 (49 posts)
   - disco funk: avg 54.1 (1 posts)
   - lofi: avg 46.1 (6 posts)
   - house: avg 38.2 (2 posts)
   - electronic: avg 24.6 (1 posts)
   - funk: avg 21.8 (4 posts)
 
-## Learned from this week's top meme posts (public meme communities) (60 posts from 2 pages)
-- Opening style: other opening x1.02
-- Caption length: very short caption x1.06, short caption x0.88
+## Learned from this week's top meme posts (public meme communities) (80 posts from 2 pages)
+- Opening style: other opening x1.01
+- Caption length: very short caption x1.08, short caption x0.79
 
 ## Best posting times (UTC)
 - 20:00-22:00 (score x1.74)
@@ -60,13 +60,13 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - Grant Gustin over grave: avg 152.8 (1 posts)
 - Mocking Spongebob: avg 101.2 (6 posts)
 - This Is Where I'd Put My Trophy If I Had One: avg 98.2 (4 posts)
-- Monkey Puppet: avg 97.9 (3 posts)
+- Monkey Puppet: avg 91.0 (4 posts)
 - where monkey: avg 88.3 (1 posts)
 
 ## Best formats
 - pov: avg 78.6 (6 posts)
 - me_when: avg 75.5 (10 posts)
-- when_you: avg 63.6 (22 posts)
+- when_you: avg 63.9 (23 posts)
 - how_x: avg 62.0 (5 posts)
 - how_me_bro: avg 59.4 (12 posts)
 - other: avg 41.8 (27 posts)
@@ -75,15 +75,15 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - chill: avg 111.5 (3 posts)
 - sad: avg 67.1 (13 posts)
 - awkward: avg 62.4 (14 posts)
+- upbeat: avg 55.9 (4 posts)
 - bouncy: avg 54.9 (23 posts)
 - dramatic: avg 51.7 (12 posts)
-- upbeat: avg 51.1 (3 posts)
 - hype: avg 45.7 (12 posts)
 - wholesome: avg 14.7 (1 posts)
 
 ## News memes vs normal
 - news: avg 57.7 (26 posts)
-- normal: avg 58.5 (56 posts)
+- normal: avg 58.7 (57 posts)
 
 ## Top posts
 - (317.1) how me and bro gon be hitting every hot dog stand at 2am after the holiday crawl

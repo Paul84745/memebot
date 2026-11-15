@@ -1,47 +1,48 @@
 {
  "schedule": {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "slots": [
    {
-    "t": "2026-11-14T07:42:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-14T11:16:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-14T12:15:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-15T11:47:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-14T13:03:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-15T12:59:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "dump"
    },
    {
-    "t": "2026-11-14T18:05:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-15T13:46:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-15T15:29:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-15T17:18:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-15T19:07:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-14T18:57:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-14T21:37:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-15T23:26:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-14",
-  "stories_date": "2026-11-14"
+  "dump_checked": "2026-11-15",
+  "stories_date": "2026-11-15"
  },
  "history": [
   {
@@ -3133,7 +3134,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.017
+   "follows_attr": -2.026
   },
   {
    "media_id": "18108721331525072",
@@ -3225,7 +3226,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.742
+   "follows_attr": -0.768
   },
   {
    "media_id": "18124992016981201",
@@ -3243,7 +3244,7 @@
    "news": true,
    "news_age_h": 1.7448458455555556,
    "funny": 7,
-   "follows_attr": -0.237
+   "follows_attr": -0.254
   },
   {
    "media_id": "17972584316962534",
@@ -3261,7 +3262,7 @@
    "news": true,
    "news_age_h": 1.1547902986111112,
    "funny": 7,
-   "follows_attr": -0.785
+   "follows_attr": -0.819
   },
   {
    "media_id": "18233631505328675",
@@ -3272,14 +3273,14 @@
    "text": "would you rather | A: eat expired pizza, taste regret | B: skip lunch, starve till dinner",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": 0.125,
-   "reach": 64,
+   "follows_attr": -0.142,
+   "reach": 95,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-14T23:35:18.876642+00:00"
+   "score": 42.1,
+   "measured_at": "2026-11-15T03:00:57.832398+00:00"
   },
   {
    "media_id": "18106039472381800",
@@ -3297,7 +3298,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": 0.949
+   "follows_attr": 0.828
   },
   {
    "media_id": "18123099295766801",
@@ -3308,14 +3309,14 @@
    "text": "Hangover rookie: brain filed a noise complaint against its own ringing. || We rate dad's ash\u2011scented burgers five stars, because denial is tasty.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.266,
-   "reach": 25,
+   "follows_attr": -0.525,
+   "reach": 55,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 66.7,
-   "measured_at": "2026-11-14T23:35:18.876642+00:00"
+   "score": 109.1,
+   "measured_at": "2026-11-15T03:00:57.832398+00:00"
   },
   {
    "media_id": "18146840173613826",
@@ -3333,7 +3334,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.507
+   "follows_attr": -1.533
   },
   {
    "media_id": "18656552278037560",
@@ -3351,7 +3352,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.248
+   "follows_attr": -1.489
   }
  ],
  "imported": [
@@ -4620,22 +4621,22 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-14T23:35:18.876642+00:00",
-  "followers": 48301,
+  "t": "2026-11-15T03:00:57.832398+00:00",
+  "followers": 48300,
   "reach": {
-   "18468833743142278": 83,
+   "18468833743142278": 84,
    "18108721331525072": 215,
    "17907672597352142": 117,
    "18087326645329608": 36,
    "17892166104652932": 112,
-   "18398573095162858": 246,
-   "18124992016981201": 50,
-   "17972584316962534": 208,
-   "18233631505328675": 64,
-   "18106039472381800": 98,
-   "18123099295766801": 25,
-   "18146840173613826": 138,
-   "18656552278037560": 68
+   "18398573095162858": 249,
+   "18124992016981201": 52,
+   "17972584316962534": 212,
+   "18233631505328675": 95,
+   "18106039472381800": 112,
+   "18123099295766801": 55,
+   "18146840173613826": 141,
+   "18656552278037560": 96
   }
  },
  "follower_log": [
@@ -4714,6 +4715,10 @@
   [
    "2026-11-14T01:42:57.066178+00:00",
    48305
+  ],
+  [
+   "2026-11-15T03:00:57.832398+00:00",
+   48300
   ]
  ]
 }

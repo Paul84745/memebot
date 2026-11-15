@@ -3262,7 +3262,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.906
+   "follows_attr": -0.906,
+   "follows_src": "estimated",
+   "like_count": 7,
+   "comments_count": 0,
+   "reach": 259,
+   "shares": 0,
+   "saved": 0,
+   "views": 341,
+   "sends_per_1k": 0.0,
+   "follows": -0.9,
+   "score": 27.0,
+   "follows_per_1k": -3.47,
+   "final": true
   },
   {
    "media_id": "18124992016981201",
@@ -3298,7 +3310,7 @@
    "news": true,
    "news_age_h": 1.1547902986111112,
    "funny": 7,
-   "follows_attr": -1.06
+   "follows_attr": -1.066
   },
   {
    "media_id": "18233631505328675",
@@ -3335,7 +3347,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": 0.5
+   "follows_attr": 0.455
   },
   {
    "media_id": "18123099295766801",
@@ -3372,7 +3384,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.74
+   "follows_attr": -1.746
   },
   {
    "media_id": "18656552278037560",
@@ -3390,7 +3402,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.035
+   "follows_attr": -2.103
   },
   {
    "media_id": "17969963061215822",
@@ -3401,14 +3413,14 @@
    "text": "would you rather: boss asks for weekend work | A: agree, lose sleep, become coffee zombie | B: refuse, get passive\u2011aggressive emails forever",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": 0.296,
-   "reach": 60,
+   "follows_attr": 0.177,
+   "reach": 81,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 66.7,
-   "measured_at": "2026-11-15T19:08:13.618346+00:00"
+   "score": 49.4,
+   "measured_at": "2026-11-15T22:02:46.544485+00:00"
   },
   {
    "media_id": "18148942642569268",
@@ -3420,7 +3432,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": 1.429
+   "follows_attr": 1.214
   },
   {
    "media_id": "18067410947538417",
@@ -3438,7 +3450,7 @@
    "news": true,
    "news_age_h": 0.7839683230555555,
    "funny": 7,
-   "follows_attr": -0.208
+   "follows_attr": -0.242
   },
   {
    "media_id": "17913706203483499",
@@ -3455,7 +3467,8 @@
    "track": "Lofy",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -2.322
   },
   {
    "media_id": "18031422098874172",
@@ -3472,7 +3485,8 @@
    "track": "Suspense and Tension-stem-4-1min",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.068
   },
   {
    "media_id": "18111945496903404",
@@ -3482,7 +3496,8 @@
    "theme": "story",
    "text": "We rate dad's ash\u2011scented burgers five stars, because denial is tasty. || Project launch at 9, two hours later my coffee's dead and the deadline's pregnant.",
    "kind": "story",
-   "story_type": "faceoff"
+   "story_type": "faceoff",
+   "follows_attr": -0.119
   }
  ],
  "imported": [
@@ -4752,23 +4767,22 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-15T19:08:13.618346+00:00",
-  "followers": 48299,
+  "t": "2026-11-15T22:02:46.544485+00:00",
+  "followers": 48296,
   "reach": {
-   "17892166104652932": 112,
-   "18398573095162858": 259,
    "18124992016981201": 58,
-   "17972584316962534": 234,
+   "17972584316962534": 235,
    "18233631505328675": 139,
-   "18106039472381800": 140,
+   "18106039472381800": 148,
    "18123099295766801": 134,
-   "18146840173613826": 159,
-   "18656552278037560": 152,
-   "17969963061215822": 60,
-   "18148942642569268": 136,
-   "18067410947538417": 41,
-   "17913706203483499": 978,
-   "18031422098874172": 26
+   "18146840173613826": 160,
+   "18656552278037560": 164,
+   "17969963061215822": 81,
+   "18148942642569268": 174,
+   "18067410947538417": 47,
+   "17913706203483499": 1389,
+   "18031422098874172": 38,
+   "18111945496903404": 21
   }
  },
  "follower_log": [

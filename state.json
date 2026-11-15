@@ -16,8 +16,8 @@
    },
    {
     "t": "2026-11-15T13:46:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-15T15:29:00+00:00",
@@ -3322,7 +3322,7 @@
    "text": "Hangover rookie: brain filed a noise complaint against its own ringing. || We rate dad's ash\u2011scented burgers five stars, because denial is tasty.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -1.077,
+   "follows_attr": -0.577,
    "reach": 92,
    "shares": 0,
    "replies": 1,
@@ -3366,7 +3366,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.161
+   "follows_attr": -2.018
   },
   {
    "media_id": "17969963061215822",
@@ -3376,7 +3376,8 @@
    "theme": "story",
    "text": "would you rather: boss asks for weekend work | A: agree, lose sleep, become coffee zombie | B: refuse, get passive\u2011aggressive emails forever",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": 0.429
   },
   {
    "media_id": "18148942642569268",
@@ -3387,6 +3388,24 @@
    "text": "My last brain cell spots a free subway seat and declares itself captain. | my mom's midnight snack: a half\u2011eaten cake, a note 'you\u2019re next' | me when the package finally arrives: 'I hope this was worth the landlord's eviction notice' | Last brain cell at checkout: 'Add one more, mortality pending' | Bus ride, I watch a dude interrogate his sandwich like it owes him money. | Roommate swipes my slice, I file a formal charge\u2026 against the cheese. | I beg the busted printer for forgiveness before it spits out my afterlife. | find a job you love, they said. now i\u2019m waiting for my soul to clock out",
    "kind": "carousel",
    "slides": 8,
+   "funny": 7,
+   "follows_attr": 1.929
+  },
+  {
+   "media_id": "18067410947538417",
+   "posted_at": "2026-11-15T13:50:20.327537+00:00",
+   "template_id": "27813981",
+   "template_name": "Hide the Pain Harold",
+   "theme": "news",
+   "text": "the fries are 'viral' but my bank account is still allergic to extra calories",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": "reggaeton",
+   "music_fx": "none",
+   "track": "COME ON (REGGAETON VERSION) Dj D0n Paulinh0",
+   "news": true,
+   "news_age_h": 0.7839683230555555,
    "funny": 7
   }
  ],
@@ -4568,7 +4587,8 @@
   "'Don't buy too much': Viral South Korean scarf seller sells out online after crowds overwhelm Seoul stall",
   "\u201cYou activate your big toe?\u201d \u2013 Peyton Watson on Nikola Jokic's bizarre ritual that completely changed his approach to the NBA",
   "2004 Power Ballad Gets Unexpected Acoustic Rendition Aboard Plane During Nationwide Ground Stop",
-  "Got a weird smell in your home? Check these 17 places where odors like to hide."
+  "Got a weird smell in your home? Check these 17 places where odors like to hide.",
+  "Are the viral fries at De Frites Staan Harajuku really worth the hype?"
  ],
  "trends": {
   "fetched_at": "2026-11-14T21:37:59.148000+00:00",
@@ -4656,8 +4676,8 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-15T12:59:57.598970+00:00",
-  "followers": 48297,
+  "t": "2026-11-15T13:47:12.965461+00:00",
+  "followers": 48300,
   "reach": {
    "18108721331525072": 218,
    "17907672597352142": 117,
@@ -4668,10 +4688,11 @@
    "17972584316962534": 229,
    "18233631505328675": 139,
    "18106039472381800": 134,
-   "18123099295766801": 92,
+   "18123099295766801": 99,
    "18146840173613826": 156,
-   "18656552278037560": 140,
-   "17969963061215822": 6
+   "18656552278037560": 142,
+   "17969963061215822": 12,
+   "18148942642569268": 27
   }
  },
  "follower_log": [

@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-16T22:23:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-16",
@@ -3449,7 +3449,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.228
+   "follows_attr": -2.228,
+   "follows_src": "estimated",
+   "like_count": 21,
+   "comments_count": 0,
+   "reach": 186,
+   "shares": 0,
+   "saved": 0,
+   "views": 304,
+   "sends_per_1k": 0.0,
+   "follows": -2.2,
+   "score": 112.9,
+   "follows_per_1k": -11.83,
+   "final": true
   },
   {
    "media_id": "17969963061215822",
@@ -3583,13 +3595,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": 0.593,
-   "reach": 51,
+   "reach": 58,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 1,
-   "score": 39.2,
-   "measured_at": "2026-11-16T21:18:09.390233+00:00"
+   "score": 34.5,
+   "measured_at": "2026-11-16T22:24:22.479341+00:00"
   },
   {
    "media_id": "18255519610308559",
@@ -3636,7 +3648,14 @@
    "text": "Project launch at 9, two hours later my coffee's dead and the deadline's pregnant. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.164
+   "follows_attr": -0.164,
+   "reach": 27,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-16T22:24:22.479341+00:00"
   },
   {
    "media_id": "17968360778984308",
@@ -3669,6 +3688,23 @@
    "music_style": "ambient",
    "music_fx": "slowed_reverb",
    "track": "Ambiental Abstract",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "17999818728020167",
+   "posted_at": "2026-11-16T22:26:26.344376+00:00",
+   "template_id": "137501417",
+   "template_name": "Friendship ended",
+   "theme": "roommates",
+   "text": "POV: roommate says 'i cleaned the kitchen' and the floor is a crime scene",
+   "format": "pov",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "lofi",
+   "music_fx": "none",
+   "track": "Lofy",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -4942,22 +4978,22 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-16T21:18:09.390233+00:00",
+  "t": "2026-11-16T22:24:22.479341+00:00",
   "followers": 48291,
   "reach": {
-   "18656552278037560": 186,
    "17969963061215822": 119,
-   "18148942642569268": 253,
-   "18067410947538417": 71,
-   "17913706203483499": 1524,
+   "18148942642569268": 257,
+   "18067410947538417": 72,
+   "17913706203483499": 1526,
    "18031422098874172": 67,
    "18111945496903404": 113,
-   "18147685231595995": 131,
-   "18103434335059159": 51,
-   "18255519610308559": 41,
-   "18133816241479306": 154,
-   "17919193314470539": 17,
-   "17968360778984308": 25
+   "18147685231595995": 133,
+   "18103434335059159": 58,
+   "18255519610308559": 42,
+   "18133816241479306": 155,
+   "17919193314470539": 27,
+   "17968360778984308": 27,
+   "18103583489061909": 10
   }
  },
  "follower_log": [

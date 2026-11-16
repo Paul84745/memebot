@@ -3291,7 +3291,19 @@
    "news": true,
    "news_age_h": 1.7448458455555556,
    "funny": 7,
-   "follows_attr": -0.348
+   "follows_attr": -0.348,
+   "follows_src": "estimated",
+   "like_count": 2,
+   "comments_count": 0,
+   "reach": 60,
+   "shares": 0,
+   "saved": 0,
+   "views": 89,
+   "sends_per_1k": 0.0,
+   "follows": -0.3,
+   "score": 20.0,
+   "follows_per_1k": -5.0,
+   "final": true
   },
   {
    "media_id": "17972584316962534",
@@ -3309,7 +3321,7 @@
    "news": true,
    "news_age_h": 1.1547902986111112,
    "funny": 7,
-   "follows_attr": -1.082
+   "follows_attr": -1.138
   },
   {
    "media_id": "18233631505328675",
@@ -3346,7 +3358,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": 0.431
+   "follows_attr": 0.32
   },
   {
    "media_id": "18123099295766801",
@@ -3383,7 +3395,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.746
+   "follows_attr": -1.82
   },
   {
    "media_id": "18656552278037560",
@@ -3401,7 +3413,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.143
+   "follows_attr": -2.291
   },
   {
    "media_id": "17969963061215822",
@@ -3412,14 +3424,15 @@
    "text": "would you rather: boss asks for weekend work | A: agree, lose sleep, become coffee zombie | B: refuse, get passive\u2011aggressive emails forever",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": 0.064,
-   "reach": 101,
+   "follows_attr": -0.269,
+   "reach": 119,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 39.6,
-   "measured_at": "2026-11-16T02:11:34.089427+00:00"
+   "score": 33.6,
+   "measured_at": "2026-11-16T09:48:13.148473+00:00",
+   "final": true
   },
   {
    "media_id": "18148942642569268",
@@ -3431,7 +3444,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": 1.149
+   "follows_attr": 0.63
   },
   {
    "media_id": "18067410947538417",
@@ -3449,7 +3462,7 @@
    "news": true,
    "news_age_h": 0.7839683230555555,
    "funny": 7,
-   "follows_attr": -0.274
+   "follows_attr": -0.422
   },
   {
    "media_id": "17913706203483499",
@@ -3467,7 +3480,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.395
+   "follows_attr": -2.673
   },
   {
    "media_id": "18031422098874172",
@@ -3485,7 +3498,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.1
+   "follows_attr": -0.322
   },
   {
    "media_id": "18111945496903404",
@@ -3496,14 +3509,14 @@
    "text": "We rate dad's ash\u2011scented burgers five stars, because denial is tasty. || Project launch at 9, two hours later my coffee's dead and the deadline's pregnant.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.264,
-   "reach": 44,
+   "follows_attr": -0.597,
+   "reach": 62,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 90.9,
-   "measured_at": "2026-11-16T02:11:34.089427+00:00"
+   "score": 64.5,
+   "measured_at": "2026-11-16T09:48:13.148473+00:00"
   },
   {
    "media_id": "18147685231595995",
@@ -3521,7 +3534,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.452
+   "follows_attr": -1.23
   }
  ],
  "imported": [
@@ -4791,23 +4804,22 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-16T02:11:34.089427+00:00",
-  "followers": 48295,
+  "t": "2026-11-16T09:48:13.148473+00:00",
+  "followers": 48292,
   "reach": {
-   "18124992016981201": 59,
-   "17972584316962534": 238,
+   "17972584316962534": 241,
    "18233631505328675": 139,
-   "18106039472381800": 152,
+   "18106039472381800": 158,
    "18123099295766801": 134,
-   "18146840173613826": 160,
-   "18656552278037560": 170,
-   "17969963061215822": 101,
-   "18148942642569268": 191,
-   "18067410947538417": 57,
-   "17913706203483499": 1490,
-   "18031422098874172": 47,
-   "18111945496903404": 44,
-   "18147685231595995": 56
+   "18146840173613826": 164,
+   "18656552278037560": 178,
+   "17969963061215822": 119,
+   "18148942642569268": 219,
+   "18067410947538417": 65,
+   "17913706203483499": 1505,
+   "18031422098874172": 59,
+   "18111945496903404": 62,
+   "18147685231595995": 98
   }
  },
  "follower_log": [

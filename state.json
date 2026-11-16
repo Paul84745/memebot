@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-11-16T21:17:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-16T22:23:00+00:00",
@@ -3480,7 +3480,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": 0.322
+   "follows_attr": 0.267
   },
   {
    "media_id": "18067410947538417",
@@ -3516,7 +3516,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.705
+   "follows_attr": -2.746
   },
   {
    "media_id": "18031422098874172",
@@ -3534,7 +3534,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.344
+   "follows_attr": -0.358
   },
   {
    "media_id": "18111945496903404",
@@ -3571,7 +3571,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.403
+   "follows_attr": -1.471
   },
   {
    "media_id": "18103434335059159",
@@ -3582,14 +3582,14 @@
    "text": "would you rather: burnt toast or soggy cereal | A: burnt toast, charcoal taste, mouth burns like regret | B: soggy cereal, milk swamp, spoon sinks, flavor funeral",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": 0.771,
-   "reach": 38,
+   "follows_attr": 0.593,
+   "reach": 51,
    "shares": 0,
    "replies": 0,
    "follows": 0,
-   "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-16T19:33:02.760302+00:00"
+   "profile_visits": 1,
+   "score": 39.2,
+   "measured_at": "2026-11-16T21:18:09.390233+00:00"
   },
   {
    "media_id": "18255519610308559",
@@ -3606,7 +3606,8 @@
    "track": "Lofy",
    "news": false,
    "news_age_h": null,
-   "funny": 8
+   "funny": 8,
+   "follows_attr": -0.082
   },
   {
    "media_id": "18133816241479306",
@@ -3623,7 +3624,8 @@
    "track": "50",
    "news": true,
    "news_age_h": 0.5355729975,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.055
   },
   {
    "media_id": "17919193314470539",
@@ -3633,7 +3635,8 @@
    "theme": "story",
    "text": "Project launch at 9, two hours later my coffee's dead and the deadline's pregnant. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
    "kind": "story",
-   "story_type": "faceoff"
+   "story_type": "faceoff",
+   "follows_attr": -0.164
   },
   {
    "media_id": "17968360778984308",
@@ -3648,6 +3651,24 @@
    "music_style": "lofi",
    "music_fx": "none",
    "track": "Lofy",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7,
+   "follows_attr": -0.342
+  },
+  {
+   "media_id": "18103583489061909",
+   "posted_at": "2026-11-16T21:20:14.760561+00:00",
+   "template_id": "14371066",
+   "template_name": "Star Wars Yoda",
+   "theme": "being the third wheel",
+   "text": "Calm, you must be\u2014until the rent invoice hits like a TIE fighter.",
+   "format": "other",
+   "kind": "reel",
+   "music": "sad",
+   "music_style": "ambient",
+   "music_fx": "slowed_reverb",
+   "track": "Ambiental Abstract",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -4921,21 +4942,22 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-16T19:33:02.760302+00:00",
-  "followers": 48292,
+  "t": "2026-11-16T21:18:09.390233+00:00",
+  "followers": 48291,
   "reach": {
    "18656552278037560": 186,
    "17969963061215822": 119,
-   "18148942642569268": 249,
+   "18148942642569268": 253,
    "18067410947538417": 71,
-   "17913706203483499": 1521,
-   "18031422098874172": 66,
+   "17913706203483499": 1524,
+   "18031422098874172": 67,
    "18111945496903404": 113,
-   "18147685231595995": 126,
-   "18103434335059159": 38,
-   "18255519610308559": 35,
-   "18133816241479306": 150,
-   "17919193314470539": 5
+   "18147685231595995": 131,
+   "18103434335059159": 51,
+   "18255519610308559": 41,
+   "18133816241479306": 154,
+   "17919193314470539": 17,
+   "17968360778984308": 25
   }
  },
  "follower_log": [

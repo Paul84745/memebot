@@ -15,8 +15,8 @@
    },
    {
     "t": "2026-11-16T16:01:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-16T18:41:00+00:00",
@@ -3588,6 +3588,23 @@
    "news": false,
    "news_age_h": null,
    "funny": 8
+  },
+  {
+   "media_id": "18133816241479306",
+   "posted_at": "2026-11-16T16:04:21.728302+00:00",
+   "template_id": "148909805",
+   "template_name": "Monkey Puppet",
+   "theme": "news",
+   "text": "that moment the peptide serum looked like a bottle of whipped cream",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "50",
+   "news": true,
+   "news_age_h": 0.5355729975,
+   "funny": 7
   }
  ],
  "imported": [
@@ -4769,7 +4786,8 @@
   "\u201cYou activate your big toe?\u201d \u2013 Peyton Watson on Nikola Jokic's bizarre ritual that completely changed his approach to the NBA",
   "2004 Power Ballad Gets Unexpected Acoustic Rendition Aboard Plane During Nationwide Ground Stop",
   "Got a weird smell in your home? Check these 17 places where odors like to hide.",
-  "Are the viral fries at De Frites Staan Harajuku really worth the hype?"
+  "Are the viral fries at De Frites Staan Harajuku really worth the hype?",
+  "Botox in a bottle? This viral peptide serum is getting a major early Black Friday discount"
  ],
  "trends": {
   "fetched_at": "2026-11-14T21:37:59.148000+00:00",
@@ -4857,20 +4875,21 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-16T15:21:58.438073+00:00",
+  "t": "2026-11-16T16:02:03.522396+00:00",
   "followers": 48292,
   "reach": {
    "18123099295766801": 134,
    "18146840173613826": 168,
-   "18656552278037560": 183,
+   "18656552278037560": 184,
    "17969963061215822": 119,
-   "18148942642569268": 241,
+   "18148942642569268": 245,
    "18067410947538417": 70,
    "17913706203483499": 1516,
-   "18031422098874172": 63,
-   "18111945496903404": 95,
-   "18147685231595995": 123,
-   "18103434335059159": 9
+   "18031422098874172": 64,
+   "18111945496903404": 97,
+   "18147685231595995": 125,
+   "18103434335059159": 13,
+   "18255519610308559": 15
   }
  },
  "follower_log": [

@@ -10,8 +10,8 @@
    },
    {
     "t": "2026-11-16T15:20:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-16T16:01:00+00:00",
@@ -3419,7 +3419,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.928
+   "follows_attr": -1.842
   },
   {
    "media_id": "18656552278037560",
@@ -3437,7 +3437,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.399
+   "follows_attr": -2.228
   },
   {
    "media_id": "17969963061215822",
@@ -3468,7 +3468,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": -0.021
+   "follows_attr": 0.322
   },
   {
    "media_id": "18067410947538417",
@@ -3486,7 +3486,7 @@
    "news": true,
    "news_age_h": 0.7839683230555555,
    "funny": 7,
-   "follows_attr": -0.494
+   "follows_attr": -0.237
   },
   {
    "media_id": "17913706203483499",
@@ -3504,7 +3504,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.962
+   "follows_attr": -2.705
   },
   {
    "media_id": "18031422098874172",
@@ -3522,7 +3522,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.43
+   "follows_attr": -0.344
   },
   {
    "media_id": "18111945496903404",
@@ -3533,7 +3533,7 @@
    "text": "We rate dad's ash\u2011scented burgers five stars, because denial is tasty. || Project launch at 9, two hours later my coffee's dead and the deadline's pregnant.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -1.573,
+   "follows_attr": -1.059,
    "reach": 89,
    "shares": 0,
    "replies": 1,
@@ -3559,7 +3559,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.917
+   "follows_attr": -1.403
   },
   {
    "media_id": "18103434335059159",
@@ -3569,7 +3569,25 @@
    "theme": "story",
    "text": "would you rather: burnt toast or soggy cereal | A: burnt toast, charcoal taste, mouth burns like regret | B: soggy cereal, milk swamp, spoon sinks, flavor funeral",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": 0.771
+  },
+  {
+   "media_id": "18255519610308559",
+   "posted_at": "2026-11-16T15:25:39.134724+00:00",
+   "template_id": "102156234",
+   "template_name": "Mocking Spongebob",
+   "theme": "pets acting weird",
+   "text": "When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
+   "format": "when_you",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "lofi",
+   "music_fx": "none",
+   "track": "Lofy",
+   "news": false,
+   "news_age_h": null,
+   "funny": 8
   }
  ],
  "imported": [
@@ -4839,19 +4857,20 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-16T14:23:23.012342+00:00",
-  "followers": 48289,
+  "t": "2026-11-16T15:21:58.438073+00:00",
+  "followers": 48292,
   "reach": {
    "18123099295766801": 134,
-   "18146840173613826": 167,
-   "18656552278037560": 181,
+   "18146840173613826": 168,
+   "18656552278037560": 183,
    "17969963061215822": 119,
-   "18148942642569268": 237,
-   "18067410947538417": 67,
-   "17913706203483499": 1513,
-   "18031422098874172": 62,
-   "18111945496903404": 89,
-   "18147685231595995": 117
+   "18148942642569268": 241,
+   "18067410947538417": 70,
+   "17913706203483499": 1516,
+   "18031422098874172": 63,
+   "18111945496903404": 95,
+   "18147685231595995": 123,
+   "18103434335059159": 9
   }
  },
  "follower_log": [

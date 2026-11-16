@@ -20,8 +20,8 @@
    },
    {
     "t": "2026-11-16T18:41:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -3570,7 +3570,14 @@
    "text": "would you rather: burnt toast or soggy cereal | A: burnt toast, charcoal taste, mouth burns like regret | B: soggy cereal, milk swamp, spoon sinks, flavor funeral",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": 0.771
+   "follows_attr": 0.771,
+   "reach": 30,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-16T18:41:57.893673+00:00"
   },
   {
    "media_id": "18255519610308559",
@@ -3605,6 +3612,16 @@
    "news": true,
    "news_age_h": 0.5355729975,
    "funny": 7
+  },
+  {
+   "media_id": "17919193314470539",
+   "posted_at": "2026-11-16T18:42:12.464511+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "Project launch at 9, two hours later my coffee's dead and the deadline's pregnant. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
+   "kind": "story",
+   "story_type": "faceoff"
   }
  ],
  "imported": [
@@ -4875,21 +4892,21 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-16T16:02:03.522396+00:00",
+  "t": "2026-11-16T18:41:57.893673+00:00",
   "followers": 48292,
   "reach": {
-   "18123099295766801": 134,
-   "18146840173613826": 168,
-   "18656552278037560": 184,
+   "18146840173613826": 169,
+   "18656552278037560": 186,
    "17969963061215822": 119,
-   "18148942642569268": 245,
-   "18067410947538417": 70,
-   "17913706203483499": 1516,
-   "18031422098874172": 64,
-   "18111945496903404": 97,
-   "18147685231595995": 125,
-   "18103434335059159": 13,
-   "18255519610308559": 15
+   "18148942642569268": 247,
+   "18067410947538417": 71,
+   "17913706203483499": 1520,
+   "18031422098874172": 66,
+   "18111945496903404": 113,
+   "18147685231595995": 126,
+   "18103434335059159": 30,
+   "18255519610308559": 32,
+   "18133816241479306": 149
   }
  },
  "follower_log": [

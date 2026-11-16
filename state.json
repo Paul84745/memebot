@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-16T13:55:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -3321,7 +3321,19 @@
    "news": true,
    "news_age_h": 1.1547902986111112,
    "funny": 7,
-   "follows_attr": -1.138
+   "follows_attr": -1.138,
+   "follows_src": "estimated",
+   "like_count": 6,
+   "comments_count": 0,
+   "reach": 243,
+   "shares": 0,
+   "saved": 0,
+   "views": 338,
+   "sends_per_1k": 0.0,
+   "follows": -1.1,
+   "score": 24.7,
+   "follows_per_1k": -4.53,
+   "final": true
   },
   {
    "media_id": "18233631505328675",
@@ -3358,7 +3370,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": 0.32
+   "follows_attr": 0.32,
+   "follows_src": "estimated",
+   "like_count": 6,
+   "comments_count": 0,
+   "reach": 161,
+   "shares": 0,
+   "saved": 0,
+   "views": 250,
+   "sends_per_1k": 0.0,
+   "follows": 0.3,
+   "score": 74.5,
+   "follows_per_1k": 1.86,
+   "final": true
   },
   {
    "media_id": "18123099295766801",
@@ -3395,7 +3419,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.82
+   "follows_attr": -1.928
   },
   {
    "media_id": "18656552278037560",
@@ -3413,7 +3437,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.291
+   "follows_attr": -2.399
   },
   {
    "media_id": "17969963061215822",
@@ -3444,7 +3468,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": 0.63
+   "follows_attr": -0.021
   },
   {
    "media_id": "18067410947538417",
@@ -3462,7 +3486,7 @@
    "news": true,
    "news_age_h": 0.7839683230555555,
    "funny": 7,
-   "follows_attr": -0.422
+   "follows_attr": -0.494
   },
   {
    "media_id": "17913706203483499",
@@ -3480,7 +3504,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.673
+   "follows_attr": -2.962
   },
   {
    "media_id": "18031422098874172",
@@ -3498,7 +3522,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.322
+   "follows_attr": -0.43
   },
   {
    "media_id": "18111945496903404",
@@ -3509,14 +3533,15 @@
    "text": "We rate dad's ash\u2011scented burgers five stars, because denial is tasty. || Project launch at 9, two hours later my coffee's dead and the deadline's pregnant.",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.597,
-   "reach": 62,
+   "follows_attr": -1.573,
+   "reach": 89,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 64.5,
-   "measured_at": "2026-11-16T09:48:13.148473+00:00"
+   "score": 44.9,
+   "measured_at": "2026-11-16T14:23:23.012342+00:00",
+   "final": true
   },
   {
    "media_id": "18147685231595995",
@@ -3534,7 +3559,17 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.23
+   "follows_attr": -1.917
+  },
+  {
+   "media_id": "18103434335059159",
+   "posted_at": "2026-11-16T14:24:16.762784+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "would you rather: burnt toast or soggy cereal | A: burnt toast, charcoal taste, mouth burns like regret | B: soggy cereal, milk swamp, spoon sinks, flavor funeral",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [
@@ -4804,22 +4839,19 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-16T09:48:13.148473+00:00",
-  "followers": 48292,
+  "t": "2026-11-16T14:23:23.012342+00:00",
+  "followers": 48289,
   "reach": {
-   "17972584316962534": 241,
-   "18233631505328675": 139,
-   "18106039472381800": 158,
    "18123099295766801": 134,
-   "18146840173613826": 164,
-   "18656552278037560": 178,
+   "18146840173613826": 167,
+   "18656552278037560": 181,
    "17969963061215822": 119,
-   "18148942642569268": 219,
-   "18067410947538417": 65,
-   "17913706203483499": 1505,
-   "18031422098874172": 59,
-   "18111945496903404": 62,
-   "18147685231595995": 98
+   "18148942642569268": 237,
+   "18067410947538417": 67,
+   "17913706203483499": 1513,
+   "18031422098874172": 62,
+   "18111945496903404": 89,
+   "18147685231595995": 117
   }
  },
  "follower_log": [

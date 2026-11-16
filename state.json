@@ -26,8 +26,8 @@
    },
    {
     "t": "2026-11-16T19:32:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-16T21:17:00+00:00",
@@ -3419,7 +3419,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -1.842
+   "follows_attr": -1.842,
+   "follows_src": "estimated",
+   "like_count": 7,
+   "comments_count": 0,
+   "reach": 169,
+   "shares": 0,
+   "saved": 0,
+   "views": 250,
+   "sends_per_1k": 0.0,
+   "follows": -1.8,
+   "score": 41.4,
+   "follows_per_1k": -10.65,
+   "final": true
   },
   {
    "media_id": "18656552278037560",
@@ -3571,13 +3583,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": 0.771,
-   "reach": 30,
+   "reach": 38,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-16T18:41:57.893673+00:00"
+   "measured_at": "2026-11-16T19:33:02.760302+00:00"
   },
   {
    "media_id": "18255519610308559",
@@ -3622,6 +3634,23 @@
    "text": "Project launch at 9, two hours later my coffee's dead and the deadline's pregnant. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
    "kind": "story",
    "story_type": "faceoff"
+  },
+  {
+   "media_id": "17968360778984308",
+   "posted_at": "2026-11-16T19:35:28.166211+00:00",
+   "template_id": "61585",
+   "template_name": "Bad Luck Brian",
+   "theme": "gaming",
+   "text": "Controller: 'You're broken.' Me: 'Therapist, meet my joystick.'",
+   "format": "other",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "lofi",
+   "music_fx": "none",
+   "track": "Lofy",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -4892,21 +4921,21 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-16T18:41:57.893673+00:00",
+  "t": "2026-11-16T19:33:02.760302+00:00",
   "followers": 48292,
   "reach": {
-   "18146840173613826": 169,
    "18656552278037560": 186,
    "17969963061215822": 119,
-   "18148942642569268": 247,
+   "18148942642569268": 249,
    "18067410947538417": 71,
-   "17913706203483499": 1520,
+   "17913706203483499": 1521,
    "18031422098874172": 66,
    "18111945496903404": 113,
    "18147685231595995": 126,
-   "18103434335059159": 30,
-   "18255519610308559": 32,
-   "18133816241479306": 149
+   "18103434335059159": 38,
+   "18255519610308559": 35,
+   "18133816241479306": 150,
+   "17919193314470539": 5
   }
  },
  "follower_log": [

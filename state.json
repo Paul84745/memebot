@@ -19,8 +19,8 @@
    },
    {
     "t": "2026-11-17T12:09:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-17T12:54:00+00:00",
@@ -3650,13 +3650,13 @@
    "kind": "story",
    "story_type": "faceoff",
    "follows_attr": -1.648,
-   "reach": 86,
+   "reach": 91,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 69.8,
-   "measured_at": "2026-11-17T10:27:39.800293+00:00"
+   "score": 65.9,
+   "measured_at": "2026-11-17T12:10:44.694107+00:00"
   },
   {
    "media_id": "17968360778984308",
@@ -3762,6 +3762,23 @@
    "track": "To Drill The Brain",
    "news": false,
    "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "17900455659407816",
+   "posted_at": "2026-11-17T12:13:35.208316+00:00",
+   "template_id": "371619279",
+   "template_name": "Megamind no bitches",
+   "theme": "news",
+   "text": "Spot a free cookie, and my brain screams, 'Murder the diet!'",
+   "format": "other",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": "lofi",
+   "music_fx": "none",
+   "track": "Lofy",
+   "news": true,
+   "news_age_h": 0.6809586222222223,
    "funny": 7
   }
  ],
@@ -4569,7 +4586,7 @@
  ],
  "imported_done": true,
  "peers": {
-  "fetched_at": "2026-11-15T10:58:04.938482+00:00",
+  "fetched_at": "2026-11-17T12:10:44.694107+00:00",
   "ok": [
    "memes@lemmy.world",
    "memes@lemmy.ml"
@@ -4578,203 +4595,203 @@
   "best": [
    {
     "u": "memes",
-    "er": 1328,
+    "er": 1388,
     "cap": "Courage",
     "t": "2026-11-11T22:04:49.033688Z",
     "type": "IMAGE",
-    "rel": 5.995
+    "rel": 6.465
    },
    {
     "u": "memes",
-    "er": 733,
-    "cap": "The dems are in the lab right now cooking up the giga-parlamentarian",
-    "t": "2026-11-10T09:23:54.355349Z",
-    "type": "IMAGE",
-    "rel": 3.309
-   },
-   {
-    "u": "memes",
-    "er": 1863,
-    "cap": "So Unfair",
-    "t": "2026-11-09T15:30:59.594464Z",
-    "type": "IMAGE",
-    "rel": 3.304
-   },
-   {
-    "u": "memes",
-    "er": 600,
-    "cap": "abortolly problem",
-    "t": "2026-11-13T09:31:01.975564Z",
-    "type": "IMAGE",
-    "rel": 2.709
-   },
-   {
-    "u": "memes",
-    "er": 582,
-    "cap": "\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f",
-    "t": "2026-11-09T19:26:42.501531Z",
-    "type": "IMAGE",
-    "rel": 2.627
-   },
-   {
-    "u": "memes",
-    "er": 482,
-    "cap": "lol",
-    "t": "2026-11-11T08:36:32.433903Z",
-    "type": "IMAGE",
-    "rel": 2.176
-   },
-   {
-    "u": "memes",
-    "er": 481,
-    "cap": "2026 bingo: The Libertarian Party outflanking the dems from the left",
-    "t": "2026-11-10T09:22:18.724543Z",
-    "type": "IMAGE",
-    "rel": 2.171
-   },
-   {
-    "u": "memes",
-    "er": 1215,
+    "er": 1443,
     "cap": "Silver Lining",
     "t": "2026-11-14T05:14:41.136388Z",
     "type": "IMAGE",
-    "rel": 2.155
+    "rel": 2.95
    },
    {
     "u": "memes",
-    "er": 1198,
+    "er": 610,
+    "cap": "abortolly problem",
+    "t": "2026-11-13T09:31:01.975564Z",
+    "type": "IMAGE",
+    "rel": 2.841
+   },
+   {
+    "u": "memes",
+    "er": 1204,
     "cap": "Not a bad instinct",
     "t": "2026-11-11T13:50:18.869882Z",
     "type": "IMAGE",
-    "rel": 2.125
+    "rel": 2.462
    },
    {
     "u": "memes",
-    "er": 449,
+    "er": 486,
+    "cap": "lol",
+    "t": "2026-11-11T08:36:32.433903Z",
+    "type": "IMAGE",
+    "rel": 2.264
+   },
+   {
+    "u": "memes",
+    "er": 484,
     "cap": "You know what I don't love?",
     "t": "2026-11-14T00:12:17.516516Z",
     "type": "IMAGE",
-    "rel": 2.027
+    "rel": 2.254
    },
    {
     "u": "memes",
-    "er": 998,
-    "cap": "So far...",
-    "t": "2026-11-13T12:06:08.815929Z",
-    "type": "IMAGE",
-    "rel": 1.77
-   },
-   {
-    "u": "memes",
-    "er": 898,
-    "cap": "A disaster waiting to happen",
-    "t": "2026-11-08T12:52:39.753690Z",
-    "type": "IMAGE",
-    "rel": 1.593
-   },
-   {
-    "u": "memes",
-    "er": 854,
-    "cap": "Oh Clippy",
-    "t": "2026-11-08T12:18:14.934442Z",
-    "type": "IMAGE",
-    "rel": 1.515
-   },
-   {
-    "u": "memes",
-    "er": 853,
-    "cap": "Operation Bear Trap is a go!",
-    "t": "2026-11-12T03:25:06.641172Z",
-    "type": "IMAGE",
-    "rel": 1.513
-   },
-   {
-    "u": "memes",
-    "er": 325,
-    "cap": "do better ACLU",
-    "t": "2026-11-14T17:19:25.397776Z",
-    "type": "IMAGE",
-    "rel": 1.467
-   },
-   {
-    "u": "memes",
-    "er": 801,
-    "cap": "Poor Yuna Song",
-    "t": "2026-11-10T11:52:04.858553Z",
-    "type": "IMAGE",
-    "rel": 1.421
-   },
-   {
-    "u": "memes",
-    "er": 314,
+    "er": 484,
     "cap": "Deathnote isn't about how power corrupts, it's about how you can't trust the child of a cop",
     "t": "2026-11-14T09:47:10.269413Z",
     "type": "IMAGE",
-    "rel": 1.418
+    "rel": 2.254
    },
    {
     "u": "memes",
-    "er": 305,
+    "er": 1036,
+    "cap": "So far...",
+    "t": "2026-11-13T12:06:08.815929Z",
+    "type": "IMAGE",
+    "rel": 2.118
+   },
+   {
+    "u": "memes",
+    "er": 909,
+    "cap": "The good ole days",
+    "t": "2026-11-15T12:17:50.875198Z",
+    "type": "IMAGE",
+    "rel": 1.859
+   },
+   {
+    "u": "memes",
+    "er": 858,
+    "cap": "Operation Bear Trap is a go!",
+    "t": "2026-11-12T03:25:06.641172Z",
+    "type": "IMAGE",
+    "rel": 1.754
+   },
+   {
+    "u": "memes",
+    "er": 376,
+    "cap": "do you believe?",
+    "t": "2026-11-16T09:17:34.345668Z",
+    "type": "IMAGE",
+    "rel": 1.751
+   },
+   {
+    "u": "memes",
+    "er": 366,
+    "cap": "do better ACLU",
+    "t": "2026-11-14T17:19:25.397776Z",
+    "type": "IMAGE",
+    "rel": 1.705
+   },
+   {
+    "u": "memes",
+    "er": 346,
     "cap": "1.3Gbps",
     "t": "2026-11-14T08:05:24.446142Z",
     "type": "IMAGE",
-    "rel": 1.377
+    "rel": 1.611
    },
    {
     "u": "memes",
-    "er": 289,
-    "cap": "Western understanding of Asia in one picture",
-    "t": "2026-11-10T19:43:00.702164Z",
+    "er": 753,
+    "cap": "I can't help it",
+    "t": "2026-11-15T14:32:07.613873Z",
     "type": "IMAGE",
-    "rel": 1.305
+    "rel": 1.54
    },
    {
     "u": "memes",
-    "er": 278,
-    "cap": "ATT: YOUR SCHEDULED TIME OF LIBBING OUT IS OVER, RETURN TO REGULAR DUTIES",
-    "t": "2026-11-09T03:28:06.181929Z",
+    "er": 731,
+    "cap": "Whose church?",
+    "t": "2026-11-16T12:10:15.605721Z",
     "type": "IMAGE",
-    "rel": 1.255
+    "rel": 1.495
    },
    {
     "u": "memes",
-    "er": 693,
+    "er": 717,
     "cap": "I heard it's been 24 hours already",
     "t": "2026-11-13T20:23:47.884539Z",
     "type": "IMAGE",
-    "rel": 1.229
+    "rel": 1.466
    },
    {
     "u": "memes",
     "er": 685,
-    "cap": "The jacket stays on",
-    "t": "2026-11-09T23:17:52.778636Z",
+    "cap": "Does this still run true today?",
+    "t": "2026-11-12T17:40:05.069807Z",
+    "type": "IMAGE",
+    "rel": 1.401
+   },
+   {
+    "u": "memes",
+    "er": 292,
+    "cap": "Western understanding of Asia in one picture",
+    "t": "2026-11-10T19:43:00.702164Z",
+    "type": "IMAGE",
+    "rel": 1.36
+   },
+   {
+    "u": "memes",
+    "er": 638,
+    "cap": "We're hiring",
+    "t": "2026-11-14T12:22:47.773803Z",
+    "type": "IMAGE",
+    "rel": 1.304
+   },
+   {
+    "u": "memes",
+    "er": 634,
+    "cap": "Great nap",
+    "t": "2026-11-12T11:55:48.839473Z",
+    "type": "IMAGE",
+    "rel": 1.296
+   },
+   {
+    "u": "memes",
+    "er": 594,
+    "cap": "The shame",
+    "t": "2026-11-11T12:20:29.406011Z",
     "type": "IMAGE",
     "rel": 1.215
    },
    {
     "u": "memes",
-    "er": 673,
-    "cap": "Does this still run true today?",
-    "t": "2026-11-12T17:40:05.069807Z",
+    "er": 589,
+    "cap": "Frat boy Pete is a POS",
+    "t": "2026-11-12T11:10:08.287212Z",
     "type": "IMAGE",
-    "rel": 1.194
+    "rel": 1.204
    },
    {
     "u": "memes",
-    "er": 651,
-    "cap": "Never sharing secrets again....",
-    "t": "2026-11-08T13:06:04.430820Z",
+    "er": 258,
+    "cap": "Get ready for the blue wave",
+    "t": "2026-11-14T00:39:31.682133Z",
     "type": "IMAGE",
-    "rel": 1.155
+    "rel": 1.202
    },
    {
     "u": "memes",
-    "er": 626,
-    "cap": "Great nap",
-    "t": "2026-11-12T11:55:48.839473Z",
+    "er": 257,
+    "cap": "Office culture",
+    "t": "2026-11-16T16:05:43.144364Z",
     "type": "IMAGE",
-    "rel": 1.11
+    "rel": 1.197
+   },
+   {
+    "u": "memes",
+    "er": 577,
+    "cap": "Oh ok then",
+    "t": "2026-11-12T13:08:09.414384Z",
+    "type": "IMAGE",
+    "rel": 1.18
    }
   ],
   "worst": [
@@ -4788,120 +4805,120 @@
    },
    {
     "u": "memes",
-    "er": 4,
-    "cap": "Big brain moment:",
-    "t": "2026-11-15T10:35:48.578829Z",
-    "type": "IMAGE",
-    "rel": 0.018
-   },
-   {
-    "u": "memes",
-    "er": 6,
-    "cap": "How the class is acting when the teacher\u2019s pet says: what about the homework?",
-    "t": "2026-11-14T21:13:05.806977Z",
-    "type": "IMAGE",
-    "rel": 0.027
-   },
-   {
-    "u": "memes",
-    "er": 23,
+    "er": 24,
     "cap": "A classic",
     "t": "2026-11-14T03:48:22.352899Z",
     "type": "IMAGE",
-    "rel": 0.041
+    "rel": 0.049
    },
    {
     "u": "memes",
-    "er": 27,
+    "er": 12,
+    "cap": "How the class is acting when the teacher\u2019s pet says: what about the homework?",
+    "t": "2026-11-14T21:13:05.806977Z",
+    "type": "IMAGE",
+    "rel": 0.056
+   },
+   {
+    "u": "memes",
+    "er": 44,
+    "cap": "Confused Godzilla.",
+    "t": "2026-11-17T11:03:59.568464Z",
+    "type": "IMAGE",
+    "rel": 0.09
+   },
+   {
+    "u": "memes",
+    "er": 28,
     "cap": "17 years look in 1960s vs 17 years old in 2020s",
     "t": "2026-11-12T15:04:40.022542Z",
     "type": "IMAGE",
-    "rel": 0.122
+    "rel": 0.13
    },
    {
     "u": "memes",
-    "er": 34,
+    "er": 36,
+    "cap": "Pink Panther's To do list",
+    "t": "2026-11-16T16:57:58Z",
+    "type": "IMAGE",
+    "rel": 0.168
+   },
+   {
+    "u": "memes",
+    "er": 39,
+    "cap": "A little something for the Millennials",
+    "t": "2026-11-16T00:42:49.124312Z",
+    "type": "IMAGE",
+    "rel": 0.182
+   },
+   {
+    "u": "memes",
+    "er": 39,
     "cap": "Accurate",
     "t": "2026-11-13T23:56:33.854761Z",
     "type": "IMAGE",
-    "rel": 0.153
-   },
-   {
-    "u": "memes",
-    "er": 92,
-    "cap": "Anatomy is weird",
-    "t": "2026-11-15T03:45:39.420202Z",
-    "type": "IMAGE",
-    "rel": 0.163
-   },
-   {
-    "u": "memes",
-    "er": 131,
-    "cap": "Don't ask her",
-    "t": "2026-11-11T20:29:17.802708Z",
-    "type": "IMAGE",
-    "rel": 0.232
-   },
-   {
-    "u": "memes",
-    "er": 53,
-    "cap": "same ethno-nationalist picture",
-    "t": "2026-11-08T22:04:13.172586Z",
-    "type": "IMAGE",
-    "rel": 0.239
-   },
-   {
-    "u": "memes",
-    "er": 53,
-    "cap": "Happy Veterans Day",
-    "t": "2026-11-12T01:21:32.499995Z",
-    "type": "IMAGE",
-    "rel": 0.239
+    "rel": 0.182
    },
    {
     "u": "memes",
     "er": 54,
-    "cap": "Dengists be like\u2026",
-    "t": "2026-11-08T22:11:17.300562Z",
+    "cap": "Happy Veterans Day",
+    "t": "2026-11-12T01:21:32.499995Z",
     "type": "IMAGE",
-    "rel": 0.244
+    "rel": 0.252
    },
    {
     "u": "memes",
-    "er": 60,
-    "cap": "Well\u2026",
-    "t": "2026-11-09T15:32:14.760089Z",
+    "er": 132,
+    "cap": "Don't ask her",
+    "t": "2026-11-11T20:29:17.802708Z",
     "type": "IMAGE",
-    "rel": 0.271
+    "rel": 0.27
    },
    {
     "u": "memes",
-    "er": 60,
+    "er": 61,
     "cap": "INB4 \"horse show could still exist under Leninism\"",
     "t": "2026-11-12T19:20:22.121248Z",
-    "type": "IMAGE",
-    "rel": 0.271
-   },
-   {
-    "u": "memes",
-    "er": 63,
-    "cap": "Oh, behave!",
-    "t": "2026-11-09T18:44:09.547640Z",
     "type": "IMAGE",
     "rel": 0.284
    },
    {
     "u": "memes",
-    "er": 75,
-    "cap": "For all you CEOs of AI companies or government crypto-bros",
-    "t": "2026-11-10T12:07:54.671731Z",
+    "er": 70,
+    "cap": "Big brain moment:",
+    "t": "2026-11-15T10:35:48.578829Z",
     "type": "IMAGE",
-    "rel": 0.339
+    "rel": 0.326
+   },
+   {
+    "u": "memes",
+    "er": 161,
+    "cap": "Clearly he wasn\u2019t in it for the money /s",
+    "t": "2026-11-17T00:25:18.331737Z",
+    "type": "IMAGE",
+    "rel": 0.329
+   },
+   {
+    "u": "memes",
+    "er": 76,
+    "cap": "*insert clever remark here",
+    "t": "2026-11-15T19:24:52.704698Z",
+    "type": "IMAGE",
+    "rel": 0.354
+   },
+   {
+    "u": "memes",
+    "er": 78,
+    "cap": "Propaganda",
+    "t": "2026-11-16T20:02:18.593741Z",
+    "type": "IMAGE",
+    "rel": 0.363
    }
   ],
   "by_len": {
-   "very short caption": 1.08,
-   "short caption": 0.79
+   "very short caption": 1.1,
+   "short caption": 0.58
   },
   "by_start": {
    "other opening": 1.01
@@ -4946,7 +4963,8 @@
   "Got a weird smell in your home? Check these 17 places where odors like to hide.",
   "Are the viral fries at De Frites Staan Harajuku really worth the hype?",
   "Botox in a bottle? This viral peptide serum is getting a major early Black Friday discount",
-  "When the Syringe Holds the Unexpected: Unusual Self-Injected Substances and Factitious Disorder"
+  "When the Syringe Holds the Unexpected: Unusual Self-Injected Substances and Factitious Disorder",
+  "Chipmunk Tries to Stuff Every Peanut Into His Cheeks, and It's Hilarious"
  ],
  "trends": {
   "fetched_at": "2026-11-14T21:37:59.148000+00:00",
@@ -5034,24 +5052,25 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-17T10:21:42.886425+00:00",
+  "t": "2026-11-17T12:10:44.694107+00:00",
   "followers": 48284,
   "reach": {
-   "17969963061215822": 119,
-   "18148942642569268": 277,
+   "18148942642569268": 279,
    "18067410947538417": 76,
-   "17913706203483499": 1536,
+   "17913706203483499": 1538,
    "18031422098874172": 68,
    "18111945496903404": 113,
-   "18147685231595995": 142,
-   "18103434335059159": 122,
-   "18255519610308559": 66,
-   "18133816241479306": 162,
-   "17919193314470539": 86,
+   "18147685231595995": 143,
+   "18103434335059159": 131,
+   "18255519610308559": 67,
+   "18133816241479306": 163,
+   "17919193314470539": 91,
    "17968360778984308": 38,
-   "18103583489061909": 40,
-   "17999818728020167": 41,
-   "18126665722899247": 16
+   "18103583489061909": 42,
+   "17999818728020167": 43,
+   "18126665722899247": 26,
+   "17960898966294781": 16,
+   "18037808663906840": 207
   }
  },
  "follower_log": [

@@ -42,7 +42,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 
 ## Learned from this week's top meme posts (public meme communities) (80 posts from 2 pages)
 - Opening style: other opening x1.01
-- Caption length: very short caption x1.08, short caption x0.79
+- Caption length: very short caption x1.1, short caption x0.58
 
 ## Best posting times (UTC)
 - 20:00-22:00 (score x1.72)

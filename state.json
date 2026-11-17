@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-17T07:44:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-17T10:20:00+00:00",
@@ -3492,7 +3492,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": -0.139
+   "follows_attr": -0.221
   },
   {
    "media_id": "18067410947538417",
@@ -3546,7 +3546,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.358
+   "follows_attr": -0.378
   },
   {
    "media_id": "18111945496903404",
@@ -3583,7 +3583,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.674
+   "follows_attr": -1.694
   },
   {
    "media_id": "18103434335059159",
@@ -3594,14 +3594,15 @@
    "text": "would you rather: burnt toast or soggy cereal | A: burnt toast, charcoal taste, mouth burns like regret | B: soggy cereal, milk swamp, spoon sinks, flavor funeral",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.834,
-   "reach": 115,
+   "follows_attr": -0.977,
+   "reach": 122,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 52.2,
-   "measured_at": "2026-11-17T08:18:38.239905+00:00"
+   "score": 49.2,
+   "measured_at": "2026-11-17T10:21:42.886425+00:00",
+   "final": true
   },
   {
    "media_id": "18255519610308559",
@@ -3619,7 +3620,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.558
+   "follows_attr": -0.64
   },
   {
    "media_id": "18133816241479306",
@@ -3648,14 +3649,14 @@
    "text": "Project launch at 9, two hours later my coffee's dead and the deadline's pregnant. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -1.485,
-   "reach": 78,
+   "follows_attr": -1.648,
+   "reach": 86,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 76.9,
-   "measured_at": "2026-11-17T08:18:38.239905+00:00"
+   "score": 69.8,
+   "measured_at": "2026-11-17T10:21:42.886425+00:00"
   },
   {
    "media_id": "17968360778984308",
@@ -3673,7 +3674,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.55
+   "follows_attr": -0.591
   },
   {
    "media_id": "18103583489061909",
@@ -3691,7 +3692,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.604
+   "follows_attr": -0.645
   },
   {
    "media_id": "17999818728020167",
@@ -3709,7 +3710,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.825
+   "follows_attr": -0.907
   },
   {
    "media_id": "18126665722899247",
@@ -3726,6 +3727,24 @@
    "track": "One dance in the moonlight",
    "news": false,
    "news_age_h": null,
+   "funny": 7,
+   "follows_attr": -0.327
+  },
+  {
+   "media_id": "17960898966294781",
+   "posted_at": "2026-11-17T10:25:39.902952+00:00",
+   "template_id": "3218037",
+   "template_name": "This Is Where I'd Put My Trophy If I Had One",
+   "theme": "news",
+   "text": "how me and bro look after trying a 'DIY vitamins' kit",
+   "format": "how_me_bro",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Ruslan Latypov - Funny Piano",
+   "news": true,
+   "news_age_h": 0.09256281861111113,
    "funny": 7
   }
  ],
@@ -4909,7 +4928,8 @@
   "2004 Power Ballad Gets Unexpected Acoustic Rendition Aboard Plane During Nationwide Ground Stop",
   "Got a weird smell in your home? Check these 17 places where odors like to hide.",
   "Are the viral fries at De Frites Staan Harajuku really worth the hype?",
-  "Botox in a bottle? This viral peptide serum is getting a major early Black Friday discount"
+  "Botox in a bottle? This viral peptide serum is getting a major early Black Friday discount",
+  "When the Syringe Holds the Unexpected: Unusual Self-Injected Substances and Factitious Disorder"
  ],
  "trends": {
   "fetched_at": "2026-11-14T21:37:59.148000+00:00",
@@ -4997,23 +5017,24 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-17T08:18:38.239905+00:00",
-  "followers": 48285,
+  "t": "2026-11-17T10:21:42.886425+00:00",
+  "followers": 48284,
   "reach": {
    "17969963061215822": 119,
-   "18148942642569268": 273,
+   "18148942642569268": 277,
    "18067410947538417": 76,
    "17913706203483499": 1536,
-   "18031422098874172": 67,
+   "18031422098874172": 68,
    "18111945496903404": 113,
-   "18147685231595995": 141,
-   "18103434335059159": 115,
-   "18255519610308559": 62,
+   "18147685231595995": 142,
+   "18103434335059159": 122,
+   "18255519610308559": 66,
    "18133816241479306": 162,
-   "17919193314470539": 78,
-   "17968360778984308": 36,
-   "18103583489061909": 38,
-   "17999818728020167": 37
+   "17919193314470539": 86,
+   "17968360778984308": 38,
+   "18103583489061909": 40,
+   "17999818728020167": 41,
+   "18126665722899247": 16
   }
  },
  "follower_log": [

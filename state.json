@@ -30,8 +30,8 @@
    },
    {
     "t": "2026-11-17T15:41:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-17T18:28:00+00:00",
@@ -3492,7 +3492,20 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": -0.259
+   "follows_attr": -0.259,
+   "follows_src": "instagram",
+   "like_count": 20,
+   "comments_count": 0,
+   "reach": 283,
+   "shares": 0,
+   "saved": 0,
+   "views": 637,
+   "follows": 0,
+   "profile_visits": 4,
+   "sends_per_1k": 0.0,
+   "score": 70.7,
+   "follows_per_1k": 0.0,
+   "final": true
   },
   {
    "media_id": "18067410947538417",
@@ -3510,7 +3523,19 @@
    "news": true,
    "news_age_h": 0.7839683230555555,
    "funny": 7,
-   "follows_attr": -0.383
+   "follows_attr": -0.383,
+   "follows_src": "estimated",
+   "like_count": 3,
+   "comments_count": 0,
+   "reach": 78,
+   "shares": 0,
+   "saved": 1,
+   "views": 106,
+   "sends_per_1k": 0.0,
+   "follows": -0.4,
+   "score": 60.0,
+   "follows_per_1k": -5.13,
+   "final": true
   },
   {
    "media_id": "17913706203483499",
@@ -3528,7 +3553,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -3.022
+   "follows_attr": -3.022,
+   "follows_src": "estimated",
+   "like_count": 21,
+   "comments_count": 0,
+   "reach": 1543,
+   "shares": 0,
+   "saved": 0,
+   "views": 1942,
+   "sends_per_1k": 0.0,
+   "follows": -3.0,
+   "score": 13.6,
+   "follows_per_1k": -1.94,
+   "final": true
   },
   {
    "media_id": "18031422098874172",
@@ -3546,7 +3583,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.378
+   "follows_attr": -0.369
   },
   {
    "media_id": "18111945496903404",
@@ -3583,7 +3620,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.694
+   "follows_attr": -1.659
   },
   {
    "media_id": "18103434335059159",
@@ -3620,7 +3657,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.64
+   "follows_attr": -0.587
   },
   {
    "media_id": "18133816241479306",
@@ -3638,7 +3675,7 @@
    "news": true,
    "news_age_h": 0.5355729975,
    "funny": 7,
-   "follows_attr": -0.24
+   "follows_attr": -0.222
   },
   {
    "media_id": "17919193314470539",
@@ -3649,7 +3686,7 @@
    "text": "Project launch at 9, two hours later my coffee's dead and the deadline's pregnant. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -1.763,
+   "follows_attr": -1.631,
    "reach": 94,
    "shares": 0,
    "replies": 1,
@@ -3675,7 +3712,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.591
+   "follows_attr": -0.582
   },
   {
    "media_id": "18103583489061909",
@@ -3693,7 +3730,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.645
+   "follows_attr": -0.601
   },
   {
    "media_id": "17999818728020167",
@@ -3711,7 +3748,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.907
+   "follows_attr": -0.863
   },
   {
    "media_id": "18126665722899247",
@@ -3729,7 +3766,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.365
+   "follows_attr": -0.26
   },
   {
    "media_id": "17960898966294781",
@@ -3747,7 +3784,7 @@
    "news": true,
    "news_age_h": 0.09256281861111113,
    "funny": 7,
-   "follows_attr": -0.154
+   "follows_attr": -0.075
   },
   {
    "media_id": "18037808663906840",
@@ -3765,7 +3802,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.077
+   "follows_attr": 0.019
   },
   {
    "media_id": "17900455659407816",
@@ -3783,7 +3820,7 @@
    "news": true,
    "news_age_h": 0.6809586222222223,
    "funny": 7,
-   "follows_attr": -0.423
+   "follows_attr": -0.186
   },
   {
    "media_id": "17980182348148723",
@@ -3793,7 +3830,25 @@
    "theme": "story",
    "text": "Me when the fridge says 'just one chip'\u2014my gut files a restraining order.",
    "kind": "story",
-   "story_type": "rate"
+   "story_type": "rate",
+   "follows_attr": 0.14
+  },
+  {
+   "media_id": "18148960714586408",
+   "posted_at": "2026-11-17T15:44:23.936041+00:00",
+   "template_id": "216523697",
+   "template_name": "All My Homies Hate",
+   "theme": "your body betraying you (knees, back, stomach)",
+   "text": "Pizza tried to hug me; my gut slapped it with a legal cease\u2011and\u2011desist.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "The Gallant Tailor - Funny march theme",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -5066,26 +5121,24 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-17T12:55:06.247102+00:00",
-  "followers": 48283,
+  "t": "2026-11-17T15:42:01.406069+00:00",
+  "followers": 48284,
   "reach": {
-   "18148942642569268": 280,
-   "18067410947538417": 77,
-   "17913706203483499": 1539,
-   "18031422098874172": 68,
+   "18031422098874172": 69,
    "18111945496903404": 113,
-   "18147685231595995": 143,
+   "18147685231595995": 147,
    "18103434335059159": 133,
-   "18255519610308559": 67,
-   "18133816241479306": 163,
-   "17919193314470539": 94,
-   "17968360778984308": 38,
-   "18103583489061909": 42,
-   "17999818728020167": 43,
-   "18126665722899247": 27,
-   "17960898966294781": 20,
-   "18037808663906840": 209,
-   "17900455659407816": 11
+   "18255519610308559": 73,
+   "18133816241479306": 165,
+   "17919193314470539": 109,
+   "17968360778984308": 39,
+   "18103583489061909": 47,
+   "17999818728020167": 48,
+   "18126665722899247": 39,
+   "17960898966294781": 29,
+   "18037808663906840": 220,
+   "17900455659407816": 38,
+   "17980182348148723": 16
   }
  },
  "follower_log": [

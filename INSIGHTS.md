@@ -12,7 +12,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - single: avg 57.7 (91 posts)
 
 ## Followers
-- now 48295 (-61 since 2026-11-09)
+- now 48289 (-53 since 2026-11-10)
 - new followers per 1,000 people reached: -9.00 on average (91 posts)
 - posts that brought the most followers:
   - (1.86/1k, 0.3 follows) Hangover rookie: brain filed a noise complaint against its own ringing.

@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "slots": [
    {
-    "t": "2026-11-16T13:55:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-17T06:43:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-17T07:44:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-17T10:20:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-17T12:09:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-17T12:54:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-16T15:20:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-17T15:41:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-16T16:01:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-16T18:41:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-17T18:28:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
-   },
-   {
-    "t": "2026-11-16T19:32:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-16T21:17:00+00:00",
-    "status": "done",
-    "attempts": 1
-   },
-   {
-    "t": "2026-11-16T22:23:00+00:00",
-    "status": "done",
-    "attempts": 1
    }
   ],
-  "dump_checked": "2026-11-16",
-  "stories_date": "2026-11-16"
+  "dump_checked": "2026-11-17",
+  "stories_date": "2026-11-17"
  },
  "history": [
   {
@@ -3492,7 +3492,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": 0.267
+   "follows_attr": 0.162
   },
   {
    "media_id": "18067410947538417",
@@ -3510,7 +3510,7 @@
    "news": true,
    "news_age_h": 0.7839683230555555,
    "funny": 7,
-   "follows_attr": -0.237
+   "follows_attr": -0.255
   },
   {
    "media_id": "17913706203483499",
@@ -3528,7 +3528,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.746
+   "follows_attr": -2.834
   },
   {
    "media_id": "18031422098874172",
@@ -3583,7 +3583,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.471
+   "follows_attr": -1.524
   },
   {
    "media_id": "18103434335059159",
@@ -3594,14 +3594,14 @@
    "text": "would you rather: burnt toast or soggy cereal | A: burnt toast, charcoal taste, mouth burns like regret | B: soggy cereal, milk swamp, spoon sinks, flavor funeral",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": 0.593,
-   "reach": 58,
+   "follows_attr": 0.189,
+   "reach": 81,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 34.5,
-   "measured_at": "2026-11-16T22:24:22.479341+00:00"
+   "score": 74.1,
+   "measured_at": "2026-11-17T02:43:21.880219+00:00"
   },
   {
    "media_id": "18255519610308559",
@@ -3619,7 +3619,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.082
+   "follows_attr": -0.257
   },
   {
    "media_id": "18133816241479306",
@@ -3637,7 +3637,7 @@
    "news": true,
    "news_age_h": 0.5355729975,
    "funny": 7,
-   "follows_attr": -0.055
+   "follows_attr": -0.09
   },
   {
    "media_id": "17919193314470539",
@@ -3648,14 +3648,14 @@
    "text": "Project launch at 9, two hours later my coffee's dead and the deadline's pregnant. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -0.164,
-   "reach": 27,
+   "follows_attr": -0.462,
+   "reach": 44,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-16T22:24:22.479341+00:00"
+   "score": 90.9,
+   "measured_at": "2026-11-17T02:43:21.880219+00:00"
   },
   {
    "media_id": "17968360778984308",
@@ -3673,7 +3673,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.342
+   "follows_attr": -0.43
   },
   {
    "media_id": "18103583489061909",
@@ -3690,7 +3690,8 @@
    "track": "Ambiental Abstract",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.333
   },
   {
    "media_id": "17999818728020167",
@@ -3707,7 +3708,8 @@
    "track": "Lofy",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.404
   }
  ],
  "imported": [
@@ -4978,22 +4980,23 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-16T22:24:22.479341+00:00",
-  "followers": 48291,
+  "t": "2026-11-17T02:43:21.880219+00:00",
+  "followers": 48289,
   "reach": {
    "17969963061215822": 119,
-   "18148942642569268": 257,
-   "18067410947538417": 72,
-   "17913706203483499": 1526,
+   "18148942642569268": 263,
+   "18067410947538417": 73,
+   "17913706203483499": 1531,
    "18031422098874172": 67,
    "18111945496903404": 113,
-   "18147685231595995": 133,
-   "18103434335059159": 58,
-   "18255519610308559": 42,
-   "18133816241479306": 155,
-   "17919193314470539": 27,
-   "17968360778984308": 27,
-   "18103583489061909": 10
+   "18147685231595995": 136,
+   "18103434335059159": 81,
+   "18255519610308559": 52,
+   "18133816241479306": 157,
+   "17919193314470539": 44,
+   "17968360778984308": 32,
+   "18103583489061909": 29,
+   "17999818728020167": 23
   }
  },
  "follower_log": [
@@ -5080,6 +5083,10 @@
   [
    "2026-11-16T02:11:34.089427+00:00",
    48295
+  ],
+  [
+   "2026-11-17T02:43:21.880219+00:00",
+   48289
   ]
  ]
 }

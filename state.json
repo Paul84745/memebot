@@ -35,8 +35,8 @@
    },
    {
     "t": "2026-11-17T18:28:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    }
   ],
@@ -3583,7 +3583,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.369
+   "follows_attr": -0.369,
+   "follows_src": "estimated",
+   "like_count": 10,
+   "comments_count": 0,
+   "reach": 69,
+   "shares": 0,
+   "saved": 1,
+   "views": 122,
+   "sends_per_1k": 0.0,
+   "follows": -0.4,
+   "score": 130.0,
+   "follows_per_1k": -5.8,
+   "final": true
   },
   {
    "media_id": "18111945496903404",
@@ -3831,7 +3843,14 @@
    "text": "Me when the fridge says 'just one chip'\u2014my gut files a restraining order.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": 0.14
+   "follows_attr": 0.14,
+   "reach": 27,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-17T18:29:12.962335+00:00"
   },
   {
    "media_id": "18148960714586408",
@@ -3849,6 +3868,16 @@
    "news": false,
    "news_age_h": null,
    "funny": 7
+  },
+  {
+   "media_id": "18860595146614371",
+   "posted_at": "2026-11-17T18:29:39.429288+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "would you rather | A: eat ramen from last year's lunchbox | B: skip dinner, survive on toothpaste",
+   "kind": "story",
+   "story_type": "wyr"
   }
  ],
  "imported": [
@@ -5121,24 +5150,24 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-17T15:42:01.406069+00:00",
+  "t": "2026-11-17T18:29:12.962335+00:00",
   "followers": 48284,
   "reach": {
-   "18031422098874172": 69,
    "18111945496903404": 113,
-   "18147685231595995": 147,
+   "18147685231595995": 149,
    "18103434335059159": 133,
-   "18255519610308559": 73,
+   "18255519610308559": 76,
    "18133816241479306": 165,
-   "17919193314470539": 109,
+   "17919193314470539": 121,
    "17968360778984308": 39,
-   "18103583489061909": 47,
-   "17999818728020167": 48,
-   "18126665722899247": 39,
-   "17960898966294781": 29,
-   "18037808663906840": 220,
-   "17900455659407816": 38,
-   "17980182348148723": 16
+   "18103583489061909": 48,
+   "17999818728020167": 50,
+   "18126665722899247": 45,
+   "17960898966294781": 33,
+   "18037808663906840": 226,
+   "17900455659407816": 46,
+   "17980182348148723": 27,
+   "18148960714586408": 27
   }
  },
  "follower_log": [

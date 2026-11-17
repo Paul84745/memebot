@@ -24,8 +24,8 @@
    },
    {
     "t": "2026-11-17T12:54:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    },
    {
@@ -3492,7 +3492,7 @@
    "kind": "carousel",
    "slides": 8,
    "funny": 7,
-   "follows_attr": -0.221
+   "follows_attr": -0.259
   },
   {
    "media_id": "18067410947538417",
@@ -3510,7 +3510,7 @@
    "news": true,
    "news_age_h": 0.7839683230555555,
    "funny": 7,
-   "follows_attr": -0.345
+   "follows_attr": -0.383
   },
   {
    "media_id": "17913706203483499",
@@ -3528,7 +3528,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -2.984
+   "follows_attr": -3.022
   },
   {
    "media_id": "18031422098874172",
@@ -3594,7 +3594,7 @@
    "text": "would you rather: burnt toast or soggy cereal | A: burnt toast, charcoal taste, mouth burns like regret | B: soggy cereal, milk swamp, spoon sinks, flavor funeral",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.977,
+   "follows_attr": -1.054,
    "reach": 122,
    "shares": 0,
    "replies": 1,
@@ -3649,14 +3649,15 @@
    "text": "Project launch at 9, two hours later my coffee's dead and the deadline's pregnant. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
    "kind": "story",
    "story_type": "faceoff",
-   "follows_attr": -1.648,
-   "reach": 91,
+   "follows_attr": -1.763,
+   "reach": 94,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 1,
-   "score": 65.9,
-   "measured_at": "2026-11-17T12:10:44.694107+00:00"
+   "score": 63.8,
+   "measured_at": "2026-11-17T12:55:06.247102+00:00",
+   "final": true
   },
   {
    "media_id": "17968360778984308",
@@ -3728,7 +3729,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.327
+   "follows_attr": -0.365
   },
   {
    "media_id": "17960898966294781",
@@ -3745,7 +3746,8 @@
    "track": "Ruslan Latypov - Funny Piano",
    "news": true,
    "news_age_h": 0.09256281861111113,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.154
   },
   {
    "media_id": "18037808663906840",
@@ -3762,7 +3764,8 @@
    "track": "To Drill The Brain",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.077
   },
   {
    "media_id": "17900455659407816",
@@ -3779,7 +3782,18 @@
    "track": "Lofy",
    "news": true,
    "news_age_h": 0.6809586222222223,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.423
+  },
+  {
+   "media_id": "17980182348148723",
+   "posted_at": "2026-11-17T12:56:11.782056+00:00",
+   "template_id": "27813981",
+   "template_name": "story",
+   "theme": "story",
+   "text": "Me when the fridge says 'just one chip'\u2014my gut files a restraining order.",
+   "kind": "story",
+   "story_type": "rate"
   }
  ],
  "imported": [
@@ -5052,25 +5066,26 @@
   "source": "24 headlines"
  },
  "follow_track": {
-  "t": "2026-11-17T12:10:44.694107+00:00",
-  "followers": 48284,
+  "t": "2026-11-17T12:55:06.247102+00:00",
+  "followers": 48283,
   "reach": {
-   "18148942642569268": 279,
-   "18067410947538417": 76,
-   "17913706203483499": 1538,
+   "18148942642569268": 280,
+   "18067410947538417": 77,
+   "17913706203483499": 1539,
    "18031422098874172": 68,
    "18111945496903404": 113,
    "18147685231595995": 143,
-   "18103434335059159": 131,
+   "18103434335059159": 133,
    "18255519610308559": 67,
    "18133816241479306": 163,
-   "17919193314470539": 91,
+   "17919193314470539": 94,
    "17968360778984308": 38,
    "18103583489061909": 42,
    "17999818728020167": 43,
-   "18126665722899247": 26,
-   "17960898966294781": 16,
-   "18037808663906840": 207
+   "18126665722899247": 27,
+   "17960898966294781": 20,
+   "18037808663906840": 209,
+   "17900455659407816": 11
   }
  },
  "follower_log": [

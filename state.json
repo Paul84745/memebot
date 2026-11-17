@@ -14,8 +14,8 @@
    },
    {
     "t": "2026-11-17T10:20:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-17T12:09:00+00:00",
@@ -3656,7 +3656,7 @@
    "follows": 0,
    "profile_visits": 1,
    "score": 69.8,
-   "measured_at": "2026-11-17T10:21:42.886425+00:00"
+   "measured_at": "2026-11-17T10:27:39.800293+00:00"
   },
   {
    "media_id": "17968360778984308",
@@ -3745,6 +3745,23 @@
    "track": "Ruslan Latypov - Funny Piano",
    "news": true,
    "news_age_h": 0.09256281861111113,
+   "funny": 7
+  },
+  {
+   "media_id": "18037808663906840",
+   "posted_at": "2026-11-17T10:30:07.401734+00:00",
+   "template_id": "97984",
+   "template_name": "Disaster Girl",
+   "theme": "customers and retail jobs",
+   "text": "Me sprinting, treadmill suddenly decides it's auditioning for Fast & Furious.",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "dramatic",
+   "music_style": "drill",
+   "music_fx": "none",
+   "track": "To Drill The Brain",
+   "news": false,
+   "news_age_h": null,
    "funny": 7
   }
  ],

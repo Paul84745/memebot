@@ -36,8 +36,8 @@
    },
    {
     "t": "2026-11-18T20:57:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "story"
    }
   ],
@@ -3761,7 +3761,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.648
+   "follows_attr": -0.648,
+   "follows_src": "estimated",
+   "like_count": 3,
+   "comments_count": 0,
+   "reach": 42,
+   "shares": 0,
+   "saved": 0,
+   "views": 67,
+   "sends_per_1k": 0.0,
+   "follows": -0.6,
+   "score": 30.0,
+   "follows_per_1k": -14.29,
+   "final": true
   },
   {
    "media_id": "18103583489061909",
@@ -4009,13 +4021,13 @@
    "kind": "story",
    "story_type": "caption_this",
    "follows_attr": -0.693,
-   "reach": 22,
+   "reach": 44,
    "shares": 0,
    "replies": 0,
    "follows": 0,
    "profile_visits": 0,
    "score": 0.0,
-   "measured_at": "2026-11-18T18:52:22.142193+00:00"
+   "measured_at": "2026-11-18T20:57:59.841713+00:00"
   },
   {
    "media_id": "18004047924032709",
@@ -4028,6 +4040,16 @@
    "slides": 8,
    "funny": 6,
    "follows_attr": -2.263
+  },
+  {
+   "media_id": "18174363037461711",
+   "posted_at": "2026-11-18T20:58:20.338542+00:00",
+   "template_id": "story",
+   "template_name": "story",
+   "theme": "story",
+   "text": "Aunt says \u2018extra special\u2019 casserole, I peek like Megamind \u2013 surprise, it\u2019s mystery meat. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
+   "kind": "story",
+   "story_type": "faceoff"
   }
  ],
  "imported": [
@@ -5311,25 +5333,24 @@
   "source": "30 headlines"
  },
  "follow_track": {
-  "t": "2026-11-18T18:52:22.142193+00:00",
+  "t": "2026-11-18T20:57:59.841713+00:00",
   "followers": 48273,
   "reach": {
-   "17968360778984308": 42,
    "18103583489061909": 52,
    "17999818728020167": 54,
-   "18126665722899247": 65,
+   "18126665722899247": 67,
    "17960898966294781": 62,
-   "18037808663906840": 242,
-   "17900455659407816": 90,
+   "18037808663906840": 243,
+   "17900455659407816": 91,
    "17980182348148723": 84,
-   "18148960714586408": 52,
+   "18148960714586408": 55,
    "18860595146614371": 66,
-   "18116582015038274": 241,
-   "18409425793200484": 55,
-   "18107482097021048": 60,
-   "18078472979741150": 71,
-   "18143340823716137": 22,
-   "18004047924032709": 54
+   "18116582015038274": 244,
+   "18409425793200484": 58,
+   "18107482097021048": 61,
+   "18078472979741150": 76,
+   "18143340823716137": 44,
+   "18004047924032709": 60
   }
  },
  "follower_log": [

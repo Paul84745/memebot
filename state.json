@@ -19,8 +19,8 @@
    },
    {
     "t": "2026-11-18T09:45:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-18T12:20:00+00:00",
@@ -3894,13 +3894,13 @@
    "kind": "story",
    "story_type": "wyr",
    "follows_attr": -0.475,
-   "reach": 50,
+   "reach": 53,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 80.0,
-   "measured_at": "2026-11-18T09:27:02.502411+00:00"
+   "score": 75.5,
+   "measured_at": "2026-11-18T09:59:44.501062+00:00"
   },
   {
    "media_id": "18116582015038274",
@@ -3951,6 +3951,23 @@
    "music_style": null,
    "music_fx": "none",
    "track": "Unconditional Lover",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "18078472979741150",
+   "posted_at": "2026-11-18T10:02:09.148468+00:00",
+   "template_id": "370867422",
+   "template_name": "Megamind peeking",
+   "theme": "family at home",
+   "text": "Aunt says \u2018extra special\u2019 casserole, I peek like Megamind \u2013 surprise, it\u2019s mystery meat.",
+   "format": "other",
+   "kind": "reel",
+   "music": "awkward",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "silly party pr\u00e9mix",
    "news": false,
    "news_age_h": null,
    "funny": 7
@@ -5233,7 +5250,7 @@
   "source": "30 headlines"
  },
  "follow_track": {
-  "t": "2026-11-18T09:27:02.502411+00:00",
+  "t": "2026-11-18T09:59:44.501062+00:00",
   "followers": 48281,
   "reach": {
    "18103434335059159": 133,
@@ -5247,11 +5264,12 @@
    "17960898966294781": 57,
    "18037808663906840": 234,
    "17900455659407816": 82,
-   "17980182348148723": 75,
+   "17980182348148723": 78,
    "18148960714586408": 44,
-   "18860595146614371": 50,
-   "18116582015038274": 193,
-   "18409425793200484": 3
+   "18860595146614371": 53,
+   "18116582015038274": 195,
+   "18409425793200484": 28,
+   "18107482097021048": 5
   }
  },
  "follower_log": [

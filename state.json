@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-18T07:38:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-18T08:40:00+00:00",
@@ -3682,7 +3682,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.645
+   "follows_attr": -0.706
   },
   {
    "media_id": "18133816241479306",
@@ -3791,7 +3791,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.368
+   "follows_attr": -0.398
   },
   {
    "media_id": "17960898966294781",
@@ -3809,7 +3809,7 @@
    "news": true,
    "news_age_h": 0.09256281861111113,
    "funny": 7,
-   "follows_attr": -0.183
+   "follows_attr": -0.289
   },
   {
    "media_id": "18037808663906840",
@@ -3827,7 +3827,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.023
+   "follows_attr": -0.038
   },
   {
    "media_id": "17900455659407816",
@@ -3845,7 +3845,7 @@
    "news": true,
    "news_age_h": 0.6809586222222223,
    "funny": 7,
-   "follows_attr": -0.336
+   "follows_attr": -0.503
   },
   {
    "media_id": "17980182348148723",
@@ -3856,14 +3856,15 @@
    "text": "Me when the fridge says 'just one chip'\u2014my gut files a restraining order.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.052,
-   "reach": 55,
+   "follows_attr": -0.34,
+   "reach": 74,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 72.7,
-   "measured_at": "2026-11-18T02:12:25.679498+00:00"
+   "score": 54.1,
+   "measured_at": "2026-11-18T08:19:14.150830+00:00",
+   "final": true
   },
   {
    "media_id": "18148960714586408",
@@ -3881,7 +3882,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.075
+   "follows_attr": -0.151
   },
   {
    "media_id": "18860595146614371",
@@ -3892,14 +3893,31 @@
    "text": "would you rather | A: eat ramen from last year's lunchbox | B: skip dinner, survive on toothpaste",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.217,
-   "reach": 33,
+   "follows_attr": -0.475,
+   "reach": 50,
    "shares": 0,
    "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 121.2,
-   "measured_at": "2026-11-18T02:12:25.679498+00:00"
+   "score": 80.0,
+   "measured_at": "2026-11-18T08:19:14.150830+00:00"
+  },
+  {
+   "media_id": "18116582015038274",
+   "posted_at": "2026-11-18T08:21:04.487103+00:00",
+   "template_id": "101956210",
+   "template_name": "Whisper and Goosebumps",
+   "theme": "being tired and sleep",
+   "text": "me when I hit snooze for the third time, and my alarm finally files a complaint",
+   "format": "me_when",
+   "kind": "reel",
+   "music": "chill",
+   "music_style": "rnb",
+   "music_fx": "none",
+   "track": "Smooth Transmission - Rnb Electronic",
+   "news": false,
+   "news_age_h": null,
+   "funny": 7
   }
  ],
  "imported": [
@@ -5178,23 +5196,23 @@
   "source": "30 headlines"
  },
  "follow_track": {
-  "t": "2026-11-18T02:12:25.679498+00:00",
-  "followers": 48283,
+  "t": "2026-11-18T08:19:14.150830+00:00",
+  "followers": 48282,
   "reach": {
    "18103434335059159": 133,
-   "18255519610308559": 85,
+   "18255519610308559": 89,
    "18133816241479306": 167,
    "17919193314470539": 121,
    "17968360778984308": 40,
    "18103583489061909": 51,
    "17999818728020167": 52,
-   "18126665722899247": 61,
-   "17960898966294781": 50,
-   "18037808663906840": 233,
-   "17900455659407816": 71,
-   "17980182348148723": 55,
-   "18148960714586408": 38,
-   "18860595146614371": 33
+   "18126665722899247": 63,
+   "17960898966294781": 57,
+   "18037808663906840": 234,
+   "17900455659407816": 82,
+   "17980182348148723": 74,
+   "18148960714586408": 43,
+   "18860595146614371": 50
   }
  },
  "follower_log": [

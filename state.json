@@ -9,8 +9,8 @@
    },
    {
     "t": "2026-11-18T08:40:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-18T09:26:00+00:00",
@@ -3900,7 +3900,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 80.0,
-   "measured_at": "2026-11-18T08:19:14.150830+00:00"
+   "measured_at": "2026-11-18T08:40:57.907459+00:00"
   },
   {
    "media_id": "18116582015038274",
@@ -3917,6 +3917,23 @@
    "track": "Smooth Transmission - Rnb Electronic",
    "news": false,
    "news_age_h": null,
+   "funny": 7
+  },
+  {
+   "media_id": "18409425793200484",
+   "posted_at": "2026-11-18T08:43:56.509666+00:00",
+   "template_id": "316466202",
+   "template_name": "where monkey",
+   "theme": "news",
+   "text": "Day one fest: my thighs went on strike, citing unbearable bass.",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "The Gallant Tailor - Funny march theme",
+   "news": true,
+   "news_age_h": 0.6856176338888889,
    "funny": 7
   }
  ],
@@ -5102,7 +5119,8 @@
   "Are the viral fries at De Frites Staan Harajuku really worth the hype?",
   "Botox in a bottle? This viral peptide serum is getting a major early Black Friday discount",
   "When the Syringe Holds the Unexpected: Unusual Self-Injected Substances and Factitious Disorder",
-  "Chipmunk Tries to Stuff Every Peanut Into His Cheeks, and It's Hilarious"
+  "Chipmunk Tries to Stuff Every Peanut Into His Cheeks, and It's Hilarious",
+  "Harry Styles, Cher, Sam Fender and Billie Eilish to headline Glastonbury 2027"
  ],
  "trends": {
   "fetched_at": "2026-11-18T02:12:25.679498+00:00",
@@ -5196,7 +5214,7 @@
   "source": "30 headlines"
  },
  "follow_track": {
-  "t": "2026-11-18T08:19:14.150830+00:00",
+  "t": "2026-11-18T08:40:57.907459+00:00",
   "followers": 48282,
   "reach": {
    "18103434335059159": 133,
@@ -5212,7 +5230,8 @@
    "17900455659407816": 82,
    "17980182348148723": 74,
    "18148960714586408": 43,
-   "18860595146614371": 50
+   "18860595146614371": 50,
+   "18116582015038274": 4
   }
  },
  "follower_log": [

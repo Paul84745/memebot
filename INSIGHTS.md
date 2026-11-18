@@ -19,10 +19,10 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - (0.00/1k, 0 follows) How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season
   - (0.00/1k, 0 follows) POV: you walk into the kitchen at 3:22 am, fridge light blinds you, and the pizza is gone | POV: you hit send at 2:07 am, then see 'seen' at 2:08 and it’s already sunrise | When you promise a 5‑minute TikTok break at 8:45 pm and it's now 1 am | Me when the group chat hits 150 messages and the plan is still 'maybe Friday' | POV: you open the essay at 3 pm, close it at 3:01 pm, and stare at the blank page till midnight
 
-## Stories (38 measured)
+## Stories (39 measured)
 - rate: score 51.7, reach 236, follows 0 (9 stories)
 - faceoff: score 51.4, reach 130, follows 0 (8 stories)
-- wyr: score 49.4, reach 127, follows 0 (15 stories)
+- wyr: score 50.7, reach 122, follows 0 (16 stories)
 - caption_this: score 35.8, reach 143, follows 0 (6 stories)
 
 ## Trending music styles right now (30 headlines, 2026-11-18)

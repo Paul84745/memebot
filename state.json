@@ -30,8 +30,8 @@
    },
    {
     "t": "2026-11-18T13:58:00+00:00",
-    "status": "pending",
-    "attempts": 0,
+    "status": "done",
+    "attempts": 1,
     "kind": "dump"
    },
    {
@@ -3682,7 +3682,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.711
+   "follows_attr": -0.727
   },
   {
    "media_id": "18133816241479306",
@@ -3737,7 +3737,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.59
+   "follows_attr": -0.606
   },
   {
    "media_id": "18103583489061909",
@@ -3755,7 +3755,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.609
+   "follows_attr": -0.625
   },
   {
    "media_id": "17999818728020167",
@@ -3773,7 +3773,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.88
+   "follows_attr": -0.896
   },
   {
    "media_id": "18126665722899247",
@@ -3791,7 +3791,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.398
+   "follows_attr": -0.414
   },
   {
    "media_id": "17960898966294781",
@@ -3809,7 +3809,7 @@
    "news": true,
    "news_age_h": 0.09256281861111113,
    "funny": 7,
-   "follows_attr": -0.289
+   "follows_attr": -0.322
   },
   {
    "media_id": "18037808663906840",
@@ -3845,7 +3845,7 @@
    "news": true,
    "news_age_h": 0.6809586222222223,
    "funny": 7,
-   "follows_attr": -0.503
+   "follows_attr": -0.519
   },
   {
    "media_id": "17980182348148723",
@@ -3882,7 +3882,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.156
+   "follows_attr": -0.189
   },
   {
    "media_id": "18860595146614371",
@@ -3893,7 +3893,7 @@
    "text": "would you rather | A: eat ramen from last year's lunchbox | B: skip dinner, survive on toothpaste",
    "kind": "story",
    "story_type": "wyr",
-   "follows_attr": -0.475,
+   "follows_attr": -0.606,
    "reach": 58,
    "shares": 0,
    "replies": 1,
@@ -3919,7 +3919,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.969
+   "follows_attr": -1.166
   },
   {
    "media_id": "18409425793200484",
@@ -3937,7 +3937,7 @@
    "news": true,
    "news_age_h": 0.6856176338888889,
    "funny": 7,
-   "follows_attr": -0.015
+   "follows_attr": -0.113
   },
   {
    "media_id": "18107482097021048",
@@ -3954,7 +3954,8 @@
    "track": "Unconditional Lover",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.066
   },
   {
    "media_id": "18078472979741150",
@@ -3971,7 +3972,8 @@
    "track": "silly party pr\u00e9mix",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.197
   },
   {
    "media_id": "18143340823716137",
@@ -3981,7 +3983,19 @@
    "theme": "story",
    "text": "caption this: I'm The Captain Now",
    "kind": "story",
-   "story_type": "caption_this"
+   "story_type": "caption_this",
+   "follows_attr": -0.148
+  },
+  {
+   "media_id": "18004047924032709",
+   "posted_at": "2026-11-18T14:05:57.691681+00:00",
+   "template_id": "dump",
+   "template_name": "meme dump",
+   "theme": "meme dump",
+   "text": "Witch: 'Ready?' Me: 'Only if the incantation summons unlimited pizza.' | We joined kids' go-kart race, car named 'funny car.' Finish line: my dad's basement | when you hear bro say he finally got a 'big cushion' and you picture his new sofa | my last brain cell checking PF balance after 3 weeks of 'just a sec' | nobody: rent a room / me: pawn my couch | new hire? my conspiracy board now holds my latte. | me when I book a cheap flight and the airline cancels at 3am | nobody:\n\nme: brings a six\u2011pack to my cousin\u2019s wedding because I\u2019m 'helping the bar'",
+   "kind": "carousel",
+   "slides": 8,
+   "funny": 6
   }
  ],
  "imported": [
@@ -5167,7 +5181,11 @@
   "Botox in a bottle? This viral peptide serum is getting a major early Black Friday discount",
   "When the Syringe Holds the Unexpected: Unusual Self-Injected Substances and Factitious Disorder",
   "Chipmunk Tries to Stuff Every Peanut Into His Cheeks, and It's Hilarious",
-  "Harry Styles, Cher, Sam Fender and Billie Eilish to headline Glastonbury 2027"
+  "Harry Styles, Cher, Sam Fender and Billie Eilish to headline Glastonbury 2027",
+  "Pedro Pascal\u2019s reaction to Scarlet Witch\u2019s possible return in MCU goes viral: \u2018I refuse to believe he's m",
+  "JFR Lets Them Race, Even With Funny Car Title On The Line",
+  "Daniss Jenkins delivers unexpected statement against Victor Wembanyama and Spurs",
+  "EPFO WhatsApp service goes viral with 1 crore users in 14 days: How to check PF balance, download passbook"
  ],
  "trends": {
   "fetched_at": "2026-11-18T02:12:25.679498+00:00",
@@ -5261,27 +5279,28 @@
   "source": "30 headlines"
  },
  "follow_track": {
-  "t": "2026-11-18T12:30:15.323231+00:00",
-  "followers": 48281,
+  "t": "2026-11-18T13:59:05.557761+00:00",
+  "followers": 48280,
   "reach": {
    "18103434335059159": 133,
-   "18255519610308559": 93,
+   "18255519610308559": 94,
    "18133816241479306": 167,
    "17919193314470539": 121,
-   "17968360778984308": 40,
-   "18103583489061909": 51,
-   "17999818728020167": 52,
-   "18126665722899247": 63,
-   "17960898966294781": 57,
+   "17968360778984308": 41,
+   "18103583489061909": 52,
+   "17999818728020167": 53,
+   "18126665722899247": 64,
+   "17960898966294781": 59,
    "18037808663906840": 237,
-   "17900455659407816": 82,
+   "17900455659407816": 83,
    "17980182348148723": 84,
-   "18148960714586408": 45,
-   "18860595146614371": 58,
-   "18116582015038274": 206,
-   "18409425793200484": 38,
-   "18107482097021048": 46,
-   "18078472979741150": 26
+   "18148960714586408": 47,
+   "18860595146614371": 66,
+   "18116582015038274": 218,
+   "18409425793200484": 44,
+   "18107482097021048": 50,
+   "18078472979741150": 38,
+   "18143340823716137": 9
   }
  },
  "follower_log": [

@@ -14,8 +14,8 @@
    },
    {
     "t": "2026-11-18T09:26:00+00:00",
-    "status": "pending",
-    "attempts": 0
+    "status": "done",
+    "attempts": 1
    },
    {
     "t": "2026-11-18T09:45:00+00:00",
@@ -3682,7 +3682,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.706
+   "follows_attr": -0.711
   },
   {
    "media_id": "18133816241479306",
@@ -3856,7 +3856,7 @@
    "text": "Me when the fridge says 'just one chip'\u2014my gut files a restraining order.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": -0.34,
+   "follows_attr": -0.345,
    "reach": 74,
    "shares": 0,
    "replies": 1,
@@ -3882,7 +3882,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.151
+   "follows_attr": -0.156
   },
   {
    "media_id": "18860595146614371",
@@ -3900,7 +3900,7 @@
    "follows": 0,
    "profile_visits": 0,
    "score": 80.0,
-   "measured_at": "2026-11-18T08:40:57.907459+00:00"
+   "measured_at": "2026-11-18T09:27:02.502411+00:00"
   },
   {
    "media_id": "18116582015038274",
@@ -3917,7 +3917,8 @@
    "track": "Smooth Transmission - Rnb Electronic",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.969
   },
   {
    "media_id": "18409425793200484",
@@ -3934,6 +3935,24 @@
    "track": "The Gallant Tailor - Funny march theme",
    "news": true,
    "news_age_h": 0.6856176338888889,
+   "funny": 7,
+   "follows_attr": -0.015
+  },
+  {
+   "media_id": "18107482097021048",
+   "posted_at": "2026-11-18T09:29:11.456124+00:00",
+   "template_id": "61520",
+   "template_name": "Futurama Fry",
+   "theme": "doctors, dentists and haircuts",
+   "text": "My brain at the drill: 'Maybe it's a miniature turntable.'",
+   "format": "other",
+   "kind": "reel",
+   "music": "bouncy",
+   "music_style": null,
+   "music_fx": "none",
+   "track": "Unconditional Lover",
+   "news": false,
+   "news_age_h": null,
    "funny": 7
   }
  ],
@@ -5214,11 +5233,11 @@
   "source": "30 headlines"
  },
  "follow_track": {
-  "t": "2026-11-18T08:40:57.907459+00:00",
-  "followers": 48282,
+  "t": "2026-11-18T09:27:02.502411+00:00",
+  "followers": 48281,
   "reach": {
    "18103434335059159": 133,
-   "18255519610308559": 89,
+   "18255519610308559": 90,
    "18133816241479306": 167,
    "17919193314470539": 121,
    "17968360778984308": 40,
@@ -5228,10 +5247,11 @@
    "17960898966294781": 57,
    "18037808663906840": 234,
    "17900455659407816": 82,
-   "17980182348148723": 74,
-   "18148960714586408": 43,
+   "17980182348148723": 75,
+   "18148960714586408": 44,
    "18860595146614371": 50,
-   "18116582015038274": 4
+   "18116582015038274": 193,
+   "18409425793200484": 3
   }
  },
  "follower_log": [

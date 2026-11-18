@@ -3682,7 +3682,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.727
+   "follows_attr": -0.727,
+   "follows_src": "estimated",
+   "like_count": 12,
+   "comments_count": 0,
+   "reach": 100,
+   "shares": 0,
+   "saved": 2,
+   "views": 169,
+   "sends_per_1k": 0.0,
+   "follows": -0.7,
+   "score": 180.0,
+   "follows_per_1k": -7.0,
+   "final": true
   },
   {
    "media_id": "18133816241479306",
@@ -3700,7 +3712,19 @@
    "news": true,
    "news_age_h": 0.5355729975,
    "funny": 7,
-   "follows_attr": -0.239
+   "follows_attr": -0.239,
+   "follows_src": "estimated",
+   "like_count": 5,
+   "comments_count": 0,
+   "reach": 168,
+   "shares": 0,
+   "saved": 0,
+   "views": 210,
+   "sends_per_1k": 0.0,
+   "follows": -0.2,
+   "score": 29.8,
+   "follows_per_1k": -1.19,
+   "final": true
   },
   {
    "media_id": "17919193314470539",
@@ -3737,7 +3761,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.606
+   "follows_attr": -0.648
   },
   {
    "media_id": "18103583489061909",
@@ -3773,7 +3797,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.896
+   "follows_attr": -0.938
   },
   {
    "media_id": "18126665722899247",
@@ -3791,7 +3815,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.414
+   "follows_attr": -0.456
   },
   {
    "media_id": "17960898966294781",
@@ -3809,7 +3833,7 @@
    "news": true,
    "news_age_h": 0.09256281861111113,
    "funny": 7,
-   "follows_attr": -0.322
+   "follows_attr": -0.448
   },
   {
    "media_id": "18037808663906840",
@@ -3827,7 +3851,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.038
+   "follows_attr": -0.248
   },
   {
    "media_id": "17900455659407816",
@@ -3845,7 +3869,7 @@
    "news": true,
    "news_age_h": 0.6809586222222223,
    "funny": 7,
-   "follows_attr": -0.519
+   "follows_attr": -0.812
   },
   {
    "media_id": "17980182348148723",
@@ -3882,7 +3906,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.189
+   "follows_attr": -0.399
   },
   {
    "media_id": "18860595146614371",
@@ -3919,7 +3943,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.166
+   "follows_attr": -2.13
   },
   {
    "media_id": "18409425793200484",
@@ -3937,7 +3961,7 @@
    "news": true,
    "news_age_h": 0.6856176338888889,
    "funny": 7,
-   "follows_attr": -0.113
+   "follows_attr": -0.574
   },
   {
    "media_id": "18107482097021048",
@@ -3955,7 +3979,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.066
+   "follows_attr": -0.485
   },
   {
    "media_id": "18078472979741150",
@@ -3973,7 +3997,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.197
+   "follows_attr": -1.58
   },
   {
    "media_id": "18143340823716137",
@@ -3984,7 +4008,14 @@
    "text": "caption this: I'm The Captain Now",
    "kind": "story",
    "story_type": "caption_this",
-   "follows_attr": -0.148
+   "follows_attr": -0.693,
+   "reach": 22,
+   "shares": 0,
+   "replies": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 0.0,
+   "measured_at": "2026-11-18T18:52:22.142193+00:00"
   },
   {
    "media_id": "18004047924032709",
@@ -3995,7 +4026,8 @@
    "text": "Witch: 'Ready?' Me: 'Only if the incantation summons unlimited pizza.' | We joined kids' go-kart race, car named 'funny car.' Finish line: my dad's basement | when you hear bro say he finally got a 'big cushion' and you picture his new sofa | my last brain cell checking PF balance after 3 weeks of 'just a sec' | nobody: rent a room / me: pawn my couch | new hire? my conspiracy board now holds my latte. | me when I book a cheap flight and the airline cancels at 3am | nobody:\n\nme: brings a six\u2011pack to my cousin\u2019s wedding because I\u2019m 'helping the bar'",
    "kind": "carousel",
    "slides": 8,
-   "funny": 6
+   "funny": 6,
+   "follows_attr": -2.263
   }
  ],
  "imported": [
@@ -5279,28 +5311,25 @@
   "source": "30 headlines"
  },
  "follow_track": {
-  "t": "2026-11-18T13:59:05.557761+00:00",
-  "followers": 48280,
+  "t": "2026-11-18T18:52:22.142193+00:00",
+  "followers": 48273,
   "reach": {
-   "18103434335059159": 133,
-   "18255519610308559": 94,
-   "18133816241479306": 167,
-   "17919193314470539": 121,
-   "17968360778984308": 41,
+   "17968360778984308": 42,
    "18103583489061909": 52,
-   "17999818728020167": 53,
-   "18126665722899247": 64,
-   "17960898966294781": 59,
-   "18037808663906840": 237,
-   "17900455659407816": 83,
+   "17999818728020167": 54,
+   "18126665722899247": 65,
+   "17960898966294781": 62,
+   "18037808663906840": 242,
+   "17900455659407816": 90,
    "17980182348148723": 84,
-   "18148960714586408": 47,
+   "18148960714586408": 52,
    "18860595146614371": 66,
-   "18116582015038274": 218,
-   "18409425793200484": 44,
-   "18107482097021048": 50,
-   "18078472979741150": 38,
-   "18143340823716137": 9
+   "18116582015038274": 241,
+   "18409425793200484": 55,
+   "18107482097021048": 60,
+   "18078472979741150": 71,
+   "18143340823716137": 22,
+   "18004047924032709": 54
   }
  },
  "follower_log": [

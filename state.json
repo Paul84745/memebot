@@ -1,47 +1,48 @@
 {
  "schedule": {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "slots": [
    {
-    "t": "2026-11-17T06:43:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-18T07:38:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-17T07:44:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-18T08:40:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-17T10:20:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-18T09:26:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-17T12:09:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-18T09:45:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-17T12:54:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-18T12:20:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-17T15:41:00+00:00",
-    "status": "done",
-    "attempts": 1
+    "t": "2026-11-18T13:58:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "dump"
    },
    {
-    "t": "2026-11-17T18:28:00+00:00",
-    "status": "done",
-    "attempts": 1,
+    "t": "2026-11-18T20:57:00+00:00",
+    "status": "pending",
+    "attempts": 0,
     "kind": "story"
    }
   ],
-  "dump_checked": "2026-11-17",
-  "stories_date": "2026-11-17"
+  "dump_checked": "2026-11-18",
+  "stories_date": "2026-11-18"
  },
  "history": [
   {
@@ -3632,7 +3633,19 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -1.659
+   "follows_attr": -1.659,
+   "follows_src": "estimated",
+   "like_count": 16,
+   "comments_count": 0,
+   "reach": 152,
+   "shares": 0,
+   "saved": 2,
+   "views": 234,
+   "sends_per_1k": 0.0,
+   "follows": -1.7,
+   "score": 144.7,
+   "follows_per_1k": -11.18,
+   "final": true
   },
   {
    "media_id": "18103434335059159",
@@ -3669,7 +3682,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 8,
-   "follows_attr": -0.587
+   "follows_attr": -0.645
   },
   {
    "media_id": "18133816241479306",
@@ -3687,7 +3700,7 @@
    "news": true,
    "news_age_h": 0.5355729975,
    "funny": 7,
-   "follows_attr": -0.222
+   "follows_attr": -0.239
   },
   {
    "media_id": "17919193314470539",
@@ -3724,7 +3737,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.582
+   "follows_attr": -0.59
   },
   {
    "media_id": "18103583489061909",
@@ -3742,7 +3755,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.601
+   "follows_attr": -0.609
   },
   {
    "media_id": "17999818728020167",
@@ -3760,7 +3773,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.863
+   "follows_attr": -0.88
   },
   {
    "media_id": "18126665722899247",
@@ -3778,7 +3791,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": -0.26
+   "follows_attr": -0.368
   },
   {
    "media_id": "17960898966294781",
@@ -3796,7 +3809,7 @@
    "news": true,
    "news_age_h": 0.09256281861111113,
    "funny": 7,
-   "follows_attr": -0.075
+   "follows_attr": -0.183
   },
   {
    "media_id": "18037808663906840",
@@ -3814,7 +3827,7 @@
    "news": false,
    "news_age_h": null,
    "funny": 7,
-   "follows_attr": 0.019
+   "follows_attr": -0.023
   },
   {
    "media_id": "17900455659407816",
@@ -3832,7 +3845,7 @@
    "news": true,
    "news_age_h": 0.6809586222222223,
    "funny": 7,
-   "follows_attr": -0.186
+   "follows_attr": -0.336
   },
   {
    "media_id": "17980182348148723",
@@ -3843,14 +3856,14 @@
    "text": "Me when the fridge says 'just one chip'\u2014my gut files a restraining order.",
    "kind": "story",
    "story_type": "rate",
-   "follows_attr": 0.14,
-   "reach": 32,
+   "follows_attr": -0.052,
+   "reach": 55,
    "shares": 0,
-   "replies": 0,
+   "replies": 1,
    "follows": 0,
    "profile_visits": 0,
-   "score": 0.0,
-   "measured_at": "2026-11-17T20:00:46.741565+00:00"
+   "score": 72.7,
+   "measured_at": "2026-11-18T02:12:25.679498+00:00"
   },
   {
    "media_id": "18148960714586408",
@@ -3867,7 +3880,8 @@
    "track": "The Gallant Tailor - Funny march theme",
    "news": false,
    "news_age_h": null,
-   "funny": 7
+   "funny": 7,
+   "follows_attr": -0.075
   },
   {
    "media_id": "18860595146614371",
@@ -3877,7 +3891,15 @@
    "theme": "story",
    "text": "would you rather | A: eat ramen from last year's lunchbox | B: skip dinner, survive on toothpaste",
    "kind": "story",
-   "story_type": "wyr"
+   "story_type": "wyr",
+   "follows_attr": -0.217,
+   "reach": 33,
+   "shares": 0,
+   "replies": 1,
+   "follows": 0,
+   "profile_visits": 0,
+   "score": 121.2,
+   "measured_at": "2026-11-18T02:12:25.679498+00:00"
   }
  ],
  "imported": [
@@ -5065,60 +5087,66 @@
   "Chipmunk Tries to Stuff Every Peanut Into His Cheeks, and It's Hilarious"
  ],
  "trends": {
-  "fetched_at": "2026-11-14T21:37:59.148000+00:00",
+  "fetched_at": "2026-11-18T02:12:25.679498+00:00",
   "styles": [
    {
     "query": "amapiano",
     "moods": [
-     "bouncy",
      "upbeat",
-     "hype"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "pop",
-    "moods": [
-     "upbeat",
-     "hype",
-     "wholesome"
-    ],
-    "fx": "sped_up"
-   },
-   {
-    "query": "drill",
-    "moods": [
-     "hype",
-     "dramatic"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "lofi",
-    "moods": [
-     "chill",
-     "awkward",
-     "sad"
+     "bouncy"
     ],
     "fx": "none"
    },
    {
     "query": "reggaeton",
     "moods": [
-     "bouncy",
-     "upbeat",
+     "hype",
+     "upbeat"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "hyperpop",
+    "moods": [
+     "hype",
+     "awkward",
+     "upbeat"
+    ],
+    "fx": "sped_up"
+   },
+   {
+    "query": "lofi",
+    "moods": [
+     "chill",
      "wholesome"
     ],
     "fx": "none"
    },
    {
-    "query": "ambient",
+    "query": "gospel",
     "moods": [
-     "dramatic",
      "sad",
+     "dramatic",
      "wholesome"
     ],
     "fx": "slowed_reverb"
+   },
+   {
+    "query": "rnb",
+    "moods": [
+     "chill",
+     "sad",
+     "wholesome"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "synthwave",
+    "moods": [
+     "hype",
+     "dramatic"
+    ],
+    "fx": "none"
    },
    {
     "query": "phonk",
@@ -5147,27 +5175,26 @@
     "fx": "slowed_reverb"
    }
   ],
-  "source": "24 headlines"
+  "source": "30 headlines"
  },
  "follow_track": {
-  "t": "2026-11-17T20:00:46.741565+00:00",
-  "followers": 48284,
+  "t": "2026-11-18T02:12:25.679498+00:00",
+  "followers": 48283,
   "reach": {
-   "18147685231595995": 149,
    "18103434335059159": 133,
-   "18255519610308559": 78,
-   "18133816241479306": 165,
+   "18255519610308559": 85,
+   "18133816241479306": 167,
    "17919193314470539": 121,
-   "17968360778984308": 39,
-   "18103583489061909": 50,
-   "17999818728020167": 50,
-   "18126665722899247": 48,
-   "17960898966294781": 37,
-   "18037808663906840": 228,
-   "17900455659407816": 53,
-   "17980182348148723": 32,
-   "18148960714586408": 29,
-   "18860595146614371": 7
+   "17968360778984308": 40,
+   "18103583489061909": 51,
+   "17999818728020167": 52,
+   "18126665722899247": 61,
+   "17960898966294781": 50,
+   "18037808663906840": 233,
+   "17900455659407816": 71,
+   "17980182348148723": 55,
+   "18148960714586408": 38,
+   "18860595146614371": 33
   }
  },
  "follower_log": [
@@ -5258,6 +5285,10 @@
   [
    "2026-11-17T02:43:21.880219+00:00",
    48289
+  ],
+  [
+   "2026-11-18T02:12:25.679498+00:00",
+   48283
   ]
  ]
 }

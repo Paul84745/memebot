@@ -1,19 +1,19 @@
 # What the bot has learned
 
-Posts measured so far: 97 (plus 200 older page posts)
+Posts measured so far: 98 (plus 200 older page posts)
 
 Score = engagement per 1,000 people reached: a new follower counts 20x a like, a DM send 8x.
 
 ## Sends
-- average: 0.58 sends per 1,000 reached (last 10 posts: 0.00)
+- average: 0.57 sends per 1,000 reached (last 10 posts: 0.00)
 
 ## Meme dumps vs single memes
 - dumps: avg 76.1 (5 posts)
-- single: avg 59.9 (97 posts)
+- single: avg 59.6 (98 posts)
 
 ## Followers
 - now 48283 (-48 since 2026-11-11)
-- new followers per 1,000 people reached: -8.69 on average (98 posts)
+- new followers per 1,000 people reached: -8.75 on average (99 posts)
 - posts that brought the most followers:
   - (1.86/1k, 0.3 follows) Hangover rookie: brain filed a noise complaint against its own ringing.
   - (0.00/1k, 0 follows) How me feels after promising to clean the room at 9pm, but now it's 11:42 and the floor's a crime scene | when you set your alarm for 5:00am, hit snooze at 5:12, then realize you have a 7am class | when you finally lie down at 2:13am and the ceiling fan sounds like a helicopter | POV: you said you'd start the essay at 6pm, now it's 2am and the cursor's still blinking | When you finally order a protein shake, but the barista writes 'Pudding' on the cup | POV: your 8:30am class starts, but you just hit snooze at 8:27 and your brain's still at 3am | when you tell yourself 'just one more episode' at 11:58pm and end up watching the entire season
@@ -31,8 +31,8 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - piano: avg 76.7 (7 posts)
   - uk garage: avg 69.9 (1 posts)
   - ambient: avg 68.7 (3 posts)
-  - lofi: avg 68.3 (9 posts)
   - drill: avg 68.1 (6 posts)
+  - lofi: avg 64.5 (10 posts)
   - folk: avg 62.3 (3 posts)
   - reggaeton: avg 60.0 (1 posts)
   - plain mood music: avg 58.3 (58 posts)
@@ -70,11 +70,11 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - when_you: avg 68.8 (24 posts)
 - how_x: avg 62.0 (5 posts)
 - how_me_bro: avg 59.4 (12 posts)
-- other: avg 46.1 (37 posts)
+- other: avg 45.7 (38 posts)
 
 ## Best music
 - chill: avg 90.4 (4 posts)
-- awkward: avg 71.8 (18 posts)
+- awkward: avg 69.6 (19 posts)
 - sad: avg 63.3 (14 posts)
 - dramatic: avg 59.7 (15 posts)
 - upbeat: avg 55.9 (4 posts)
@@ -84,7 +84,7 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 
 ## News memes vs normal
 - news: avg 54.5 (30 posts)
-- normal: avg 62.3 (67 posts)
+- normal: avg 61.8 (68 posts)
 
 ## Top posts
 - (317.1) how me and bro gon be hitting every hot dog stand at 2am after the holiday crawl

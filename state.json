@@ -37,7 +37,7 @@
    {
     "t": "2026-11-19T23:03:00+00:00",
     "status": "pending",
-    "attempts": 0
+    "attempts": 1
    }
   ],
   "dump_checked": "2026-11-19",
@@ -4049,7 +4049,8 @@
    "theme": "story",
    "text": "Aunt says \u2018extra special\u2019 casserole, I peek like Megamind \u2013 surprise, it\u2019s mystery meat. || When my mutt decides the vet is his stage and his bark is the grand finale\u2014*fart confetti*",
    "kind": "story",
-   "story_type": "faceoff"
+   "story_type": "faceoff",
+   "final": true
   }
  ],
  "imported": [

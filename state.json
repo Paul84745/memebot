@@ -4,13 +4,13 @@
   "slots": [
    {
     "t": "2026-11-19T11:54:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 2
    },
    {
     "t": "2026-11-19T12:50:00+00:00",
     "status": "pending",
-    "attempts": 0,
+    "attempts": 1,
     "kind": "story"
    },
    {

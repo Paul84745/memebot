@@ -41,9 +41,9 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
   - electronic: avg 24.6 (1 posts)
   - funk: avg 21.8 (4 posts)
 
-## Learned from this week's top meme posts (public meme communities) (80 posts from 2 pages)
+## Learned from this week's top meme posts (public meme communities) (88 posts from 2 pages)
 - Opening style: other opening x1.01
-- Caption length: very short caption x1.1, short caption x0.58
+- Caption length: very short caption x1.08, short caption x0.68
 
 ## Best posting times (UTC)
 - 20:00-22:00 (score x1.70)

@@ -14,24 +14,24 @@
    },
    {
     "t": "2026-11-20T11:33:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 1,
     "kind": "story"
    },
    {
     "t": "2026-11-20T17:15:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
     "t": "2026-11-20T18:34:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
     "t": "2026-11-20T18:49:00+00:00",
     "status": "pending",
-    "attempts": 0
+    "attempts": 1
    },
    {
     "t": "2026-11-20T20:04:00+00:00",

@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "slots": [
    {
-    "t": "2026-11-20T06:38:00+00:00",
-    "status": "skipped",
-    "attempts": 4
-   },
-   {
-    "t": "2026-11-20T06:43:00+00:00",
-    "status": "skipped",
-    "attempts": 2
-   },
-   {
-    "t": "2026-11-20T11:33:00+00:00",
-    "status": "skipped",
-    "attempts": 1,
-    "kind": "story"
-   },
-   {
-    "t": "2026-11-20T17:15:00+00:00",
-    "status": "skipped",
-    "attempts": 0
-   },
-   {
-    "t": "2026-11-20T18:34:00+00:00",
-    "status": "skipped",
-    "attempts": 0
-   },
-   {
-    "t": "2026-11-20T18:49:00+00:00",
+    "t": "2026-11-21T11:10:00+00:00",
     "status": "pending",
-    "attempts": 1
+    "attempts": 0
    },
    {
-    "t": "2026-11-20T20:04:00+00:00",
+    "t": "2026-11-21T12:51:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-21T13:00:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-21T13:54:00+00:00",
     "status": "pending",
     "attempts": 0,
     "kind": "story"
+   },
+   {
+    "t": "2026-11-21T18:17:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "story"
+   },
+   {
+    "t": "2026-11-21T20:00:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-21T23:18:00+00:00",
+    "status": "pending",
+    "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-20",
-  "stories_date": "2026-11-20"
+  "dump_checked": "2026-11-21",
+  "stories_date": "2026-11-21"
  },
  "history": [
   {
@@ -5243,21 +5243,22 @@
   "EPFO WhatsApp service goes viral with 1 crore users in 14 days: How to check PF balance, download passbook"
  ],
  "trends": {
-  "fetched_at": "2026-11-18T02:12:25.679498+00:00",
+  "fetched_at": "2026-11-21T02:48:43.936628+00:00",
   "styles": [
    {
     "query": "amapiano",
     "moods": [
+     "bouncy",
      "upbeat",
-     "bouncy"
+     "hype"
     ],
     "fx": "none"
    },
    {
-    "query": "reggaeton",
+    "query": "smooth jazz",
     "moods": [
-     "hype",
-     "upbeat"
+     "chill",
+     "wholesome"
     ],
     "fx": "none"
    },
@@ -5265,7 +5266,6 @@
     "query": "hyperpop",
     "moods": [
      "hype",
-     "awkward",
      "upbeat"
     ],
     "fx": "sped_up"
@@ -5274,33 +5274,24 @@
     "query": "lofi",
     "moods": [
      "chill",
-     "wholesome"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "gospel",
-    "moods": [
      "sad",
-     "dramatic",
-     "wholesome"
-    ],
-    "fx": "slowed_reverb"
-   },
-   {
-    "query": "rnb",
-    "moods": [
-     "chill",
-     "sad",
-     "wholesome"
+     "awkward"
     ],
     "fx": "none"
    },
    {
     "query": "synthwave",
     "moods": [
-     "hype",
-     "dramatic"
+     "dramatic",
+     "hype"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "rock",
+    "moods": [
+     "dramatic",
+     "upbeat"
     ],
     "fx": "none"
    },
@@ -5331,7 +5322,7 @@
     "fx": "slowed_reverb"
    }
   ],
-  "source": "30 headlines"
+  "source": "18 headlines"
  },
  "follow_track": {
   "t": "2026-11-18T20:57:59.841713+00:00",

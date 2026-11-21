@@ -4857,76 +4857,60 @@
  ],
  "imported_done": true,
  "peers": {
-  "fetched_at": "2026-11-19T14:20:30.035858+00:00",
+  "fetched_at": "2026-11-21T17:45:10.240294+00:00",
   "ok": [
    "memes@lemmy.world",
    "memes@lemmy.ml"
   ],
-  "n": 88,
+  "n": 73,
   "best": [
    {
     "u": "memes",
-    "er": 612,
-    "cap": "abortolly problem",
-    "t": "2026-11-13T09:31:01.975564Z",
-    "type": "IMAGE",
-    "rel": 3.031
-   },
-   {
-    "u": "memes",
-    "er": 1498,
+    "er": 1518,
     "cap": "High hopes",
     "t": "2026-11-17T12:53:17.888482Z",
     "type": "IMAGE",
-    "rel": 2.956
+    "rel": 3.123
    },
    {
     "u": "memes",
-    "er": 1445,
-    "cap": "Silver Lining",
-    "t": "2026-11-14T05:14:41.136388Z",
-    "type": "IMAGE",
-    "rel": 2.852
-   },
-   {
-    "u": "memes",
-    "er": 487,
-    "cap": "You know what I don't love?",
-    "t": "2026-11-14T00:12:17.516516Z",
-    "type": "IMAGE",
-    "rel": 2.412
-   },
-   {
-    "u": "memes",
-    "er": 487,
-    "cap": "Deathnote isn't about how power corrupts, it's about how you can't trust the child of a cop",
-    "t": "2026-11-14T09:47:10.269413Z",
-    "type": "IMAGE",
-    "rel": 2.412
-   },
-   {
-    "u": "memes",
-    "er": 456,
+    "er": 577,
     "cap": "30% of Gen Z in the US is sympathetic to Communism",
     "t": "2026-11-18T13:57:26.804752Z",
     "type": "IMAGE",
-    "rel": 2.258
+    "rel": 2.656
    },
    {
     "u": "memes",
-    "er": 1041,
-    "cap": "So far...",
-    "t": "2026-11-13T12:06:08.815929Z",
+    "er": 466,
+    "cap": "there will be signs",
+    "t": "2026-11-18T21:19:31.279984Z",
     "type": "IMAGE",
-    "rel": 2.055
+    "rel": 2.145
    },
    {
     "u": "memes",
-    "er": 1000,
+    "er": 1009,
     "cap": "Job search tier list",
     "t": "2026-11-17T15:19:59.998025Z",
     "type": "IMAGE",
-    "rel": 1.974
+    "rel": 2.076
+   },
+   {
+    "u": "memes",
+    "er": 930,
+    "cap": "The good ole days",
+    "t": "2026-11-15T12:17:50.875198Z",
+    "type": "IMAGE",
+    "rel": 1.913
+   },
+   {
+    "u": "memes",
+    "er": 901,
+    "cap": "Complimentary",
+    "t": "2026-11-20T12:49:34.617880Z",
+    "type": "IMAGE",
+    "rel": 1.854
    },
    {
     "u": "memes",
@@ -4934,153 +4918,161 @@
     "cap": "do you believe?",
     "t": "2026-11-16T09:17:34.345668Z",
     "type": "IMAGE",
-    "rel": 1.922
+    "rel": 1.786
    },
    {
     "u": "memes",
-    "er": 382,
-    "cap": "there will be signs",
-    "t": "2026-11-18T21:19:31.279984Z",
+    "er": 368,
+    "cap": "Bourgeois world view",
+    "t": "2026-11-20T21:12:16.784887Z",
     "type": "IMAGE",
-    "rel": 1.892
+    "rel": 1.694
    },
    {
     "u": "memes",
-    "er": 372,
-    "cap": "do better ACLU",
-    "t": "2026-11-14T17:19:25.397776Z",
-    "type": "IMAGE",
-    "rel": 1.842
-   },
-   {
-    "u": "memes",
-    "er": 916,
-    "cap": "The good ole days",
-    "t": "2026-11-15T12:17:50.875198Z",
-    "type": "IMAGE",
-    "rel": 1.808
-   },
-   {
-    "u": "memes",
-    "er": 351,
-    "cap": "1.3Gbps",
-    "t": "2026-11-14T08:05:24.446142Z",
-    "type": "IMAGE",
-    "rel": 1.738
-   },
-   {
-    "u": "memes",
-    "er": 308,
-    "cap": "`SHALL WE PLAY A GAME?`",
-    "t": "2026-11-18T08:14:29.483048Z",
-    "type": "IMAGE",
-    "rel": 1.525
-   },
-   {
-    "u": "memes",
-    "er": 757,
-    "cap": "Whose church?",
-    "t": "2026-11-16T12:10:15.605721Z",
-    "type": "IMAGE",
-    "rel": 1.494
-   },
-   {
-    "u": "memes",
-    "er": 755,
-    "cap": "I can't help it",
-    "t": "2026-11-15T14:32:07.613873Z",
-    "type": "IMAGE",
-    "rel": 1.49
-   },
-   {
-    "u": "memes",
-    "er": 723,
+    "er": 820,
     "cap": "Very impressive",
     "t": "2026-11-18T15:04:27.891519Z",
     "type": "IMAGE",
-    "rel": 1.427
+    "rel": 1.687
    },
    {
     "u": "memes",
-    "er": 722,
-    "cap": "I heard it's been 24 hours already",
-    "t": "2026-11-13T20:23:47.884539Z",
+    "er": 361,
+    "cap": "American elections be like",
+    "t": "2026-11-20T14:23:00.040945Z",
     "type": "IMAGE",
-    "rel": 1.425
+    "rel": 1.662
    },
    {
     "u": "memes",
-    "er": 286,
-    "cap": "distraught.jpg",
-    "t": "2026-11-17T08:55:35.544853Z",
+    "er": 341,
+    "cap": "`SHALL WE PLAY A GAME?`",
+    "t": "2026-11-18T08:14:29.483048Z",
     "type": "IMAGE",
-    "rel": 1.416
+    "rel": 1.57
    },
    {
     "u": "memes",
-    "er": 686,
-    "cap": "Does this still run true today?",
-    "t": "2026-11-12T17:40:05.069807Z",
+    "er": 760,
+    "cap": "Whose church?",
+    "t": "2026-11-16T12:10:15.605721Z",
     "type": "IMAGE",
-    "rel": 1.354
+    "rel": 1.564
    },
    {
     "u": "memes",
-    "er": 273,
-    "cap": "baby trebuchet*",
-    "t": "2026-11-17T08:54:48.325099Z",
+    "er": 760,
+    "cap": "I can't help it",
+    "t": "2026-11-15T14:32:07.613873Z",
     "type": "IMAGE",
-    "rel": 1.352
+    "rel": 1.564
    },
    {
     "u": "memes",
-    "er": 272,
-    "cap": "Why would I deceive you",
-    "t": "2026-11-18T04:20:22.014525Z",
+    "er": 337,
+    "cap": "\"The West does not like us, and we must understand this fact\"",
+    "t": "2026-11-19T18:28:54.304505Z",
     "type": "IMAGE",
-    "rel": 1.347
+    "rel": 1.551
    },
    {
     "u": "memes",
-    "er": 271,
-    "cap": "Office culture",
-    "t": "2026-11-16T16:05:43.144364Z",
+    "er": 748,
+    "cap": "Have some self control",
+    "t": "2026-11-19T13:53:15.792846Z",
     "type": "IMAGE",
-    "rel": 1.342
+    "rel": 1.539
    },
    {
     "u": "memes",
-    "er": 269,
-    "cap": "banner",
-    "t": "2026-11-18T08:30:24.021704Z",
+    "er": 714,
+    "cap": "Little shits",
+    "t": "2026-11-18T16:51:37.314913Z",
     "type": "IMAGE",
-    "rel": 1.332
+    "rel": 1.469
    },
    {
     "u": "memes",
-    "er": 671,
+    "er": 677,
     "cap": "Wrapped party potato",
     "t": "2026-11-17T12:52:17.278418Z",
     "type": "IMAGE",
-    "rel": 1.324
+    "rel": 1.393
+   },
+   {
+    "u": "memes",
+    "er": 299,
+    "cap": "Why would I deceive you",
+    "t": "2026-11-18T04:20:22.014525Z",
+    "type": "IMAGE",
+    "rel": 1.376
+   },
+   {
+    "u": "memes",
+    "er": 293,
+    "cap": "distraught.jpg",
+    "t": "2026-11-17T08:55:35.544853Z",
+    "type": "IMAGE",
+    "rel": 1.349
+   },
+   {
+    "u": "memes",
+    "er": 287,
+    "cap": "People's Republic of Mom's Phone",
+    "t": "2026-11-19T01:21:12.622138Z",
+    "type": "IMAGE",
+    "rel": 1.321
+   },
+   {
+    "u": "memes",
+    "er": 634,
+    "cap": "Generational Run",
+    "t": "2026-11-17T03:01:38.791335Z",
+    "type": "IMAGE",
+    "rel": 1.304
+   },
+   {
+    "u": "memes",
+    "er": 281,
+    "cap": "Home of the Free",
+    "t": "2026-11-19T18:12:54.686423Z",
+    "type": "IMAGE",
+    "rel": 1.294
+   },
+   {
+    "u": "memes",
+    "er": 276,
+    "cap": "banner",
+    "t": "2026-11-18T08:30:24.021704Z",
+    "type": "IMAGE",
+    "rel": 1.271
+   },
+   {
+    "u": "memes",
+    "er": 275,
+    "cap": "baby trebuchet*",
+    "t": "2026-11-17T08:54:48.325099Z",
+    "type": "IMAGE",
+    "rel": 1.266
+   },
+   {
+    "u": "memes",
+    "er": 274,
+    "cap": "Office culture",
+    "t": "2026-11-16T16:05:43.144364Z",
+    "type": "IMAGE",
+    "rel": 1.261
    }
   ],
   "worst": [
    {
     "u": "memes",
-    "er": 16,
-    "cap": "Have some self control",
-    "t": "2026-11-19T13:53:15.792846Z",
+    "er": 20,
+    "cap": "Sigh",
+    "t": "2026-11-21T17:27:09.065791Z",
     "type": "IMAGE",
-    "rel": 0.032
-   },
-   {
-    "u": "memes",
-    "er": 25,
-    "cap": "A classic",
-    "t": "2026-11-14T03:48:22.352899Z",
-    "type": "IMAGE",
-    "rel": 0.049
+    "rel": 0.041
    },
    {
     "u": "memes",
@@ -5088,55 +5080,31 @@
     "cap": "How the class is acting when the teacher\u2019s pet says: what about the homework?",
     "t": "2026-11-14T21:13:05.806977Z",
     "type": "IMAGE",
-    "rel": 0.069
-   },
-   {
-    "u": "memes",
-    "er": 58,
-    "cap": "Using that sentence starter does not help you!",
-    "t": "2026-11-17T14:51:49.262591Z",
-    "type": "IMAGE",
-    "rel": 0.114
-   },
-   {
-    "u": "memes",
-    "er": 65,
-    "cap": "Thanksgiving approaches.",
-    "t": "2026-11-19T11:51:06.876466Z",
-    "type": "IMAGE",
-    "rel": 0.128
-   },
-   {
-    "u": "memes",
-    "er": 28,
-    "cap": "17 years look in 1960s vs 17 years old in 2020s",
-    "t": "2026-11-12T15:04:40.022542Z",
-    "type": "IMAGE",
-    "rel": 0.139
-   },
-   {
-    "u": "memes",
-    "er": 91,
-    "cap": "Anything for steam frame",
-    "t": "2026-11-18T16:01:48.274842Z",
-    "type": "IMAGE",
-    "rel": 0.18
-   },
-   {
-    "u": "memes",
-    "er": 39,
-    "cap": "A little something for the Millennials",
-    "t": "2026-11-16T00:42:49.124312Z",
-    "type": "IMAGE",
-    "rel": 0.193
+    "rel": 0.064
    },
    {
     "u": "memes",
     "er": 42,
-    "cap": "Accurate",
-    "t": "2026-11-13T23:56:33.854761Z",
+    "cap": "Alternative history: Tokyo monster explosion",
+    "t": "2026-11-19T18:44:22.468852Z",
     "type": "IMAGE",
-    "rel": 0.208
+    "rel": 0.086
+   },
+   {
+    "u": "memes",
+    "er": 61,
+    "cap": "Using that sentence starter does not help you!",
+    "t": "2026-11-17T14:51:49.262591Z",
+    "type": "IMAGE",
+    "rel": 0.126
+   },
+   {
+    "u": "memes",
+    "er": 40,
+    "cap": "A little something for the Millennials",
+    "t": "2026-11-16T00:42:49.124312Z",
+    "type": "IMAGE",
+    "rel": 0.184
    },
    {
     "u": "memes",
@@ -5144,39 +5112,47 @@
     "cap": "Pink Panther's To do list",
     "t": "2026-11-16T16:57:58Z",
     "type": "IMAGE",
-    "rel": 0.223
+    "rel": 0.207
    },
    {
     "u": "memes",
-    "er": 49,
+    "er": 51,
     "cap": "WTAF GRU??",
     "t": "2026-11-17T19:04:13.986457Z",
     "type": "IMAGE",
-    "rel": 0.243
+    "rel": 0.235
    },
    {
     "u": "memes",
-    "er": 53,
+    "er": 116,
+    "cap": "Thanksgiving approaches.",
+    "t": "2026-11-19T11:51:06.876466Z",
+    "type": "IMAGE",
+    "rel": 0.239
+   },
+   {
+    "u": "memes",
+    "er": 127,
+    "cap": "Anything for steam frame",
+    "t": "2026-11-18T16:01:48.274842Z",
+    "type": "IMAGE",
+    "rel": 0.261
+   },
+   {
+    "u": "memes",
+    "er": 59,
     "cap": "I posted this meme before RDR3.",
     "t": "2026-11-18T12:27:16.224640Z",
     "type": "IMAGE",
-    "rel": 0.262
+    "rel": 0.272
    },
    {
     "u": "memes",
-    "er": 61,
-    "cap": "INB4 \"horse show could still exist under Leninism\"",
-    "t": "2026-11-12T19:20:22.121248Z",
+    "er": 158,
+    "cap": "When my partner asks me about plans for the weekend",
+    "t": "2026-11-20T18:21:00.228800Z",
     "type": "IMAGE",
-    "rel": 0.302
-   },
-   {
-    "u": "memes",
-    "er": 173,
-    "cap": "Take me out tonight",
-    "t": "2026-11-19T12:13:54.665935Z",
-    "type": "IMAGE",
-    "rel": 0.341
+    "rel": 0.325
    },
    {
     "u": "memes",
@@ -5184,15 +5160,39 @@
     "cap": "Big brain moment:",
     "t": "2026-11-15T10:35:48.578829Z",
     "type": "IMAGE",
-    "rel": 0.352
+    "rel": 0.327
+   },
+   {
+    "u": "memes",
+    "er": 184,
+    "cap": "Relevant?",
+    "t": "2026-11-20T05:45:51.717432Z",
+    "type": "IMAGE",
+    "rel": 0.379
+   },
+   {
+    "u": "memes",
+    "er": 187,
+    "cap": "Anatomy is weird",
+    "t": "2026-11-15T03:45:39.420202Z",
+    "type": "IMAGE",
+    "rel": 0.385
+   },
+   {
+    "u": "memes",
+    "er": 87,
+    "cap": "*insert clever remark here",
+    "t": "2026-11-15T19:24:52.704698Z",
+    "type": "IMAGE",
+    "rel": 0.4
    }
   ],
   "by_len": {
    "very short caption": 1.08,
-   "short caption": 0.68
+   "short caption": 0.76
   },
   "by_start": {
-   "other opening": 1.01
+   "other opening": 1.03
   }
  },
  "news_used": [

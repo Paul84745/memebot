@@ -4,8 +4,8 @@
   "slots": [
    {
     "t": "2026-11-21T11:10:00+00:00",
-    "status": "pending",
-    "attempts": 3
+    "status": "skipped",
+    "attempts": 4
    },
    {
     "t": "2026-11-21T12:51:00+00:00",

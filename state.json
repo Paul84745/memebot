@@ -31,8 +31,8 @@
    },
    {
     "t": "2026-11-22T21:46:00+00:00",
-    "status": "pending",
-    "attempts": 3,
+    "status": "skipped",
+    "attempts": 4,
     "kind": "dump"
    },
    {

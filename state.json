@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "slots": [
    {
-    "t": "2026-11-23T10:17:00+00:00",
-    "status": "skipped",
-    "attempts": 0
-   },
-   {
-    "t": "2026-11-23T11:51:00+00:00",
-    "status": "skipped",
-    "attempts": 4,
-    "kind": "story"
-   },
-   {
-    "t": "2026-11-23T13:48:00+00:00",
-    "status": "skipped",
-    "attempts": 4
-   },
-   {
-    "t": "2026-11-23T17:22:00+00:00",
+    "t": "2026-11-24T12:44:00+00:00",
     "status": "pending",
     "attempts": 0
    },
    {
-    "t": "2026-11-23T18:26:00+00:00",
+    "t": "2026-11-24T12:44:00+00:00",
     "status": "pending",
     "attempts": 0
    },
    {
-    "t": "2026-11-23T19:10:00+00:00",
+    "t": "2026-11-24T13:47:00+00:00",
     "status": "pending",
     "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-23T20:01:00+00:00",
+    "t": "2026-11-24T18:33:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "story"
+   },
+   {
+    "t": "2026-11-24T20:07:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-24T21:16:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-24T23:19:00+00:00",
     "status": "pending",
     "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-23",
-  "stories_date": "2026-11-23"
+  "dump_checked": "2026-11-24",
+  "stories_date": "2026-11-24"
  },
  "history": [
   {
@@ -4857,262 +4857,262 @@
  ],
  "imported_done": true,
  "peers": {
-  "fetched_at": "2026-11-21T17:45:10.240294+00:00",
+  "fetched_at": "2026-11-24T01:10:41.438817+00:00",
   "ok": [
    "memes@lemmy.world",
    "memes@lemmy.ml"
   ],
-  "n": 73,
+  "n": 76,
   "best": [
    {
     "u": "memes",
-    "er": 1518,
+    "er": 1521,
     "cap": "High hopes",
     "t": "2026-11-17T12:53:17.888482Z",
     "type": "IMAGE",
-    "rel": 3.123
+    "rel": 3.706
    },
    {
     "u": "memes",
-    "er": 577,
-    "cap": "30% of Gen Z in the US is sympathetic to Communism",
-    "t": "2026-11-18T13:57:26.804752Z",
+    "er": 765,
+    "cap": "IOF",
+    "t": "2026-11-21T11:01:59.203230Z",
     "type": "IMAGE",
-    "rel": 2.656
+    "rel": 3.054
    },
    {
     "u": "memes",
-    "er": 466,
-    "cap": "there will be signs",
-    "t": "2026-11-18T21:19:31.279984Z",
-    "type": "IMAGE",
-    "rel": 2.145
-   },
-   {
-    "u": "memes",
-    "er": 1009,
+    "er": 1012,
     "cap": "Job search tier list",
     "t": "2026-11-17T15:19:59.998025Z",
     "type": "IMAGE",
-    "rel": 2.076
+    "rel": 2.466
    },
    {
     "u": "memes",
-    "er": 930,
-    "cap": "The good ole days",
-    "t": "2026-11-15T12:17:50.875198Z",
+    "er": 588,
+    "cap": "30% of Gen Z in the US is sympathetic to Communism",
+    "t": "2026-11-18T13:57:26.804752Z",
     "type": "IMAGE",
-    "rel": 1.913
+    "rel": 2.347
    },
    {
     "u": "memes",
-    "er": 901,
+    "er": 921,
     "cap": "Complimentary",
     "t": "2026-11-20T12:49:34.617880Z",
     "type": "IMAGE",
-    "rel": 1.854
+    "rel": 2.244
    },
    {
     "u": "memes",
-    "er": 388,
-    "cap": "do you believe?",
-    "t": "2026-11-16T09:17:34.345668Z",
-    "type": "IMAGE",
-    "rel": 1.786
-   },
-   {
-    "u": "memes",
-    "er": 368,
+    "er": 537,
     "cap": "Bourgeois world view",
     "t": "2026-11-20T21:12:16.784887Z",
     "type": "IMAGE",
-    "rel": 1.694
+    "rel": 2.144
    },
    {
     "u": "memes",
-    "er": 820,
+    "er": 831,
     "cap": "Very impressive",
     "t": "2026-11-18T15:04:27.891519Z",
     "type": "IMAGE",
-    "rel": 1.687
+    "rel": 2.025
    },
    {
     "u": "memes",
-    "er": 361,
-    "cap": "American elections be like",
-    "t": "2026-11-20T14:23:00.040945Z",
+    "er": 474,
+    "cap": "there will be signs",
+    "t": "2026-11-18T21:19:31.279984Z",
     "type": "IMAGE",
-    "rel": 1.662
+    "rel": 1.892
    },
    {
     "u": "memes",
-    "er": 341,
-    "cap": "`SHALL WE PLAY A GAME?`",
-    "t": "2026-11-18T08:14:29.483048Z",
-    "type": "IMAGE",
-    "rel": 1.57
-   },
-   {
-    "u": "memes",
-    "er": 760,
-    "cap": "Whose church?",
-    "t": "2026-11-16T12:10:15.605721Z",
-    "type": "IMAGE",
-    "rel": 1.564
-   },
-   {
-    "u": "memes",
-    "er": 760,
-    "cap": "I can't help it",
-    "t": "2026-11-15T14:32:07.613873Z",
-    "type": "IMAGE",
-    "rel": 1.564
-   },
-   {
-    "u": "memes",
-    "er": 337,
-    "cap": "\"The West does not like us, and we must understand this fact\"",
-    "t": "2026-11-19T18:28:54.304505Z",
-    "type": "IMAGE",
-    "rel": 1.551
-   },
-   {
-    "u": "memes",
-    "er": 748,
+    "er": 767,
     "cap": "Have some self control",
     "t": "2026-11-19T13:53:15.792846Z",
     "type": "IMAGE",
-    "rel": 1.539
+    "rel": 1.869
    },
    {
     "u": "memes",
-    "er": 714,
+    "er": 759,
+    "cap": "Sigh",
+    "t": "2026-11-21T17:27:09.065791Z",
+    "type": "IMAGE",
+    "rel": 1.85
+   },
+   {
+    "u": "memes",
+    "er": 451,
+    "cap": "American elections be like",
+    "t": "2026-11-20T14:23:00.040945Z",
+    "type": "IMAGE",
+    "rel": 1.801
+   },
+   {
+    "u": "memes",
+    "er": 723,
     "cap": "Little shits",
     "t": "2026-11-18T16:51:37.314913Z",
     "type": "IMAGE",
-    "rel": 1.469
+    "rel": 1.762
    },
    {
     "u": "memes",
-    "er": 677,
+    "er": 679,
     "cap": "Wrapped party potato",
     "t": "2026-11-17T12:52:17.278418Z",
     "type": "IMAGE",
-    "rel": 1.393
+    "rel": 1.655
    },
    {
     "u": "memes",
-    "er": 299,
-    "cap": "Why would I deceive you",
-    "t": "2026-11-18T04:20:22.014525Z",
+    "er": 396,
+    "cap": "Patron saint of historical materialism",
+    "t": "2026-11-22T20:19:26.316937Z",
     "type": "IMAGE",
-    "rel": 1.376
+    "rel": 1.581
    },
    {
     "u": "memes",
-    "er": 293,
-    "cap": "distraught.jpg",
-    "t": "2026-11-17T08:55:35.544853Z",
-    "type": "IMAGE",
-    "rel": 1.349
-   },
-   {
-    "u": "memes",
-    "er": 287,
-    "cap": "People's Republic of Mom's Phone",
-    "t": "2026-11-19T01:21:12.622138Z",
-    "type": "IMAGE",
-    "rel": 1.321
-   },
-   {
-    "u": "memes",
-    "er": 634,
+    "er": 636,
     "cap": "Generational Run",
     "t": "2026-11-17T03:01:38.791335Z",
     "type": "IMAGE",
-    "rel": 1.304
+    "rel": 1.55
    },
    {
     "u": "memes",
-    "er": 281,
-    "cap": "Home of the Free",
-    "t": "2026-11-19T18:12:54.686423Z",
+    "er": 592,
+    "cap": "Slippery slope",
+    "t": "2026-11-17T15:18:49.578233Z",
     "type": "IMAGE",
-    "rel": 1.294
+    "rel": 1.443
    },
    {
     "u": "memes",
-    "er": 276,
-    "cap": "banner",
-    "t": "2026-11-18T08:30:24.021704Z",
+    "er": 357,
+    "cap": "\"The West does not like us, and we must understand this fact\"",
+    "t": "2026-11-19T18:28:54.304505Z",
     "type": "IMAGE",
-    "rel": 1.271
+    "rel": 1.425
    },
    {
     "u": "memes",
-    "er": 275,
-    "cap": "baby trebuchet*",
-    "t": "2026-11-17T08:54:48.325099Z",
+    "er": 568,
+    "cap": "Take me out tonight",
+    "t": "2026-11-19T12:13:54.665935Z",
     "type": "IMAGE",
-    "rel": 1.266
+    "rel": 1.384
    },
    {
     "u": "memes",
-    "er": 274,
-    "cap": "Office culture",
-    "t": "2026-11-16T16:05:43.144364Z",
+    "er": 346,
+    "cap": "`SHALL WE PLAY A GAME?`",
+    "t": "2026-11-18T08:14:29.483048Z",
     "type": "IMAGE",
-    "rel": 1.261
+    "rel": 1.381
+   },
+   {
+    "u": "memes",
+    "er": 547,
+    "cap": "Plumb [OC]",
+    "t": "2026-11-19T18:15:49.440215Z",
+    "type": "IMAGE",
+    "rel": 1.333
+   },
+   {
+    "u": "memes",
+    "er": 526,
+    "cap": "Badly cropped, you say?",
+    "t": "2026-11-17T15:05:34.554076Z",
+    "type": "IMAGE",
+    "rel": 1.282
+   },
+   {
+    "u": "memes",
+    "er": 515,
+    "cap": "This is your pilot speaking.",
+    "t": "2026-11-17T13:04:32.297496Z",
+    "type": "IMAGE",
+    "rel": 1.255
+   },
+   {
+    "u": "memes",
+    "er": 503,
+    "cap": "Pedantry",
+    "t": "2026-11-18T10:33:01.853619Z",
+    "type": "IMAGE",
+    "rel": 1.226
+   },
+   {
+    "u": "memes",
+    "er": 301,
+    "cap": "distraught.jpg",
+    "t": "2026-11-17T08:55:35.544853Z",
+    "type": "IMAGE",
+    "rel": 1.202
+   },
+   {
+    "u": "memes",
+    "er": 301,
+    "cap": "Why would I deceive you",
+    "t": "2026-11-18T04:20:22.014525Z",
+    "type": "IMAGE",
+    "rel": 1.202
    }
   ],
   "worst": [
    {
     "u": "memes",
-    "er": 20,
-    "cap": "Sigh",
-    "t": "2026-11-21T17:27:09.065791Z",
+    "er": 26,
+    "cap": "It obvious when you think it do but it done not",
+    "t": "2026-11-23T21:07:51.982158Z",
     "type": "IMAGE",
-    "rel": 0.041
-   },
-   {
-    "u": "memes",
-    "er": 14,
-    "cap": "How the class is acting when the teacher\u2019s pet says: what about the homework?",
-    "t": "2026-11-14T21:13:05.806977Z",
-    "type": "IMAGE",
-    "rel": 0.064
+    "rel": 0.063
    },
    {
     "u": "memes",
     "er": 42,
+    "cap": "The day you're old enough to realize that your Great Aunt Maggie and Grandma Margaret are the same person",
+    "t": "2026-11-23T00:50:43.744081Z",
+    "type": "IMAGE",
+    "rel": 0.102
+   },
+   {
+    "u": "memes",
+    "er": 44,
     "cap": "Alternative history: Tokyo monster explosion",
     "t": "2026-11-19T18:44:22.468852Z",
     "type": "IMAGE",
-    "rel": 0.086
+    "rel": 0.107
    },
    {
     "u": "memes",
-    "er": 61,
+    "er": 62,
     "cap": "Using that sentence starter does not help you!",
     "t": "2026-11-17T14:51:49.262591Z",
     "type": "IMAGE",
-    "rel": 0.126
+    "rel": 0.151
    },
    {
     "u": "memes",
-    "er": 40,
-    "cap": "A little something for the Millennials",
-    "t": "2026-11-16T00:42:49.124312Z",
+    "er": 70,
+    "cap": "I hate living on a world with almost eight billion untermensch fucks, the four-hundred porn actresses and models I am allured by, and myself, the most compassionate of all beings on this planet",
+    "t": "2026-11-22T21:04:57.425574Z",
     "type": "IMAGE",
-    "rel": 0.184
+    "rel": 0.171
    },
    {
     "u": "memes",
-    "er": 45,
-    "cap": "Pink Panther's To do list",
-    "t": "2026-11-16T16:57:58Z",
+    "er": 75,
+    "cap": "Getting ready for the Jensen Huang Reinstatement Parade",
+    "t": "2026-11-23T20:34:54.688986Z",
     "type": "IMAGE",
-    "rel": 0.207
+    "rel": 0.183
    },
    {
     "u": "memes",
@@ -5120,23 +5120,7 @@
     "cap": "WTAF GRU??",
     "t": "2026-11-17T19:04:13.986457Z",
     "type": "IMAGE",
-    "rel": 0.235
-   },
-   {
-    "u": "memes",
-    "er": 116,
-    "cap": "Thanksgiving approaches.",
-    "t": "2026-11-19T11:51:06.876466Z",
-    "type": "IMAGE",
-    "rel": 0.239
-   },
-   {
-    "u": "memes",
-    "er": 127,
-    "cap": "Anything for steam frame",
-    "t": "2026-11-18T16:01:48.274842Z",
-    "type": "IMAGE",
-    "rel": 0.261
+    "rel": 0.204
    },
    {
     "u": "memes",
@@ -5144,55 +5128,71 @@
     "cap": "I posted this meme before RDR3.",
     "t": "2026-11-18T12:27:16.224640Z",
     "type": "IMAGE",
-    "rel": 0.272
+    "rel": 0.236
    },
    {
     "u": "memes",
-    "er": 158,
-    "cap": "When my partner asks me about plans for the weekend",
-    "t": "2026-11-20T18:21:00.228800Z",
+    "er": 72,
+    "cap": "good reaction image :)",
+    "t": "2026-11-22T18:15:10.707912Z",
     "type": "IMAGE",
-    "rel": 0.325
+    "rel": 0.287
    },
    {
     "u": "memes",
-    "er": 71,
-    "cap": "Big brain moment:",
-    "t": "2026-11-15T10:35:48.578829Z",
+    "er": 121,
+    "cap": "Thanksgiving approaches.",
+    "t": "2026-11-19T11:51:06.876466Z",
     "type": "IMAGE",
-    "rel": 0.327
+    "rel": 0.295
    },
    {
     "u": "memes",
-    "er": 184,
-    "cap": "Relevant?",
-    "t": "2026-11-20T05:45:51.717432Z",
+    "er": 129,
+    "cap": "Anything for steam frame",
+    "t": "2026-11-18T16:01:48.274842Z",
     "type": "IMAGE",
-    "rel": 0.379
+    "rel": 0.314
    },
    {
     "u": "memes",
-    "er": 187,
-    "cap": "Anatomy is weird",
-    "t": "2026-11-15T03:45:39.420202Z",
+    "er": 130,
+    "cap": "Kid's playing with weird black thing on ground that looks vaguely like.....",
+    "t": "2026-11-22T02:30:53.703847Z",
     "type": "IMAGE",
-    "rel": 0.385
+    "rel": 0.317
    },
    {
     "u": "memes",
-    "er": 87,
-    "cap": "*insert clever remark here",
-    "t": "2026-11-15T19:24:52.704698Z",
+    "er": 83,
+    "cap": "A slurring zionist appears",
+    "t": "2026-11-23T04:29:26.616188Z",
     "type": "IMAGE",
-    "rel": 0.4
+    "rel": 0.331
+   },
+   {
+    "u": "memes",
+    "er": 146,
+    "cap": "Is this Stulle?",
+    "t": "2026-11-22T11:16:33.766865Z",
+    "type": "IMAGE",
+    "rel": 0.356
+   },
+   {
+    "u": "memes",
+    "er": 172,
+    "cap": "I don't know what she does but my shoe habit ain't cheap",
+    "t": "2026-11-23T17:23:47.618986Z",
+    "type": "IMAGE",
+    "rel": 0.419
    }
   ],
   "by_len": {
-   "very short caption": 1.08,
-   "short caption": 0.76
+   "very short caption": 1.18,
+   "short caption": 0.71
   },
   "by_start": {
-   "other opening": 1.03
+   "other opening": 1.02
   }
  },
  "news_used": [

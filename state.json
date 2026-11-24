@@ -5243,22 +5243,14 @@
   "EPFO WhatsApp service goes viral with 1 crore users in 14 days: How to check PF balance, download passbook"
  ],
  "trends": {
-  "fetched_at": "2026-11-21T02:48:43.936628+00:00",
+  "fetched_at": "2026-11-24T10:58:04.347185+00:00",
   "styles": [
    {
     "query": "amapiano",
     "moods": [
-     "bouncy",
      "upbeat",
+     "bouncy",
      "hype"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "smooth jazz",
-    "moods": [
-     "chill",
-     "wholesome"
     ],
     "fx": "none"
    },
@@ -5266,15 +5258,25 @@
     "query": "hyperpop",
     "moods": [
      "hype",
-     "upbeat"
+     "upbeat",
+     "awkward"
     ],
-    "fx": "sped_up"
+    "fx": "none"
    },
    {
     "query": "lofi",
     "moods": [
      "chill",
      "sad",
+     "wholesome"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "drill",
+    "moods": [
+     "hype",
+     "dramatic",
      "awkward"
     ],
     "fx": "none"
@@ -5282,18 +5284,19 @@
    {
     "query": "synthwave",
     "moods": [
+     "upbeat",
      "dramatic",
-     "hype"
+     "wholesome"
     ],
     "fx": "none"
    },
    {
-    "query": "rock",
+    "query": "pop",
     "moods": [
-     "dramatic",
-     "upbeat"
+     "upbeat",
+     "hype"
     ],
-    "fx": "none"
+    "fx": "sped_up"
    },
    {
     "query": "phonk",
@@ -5322,7 +5325,7 @@
     "fx": "slowed_reverb"
    }
   ],
-  "source": "18 headlines"
+  "source": "16 headlines"
  },
  "follow_track": {
   "t": "2026-11-18T20:57:59.841713+00:00",

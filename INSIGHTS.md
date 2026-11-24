@@ -25,8 +25,8 @@ Score = engagement per 1,000 people reached: a new follower counts 20x a like, a
 - wyr: score 50.7, reach 122, follows 0 (16 stories)
 - caption_this: score 30.7, reach 129, follows 0 (7 stories)
 
-## Trending music styles right now (18 headlines, 2026-11-21)
-- amapiano, smooth jazz, hyperpop (sped up), lofi, synthwave, rock, phonk, funk (sped up), piano (slowed reverb)
+## Trending music styles right now (16 headlines, 2026-11-24)
+- amapiano, hyperpop, lofi, drill, synthwave, pop (sped up), phonk, funk (sped up), piano (slowed reverb)
 - results by sound style:
   - piano: avg 76.7 (7 posts)
   - uk garage: avg 69.9 (1 posts)

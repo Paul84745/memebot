@@ -15,19 +15,19 @@
    },
    {
     "t": "2026-11-25T13:48:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 3
    },
    {
     "t": "2026-11-25T19:36:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0,
     "kind": "story"
    },
    {
     "t": "2026-11-25T20:28:00+00:00",
     "status": "pending",
-    "attempts": 0,
+    "attempts": 1,
     "kind": "dump"
    },
    {

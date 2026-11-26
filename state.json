@@ -20,8 +20,8 @@
    },
    {
     "t": "2026-11-26T13:33:00+00:00",
-    "status": "pending",
-    "attempts": 3
+    "status": "skipped",
+    "attempts": 4
    },
    {
     "t": "2026-11-26T15:32:00+00:00",

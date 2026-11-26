@@ -1,48 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "slots": [
    {
-    "t": "2026-11-25T10:01:00+00:00",
-    "status": "skipped",
+    "t": "2026-11-26T07:57:00+00:00",
+    "status": "pending",
     "attempts": 0
    },
    {
-    "t": "2026-11-25T11:17:00+00:00",
-    "status": "skipped",
-    "attempts": 4,
-    "kind": "story"
+    "t": "2026-11-26T09:48:00+00:00",
+    "status": "pending",
+    "attempts": 0
    },
    {
-    "t": "2026-11-25T13:48:00+00:00",
-    "status": "skipped",
-    "attempts": 3
-   },
-   {
-    "t": "2026-11-25T19:36:00+00:00",
-    "status": "skipped",
+    "t": "2026-11-26T12:12:00+00:00",
+    "status": "pending",
     "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-25T20:28:00+00:00",
-    "status": "pending",
-    "attempts": 3,
-    "kind": "dump"
-   },
-   {
-    "t": "2026-11-25T21:47:00+00:00",
+    "t": "2026-11-26T13:33:00+00:00",
     "status": "pending",
     "attempts": 0
    },
    {
-    "t": "2026-11-25T23:07:00+00:00",
+    "t": "2026-11-26T15:32:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-26T19:56:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "story"
+   },
+   {
+    "t": "2026-11-26T21:18:00+00:00",
     "status": "pending",
     "attempts": 0
    }
   ],
-  "dump_checked": "2026-11-25",
-  "stories_date": "2026-11-25"
+  "dump_checked": "2026-11-26",
+  "stories_date": "2026-11-26"
  },
  "history": [
   {
@@ -4858,230 +4857,247 @@
  ],
  "imported_done": true,
  "peers": {
-  "fetched_at": "2026-11-24T01:10:41.438817+00:00",
+  "fetched_at": "2026-11-26T04:44:53.098568+00:00",
   "ok": [
    "memes@lemmy.world",
+   "me_irl@lemmy.world",
    "memes@lemmy.ml"
   ],
-  "n": 76,
+  "n": 81,
   "best": [
    {
     "u": "memes",
-    "er": 1521,
-    "cap": "High hopes",
-    "t": "2026-11-17T12:53:17.888482Z",
+    "er": 778,
+    "cap": "IOF",
+    "t": "2026-11-21T11:01:59.203230Z",
     "type": "IMAGE",
-    "rel": 3.706
+    "rel": 3.456
+   },
+   {
+    "u": "memes",
+    "er": 772,
+    "cap": "the illusion of democracy in capitalism",
+    "t": "2026-11-25T12:45:43.412086Z",
+    "type": "IMAGE",
+    "rel": 3.43
+   },
+   {
+    "u": "memes",
+    "er": 926,
+    "cap": "Complimentary",
+    "t": "2026-11-20T12:49:34.617880Z",
+    "type": "IMAGE",
+    "rel": 2.848
+   },
+   {
+    "u": "memes",
+    "er": 845,
+    "cap": "Midwest Snacks",
+    "t": "2026-11-25T01:03:47.560435Z",
+    "type": "IMAGE",
+    "rel": 2.599
+   },
+   {
+    "u": "memes",
+    "er": 541,
+    "cap": "Bourgeois world view",
+    "t": "2026-11-20T21:12:16.784887Z",
+    "type": "IMAGE",
+    "rel": 2.403
+   },
+   {
+    "u": "memes",
+    "er": 775,
+    "cap": "Have some self control",
+    "t": "2026-11-19T13:53:15.792846Z",
+    "type": "IMAGE",
+    "rel": 2.383
    },
    {
     "u": "memes",
     "er": 765,
-    "cap": "IOF",
-    "t": "2026-11-21T11:01:59.203230Z",
+    "cap": "Sigh",
+    "t": "2026-11-21T17:27:09.065791Z",
     "type": "IMAGE",
-    "rel": 3.054
+    "rel": 2.353
    },
    {
     "u": "memes",
-    "er": 1012,
-    "cap": "Job search tier list",
-    "t": "2026-11-17T15:19:59.998025Z",
+    "er": 741,
+    "cap": "damn",
+    "t": "2026-11-23T19:22:59.076215Z",
     "type": "IMAGE",
-    "rel": 2.466
+    "rel": 2.279
    },
    {
     "u": "memes",
-    "er": 588,
-    "cap": "30% of Gen Z in the US is sympathetic to Communism",
-    "t": "2026-11-18T13:57:26.804752Z",
+    "er": 454,
+    "cap": "American elections be like",
+    "t": "2026-11-20T14:23:00.040945Z",
     "type": "IMAGE",
-    "rel": 2.347
+    "rel": 2.017
    },
    {
     "u": "memes",
-    "er": 921,
-    "cap": "Complimentary",
-    "t": "2026-11-20T12:49:34.617880Z",
+    "er": 417,
+    "cap": "Patron saint of historical materialism",
+    "t": "2026-11-22T20:19:26.316937Z",
     "type": "IMAGE",
-    "rel": 2.244
+    "rel": 1.853
    },
    {
     "u": "memes",
-    "er": 537,
-    "cap": "Bourgeois world view",
-    "t": "2026-11-20T21:12:16.784887Z",
+    "er": 570,
+    "cap": "Take me out tonight",
+    "t": "2026-11-19T12:13:54.665935Z",
     "type": "IMAGE",
-    "rel": 2.144
+    "rel": 1.753
    },
    {
     "u": "memes",
-    "er": 831,
-    "cap": "Very impressive",
-    "t": "2026-11-18T15:04:27.891519Z",
+    "er": 552,
+    "cap": "Plumb [OC]",
+    "t": "2026-11-19T18:15:49.440215Z",
     "type": "IMAGE",
-    "rel": 2.025
+    "rel": 1.698
+   },
+   {
+    "u": "memes",
+    "er": 375,
+    "cap": "\"The West does not like us, and we must understand this fact\"",
+    "t": "2026-11-19T18:28:54.304505Z",
+    "type": "IMAGE",
+    "rel": 1.666
+   },
+   {
+    "u": "memes",
+    "er": 524,
+    "cap": "Jensen the white has returned",
+    "t": "2026-11-23T15:04:31.252568Z",
+    "type": "IMAGE",
+    "rel": 1.611
+   },
+   {
+    "u": "me_irl",
+    "er": 498,
+    "cap": "Me_irl",
+    "t": "2026-11-24T05:55:23.371940Z",
+    "type": "IMAGE",
+    "rel": 1.602
+   },
+   {
+    "u": "memes",
+    "er": 493,
+    "cap": "AI obsessed managers",
+    "t": "2026-11-22T20:11:43.269198Z",
+    "type": "IMAGE",
+    "rel": 1.516
+   },
+   {
+    "u": "memes",
+    "er": 485,
+    "cap": "Chat GPT 0118 999 881 999 119 725... 3",
+    "t": "2026-11-22T15:47:11.015157Z",
+    "type": "IMAGE",
+    "rel": 1.492
+   },
+   {
+    "u": "memes",
+    "er": 483,
+    "cap": "Anyone got any scratch-fix?",
+    "t": "2026-11-24T01:17:25.313817Z",
+    "type": "IMAGE",
+    "rel": 1.485
+   },
+   {
+    "u": "me_irl",
+    "er": 455,
+    "cap": "Me_irl",
+    "t": "2026-11-22T05:55:28.625579Z",
+    "type": "IMAGE",
+    "rel": 1.463
    },
    {
     "u": "memes",
     "er": 474,
-    "cap": "there will be signs",
-    "t": "2026-11-18T21:19:31.279984Z",
+    "cap": "Friendly annual reminder for the US",
+    "t": "2026-11-25T17:58:19.939192Z",
     "type": "IMAGE",
-    "rel": 1.892
+    "rel": 1.458
    },
    {
     "u": "memes",
-    "er": 767,
-    "cap": "Have some self control",
-    "t": "2026-11-19T13:53:15.792846Z",
+    "er": 464,
+    "cap": "The struggle",
+    "t": "2026-11-23T15:40:04.241913Z",
     "type": "IMAGE",
-    "rel": 1.869
+    "rel": 1.427
    },
    {
     "u": "memes",
-    "er": 759,
-    "cap": "Sigh",
-    "t": "2026-11-21T17:27:09.065791Z",
+    "er": 460,
+    "cap": "Thoughts on this controversial meme?",
+    "t": "2026-11-25T15:07:38.228119Z",
     "type": "IMAGE",
-    "rel": 1.85
+    "rel": 1.415
    },
    {
     "u": "memes",
-    "er": 451,
-    "cap": "American elections be like",
-    "t": "2026-11-20T14:23:00.040945Z",
+    "er": 294,
+    "cap": "Home of the Free",
+    "t": "2026-11-19T18:12:54.686423Z",
     "type": "IMAGE",
-    "rel": 1.801
+    "rel": 1.306
    },
    {
-    "u": "memes",
-    "er": 723,
-    "cap": "Little shits",
-    "t": "2026-11-18T16:51:37.314913Z",
+    "u": "me_irl",
+    "er": 405,
+    "cap": "Me_irl",
+    "t": "2026-11-21T05:55:22.040029Z",
     "type": "IMAGE",
-    "rel": 1.762
+    "rel": 1.303
    },
    {
-    "u": "memes",
-    "er": 679,
-    "cap": "Wrapped party potato",
-    "t": "2026-11-17T12:52:17.278418Z",
+    "u": "me_irl",
+    "er": 398,
+    "cap": "me\ud83c\udf6airl",
+    "t": "2026-11-22T22:00:37.142830Z",
     "type": "IMAGE",
-    "rel": 1.655
-   },
-   {
-    "u": "memes",
-    "er": 396,
-    "cap": "Patron saint of historical materialism",
-    "t": "2026-11-22T20:19:26.316937Z",
-    "type": "IMAGE",
-    "rel": 1.581
-   },
-   {
-    "u": "memes",
-    "er": 636,
-    "cap": "Generational Run",
-    "t": "2026-11-17T03:01:38.791335Z",
-    "type": "IMAGE",
-    "rel": 1.55
-   },
-   {
-    "u": "memes",
-    "er": 592,
-    "cap": "Slippery slope",
-    "t": "2026-11-17T15:18:49.578233Z",
-    "type": "IMAGE",
-    "rel": 1.443
-   },
-   {
-    "u": "memes",
-    "er": 357,
-    "cap": "\"The West does not like us, and we must understand this fact\"",
-    "t": "2026-11-19T18:28:54.304505Z",
-    "type": "IMAGE",
-    "rel": 1.425
-   },
-   {
-    "u": "memes",
-    "er": 568,
-    "cap": "Take me out tonight",
-    "t": "2026-11-19T12:13:54.665935Z",
-    "type": "IMAGE",
-    "rel": 1.384
-   },
-   {
-    "u": "memes",
-    "er": 346,
-    "cap": "`SHALL WE PLAY A GAME?`",
-    "t": "2026-11-18T08:14:29.483048Z",
-    "type": "IMAGE",
-    "rel": 1.381
-   },
-   {
-    "u": "memes",
-    "er": 547,
-    "cap": "Plumb [OC]",
-    "t": "2026-11-19T18:15:49.440215Z",
-    "type": "IMAGE",
-    "rel": 1.333
-   },
-   {
-    "u": "memes",
-    "er": 526,
-    "cap": "Badly cropped, you say?",
-    "t": "2026-11-17T15:05:34.554076Z",
-    "type": "IMAGE",
-    "rel": 1.282
-   },
-   {
-    "u": "memes",
-    "er": 515,
-    "cap": "This is your pilot speaking.",
-    "t": "2026-11-17T13:04:32.297496Z",
-    "type": "IMAGE",
-    "rel": 1.255
-   },
-   {
-    "u": "memes",
-    "er": 503,
-    "cap": "Pedantry",
-    "t": "2026-11-18T10:33:01.853619Z",
-    "type": "IMAGE",
-    "rel": 1.226
-   },
-   {
-    "u": "memes",
-    "er": 301,
-    "cap": "distraught.jpg",
-    "t": "2026-11-17T08:55:35.544853Z",
-    "type": "IMAGE",
-    "rel": 1.202
-   },
-   {
-    "u": "memes",
-    "er": 301,
-    "cap": "Why would I deceive you",
-    "t": "2026-11-18T04:20:22.014525Z",
-    "type": "IMAGE",
-    "rel": 1.202
+    "rel": 1.28
    }
   ],
   "worst": [
    {
     "u": "memes",
-    "er": 26,
-    "cap": "It obvious when you think it do but it done not",
-    "t": "2026-11-23T21:07:51.982158Z",
+    "er": 3,
+    "cap": "Normative to 8% of the population according to the FBI",
+    "t": "2026-11-25T19:01:45.261830Z",
     "type": "IMAGE",
-    "rel": 0.063
+    "rel": 0.009
    },
    {
     "u": "memes",
-    "er": 42,
-    "cap": "The day you're old enough to realize that your Great Aunt Maggie and Grandma Margaret are the same person",
-    "t": "2026-11-23T00:50:43.744081Z",
+    "er": 12,
+    "cap": "Text on tect",
+    "t": "2026-11-25T16:17:47.617513Z",
     "type": "IMAGE",
-    "rel": 0.102
+    "rel": 0.037
+   },
+   {
+    "u": "memes",
+    "er": 27,
+    "cap": "Life pro-strats",
+    "t": "2026-11-24T01:25:04.070756Z",
+    "type": "IMAGE",
+    "rel": 0.083
+   },
+   {
+    "u": "memes",
+    "er": 35,
+    "cap": "It obvious when you think it do but it done not",
+    "t": "2026-11-23T21:07:51.982158Z",
+    "type": "IMAGE",
+    "rel": 0.108
    },
    {
     "u": "memes",
@@ -5089,108 +5105,92 @@
     "cap": "Alternative history: Tokyo monster explosion",
     "t": "2026-11-19T18:44:22.468852Z",
     "type": "IMAGE",
-    "rel": 0.107
+    "rel": 0.135
    },
    {
     "u": "memes",
-    "er": 62,
-    "cap": "Using that sentence starter does not help you!",
-    "t": "2026-11-17T14:51:49.262591Z",
+    "er": 48,
+    "cap": "The day you're old enough to realize that your Great Aunt Maggie and Grandma Margaret are the same person",
+    "t": "2026-11-23T00:50:43.744081Z",
+    "type": "IMAGE",
+    "rel": 0.148
+   },
+   {
+    "u": "memes",
+    "er": 34,
+    "cap": "Fascism everywhere",
+    "t": "2026-11-24T06:33:38.406716Z",
     "type": "IMAGE",
     "rel": 0.151
    },
    {
     "u": "memes",
-    "er": 70,
+    "er": 42,
+    "cap": "These majestic creatures can be seen on the horizon.",
+    "t": "2026-11-24T20:45:43.632042Z",
+    "type": "IMAGE",
+    "rel": 0.187
+   },
+   {
+    "u": "memes",
+    "er": 43,
+    "cap": "Minecraft.",
+    "t": "2026-11-24T09:06:12.328808Z",
+    "type": "IMAGE",
+    "rel": 0.191
+   },
+   {
+    "u": "memes",
+    "er": 86,
     "cap": "I hate living on a world with almost eight billion untermensch fucks, the four-hundred porn actresses and models I am allured by, and myself, the most compassionate of all beings on this planet",
     "t": "2026-11-22T21:04:57.425574Z",
     "type": "IMAGE",
-    "rel": 0.171
+    "rel": 0.264
    },
    {
     "u": "memes",
-    "er": 75,
-    "cap": "Getting ready for the Jensen Huang Reinstatement Parade",
-    "t": "2026-11-23T20:34:54.688986Z",
+    "er": 94,
+    "cap": "How companies fusing should be done (if at all)",
+    "t": "2026-11-24T13:37:52.995635Z",
     "type": "IMAGE",
-    "rel": 0.183
+    "rel": 0.289
    },
    {
     "u": "memes",
-    "er": 51,
-    "cap": "WTAF GRU??",
-    "t": "2026-11-17T19:04:13.986457Z",
-    "type": "IMAGE",
-    "rel": 0.204
-   },
-   {
-    "u": "memes",
-    "er": 59,
-    "cap": "I posted this meme before RDR3.",
-    "t": "2026-11-18T12:27:16.224640Z",
-    "type": "IMAGE",
-    "rel": 0.236
-   },
-   {
-    "u": "memes",
-    "er": 72,
+    "er": 73,
     "cap": "good reaction image :)",
     "t": "2026-11-22T18:15:10.707912Z",
     "type": "IMAGE",
-    "rel": 0.287
+    "rel": 0.324
    },
    {
     "u": "memes",
-    "er": 121,
-    "cap": "Thanksgiving approaches.",
-    "t": "2026-11-19T11:51:06.876466Z",
+    "er": 74,
+    "cap": "Facebook is dumb but also these are mortifying to read.",
+    "t": "2026-11-25T14:45:35.681653Z",
     "type": "IMAGE",
-    "rel": 0.295
+    "rel": 0.329
    },
    {
     "u": "memes",
-    "er": 129,
-    "cap": "Anything for steam frame",
-    "t": "2026-11-18T16:01:48.274842Z",
+    "er": 118,
+    "cap": "Our state of affairs...",
+    "t": "2026-11-25T13:10:15.638381Z",
     "type": "IMAGE",
-    "rel": 0.314
+    "rel": 0.363
    },
    {
     "u": "memes",
-    "er": 130,
-    "cap": "Kid's playing with weird black thing on ground that looks vaguely like.....",
-    "t": "2026-11-22T02:30:53.703847Z",
+    "er": 120,
+    "cap": "Barely a winter anymore",
+    "t": "2026-11-26T02:31:53.114497Z",
     "type": "IMAGE",
-    "rel": 0.317
-   },
-   {
-    "u": "memes",
-    "er": 83,
-    "cap": "A slurring zionist appears",
-    "t": "2026-11-23T04:29:26.616188Z",
-    "type": "IMAGE",
-    "rel": 0.331
-   },
-   {
-    "u": "memes",
-    "er": 146,
-    "cap": "Is this Stulle?",
-    "t": "2026-11-22T11:16:33.766865Z",
-    "type": "IMAGE",
-    "rel": 0.356
-   },
-   {
-    "u": "memes",
-    "er": 172,
-    "cap": "I don't know what she does but my shoe habit ain't cheap",
-    "t": "2026-11-23T17:23:47.618986Z",
-    "type": "IMAGE",
-    "rel": 0.419
+    "rel": 0.369
    }
   ],
   "by_len": {
-   "very short caption": 1.18,
-   "short caption": 0.71
+   "very short caption": 1.11,
+   "short caption": 0.84
   },
   "by_start": {
    "other opening": 1.02

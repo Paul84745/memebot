@@ -4,18 +4,18 @@
   "slots": [
    {
     "t": "2026-11-27T09:22:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
     "t": "2026-11-27T11:13:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0,
     "kind": "story"
    },
    {
     "t": "2026-11-27T12:07:00+00:00",
-    "status": "pending",
+    "status": "skipped",
     "attempts": 0
    },
    {
@@ -5244,31 +5244,20 @@
   "EPFO WhatsApp service goes viral with 1 crore users in 14 days: How to check PF balance, download passbook"
  ],
  "trends": {
-  "fetched_at": "2026-11-24T10:58:04.347185+00:00",
+  "fetched_at": "2026-11-27T15:08:13.671692+00:00",
   "styles": [
    {
     "query": "amapiano",
     "moods": [
-     "upbeat",
      "bouncy",
-     "hype"
+     "upbeat"
     ],
     "fx": "none"
    },
    {
-    "query": "hyperpop",
+    "query": "bollywood",
     "moods": [
-     "hype",
      "upbeat",
-     "awkward"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "lofi",
-    "moods": [
-     "chill",
-     "sad",
      "wholesome"
     ],
     "fx": "none"
@@ -5277,33 +5266,31 @@
     "query": "drill",
     "moods": [
      "hype",
-     "dramatic",
-     "awkward"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "synthwave",
-    "moods": [
-     "upbeat",
-     "dramatic",
-     "wholesome"
-    ],
-    "fx": "none"
-   },
-   {
-    "query": "pop",
-    "moods": [
-     "upbeat",
-     "hype"
+     "dramatic"
     ],
     "fx": "sped_up"
    },
    {
     "query": "phonk",
     "moods": [
-     "hype",
-     "dramatic"
+     "chill",
+     "bouncy"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "lofi",
+    "moods": [
+     "chill",
+     "sad"
+    ],
+    "fx": "none"
+   },
+   {
+    "query": "synthwave",
+    "moods": [
+     "dramatic",
+     "upbeat"
     ],
     "fx": "none"
    },
@@ -5324,9 +5311,17 @@
      "wholesome"
     ],
     "fx": "slowed_reverb"
+   },
+   {
+    "query": "electronic",
+    "moods": [
+     "hype",
+     "upbeat"
+    ],
+    "fx": "sped_up"
    }
   ],
-  "source": "16 headlines"
+  "source": "21 headlines"
  },
  "follow_track": {
   "t": "2026-11-18T20:57:59.841713+00:00",

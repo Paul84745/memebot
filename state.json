@@ -1,47 +1,47 @@
 {
  "schedule": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "slots": [
    {
-    "t": "2026-11-26T07:57:00+00:00",
-    "status": "skipped",
+    "t": "2026-11-27T09:22:00+00:00",
+    "status": "pending",
     "attempts": 0
    },
    {
-    "t": "2026-11-26T09:48:00+00:00",
-    "status": "skipped",
-    "attempts": 0
-   },
-   {
-    "t": "2026-11-26T12:12:00+00:00",
-    "status": "skipped",
-    "attempts": 1,
-    "kind": "story"
-   },
-   {
-    "t": "2026-11-26T13:33:00+00:00",
-    "status": "skipped",
-    "attempts": 4
-   },
-   {
-    "t": "2026-11-26T15:32:00+00:00",
-    "status": "skipped",
-    "attempts": 2
-   },
-   {
-    "t": "2026-11-26T19:56:00+00:00",
-    "status": "skipped",
+    "t": "2026-11-27T11:13:00+00:00",
+    "status": "pending",
     "attempts": 0,
     "kind": "story"
    },
    {
-    "t": "2026-11-26T21:18:00+00:00",
+    "t": "2026-11-27T12:07:00+00:00",
     "status": "pending",
-    "attempts": 1
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-27T15:31:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-27T18:34:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-27T18:53:00+00:00",
+    "status": "pending",
+    "attempts": 0
+   },
+   {
+    "t": "2026-11-27T20:56:00+00:00",
+    "status": "pending",
+    "attempts": 0,
+    "kind": "story"
    }
   ],
-  "dump_checked": "2026-11-26",
-  "stories_date": "2026-11-26"
+  "dump_checked": "2026-11-27",
+  "stories_date": "2026-11-27"
  },
  "history": [
   {

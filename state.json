@@ -35,8 +35,8 @@
    },
    {
     "t": "2026-11-27T20:56:00+00:00",
-    "status": "pending",
-    "attempts": 3,
+    "status": "skipped",
+    "attempts": 4,
     "kind": "story"
    }
   ],
